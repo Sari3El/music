@@ -314,6 +314,18 @@ def class_level_features(cls, lv):
     return b, p, r, s
 
 
+# Liste unique (sans doublons) de tous les sorts de classe du jeu, par niveau de sort.
+# Les listes du jeu se recoupent (Soins chez le clerc, le barde, le druide...) : les ajouter toutes
+# faisait apparaître les sorts en double. Les sorts de domaine (toujours préparés) en sont retirés.
+TOUS_SORTS = json.load(open(os.path.join(os.path.dirname(__file__), "sorts_toutes_classes.json"),
+                            encoding="utf-8"))["par_niveau"]
+_DEJA_PREPARES = {sp for dom in D.DOMAIN_SPELLS.values() for spells in dom.values() for sp in spells}
+CREATION_SORTS = {int(n): spelllist(f"DOC_Creation_Sorts_{n}", f"Création : tous les sorts de niveau {n}",
+                                    [sp for sp in spells if sp not in _DEJA_PREPARES])
+                  for n, spells in TOUS_SORTS.items() if n != "0"}
+CREATION_TOURS = spelllist("DOC_Creation_Tours", "Création : tous les tours de magie", TOUS_SORTS["0"])
+
+
 def creatrice_level_features(lv):
     """Divinité Créatrice : socles de l'Ordre ET du Chaos, sans malus (ni Contrepoids, ni magie sauvage)."""
     b, p, r, s = [], [], [], []
@@ -331,13 +343,11 @@ def creatrice_level_features(lv):
         p += ["DOC_Creatrice_Perfection", "DOC_Creatrice_Deferlement", "DOC_Creatrice_DivinitePure"]
     # n'importe quel sort du jeu : toutes les listes de toutes les classes, à préparer
     if lv in NEW_SPELL_LEVEL:
-        s += [f"AddSpells({g})" for g in C.all_class_lists(NEW_SPELL_LEVEL[lv])]
+        s += [f"AddSpells({CREATION_SORTS[NEW_SPELL_LEVEL[lv]]})"]
     if lv == 1:
-        s += [f"SelectSpells({g},{2 if g == C.WIZARD_CANTRIPS else 1},0,DOC_TourCreation,,,AlwaysPrepared)"
-              for g in C.ALL_CANTRIP_LISTS]
+        s += [f"SelectSpells({CREATION_TOURS},7,0,DOC_TourCreation,,,AlwaysPrepared)"]
     if lv in (4, 10):
-        s += [f"SelectSpells({C.WIZARD_CANTRIPS},1,0,DOC_TourCreation,,,AlwaysPrepared)",
-              f"SelectSpells({C.SORCERER_CANTRIPS},1,0,DOC_TourCreation,,,AlwaysPrepared)"]
+        s += [f"SelectSpells({CREATION_TOURS},2,0,DOC_TourCreation,,,AlwaysPrepared)"]
     return b, p, r, s
 
 

@@ -645,7 +645,7 @@
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;DOC_Classe_Marqueur;DOC_Ordre_LoiAbsolue_5;DOC_Chaos_Critique_19;DOC_Creatrice_Perfection;DOC_Creatrice_Deferlement;DOC_Creatrice_DivinitePure"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(bf0f5f07-b364-5b5c-ba3d-1391dd98db64,4);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(b217d18c-8c67-5356-8eef-51bd48429373,,,,AlwaysPrepared);AddSpells(db3f93da-486e-518b-ace1-7f87fceade2f,,,,AlwaysPrepared);AddSpells(269d1a3b-eed8-4131-8901-a562238f5289);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831);AddSpells(92c4751f-6255-4f67-822c-a75d53830b27);AddSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d);AddSpells(2cd54137-2fe5-4100-aad3-df64735a8145);AddSpells(dcb45167-86bd-4297-9b9d-c295be51af5b);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f);AddSpells(e0099b15-2599-4cba-a54b-b25ae03d6519);AddSpells(4823a292-f584-4f7f-8434-6630c72e5411);AddSpells(65952d48-bb16-4ad7-b173-532182bf7770);SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,2,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(61f79a30-2cac-4a7a-b5fe-50c89d307dd6,1,0,DOC_TourCreation,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(bf0f5f07-b364-5b5c-ba3d-1391dd98db64,4);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(b217d18c-8c67-5356-8eef-51bd48429373,,,,AlwaysPrepared);AddSpells(db3f93da-486e-518b-ace1-7f87fceade2f,,,,AlwaysPrepared);AddSpells(447450b2-f417-5474-93aa-c6acd2e18595);SelectSpells(566434c1-1430-5f6f-8f37-9861d6ad0280,7,0,DOC_TourCreation,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="bcc725d0-56cf-5df3-a2fc-8602df1fed75"/>
                     <children>
@@ -674,7 +674,7 @@
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(24d6c6f6-cc33-589e-823e-fa631b6b4312,,,,AlwaysPrepared);AddSpells(9a739889-525c-5ff7-b067-e9a8a4697bb4,,,,AlwaysPrepared);AddSpells(2968a3e6-6c8a-4c2e-882a-ad295a2ad8ac);AddSpells(c14c9564-1503-47a1-be19-98e77f22ff59);AddSpells(f80396e2-cb76-4694-b0db-5c34da61a478);AddSpells(80c6b070-c3a6-4864-84ca-e78626784eb4);AddSpells(92126d17-7f1a-41d2-ae6c-a8d254d2b135);AddSpells(7ea8f476-97a1-4256-8f10-afa76a845cce);AddSpells(e7cfb80a-f5c2-4304-8446-9b00ea6a9814);AddSpells(0cc2c8ab-9bbc-43a7-a66d-08e47da4c172);AddSpells(835aeca7-c64a-4aaa-a25c-143aa14a5cec);AddSpells(fe101a94-8619-49b2-859d-a68c2c291054)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(24d6c6f6-cc33-589e-823e-fa631b6b4312,,,,AlwaysPrepared);AddSpells(9a739889-525c-5ff7-b067-e9a8a4697bb4,,,,AlwaysPrepared);AddSpells(115c2eb8-2845-5851-8040-220c6a9114f1)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="f248a475-39a8-5a6d-9bca-bb62ca24c2aa"/>
                 </node>
@@ -683,7 +683,7 @@
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,1,0,DOC_TourCreation,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(566434c1-1430-5f6f-8f37-9861d6ad0280,2,0,DOC_TourCreation,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="56700f5b-fe89-5ac0-b446-d84d1b01a029"/>
                 </node>
@@ -693,7 +693,7 @@
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(95ff0b48-abce-5fc7-bbf5-b37a809c913d,,,,AlwaysPrepared);AddSpells(8c1821fe-47ed-52b9-88d2-08c349f38ac3,,,,AlwaysPrepared);AddSpells(21be0992-499f-4c7a-a77a-4430085e947a);AddSpells(dcbaf2ae-1f45-453e-ab83-cd154f8277a4);AddSpells(22755771-ca11-49f4-b772-13d8b8fecd93);AddSpells(3156daf5-9266-41d0-b52c-5bc559a98654);AddSpells(c213ca01-3767-457b-a5c8-fd4c1dd656e2);AddSpells(9a60f649-7f82-4152-90b1-0499c5c9f3e2);AddSpells(f18ad912-e2f4-47a9-8744-73d6a51c2941);AddSpells(5dec41aa-f16a-434e-b209-50c07e64e4ed);AddSpells(30e9b761-6be0-418e-bb28-5103c00c663b)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(95ff0b48-abce-5fc7-bbf5-b37a809c913d,,,,AlwaysPrepared);AddSpells(8c1821fe-47ed-52b9-88d2-08c349f38ac3,,,,AlwaysPrepared);AddSpells(f8eb8387-3b93-5c23-881f-f3f49c7d1d06)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="d2a94e24-2bdc-5d4f-a2e1-b17f53cff35b"/>
                 </node>
@@ -713,7 +713,7 @@
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel4;DOC_Ordre_Inebranlable;DOC_Chaos_Indomptable"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(d4abc03d-5460-5f70-9d7c-516c1b655d6c,,,,AlwaysPrepared);AddSpells(a55d6f1b-80e4-5c8a-840a-dca77cb7354e,,,,AlwaysPrepared);AddSpells(37e9b20b-5fd1-45c5-b1c5-159c42397c83);AddSpells(5fe40622-1d3e-4cc1-8d89-e66fe51d8c5c);AddSpells(820b1220-0385-426d-ae15-458dc8a6f5c0);AddSpells(09c326c9-672c-4198-a4c0-6f07323bde27);AddSpells(75e04c40-be8f-40a5-9acc-0b5d59d5f3a6);AddSpells(c3d8a4a5-9dae-4193-8322-a5d1c5b89f47);AddSpells(7ad7dbd0-751b-4bcd-8034-53bcc7bfb19d);AddSpells(b64e527e-1f97-4125-84f7-78376ab1440b)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(d4abc03d-5460-5f70-9d7c-516c1b655d6c,,,,AlwaysPrepared);AddSpells(a55d6f1b-80e4-5c8a-840a-dca77cb7354e,,,,AlwaysPrepared);AddSpells(de1184a5-050a-5c5e-bfba-a107fd913b39)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="9307623d-0050-5a5c-9ca7-41f0d63d312d"/>
                 </node>
@@ -731,7 +731,7 @@
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel5"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(a931323c-35e4-595a-8d3d-bfd35c0c1e73,,,,AlwaysPrepared);AddSpells(f5517fb7-aaf8-50de-9e28-b442c73a5a1c,,,,AlwaysPrepared);AddSpells(b73aeea5-1ff9-4cac-b61d-b5aa6dfe31c2);AddSpells(3276fcfe-e143-4559-b6e0-7d7aa0ffcb53);AddSpells(f781a25e-d288-43b4-bf5d-3d8d98846687);AddSpells(ff711c12-b59f-4fde-b9ea-6e5c38ec8f23);AddSpells(bd71fffb-e4d2-4233-9a31-13d43fba36e3);AddSpells(0a9b924f-64fb-4f22-b975-5eeedc99b2fd);AddSpells(deab57bf-4eec-4085-82f7-87335bce3f5d);AddSpells(6d2edca9-71a7-4f3f-89f0-fccfff0bdee5)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(a931323c-35e4-595a-8d3d-bfd35c0c1e73,,,,AlwaysPrepared);AddSpells(f5517fb7-aaf8-50de-9e28-b442c73a5a1c,,,,AlwaysPrepared);AddSpells(b2f7cbe7-7789-532b-97ee-33c3db7c6796)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="3a714f53-8ff1-5130-82f9-8973acd15911"/>
                 </node>
@@ -742,7 +742,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="DOC_Ordre_Aura_2;DOC_Chaos_Aura_2"/>
                     <attribute id="PassivesRemoved" type="LSString" value="DOC_Ordre_Aura_1;DOC_Chaos_Aura_1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,1,0,DOC_TourCreation,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(566434c1-1430-5f6f-8f37-9861d6ad0280,2,0,DOC_TourCreation,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="d5573a54-54ee-5463-9dc6-4e62fdeea548"/>
                 </node>
@@ -753,7 +753,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel6;DOC_Ordre_LoiAbsolue_10;DOC_Ordre_Aura_3;DOC_Chaos_Critique_17"/>
                     <attribute id="PassivesRemoved" type="LSString" value="DOC_Ordre_LoiAbsolue_8;DOC_Ordre_Aura_2;DOC_Chaos_Critique_18"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(74fdd3b3-6aa2-5204-84ef-27f61b7dbb7a,,,,AlwaysPrepared);AddSpells(b74bdb67-387c-58f5-a189-85e20d33599b,,,,AlwaysPrepared);AddSpells(f8ba7b05-1237-4eaa-97fa-1d3623d5862b);AddSpells(1270a6db-980b-4e3b-bf26-2924da61dfd5);AddSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65);AddSpells(6a4e2167-55f3-4ba8-900f-14666b293e93);AddSpells(586a8796-34f4-41f5-a3ef-95738561d55d)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(74fdd3b3-6aa2-5204-84ef-27f61b7dbb7a,,,,AlwaysPrepared);AddSpells(b74bdb67-387c-58f5-a189-85e20d33599b,,,,AlwaysPrepared);AddSpells(7b59e142-7afd-59ff-9cb5-3b3bc1342564)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="c1e72abc-55ac-5789-9787-038d10e782f1"/>
                 </node>
@@ -774,7 +774,7 @@
                     <attribute id="Name" type="LSString" value="DOC_DiviniteCreatrice"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;DOC_Classe_Marqueur;DOC_Ordre_LoiAbsolue_5;DOC_Chaos_Critique_19;DOC_Creatrice_Perfection;DOC_Creatrice_Deferlement;DOC_Creatrice_DivinitePure"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(b217d18c-8c67-5356-8eef-51bd48429373,,,,AlwaysPrepared);AddSpells(db3f93da-486e-518b-ace1-7f87fceade2f,,,,AlwaysPrepared);AddSpells(269d1a3b-eed8-4131-8901-a562238f5289);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831);AddSpells(92c4751f-6255-4f67-822c-a75d53830b27);AddSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d);AddSpells(2cd54137-2fe5-4100-aad3-df64735a8145);AddSpells(dcb45167-86bd-4297-9b9d-c295be51af5b);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f);AddSpells(e0099b15-2599-4cba-a54b-b25ae03d6519);AddSpells(4823a292-f584-4f7f-8434-6630c72e5411);AddSpells(65952d48-bb16-4ad7-b173-532182bf7770);SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,2,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,1,0,DOC_TourCreation,,,AlwaysPrepared);SelectSpells(61f79a30-2cac-4a7a-b5fe-50c89d307dd6,1,0,DOC_TourCreation,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b217d18c-8c67-5356-8eef-51bd48429373,,,,AlwaysPrepared);AddSpells(db3f93da-486e-518b-ace1-7f87fceade2f,,,,AlwaysPrepared);AddSpells(447450b2-f417-5474-93aa-c6acd2e18595);SelectSpells(566434c1-1430-5f6f-8f37-9861d6ad0280,7,0,DOC_TourCreation,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="e657f4ba-c75f-5cdc-b6dd-6252d40fc25d"/>
                     <attribute id="UUID" type="guid" value="9d145318-e6ae-59e3-82f2-e11d0247650c"/>
                     <children>

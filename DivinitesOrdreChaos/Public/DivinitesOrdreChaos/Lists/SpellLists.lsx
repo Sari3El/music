@@ -100,6 +100,41 @@
                     <attribute id="UUID" type="guid" value="b74bdb67-387c-58f5-a189-85e20d33599b"/>
                 </node>
                 <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les sorts de niveau 1"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_ChromaticOrb;Projectile_EnsnaringStrike_Container;Projectile_HailOfThorns;Projectile_IceKnife;Projectile_MagicMissile;Projectile_RayOfSickness;Projectile_WitchBolt;Shout_ArmsOfHadar;Shout_DisguiseSelf;Shout_DivineFavor;Shout_ExpeditiousRetreat;Shout_FeatherFall;Shout_Shield_Wizard;Shout_SpeakWithAnimals;Target_AnimalFriendship;Target_Bane;Target_CompelledDuel;Target_CreateDestroyWater;Target_CureWounds;Target_DissonantWhispers;Target_Entangle;Target_FaerieFire;Target_FindFamiliar_Ritual;Target_FogCloud;Target_Goodberry;Target_Grease;Target_HealingWord;Target_HellishRebuke;Target_Heroism;Target_Hex;Target_HideousLaughter;Target_HuntersMark;Target_InflictWounds;Target_Jump;Target_Longstrider;Target_MageArmor;Target_ProtectionFromEvilAndGood;Target_ShieldOfFaith;Target_Sleep;Target_Smite_Searing;Target_Smite_Wrathful;Zone_Thunderwave"/>
+                    <attribute id="UUID" type="guid" value="447450b2-f417-5474-93aa-c6acd2e18595"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les sorts de niveau 2"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_AcidArrow;Projectile_RayOfEnfeeblement;Shout_Aid;Shout_Blur;Shout_DetectThoughts;Shout_FlameBlade;Shout_PassWithoutTrace;Shout_PrayerOfHealing;Shout_SeeInvisibility;Shout_ShadowBlade_Class;Target_ArcaneLock;Target_Barkskin;Target_Blindness;Target_CalmEmotions;Target_CrownOfMadness;Target_Darkvision;Target_EnhanceAbility;Target_EnlargeReduce;Target_Enthrall;Target_FlamingSphere;Target_HeatMetal;Target_Invisibility;Target_Knock;Target_LesserRestoration;Target_MagicWeapon;Target_MistyStep;Target_PhantasmalForce;Target_ProtectionFromPoison;Target_Silence;Target_Smite_Branding_Container;Target_SpikeGrowth;Target_SpiritualWeapon;Target_WardingBond;Target_Web;Zone_GustOfWind"/>
+                    <attribute id="UUID" type="guid" value="115c2eb8-2845-5851-8040-220c6a9114f1"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les sorts de niveau 3"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_LightningArrow;Shout_AuraOfVitality;Shout_BeaconOfHope;Shout_SpiritGuardians;Target_BestowCurse;Target_Daylight_Container;Target_ElementalWeapon;Target_FeignDeath;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HungerOfHadar;Target_HypnoticPattern;Target_PlantGrowth;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_Slow;Target_Smite_Blinding;Target_SpeakWithDead;Target_StinkingCloud;Target_VampiricTouch;Teleportation_Revivify;Zone_ConjureBarrage;Zone_Fear;Zone_LightningBolt"/>
+                    <attribute id="UUID" type="guid" value="f8eb8387-3b93-5c23-881f-f3f49c7d1d06"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les sorts de niveau 4"/>
+                    <attribute id="Spells" type="LSString" value="Shout_FireShield;Target_BlackTentacles;Target_ConjureElementals_Minor_Container;Target_ConjureWoodlandBeings;Target_DeathWard;Target_DominateBeast;Target_FreedomOfMovement;Target_GraspingVine;Target_GuardianOfFaith;Target_Invisibility_Greater;Target_PhantasmalKiller;Target_Polymorph;Target_ResilientSphere;Target_Stoneskin;Teleportation_DimensionDoor;Wall_WallOfFire"/>
+                    <attribute id="UUID" type="guid" value="de1184a5-050a-5c5e-bfba-a107fd913b39"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les sorts de niveau 5"/>
+                    <attribute id="Spells" type="LSString" value="Shout_DispelEvilAndGood;Target_Cloudkill;Target_ConjureElemental_Container;Target_Contagion;Target_CureWounds_Mass;Target_GreaterRestoration;Target_InsectPlague;Target_PlanarBinding;Target_Seeming;Throw_Telekinesis;Wall_WallOfStone;Zone_ConeOfCold"/>
+                    <attribute id="UUID" type="guid" value="b2f7cbe7-7789-532b-97ee-33c3db7c6796"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les sorts de niveau 6"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_ChainLightning;Projectile_Disintegrate;Shout_HeroesFeast;Shout_WindWalk;Target_CircleOfDeath;Target_CreateUndead;Target_Eyebite;Target_FleshToStone;Target_FreezingSphere;Target_GlobeOfInvulnerability;Target_Harm;Target_Heal;Target_IrresistibleDance;Target_PlanarAlly_Container;Teleportation_ArcaneGate;Wall_BladeBarrier;Wall_WallOfIce;Wall_WallOfThorns"/>
+                    <attribute id="UUID" type="guid" value="7b59e142-7afd-59ff-9cb5-3b3bc1342564"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Création : tous les tours de magie"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_AcidSplash;Projectile_EldritchBlast;Projectile_FireBolt;Projectile_PoisonSpray;Projectile_RayOfFrost;Shout_BladeWard;Shout_ProduceFlame;Shout_Shillelagh;Shout_Thaumaturgy;Target_BoomingBlade_ClassSpell;Target_BurstingSinew;Target_ChillTouch;Target_DancingLights;Target_Friends;Target_Guidance;Target_Light;Target_MageHand;Target_MinorIllusion;Target_Resistance;Target_SacredFlame;Target_ShockingGrasp;Target_ThornWhip;Target_TollTheDead;Target_TrueStrike;Target_ViciousMockery"/>
+                    <attribute id="UUID" type="guid" value="566434c1-1430-5f6f-8f37-9861d6ad0280"/>
+                </node>
+                <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Vie : sorts de domaine (niveau 1)"/>
                     <attribute id="Spells" type="LSString" value="Shout_DOC_SouffleDeVie;Target_Bless"/>
                     <attribute id="UUID" type="guid" value="2d4c9e33-93a6-5c9f-9bda-5239fc6593c4"/>

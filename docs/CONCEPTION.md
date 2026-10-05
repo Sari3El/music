@@ -279,8 +279,8 @@ Hors cahier des charges : la Créatrice réunit l'Ordre et le Chaos, sans leurs 
 | Compétences | 4 au choix parmi toutes |
 | Armures et armes | légères, intermédiaires, lourdes, boucliers ; armes courantes et de guerre |
 | Emplacements de sort | 5 d'un coup dès qu'un niveau de sort s'ouvre (niv. 1, 3, 5, 7, 9, 11), donc 5 par niveau de sort au niveau 12 |
-| Sorts | n'importe quel sort du jeu à préparer : listes du clerc, paladin, ensorceleur, magicien, druide, barde, rôdeur et occultiste (3 protecteurs) ; peut aussi copier des parchemins |
-| Tours de magie | 7 au niveau 1 (1 par classe, 2 de magicien), +2 aux niveaux 4 et 10 |
+| Sorts | n'importe quel sort du jeu à préparer : une liste unique, sans doublons, des sorts du clerc, paladin, ensorceleur, magicien, druide, barde, rôdeur et occultiste (`tools/sorts_toutes_classes.json`, tiré de bg3.wiki) ; les sorts de domaine, déjà toujours préparés, en sont retirés ; peut aussi copier des parchemins |
+| Tours de magie | 7 au niveau 1 parmi tous les tours de magie du jeu, +2 aux niveaux 4 et 10 |
 | Capacités de l'Ordre | Loi absolue, Décrets, auras de l'Ordre, Inébranlable, Ordre parfait, sorts exclusifs de l'Ordre |
 | Capacités du Chaos | critiques 19/18/17, Entropie, auras du Chaos, Indomptable, Tempête primordiale, sorts exclusifs du Chaos |
 | Déferlement créateur | 1 chance sur 20 par sort : uniquement les effets divins favorables (ni magie sauvage, ni Contrecoup) |

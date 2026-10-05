@@ -41,41 +41,6 @@ SORCERER_SPELLS = {1: "92c4751f-6255-4f67-822c-a75d53830b27", 2: "f80396e2-cb76-
                    5: "3276fcfe-e143-4559-b6e0-7d7aa0ffcb53", 6: "1270a6db-980b-4e3b-bf26-2924da61dfd5"}
 WARLOCK_CANTRIPS = "f5c4af9c-5d8d-4526-9057-94a4b243cd40"
 METAMAGIC_LIST = "49704931-e47b-4ce6-abc6-dfa7ba640752"
-# Autres classes (source : BG3 Community Library, IdDictionary) — pour la Divinité Créatrice
-WIZARD_CANTRIPS = "3cae2e56-9871-4cef-bba6-96845ea765fa"
-WIZARD_SPELLS = {1: "11f331b0-e8b7-473b-9d1f-19e8e4178d7d", 2: "80c6b070-c3a6-4864-84ca-e78626784eb4",
-                 3: "22755771-ca11-49f4-b772-13d8b8fecd93", 4: "820b1220-0385-426d-ae15-458dc8a6f5c0",
-                 5: "f781a25e-d288-43b4-bf5d-3d8d98846687", 6: "bc917f22-7f71-4a25-9a77-7d2f91a96a65"}
-DRUID_CANTRIPS = "b8faf12f-ca42-45c0-84f8-6951b526182a"
-DRUID_SPELLS = {1: "2cd54137-2fe5-4100-aad3-df64735a8145", 2: "92126d17-7f1a-41d2-ae6c-a8d254d2b135",
-                3: "3156daf5-9266-41d0-b52c-5bc559a98654", 4: "09c326c9-672c-4198-a4c0-6f07323bde27",
-                5: "ff711c12-b59f-4fde-b9ea-6e5c38ec8f23", 6: "6a4e2167-55f3-4ba8-900f-14666b293e93"}
-BARD_CANTRIPS = "61f79a30-2cac-4a7a-b5fe-50c89d307dd6"
-BARD_SPELLS = {1: "dcb45167-86bd-4297-9b9d-c295be51af5b", 2: "7ea8f476-97a1-4256-8f10-afa76a845cce",
-               3: "c213ca01-3767-457b-a5c8-fd4c1dd656e2", 4: "75e04c40-be8f-40a5-9acc-0b5d59d5f3a6",
-               5: "bd71fffb-e4d2-4233-9a31-13d43fba36e3", 6: "586a8796-34f4-41f5-a3ef-95738561d55d"}
-RANGER_SPELLS = {1: "458be063-60d4-4548-ae7d-50117fa0226f", 2: "e7cfb80a-f5c2-4304-8446-9b00ea6a9814",
-                 3: "9a60f649-7f82-4152-90b1-0499c5c9f3e2"}
-# listes complètes de l'occultiste, une par protecteur (Fée, Fiélon, Grand Ancien)
-WARLOCK_SPELLS = {
-    1: ["e0099b15-2599-4cba-a54b-b25ae03d6519", "4823a292-f584-4f7f-8434-6630c72e5411", "65952d48-bb16-4ad7-b173-532182bf7770"],
-    2: ["0cc2c8ab-9bbc-43a7-a66d-08e47da4c172", "835aeca7-c64a-4aaa-a25c-143aa14a5cec", "fe101a94-8619-49b2-859d-a68c2c291054"],
-    3: ["f18ad912-e2f4-47a9-8744-73d6a51c2941", "5dec41aa-f16a-434e-b209-50c07e64e4ed", "30e9b761-6be0-418e-bb28-5103c00c663b"],
-    4: ["c3d8a4a5-9dae-4193-8322-a5d1c5b89f47", "7ad7dbd0-751b-4bcd-8034-53bcc7bfb19d", "b64e527e-1f97-4125-84f7-78376ab1440b"],
-    5: ["0a9b924f-64fb-4f22-b975-5eeedc99b2fd", "deab57bf-4eec-4085-82f7-87335bce3f5d", "6d2edca9-71a7-4f3f-89f0-fccfff0bdee5"]}
-
-
-def all_class_lists(n):
-    """Toutes les listes de sorts de niveau n du jeu (toutes classes)."""
-    out = []
-    for d in (CLERIC_SPELLS, PALADIN_SPELLS, SORCERER_SPELLS, WIZARD_SPELLS, DRUID_SPELLS, BARD_SPELLS, RANGER_SPELLS):
-        if n in d:
-            out.append(d[n])
-    return out + WARLOCK_SPELLS.get(n, [])
-
-
-ALL_CANTRIP_LISTS = [CLERIC_CANTRIPS, SORCERER_CANTRIPS, WARLOCK_CANTRIPS, WIZARD_CANTRIPS, DRUID_CANTRIPS,
-                     BARD_CANTRIPS]
 
 ORDRE = "DOC_DiviniteOrdre"
 CHAOS = "DOC_DiviniteChaos"

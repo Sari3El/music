@@ -223,9 +223,7 @@ def check():
     # 3. chaque liste citée par une progression existe (listes du mod ou du jeu)
     our_lists = {U("spelllist:" + n) for n, _, _ in C.SPELLLISTS} | {U("skilllist:" + n) for n, _ in C.SKILLLISTS}
     vanilla_lists = (set(C.CLERIC_SPELLS.values()) | set(C.PALADIN_SPELLS.values()) |
-                     set(C.SORCERER_SPELLS.values()) | set(C.WIZARD_SPELLS.values()) | set(C.DRUID_SPELLS.values()) |
-                     set(C.BARD_SPELLS.values()) | set(C.RANGER_SPELLS.values()) |
-                     {g for v in C.WARLOCK_SPELLS.values() for g in v} | set(C.ALL_CANTRIP_LISTS) |
+                     set(C.SORCERER_SPELLS.values()) |
                      {C.CLERIC_CANTRIPS, C.SORCERER_CANTRIPS, C.WARLOCK_CANTRIPS, C.ALL_ABILITIES_LIST,
                       C.METAMAGIC_LIST})
     for node in P.PROGRESSIONS:
