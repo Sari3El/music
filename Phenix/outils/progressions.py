@@ -7,10 +7,14 @@ PROGRESSIONS = []
 CLASSDESCS = []
 
 # Emplacements de sort d'un lanceur complet : niveau -> {niveau de sort: emplacements gagnés}
+# Niveaux 13 à 20 : nécessitent un mod qui débloque le niveau 20 (il fournit les emplacements 7 à 9).
+MAX_LEVEL = 20
 SLOTS = {1: {1: 2}, 2: {1: 1}, 3: {1: 1, 2: 2}, 4: {2: 1}, 5: {3: 2}, 6: {3: 1}, 7: {4: 1},
-         8: {4: 1}, 9: {4: 1, 5: 1}, 10: {5: 1}, 11: {6: 1}, 12: {}}
-NEW_SPELL_LEVEL = {1: 1, 3: 2, 5: 3, 7: 4, 9: 5, 11: 6}   # niveau où un nouveau niveau de sort s'ouvre
-MAX_SPELL_LEVEL = {lv: max(v for k, v in NEW_SPELL_LEVEL.items() if k <= lv) for lv in range(1, 13)}
+         8: {4: 1}, 9: {4: 1, 5: 1}, 10: {5: 1}, 11: {6: 1}, 12: {},
+         13: {7: 1}, 14: {}, 15: {8: 1}, 16: {}, 17: {9: 1}, 18: {5: 1}, 19: {6: 1}, 20: {7: 1}}
+NEW_SPELL_LEVEL = {1: 1, 3: 2, 5: 3, 7: 4, 9: 5, 11: 6, 13: 7, 15: 8, 17: 9}   # nouveau niveau de sort
+MAX_SPELL_LEVEL = {lv: max(v for k, v in NEW_SPELL_LEVEL.items() if k <= lv) for lv in range(1, MAX_LEVEL + 1)}
+FEATS = (4, 8, 12, 16, 19)
 SUBCLASS_LEVEL = 3
 ARMOR = ["Proficiency(LightArmor)", "Proficiency(SimpleWeapons)"]
 DIST = dict(Strength=8, Dexterity=13, Constitution=14, Intelligence=10, Wisdom=12, Charisma=15)
@@ -68,11 +72,11 @@ def level_features(lv):
     b, p, r = list(f["boosts"]), list(f["passives"]), list(f["removed"])
     s = [f"AddSpells({LISTS[None][lv]},,,,AlwaysPrepared)"] if lv in LISTS[None] else []
     # sorts connus : uniquement feu et lumière (liste cumulative jusqu'au niveau de sort maximum)
-    sl = SORTS[MAX_SPELL_LEVEL[lv]]
+    sl = SORTS[min(MAX_SPELL_LEVEL[lv], max(SORTS))]   # le jeu n'a pas de sort de feu de niveau 7+
     if lv == 1:
         s += [f"SelectSpells({sl},2,0,PHX_SortPhenix)",
               f"SelectSpells({TOURS},2,0,PHX_TourPhenix,,,AlwaysPrepared)"]
-    elif lv <= 11:
+    elif lv <= 11 or lv in (13, 15, 17):
         s += [f"SelectSpells({sl},1,1,PHX_SortPhenix)"]
     if lv in (4, 10):
         s += [f"SelectSpells({TOURS},1,0,PHX_TourPhenix,,,AlwaysPrepared)"]
@@ -82,7 +86,7 @@ def level_features(lv):
 # ================================================================== CLASSE
 TABLE = U("table:" + C.PHENIX)
 SUBCLASSES = [U(f"class:{C.PHENIX}_{v}") for v in C.VOIES]
-for lv in range(1, 13):
+for lv in range(1, MAX_LEVEL + 1):
     b, p, r, s = level_features(lv)
     boosts = slot_boosts(lv) + b
     passives = unlock_passive(lv) + p
@@ -91,7 +95,7 @@ for lv in range(1, 13):
                  ARMOR + boosts
         s = [f"SelectSkills({SKILLS},2)", f"SelectAbilityBonus({C.ALL_ABILITIES_LIST},AbilityBonus,2,1)"] + s
     progression(C.PHENIX, TABLE, lv, 0, boosts=boosts, passives=passives, removed=r, selectors=s,
-                improvement=lv in (4, 8, 12), subclasses=SUBCLASSES if lv == SUBCLASS_LEVEL else None)
+                improvement=lv in FEATS, subclasses=SUBCLASSES if lv == SUBCLASS_LEVEL else None)
 # niveau 1 en multiclasse (sans sauvegardes ni compétences)
 b, p, r, s = level_features(1)
 progression(C.PHENIX, TABLE, 1, 0, boosts=ARMOR[:1] + slot_boosts(1) + b, passives=unlock_passive(1) + p,

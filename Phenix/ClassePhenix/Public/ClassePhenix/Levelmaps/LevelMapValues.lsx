@@ -5,12 +5,147 @@
         <node id="root">
             <children>
                 <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="1d6"/>
+                    <attribute id="Level5" type="LSString" value="2d6"/>
+                    <attribute id="Level9" type="LSString" value="3d6"/>
+                    <attribute id="Level12" type="LSString" value="4d6"/>
+                    <attribute id="Level15" type="LSString" value="5d6"/>
+                    <attribute id="Level17" type="LSString" value="6d6"/>
+                    <attribute id="Level20" type="LSString" value="8d6"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_FlammeBienfaitrice_Tour"/>
+                    <attribute id="UUID" type="guid" value="84950bcc-38ef-5193-9378-361f11c22a08"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d8"/>
+                    <attribute id="Level5" type="LSString" value="3d8"/>
+                    <attribute id="Level9" type="LSString" value="4d8"/>
+                    <attribute id="Level12" type="LSString" value="5d8"/>
+                    <attribute id="Level15" type="LSString" value="6d8"/>
+                    <attribute id="Level17" type="LSString" value="7d8"/>
+                    <attribute id="Level20" type="LSString" value="9d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_FlammeBienfaitrice"/>
+                    <attribute id="UUID" type="guid" value="6ed0f6d6-e767-5a35-bc05-6609caab0c4d"/>
+                </node>
+                <node id="LevelMapSeries">
                     <attribute id="Level1" type="LSString" value="4d6"/>
                     <attribute id="Level5" type="LSString" value="4d6"/>
                     <attribute id="Level9" type="LSString" value="5d6"/>
                     <attribute id="Level12" type="LSString" value="6d6"/>
+                    <attribute id="Level15" type="LSString" value="7d6"/>
+                    <attribute id="Level17" type="LSString" value="8d6"/>
+                    <attribute id="Level20" type="LSString" value="10d6"/>
                     <attribute id="Name" type="FixedString" value="PHX_LM_PluieDePlumes"/>
                     <attribute id="UUID" type="guid" value="c4b3cc14-3fb4-5adf-babc-7414f0c103e3"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="3d8"/>
+                    <attribute id="Level5" type="LSString" value="3d8"/>
+                    <attribute id="Level9" type="LSString" value="4d8"/>
+                    <attribute id="Level12" type="LSString" value="5d8"/>
+                    <attribute id="Level15" type="LSString" value="6d8"/>
+                    <attribute id="Level17" type="LSString" value="7d8"/>
+                    <attribute id="Level20" type="LSString" value="9d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_PluieDePlumes_Soin"/>
+                    <attribute id="UUID" type="guid" value="a2cd2193-e455-5e90-a5e0-79a93d8b30ac"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="5d8"/>
+                    <attribute id="Level5" type="LSString" value="5d8"/>
+                    <attribute id="Level9" type="LSString" value="6d8"/>
+                    <attribute id="Level12" type="LSString" value="7d8"/>
+                    <attribute id="Level15" type="LSString" value="8d8"/>
+                    <attribute id="Level17" type="LSString" value="9d8"/>
+                    <attribute id="Level20" type="LSString" value="10d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_LarmesDePhenix"/>
+                    <attribute id="UUID" type="guid" value="742559a8-b348-59b8-be6b-276458df8699"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d8"/>
+                    <attribute id="Level5" type="LSString" value="2d8"/>
+                    <attribute id="Level9" type="LSString" value="3d8"/>
+                    <attribute id="Level12" type="LSString" value="4d8"/>
+                    <attribute id="Level15" type="LSString" value="5d8"/>
+                    <attribute id="Level17" type="LSString" value="6d8"/>
+                    <attribute id="Level20" type="LSString" value="7d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_Bucher"/>
+                    <attribute id="UUID" type="guid" value="ad5c645a-9849-5ba1-b7d6-a2ab415d1965"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d8"/>
+                    <attribute id="Level5" type="LSString" value="2d8"/>
+                    <attribute id="Level9" type="LSString" value="3d8"/>
+                    <attribute id="Level12" type="LSString" value="4d8"/>
+                    <attribute id="Level15" type="LSString" value="5d8"/>
+                    <attribute id="Level17" type="LSString" value="6d8"/>
+                    <attribute id="Level20" type="LSString" value="7d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_Bucher_Soin"/>
+                    <attribute id="UUID" type="guid" value="1ca118d3-0d53-506c-aab4-78997f98c8ef"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="3d8"/>
+                    <attribute id="Level5" type="LSString" value="3d8"/>
+                    <attribute id="Level9" type="LSString" value="3d8"/>
+                    <attribute id="Level12" type="LSString" value="4d8"/>
+                    <attribute id="Level15" type="LSString" value="5d8"/>
+                    <attribute id="Level17" type="LSString" value="5d8"/>
+                    <attribute id="Level20" type="LSString" value="6d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_Coeur"/>
+                    <attribute id="UUID" type="guid" value="0c67f294-b6e1-5c51-bc35-3705f8757ecb"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="3d6"/>
+                    <attribute id="Level5" type="LSString" value="3d6"/>
+                    <attribute id="Level9" type="LSString" value="3d6"/>
+                    <attribute id="Level12" type="LSString" value="3d6"/>
+                    <attribute id="Level15" type="LSString" value="4d6"/>
+                    <attribute id="Level17" type="LSString" value="5d6"/>
+                    <attribute id="Level20" type="LSString" value="6d6"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_Avatar"/>
+                    <attribute id="UUID" type="guid" value="4ec24952-92a3-5f3e-adff-d87cf9b840ea"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="3d8"/>
+                    <attribute id="Level5" type="LSString" value="3d8"/>
+                    <attribute id="Level9" type="LSString" value="3d8"/>
+                    <attribute id="Level12" type="LSString" value="3d8"/>
+                    <attribute id="Level15" type="LSString" value="4d8"/>
+                    <attribute id="Level17" type="LSString" value="5d8"/>
+                    <attribute id="Level20" type="LSString" value="6d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_Avatar_Soin"/>
+                    <attribute id="UUID" type="guid" value="223340c9-c827-5cdf-9f78-1eb49381ea14"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="8d8"/>
+                    <attribute id="Level5" type="LSString" value="8d8"/>
+                    <attribute id="Level9" type="LSString" value="8d8"/>
+                    <attribute id="Level12" type="LSString" value="8d8"/>
+                    <attribute id="Level15" type="LSString" value="9d8"/>
+                    <attribute id="Level17" type="LSString" value="10d8"/>
+                    <attribute id="Level20" type="LSString" value="12d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_Aube"/>
+                    <attribute id="UUID" type="guid" value="2a49b173-2712-5110-9abe-19bbcbcd2f1a"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="10d6"/>
+                    <attribute id="Level5" type="LSString" value="10d6"/>
+                    <attribute id="Level9" type="LSString" value="10d6"/>
+                    <attribute id="Level12" type="LSString" value="10d6"/>
+                    <attribute id="Level15" type="LSString" value="10d6"/>
+                    <attribute id="Level17" type="LSString" value="10d6"/>
+                    <attribute id="Level20" type="LSString" value="12d6"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_SoleilRenaissant"/>
+                    <attribute id="UUID" type="guid" value="50f4c118-9958-56f8-9900-f8721012dd7d"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="10d8"/>
+                    <attribute id="Level5" type="LSString" value="10d8"/>
+                    <attribute id="Level9" type="LSString" value="10d8"/>
+                    <attribute id="Level12" type="LSString" value="10d8"/>
+                    <attribute id="Level15" type="LSString" value="10d8"/>
+                    <attribute id="Level17" type="LSString" value="10d8"/>
+                    <attribute id="Level20" type="LSString" value="12d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_SoleilRenaissant_Soin"/>
+                    <attribute id="UUID" type="guid" value="7197a491-5c17-5879-a753-e3b70c2f63ba"/>
                 </node>
             </children>
         </node>

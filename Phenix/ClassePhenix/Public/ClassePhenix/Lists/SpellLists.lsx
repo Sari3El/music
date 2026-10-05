@@ -40,9 +40,19 @@
                     <attribute id="UUID" type="guid" value="199ff9cb-119b-57c7-9115-1a747c676b03"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 12)"/>
-                    <attribute id="Spells" type="LSString" value="Shout_PHX_AvatarDuPhenix"/>
-                    <attribute id="UUID" type="guid" value="9abc1921-0fe6-5ec2-b681-f14975a8c981"/>
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 13)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_AubeDuPhenix"/>
+                    <attribute id="UUID" type="guid" value="147f0063-a4b6-57f6-a130-e9d4cd31c0a6"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 15)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_ResurrectionArdente"/>
+                    <attribute id="UUID" type="guid" value="fbb7e7fc-9c7e-59c4-83c2-1f54aed72a3f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 17)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_SoleilRenaissant"/>
+                    <attribute id="UUID" type="guid" value="4bb2c8d0-7925-5696-a755-d665270b54e2"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Phénix Eternel : capacités (niveau 3)"/>

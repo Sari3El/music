@@ -96,7 +96,8 @@ def build():
     write(f"Mods/{FOLDER}/meta.lsx", meta_lsx())
 
     # --- stats
-    groups = {"PHX_Passifs.txt": "PassiveData", "PHX_Etats.txt": "StatusData", "PHX_Sorts.txt": "SpellData"}
+    groups = {"PHX_Passifs.txt": "PassiveData", "PHX_Etats.txt": "StatusData", "PHX_Sorts.txt": "SpellData",
+              "PHX_Reactions.txt": "InterruptData"}
     for fname, typ in groups.items():
         write(f"{pub}/Stats/Generated/Data/{fname}", stats_file([e for e in C.STATS if e.type == typ]))
     write(f"{pub}/Stats/Generated/Equipment.txt", equipment_txt())
@@ -172,10 +173,10 @@ def check():
     defined = set(entries) | resources | levelmaps | classes
 
     # 2. chaque nom PHX_ cité existe
-    token = re.compile(r"\b((?:Target|Shout|Projectile|Zone)_PHX_\w+|PHX_\w+)")
+    token = re.compile(r"\b((?:Target|Shout|Projectile|Zone|Interrupt)_PHX_\w+|PHX_\w+)")
     for e in C.STATS:
         for k, v in e.data.items():
-            if k in ("DisplayName", "Description", "StackId"):
+            if k in ("DisplayName", "Description", "StackId", "Stack"):
                 continue
             for t in token.findall(v):
                 if t not in defined:
