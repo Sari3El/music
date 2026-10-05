@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="Outcomes">
+        <node id="root">
+            <children>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementDivin"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Benediction"/>
+                    <attribute id="UUID" type="guid" value="1beb8813-1132-5e10-b5af-3f34536129c0"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementDivin"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Eclat"/>
+                    <attribute id="UUID" type="guid" value="5cf6dbc0-bd11-55a8-ab9c-e21b0d3b0c17"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementDivin"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Ascension"/>
+                    <attribute id="UUID" type="guid" value="9cc38a18-88ec-57b7-a9ba-6be96b55b55e"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementDivin"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Vitalite"/>
+                    <attribute id="UUID" type="guid" value="79a42428-e6dd-5336-a794-718c48b2f2d7"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementDivin"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Entropie"/>
+                    <attribute id="UUID" type="guid" value="e04f3e49-5a7f-5dd3-a181-64f256a1c251"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementDivin"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Contrecoup"/>
+                    <attribute id="UUID" type="guid" value="b4ea3a24-4733-5d79-88a2-2ab0568237c0"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_Detonation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Detonation_Fire"/>
+                    <attribute id="UUID" type="guid" value="f907e6f2-e6aa-5b1e-8bfd-1582ffcba6f0"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_Detonation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Detonation_Cold"/>
+                    <attribute id="UUID" type="guid" value="2c20d8ac-2991-517e-b9ea-30fc0c305e1e"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_Detonation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Detonation_Lightning"/>
+                    <attribute id="UUID" type="guid" value="243a7fb6-caad-5c6c-9ada-2fecc0818817"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_Detonation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Detonation_Acid"/>
+                    <attribute id="UUID" type="guid" value="05e34e14-bece-5f97-a02c-ba322a6223d1"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_TempeteArcanique"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_TempeteArcanique_Fire"/>
+                    <attribute id="UUID" type="guid" value="3dcd9f20-019a-5d62-8f3a-69810fd53183"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_TempeteArcanique"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_TempeteArcanique_Lightning"/>
+                    <attribute id="UUID" type="guid" value="d9268bbc-efad-5197-8059-d1c7584dcb6a"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_TempeteArcanique"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_TempeteArcanique_Cold"/>
+                    <attribute id="UUID" type="guid" value="cc7f18e2-b4d7-5fd8-8feb-276b003df4d8"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_PhasesLunaires"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Phase_Nouvelle"/>
+                    <attribute id="UUID" type="guid" value="75d485fa-0e8c-59aa-909c-3bf0d1dd3131"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_PhasesLunaires"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Phase_Croissante"/>
+                    <attribute id="UUID" type="guid" value="836c21f4-9223-5706-a8b0-8f388eff29ea"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_PhasesLunaires"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Phase_Pleine"/>
+                    <attribute id="UUID" type="guid" value="3a505af2-7154-5e51-a44a-65ba06e7cec3"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_PhasesLunaires"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Phase_Decroissante"/>
+                    <attribute id="UUID" type="guid" value="dcb133f1-9fc2-5da4-9ac9-bc4fb1ab96a0"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

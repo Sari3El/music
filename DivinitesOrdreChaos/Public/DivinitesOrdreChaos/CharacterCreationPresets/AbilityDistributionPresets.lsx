@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="AbilityDistributionPresets">
+        <node id="root">
+            <children>
+                <node id="AbilityDistributionPreset">
+                    <attribute id="Strength" type="int32" value="13"/>
+                    <attribute id="Dexterity" type="int32" value="10"/>
+                    <attribute id="Constitution" type="int32" value="14"/>
+                    <attribute id="Intelligence" type="int32" value="8"/>
+                    <attribute id="Wisdom" type="int32" value="15"/>
+                    <attribute id="Charisma" type="int32" value="12"/>
+                    <attribute id="ClassUUID" type="guid" value="3966d8cf-2f07-5d82-ac47-7d02f04b1bd2"/>
+                    <attribute id="UUID" type="guid" value="410e7c5b-7e03-5168-ac96-97635b8f614f"/>
+                </node>
+                <node id="AbilityDistributionPreset">
+                    <attribute id="Strength" type="int32" value="8"/>
+                    <attribute id="Dexterity" type="int32" value="14"/>
+                    <attribute id="Constitution" type="int32" value="13"/>
+                    <attribute id="Intelligence" type="int32" value="10"/>
+                    <attribute id="Wisdom" type="int32" value="12"/>
+                    <attribute id="Charisma" type="int32" value="15"/>
+                    <attribute id="ClassUUID" type="guid" value="e55abbc3-6dd9-5c4b-9719-fd89e5acb20d"/>
+                    <attribute id="UUID" type="guid" value="5b30cb2a-b6a3-54bf-8de8-b7c7ca31463d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

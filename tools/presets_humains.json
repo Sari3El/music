@@ -1,0 +1,41 @@
+{
+  "_aide": "Copie ici les valeurs des 4 présélections HUMAINES du jeu (RaceUUID 0eb594cb-8820-4be6-a58d-8be7a1a98fba). Voir le README, section « Étape 1 ». Remplace chaque A_REMPLIR puis relance tools/build_mod.py (ou envoie-moi les valeurs).",
+  "presets": {
+    "masculin": {
+      "BodyType": 0,
+      "BodyShape": 0,
+      "RootTemplate": "A_REMPLIR",
+      "CloseUpA": "A_REMPLIR",
+      "CloseUpB": "A_REMPLIR",
+      "Overview": "A_REMPLIR",
+      "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
+    },
+    "feminin": {
+      "BodyType": 1,
+      "BodyShape": 0,
+      "RootTemplate": "A_REMPLIR",
+      "CloseUpA": "A_REMPLIR",
+      "CloseUpB": "A_REMPLIR",
+      "Overview": "A_REMPLIR",
+      "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
+    },
+    "masculin_fort": {
+      "BodyType": 0,
+      "BodyShape": 1,
+      "RootTemplate": "A_REMPLIR",
+      "CloseUpA": "A_REMPLIR",
+      "CloseUpB": "A_REMPLIR",
+      "Overview": "A_REMPLIR",
+      "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
+    },
+    "feminin_fort": {
+      "BodyType": 1,
+      "BodyShape": 1,
+      "RootTemplate": "A_REMPLIR",
+      "CloseUpA": "A_REMPLIR",
+      "CloseUpB": "A_REMPLIR",
+      "Overview": "A_REMPLIR",
+      "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
+    }
+  }
+}

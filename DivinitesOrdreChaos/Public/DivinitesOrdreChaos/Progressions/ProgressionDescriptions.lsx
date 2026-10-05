@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hf5e08777g9eabg5ff7ga29dg65408be36c1f" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h402ae114g9ea5g5ecdg80a2g4d3ef1f828e0" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="DOC_TourOrdre"/>
+                    <attribute id="UUID" type="guid" value="c2b4fa93-efe3-5f56-a898-f1f6338bfcf5"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h34b445e0g510ag5e6egb69cg40f6391ee3dd" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7689262eg735dg533cgb351gba814e6ea92d" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="DOC_TourChaos"/>
+                    <attribute id="UUID" type="guid" value="ecbb8996-1d9b-5510-a70b-138c1101c9b4"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h1b96cf38gb072g5661gbe37gc7bf5516395e" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h51ae46ecg2ef9g5e7cgaa66g2f3ec8cb0065" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="DOC_TourOcculte"/>
+                    <attribute id="UUID" type="guid" value="a26f2a55-cac0-574e-a988-63a8cd16b297"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hee9fcc22g2430g5a0eg8f80ga3efb528b2c4" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hf671e571g3cc2g5f29g9984g74bc3b99cafc" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="DOC_SortChaos"/>
+                    <attribute id="UUID" type="guid" value="6d1788b8-bc46-5c93-ba46-a9240dbed9aa"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hf9ebfeedg38ebg54c8g8682gc4acb522303d" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4fb3b69cge1aag5381g80f5gc2391878b24c" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="DOC_MaitriseSorts"/>
+                    <attribute id="UUID" type="guid" value="29b191f1-39b1-5499-9d33-92cfcc424ede"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

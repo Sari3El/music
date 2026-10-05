@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="hf445cfa2gf07ag5c48g9a4fg9418e54672d1" version="1">DOC_Race_Marqueur</content>
+	<content contentuid="h671d719fgd43ag5ed8g8f2bg1b41b5f0135c" version="1">Vue divine</content>
+	<content contentuid="h1df7d80fg2dc1g5f43g80e6ga42d2aee5fb2" version="1">Vous voyez dans le noir jusqu'à 24 m, comme en pleine lumière.</content>
+	<content contentuid="h845289dbg5428g51bcgb363g30d7a782fe29" version="1">Volonté divine</content>
+	<content contentuid="h586b75d9ga206g5245g8fe4g93e9ccbd42b8" version="1">Vous avez l'avantage aux jets de sauvegarde contre les états Charmé et Effrayé. La magie ne peut pas vous endormir.</content>
+	<content contentuid="h23251dfaga394g5c14gbeebgbc1d2b286b64" version="1">Étincelle immortelle</content>
+	<content contentuid="hbd4916eag6c0fg56d2g8bccgf5c217072601" version="1">Une fois par repos long, quand vous tombez à 0 PV, vous restez à 1 PV.</content>
+	<content contentuid="h9c836f1cg9203g55e3g8f5bg5f4d6695101a" version="1">Injonction divine</content>
+	<content contentuid="h32df6201gf8bag576dg80c0g04835d626093" version="1">Prononcez un ordre divin d'un seul mot. La cible doit réussir un jet de sauvegarde de Sagesse ou obéir pendant son prochain tour. Une fois par repos long, sans emplacement de sort.</content>
+	<content contentuid="hd97dfae1gdd61g554fg86d0g172b8c70e184" version="1">Injonction divine : Halte</content>
+	<content contentuid="hf961e269g3b31g5a2egbc5cg89fdba3d2fa1" version="1">Ordre divin d'un seul mot (jet de sauvegarde de Sagesse). Une fois par repos long.</content>
+	<content contentuid="hc364b1d8g8f8dg50e7gb7d4g4193452336ab" version="1">Injonction divine : Approche</content>
+	<content contentuid="h3768eafcg0d33g5897gb6d8g4d46b0f9804a" version="1">Ordre divin d'un seul mot (jet de sauvegarde de Sagesse). Une fois par repos long.</content>
+	<content contentuid="h732d998age979g5dc3gbc5bg39b781fc11ce" version="1">Injonction divine : Lâche</content>
+	<content contentuid="haff90cf7g91c5g5a28ga54dgbd8750da39c2" version="1">Ordre divin d'un seul mot (jet de sauvegarde de Sagesse). Une fois par repos long.</content>
+	<content contentuid="h939912e5g41cag5489gb8a4gb7f476182940" version="1">Injonction divine : Fuis</content>
+	<content contentuid="h81d4eeacg34fdg5615g9953g80db1d85cb4b" version="1">Ordre divin d'un seul mot (jet de sauvegarde de Sagesse). Une fois par repos long.</content>
+	<content contentuid="ha3335945g9356g5045g90e1gf9554564b979" version="1">Injonction divine : À genoux</content>
+	<content contentuid="h484378fcgb703g59c8g9920g18b3bf20ff18" version="1">Ordre divin d'un seul mot (jet de sauvegarde de Sagesse). Une fois par repos long.</content>
+	<content contentuid="hb4179ab8ga9dcg5e51g815cg338f6e0852b9" version="1">Forme divine</content>
+	<content contentuid="h9c6b27dbgd882g5faeg8bc4g5ba030b62a60" version="1">Votre gloire divine est revenue : vous volez et vos attaques infligent 1d6 dégâts de force supplémentaires. Si vous êtes aussi Divinité de l'Ordre ou du Chaos (Divinité pure), ces dégâts prennent le type de votre domaine.</content>
+	<content contentuid="h9c79b16bgf69dg5a9ega17bg1fbedbfa11a3" version="1">Forme divine</content>
+	<content contentuid="h2ec10d88g3d76g558bg8182gcf7729a1ac62" version="1">Action bonus, une fois par repos long : vous retrouvez votre gloire pendant 3 tours. Vous volez et vos attaques infligent 1d6 dégâts de force supplémentaires (type de votre domaine si vous êtes une Divinité pure).</content>
+	<content contentuid="hef71bc58g791fg5d8cg810cg3e8d772b80fd" version="1">DOC_Classe_Marqueur</content>
+	<content contentuid="h61c184c3g5c90g59bbg9c0bg1be5b36f3fbc" version="1">Loi absolue (5)</content>
+	<content contentuid="hc52222afgd673g5528g8b7eg4e6897252fb5" version="1">Votre volonté plie le hasard : vos jets de d20 (attaques, tests, sauvegardes) ne peuvent pas donner moins de 5.</content>
+	<content contentuid="he8186404ge319g564dg9589g81df1c4832cc" version="1">Loi absolue (8)</content>
+	<content contentuid="hcc1ad982ga289g526bgaddfg16deb3613077" version="1">Votre volonté plie le hasard : vos jets de d20 (attaques, tests, sauvegardes) ne peuvent pas donner moins de 8.</content>
+	<content contentuid="hf17a4926gd025g512bga850ge89001061189" version="1">Loi absolue (10)</content>
+	<content contentuid="hca97aff5gfbcbg5287ga385g23882fcd39a2" version="1">Votre volonté plie le hasard : vos jets de d20 (attaques, tests, sauvegardes) ne peuvent pas donner moins de 10.</content>
+	<content contentuid="h2cbe7b02g8432g53edga84bg7a1af40bf4e0" version="1">Lié par décret</content>
+	<content contentuid="ha29ba090g2ba7g5ba8g8ca2gd3cecf19251e" version="1">Un décret divin vous enchaîne : impossible de vous déplacer ou de réagir.</content>
+	<content contentuid="h658a06f3ge98cg5735gb770g4424bce78e00" version="1">Décret : Purifier</content>
+	<content contentuid="hb3a33aa7g4b9cg5be6gb9a3g2231af4e264a" version="1">Action bonus, 1 Décret : retirez d'un allié les états Empoisonné, Aveuglé, Charmé, Effrayé, Paralysé, Étourdi, Entravé et les maladies.</content>
+	<content contentuid="he44f2748gd20fg533cgaedeg8ceedd4c973e" version="1">Décret : Lier</content>
+	<content contentuid="h0d195660gae2cg57d4g8b36gd40fd3bf63df" version="1">Action, 1 Décret : la cible doit réussir un jet de sauvegarde de Sagesse ou être Liée pendant 2 tours (elle ne peut ni se déplacer ni réagir).</content>
+	<content contentuid="h71d07db0gdaccg5987g8560g93bd480247bb" version="1">Décret : Protéger</content>
+	<content contentuid="h44f1070fg0053g5fa0gbe8fg3fe610d8d8ac" version="1">Réaction, 1 Décret : quand un allié proche est touché, les dégâts qu'il subit sont divisés par deux.</content>
+	<content contentuid="hb9f56ca5ged8fg51e4g857bge9ebdd9189eb" version="1">Décrets</content>
+	<content contentuid="h74ab8537g19e2g5f90gbb3bgc7a391e3dfd1" version="1">Vous imposez votre loi au monde. Vous disposez de charges de Décret (2, puis 3 au niveau 6 et 4 au niveau 10), rechargées au repos court : Protéger (réaction), Purifier (action bonus) et Lier (action).</content>
+	<content contentuid="ha0208af1gc725g5377g8a31g980cf9b4e68a" version="1">Aura d'Ordre</content>
+	<content contentuid="h35d8242cg8652g5640gad42gd828df6fe2af" version="1">Vos jets de sauvegarde ne peuvent pas donner moins de 8.</content>
+	<content contentuid="h34f7e7a6g2461g5092g8507g2fea6a5421a3" version="1">Aura d'Ordre</content>
+	<content contentuid="h9f60952dgbfe2g54b6g8a28gb2f7fdd2b314" version="1">Les alliés à 3 m profitent de votre Loi absolue sur leurs sauvegardes (minimum 8).</content>
+	<content contentuid="hd12d9c5cg9544g5b6fg9124g5fd70dcdb56b" version="1">Aura d'Ordre</content>
+	<content contentuid="ha21c4e63gbc14g5cd0gbf34g2118bddf9c83" version="1">Vos jets de sauvegarde ne peuvent pas donner moins de 8.</content>
+	<content contentuid="h8eadb6f0g326cg54e6g914dg3939faf14e4a" version="1">Aura d'Ordre</content>
+	<content contentuid="hcf43dfeegdd24g5d21g9d2fgf5b938f45a66" version="1">Les alliés à 9 m profitent de votre Loi absolue sur leurs sauvegardes (minimum 8).</content>
+	<content contentuid="h1627288dgde90g52e1g8403gd200e52d8b14" version="1">Aura d'Ordre</content>
+	<content contentuid="hc0362554g5daeg59e9g9e71gc45625571156" version="1">Vos jets de sauvegarde ne peuvent pas donner moins de 10.</content>
+	<content contentuid="hc34d9903g9bfdg5a89gb777g086c70f760ef" version="1">Aura d'Ordre</content>
+	<content contentuid="h3c47d799g11a2g52a2ga994g5ce33c3cde57" version="1">Les alliés à 9 m profitent de votre Loi absolue sur leurs sauvegardes (minimum 10).</content>
+	<content contentuid="h197a42c6g66d1g5ceegae63g21e542c48081" version="1">Aura d'Ordre</content>
+	<content contentuid="hc6cf72acgfff0g5ed9g979fgb7bafa4264eb" version="1">Les alliés à 3 m ou moins ne peuvent pas obtenir moins de 8 à leurs jets de sauvegarde.</content>
+	<content contentuid="h01b4f0bcg3739g56degad23gf0e7ffa9d213" version="1">Aura d'Ordre</content>
+	<content contentuid="h8230df68g1297g54c3g9d66g3a7ae9613f12" version="1">Les alliés à 9 m ou moins ne peuvent pas obtenir moins de 8 à leurs jets de sauvegarde.</content>
+	<content contentuid="hac09f00eg1e96g5032gb52bgaa7d4a5e0685" version="1">Aura d'Ordre</content>
+	<content contentuid="h423ff9f6g1ad1g5e97ga3e3g7493edb8afc4" version="1">Les alliés à 9 m ou moins ne peuvent pas obtenir moins de 10 à leurs jets de sauvegarde.</content>
+	<content contentuid="hfe3936d4g5666g5991g8385g50bbc3d18d59" version="1">Inébranlable</content>
+	<content contentuid="h25fcc950g733eg5bc1gaf1dgcd36fc23f1e3" version="1">Rien ne fait vaciller l'Ordre : vous ne pouvez pas être renversé, bousculé ni repoussé.</content>
+	<content contentuid="haa1d4024gbefcg5de4gafe2gcb497447d206" version="1">Ordre parfait</content>
+	<content contentuid="h03625ccag28fcg5236ga969g3ee82bf4110c" version="1">Les coups critiques ne vous touchent pas et vous ne pouvez pas tomber sous 1 PV.</content>
+	<content contentuid="h5efe65e6g24aeg5cc5ga5ebg7823332ca4d1" version="1">Ordre parfait</content>
+	<content contentuid="h515cc9cag12dcg5316gb4d7ga33822fe51bf" version="1">Les alliés à 9 m ne subissent pas de coups critiques et ne tombent pas sous 1 PV.</content>
+	<content contentuid="hf3e08be8g2c57g5d5bgbc6eg2da4807396d2" version="1">Ordre parfait</content>
+	<content contentuid="hd102a7b5g64a2g55d5ga127gc77832750e9b" version="1">Une fois par repos long, pendant 10 tours : les alliés à 9 m ne subissent pas de coups critiques et ne peuvent pas tomber sous 1 PV.</content>
+	<content contentuid="h41f0162bgc500g5af6gb0a2g98bb380d30c3" version="1">Divinité pure (Ordre)</content>
+	<content contentuid="h4a928d5ag3e65g507dgbc81g3c08c02b2ade" version="1">Si vous êtes de race Divinité : +1 charge de Décret, et votre Forme divine prend le type de dégâts de votre domaine.</content>
+	<content contentuid="h51bdd62cgee02g5cd4gb78ag6c8e5bf1b0be" version="1">Chaos primordial (critique 19-20)</content>
+	<content contentuid="h64dc09f9g0a94g5ebbg8c63gf8ec97b9caf8" version="1">Le hasard vous sert : vos attaques infligent un coup critique sur 19-20.</content>
+	<content contentuid="h0bf8910agd5cbg5fcdgabc9gd9c32b5557f2" version="1">Chaos primordial (critique 18-20)</content>
+	<content contentuid="hcfcc0a55gb44fg5e1bg8bd6g76265db08641" version="1">Le hasard vous sert : vos attaques infligent un coup critique sur 18-20.</content>
+	<content contentuid="h51618fb2ge04cg5e6bga560gea81fa61a059" version="1">Chaos primordial (critique 17-20)</content>
+	<content contentuid="h555a4226ga908g5bfdgac49g89bc0799c629" version="1">Le hasard vous sert : vos attaques infligent un coup critique sur 17-20.</content>
+	<content contentuid="he5d15fa2g3c40g58b3g84e4gb352d66e713f" version="1">Déferlement de chaos</content>
+	<content contentuid="h908b28acga971g5837gba61g548f20c118b6" version="1">Chaque sort lancé avec un emplacement a 1 chance sur 20 de déclencher un Déferlement de chaos : un effet aléatoire de magie sauvage ou un effet divin. Un 1 naturel à une attaque en déclenche un aussi.</content>
+	<content contentuid="h80c42e8bg0a0fg557bgb99cg3f4cc18658fb" version="1">DOC_Chaos_UnNaturel</content>
+	<content contentuid="h7e088169g3458g58aegb4b0g44705127842c" version="1">Entropie</content>
+	<content contentuid="haf4cc977g3443g56a2ga489ga376d4b64843" version="1">Vous gagnez 1 point d'Entropie à chaque coup critique et à chaque ennemi éliminé (maximum 3, puis 4 au niveau 6 et 5 au niveau 10). L'Entropie retombe à zéro au début et à la fin de chaque combat.</content>
+	<content contentuid="h59218141gb6f7g58b6g958ag427af9edb93a" version="1">DOC_Chaos_EntropieReset</content>
+	<content contentuid="h6b4b6a36g18aag5968g9c61g6ab2ba35a450" version="1">Défaire</content>
+	<content contentuid="hd1f073f7gd2e9g5fecg8849g095407405753" version="1">Vos dégâts ignorent les résistances de vos cibles.</content>
+	<content contentuid="h5db60195g5294g569bgb116g15e0eea7c9b3" version="1">Entropie : Pas chaotique</content>
+	<content contentuid="h8e0a5f11g9c26g524ega3e8g5d33f917a396" version="1">Action bonus, 1 Entropie : téléportez-vous à un endroit visible à 18 m ou moins.</content>
+	<content contentuid="h1fe289a3gc000g5725g8d36g85fc8a5e3342" version="1">Entropie : Défaire</content>
+	<content contentuid="hdf1281c9g999dg5b3eg8c52g0bcb8564805a" version="1">Action bonus, 2 Entropie : pendant 2 tours, vos dégâts ignorent les résistances de vos cibles.</content>
+	<content contentuid="h86f0b225ge529g5275gbb93g568765dd82a9" version="1">Entropie : Détoner</content>
+	<content contentuid="h1a7e38c6ga01dg52dfgbfb6g0685956461fd" version="1">Action, 3 Entropie : une explosion d'un élément aléatoire (feu, froid, foudre ou acide) inflige 4d6 dégâts aux ennemis à 6 m ou moins.</content>
+	<content contentuid="h53b94bb7g68e2g5df2g9a9egeb9030abdb0a" version="1">Aura de Chaos</content>
+	<content contentuid="ha07324e4g0c8dg5fcbgb848g5f227490446f" version="1">Le chaos vous ronge : -1d4 à vos jets de sauvegarde.</content>
+	<content contentuid="hf1e0cca9ge3bbg55c9gb984g541235571f1f" version="1">Aura de Chaos</content>
+	<content contentuid="h175452cdgfbeag5ba2gafcag943e55875057" version="1">Les ennemis à 3 m subissent -1d4 à leurs jets de sauvegarde.</content>
+	<content contentuid="he4adbe56gb9a1g5c65g87fdgf6c85d7b5fc1" version="1">Aura de Chaos</content>
+	<content contentuid="hb98de72dg57d2g5796g8943gd2c17ace117f" version="1">Les ennemis à 3 m ou moins subissent -1d4 à leurs jets de sauvegarde.</content>
+	<content contentuid="h291d25f8g98cdg57f5gb981g5e58011b338c" version="1">Aura de Chaos</content>
+	<content contentuid="h5adf1768gc5afg5be4gad00gae0b97442690" version="1">Les ennemis à 9 m subissent -1d4 à leurs jets de sauvegarde.</content>
+	<content contentuid="h7484567cg64e2g5a1cgb6d2g9bf6a14f38a2" version="1">Aura de Chaos</content>
+	<content contentuid="h66d07b21g3481g5741g99f1g9776dc2633dc" version="1">Les ennemis à 9 m ou moins subissent -1d4 à leurs jets de sauvegarde.</content>
+	<content contentuid="h8c9b5cb8g5c75g5692gb72fg1ea5e167c8a9" version="1">Indomptable</content>
+	<content contentuid="h56197360g72e6g5f47gaf80g9aa7cce8bda7" version="1">Le chaos ne se laisse pas enchaîner : immunité à la paralysie et aux entraves (toiles, enchevêtrement...).</content>
+	<content contentuid="he4371b41g65b5g5b1ag9bb5ga2290ae9ae49" version="1">Tempête primordiale</content>
+	<content contentuid="h02224284g1055g59dcg87a5gb5f14cc52b69" version="1">Un Déferlement de chaos au début de chacun de vos tours ; coups critiques sur 15-20.</content>
+	<content contentuid="h0d7d1a57g1a14g5854g9bf3g7dbb6610606d" version="1">Tempête primordiale</content>
+	<content contentuid="h7900972ag8de2g5a64gac88g5b5b528ba570" version="1">Une fois par repos long, pendant 10 tours : un Déferlement de chaos se produit au début de chacun de vos tours et vos coups critiques passent à 15-20.</content>
+	<content contentuid="haa459fa0geeeag5a41g90b8g578a3eed4606" version="1">DOC_Chaos_TempetePrimordiale</content>
+	<content contentuid="h12db9655g4a83g5ebfg8731g020f6a03caa4" version="1">Divinité pure (Chaos)</content>
+	<content contentuid="h63fae2b2gef18g5e82g9c19g0b914bf6526c" version="1">Si vous êtes de race Divinité : +1 Entropie maximum, et votre Forme divine prend le type de dégâts de votre domaine.</content>
+	<content contentuid="hc5f69d66g1b92g502ag94fcg5235e94fc95f" version="1">Déferlement : Bénédiction chaotique</content>
+	<content contentuid="h69e1803dg0d20g52c4ga0b3g804cc261268b" version="1">Vos alliés à 9 m sont bénis pendant 3 tours.</content>
+	<content contentuid="heccbf07fgcf62g5c61g9263ga573fd94a078" version="1">Déferlement : Éclat primordial</content>
+	<content contentuid="h5d2ccbdbg4a88g50f3gbe94gf8c0c8806c15" version="1">Les ennemis à 6 m subissent 2d8 dégâts de force.</content>
+	<content contentuid="hd3c0d8b4gf7eag591agbcfag5fd90f9c360e" version="1">Déferlement : Ascension fugace</content>
+	<content contentuid="h97f6ade5gf095g569eg95afg593ddd7c8ca9" version="1">Vous volez pendant 2 tours.</content>
+	<content contentuid="h3130e60ag9c17g5004gbf98g3e124e5ae79a" version="1">Déferlement : Souffle vital</content>
+	<content contentuid="h69d251bdg30f0g5b9fgaafbgf73aedd5eefd" version="1">Vous récupérez 2d8 PV.</content>
+	<content contentuid="hd173000cg423fg5c98g9c0bg4d332161b1f2" version="1">Déferlement : Couronne d'entropie</content>
+	<content contentuid="hcebc7e4cg26e1g58fbg9cbcga9f9ec126100" version="1">Vous gagnez 1 point d'Entropie.</content>
+	<content contentuid="h0fd8378dgb7a3g5e35g8b03g6b5ef0a8329c" version="1">Déferlement : Contrecoup divin</content>
+	<content contentuid="h951893f0g3b8cg5c2fga6d5ga786e6ed2bd6" version="1">Le chaos se retourne contre vous : vous subissez 1d10 dégâts de force.</content>
+	<content contentuid="hbb452f21gbdf4g5bb1g8140g8dc8a47f18db" version="1">Détonation (feu)</content>
+	<content contentuid="hc2659f59g14ceg53e5gaf57g0071d5a03cd7" version="1">Les ennemis à 6 m subissent 4d6 dégâts de feu.</content>
+	<content contentuid="hc66c4273g5d13g5bcdgae06g45226a78404e" version="1">Détonation (froid)</content>
+	<content contentuid="h7a6f1c3cg2600g5042g9d5dgde8bcd67c032" version="1">Les ennemis à 6 m subissent 4d6 dégâts de froid.</content>
+	<content contentuid="h3603e2a4g8754g5bafg8572gae49f172ac2a" version="1">Détonation (foudre)</content>
+	<content contentuid="hf6e8f809g7372g519bgb1e6g3da1f994a1d9" version="1">Les ennemis à 6 m subissent 4d6 dégâts de foudre.</content>
+	<content contentuid="h0408afddg39a6g5d1cg8697gdb431dbac564" version="1">Détonation (acide)</content>
+	<content contentuid="h215e1430g1149g575fgb671g812f15703c82" version="1">Les ennemis à 6 m subissent 4d6 dégâts d'acide.</content>
+	<content contentuid="h84ab2cf7g84e1g5fafgbca9g6eba8f293ea8" version="1">Verdict lumineux</content>
+	<content contentuid="h3b65436eg1ae1g5521g9d2cg0bb6dcdfd54e" version="1">Un trait de lumière divine (4d6 dégâts radiants, augmente aux niveaux 5, 9 et 12). La prochaine attaque contre la cible a l'avantage.</content>
+	<content contentuid="hef9fd45dg0087g5dddga518g366a209e52bc" version="1">Chaînes de la Loi</content>
+	<content contentuid="hf2de791dg5cd2g57edg8874ga8090b06a599" version="1">La cible (n'importe quelle créature) doit réussir un jet de sauvegarde de Sagesse ou être paralysée et subir 2d8 dégâts radiants (augmente aux paliers). Pas de concentration.</content>
+	<content contentuid="h109b7181g95e7g5ce3g9f86gba60ac92e3db" version="1">Égide de l'Ordre</content>
+	<content contentuid="h2bf599bcgf9bcg590cga637gd8d1501a8c72" version="1">+2 à la CA et +2 aux jets de sauvegarde.</content>
+	<content contentuid="h99da5580g38deg538fg826cg26c7bb20c089" version="1">Égide de l'Ordre</content>
+	<content contentuid="hf2293b6dg06e6g5ef4g8a76g731b76bb4e6a" version="1">Jusqu'à 6 alliés gagnent +2 à la CA et +2 aux jets de sauvegarde pendant 10 tours. Pas de concentration.</content>
+	<content contentuid="h5e642bfcg794cg518bg9410gc90599627737" version="1">Bannissement absolu</content>
+	<content contentuid="h65e83744g9716g5566gbbb5gaa53e00e9674" version="1">La cible doit réussir un jet de sauvegarde de Charisme ou être bannie pendant 3 tours. Pas de concentration.</content>
+	<content contentuid="hb844580eg0ed5g5541g9b2fge95aeedc6efc" version="1">Décret d'immobilité</content>
+	<content contentuid="h747d32fbg3c6cg5590ga788gc0d3f53086d4" version="1">Toutes les créatures dans une zone de 3 m doivent réussir un jet de sauvegarde de Sagesse ou être paralysées. Pas de concentration.</content>
+	<content contentuid="h2127cd18gc962g5002ga8a9g68f96d289e8b" version="1">Jugement de l'Ordre</content>
+	<content contentuid="hcfcb8ff2g8422g595dga750gf6920b1c8030" version="1">Une colonne de lumière s'abat sur une zone de 6 m : 10d8 dégâts radiants (12d8 au niveau 12), la moitié en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="h1af9ebb8g8066g5c9dg80c2g8ae00a5fa8e4" version="1">Trait primordial</content>
+	<content contentuid="hbc89efd9gd3b8g52efg9e8ag41ceeb64a227" version="1">Un éclair de chaos pur : 3d8 dégâts de force (augmente aux niveaux 5, 9 et 12).</content>
+	<content contentuid="hedc6ad85ge7c6g54ccg961cg0c6585b7aab8" version="1">Fracture du réel</content>
+	<content contentuid="h23a399e9g7d01g508aga1ffga5a992372705" version="1">La réalité se brise dans une zone de 4 m : 3d8 dégâts de force (augmente aux paliers), moitié en cas de sauvegarde de Constitution réussie.</content>
+	<content contentuid="h889da633g12a9g5112gb3b8g8f5bb64b6765" version="1">Foudre du chaos</content>
+	<content contentuid="h9d55cfc3g80e1g5622gb7cfgb99e12065f83" version="1">La foudre frappe une zone : 4d10 dégâts de foudre (augmente aux paliers), moitié en cas de sauvegarde de Dextérité réussie. Le sol est électrifié.</content>
+	<content contentuid="hdc8dddd1g3f24g5fe3g9cc1g155f2ba71960" version="1">Grêle d'entropie</content>
+	<content contentuid="hfe89af62gf3a7g5248g8386gf9882fe35901" version="1">Une pluie d'éclats chaotiques : 6d8 dégâts de force (augmente aux paliers) et Hébété 1 tour ; moitié des dégâts et pas d'effet en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="h22753eb6g981cg5991gb375ga29798af6e25" version="1">Flétrissure du chaos</content>
+	<content contentuid="hbea9a496gc90cg5d59ga1abg7750a6aebdc9" version="1">Le chaos défait la cible : 9d8 dégâts de force (11d8 au niveau 12), moitié en cas de sauvegarde de Constitution réussie.</content>
+	<content contentuid="h8c57b522g01b0g51d8ga51cga6243650b56b" version="1">Apocalypse primordiale</content>
+	<content contentuid="had4dcb50g797cg5485gb2a2g9dbbcf36a4ff" version="1">Le chaos originel embrase une zone de 6 m : 6d8 dégâts de feu et 6d8 dégâts de force (7d8 + 7d8 au niveau 12), moitié en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="hf6c05110gaebbg5b7eg944ag52a7e6cb1ae6" version="1">DOC_Vie_Marqueur</content>
+	<content contentuid="hde7a7afag0d34g5561gbf9bg16dc8ea8c9d3" version="1">Affinité divine : radiant</content>
+	<content contentuid="ha3f8f943gd769g596bg8c5dg5839f5d41030" version="1">Vous êtes résistant aux dégâts radiants.</content>
+	<content contentuid="hd96ca901g71a8g5637ga875g790cc75bc57b" version="1">Affinité divine : radiant (immunité)</content>
+	<content contentuid="h17e61805g554eg5ef1g9715gfda4289cba92" version="1">Vous êtes immunisé contre les dégâts radiants.</content>
+	<content contentuid="hef688222g635fg5945g94bege0d58f332993" version="1">Affinité divine : radiant (absorption)</content>
+	<content contentuid="he6564fb1g4313g5217ga362g405d9c307296" version="1">Les dégâts radiants vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h753eaa08g071fg576fgb499gac46a0ac6af2" version="1">Contrepoids : nécrotique</content>
+	<content contentuid="hb07c77bdg9f8eg5174g8973g3a89e0e1de5d" version="1">Vous êtes vulnérable aux dégâts nécrotiques, l'élément de votre domaine opposé.</content>
+	<content contentuid="h0822b5dbgddcdg5acfga329g2e858a10eba1" version="1">Contrepoids : nécrotique</content>
+	<content contentuid="h39fda294g7207g52afg924cg5c5fa17863ed" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts nécrotiques, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h9d371dffged69g5d67g9f63gdf4bae9a505f" version="1">DOC_Justice_Marqueur</content>
+	<content contentuid="h630052a2g4a19g58ecgb6c1g4558c0ee6d12" version="1">Affinité divine : foudre</content>
+	<content contentuid="h0f28b6f3g8e43g5a9bgbe1cg81e8449bcfee" version="1">Vous êtes résistant aux dégâts de foudre.</content>
+	<content contentuid="hc1d9ba84g13cbg5edbga1eag81cee7d5c510" version="1">Affinité divine : foudre (immunité)</content>
+	<content contentuid="h9f8f5071gee76g5095gb417g594199e366ad" version="1">Vous êtes immunisé contre les dégâts de foudre.</content>
+	<content contentuid="hf5efc294g2ae4g56cfg9154g65b468e79c81" version="1">Affinité divine : foudre (absorption)</content>
+	<content contentuid="h5c511ccbg28a7g5e1dg962ag29fd4071ec78" version="1">Les dégâts de foudre vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h65390212ga23fg5102ga28eg5067cbd396ba" version="1">Contrepoids : poison</content>
+	<content contentuid="hba6acff6gb872g572bgb200gd62791cc36f3" version="1">Vous êtes vulnérable aux dégâts de poison, l'élément de votre domaine opposé.</content>
+	<content contentuid="hbd0bd106gc765g5cd7g8bf8gd1977870c6fd" version="1">Contrepoids : poison</content>
+	<content contentuid="h28fb0c49g915dg5855g9e7dgbe93ec7bc930" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts de poison, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h09b404bdgfbbcg5d03g881bg300f1fb186b7" version="1">DOC_Magie_Marqueur</content>
+	<content contentuid="h0dd29c17g02ddg5d20g91a8gaa4f02eef89a" version="1">Affinité divine : force</content>
+	<content contentuid="h17144e06g5c10g51ccga262g3bb731aaa35c" version="1">Vous êtes résistant aux dégâts de force.</content>
+	<content contentuid="hc28a3559g3c78g5d4cg96ddgf3f95b0a7e8c" version="1">Affinité divine : force (immunité)</content>
+	<content contentuid="hd49796dbg4317g5251g8d3dge53193c771e2" version="1">Vous êtes immunisé contre les dégâts de force.</content>
+	<content contentuid="hbbd3b5fagf4d9g581fg8452ge8ba05f5b05a" version="1">Affinité divine : force (absorption)</content>
+	<content contentuid="h83d31618g79cdg588aga4c3g6b7d7b45401b" version="1">Les dégâts de force vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h2376dec4g757fg5df2gad96g65caabe5a7f9" version="1">Contrepoids : acide</content>
+	<content contentuid="ha4b622c1g2fd5g5f8aga4c6g01a7312b640c" version="1">Vous êtes vulnérable aux dégâts d'acide, l'élément de votre domaine opposé.</content>
+	<content contentuid="h6af596edg4097g59a8gb1e6g190e19a69333" version="1">Contrepoids : acide</content>
+	<content contentuid="ha9379326g987cg5e29gabeag4fb7b263e46e" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts d'acide, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h4aa7df77g460fg5c53g918dg07e1e0b12db0" version="1">DOC_Soleil_Marqueur</content>
+	<content contentuid="hc5cfac16g0c8cg5140g9bdcga4214446d76e" version="1">Affinité divine : feu</content>
+	<content contentuid="hd1b19cf2ga467g5208g9b85gd7925214847a" version="1">Vous êtes résistant aux dégâts de feu.</content>
+	<content contentuid="h219ef4e1g5ebcg52fdg8916g401cc62e86c7" version="1">Affinité divine : feu (immunité)</content>
+	<content contentuid="h5ed753ffg6523g5cc0ga43dgd305a5589a82" version="1">Vous êtes immunisé contre les dégâts de feu.</content>
+	<content contentuid="hcc06d433g1118g5cf2g8cf8gc3d38cca8ace" version="1">Affinité divine : feu (absorption)</content>
+	<content contentuid="ha20c48fcg0294g51c3gbbc9g9bc9267e29c7" version="1">Les dégâts de feu vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="hf98d2953g46a4g506aga86eged5c46ce3823" version="1">Contrepoids : froid</content>
+	<content contentuid="h89e8b707gc8c3g5b2cgb78bg33304e2a0f08" version="1">Vous êtes vulnérable aux dégâts de froid, l'élément de votre domaine opposé.</content>
+	<content contentuid="h20a7ef44gfd9cg515ag8e45g367e5f2c633c" version="1">Contrepoids : froid</content>
+	<content contentuid="h707ad7a9gb748g5c8egb27bg0f3c15326a6e" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts de froid, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h8cc0df4cg62a7g5954g8c87ge48786fc3373" version="1">DOC_Paix_Marqueur</content>
+	<content contentuid="h1638d360gc7e1g577fg823dg3bf26ca33372" version="1">Affinité divine : psychique</content>
+	<content contentuid="h84954344g7860g5eb9g9658gb950f5554d9c" version="1">Vous êtes résistant aux dégâts psychiques.</content>
+	<content contentuid="hf29fbbfagf45dg5395ga14cga85f6a300d50" version="1">Affinité divine : psychique (immunité)</content>
+	<content contentuid="h90feb4b2g4e46g560bgb4degf54621715e43" version="1">Vous êtes immunisé contre les dégâts psychiques.</content>
+	<content contentuid="h2e26521ag8ee7g5063gafa9g003446c1b2a6" version="1">Affinité divine : psychique (absorption)</content>
+	<content contentuid="hbbd8f9e7g4a58g56c5gb4d1gd6ec2eecd120" version="1">Les dégâts psychiques vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h6c73e364gce73g5d76gb791g8c22eb6f46cb" version="1">Contrepoids : tonnerre</content>
+	<content contentuid="h5f99fe4cg40acg5278ga284ge9b68245a1c9" version="1">Vous êtes vulnérable aux dégâts de tonnerre, l'élément de votre domaine opposé.</content>
+	<content contentuid="hd2373d47g88c4g5338g8770g08c65ea10070" version="1">Contrepoids : tonnerre</content>
+	<content contentuid="h91f74279g1aa2g5066g8f59g429fc8ffba10" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts de tonnerre, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h2898380agfadfg5b64gbfc1g537b44624de8" version="1">DOC_Mort_Marqueur</content>
+	<content contentuid="hd2d2fc10ge0ebg5940g91feg668bc93cf0c1" version="1">Affinité divine : nécrotique</content>
+	<content contentuid="h0b2099bag7d43g558dgb137gc408200dd2c1" version="1">Vous êtes résistant aux dégâts nécrotiques.</content>
+	<content contentuid="h66fbb6cdgd113g55a4gab06g8f0fefa3dae2" version="1">Affinité divine : nécrotique (immunité)</content>
+	<content contentuid="ha00c2e0fg1441g5ca8gaaacge29b041d5f77" version="1">Vous êtes immunisé contre les dégâts nécrotiques.</content>
+	<content contentuid="h67f2aa13g88dag5557g9bfcg697d34b3eb06" version="1">Affinité divine : nécrotique (absorption)</content>
+	<content contentuid="hf85b630dg4603g5e1bgbc38g1a165aba974b" version="1">Les dégâts nécrotiques vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="hb75b4b3cg5280g517bg9fcege2380ab7065a" version="1">Contrepoids : radiant</content>
+	<content contentuid="h0024d57bgc967g57f5g9ee7gaf340882f2f4" version="1">Vous êtes vulnérable aux dégâts radiants, l'élément de votre domaine opposé.</content>
+	<content contentuid="hfc4a2029g2a7fg5e4cg9623gfc2abe71334e" version="1">Contrepoids : radiant</content>
+	<content contentuid="h912b674cg0a07g5f7fgb926gd967f000a4e0" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts radiants, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h6114d363g2c3fg5710gab9dg765258ae2c3b" version="1">DOC_Tromperie_Marqueur</content>
+	<content contentuid="h5cd0aea6g641eg5ed5g9815g255a1a219a4b" version="1">Affinité divine : poison</content>
+	<content contentuid="hbec9b71dgec2dg5d2fgb46fgfe2b2981d07a" version="1">Vous êtes résistant aux dégâts de poison.</content>
+	<content contentuid="h566a2173g4778g50beg8638g4cc7612bb623" version="1">Affinité divine : poison (immunité)</content>
+	<content contentuid="hf74744a0g66bdg522egbb07gdb139ac129db" version="1">Vous êtes immunisé contre les dégâts de poison.</content>
+	<content contentuid="he92fb61agc28eg5ad9g90cdgcb0c1345df62" version="1">Affinité divine : poison (absorption)</content>
+	<content contentuid="he080b6d1g7224g5c61gb3dag0c0cacd2c955" version="1">Les dégâts de poison vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h9beb2799g9f08g50e7gb721gcaa00b38bc89" version="1">Contrepoids : foudre</content>
+	<content contentuid="hfd139f76gbadbg5044g8644gf185b60a0bac" version="1">Vous êtes vulnérable aux dégâts de foudre, l'élément de votre domaine opposé.</content>
+	<content contentuid="hd537a096g2cefg5e02gbedeg433246b74c80" version="1">Contrepoids : foudre</content>
+	<content contentuid="h7f17b3e0g0f1eg5611ga3bfgf647c31b985f" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts de foudre, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h73b666deg603bg5960gbc11gc916c4fa51c0" version="1">DOC_Sorcellerie_Marqueur</content>
+	<content contentuid="h7a41de6cg231dg53d7g9b59geeac880a95d2" version="1">Affinité divine : acide</content>
+	<content contentuid="h934bde86g7e9eg56a7g9db8g38f375fd8009" version="1">Vous êtes résistant aux dégâts d'acide.</content>
+	<content contentuid="hdd686d06g2f6ag5166g9cbagee5c4334226a" version="1">Affinité divine : acide (immunité)</content>
+	<content contentuid="h83a04c70gcea4g54c1ga4fega5f13a906025" version="1">Vous êtes immunisé contre les dégâts d'acide.</content>
+	<content contentuid="h6be89a67g7644g5b9cg95e4gdbc01ecab556" version="1">Affinité divine : acide (absorption)</content>
+	<content contentuid="he3f7c8acg57bbg57d7g8ff4ge059472007ab" version="1">Les dégâts d'acide vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h37635906g57b8g5dd6ga52cg47e3606173b6" version="1">Contrepoids : force</content>
+	<content contentuid="hc2b80382gdacbg519cgafbdgbece2b247bdc" version="1">Vous êtes vulnérable aux dégâts de force, l'élément de votre domaine opposé.</content>
+	<content contentuid="h64b27dd7ge679g55a5g9ef6g3834789a160d" version="1">Contrepoids : force</content>
+	<content contentuid="hc4d3517eg2c6ag51cag861cgf5cb19e58e05" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts de force, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="haea76177gbe46g5b25g96e4g1c5efb8c9364" version="1">DOC_Lune_Marqueur</content>
+	<content contentuid="h414aa290g6172g5c49g80a8gb22bba7cd17b" version="1">Affinité divine : froid</content>
+	<content contentuid="hfb79d339ge445g5fefgaa28gaafc695bfa10" version="1">Vous êtes résistant aux dégâts de froid.</content>
+	<content contentuid="h4783c982g66b2g5ebcg9982g50cf8e5ae91d" version="1">Affinité divine : froid (immunité)</content>
+	<content contentuid="h45133e88ga94ag5515g8aa7ge85b1a0e255f" version="1">Vous êtes immunisé contre les dégâts de froid.</content>
+	<content contentuid="h72cbe97ag371ag5933gab8agbc921ce8b4a4" version="1">Affinité divine : froid (absorption)</content>
+	<content contentuid="h35f80205g4170g5ef7ga4bbg5db31a88721b" version="1">Les dégâts de froid vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="hbdbe38abg37dbg5561ga801g50c14fc55bf6" version="1">Contrepoids : feu</content>
+	<content contentuid="h3dc82ecag2d87g5d95gb4c0gea810daa74e2" version="1">Vous êtes vulnérable aux dégâts de feu, l'élément de votre domaine opposé.</content>
+	<content contentuid="h65d05accg6483g537agb6ebg86ab05315d8c" version="1">Contrepoids : feu</content>
+	<content contentuid="h40b3c0degd88eg536eg8232gccfce0fcd209" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts de feu, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h2a330e1agb69cg5d3bg9e18gd5014878b48f" version="1">DOC_Guerre_Marqueur</content>
+	<content contentuid="he0dcd571g9612g525fg85d7g9cbc43c83606" version="1">Affinité divine : tonnerre</content>
+	<content contentuid="hae37c033g0bfbg5a5fg9979g84f111543c00" version="1">Vous êtes résistant aux dégâts de tonnerre.</content>
+	<content contentuid="he9d3533bg154eg550bg913dg34ec91bac77a" version="1">Affinité divine : tonnerre (immunité)</content>
+	<content contentuid="h98d15a60g0836g565bg90a1ge397c87b25be" version="1">Vous êtes immunisé contre les dégâts de tonnerre.</content>
+	<content contentuid="h38a32617gc888g5a1ag9f95g100fbba26343" version="1">Affinité divine : tonnerre (absorption)</content>
+	<content contentuid="h573d536fgb2ccg5390ga922gac746e1f3fdc" version="1">Les dégâts de tonnerre vous soignent au lieu de vous blesser : chaque fois qu'ils vous atteignent (sorts, attaques, états ou surfaces), vous récupérez 3d8 PV.</content>
+	<content contentuid="h1046a52eg36edg5209g8849g0e8df3061b10" version="1">Contrepoids : psychique</content>
+	<content contentuid="h6ca47f2ag758bg5bc0gb5b1g9fe2cdffb3c9" version="1">Vous êtes vulnérable aux dégâts psychiques, l'élément de votre domaine opposé.</content>
+	<content contentuid="h2cd4bc7cg33feg576eg87e8g447e27d962bb" version="1">Contrepoids : psychique</content>
+	<content contentuid="hb7c16bcagc8b9g5d0dg98a2g89eb3d3f65bc" version="1">(Optionnel, activé par défaut.) Vous êtes vulnérable aux dégâts psychiques, l'élément de votre domaine opposé. Désactivez ce passif pour jouer sans contrepoids.</content>
+	<content contentuid="h192535e9g70a3g533ega4ccg992b8c3e056a" version="1">Vie débordante</content>
+	<content contentuid="h488def5eg0870g50f3g8dddgb5fe9fb84c17" version="1">Vos sorts de soins (hors tours de magie) rendent en plus autant de PV que votre niveau de Divinité de l'Ordre, et la cible gagne autant de PV temporaires.</content>
+	<content contentuid="h1d50edb8gd334g5c47g8d17g175e1c34a7da" version="1">Fil de vie</content>
+	<content contentuid="he6918c72gaf7bg50deg9cf4g7738bc99abf0" version="1">Si vous tombez à 0 PV, vous restez à 1 PV à la place (une fois).</content>
+	<content contentuid="he98d46acgf576g5655gac9dg1e4dbb40f452" version="1">Fil de vie</content>
+	<content contentuid="h7d6ada19gb1a8g5db5g99d9g5acf5404b2b9" version="1">Action bonus, une fois par repos court : tissez un fil de vie autour d'un allié pendant 10 tours. S'il tombe à 0 PV pendant ce temps, il reste à 1 PV.</content>
+	<content contentuid="h1f6e7417g8f5bg5eceg8963g929875bac7a3" version="1">Aura vitale</content>
+	<content contentuid="h5af314ceg8aadg5d53gaa80g107c426a715e" version="1">Vous récupérez 1d4 PV au début de votre tour.</content>
+	<content contentuid="hff15b837gd32fg5085g8db4g7af1a1fc644e" version="1">Aura vitale</content>
+	<content contentuid="he7074d13g0488g5260ga5f3g65cb4ff0a52d" version="1">Les alliés à 3 m récupèrent 1d4 PV au début de leur tour.</content>
+	<content contentuid="h20811214gaa8cg5113gb007g5f62b4cd6393" version="1">Aura vitale</content>
+	<content contentuid="h2aceeaedgec91g5801g9731g3ae36cd68fe0" version="1">Les alliés à 3 m ou moins récupèrent 1d4 PV au début de leur tour.</content>
+	<content contentuid="ha070c32bg0e4eg52f9g9a9bgece27734e312" version="1">Renaissance</content>
+	<content contentuid="hdff399a5gdd8cg506bgb688gea898d284331" version="1">Une fois par repos long : tous les alliés inconscients à 9 m se relèvent avec la moitié de leurs PV.</content>
+	<content contentuid="he91401f2gcb94g5821gb683gf5364315bcd4" version="1">Souffle de vie</content>
+	<content contentuid="h58489aa5gd929g546fg9442g832f9ef954a7" version="1">Action bonus : les alliés proches récupèrent 2d8 + votre modificateur de Sagesse PV (+1d8 aux niveaux 5, 9 et 12) et sont débarrassés des états Empoisonné, Aveuglé et des maladies.</content>
+	<content contentuid="h1c9b4dcdgd34bg5db3g914fg53c6fa081b58" version="1">Éclat de vie</content>
+	<content contentuid="h78fbc0ddg9f66g561eg8c03g9643b420139d" version="1">Une flamme de vie brûle la cible : 4d10 dégâts radiants (augmente aux paliers), moitié en cas de sauvegarde de Dextérité réussie. Vous récupérez 2d8 PV.</content>
+	<content contentuid="hd7a08943g7b8cg5ce3g94f2g739b37f830da" version="1">DOC_Justice_Juge</content>
+	<content contentuid="h932d7dbdgcafdg5c7aga30eg734071c69854" version="1">Marque du jugement</content>
+	<content contentuid="hf11f1208ge2f6g5a6dg9b80gcdb0ec80ae25" version="1">Marqué par une divinité de la Justice : ses attaques vous infligent 1d6 dégâts de foudre supplémentaires, et vous subissez 1d6 dégâts de foudre si vous attaquez quelqu'un d'autre qu'elle.</content>
+	<content contentuid="hbe445376g8d07g5eefg8171gd2ea22a055e2" version="1">DOC_Justice_MarqueRiposte</content>
+	<content contentuid="ha097f832g489eg587fgb050g27b08fece19b" version="1">Marque du jugement</content>
+	<content contentuid="hd11bbeeag2178g574dga5acgbcb5c1f9d3fe" version="1">Action bonus : marquez une créature pendant 10 tours. Vos attaques contre elle infligent 1d6 dégâts de foudre supplémentaires ; elle subit 1d6 dégâts de foudre si elle attaque quelqu'un d'autre que vous.</content>
+	<content contentuid="ha3246290g8ff5g534cg8b02g2d60f114571c" version="1">Marque du jugement</content>
+	<content contentuid="hb7d1f30dg5369g5c37g843ege33382ed3be1" version="1">Action bonus : marquez une créature pendant 10 tours. Vos attaques contre elle infligent 1d6 dégâts de foudre supplémentaires ; elle subit 1d6 dégâts de foudre si elle attaque quelqu'un d'autre que vous.</content>
+	<content contentuid="h3b0efa01g3685g534dga9bcg0cfe84f73555" version="1">Vision véritable</content>
+	<content contentuid="h153131degc5f6g5849gb553geadbd20813ca" version="1">Rien n'échappe à la Justice : vous voyez les créatures invisibles.</content>
+	<content contentuid="h1e66b85dg29f4g5fc9g9ec4g06d156761a84" version="1">Rétribution</content>
+	<content contentuid="hdfc49d2ag69e1g58f8gb3dbgac37322bbb2b" version="1">La foudre frappe celui qui a osé toucher votre allié : 2d8 dégâts de foudre.</content>
+	<content contentuid="h682e9dc7gad00g5c45g8017g6a79a5a7daa4" version="1">Rétribution</content>
+	<content contentuid="h974f5499g9768g57d2g9734g32d20100b41d" version="1">Réaction : quand un ennemi touche un allié à 9 m ou moins, la foudre le frappe (2d8 dégâts de foudre).</content>
+	<content contentuid="h4e42e533g6c61g590ag8e1fg9965557d4481" version="1">Rétribution</content>
+	<content contentuid="hed30a30cg292cg58b8gae6ega84967943db7" version="1">Réaction : quand un ennemi touche un allié à 9 m ou moins, il subit 2d8 dégâts de foudre.</content>
+	<content contentuid="h65a7efb9g58f5g5ea5g8912gd8362caa6d43" version="1">Verdict final</content>
+	<content contentuid="hda4c02e2g976ag5572g904egde57d544e017" version="1">Une fois par repos long. La cible fait un jet de sauvegarde de Constitution. Échec : si elle a moins de 25 % de ses PV, elle est exécutée ; sinon elle subit 10d10 dégâts de foudre. Réussite : 6d10 dégâts de foudre.</content>
+	<content contentuid="hb26551cfg19e6g5acfgb4aeg3bc165687e79" version="1">Jugement céleste</content>
+	<content contentuid="hd2641eddgf75fg5bbbg97ffg1af2843bc89e" version="1">La foudre divine frappe : 2d10 dégâts de foudre (+1d10 aux niveaux 5, 9 et 12), doublés si la cible porte votre Marque du jugement. Moitié en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="hc8624b6dg01c8g5fecga618g00454dc9b267" version="1">Glaive de la sentence</content>
+	<content contentuid="h28af0effg23e5g5727gb782g6e8d25b34b30" version="1">Une attaque d'arme chargée de foudre : dégâts de l'arme + 3d8 dégâts de foudre (augmente aux paliers). La cible doit réussir un jet de sauvegarde de Force ou tomber À terre.</content>
+	<content contentuid="hb0e4ef2dg2c10g5208gb0a7g2e812de8be76" version="1">Codex</content>
+	<content contentuid="hb87ab0f2g5f8fg5308g90cbgf8d90f221710" version="1">Comme un magicien, vous pouvez apprendre des sorts à partir des parchemins.</content>
+	<content contentuid="h5f1f57a7g85e5g540aga494g449ed230a75c" version="1">Arbitre de la Trame</content>
+	<content contentuid="h076ec283g91e7g5b20g86a1g0d1273713719" version="1">Réaction, une fois par repos court : contrez un sort lancé par un ennemi, sans emplacement de sort.</content>
+	<content contentuid="hf559d365g30a6g53c0gb6a0gc83529e4fc12" version="1">Arbitre de la Trame</content>
+	<content contentuid="hb656a11eg926dg5c36g93d2g52871a52cdcd" version="1">Réaction, une fois par repos court : contrez un sort ennemi sans dépenser d'emplacement de sort.</content>
+	<content contentuid="h39a5e198g830eg573egb142g99269e10a9a3" version="1">Focalisation absolue</content>
+	<content contentuid="h70f35a7dg1f64g5c6eg8169g04cd1b081590" version="1">Les dégâts ne brisent plus votre concentration.</content>
+	<content contentuid="hffaca866g01ecg585bgba2egb8b75ba0e7ca" version="1">Maîtrise des sorts</content>
+	<content contentuid="h356b93eega01eg5b4egb854gc464bd3a22e5" version="1">Choisissez un sort de niveau 1 et un sort de niveau 2 : vous pouvez les lancer sans emplacement de sort, une fois par tour.</content>
+	<content contentuid="h9776612cg59d1g5a9eg85e8g0b692eb68365" version="1">Salve de l'Ordre</content>
+	<content contentuid="h8d84e796g99c8g5345g928bg6c263cea5be0" version="1">5 projectiles de force qui touchent toujours : 1d4+1 dégâts de force chacun.</content>
+	<content contentuid="hc090be8bge099g5d5bga3bcg9eee3eebb7d0" version="1">Pulsation arcanique</content>
+	<content contentuid="h17ff9d16gebf7g5776g8c72gdac497c8f881" version="1">Une onde de pure magie dans une zone de 5 m : 5d8 dégâts de force (augmente aux paliers), moitié en cas de sauvegarde de Constitution réussie.</content>
+	<content contentuid="hee5fc391gaf03g5d5bgb4e1gd9479c65f489" version="1">Feu solaire</content>
+	<content contentuid="h30f4a3e7ga2c3g5999ga86bgea24471b77c8" version="1">Vos dégâts de feu ignorent la résistance au feu.</content>
+	<content contentuid="hd41a9e7ag161cg55b6g9dbdg86dc6575a985" version="1">Éruption solaire</content>
+	<content contentuid="h8a8adb34gd6b3g5900gb740g426b4c8ce6eb" version="1">Une fois par repos court : un cône de 12 m de lumière brûlante. 3d6 dégâts de feu (augmente aux paliers) ; en cas d'échec à la sauvegarde de Constitution, les cibles sont Aveuglées et En feu pendant 2 tours.</content>
+	<content contentuid="ha8278f93gca32g5d06g8b13g8051a5d38e3f" version="1">Brûlure du halo</content>
+	<content contentuid="h5bb11a9eg9ea7g534dga462g6bfb27f8d887" version="1">Vous subissez 1d6 dégâts radiants au début de votre tour.</content>
+	<content contentuid="h2cc4ef11g71c0g5772ga5c2g17c0d004f322" version="1">Halo</content>
+	<content contentuid="hcc0f1272g6846g52c4g9c35g9818926fac57" version="1">Les ennemis à 9 m subissent 1d6 dégâts radiants au début de leur tour.</content>
+	<content contentuid="hdf51d4fbg989bg513ag86fag201ecd989c1a" version="1">Halo</content>
+	<content contentuid="hfc2da2bcgc036g5decgabdag40d8bd618061" version="1">Une aura solaire de 9 m vous entoure : les ennemis qui s'y trouvent subissent 1d6 dégâts radiants au début de leur tour. Vos alliés ne sont pas affectés.</content>
+	<content contentuid="h394a053eg1608g58afgae9dg8032894ce4b1" version="1">Supernova</content>
+	<content contentuid="h03cee0a9g7965g5857gb266gdba605c79c31" version="1">Une fois par repos long : une explosion de 12d6 dégâts de feu (moitié en cas de sauvegarde de Dextérité réussie) qui laisse le sol en flammes. Grâce à votre absorption, ces flammes vous soignent.</content>
+	<content contentuid="h6b513ae5ga4edg5c2bg9412g74777c968d55" version="1">Lance solaire</content>
+	<content contentuid="h07520416g7579g55fdg88b6g92a7b7b8e016" version="1">Un trait de soleil : 2d6 dégâts de feu + 2d6 dégâts radiants (augmente aux paliers). La cible prend feu et le sol s'embrase sous elle.</content>
+	<content contentuid="h14154c81ge1a7g5e4egac72gbce084705330" version="1">Colonne solaire</content>
+	<content contentuid="hd776a6f7ge1edg5cd6g8f8cgd11d8237b749" version="1">Une colonne de feu solaire : 4d6 dégâts de feu + 4d6 dégâts radiants (augmente aux paliers), moitié en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="h2b7eccb0gee32g5aa9gabedgf26587801dea" version="1">Lien de paix</content>
+	<content contentuid="hd3966267g0b6bg52fdga670gede37b1dacfa" version="1">+1d4 aux attaques, tests et jets de sauvegarde.</content>
+	<content contentuid="h42a58eb2g0c29g506agba48g70c7467d193f" version="1">Lien de paix</content>
+	<content contentuid="h2578bf07g1ae0g5ac9g9ca3g38a2e13bd864" version="1">Liez jusqu'à 3 alliés : ils ajoutent 1d4 à leurs attaques, tests et jets de sauvegarde. Le lien dure jusqu'à votre prochain repos long.</content>
+	<content contentuid="hf9bf69d4gd558g5bf9gb477g0a70ea91a941" version="1">Apaisé</content>
+	<content contentuid="h354d1613g0e56g5b0ega494g30730ab5be33" version="1">Vous ne pouvez plus attaquer ni agir. L'effet cesse si vous subissez des dégâts.</content>
+	<content contentuid="h2de91bb3g6dedg5b5cgb0f2g30356ff3e081" version="1">Apaisement</content>
+	<content contentuid="h5eb1f07egd4cdg5aeagb768g207cf732c609" version="1">Une fois par repos court : la cible doit réussir un jet de sauvegarde de Sagesse ou ne plus pouvoir agir pendant 2 tours. L'effet cesse si elle subit des dégâts.</content>
+	<content contentuid="h4056ff38g860cg5ec7gb8e0g1207325005f7" version="1">Lien protecteur</content>
+	<content contentuid="h59f71216g7e65g576aga073gf7759a2b6c09" version="1">Réaction : quand un allié porteur de votre Lien de paix est touché, vous encaissez une partie du coup : ses dégâts sont divisés par deux.</content>
+	<content contentuid="h454e8933g16b5g50ccg9d4bg62cb1ab8cbe1" version="1">Lien protecteur</content>
+	<content contentuid="h5ecd8996gd2b8g5574g8682g4686be37d271" version="1">Réaction : quand un allié lié est touché, ses dégâts sont divisés par deux.</content>
+	<content contentuid="h04a7a67bgda5cg5377g8935gb7091bbf889a" version="1">Armistice</content>
+	<content contentuid="hb8e73298gfec6g57edg8b15gff44e869a024" version="1">Vous ne pouvez pas attaquer ni agir.</content>
+	<content contentuid="hf7a7e8bfg15e5g533cga958gcb31fbe79170" version="1">Armistice</content>
+	<content contentuid="h8d658fb6ga2b5g586dg8477g2fa64059ab09" version="1">Une fois par repos long : les ennemis à 9 m doivent réussir un jet de sauvegarde de Sagesse ou ne plus pouvoir agir pendant 2 tours ; vos alliés dans la zone récupèrent 3d8 PV.</content>
+	<content contentuid="h3810a4fbga6adg5e78g9a65g96dc1670f213" version="1">DOC_Paix_TreveRiposte</content>
+	<content contentuid="h0f44562eg8560g5df8gab72gadfe09a7e17b" version="1">Trêve sacrée</content>
+	<content contentuid="hcc69b1fagbcf0g518bgb863gf89dd6ddbabf" version="1">Quiconque vous frappe subit 2d6 dégâts psychiques.</content>
+	<content contentuid="hb0865878g48a0g5265gb45fg56acab29068a" version="1">Trêve sacrée</content>
+	<content contentuid="h25bc967ag3522g5eb6g9d2ege512e5000105" version="1">Protégez jusqu'à 3 alliés (Sanctuaire) pendant 10 tours ; un ennemi qui les frappe subit 2d6 dégâts psychiques.</content>
+	<content contentuid="hee9a3810g9ad8g5623g8233ge9729a45b665" version="1">Onde d'apaisement</content>
+	<content contentuid="h8705b3d2gd330g59ffg8417g94158d064204" version="1">Une vague psychique dans une zone de 4 m : 5d8 dégâts psychiques (augmente aux paliers) et Hébété 1 tour ; moitié des dégâts et pas d'effet en cas de sauvegarde de Sagesse réussie.</content>
+	<content contentuid="h0b51bf59gc2efg5a02gb82cgd3cef57f35f9" version="1">Tribut du faucheur</content>
+	<content contentuid="hd71cbcfagbd68g5d7ega939gcf5a98e3a902" version="1">Points de vie temporaires arrachés à vos victimes.</content>
+	<content contentuid="hde0c6a41gc40eg57abg95b1g9000f2e0c648" version="1">Tribut du faucheur</content>
+	<content contentuid="hfa9ddbb9g7dedg54e3gb4fbg9ae7c9009d67" version="1">Quand vous éliminez un ennemi, vous gagnez des PV temporaires égaux à votre modificateur de Charisme + votre niveau de Divinité du Chaos.</content>
+	<content contentuid="h3eb5e423g523eg551ag82b8g26b04583c054" version="1">Lever les morts</content>
+	<content contentuid="h4c23979eg5b87g59c0g9228gf3d3fad54f6a" version="1">Une fois par repos court, sans emplacement : relevez un cadavre en serviteur mort-vivant (squelette ou zombie).</content>
+	<content contentuid="h124b3929g8965g58f5g8b08ga4b43e40a130" version="1">Lever les morts : squelette</content>
+	<content contentuid="h0f898a6eg9242g5bb6g88d4g82d07b17cd75" version="1">Relevez un cadavre en squelette à votre service. Une fois par repos court.</content>
+	<content contentuid="h5b738166gf598g5180gbfc1ge4a8e0971e91" version="1">Lever les morts : zombie</content>
+	<content contentuid="h3e04f72dg9613g5de9g8410gd2a7c745691d" version="1">Relevez un cadavre en zombie à votre service. Une fois par repos court.</content>
+	<content contentuid="hb46dd004gc44ag5da1gbd1dgb4ed501a6711" version="1">Flétri</content>
+	<content contentuid="h86b3e1b7g826ag539dga43eg021be8192e69" version="1">Vous ne pouvez pas récupérer de PV.</content>
+	<content contentuid="h0534a9ccg4ce1g5aacg8ab1gefc15f8ba16e" version="1">Toucher flétrissant</content>
+	<content contentuid="h77ecf465gfe71g5ef0gbbe6gb3025d315bfc" version="1">Les créatures à qui vous infligez des dégâts nécrotiques ne peuvent pas être soignées jusqu'à votre prochain tour.</content>
+	<content contentuid="h57ccf116gf652g50b4gbf27gdeaf42305acb" version="1">Outre-tombe</content>
+	<content contentuid="hd4ca852eg4a85g547ag9f05ge292ceb30943" version="1">La prochaine fois que vous tombez à 0 PV, vous restez à 1 PV.</content>
+	<content contentuid="h5490d783gc275g5ff0ga0f6gd2c38a1d44f5" version="1">Souffle d'outre-tombe</content>
+	<content contentuid="h4dd55c2ag9ce1g5cf0g9c00g74271c26974d" version="1">Vous subissez 2d6 dégâts nécrotiques au début de votre tour.</content>
+	<content contentuid="h37ed10bag2f18g5a94g8630g6f1546642007" version="1">Aura d'outre-tombe</content>
+	<content contentuid="h3e87908cg4169g5e59g827dgcf26c11cee57" version="1">Les ennemis à 3 m subissent 2d6 dégâts nécrotiques au début de leur tour.</content>
+	<content contentuid="h84bbc66agbf44g5458g83d8g695562abeff7" version="1">Outre-tombe</content>
+	<content contentuid="h3e9a2207g8057g53e7gb11ag6c6d86b55b08" version="1">Une fois par repos long, quand vous devriez mourir, vous restez à 1 PV puis vous vous relevez aussitôt avec la moitié de vos PV et une aura nécrotique (2d6 par tour aux ennemis à 3 m) pendant 3 tours.</content>
+	<content contentuid="heeb35e53ge92bg59bag8e79g638029c8d86e" version="1">DOC_Mort_OutreTombe_Releve</content>
+	<content contentuid="h27ef3818gcf26g5a99g9218g7f0f79221693" version="1">Moisson des âmes</content>
+	<content contentuid="hf853b808g3702g5971ga21bg9fd624e7a767" version="1">Une vague nécrotique dans une zone de 4 m : 2d8 dégâts nécrotiques (+1d8 aux niveaux 5, 9 et 12), moitié en cas de sauvegarde de Dextérité réussie. Vous récupérez la moitié des dégâts infligés.</content>
+	<content contentuid="h2b435ac7g9dd2g54a7g848bg31f6e95d717b" version="1">Étreinte du tombeau</content>
+	<content contentuid="h81f93f07g0575g54b8gb3d1gd641398abc63" version="1">Un toucher qui draine la vie : 4d8 dégâts nécrotiques (augmente aux paliers) ; vous récupérez autant de PV que les dégâts infligés. Pas de concentration.</content>
+	<content contentuid="h7cc9fd36g2fe5g5543ga2dcg22c93e926ba7" version="1">Double illusoire</content>
+	<content contentuid="h606990cfga084g5805gb72fg691714bf2eac" version="1">Avantage à vos attaques au corps à corps.</content>
+	<content contentuid="h5d5a81a8ga034g5b58gaa2dgafd5362c193b" version="1">Double illusoire</content>
+	<content contentuid="hd8d22c95g62bag5a9cg8d65geda3fdc9ced8" version="1">Action bonus, une fois par repos court : des doubles illusoires vous entourent (Image miroir) et vous avez l'avantage à vos attaques au corps à corps pendant 10 tours.</content>
+	<content contentuid="h8a656c51gb362g54a1g8bf6gf83ef2ad53c4" version="1">Escamotage : disparition</content>
+	<content contentuid="hbd27fc57g8108g5cfbga1c9gb6efadd0e515" version="1">Téléportez-vous à un endroit visible à 18 m ou moins.</content>
+	<content contentuid="hee7bbe16gebccg51begaee4g40d9e5f2a851" version="1">Escamotage</content>
+	<content contentuid="hd739030dgb067g5e7fgafbdg78e0a08a9cd6" version="1">Vous pouvez vous téléporter en action bonus.</content>
+	<content contentuid="heb9e4b8cg6dc6g5fbbg809cgfd1fcee19085" version="1">Escamotage</content>
+	<content contentuid="hf35b89bcgef16g571bg9945g4fdb9a59606b" version="1">Réaction, une fois par repos court : quand vous êtes touché, vous devenez invisible et pouvez vous téléporter (6 m ou plus) en action bonus.</content>
+	<content contentuid="hf2401bcdg23b4g53d7ga8adgd84ac4bf7de8" version="1">Escamotage</content>
+	<content contentuid="h23cd0440gf5c3g5946g9ddag1de1cb08edc2" version="1">Réaction, une fois par repos court : quand vous êtes touché, vous devenez invisible et pouvez vous téléporter en action bonus.</content>
+	<content contentuid="hc2b7f13eg6407g5ebagb8e5gbc340347b37f" version="1">Langue d'argent</content>
+	<content contentuid="h491314e6g7c90g505ag99begf41b98764b01" version="1">Vos tests de Tromperie et de Persuasion ne peuvent pas donner moins de 15 au dé.</content>
+	<content contentuid="h593c559cg680ag5f8bga8deg6167dbe94153" version="1">Marionnettiste</content>
+	<content contentuid="hb968dbeagcdbag5e77gba9bg372406859054" version="1">Une fois par repos long : la cible doit réussir un jet de sauvegarde de Sagesse ou passer sous votre contrôle pendant 3 tours. Pas de concentration.</content>
+	<content contentuid="hbb0fcc1dg4b92g5e49gaa0dg59fc83f02c32" version="1">Baiser du traître</content>
+	<content contentuid="h0b28438dg228dg52f2gb41eg4778b9da89bd" version="1">Un rayon empoisonné : 2d8 dégâts de poison (+1d8 aux niveaux 5, 9 et 12) ; la cible est Charmée pendant 1 tour.</content>
+	<content contentuid="h466fd843gd6dcg537egad68gceed4ce30399" version="1">Nuée de venin</content>
+	<content contentuid="h4dc3446cg27ecg5e77g9c4fgfac9188b5753" version="1">Un nuage de venin dans une zone de 4 m : 5d8 dégâts de poison (augmente aux paliers) et Empoisonné 2 tours ; moitié des dégâts et pas d'effet en cas de sauvegarde de Constitution réussie.</content>
+	<content contentuid="h0de9529fgd72eg5243g8e7cg3c2954e95b19" version="1">Faille acide</content>
+	<content contentuid="h3bb59d51g9477g5630g9ff8g2ff941aa4480" version="1">Vous subissez 2d4 dégâts d'acide au début de votre tour.</content>
+	<content contentuid="h49a6250bg1c18g5787gb58fgbc382519e875" version="1">Métamagie chaotique</content>
+	<content contentuid="he4706c60ga327g5a74gb6bfg72344942f11d" version="1">Vous apprenez 2 options de Métamagie et gagnez des points de sorcellerie (2, puis 4 au niveau 6 et 6 au niveau 10). Chaque coup critique ou ennemi éliminé vous rend 1 point de sorcellerie : votre métamagie se nourrit du chaos.</content>
+	<content contentuid="h5bc04079g3540g56bbg9d46gd5fb4a0b93ed" version="1">Chaos maîtrisé</content>
+	<content contentuid="h957c853eg2f77g5320g8b31gee941b73d1b5" version="1">Vos Déferlements de chaos ne tirent plus dans la table de magie sauvage : seulement dans la table des effets divins, bien plus favorable.</content>
+	<content contentuid="h71206a28g792ag58c0gb9adgec62ce5f060b" version="1">DOC_Sorcellerie_FailleDeferlement</content>
+	<content contentuid="h88015a16gb58dg5bc0g8359g089448909bb5" version="1">Tempête arcanique</content>
+	<content contentuid="hae4b1e25gd920g56c9gb122g5237ea670979" version="1">Chacun de vos sorts en déclenche un autre au hasard.</content>
+	<content contentuid="h900f806dg7c5eg5358gaf94gc681e136f724" version="1">Tempête arcanique</content>
+	<content contentuid="h57db3e8cg0efcg5592ga343gb802ff44bc2f" version="1">Une fois par repos long, pendant 3 tours : chaque sort que vous lancez déclenche en plus une explosion aléatoire (feu, foudre ou froid, 3d6 dégâts aux ennemis à 6 m).</content>
+	<content contentuid="h9bcae65cg4e11g567cga35dg06b53825e53c" version="1">DOC_Sorcellerie_TempeteArcanique</content>
+	<content contentuid="hc3660306g8397g587dga9bcg61c1b98ded93" version="1">Faille acide</content>
+	<content contentuid="hc1dcf232gf537g570ag9762g4d53dd0d2bac" version="1">Une flèche d'acide primordial : 4d4 dégâts d'acide (augmente aux paliers) et 2d4 dégâts d'acide au début des 2 tours suivants (moitié des dégâts initiaux si l'attaque rate). Déclenche un Déferlement de chaos.</content>
+	<content contentuid="h7089f4cag54f0g5aeegac66g6fc8b7f1b114" version="1">Pluie corrosive</content>
+	<content contentuid="h33b9b103g9c7eg56f5ga321g2b8ba213cda8" version="1">Une pluie d'acide sur une zone : 5d8 dégâts d'acide (augmente aux paliers) et Faille acide ; moitié des dégâts et pas d'effet en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="h6c253cf9ga3ceg53bag8baag46745c1fd93e" version="1">Tempête arcanique : Nova de feu</content>
+	<content contentuid="hd3d41754gccc5g532cgb6c8ge0f421204544" version="1">Les ennemis à 6 m subissent 3d6 dégâts de feu.</content>
+	<content contentuid="h33b444e0g973ag5b76ga78bg2bcf3e60108a" version="1">Tempête arcanique : Nova de foudre</content>
+	<content contentuid="h505ad084gb509g5988gac3eg23668d6f2e10" version="1">Les ennemis à 6 m subissent 3d6 dégâts de foudre.</content>
+	<content contentuid="hae06c0ebg1b05g5a63gba05g60fd14b8a57e" version="1">Tempête arcanique : Nova de givre</content>
+	<content contentuid="h90730f3cg1e0cg5954gb509gec247a5bc291" version="1">Les ennemis à 6 m subissent 3d6 dégâts de froid.</content>
+	<content contentuid="hbd94b10ag02dcg5200gb7a0g10efb8f4b65c" version="1">Nouvelle lune</content>
+	<content contentuid="h9394d7d6g26b8g507eg9ba7g62857ff23594" version="1">Avantage aux tests de Discrétion.</content>
+	<content contentuid="h76705613g7548g531egb14cg4ca3e1daa01e" version="1">Phase lunaire : Nouvelle lune</content>
+	<content contentuid="h2f6d4becg66f6g5ebfg869cg48913cc63222" version="1">Avantage aux tests de Discrétion.</content>
+	<content contentuid="he5eda9f3g9d9fg5227ga30fg4cf770bcf912" version="1">Lune croissante</content>
+	<content contentuid="hd55c1736g932ag5ca2g8cdbgeaccd93c42d7" version="1">+3 m de déplacement.</content>
+	<content contentuid="h0c6f0deagc9cfg5cb8g8668gc70944bb27dc" version="1">Phase lunaire : Lune croissante</content>
+	<content contentuid="hc0a4d6edg4042g5a84g9900gbb747ea62164" version="1">+3 m de déplacement.</content>
+	<content contentuid="h647be8aegd6cfg5b29gadcbg60adbeb82611" version="1">Pleine lune</content>
+	<content contentuid="hacd9f710g548fg5245gad86g7efd755a4ec1" version="1">Vos attaques au corps à corps infligent 1d6 dégâts de froid supplémentaires.</content>
+	<content contentuid="hc49d1f21g2472g5d06g9adfg6efbbd444e2c" version="1">Phase lunaire : Pleine lune</content>
+	<content contentuid="h3a486a6ag1415g5b3fg8e00g2bb9719d5d00" version="1">Vos attaques au corps à corps infligent 1d6 dégâts de froid supplémentaires.</content>
+	<content contentuid="hfffaddf4gab30g5fcdg8da1g0a588ffc4c43" version="1">Lune décroissante</content>
+	<content contentuid="h3171c4eag7ef9g50afg8b5ege0914a23ff97" version="1">+1d4 aux dégâts de vos sorts.</content>
+	<content contentuid="h60e3c6f7g8c73g5441ga7b8gd285c2b30207" version="1">Phase lunaire : Lune décroissante</content>
+	<content contentuid="hd9e99ca5g143ag5a85gadfeg8d35000fa0fd" version="1">+1d4 aux dégâts de vos sorts.</content>
+	<content contentuid="he26a511cg049eg511bgb142g6b771b498bf9" version="1">Phases lunaires</content>
+	<content contentuid="h083e6336gc03dg50b8g85d3g6bc6fa87d896" version="1">À chaque repos long, la lune prend une phase au hasard : nouvelle lune (avantage en Discrétion), croissante (+3 m de déplacement), pleine (+1d6 dégâts de froid au corps à corps) ou décroissante (+1d4 aux dégâts des sorts).</content>
+	<content contentuid="h163b0942gfe84g559egafaega0533a35f6b1" version="1">Bête lunaire</content>
+	<content contentuid="hdfc6cdc1g5549g5cdbgac4dgca0c39672315" version="1">Une fois par repos court, en action bonus : vous prenez la forme d'un loup lunaire (loup sanguinaire).</content>
+	<content contentuid="hda1519bage541g5a62g8828g2cb4431c4854" version="1">Froid de l'éclipse</content>
+	<content contentuid="h3fc7066ag2b5ag57bagb365g38433775d199" version="1">Vous subissez 2d8 dégâts de froid au début de votre tour et avez un désavantage à vos attaques.</content>
+	<content contentuid="h0ad719b8g6f07g5c64g986bga338644df2d6" version="1">Éclipse</content>
+	<content contentuid="hcf53f036gcaadg506fgb5e5g237c1c5815e7" version="1">Vous récupérez 2d8 PV au début de votre tour ; les ennemis à 9 m subissent 2d8 dégâts de froid par tour et ont un désavantage à leurs attaques.</content>
+	<content contentuid="h8679391bg79a1g58e5g8f70g756642dda386" version="1">Éclipse</content>
+	<content contentuid="hc7443a1fgb53cg5c9cg86ecg637311bc9acb" version="1">Une fois par repos long, pendant 10 tours : des ténèbres magiques vous entourent. Vous y voyez, vous récupérez 2d8 PV par tour, et les ennemis à 9 m subissent 2d8 dégâts de froid par tour.</content>
+	<content contentuid="h6da7f172g458dg5d7ag90f7gd7614507b46e" version="1">Glacé</content>
+	<content contentuid="h8ba6dee1gc839g5305gbc07g4af0e843391d" version="1">Votre vitesse est réduite de moitié.</content>
+	<content contentuid="hbdf31a8bgcbd3g5ccbgb74ag7427fd91c697" version="1">Clair de lune glacé</content>
+	<content contentuid="hb8c3dda2gb5c6g5a67g9b4agb56d7d0cf69d" version="1">Un rayon de lune glacé frappe une zone de 3 m : 2d8 dégâts de froid (+1d8 aux niveaux 5, 9 et 12) et vitesse réduite de moitié pendant 2 tours ; moitié des dégâts et pas de ralentissement en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="h95815b69g5ddbg5f07g8404g496fe8c2f6eb" version="1">Éclat lunaire</content>
+	<content contentuid="h1fc79890g9f30g5426g8b99gdbfce06c967c" version="1">La lumière froide de la lune : 3d8 dégâts de froid + 3d8 dégâts radiants (augmente aux paliers), moitié en cas de sauvegarde de Dextérité réussie.</content>
+	<content contentuid="h840dff3dg4a0cg5defga280gbb3833aac566" version="1">Cri de guerre</content>
+	<content contentuid="h6521f54eg356eg59f8g805bg143401435b37" version="1">+2 aux dégâts.</content>
+	<content contentuid="h83bcdf20gc840g53d7g8248gffeff422e792" version="1">Cri de guerre</content>
+	<content contentuid="hd8251a74g1b08g5fd1gb699gc6dec1e0199a" version="1">Action bonus, une fois par repos court : les ennemis à 6 m doivent réussir un jet de sauvegarde de Sagesse ou être Effrayés pendant 2 tours ; vos alliés dans la zone gagnent +2 aux dégâts.</content>
+	<content contentuid="hd39cd0f8g0ee3g5639g82e9g605b55d3ec06" version="1">Carnage</content>
+	<content contentuid="ha7fa2f3fgc96eg50fdg9498g4298c930f7a3" version="1">Quand vous éliminez un ennemi, vous pouvez faire une attaque supplémentaire en action bonus.</content>
+	<content contentuid="h4d754756gcbecg5d82gaf61gdbdcafc1606d" version="1">Incarnation de la guerre</content>
+	<content contentuid="h8d482f18g5396g5594g84a8ge96d4e55c494" version="1">Une action supplémentaire par tour, résistance aux dégâts physiques, immunité à la peur.</content>
+	<content contentuid="h603a54a7ga6bdg57a9g97f3g67039c14f5dc" version="1">Incarnation de la guerre</content>
+	<content contentuid="h2dd8d032g5f2bg5313gb9d1gdf13aed44c22" version="1">Une fois par repos long, pendant 3 tours : une action supplémentaire par tour (pour une 3e attaque et plus), résistance aux dégâts tranchants, perforants et contondants, immunité à la peur.</content>
+	<content contentuid="hd96bc04cg5b94g595cgbe38g77452bfda10d" version="1">Fracas de guerre</content>
+	<content contentuid="h345ea4feg4a90g5e2dgab17ga2393c48074d" version="1">Une onde de tonnerre : 2d8 dégâts de tonnerre (+1d8 aux niveaux 5, 9 et 12) ; en cas d'échec à la sauvegarde de Constitution, les ennemis sont repoussés et tombent À terre.</content>
+	<content contentuid="h8a65deabg931ag5274g85degd79e2b6246d5" version="1">Tonnerre de bataille</content>
+	<content contentuid="h7113add5g4206g5d29g84c6g154cf70c3643" version="1">Une attaque d'arme qui gronde comme l'orage : dégâts de l'arme + 4d6 dégâts de tonnerre (augmente aux paliers). La cible doit réussir un jet de sauvegarde de Force ou tomber À terre.</content>
+	<content contentuid="h30d0341fg527eg567agba54g8832a8c95554" version="1">Né pour la guerre</content>
+	<content contentuid="h47abdde5g3f7eg5164ga707g8e976941a5f2" version="1">Vous maîtrisez les armures lourdes et les armes de guerre. Au niveau 5, vous gagnez une attaque supplémentaire.</content>
+	<content contentuid="h8449a5b1g4040g5de4ga035g77ae9db5d5e0" version="1">Les Divinités sont de vrais dieux, tombés sur Faerûn. Ni mortels, ni esprits enfermés dans un corps : des dieux arrachés à leur royaume, privés de l'essentiel de leur puissance. Leur quête pour la retrouver les mène à la Porte de Baldur, là où la Couronne de Karsus – l'artefact de l'archimage qui osa voler la divinité de Mystryl – attire à elle tout ce qui touche au divin.
+
+Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divine au niveau 3 ; Forme divine au niveau 5.</content>
+	<content contentuid="h015d8c19g98dfg570cg95a1g4cbf6afe357d" version="1">Divinité</content>
+	<content contentuid="he574c142ga205g5ce7g8833g7e70cef0f6f1" version="1">Un dieu de la loi, de la protection et de la certitude. L'Ordre élève le plancher : vos jets ne tombent jamais trop bas, vos décrets protègent vos alliés et enchaînent vos ennemis. Lanceur de sorts complet (Sagesse) avec les sorts du clerc et du paladin, plus des sorts exclusifs.</content>
+	<content contentuid="h53c78ceeg4ef4g5650gae32g68f4450647e8" version="1">Divinité de l'Ordre</content>
+	<content contentuid="hc03535aeg60afg5d76ga634g335289969a50" version="1">Domaine divin</content>
+	<content contentuid="h22aff068g7ffbg508eg97baga0601898b95c" version="1">Un dieu du changement, de la ruine et du hasard. Le Chaos élève le plafond : coups critiques fréquents, déferlements de magie imprévisibles, dégâts dévastateurs. Lanceur de sorts complet (Charisme) avec les sorts de l'ensorceleur et les tours de l'occultiste, plus des sorts exclusifs.</content>
+	<content contentuid="hd96ec4a8g0633g5175g8c33g6ffcbfce2a2a" version="1">Divinité du Chaos</content>
+	<content contentuid="h223f17b3g7115g5ce5g8222ge927f22b8dc1" version="1">Domaine divin</content>
+	<content contentuid="h7572b4bdg92aag5551gb27dgf895418ba569" version="1">La vie déborde de vous : soins renforcés, fil de vie qui retient vos alliés, aura de guérison et renaissance de groupe. Affinité : radiant.</content>
+	<content contentuid="h91a1f06ag7387g5a40g8e6dgefe24f3bddb0" version="1">Domaine de la Vie</content>
+	<content contentuid="h237a5d0eg4269g5d59g8eccg1c4d9835bb2c" version="1">Vie</content>
+	<content contentuid="h4f9f69b5g9cd4g5fe3g9a38g00cbfd494a9e" version="1">Vous marquez les coupables et la foudre les juge : marque du jugement, vision véritable, rétribution et verdict final. Affinité : foudre.</content>
+	<content contentuid="h6baba8a1g4231g57b0gb8b7g020ea8c0252b" version="1">Domaine de la Justice</content>
+	<content contentuid="h13510802g6277g583eg80dbg32a56c913591" version="1">Justice</content>
+	<content contentuid="hac652152g01eag55e0g937fge99fe899da02" version="1">Vous êtes l'arbitre de la Trame : codex, contresort gratuit, concentration inébranlable et sorts maîtrisés. Affinité : force.</content>
+	<content contentuid="haec30b83g9ea7g5182g834dgde3165666f68" version="1">Domaine de la Magie</content>
+	<content contentuid="h2bec4ea1gbc04g580dgbec8gc555e5493196" version="1">Magie</content>
+	<content contentuid="hb093b6dcgc98eg54abg8397g717ea3114ea3" version="1">Le feu du soleil vous obéit : il ignore les résistances, aveugle, brûle les ennemis autour de vous et finit en supernova. Affinité : feu.</content>
+	<content contentuid="h15f69d78gdda3g570bg9255g9c6eacb7ac0a" version="1">Domaine du Soleil</content>
+	<content contentuid="h48fa3b37gcc32g57c9g95dfg3e40a460a7bd" version="1">Soleil</content>
+	<content contentuid="ha815b84ag4ebeg5ec3gb2dagcf9a522143ac" version="1">Vous liez vos alliés et désarmez vos ennemis : lien de paix, apaisement, lien protecteur et armistice. Affinité : psychique.</content>
+	<content contentuid="hfc3cd1b0g8f34g5856ga703gbbdd6545f0a4" version="1">Domaine de la Paix</content>
+	<content contentuid="h983cb537g4a8fg5989g92e7g9a403c38f030" version="1">Paix</content>
+	<content contentuid="h23d32b94g85e9g50d1gbdd5ge8ed1ae7b2f6" version="1">Vous moissonnez les âmes : PV volés aux morts, serviteurs mort-vivants, soins empêchés et retour d'outre-tombe. Affinité : nécrotique.</content>
+	<content contentuid="he702cbb7gc474g5f43g8407g17ccb3781095" version="1">Domaine de la Mort</content>
+	<content contentuid="he4c1a7f8g2a8dg565fg8215g18fb7cf5bde9" version="1">Mort</content>
+	<content contentuid="h433b1bf4g02d4g5ed6gbb02gd81c14ef4a9b" version="1">Mensonges, illusions et poisons : double illusoire, escamotage, langue d'argent et marionnettiste. Affinité : poison.</content>
+	<content contentuid="h176e30a7g5991g5271ga26bg7201fa1f13ab" version="1">Domaine de la Tromperie</content>
+	<content contentuid="hcb3db31eg288fg5150g803bg27459e462bcb" version="1">Tromperie</content>
+	<content contentuid="h1b0caaddg16a5g5681ga722ged7da184e14a" version="1">Le chaos à l'état pur : marées du chaos, métamagie nourrie par l'entropie, déferlements maîtrisés et tempête arcanique. Affinité : acide.</content>
+	<content contentuid="hb1092d69g9f8eg597bg9623g60e71174ba04" version="1">Domaine de la Sorcellerie</content>
+	<content contentuid="hb2a57ae7g2223g5ffdgb9bdg0136e4dac8eb" version="1">Sorcellerie</content>
+	<content contentuid="hf2b20de4g8868g520bg896cg155657df2694" version="1">Les phases de la lune guident vos pouvoirs : pas de l'ombre, bête lunaire et éclipse glacée. Affinité : froid.</content>
+	<content contentuid="hb3085e73g1797g54b8g883cg005751723ece" version="1">Domaine de la Lune</content>
+	<content contentuid="h6a2efcb0g919dg5f11gb6f1g0e3fb7f3cacf" version="1">Lune</content>
+	<content contentuid="h553211fbg5267g5f98g93c0g9243d7b7a9bb" version="1">Vous êtes né pour la guerre : armures lourdes, attaque supplémentaire, cri de guerre, carnage et incarnation de la guerre. Affinité : tonnerre.</content>
+	<content contentuid="h6b27a55fgd01dg587cga2dagef34cd51b7b6" version="1">Domaine de la Guerre</content>
+	<content contentuid="hb74f9335g59e4g53eega0f1gc38e4c9f5ab4" version="1">Guerre</content>
+	<content contentuid="hf5e08777g9eabg5ff7ga29dg65408be36c1f" version="1">Choisissez vos tours de magie (liste du clerc).</content>
+	<content contentuid="h402ae114g9ea5g5ecdg80a2g4d3ef1f828e0" version="1">Tours de magie de l'Ordre</content>
+	<content contentuid="h34b445e0g510ag5e6egb69cg40f6391ee3dd" version="1">Choisissez vos tours de magie (liste de l'ensorceleur).</content>
+	<content contentuid="h7689262eg735dg533cgb351gba814e6ea92d" version="1">Tours de magie du Chaos</content>
+	<content contentuid="h1b96cf38gb072g5661gbe37gc7bf5516395e" version="1">Choisissez un tour de magie d'occultiste.</content>
+	<content contentuid="h51ae46ecg2ef9g5e7cgaa66g2f3ec8cb0065" version="1">Tour de magie occulte</content>
+	<content contentuid="hee9fcc22g2430g5a0eg8f80ga3efb528b2c4" version="1">Choisissez de nouveaux sorts (liste de l'ensorceleur).</content>
+	<content contentuid="hf671e571g3cc2g5f29g9984g74bc3b99cafc" version="1">Sorts du Chaos</content>
+	<content contentuid="hf9ebfeedg38ebg54c8g8682gc4acb522303d" version="1">Choisissez un sort que vous pourrez lancer sans emplacement, une fois par tour.</content>
+	<content contentuid="h4fb3b69cge1aag5381g80f5gc2391878b24c" version="1">Maîtrise des sorts</content>
+	<content contentuid="hbf17bbc8gf14bg5166g8f13g1fe9299b0386" version="1">Pouvoir de la Divinité de l'Ordre pour imposer sa loi : Protéger, Purifier, Lier. Se recharge au repos court.</content>
+	<content contentuid="hfa4ec327g21aeg55c7g92f7gc26951ad7beb" version="1">Décrets</content>
+	<content contentuid="hcbe07348g8efeg5e9ag9bc2g94cf6768b87a" version="1">Chaos accumulé en combat : +1 à chaque coup critique et à chaque ennemi éliminé. Retombe à zéro au début et à la fin de chaque combat.</content>
+	<content contentuid="ha6c6fba5gea5dg552eg90cdgd09bf555290c" version="1">Entropie</content>
+	<content contentuid="h438a042cg94e5g5835g883ag534c420d8b8b" version="1">Charge des réactions de domaine (Escamotage, Arbitre de la Trame). Se recharge au repos court.</content>
+	<content contentuid="h96f32a75g734eg5a1ag8c7cg211cb0a66c2a" version="1">Pouvoir divin</content>
+	<content contentuid="h4e1be3b4g6f58g5abbg8a04g6a12c454a792" version="1">Permet de lancer un sort maîtrisé sans emplacement de sort, une fois par tour.</content>
+	<content contentuid="h1b03bda6g3b6bg5792gb3c5g8bb847db3494" version="1">Maîtrise des sorts</content>
+</contentList>

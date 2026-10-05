@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="SkillLists">
+        <node id="root">
+            <children>
+                <node id="SkillList">
+                    <attribute id="Skills" type="LSString" value="History, Insight, Medicine, Persuasion, Religion, Intimidation"/>
+                    <attribute id="UUID" type="guid" value="069e82ae-4454-5160-955e-3e7641f2682d"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Skills" type="LSString" value="Arcana, Deception, Intimidation, Insight, Persuasion, Religion"/>
+                    <attribute id="UUID" type="guid" value="a329d817-a4e1-5763-9f14-f4b4540ff368"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
