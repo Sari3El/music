@@ -352,7 +352,7 @@ hidden("DOC_Chaos_EntropieReset", StatsFunctorContext="OnCombatStarted;OnCombatE
        StatsFunctors="UseActionResource(SELF,DOC_Entropie,100%,0)")
 status("DOC_DEFAIRE", "Défaire",
        "Vos dégâts ignorent les résistances de vos cibles.", "PassiveFeature_EntropicWard",
-       Boosts=";".join(f"IgnoreResistance({t},Resistant)" for t in DAMAGE_TYPES), StackId="DOC_DEFAIRE")
+       Boosts=";".join(f"IF(not Self()):IgnoreResistance({t},Resistant)" for t in DAMAGE_TYPES), StackId="DOC_DEFAIRE")
 spell("Target_DOC_PasChaotique", "Target", "Entropie : Pas chaotique",
       "Action bonus, 1 Entropie : téléportez-vous à un endroit visible à 18 m ou moins.",
       using="Target_MistyStep", Level="0", Icon="Action_Monk_ShadowStep",

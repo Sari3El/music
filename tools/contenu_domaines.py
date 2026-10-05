@@ -237,8 +237,9 @@ DOMAIN_SPELLS["Magie"] = {1: ["Projectile_DOC_SalveOrdre", "Target_Command_Conta
 
 # ================================================================== ORDRE : SOLEIL (feu)
 passive("DOC_Soleil_FeuSolaire", "Feu solaire",
-        "Vos dégâts de feu ignorent la résistance au feu.", "PassiveFeature_ElementalAdept_Fire",
-        Boosts="IgnoreResistance(Fire,Resistant)")
+        "Vos dégâts de feu ignorent la résistance au feu de vos cibles (pas la vôtre).",
+        "PassiveFeature_ElementalAdept_Fire",
+        Boosts="IF(not Self()):IgnoreResistance(Fire,Resistant)")
 lm = palier("DOC_LM_EruptionSolaire", "3d6", "4d6", "5d6", "6d6")
 spell("Zone_DOC_EruptionSolaire", "Zone", "Éruption solaire",
       "Une fois par repos court : un cône de 12 m de lumière brûlante. 3d6 dégâts de feu (augmente aux "

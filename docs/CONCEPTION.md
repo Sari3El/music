@@ -176,7 +176,7 @@ On pourra ajouter des sorts d'occultiste un par un en V2.
 
 ### Soleil (Ordre, feu)
 
-- **Niv. 1 — Feu solaire :** vos dégâts de feu ignorent la résistance.
+- **Niv. 1 — Feu solaire :** vos dégâts de feu ignorent la résistance de vos cibles (sauf la vôtre : sans cette condition, vos propres flammes ignoraient votre Affinité divine).
 - **Niv. 3 — Éruption solaire :** cône de 12 m, Aveuglé et En feu 2 tours (sauvegarde de
   Constitution), 1/repos court.
 - **Niv. 6 — Halo :** aura de 9 m qui brûle uniquement les ennemis (1d6 par tour). **Écart :** elle

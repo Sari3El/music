@@ -318,7 +318,7 @@
 	<content contentuid="hc090be8bge099g5d5bga3bcg9eee3eebb7d0" version="1">Pulsation arcanique</content>
 	<content contentuid="h17ff9d16gebf7g5776g8c72gdac497c8f881" version="1">Une onde de pure magie dans une zone de 5 m : 5d8 dégâts de force (augmente aux paliers), moitié en cas de sauvegarde de Constitution réussie.</content>
 	<content contentuid="hee5fc391gaf03g5d5bgb4e1gd9479c65f489" version="1">Feu solaire</content>
-	<content contentuid="h30f4a3e7ga2c3g5999ga86bgea24471b77c8" version="1">Vos dégâts de feu ignorent la résistance au feu.</content>
+	<content contentuid="h30f4a3e7ga2c3g5999ga86bgea24471b77c8" version="1">Vos dégâts de feu ignorent la résistance au feu de vos cibles (pas la vôtre).</content>
 	<content contentuid="hd41a9e7ag161cg55b6g9dbdg86dc6575a985" version="1">Éruption solaire</content>
 	<content contentuid="h8a8adb34gd6b3g5900gb740g426b4c8ce6eb" version="1">Une fois par repos court : un cône de 12 m de lumière brûlante. 3d6 dégâts de feu (augmente aux paliers) ; en cas d'échec à la sauvegarde de Constitution, les cibles sont Aveuglées et En feu pendant 2 tours.</content>
 	<content contentuid="ha8278f93gca32g5d06g8b13g8051a5d38e3f" version="1">Brûlure du halo</content>

@@ -121,7 +121,7 @@ data "StatusType" "BOOST"
 data "DisplayName" "h6b4b6a36g18aag5968g9c61g6ab2ba35a450;1"
 data "Description" "hd1f073f7gd2e9g5fecg8849g095407405753;1"
 data "Icon" "PassiveFeature_EntropicWard"
-data "Boosts" "IgnoreResistance(Acid,Resistant);IgnoreResistance(Bludgeoning,Resistant);IgnoreResistance(Cold,Resistant);IgnoreResistance(Fire,Resistant);IgnoreResistance(Force,Resistant);IgnoreResistance(Lightning,Resistant);IgnoreResistance(Necrotic,Resistant);IgnoreResistance(Piercing,Resistant);IgnoreResistance(Poison,Resistant);IgnoreResistance(Psychic,Resistant);IgnoreResistance(Radiant,Resistant);IgnoreResistance(Slashing,Resistant);IgnoreResistance(Thunder,Resistant)"
+data "Boosts" "IF(not Self()):IgnoreResistance(Acid,Resistant);IF(not Self()):IgnoreResistance(Bludgeoning,Resistant);IF(not Self()):IgnoreResistance(Cold,Resistant);IF(not Self()):IgnoreResistance(Fire,Resistant);IF(not Self()):IgnoreResistance(Force,Resistant);IF(not Self()):IgnoreResistance(Lightning,Resistant);IF(not Self()):IgnoreResistance(Necrotic,Resistant);IF(not Self()):IgnoreResistance(Piercing,Resistant);IF(not Self()):IgnoreResistance(Poison,Resistant);IF(not Self()):IgnoreResistance(Psychic,Resistant);IF(not Self()):IgnoreResistance(Radiant,Resistant);IF(not Self()):IgnoreResistance(Slashing,Resistant);IF(not Self()):IgnoreResistance(Thunder,Resistant)"
 data "StackId" "DOC_DEFAIRE"
 
 new entry "DOC_AURA_CHAOS_MALUS"

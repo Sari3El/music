@@ -718,7 +718,7 @@ data "DisplayName" "hee5fc391gaf03g5d5bgb4e1gd9479c65f489;1"
 data "Description" "h30f4a3e7ga2c3g5999ga86bgea24471b77c8;1"
 data "Icon" "PassiveFeature_ElementalAdept_Fire"
 data "Properties" "Highlighted"
-data "Boosts" "IgnoreResistance(Fire,Resistant)"
+data "Boosts" "IF(not Self()):IgnoreResistance(Fire,Resistant)"
 
 new entry "DOC_Soleil_Halo"
 type "PassiveData"
