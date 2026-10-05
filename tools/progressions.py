@@ -73,19 +73,6 @@ import os  # noqa: E402
 
 DONNEES_JEU = json.load(open(os.path.join(os.path.dirname(__file__), "donnees_jeu.json"), encoding="utf-8"))
 RACE_UUID = U("race:" + C.RACE)
-APPARENCES_FR = {
-    "Humain": ("Forme humaine", "les traits d'un humain"),
-    "Elfe": ("Forme elfique", "les traits d'un elfe"),
-    "Drow": ("Forme drow", "les traits d'un drow"),
-    "DemiElfe": ("Forme demi-elfe", "les traits d'un demi-elfe"),
-    "Nain": ("Forme naine", "les traits d'un nain"),
-    "Halfelin": ("Forme halfeline", "les traits d'un halfelin"),
-    "Gnome": ("Forme gnome", "les traits d'un gnome"),
-    "Tieffelin": ("Forme tieffeline", "les traits d'un tieffelin"),
-    "Githyanki": ("Forme githyanki", "les traits d'un githyanki"),
-    "Drakeide": ("Forme drakéide", "les traits d'un drakéide"),
-    "DemiOrque": ("Forme demi-orque", "les traits d'un demi-orque"),
-}
 LIST_NODES = ["SkinColors", "EyeColors", "HairColors", "HairHighlightColors", "HairGrayingColors",
               "TattooColors", "MakeupColors", "LipsMakeupColors", "HornColors", "HornTipColors", "Visuals", "Tags"]
 
@@ -104,8 +91,8 @@ RACE_NODES = [Node("Race", [
         "des dieux arrachés à leur royaume, privés de l'essentiel de leur puissance. Leur quête pour la "
         "retrouver les mène à la Porte de Baldur, là où la Couronne de Karsus – l'artefact de l'archimage "
         "qui osa voler la divinité de Mystryl – attire à elle tout ce qui touche au divin.\n\n"
-        "Un dieu peut prendre l'apparence qu'il veut : choisissez sa forme (humaine, elfique, naine, "
-        "drakéide...). Les pouvoirs divins sont les mêmes pour toutes les formes.\n\n"
+        "Un dieu peut prendre l'apparence qu'il veut : choisissez en sous-race le peuple dont il porte les "
+        "traits (haut-elfe, drakéide rouge, duergar, tieffelin de Zariel...). Les pouvoirs divins sont les mêmes pour toutes les formes.\n\n"
         "Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divine au niveau 3 ; "
         "Forme divine au niveau 5.")),
     ("DisplayName", "TranslatedString", L.add("race:nom", "Divinité")),
@@ -119,12 +106,12 @@ RACE_NODES = [Node("Race", [
 ], race_children(DONNEES_JEU["Humain"]))]
 
 for nom, data in DONNEES_JEU.items():
-    titre, traits = APPARENCES_FR[nom]
     attrs = [
-        ("Description", "TranslatedString", L.add(f"race:{nom}:desc",
-            f"La divinité s'est incarnée sous {traits}. Apparence uniquement : les pouvoirs divins sont "
-            f"identiques pour toutes les formes.")),
-        ("DisplayName", "TranslatedString", L.add(f"race:{nom}:nom", titre)),
+        ("Description", "TranslatedString", L.add("race:forme:desc",
+            "La divinité s'est incarnée sous l'apparence de ce peuple. Apparence uniquement : les pouvoirs "
+            "divins sont identiques pour toutes les formes, et les traits raciaux de ce peuple ne sont pas "
+            "accordés.")),
+        ("DisplayName", "TranslatedString", data["nom_jeu"]),  # nom du jeu, traduit automatiquement
         ("DisplayTypeUUID", "guid", C.HUMANOID),
         ("Name", "FixedString", f"{C.RACE}_{nom}"),
         ("ParentGuid", "guid", RACE_UUID),

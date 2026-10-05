@@ -26,11 +26,14 @@ du personnage.
 | 3 | Injonction divine | Le sort Injonction (5 ordres), une fois par repos long, sans emplacement. |
 | 5 | Forme divine | Action bonus, une fois par repos long, 3 tours : vol + 1d6 dégâts de force aux attaques (armes et mains nues). |
 
-- **Apparence :** Divinité est une race à part dans la liste, avec 11 **formes** en sous-race :
-  humaine, elfique, drow, demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide,
-  demi-orque. Chaque forme reprend les corps, visages, coiffures, cornes et couleurs de la race du
-  jeu correspondante (données tirées des tables du jeu par `tools/extraire_donnees_jeu.py`). Les
-  pouvoirs divins sont les mêmes pour toutes les formes.
+- **Apparence :** Divinité est une race à part dans la liste. Ses sous-races sont les **31 peuples
+  du jeu** (humain, haut-elfe, elfe des bois, drows, demi-elfes, nains dont duergar, halfelins,
+  gnomes dont gnome des profondeurs, tieffelins d'Asmodée/Méphistophélès/Zariel, githyanki, les 10
+  drakéides, demi-orque). Chaque forme reprend les corps, visages, coiffures, cornes et couleurs de
+  ce peuple (données tirées des tables du jeu par `tools/extraire_donnees_jeu.py`), et porte le nom
+  du jeu. Les pouvoirs divins sont les mêmes pour toutes les formes ; les traits raciaux du peuple
+  imité ne sont pas accordés.
+- **Écart :** les icônes des formes sont vides (icônes de sous-race à créer en V2).
 - **Écart :** les yeux lumineux, les marques divines et le halo ou l'aura sombre de la Forme divine
   ne sont pas encore faits. Ils demandent des ressources visuelles à créer dans le Toolkit (V2).
 - **Écart :** les sous-races du cahier des charges (Céleste, Infernal, Astral, Élémentaire) sont
