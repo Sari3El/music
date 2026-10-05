@@ -59,6 +59,41 @@
                     <attribute id="Spells" type="LSString" value="Target_PHX_ChargeArdente"/>
                     <attribute id="UUID" type="guid" value="1476a1cb-b64b-5117-89f8-d51bb7ab635b"/>
                 </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : tours de magie de feu et de lumière"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_FireBolt;Shout_ProduceFlame;Target_SacredFlame;Target_Light;Target_DancingLights"/>
+                    <attribute id="UUID" type="guid" value="0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : sorts de feu et de lumière (niveaux 1 à 1)"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Projectile_GuidingBolt;Target_HellishRebuke;Target_Smite_Searing;Shout_DivineFavor;Target_FaerieFire"/>
+                    <attribute id="UUID" type="guid" value="0c0cddb6-2b8d-5933-850e-63a2f9da6ab0"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : sorts de feu et de lumière (niveaux 1 à 2)"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Projectile_GuidingBolt;Target_HellishRebuke;Target_Smite_Searing;Shout_DivineFavor;Target_FaerieFire;Projectile_ScorchingRay;Target_FlamingSphere;Target_HeatMetal;Shout_FlameBlade;Target_Moonbeam;Target_Smite_Branding_Container"/>
+                    <attribute id="UUID" type="guid" value="df5e219f-dcbb-57c6-ab43-d649bd635528"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : sorts de feu et de lumière (niveaux 1 à 3)"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Projectile_GuidingBolt;Target_HellishRebuke;Target_Smite_Searing;Shout_DivineFavor;Target_FaerieFire;Projectile_ScorchingRay;Target_FlamingSphere;Target_HeatMetal;Shout_FlameBlade;Target_Moonbeam;Target_Smite_Branding_Container;Projectile_Fireball;Shout_SpiritGuardians;Shout_CrusadersMantle;Target_Daylight_Container;Target_Smite_Blinding"/>
+                    <attribute id="UUID" type="guid" value="258bd1e6-036d-5fd8-9e2f-201da386ba59"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : sorts de feu et de lumière (niveaux 1 à 4)"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Projectile_GuidingBolt;Target_HellishRebuke;Target_Smite_Searing;Shout_DivineFavor;Target_FaerieFire;Projectile_ScorchingRay;Target_FlamingSphere;Target_HeatMetal;Shout_FlameBlade;Target_Moonbeam;Target_Smite_Branding_Container;Projectile_Fireball;Shout_SpiritGuardians;Shout_CrusadersMantle;Target_Daylight_Container;Target_Smite_Blinding;Wall_WallOfFire;Shout_FireShield;Target_GuardianOfFaith"/>
+                    <attribute id="UUID" type="guid" value="fada069e-359d-5737-91b4-4f8a47141065"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : sorts de feu et de lumière (niveaux 1 à 5)"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Projectile_GuidingBolt;Target_HellishRebuke;Target_Smite_Searing;Shout_DivineFavor;Target_FaerieFire;Projectile_ScorchingRay;Target_FlamingSphere;Target_HeatMetal;Shout_FlameBlade;Target_Moonbeam;Target_Smite_Branding_Container;Projectile_Fireball;Shout_SpiritGuardians;Shout_CrusadersMantle;Target_Daylight_Container;Target_Smite_Blinding;Wall_WallOfFire;Shout_FireShield;Target_GuardianOfFaith;Target_FlameStrike"/>
+                    <attribute id="UUID" type="guid" value="af205b08-f449-5b2b-94b3-9f0ece04d2f0"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix : sorts de feu et de lumière (niveaux 1 à 6)"/>
+                    <attribute id="Spells" type="LSString" value="Zone_BurningHands;Projectile_GuidingBolt;Target_HellishRebuke;Target_Smite_Searing;Shout_DivineFavor;Target_FaerieFire;Projectile_ScorchingRay;Target_FlamingSphere;Target_HeatMetal;Shout_FlameBlade;Target_Moonbeam;Target_Smite_Branding_Container;Projectile_Fireball;Shout_SpiritGuardians;Shout_CrusadersMantle;Target_Daylight_Container;Target_Smite_Blinding;Wall_WallOfFire;Shout_FireShield;Target_GuardianOfFaith;Target_FlameStrike;Zone_Sunbeam"/>
+                    <attribute id="UUID" type="guid" value="62e58efd-da69-5731-9d94-6ab3cc381429"/>
+                </node>
             </children>
         </node>
     </region>

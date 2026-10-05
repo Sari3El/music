@@ -10,7 +10,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;PHX_Marqueur;PHX_FlammeLoyale;PHX_CendresArdentes"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(6cced5ee-183f-57f4-a1f2-045f82e52369,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(daa2577d-1e8b-5064-862f-e1c87bc494c7,,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,PHX_SortPhenix);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,3,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(6cced5ee-183f-57f4-a1f2-045f82e52369,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(daa2577d-1e8b-5064-862f-e1c87bc494c7,,,,AlwaysPrepared);SelectSpells(0c0cddb6-2b8d-5933-850e-63a2f9da6ab0,2,0,PHX_SortPhenix);SelectSpells(0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d,2,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="83893d69-e592-5331-aebc-3b489730d81a"/>
                 </node>
@@ -20,7 +20,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="PHX_Braises;PHX_BraisesAbsorbees"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(0b13702c-6e04-5f3d-b4db-38fc49b79157,,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0b13702c-6e04-5f3d-b4db-38fc49b79157,,,,AlwaysPrepared);SelectSpells(0c0cddb6-2b8d-5933-850e-63a2f9da6ab0,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="385bd764-7f42-594f-a190-bf2f88752fa1"/>
                 </node>
@@ -30,7 +30,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(13a8f291-40d4-5966-a383-25abd7e47483,,,,AlwaysPrepared);SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(13a8f291-40d4-5966-a383-25abd7e47483,,,,AlwaysPrepared);SelectSpells(df5e219f-dcbb-57c6-ab43-d649bd635528,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="d4251bb6-1f95-5142-8628-9927dde70fd4"/>
                     <children>
@@ -55,7 +55,7 @@
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(f80396e2-cb76-4694-b0db-5c34da61a478,1,1,PHX_SortPhenix);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,1,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(df5e219f-dcbb-57c6-ab43-d649bd635528,1,1,PHX_SortPhenix);SelectSpells(0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d,1,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="6f0deb14-aa5c-5a8c-af39-fa5234dd83ba"/>
                 </node>
@@ -65,7 +65,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;PHX_Ignifuge"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(1560909c-2c6a-5f42-bc6a-1cb8e7ad3bee,,,,AlwaysPrepared);SelectSpells(dcbaf2ae-1f45-453e-ab83-cd154f8277a4,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(1560909c-2c6a-5f42-bc6a-1cb8e7ad3bee,,,,AlwaysPrepared);SelectSpells(258bd1e6-036d-5fd8-9e2f-201da386ba59,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="f122db48-10a6-5c64-acfa-bdd3f41c0f6f"/>
                 </node>
@@ -75,7 +75,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="PHX_BouclierFlammes_1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(dcbaf2ae-1f45-453e-ab83-cd154f8277a4,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(258bd1e6-036d-5fd8-9e2f-201da386ba59,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="4c769cbc-d0de-5006-a0a0-1f2c53cf71bf"/>
                 </node>
@@ -85,7 +85,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel4;PHX_FeuSacre"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(ac644f55-f72c-5d0d-813d-ceed24f620eb,,,,AlwaysPrepared);SelectSpells(5fe40622-1d3e-4cc1-8d89-e66fe51d8c5c,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ac644f55-f72c-5d0d-813d-ceed24f620eb,,,,AlwaysPrepared);SelectSpells(fada069e-359d-5737-91b4-4f8a47141065,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="d9f61131-5d89-5539-90f2-3e8041b219f0"/>
                 </node>
@@ -95,7 +95,7 @@
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(5fe40622-1d3e-4cc1-8d89-e66fe51d8c5c,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(fada069e-359d-5737-91b4-4f8a47141065,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="e233f3ad-ebd9-50f7-8c4b-0f719038a61f"/>
                 </node>
@@ -105,7 +105,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel5;PHX_CoeurDePhenix"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(b91a6d9c-b6e1-562a-914e-7ec080821cb9,,,,AlwaysPrepared);SelectSpells(3276fcfe-e143-4559-b6e0-7d7aa0ffcb53,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(b91a6d9c-b6e1-562a-914e-7ec080821cb9,,,,AlwaysPrepared);SelectSpells(af205b08-f449-5b2b-94b3-9f0ece04d2f0,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="26667777-dc06-58cf-865b-e1e55f0174fb"/>
                 </node>
@@ -115,7 +115,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="PHX_Renaissance"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(3276fcfe-e143-4559-b6e0-7d7aa0ffcb53,1,1,PHX_SortPhenix);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,1,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(af205b08-f449-5b2b-94b3-9f0ece04d2f0,1,1,PHX_SortPhenix);SelectSpells(0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d,1,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="7f75f294-d1cb-5ac0-896a-44f45d9e8158"/>
                 </node>
@@ -126,7 +126,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel6;PHX_BouclierFlammes_2;PHX_FeuSacre_2"/>
                     <attribute id="PassivesRemoved" type="LSString" value="PHX_BouclierFlammes_1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(199ff9cb-119b-57c7-9115-1a747c676b03,,,,AlwaysPrepared);SelectSpells(1270a6db-980b-4e3b-bf26-2924da61dfd5,1,1,PHX_SortPhenix)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(199ff9cb-119b-57c7-9115-1a747c676b03,,,,AlwaysPrepared);SelectSpells(62e58efd-da69-5731-9d94-6ab3cc381429,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="c5666d91-46ab-500d-8e02-427489b8eba2"/>
                 </node>
@@ -146,7 +146,7 @@
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;PHX_Marqueur;PHX_FlammeLoyale;PHX_CendresArdentes"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(daa2577d-1e8b-5064-862f-e1c87bc494c7,,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,PHX_SortPhenix);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,3,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(daa2577d-1e8b-5064-862f-e1c87bc494c7,,,,AlwaysPrepared);SelectSpells(0c0cddb6-2b8d-5933-850e-63a2f9da6ab0,2,0,PHX_SortPhenix);SelectSpells(0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d,2,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
                     <attribute id="UUID" type="guid" value="caad26a8-00af-59d9-b5e6-75bfa57c0b5e"/>
                 </node>

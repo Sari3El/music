@@ -2,7 +2,8 @@
 
 Un mod **indépendant** qui ajoute une seule classe : le **Phénix**.
 
-- Lanceur de sorts complet au **Charisme** (sorts de l'ensorceleur + ses propres sorts de feu).
+- Lanceur de sorts complet au **Charisme**, qui n'apprend **que des sorts de feu et de lumière**
+  (radiant), en plus de ses propres sorts.
 - Son feu **ne blesse jamais ses alliés** et peut même les soigner (Flamme bienfaitrice).
 - Quand il tombe, ses **cendres couvent** et il se relève ; au niveau 10, il **renaît** dans une
   explosion de feu.

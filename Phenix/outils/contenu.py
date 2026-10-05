@@ -18,10 +18,21 @@ SELECTOR_LABELS = []  # (SelectorId, titre, description)
 # ------------------------------------------------------------------ jeu de base
 ALL_ABILITIES_LIST = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 CC_POSE = "0f07ec6e-4ef0-434e-9a51-1353260ccff8"
-SORCERER_CANTRIPS = "485a68b4-c678-4888-be63-4a702efbe391"
-SORCERER_SPELLS = {1: "92c4751f-6255-4f67-822c-a75d53830b27", 2: "f80396e2-cb76-4694-b0db-5c34da61a478",
-                   3: "dcbaf2ae-1f45-453e-ab83-cd154f8277a4", 4: "5fe40622-1d3e-4cc1-8d89-e66fe51d8c5c",
-                   5: "3276fcfe-e143-4559-b6e0-7d7aa0ffcb53", 6: "1270a6db-980b-4e3b-bf26-2924da61dfd5"}
+# Sorts du jeu que le Phénix peut apprendre : uniquement le feu et la lumière (radiant).
+# Source : bg3.wiki (sorts de classe dont les dégâts sont de feu ou radiants, plus les sorts de lumière).
+TOURS_FEU_LUMIERE = ["Projectile_FireBolt", "Shout_ProduceFlame", "Target_SacredFlame", "Target_Light",
+                     "Target_DancingLights"]
+SORTS_FEU_LUMIERE = {
+    1: ["Zone_BurningHands", "Projectile_GuidingBolt", "Target_HellishRebuke", "Target_Smite_Searing",
+        "Shout_DivineFavor", "Target_FaerieFire"],
+    2: ["Projectile_ScorchingRay", "Target_FlamingSphere", "Target_HeatMetal", "Shout_FlameBlade",
+        "Target_Moonbeam", "Target_Smite_Branding_Container"],
+    3: ["Projectile_Fireball", "Shout_SpiritGuardians", "Shout_CrusadersMantle", "Target_Daylight_Container",
+        "Target_Smite_Blinding"],
+    4: ["Wall_WallOfFire", "Shout_FireShield", "Target_GuardianOfFaith"],
+    5: ["Target_FlameStrike"],
+    6: ["Zone_Sunbeam"],
+}
 
 
 # ------------------------------------------------------------------ fabriques
@@ -432,6 +443,17 @@ VOIES = {
                "Le phénix guerrier : armures intermédiaires, boucliers, armes de guerre, Charge ardente, et "
                "Attaque supplémentaire au niveau 5."),
 }
+
+
+def sorts_appris():
+    """Listes de sorts à apprendre : tours, et sorts cumulés jusqu'au niveau de sort n."""
+    tours = spelllist("PHX_ToursFeuLumiere", "Phénix : tours de magie de feu et de lumière", TOURS_FEU_LUMIERE)
+    cumul, sorts = [], {}
+    for n in sorted(SORTS_FEU_LUMIERE):
+        cumul = cumul + SORTS_FEU_LUMIERE[n]
+        sorts[n] = spelllist(f"PHX_SortsFeuLumiere_{n}", f"Phénix : sorts de feu et de lumière (niveaux 1 à {n})",
+                             list(cumul))
+    return tours, sorts
 
 
 def feature_spelllists():

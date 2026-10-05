@@ -198,7 +198,7 @@ def check():
 
     # 3. chaque liste citée par une progression existe (listes du mod ou du jeu)
     known_lists = ({U("spelllist:" + n) for n, _, _ in C.SPELLLISTS} | {U("skilllist:" + n) for n, _ in C.SKILLLISTS} |
-                   set(C.SORCERER_SPELLS.values()) | {C.SORCERER_CANTRIPS, C.ALL_ABILITIES_LIST})
+                   {C.ALL_ABILITIES_LIST})
     for node in P.PROGRESSIONS:
         attrs = {a[0]: str(a[2]) for a in node.attrs}
         for g in re.findall(r"Select\w+\(([0-9a-f-]{36})|AddSpells\(([0-9a-f-]{36})", attrs.get("Selectors", "")):
@@ -228,6 +228,10 @@ def check():
             icon = e.data.get("Icon")
             if icon and icon not in known:
                 warnings.append(f"Icône non vérifiée : {e.name} -> {icon}")
+        for name, _, spells in C.SPELLLISTS:
+            for sp in spells:
+                if "PHX_" not in sp and sp not in known:
+                    warnings.append(f"Sort du jeu non vérifié dans {name} : {sp}")
     return problems, warnings
 
 

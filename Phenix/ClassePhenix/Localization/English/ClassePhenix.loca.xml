@@ -105,7 +105,7 @@
 	<content contentuid="h3d05abc6gad8cg542eg89dagcc9cb1fd862c" version="1">Impact de feu de la Charge ardente.</content>
 	<content contentuid="ha156454fg3621g52aeg99f9g52fd09396a27" version="1">Charge ardente</content>
 	<content contentuid="hbef9d5d7gc01dg571agb3ddg404e6284bb82" version="1">Action bonus, une fois par tour : vous bondissez jusqu'à 9 m. À l'impact, les ennemis à 3 m subissent 2d8 dégâts de feu (moitié si sauvegarde de Dextérité réussie). Aucun dégât aux alliés.</content>
-	<content contentuid="hc806e07cg8b53g5b42g9196ga3690770ffd3" version="1">Un être de feu qui ne meurt jamais vraiment. Ses flammes épargnent ses alliés et peuvent même les soigner ; quand il tombe, ses cendres couvent, et il finit par renaître dans une explosion de feu. Lanceur de sorts complet (Charisme) avec les sorts de l'ensorceleur et ses propres sorts de feu.</content>
+	<content contentuid="hc806e07cg8b53g5b42g9196ga3690770ffd3" version="1">Un être de feu qui ne meurt jamais vraiment. Ses flammes épargnent ses alliés et peuvent même les soigner ; quand il tombe, ses cendres couvent, et il finit par renaître dans une explosion de feu. Lanceur de sorts complet (Charisme) qui n'apprend que des sorts de feu et de lumière, plus ses propres sorts.</content>
 	<content contentuid="h0f0c9935g1233g539cg93dcga560250b9c4c" version="1">Phénix</content>
 	<content contentuid="h4a90c3dega568g5d25g9052g881919bce009" version="1">Voie du Phénix</content>
 	<content contentuid="hea0161f4gfd79g5dfbg8d8dgd4a0669cbe4c" version="1">Le feu destructeur : vos sorts de feu brûlent plus fort, vous avez 2 Braises de plus, et au niveau 10 vous libérez Nova, une explosion géante qui vous soigne.</content>
@@ -117,9 +117,9 @@
 	<content contentuid="hdb2d5a04g4692g5050g91d4gad257fc2e4f1" version="1">Le phénix guerrier : armures intermédiaires, boucliers, armes de guerre, Charge ardente, et Attaque supplémentaire au niveau 5.</content>
 	<content contentuid="h8f19cd73g51d8g57b8gb919gb31b8433cace" version="1">Voie des Serres</content>
 	<content contentuid="h710e06d2gbe47g52ccgbbd2g77206e6b9f06" version="1">Serres</content>
-	<content contentuid="h3efe66d9g36d2g53d8ga884geceee1c581ff" version="1">Choisissez vos tours de magie (liste de l'ensorceleur).</content>
+	<content contentuid="h3efe66d9g36d2g53d8ga884geceee1c581ff" version="1">Choisissez vos tours de magie : feu et lumière uniquement.</content>
 	<content contentuid="h6d4b1c43gf93bg5800g83f8gbd3589ffc7ca" version="1">Tours de magie du Phénix</content>
-	<content contentuid="h173f0d51gc12ag5fdeg905dg580e64e0544d" version="1">Choisissez de nouveaux sorts (liste de l'ensorceleur).</content>
+	<content contentuid="h173f0d51gc12ag5fdeg905dg580e64e0544d" version="1">Choisissez de nouveaux sorts : feu et lumière uniquement.</content>
 	<content contentuid="h0562edc2gf306g5143g80e9g35c0a8d85b48" version="1">Sorts du Phénix</content>
 	<content contentuid="h72d686d5gc1ddg5cc8g9ce3ga321bbb405fe" version="1">Feu accumulé par le Phénix : +1 quand il inflige ou subit des dégâts de feu (une fois par tour). Se dépense pour Attiser, Propager ou Purifier.</content>
 	<content contentuid="h99076790gab41g5326gb81eg1043e0ae52cc" version="1">Braises</content>

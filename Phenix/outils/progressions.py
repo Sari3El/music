@@ -51,13 +51,14 @@ def unlock_passive(level):
 
 
 C.SELECTOR_LABELS += [
-    ("PHX_TourPhenix", "Tours de magie du Phénix", "Choisissez vos tours de magie (liste de l'ensorceleur)."),
-    ("PHX_SortPhenix", "Sorts du Phénix", "Choisissez de nouveaux sorts (liste de l'ensorceleur)."),
+    ("PHX_TourPhenix", "Tours de magie du Phénix", "Choisissez vos tours de magie : feu et lumière uniquement."),
+    ("PHX_SortPhenix", "Sorts du Phénix", "Choisissez de nouveaux sorts : feu et lumière uniquement."),
 ]
 SKILLS = U("skilllist:phenix")
 C.SKILLLISTS.append(("phenix", ["Arcana", "Insight", "Intimidation", "Medicine", "Performance", "Persuasion",
                                 "Religion", "Survival"]))
 LISTS = C.feature_spelllists()
+TOURS, SORTS = C.sorts_appris()
 EMPTY = {"passives": [], "removed": [], "spells": [], "boosts": []}
 
 
@@ -66,15 +67,15 @@ def level_features(lv):
     f = C.FEATURES[None].get(lv, EMPTY)
     b, p, r = list(f["boosts"]), list(f["passives"]), list(f["removed"])
     s = [f"AddSpells({LISTS[None][lv]},,,,AlwaysPrepared)"] if lv in LISTS[None] else []
-    # sorts connus de l'ensorceleur (liste cumulative jusqu'au niveau de sort maximum)
-    sl = C.SORCERER_SPELLS[MAX_SPELL_LEVEL[lv]]
+    # sorts connus : uniquement feu et lumière (liste cumulative jusqu'au niveau de sort maximum)
+    sl = SORTS[MAX_SPELL_LEVEL[lv]]
     if lv == 1:
         s += [f"SelectSpells({sl},2,0,PHX_SortPhenix)",
-              f"SelectSpells({C.SORCERER_CANTRIPS},3,0,PHX_TourPhenix,,,AlwaysPrepared)"]
+              f"SelectSpells({TOURS},2,0,PHX_TourPhenix,,,AlwaysPrepared)"]
     elif lv <= 11:
         s += [f"SelectSpells({sl},1,1,PHX_SortPhenix)"]
     if lv in (4, 10):
-        s += [f"SelectSpells({C.SORCERER_CANTRIPS},1,0,PHX_TourPhenix,,,AlwaysPrepared)"]
+        s += [f"SelectSpells({TOURS},1,0,PHX_TourPhenix,,,AlwaysPrepared)"]
     return b, p, r, s
 
 
@@ -106,7 +107,7 @@ CLASSDESCS.append(Node("ClassDescription", [
     ("Description", "TranslatedString", L.add(f"class:{C.PHENIX}:desc",
         "Un être de feu qui ne meurt jamais vraiment. Ses flammes épargnent ses alliés et peuvent même les "
         "soigner ; quand il tombe, ses cendres couvent, et il finit par renaître dans une explosion de feu. "
-        "Lanceur de sorts complet (Charisme) avec les sorts de l'ensorceleur et ses propres sorts de feu.")),
+        "Lanceur de sorts complet (Charisme) qui n'apprend que des sorts de feu et de lumière, plus ses propres sorts.")),
     ("DisplayName", "TranslatedString", L.add(f"class:{C.PHENIX}:nom", "Phénix")),
     ("HpPerLevel", "int32", 5),
     ("ItemsHotbarColumns", "int32", 2),

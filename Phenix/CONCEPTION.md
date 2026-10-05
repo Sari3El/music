@@ -8,9 +8,25 @@ Tous les objets du mod portent le préfixe `PHX_` ; le mod ne dépend d'aucun au
 
 ## Classe
 
-Socle : d8 (8 PV au niveau 1, puis 5 par niveau), lanceur complet au Charisme (sorts connus de
-l'ensorceleur), sauvegardes Constitution et Charisme, armures légères et armes
+Socle : d8 (8 PV au niveau 1, puis 5 par niveau), lanceur complet au Charisme (sorts connus), sauvegardes Constitution et Charisme, armures légères et armes
 courantes, 2 compétences, voie (sous-classe) au niveau 3, dons aux niveaux 4, 8 et 12.
+
+**Sorts appris : feu et lumière uniquement**, y compris à la création du personnage. Tours de magie
+(2 au niveau 1, +1 aux niveaux 4 et 10) parmi Trait de feu, Production de flamme, Flamme sacrée,
+Lumière et Lumières dansantes. Sorts (2 au niveau 1, puis 1 par niveau jusqu'au 11, avec
+remplacement possible) parmi :
+
+| Niv. de sort | Sorts |
+|---|---|
+| 1 | Mains brûlantes, Éclair traçant, Représailles infernales, Châtiment brûlant, Faveur divine, Lueurs féeriques |
+| 2 | Rayon ardent, Sphère de feu, Chauffer le métal, Lame de feu, Rayon de lune, Châtiment révélateur |
+| 3 | Boule de feu, Esprits gardiens, Aura du croisé, Lumière du jour, Châtiment aveuglant |
+| 4 | Mur de feu, Bouclier de feu, Gardien de la foi |
+| 5 | Colonne de flamme |
+| 6 | Rayon de soleil |
+
+Liste tirée de bg3.wiki (sorts de classe à dégâts de feu ou radiants, plus les sorts de lumière),
+dans `outils/contenu.py` (`TOURS_FEU_LUMIERE`, `SORTS_FEU_LUMIERE`).
 
 | Niv. | Capacité | Réalisation |
 |---|---|---|
