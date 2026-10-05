@@ -228,6 +228,14 @@
                     <attribute id="Name" type="FixedString" value="DOC_LM_TonnerreBataille"/>
                     <attribute id="UUID" type="guid" value="24b7f4ae-1490-53d8-9e36-78659f275025"/>
                 </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="4d6"/>
+                    <attribute id="Level5" type="LSString" value="4d6"/>
+                    <attribute id="Level9" type="LSString" value="5d6"/>
+                    <attribute id="Level12" type="LSString" value="6d6"/>
+                    <attribute id="Name" type="FixedString" value="DOC_LM_PluieDePlumes"/>
+                    <attribute id="UUID" type="guid" value="f2f90198-2b9a-5aec-8cf6-9078565b37b7"/>
+                </node>
             </children>
         </node>
     </region>

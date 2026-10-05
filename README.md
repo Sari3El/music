@@ -5,9 +5,11 @@ Ce mod ajoute :
 - la race **Divinité**, des dieux tombés sur Faerûn, déclinée en 11 races (Divinité humaine, elfe,
   drow, demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide, demi-orque) qui reprennent
   les corps, visages, couleurs et sous-races des peuples du jeu ;
-- trois classes : **Divinité de l'Ordre** (Sagesse, fiabilité), **Divinité du Chaos** (Charisme,
+- trois classes divines : **Divinité de l'Ordre** (Sagesse, fiabilité), **Divinité du Chaos** (Charisme,
   coups critiques et magie sauvage) et **Divinité Créatrice** (les bonus des deux sans les malus,
   n'importe quel sort du jeu, toutes les armures, 5 emplacements par niveau de sort) ;
+- une classe à part : le **Phénix** (Charisme, feu qui épargne les alliés et soigne, renaissance)
+  et ses 3 voies : Brasier, Cendre, Serres ;
 - **10 domaines** (sous-classes) en miroir : Vie/Mort, Justice/Tromperie, Magie/Sorcellerie,
   Soleil/Lune, Paix/Guerre ;
 - l'Affinité divine (résistance, puis immunité, puis absorption), le contrepoids (optionnel) et le

@@ -91,8 +91,8 @@ def passive(name, titre, desc, icon, props="Highlighted", **data):
                      Description=L.ref(name + ":desc", desc), Icon=icon, Properties=props, **data))
 
 
-def hidden(name, **data):
-    return add(Entry(name, "PassiveData", DisplayName=L.ref(name + ":nom", name), Properties="IsHidden", **data))
+def hidden(name, props="IsHidden", **data):
+    return add(Entry(name, "PassiveData", DisplayName=L.ref(name + ":nom", name), Properties=props, **data))
 
 
 def status(name, titre, desc, icon, using=None, stype="BOOST", **data):

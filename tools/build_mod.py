@@ -85,6 +85,7 @@ def equipment_txt():
         "EQP_CC_DOC_DiviniteOrdre": ("Melee", ["WPN_Mace", "ARM_Shield", "ARM_ScaleMail_Body", "ARM_Boots_Leather"]),
         "EQP_CC_DOC_DiviniteChaos": ("Melee", ["WPN_Dagger", "WPN_LightCrossbow", "ARM_Leather_Body",
                                                "ARM_Boots_Leather"]),
+        "EQP_CC_DOC_Phenix": ("Melee", ["WPN_Quarterstaff", "ARM_Leather_Body", "ARM_Boots_Leather"]),
         "EQP_CC_DOC_DiviniteCreatrice": ("Melee", ["WPN_Longsword", "ARM_Shield", "ARM_ChainMail_Body",
                                                    "ARM_Boots_Leather"]),
     }
