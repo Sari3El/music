@@ -283,7 +283,7 @@ Hors cahier des charges : la Créatrice réunit l'Ordre et le Chaos, sans leurs 
 | Capacités de l'Ordre | Loi absolue, Décrets, auras de l'Ordre, Inébranlable, Ordre parfait, sorts exclusifs de l'Ordre |
 | Capacités du Chaos | critiques 19/18/17, Entropie, auras du Chaos, Indomptable, Tempête primordiale, sorts exclusifs du Chaos |
 | Déferlement créateur | 1 chance sur 20 par sort : uniquement les effets divins favorables (ni magie sauvage, ni Contrecoup) |
-| Domaines | les 10 au choix (niveau 1), sans Contrepoids |
+| Domaine | **Domaine de la Création** (niveau 1) : toutes les capacités et tous les sorts de domaine des 10 domaines, Affinité divine pour les 10 types (résistance, immunité au niv. 6, absorption au niv. 10), aucun Contrepoids. Forme divine : +1d6 de chacun des 10 types. |
 | Divinité pure | +1 Décret et +1 Entropie |
 | Dons | niveaux 4, 8 et 12 |
 

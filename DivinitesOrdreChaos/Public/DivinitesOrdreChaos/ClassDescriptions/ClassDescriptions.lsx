@@ -233,162 +233,18 @@
                 <node id="ClassDescription">
                     <attribute id="CanLearnSpells" type="bool" value="true"/>
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="he064c695g3664g59f7g8103gc7cd7f9b10f4" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h6832c710g354fg57f6g8453ga4fadfbdbb7d" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="h5c078f66g0a44g50f8g9b4eg6f7d4d74b55b" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hecf8ae4ege284g5b38g9cf1gbcd289623eec" version="1"/>
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
                     <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Vie"/>
+                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Creation"/>
                     <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
                     <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="411cdaec-821a-51a8-9e55-79cce76e035e"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="hf12e9c1bg185cg5ceag8727g1c661e7a7127" version="1"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="cc9e2bd5-e912-55ed-a271-f2b7b70f6ac4"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h38bfba54g23a4g5112gbfa6ge8b85190df6c" version="1"/>
                     <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
                     <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="832a3f06-01b7-508c-a1f7-312ffce89d6a"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="h70928011gad90g5587gb104gb37ef8465e80" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hd2678190g8f08g504agb361g2a048c9c6627" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Justice"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="565f187c-82e7-56ee-bad7-0dd93bc6c1e1"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="hffaf83b0g86b5g5660gb54cga6c25bde8f71" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="ca166242-c306-59f5-99b0-d51e9624f098"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="h9bb265ecge6e9g5ba5gb857g1f49cee39ec7" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h673d0533gacecg56c3gb888gd4c423db6e82" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Magie"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="ef6f2bf1-b810-5e53-94e6-ef943e9bf750"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h82b93223g294eg5fa8gb794g00b97ea8b064" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="33ae15e3-a9fc-5368-a100-c0a9fb87d6c6"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="he4956fefgf57dg5501g9724gb3ade3dd2ba5" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="he8454e6cg0500g5236gbcb6g41078aaa53ae" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Soleil"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="17ddcd1d-2f9a-5477-828a-07bf45bd5621"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h70d468a5g2517g517eg9313g10e2a90a6a45" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="c7630fe0-e9b3-51bb-a944-0864d8f1b2d5"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="hb3f1a981gf919g54abgb822g16ae5bf3804d" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="haacc89b6gc049g51b7g98f1gccfd0d7bfd4d" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Paix"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="1c3c3d9a-9013-5e65-abc8-639b7c75f0ef"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h19ed26b3gf7f7g554fg86d8g068ce4a34fbb" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="35c03f1e-df6c-506d-8a1b-667391248a45"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="h8827221cg8c6eg5a7cg8a21gfb7cb73707a9" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h7bf8cb93gff0bg5538gabbfg6bb114373c89" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Mort"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="15d24512-ee6c-53aa-8701-9e161bb80f73"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h3942a82bg48e5g5290ga3a5g2660f4c44f51" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="d010a010-57cc-5f7b-bea0-b69024d5011b"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="hea673b34gc624g5b62ga22eg90c304bc6ca1" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hbbe178d8gd909g56cbg875dgee7336dfaba4" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Tromperie"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="5fc88990-5a41-505a-a42a-beb26777f138"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h8fc37ff2g3cecg59dfg8d5cg3f1eb001daa0" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="556f1a84-c002-5913-9333-21dd3ec509bb"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="he768c8b1gd767g557dg8a76g02ed58898604" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h333977f7g39aag5e92gbc99g3ba6337ba09f" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Sorcellerie"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="3eb80dbc-c31a-5310-b853-73c404aa50c7"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h635740fbg317eg5bc7g9378g86b16677f536" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="4bebff9a-1c7a-549f-a0b2-626b72502d25"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="hda70d511g4c75g5377gad62gcd2512f8a4ea" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hac4ea828geae2g5075g85cag1dfba5bfbe64" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Lune"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="8e2f5017-0b0d-59ca-96ff-8f6b63b004c7"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="hd08807f7g40b7g56e3g98c9gc1f2cc5b0d44" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="1136d6a4-643b-5049-801f-074892405468"/>
-                </node>
-                <node id="ClassDescription">
-                    <attribute id="CanLearnSpells" type="bool" value="true"/>
-                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="h168a4c54gfe36g5736gbd04ga31263ffdd65" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h8cc04111gbe51g56bdgba97g8a2e1f0fa08a" version="1"/>
-                    <attribute id="LearningStrategy" type="uint8" value="1"/>
-                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="DOC_Creatrice_Guerre"/>
-                    <attribute id="ParentGuid" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
-                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
-                    <attribute id="ProgressionTableUUID" type="guid" value="a8fdcb89-ff79-56c2-b5f4-f41e9504becf"/>
-                    <attribute id="ShortName" type="TranslatedString" handle="h9838f756g717eg5de7gab2ag2861aeb3c237" version="1"/>
-                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
-                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
-                    <attribute id="UUID" type="guid" value="da393d5b-e56a-5738-9d8f-5a6edeab331c"/>
+                    <attribute id="UUID" type="guid" value="68121aa3-9d21-5453-a8e9-fbd99abeb895"/>
                 </node>
             </children>
         </node>

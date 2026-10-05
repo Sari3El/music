@@ -355,7 +355,7 @@ selector_label("DOC_TourCreation", "Tours de magie de la Création",
 for cls, info in CLASSES.items():
     table = U("table:" + cls)
     if cls == C.CREATRICE:
-        subclass_uuids = [U("class:DOC_Creatrice_" + d) for d in C.DOMAINES]
+        subclass_uuids = [U("class:DOC_Creatrice_Creation")]
     else:
         subclass_uuids = [U("class:DOC_" + d) for d, v in C.DOMAINES.items() if v[0] == cls]
     for lv in range(1, 13):
@@ -460,43 +460,48 @@ for dom, (cls, titre, dt, opp, fr) in C.DOMAINES.items():
         ("UUID", "guid", U("class:DOC_" + dom)),
     ]))
 
-# ================================================================== DOMAINES DE LA CRÉATRICE
-# Les 10 domaines, mêmes capacités, sans le Contrepoids (aucun malus).
-for dom, (cls, titre, dt, opp, fr) in C.DOMAINES.items():
-    name = f"DOC_Creatrice_{dom}"
-    table = U("table:sub:creatrice:" + dom)
-    dlists = domain_lists(dom)
-    flists = feature_lists(dom)
-    for lv in sorted(set(dlists) | set(D.FEATURES[dom])):
+# ================================================================== DOMAINE DE LA CRÉATION (Créatrice)
+# Un seul domaine qui réunit TOUTES les capacités des 10 domaines, sans aucun Contrepoids.
+CREATION = "DOC_Creatrice_Creation"
+creation_table = U("table:sub:creatrice:Creation")
+for lv in range(1, 13):
+    boosts, passives, removed, sel = [], [], [], []
+    for dom in C.DOMAINES:
+        dlists, flists = domain_lists(dom), feature_lists(dom)
         f = D.FEATURES[dom].get(lv, {"passives": [], "removed": [], "spells": [], "boosts": [], "selectors": []})
-        sel = []
         if lv in dlists:
             sel.append(f"AddSpells({dlists[lv]},,,,AlwaysPrepared)")
         if lv in flists:
             sel.append(f"AddSpells({flists[lv]},,,,AlwaysPrepared)")
-        sel += f["selectors"]
-        boosts = f["boosts"]
+        sel += [x for x in f["selectors"] if x not in sel]
+        boosts += f["boosts"]
+        passives += [x for x in f["passives"] if not x.endswith("_Contrepoids") and x not in passives]
+        removed += f["removed"]
         if dom == "Magie" and lv == 10:
             sel += [f"SelectSpells({C.CLERIC_SPELLS[1]},1,0,DOC_MaitriseSorts,,{MAITRISE_RES},AlwaysPrepared)",
                     f"SelectSpells({C.CLERIC_SPELLS[2]},1,0,DOC_MaitriseSorts,,{MAITRISE_RES},AlwaysPrepared)"]
-            boosts = boosts + ["ActionResource(DOC_MaitriseSorts,1,0)"]
-        passives = [x for x in f["passives"] if not x.endswith("_Contrepoids")]
-        progression(name, table, lv, 1, boosts=boosts, passives=passives, removed=f["removed"],
-                    selectors=sel, key=name)
-    CLASSDESCS.append(Node("ClassDescription", [
-        ("CanLearnSpells", "bool", "true"),
-        ("CharacterCreationPose", "guid", C.CC_POSE),
-        ("Description", "TranslatedString", L.add(f"class:{name}:desc",
-                                                  DOMAIN_DESC[dom] + " Sans contrepoids.")),
-        ("DisplayName", "TranslatedString", L.add(f"class:{name}:nom", titre)),
-        ("LearningStrategy", "uint8", 1),
-        ("MustPrepareSpells", "bool", "true"),
-        ("Name", "FixedString", name),
-        ("ParentGuid", "guid", U("class:" + C.CREATRICE)),
-        ("PrimaryAbility", "uint8", CLASSES[C.CREATRICE]["ability"]),
-        ("ProgressionTableUUID", "guid", table),
-        ("ShortName", "TranslatedString", L.add(f"class:{name}:court", dom)),
-        ("SoundClassType", "FixedString", CLASSES[C.CREATRICE]["sound"]),
-        ("SpellCastingAbility", "uint8", CLASSES[C.CREATRICE]["ability"]),
-        ("UUID", "guid", U("class:" + name)),
-    ]))
+            boosts += ["ActionResource(DOC_MaitriseSorts,1,0)"]
+    if boosts or passives or removed or sel:
+        progression(CREATION, creation_table, lv, 1, boosts=boosts, passives=passives, removed=removed,
+                    selectors=sel, key=CREATION)
+CLASSDESCS.append(Node("ClassDescription", [
+    ("CanLearnSpells", "bool", "true"),
+    ("CharacterCreationPose", "guid", C.CC_POSE),
+    ("Description", "TranslatedString", L.add(f"class:{CREATION}:desc",
+        "Avant l'Ordre et le Chaos, il y avait la Création. Ce domaine réunit les pouvoirs des dix autres : "
+        "Vie, Justice, Magie, Soleil, Paix, Mort, Tromperie, Sorcellerie, Lune et Guerre. Vous gagnez toutes "
+        "leurs capacités et tous leurs sorts de domaine, et l'Affinité divine pour les dix types de dégâts "
+        "(radiant, foudre, force, feu, psychique, nécrotique, poison, acide, froid, tonnerre) : résistance, "
+        "puis immunité au niveau 6, puis absorption au niveau 10. Aucun contrepoids.")),
+    ("DisplayName", "TranslatedString", L.add(f"class:{CREATION}:nom", "Domaine de la Création")),
+    ("LearningStrategy", "uint8", 1),
+    ("MustPrepareSpells", "bool", "true"),
+    ("Name", "FixedString", CREATION),
+    ("ParentGuid", "guid", U("class:" + C.CREATRICE)),
+    ("PrimaryAbility", "uint8", CLASSES[C.CREATRICE]["ability"]),
+    ("ProgressionTableUUID", "guid", creation_table),
+    ("ShortName", "TranslatedString", L.add(f"class:{CREATION}:court", "Création")),
+    ("SoundClassType", "FixedString", CLASSES[C.CREATRICE]["sound"]),
+    ("SpellCastingAbility", "uint8", CLASSES[C.CREATRICE]["ability"]),
+    ("UUID", "guid", U("class:" + CREATION)),
+]))
