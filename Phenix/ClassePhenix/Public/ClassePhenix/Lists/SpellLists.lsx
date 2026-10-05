@@ -6,7 +6,7 @@
             <children>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 1)"/>
-                    <attribute id="Spells" type="LSString" value="Target_PHX_FlammeBienfaitrice;Projectile_PHX_PlumeArdente"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_FlammeBienfaitrice"/>
                     <attribute id="UUID" type="guid" value="daa2577d-1e8b-5064-862f-e1c87bc494c7"/>
                 </node>
                 <node id="SpellList">
@@ -21,7 +21,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 5)"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_PHX_PluieDePlumes;Target_PHX_LarmesDePhenix;Projectile_PHX_PlumeArdente_Rebond"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_PHX_PluieDePlumes;Target_PHX_LarmesDePhenix"/>
                     <attribute id="UUID" type="guid" value="1560909c-2c6a-5f42-bc6a-1cb8e7ad3bee"/>
                 </node>
                 <node id="SpellList">

@@ -8,7 +8,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResource(SpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;PHX_Marqueur;PHX_FlammeLoyale;PHX_CendresArdentes"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;PHX_Marqueur;PHX_FlammeLoyale;PHX_CendresArdentes;PHX_PlumeArdente_Sort"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(6cced5ee-183f-57f4-a1f2-045f82e52369,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(daa2577d-1e8b-5064-862f-e1c87bc494c7,,,,AlwaysPrepared);SelectSpells(0c0cddb6-2b8d-5933-850e-63a2f9da6ab0,2,0,PHX_SortPhenix);SelectSpells(0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d,2,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
@@ -57,7 +57,8 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;PHX_Ignifuge"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3;PHX_Ignifuge;PHX_PlumeArdente_Rebond_Sort"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="PHX_PlumeArdente_Sort"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(1560909c-2c6a-5f42-bc6a-1cb8e7ad3bee,,,,AlwaysPrepared);SelectSpells(258bd1e6-036d-5fd8-9e2f-201da386ba59,1,1,PHX_SortPhenix)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
@@ -138,7 +139,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="PHX_Phenix"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;PHX_Marqueur;PHX_FlammeLoyale;PHX_CendresArdentes"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;PHX_Marqueur;PHX_FlammeLoyale;PHX_CendresArdentes;PHX_PlumeArdente_Sort"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(daa2577d-1e8b-5064-862f-e1c87bc494c7,,,,AlwaysPrepared);SelectSpells(0c0cddb6-2b8d-5933-850e-63a2f9da6ab0,2,0,PHX_SortPhenix);SelectSpells(0969cf36-a5e3-5eae-8bf8-6ed6f0521a7d,2,0,PHX_TourPhenix,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>

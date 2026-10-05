@@ -13,8 +13,10 @@
 	<content contentuid="h35178072g72d3g5a03gb45cg061555331330" version="1">Quand vous tombez à terre (0 PV), vos cendres couvent : au bout de 2 tours, si personne ne vous a relevé, vous vous relevez seul avec 1/6 de vos PV maximum.</content>
 	<content contentuid="h8a0d10ecgbb49g5283g9294g4cee842ea8a6" version="1">Plume ardente</content>
 	<content contentuid="h6c9b8491g84adg50bbg8653g68705da9f8c0" version="1">Tour de magie. Une plume de feu frappe une cible : 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).</content>
-	<content contentuid="h39d26dc2g6c15g56b1g8f95g6b4e5d7740df" version="1">Plume ardente (rebond)</content>
-	<content contentuid="hd47ce324g62b8g521agbd65g29ef0dee019c" version="1">Tour de magie. Deux plumes de feu : choisissez deux cibles (ou deux fois la même). Chacune inflige 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).</content>
+	<content contentuid="h39d26dc2g6c15g56b1g8f95g6b4e5d7740df" version="1">Plume ardente</content>
+	<content contentuid="hd47ce324g62b8g521agbd65g29ef0dee019c" version="1">Tour de magie. La plume rebondit : deux plumes de feu, choisissez deux cibles (ou deux fois la même). Chacune inflige 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).</content>
+	<content contentuid="h9a40924eg5d2bg5bbcg8d5cgccc4aa56cdaa" version="1">PHX_PlumeArdente_Sort</content>
+	<content contentuid="h449cc50agc444g50c4gb91ag9e9281297563" version="1">PHX_PlumeArdente_Rebond_Sort</content>
 	<content contentuid="hcd780429gc8f3g5a61g8ecdgdff516daac53" version="1">Braises</content>
 	<content contentuid="h23f9d111g2972g561fg9a73g122e1a38b01b" version="1">Une fois par tour, quand vous infligez des dégâts de feu, vous gagnez 1 Braise (maximum 3, puis 5 au niveau 9). Dépensez-les avec Attiser, Propager ou Purifier.</content>
 	<content contentuid="h6dbe3651g3299g5520gaaabg6739c1dc93e4" version="1">PHX_BraisesAbsorbees</content>

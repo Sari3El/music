@@ -159,9 +159,14 @@ PLUME = dict(using="Projectile_FireBolt", Level="0", Icon="Spell_Transmutation_F
 spell("Projectile_PHX_PlumeArdente", "Projectile", "Plume ardente",
       "Tour de magie. Une plume de feu frappe une cible : 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au "
       "niveau 10).", AmountOfTargets="1", **PLUME)
-spell("Projectile_PHX_PlumeArdente_Rebond", "Projectile", "Plume ardente (rebond)",
-      "Tour de magie. Deux plumes de feu : choisissez deux cibles (ou deux fois la même). Chacune inflige "
-      "1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).", AmountOfTargets="2", **PLUME)
+spell("Projectile_PHX_PlumeArdente_Rebond", "Projectile", "Plume ardente",
+      "Tour de magie. La plume rebondit : deux plumes de feu, choisissez deux cibles (ou deux fois la même). "
+      "Chacune inflige 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).", AmountOfTargets="2", **PLUME)
+# Le sort est donné par un passif invisible : au niveau 5, le passif est retiré (et le sort à 1 cible
+# avec lui) et remplacé par celui qui donne la version qui rebondit. Une progression ne sait pas retirer
+# un sort directement.
+hidden("PHX_PlumeArdente_Sort", Boosts="UnlockSpell(Projectile_PHX_PlumeArdente,,,,Charisma)")
+hidden("PHX_PlumeArdente_Rebond_Sort", Boosts="UnlockSpell(Projectile_PHX_PlumeArdente_Rebond,,,,Charisma)")
 
 # ================================================================== NIVEAU 2 : BRAISES
 passive("PHX_Braises", "Braises",
@@ -386,14 +391,14 @@ spell("Shout_PHX_AvatarDuPhenix", "Shout", "Avatar du phénix",
       TooltipStatusApply="ApplyStatus(PHX_AVATAR,100,5)", **FEATURE_SPELL)
 
 # ================================================================== CLASSE DE BASE : niveau -> capacités
-feat(None, 1, passives=["PHX_Marqueur", "PHX_FlammeLoyale", "PHX_CendresArdentes"],
-     spells=["Target_PHX_FlammeBienfaitrice", "Projectile_PHX_PlumeArdente"])
+feat(None, 1, passives=["PHX_Marqueur", "PHX_FlammeLoyale", "PHX_CendresArdentes", "PHX_PlumeArdente_Sort"],
+     spells=["Target_PHX_FlammeBienfaitrice"])
 feat(None, 2, passives=["PHX_Braises", "PHX_BraisesAbsorbees"],
      boosts=["ActionResource(PHX_Braise,3,0)"],
      spells=["Shout_PHX_Attiser", "Shout_PHX_Propager", "Shout_PHX_Purifier"])
 feat(None, 3, spells=["Target_PHX_BondDeFlamme"])
-feat(None, 5, passives=["PHX_Ignifuge"],
-     spells=["Projectile_PHX_PluieDePlumes", "Target_PHX_LarmesDePhenix", "Projectile_PHX_PlumeArdente_Rebond"])
+feat(None, 5, passives=["PHX_Ignifuge", "PHX_PlumeArdente_Rebond_Sort"], removed=["PHX_PlumeArdente_Sort"],
+     spells=["Projectile_PHX_PluieDePlumes", "Target_PHX_LarmesDePhenix"])
 feat(None, 6, passives=["PHX_BouclierFlammes_1"])
 feat(None, 7, passives=["PHX_FeuSacre"], spells=["Shout_PHX_BucherSacre"])
 feat(None, 9, passives=["PHX_CoeurDePhenix"], boosts=["ActionResource(PHX_Braise,2,0)"],

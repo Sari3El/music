@@ -33,7 +33,7 @@ dans `outils/contenu.py` (`TOURS_FEU_LUMIERE`, `SORTS_FEU_LUMIERE`).
 | 1 | Flamme loyale | Les dégâts de feu que le Phénix inflige à un allié (ou à lui-même) sont rendus aussitôt en PV, et l'état En feu est retiré. Tous les sorts du Phénix ne visent de toute façon que les ennemis. |
 | 1 | Flamme bienfaitrice (sort niv. 1) | 1d8 + Cha PV, puis 1d6 PV par tour pendant 3 tours, avec le visuel « En feu ». |
 | 1 | Cendres ardentes | À terre : au bout de 2 tours, relevé avec 1/6 des PV max (si personne ne l'a relevé avant). |
-| 1 | Plume ardente (tour) | 1d10 feu (2d10 au niv. 5, 3d10 au niv. 10). Au niv. 5 s'ajoute « Plume ardente (rebond) » : 2 cibles. |
+| 1 | Plume ardente (tour) | 1d10 feu (2d10 au niv. 5, 3d10 au niv. 10). Au niv. 5, il est remplacé par sa version qui rebondit : 2 cibles. |
 | 2 | Braises | +1 par tour quand le Phénix inflige ou subit du feu ; max 3, 5 au niv. 9, +2 en Brasier. Attiser (+1d6 feu), Propager (explosion 2d6 à 3 m autour de la cible), Purifier (retire Empoisonné, Aveuglé, Effrayé, Charmé, Paralysé, maladies aux alliés à 9 m). Chacun : action bonus + 1 Braise. |
 | 3 | Bond de flamme (sort niv. 2) | Téléportation 9 m, 2d6 feu aux ennemis à 3 m au départ et à l'arrivée. |
 | 5 | Ignifugé | Immunité au feu et à l'état En feu. |

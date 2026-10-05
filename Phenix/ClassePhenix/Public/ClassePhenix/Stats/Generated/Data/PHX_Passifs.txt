@@ -23,6 +23,18 @@ data "StatsFunctorContext" "OnStatusApplied"
 data "Conditions" "StatusId('DOWNED')"
 data "StatsFunctors" "ApplyStatus(SELF,PHX_CENDRES_ARDENTES,100,2)"
 
+new entry "PHX_PlumeArdente_Sort"
+type "PassiveData"
+data "DisplayName" "h9a40924eg5d2bg5bbcg8d5cgccc4aa56cdaa;1"
+data "Properties" "IsHidden"
+data "Boosts" "UnlockSpell(Projectile_PHX_PlumeArdente,,,,Charisma)"
+
+new entry "PHX_PlumeArdente_Rebond_Sort"
+type "PassiveData"
+data "DisplayName" "h449cc50agc444g50c4gb91ag9e9281297563;1"
+data "Properties" "IsHidden"
+data "Boosts" "UnlockSpell(Projectile_PHX_PlumeArdente_Rebond,,,,Charisma)"
+
 new entry "PHX_Braises"
 type "PassiveData"
 data "DisplayName" "hcd780429gc8f3g5a61g8ecdgdff516daac53;1"
