@@ -2,9 +2,9 @@
 
 Ce mod ajoute :
 
-- la race **Divinité**, des dieux tombés sur Faerûn, avec 11 formes au choix (humaine, elfique, drow,
-  demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide, demi-orque) qui reprennent les
-  corps, visages et couleurs des races du jeu ;
+- la race **Divinité**, des dieux tombés sur Faerûn, déclinée en 11 races (Divinité humaine, elfe,
+  drow, demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide, demi-orque) qui reprennent
+  les corps, visages, couleurs et sous-races des peuples du jeu ;
 - deux classes : **Divinité de l'Ordre** (Sagesse, fiabilité) et **Divinité du Chaos** (Charisme,
   coups critiques et magie sauvage) ;
 - **10 domaines** (sous-classes) en miroir : Vie/Mort, Justice/Tromperie, Magie/Sorcellerie,

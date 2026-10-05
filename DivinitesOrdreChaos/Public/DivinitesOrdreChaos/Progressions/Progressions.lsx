@@ -7,28 +7,288 @@
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
                     <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="DOC_Divinite"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Humain"/>
                     <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
-                    <attribute id="TableUUID" type="guid" value="ed71666c-1810-5aea-9508-f4ee1332a569"/>
-                    <attribute id="UUID" type="guid" value="1cdfdf1c-bb6b-5b56-867d-ad37818c1ee2"/>
+                    <attribute id="TableUUID" type="guid" value="d0292a40-ea38-5a55-96f1-18c1962be075"/>
+                    <attribute id="UUID" type="guid" value="5597c1b3-700e-51cb-ba9f-8d12ad31c83e"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="DOC_Divinite"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Humain"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="ed71666c-1810-5aea-9508-f4ee1332a569"/>
-                    <attribute id="UUID" type="guid" value="a19a65a1-6433-57ef-8585-b8568c7afc56"/>
+                    <attribute id="TableUUID" type="guid" value="d0292a40-ea38-5a55-96f1-18c1962be075"/>
+                    <attribute id="UUID" type="guid" value="e7a45431-3211-5328-8ed9-6aa1195d073b"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="DOC_Divinite"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Humain"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="ed71666c-1810-5aea-9508-f4ee1332a569"/>
-                    <attribute id="UUID" type="guid" value="5d9e5bcb-9a9e-5bbc-86b7-920072201635"/>
+                    <attribute id="TableUUID" type="guid" value="d0292a40-ea38-5a55-96f1-18c1962be075"/>
+                    <attribute id="UUID" type="guid" value="b94074e2-4530-5bc2-8845-e8f7aaa19373"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Elfe"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="dbffa7de-20a7-5b0e-8838-27386190fc56"/>
+                    <attribute id="UUID" type="guid" value="193792eb-bbb1-50bd-a19f-343c82cf2dae"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Elfe"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="dbffa7de-20a7-5b0e-8838-27386190fc56"/>
+                    <attribute id="UUID" type="guid" value="270f3b24-7da7-5402-bfd6-040e626ead39"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Elfe"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="dbffa7de-20a7-5b0e-8838-27386190fc56"/>
+                    <attribute id="UUID" type="guid" value="8badcc28-039b-511d-befb-b65ee3320bed"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Drow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="e4a8571a-0699-5309-a531-3a50812e0203"/>
+                    <attribute id="UUID" type="guid" value="df2fb768-b539-5267-a15f-4a8ec75251aa"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Drow"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="e4a8571a-0699-5309-a531-3a50812e0203"/>
+                    <attribute id="UUID" type="guid" value="062c8d72-3134-5750-b5ed-e48a8232b31d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Drow"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="e4a8571a-0699-5309-a531-3a50812e0203"/>
+                    <attribute id="UUID" type="guid" value="d9564e7c-4fee-5b25-a17c-a9fe1a8b8f8e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_DemiElfe"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="c1ad7398-5b15-5ca6-98ff-7fa9ae03c791"/>
+                    <attribute id="UUID" type="guid" value="e837575f-9b56-5b5d-b5be-c5104d0cda63"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_DemiElfe"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c1ad7398-5b15-5ca6-98ff-7fa9ae03c791"/>
+                    <attribute id="UUID" type="guid" value="d98558a6-ac6d-5044-a458-5aac7d051fe6"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_DemiElfe"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c1ad7398-5b15-5ca6-98ff-7fa9ae03c791"/>
+                    <attribute id="UUID" type="guid" value="15b31e38-e16e-53cb-b1df-c59f431835e3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Nain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="42394d58-d937-5195-90b2-62818de6a807"/>
+                    <attribute id="UUID" type="guid" value="f904d8ac-ab16-548d-91c2-556e2b72ff6d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Nain"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="42394d58-d937-5195-90b2-62818de6a807"/>
+                    <attribute id="UUID" type="guid" value="3f91ae9b-e62b-5d65-aff7-066ff621dfb7"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Nain"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="42394d58-d937-5195-90b2-62818de6a807"/>
+                    <attribute id="UUID" type="guid" value="877d7235-4f17-5183-afce-5151885a720b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Halfelin"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="cc88443a-41a0-591a-9ba3-5029402a3a42"/>
+                    <attribute id="UUID" type="guid" value="177b03ed-9d63-51f1-8462-eeeab40a8ca0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Halfelin"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="cc88443a-41a0-591a-9ba3-5029402a3a42"/>
+                    <attribute id="UUID" type="guid" value="741fdc10-8ae9-5cfe-8fb4-95603e167d5e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Halfelin"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="cc88443a-41a0-591a-9ba3-5029402a3a42"/>
+                    <attribute id="UUID" type="guid" value="71ec765b-6446-58ee-b1e6-afc011707894"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Gnome"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="fd1f1016-1dd0-56e7-8827-bdfe09ab9309"/>
+                    <attribute id="UUID" type="guid" value="fd0b70a2-7ef1-5f5a-aa06-e32221c95222"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Gnome"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="fd1f1016-1dd0-56e7-8827-bdfe09ab9309"/>
+                    <attribute id="UUID" type="guid" value="b9d8024d-763e-5dc7-957b-6cefdf00a2e9"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Gnome"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="fd1f1016-1dd0-56e7-8827-bdfe09ab9309"/>
+                    <attribute id="UUID" type="guid" value="7ebe8680-acb7-5219-8799-cc30b4374cb4"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Tieffelin"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="61c7bd32-9385-5461-a8b6-d261b97ea04d"/>
+                    <attribute id="UUID" type="guid" value="3205b9e7-36cd-5957-a29e-6524246afc85"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Tieffelin"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="61c7bd32-9385-5461-a8b6-d261b97ea04d"/>
+                    <attribute id="UUID" type="guid" value="d4d78756-0280-5adb-9449-45c1c5ac324d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Tieffelin"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="61c7bd32-9385-5461-a8b6-d261b97ea04d"/>
+                    <attribute id="UUID" type="guid" value="796dd59d-ac01-53ea-bd9d-dfbc511ee82b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Githyanki"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="d64febec-2210-5ea8-89ee-5f3a1d354855"/>
+                    <attribute id="UUID" type="guid" value="87fbc655-5ae1-5090-be6d-2d28055c8a9c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Githyanki"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="d64febec-2210-5ea8-89ee-5f3a1d354855"/>
+                    <attribute id="UUID" type="guid" value="36af6456-444b-549f-bc0b-1f5628098c54"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Githyanki"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="d64febec-2210-5ea8-89ee-5f3a1d354855"/>
+                    <attribute id="UUID" type="guid" value="bac48116-5939-5779-81c0-c9a0cac318b6"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Drakeide"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="e079a706-1cbd-5d0c-a2f8-1e0ee9941a34"/>
+                    <attribute id="UUID" type="guid" value="c9b9ba84-9f9e-5ef2-8374-01f33c1f3133"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Drakeide"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="e079a706-1cbd-5d0c-a2f8-1e0ee9941a34"/>
+                    <attribute id="UUID" type="guid" value="39c61ffd-e556-59e5-b9a5-fc20b3e12f22"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_Drakeide"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="e079a706-1cbd-5d0c-a2f8-1e0ee9941a34"/>
+                    <attribute id="UUID" type="guid" value="f31afb5d-c5ce-56d4-aeca-cdfebbb21118"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Religion);ProficiencyBonus(Skill,Intimidation)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_DemiOrque"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DOC_Race_Marqueur;DOC_Race_VueDivine;DOC_Race_VolonteDivine;DOC_Race_EtincelleImmortelle"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0337b530-272e-556c-8c89-5e7f7163e6a3,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
+                    <attribute id="TableUUID" type="guid" value="9f0bad1a-1b68-5514-b134-d3240d27f6ad"/>
+                    <attribute id="UUID" type="guid" value="b7d7a3e1-7a3e-5f58-90dc-a6e66cd18ff0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_DemiOrque"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(30231d77-ddf0-50ce-8ab7-c7ec91502123,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="9f0bad1a-1b68-5514-b134-d3240d27f6ad"/>
+                    <attribute id="UUID" type="guid" value="2104d407-eb69-5437-82c6-563c836d9262"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="DOC_Divinite_DemiOrque"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ecdba5c0-0ac5-5004-a2c9-040351f4a5fb,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="9f0bad1a-1b68-5514-b134-d3240d27f6ad"/>
+                    <attribute id="UUID" type="guid" value="a6ab2211-5b33-54b5-9b9d-cceba838ca1e"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);ActionResource(SpellSlot,2,1)"/>

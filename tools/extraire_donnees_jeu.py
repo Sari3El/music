@@ -45,46 +45,46 @@ def main(folder):
              "Nain": "0ab2874d", "Halfelin": "78cd3bcc", "Gnome": "f1b3f884", "Tieffelin": "b6dccbed",
              "Githyanki": "bdf9b779", "Drakeide": "9c61a74a", "DemiOrque": "5c39a726"}
     zero = "00000000-0000-0000-0000-000000000000"
+    vkeys = ("UUID", "SlotName", "VisualResource", "DisplayName", "BodyType", "BodyShape", "DefaultSkinColor",
+             "IconIdOverride", "RootTemplate")
+    pkeys = ("BodyType", "BodyShape", "RootTemplate", "CloseUpA", "CloseUpB", "Overview", "VOLinesTableUUID")
 
     def split(v):
         return [x for x in (v or "").split(";") if x]
+
+    def lists_of(r, skin_fallback=False):
+        out_l = {k: split(r.get(k)) for k in LISTS if split(r.get(k))}
+        if skin_fallback and "SkinColors" not in out_l:
+            out_l["SkinColors"] = split(races[HUMANOID].get("SkinColors"))
+        return out_l
+
+    def visuals_of(uuid):
+        return [{k: v[k] for k in vkeys if k in v} for v in visuals.values() if v.get("RaceUUID") == uuid]
+
+    def bodies(race, sub):
+        seen = {}
+        for p in presets.values():
+            if p.get("RaceUUID") == race and p.get("SubRaceUUID", zero) == (sub or zero):
+                seen.setdefault((p["BodyType"], p.get("BodyShape", "0")), {k: p[k] for k in pkeys if k in p})
+        return list(seen.values())
 
     for bnom, prefix in bases.items():
         race = next(u for u in races if u.startswith(prefix))
         base = races[race]
         subs = [u for u, r in races.items() if r.get("ParentUUID") == race and r.get("ProgressionTableUUID")]
-        for sub in (subs or [None]):
-            src = races[sub] if sub else base
-            nom = f"{bnom}_{src['RaceName']}" if sub else bnom
-            lists = {}
-            for k in LISTS:
-                vals = split(src.get(k)) if sub else []
-                if not vals:
-                    vals = split(base.get(k))
-                if not vals and k == "SkinColors":
-                    vals = split(races[HUMANOID].get("SkinColors"))
-                if vals:
-                    lists[k] = vals
-            ps = [p for p in presets.values() if p.get("RaceUUID") == race and p.get("SubRaceUUID", zero) == (sub or zero)]
-            if not ps:
-                ps = [p for p in presets.values() if p.get("RaceUUID") == race and p.get("SubRaceUUID", zero) == zero]
-            if not ps:
-                ps = [p for p in presets.values() if p.get("RaceUUID") == race]
-            corps = {}
-            for p in ps:
-                corps.setdefault((p["BodyType"], p.get("BodyShape", "0")), {k: p[k] for k in (
-                    "BodyType", "BodyShape", "RootTemplate", "CloseUpA", "CloseUpB", "Overview", "VOLinesTableUUID")
-                    if k in p})
-            own = [v for v in visuals.values() if sub and v.get("RaceUUID") == sub]
-            own_slots = {v["SlotName"] for v in own}
-            vis = own + [v for v in visuals.values() if v.get("RaceUUID") == race and v["SlotName"] not in own_slots]
-            vis = [{k: v[k] for k in ("UUID", "SlotName", "VisualResource", "DisplayName", "BodyType", "BodyShape",
-                                      "DefaultSkinColor", "IconIdOverride", "RootTemplate") if k in v} for v in vis]
-            out[nom] = {"race": race, "sous_race": sub, "nom_jeu": src.get("DisplayName"),
-                        "RaceEquipment": src.get("RaceEquipment") or base.get("RaceEquipment"),
-                        "RaceSoundSwitch": src.get("RaceSoundSwitch") or base.get("RaceSoundSwitch"),
-                        "listes": lists, "corps": list(corps.values()), "visuels": vis}
-            print(f"{nom:28s} corps={len(corps)} visuels={len(vis)} peaux={len(lists.get('SkinColors', []))}")
+        has_subs = bool(subs)
+        out[bnom] = {
+            "race": race, "nom_jeu": base.get("DisplayName"), "RaceEquipment": base.get("RaceEquipment"),
+            "RaceSoundSwitch": base.get("RaceSoundSwitch"),
+            "listes": lists_of(base, skin_fallback=not has_subs or not any(split(races[s].get("SkinColors")) for s in subs)),
+            "visuels": visuals_of(race), "corps": [] if has_subs else bodies(race, None),
+            "sous_races": [{"uuid": s, "code": races[s]["RaceName"], "nom_jeu": races[s].get("DisplayName"),
+                            "RaceEquipment": races[s].get("RaceEquipment"),
+                            "RaceSoundSwitch": races[s].get("RaceSoundSwitch"),
+                            "listes": lists_of(races[s]), "visuels": visuals_of(s), "corps": bodies(race, s)}
+                           for s in subs]}
+        print(f"{bnom:10s} visuels={len(out[bnom]['visuels'])} corps={len(out[bnom]['corps'])} sous-races=" +
+              ", ".join(f"{x['code']}({len(x['corps'])} corps, {len(x['visuels'])} vis)" for x in out[bnom]["sous_races"]))
     dest = os.path.join(os.path.dirname(__file__), "donnees_jeu.json")
     json.dump(out, open(dest, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print("écrit :", dest)
