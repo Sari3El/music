@@ -44,7 +44,7 @@ dans `outils/contenu.py` (`TOURS_FEU_LUMIERE`, `SORTS_FEU_LUMIERE`).
 | 9 | Cœur de phénix | Chaque fois que du feu l'atteint (même le sien) : +3d8 PV. |
 | 9 | Plume de renaissance (sort niv. 5) | L'allié qui tombe à 0 PV renaît avec la moitié de ses PV, gerbe 3d6 feu aux ennemis (une fois). |
 | 10 | Renaissance du phénix + Renouveau | 1 fois par repos long, à 0 PV : renaît avec tous ses PV, explosion 6d6 feu aux ennemis à 6 m, puis +1d6 feu sur attaques et sorts pendant 2 tours. |
-| 11 | Envol du phénix (sort niv. 6) | Invoque un élémentaire de feu. |
+| 11 | Envol du phénix (sort niv. 6) | Invoque un élémentaire de feu qui explose quand il meurt ou disparaît : 4d6 feu aux ennemis à 6 m, 2d8 PV aux alliés. |
 | 12 | Avatar du phénix | 1 fois par repos long, 5 tours : vol + aura 3 m (2d6 feu aux ennemis, 2d6 PV aux alliés). |
 
 Voie (une seule, au niveau 3) : **Voie du Phénix éternel**, qui réunit les trois voies prévues par
@@ -65,8 +65,8 @@ le cahier des charges :
   les rend aussitôt en PV. Les surfaces de feu créées par ces sorts restent dangereuses.
 - **Propager** fait exploser le feu autour de la cible au lieu de viser une 2e cible précise.
 - **Bûcher sacré** est une aura autour du Phénix plutôt qu'une zone fixe.
-- **Envol du phénix** invoque un élémentaire de feu (pas de modèle de phénix dans le jeu) et
-  n'explose pas à sa mort.
+- **Envol du phénix** invoque un élémentaire de feu (pas de modèle de phénix dans le jeu). Il explose
+  aussi quand il disparaît à la fin du sort, pas seulement à sa mort.
 - **Feu sacré** au niveau 11 ignore l'immunité au lieu de la réduire en résistance.
 - Voie du Brasier : « zones de feu élargies » remplacé par +Charisme aux dégâts des sorts de feu.
 
@@ -87,5 +87,4 @@ Ces points reposent sur des mécanismes du jeu que je n'ai pas pu vérifier sans
 
 - Icônes propres à la classe et à ses voies.
 - Traduction anglaise (le fichier anglais reprend le français pour l'instant).
-- Avec le Script Extender (hors mod.io) : vraie renaissance après la mort, phénix invoqué qui
-  explose à sa mort, zones de feu fixes au sol.
+- Avec le Script Extender (hors mod.io) : vraie renaissance après la mort, zones de feu fixes au sol.

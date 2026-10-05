@@ -79,8 +79,12 @@
 	<content contentuid="h10a50c3fg3e38g5327g91f4g5939e9df82e5" version="1">La prochaine fois que vous tombez à 0 PV, vous renaissez avec tous vos PV.</content>
 	<content contentuid="hc40e8749g6dcfg52beg8b52gdaa512cbad96" version="1">Renaissance du phénix</content>
 	<content contentuid="h92ffb87ag5138g534eg9131g2282e2c2cd6a" version="1">Une fois par repos long, quand vous tombez à 0 PV, vous ne tombez pas : vous renaissez aussitôt avec tous vos PV dans une grande explosion de feu (6d6 dégâts aux ennemis à 6 m, aucun aux alliés). Renouveau : pendant 2 tours, vos attaques et sorts infligent 1d6 dégâts de feu supplémentaires. Ensuite, Cendres ardentes reprend le relais.</content>
+	<content contentuid="h0b5a7aa5g8cceg5819g8466geb8d428161f9" version="1">Envol du phénix : explosion</content>
+	<content contentuid="hf68ccff9g282ag59ccgaccag8b0ec11de0a2" version="1">Le phénix invoqué explose en disparaissant.</content>
+	<content contentuid="h80298f05g6f8dg50d1gbf9dg40e63b2f173e" version="1">Phénix invoqué</content>
+	<content contentuid="hf48ef927g4495g5691gb741g9d1d93987734" version="1">Quand cette créature meurt ou disparaît, elle explose : 4d6 dégâts de feu aux ennemis à 6 m, 2d8 PV aux alliés.</content>
 	<content contentuid="hbf06f2b5gb06bg584cgb5dbge28120ed216d" version="1">Envol du phénix</content>
-	<content contentuid="h669bc6a0ge033g588cgb505g13462dddad10" version="1">Invoque une créature de feu pure qui combat à vos côtés (le jeu n'a pas de modèle de phénix : c'est un élémentaire de feu).</content>
+	<content contentuid="h669bc6a0ge033g588cgb505g13462dddad10" version="1">Invoque une créature de feu qui combat à vos côtés (le jeu n'a pas de modèle de phénix : c'est un élémentaire de feu). Quand elle meurt ou disparaît, elle explose : 4d6 dégâts de feu aux ennemis à 6 m (moitié si sauvegarde de Dextérité réussie) et 2d8 PV aux alliés.</content>
 	<content contentuid="hc416bb01g372fg53f4g9ef2g024da649b5d1" version="1">Avatar du phénix</content>
 	<content contentuid="h95fb40c7g05abg5b55ga7d2g9cd91d3618b0" version="1">Vous subissez 2d6 dégâts de feu au début de votre tour.</content>
 	<content contentuid="hfbded292gfdabg5653gad55g0057435bb05d" version="1">Avatar du phénix</content>

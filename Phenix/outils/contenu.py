@@ -341,11 +341,27 @@ passive("PHX_Renaissance", "Renaissance du phénix",
         StatsFunctors="ApplyStatus(SELF,PHX_RENAISSANCE_PRETE,100,-1)")
 
 # ================================================================== NIVEAU 11 : ENVOL DU PHÉNIX (sort de niveau 6)
+explosion("Projectile_PHX_ExplosionEnvol", "Envol du phénix : explosion",
+          "Le phénix invoqué explose en disparaissant.", 6,
+          "IF(Enemy()):DealDamage(4d6,Fire,Magical);IF(not Enemy()):RegainHitPoints(2d8)",
+          "IF(Enemy()):DealDamage((4d6)/2,Fire,Magical);IF(not Enemy()):RegainHitPoints(2d8)")
+status("PHX_ENVOL_EXPLOSION", "Phénix invoqué",
+       "Quand cette créature meurt ou disparaît, elle explose : 4d6 dégâts de feu aux ennemis à 6 m, "
+       "2d8 PV aux alliés.", "Spell_Conjuration_ConjureElemental_HigherLevel_Fire",
+       StackId="PHX_ENVOL_EXPLOSION", OnRemoveFunctors="CreateExplosion(Projectile_PHX_ExplosionEnvol)",
+       StatusPropertyFlags="IgnoreResting;ApplyToDead")
+# Version de base de l'élémentaire de feu (la version « _6 » n'existe que dans le conteneur du jeu
+# et ne peut pas se lancer seule) ; on la détache du conteneur comme le fait le jeu pour sa version PNJ.
+FIRE_ELEMENTAL = "88a6c664-877c-4d6e-81ad-dd377df2634e"
 spell("Target_PHX_EnvolDuPhenix", "Target", "Envol du phénix",
-      "Invoque une créature de feu pure qui combat à vos côtés (le jeu n'a pas de modèle de phénix : c'est un "
-      "élémentaire de feu).",
-      using="Target_ConjureElemental_Elemental_Fire_6", Level="6", UseCosts=slot(6),
-      Icon="Spell_Conjuration_ConjureElemental_HigherLevel_Fire", **NO_UPCAST)
+      "Invoque une créature de feu qui combat à vos côtés (le jeu n'a pas de modèle de phénix : c'est un "
+      "élémentaire de feu). Quand elle meurt ou disparaît, elle explose : 4d6 dégâts de feu aux ennemis à 6 m "
+      "(moitié si sauvegarde de Dextérité réussie) et 2d8 PV aux alliés.",
+      using="Target_ConjureElemental_Elemental_Fire", SpellContainerID="", Level="6", UseCosts=slot(6),
+      Icon="Spell_Conjuration_ConjureElemental_HigherLevel_Fire",
+      SpellProperties=f"GROUND:Summon({FIRE_ELEMENTAL}, -1,Projectile_AiHelper_Summon_Strong,,"
+                      f"'ConjureElemetnalStack',UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK,PHX_ENVOL_EXPLOSION)",
+      **NO_UPCAST)
 
 # ================================================================== NIVEAU 12 : AVATAR DU PHÉNIX
 status("PHX_AVATAR_BRULURE", "Avatar du phénix", "Vous subissez 2d6 dégâts de feu au début de votre tour.",
