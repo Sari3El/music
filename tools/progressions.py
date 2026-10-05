@@ -138,7 +138,8 @@ for bnom, data in DONNEES_JEU.items():
     race_uuid = U("race:" + name)
     table = U("table:race:" + bnom)
     progression(name, table, 1, 2,
-                boosts=["ProficiencyBonus(Skill,Religion)", "ProficiencyBonus(Skill,Intimidation)"],
+                boosts=["ActionResource(Movement,9,0)", "ProficiencyBonus(Skill,Religion)",
+                        "ProficiencyBonus(Skill,Intimidation)"],
                 passives=["DOC_Race_Marqueur", "DOC_Race_VueDivine", "DOC_Race_VolonteDivine",
                           "DOC_Race_EtincelleImmortelle"],
                 selectors=[f"AddSpells({C.RACE_L1},,,,AlwaysPrepared)",

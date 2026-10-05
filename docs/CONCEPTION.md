@@ -18,6 +18,7 @@ du personnage.
 
 | Niv. | Capacité | Ce que fait le mod |
 |---|---|---|
+| 1 | Vitesse | Déplacement de 9 m, quelle que soit la forme. |
 | 1 | Vue divine | Vision dans le noir 24 m. |
 | 1 | Volonté divine | Avantage aux sauvegardes contre Charmé et Effrayé ; immunité au sommeil magique. |
 | 1 | Étincelle immortelle | Une fois par repos long, tombe à 1 PV au lieu de 0 (même mécanique qu'Endurance implacable). |
