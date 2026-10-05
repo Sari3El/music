@@ -279,7 +279,11 @@ aura_double("PHX_BUCHER", "Bûcher sacré", "Un bûcher sacré brûle autour de 
 spell("Shout_PHX_BucherSacre", "Shout", "Bûcher sacré",
       "Pendant 4 tours, un bûcher sacré de 6 m brûle autour de vous : au début de leur tour, les ennemis "
       "subissent 2d8 dégâts de feu et vos alliés récupèrent 1d8 PV.",
-      using="Shout_SpiritGuardians", Level="4", UseCosts=slot(4), Icon="Spell_Evocation_FlameStrike",
+      # Esprits gardiens est un conteneur de variantes : on part d'Aura du croisé (aura simple) et on vide
+      # tout ce qui pourrait en être hérité (variantes, jet de sauvegarde, dégâts affichés).
+      using="Shout_CrusadersMantle", Level="4", UseCosts=slot(4), Icon="Spell_Evocation_FlameStrike",
+      ContainerSpells="", SpellContainerID="", SpellRoll="", SpellSuccess="", SpellFail="",
+      TooltipDamageList="", TooltipAttackSave="", DescriptionParams="",
       SpellProperties="ApplyStatus(SELF,PHX_BUCHER,100,4)", TooltipStatusApply="ApplyStatus(PHX_BUCHER,100,4)",
       **NO_UPCAST)
 
