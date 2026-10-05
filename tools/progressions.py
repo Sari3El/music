@@ -328,7 +328,7 @@ def creatrice_level_features(lv):
         s += [x for x in cs if "DOC_Tour" not in x and "DOC_SortChaos" not in x
               and not any(g in x for g in list(C.CLERIC_SPELLS.values()) + list(C.PALADIN_SPELLS.values()))]
     if lv == 1:
-        p += ["DOC_Creatrice_Deferlement", "DOC_Creatrice_DivinitePure"]
+        p += ["DOC_Creatrice_Perfection", "DOC_Creatrice_Deferlement", "DOC_Creatrice_DivinitePure"]
     # n'importe quel sort du jeu : toutes les listes de toutes les classes, à préparer
     if lv in NEW_SPELL_LEVEL:
         s += [f"AddSpells({g})" for g in C.all_class_lists(NEW_SPELL_LEVEL[lv])]

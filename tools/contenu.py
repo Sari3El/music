@@ -483,6 +483,12 @@ passive("DOC_Creatrice_Deferlement", "Déferlement créateur",
         StatsFunctors="IF(HasStatus('TIDES_OF_CHAOS',context.Source)):TriggerRandomCast(1,,DOC_DeferlementCreation);"
                       "IF(not HasStatus('TIDES_OF_CHAOS',context.Source)):TriggerRandomCast(20,,DOC_DeferlementCreation);"
                       "IF(HasStatus('TIDES_OF_CHAOS',context.Source)):RemoveStatus(SELF,TIDES_OF_CHAOS)")
+passive("DOC_Creatrice_Perfection", "Perfection créatrice",
+        "Le corps d'un dieu créateur : +4 à toutes les caractéristiques (Force, Dextérité, Constitution, "
+        "Intelligence, Sagesse et Charisme).",
+        "PassiveFeature_BlessingsOfKnowledge",
+        Boosts=";".join(f"Ability({a},4)" for a in ("Strength", "Dexterity", "Constitution", "Intelligence",
+                                                     "Wisdom", "Charisma")))
 passive("DOC_Creatrice_DivinitePure", "Divinité pure (Création)",
         "Si vous êtes de race Divinité : +1 charge de Décret et +1 Entropie maximum, et votre Forme divine "
         "prend le type de dégâts de votre domaine.",

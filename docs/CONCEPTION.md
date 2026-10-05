@@ -273,6 +273,7 @@ Hors cahier des charges : la Créatrice réunit l'Ordre et le Chaos, sans leurs 
 | Élément | Choix retenu |
 |---|---|
 | Caractéristique de sorts | Charisme (lanceur complet, sorts à préparer) |
+| Perfection créatrice | +4 à toutes les caractéristiques (passif de niveau 1, s'ajoute à la répartition de 27 points) |
 | Points de vie | d12 (12 au niveau 1, puis 7 par niveau) |
 | Jets de sauvegarde | maîtrise des 6 |
 | Compétences | 4 au choix parmi toutes |
