@@ -140,6 +140,7 @@ for nom, data in DONNEES_JEU.items():
 CC_SLOTS = {"0": "Head", "1": "Hair", "2": "Horns", "3": "Beard", "5": "DragonbornTop", "6": "DragonbornChin",
          "7": "DragonbornJaw", "8": "Tail", "9": "Private Parts"}
 APPEARANCE_NODES = []
+VUS = set()
 for nom, data in DONNEES_JEU.items():
     for v in data["visuels"]:
         if v["SlotName"] not in CC_SLOTS:
@@ -156,6 +157,13 @@ for nom, data in DONNEES_JEU.items():
         attrs += [("SlotName", "FixedString", CC_SLOTS[v["SlotName"]]), ("UUID", "guid", U(f"ccav:{nom}:{v['UUID']}")),
                   ("VisualResource", "guid", v["VisualResource"])]
         APPEARANCE_NODES.append(Node("CharacterCreationAppearanceVisual", attrs))
+        # Le jeu cherche aussi les visages au niveau de la race : on les rattache à « Divinité »
+        cle = (v["SlotName"], v["VisualResource"], v.get("BodyType", "0"), v.get("BodyShape", "0"))
+        if cle not in VUS:
+            VUS.add(cle)
+            parent = [a if a[0] != "RaceUUID" else ("RaceUUID", "guid", RACE_UUID) for a in attrs]
+            parent = [a if a[0] != "UUID" else ("UUID", "guid", U(f"ccav:parent:{':'.join(cle)}")) for a in parent]
+            APPEARANCE_NODES.append(Node("CharacterCreationAppearanceVisual", parent))
 
 # ================================================================== LISTES COMMUNES
 ORDRE_SKILLS = U("skilllist:ordre")
