@@ -1,40 +1,40 @@
 {
-  "_aide": "Copie ici les valeurs des 4 présélections HUMAINES du jeu (RaceUUID 0eb594cb-8820-4be6-a58d-8be7a1a98fba). Voir le README, section « Étape 1 ». Remplace chaque A_REMPLIR puis relance tools/build_mod.py (ou envoie-moi les valeurs).",
+  "_aide": "Valeurs des 4 présélections humaines du jeu (CharacterCreationPresets du Toolkit, version SharedDev).",
   "presets": {
     "masculin": {
       "BodyType": 0,
       "BodyShape": 0,
-      "RootTemplate": "A_REMPLIR",
-      "CloseUpA": "A_REMPLIR",
-      "CloseUpB": "A_REMPLIR",
-      "Overview": "A_REMPLIR",
+      "RootTemplate": "80d0ef19-f11e-482f-96ab-f184a9460b8e",
+      "CloseUpA": "HUM_M_Camera_Closeup_A",
+      "CloseUpB": "HUM_M_Camera_Closeup_B",
+      "Overview": "HUM_M_Camera_Overview_A",
       "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
     },
     "feminin": {
       "BodyType": 1,
       "BodyShape": 0,
-      "RootTemplate": "A_REMPLIR",
-      "CloseUpA": "A_REMPLIR",
-      "CloseUpB": "A_REMPLIR",
-      "Overview": "A_REMPLIR",
+      "RootTemplate": "e3c07ecd-d3f7-4661-b029-18dee1f3114e",
+      "CloseUpA": "HUM_F_Camera_Closeup_A",
+      "CloseUpB": "HUM_F_Camera_Closeup_B",
+      "Overview": "HUM_F_Camera_Overview_A",
       "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
     },
     "masculin_fort": {
       "BodyType": 0,
       "BodyShape": 1,
-      "RootTemplate": "A_REMPLIR",
-      "CloseUpA": "A_REMPLIR",
-      "CloseUpB": "A_REMPLIR",
-      "Overview": "A_REMPLIR",
+      "RootTemplate": "056fffd0-9009-4627-84c2-f0a22e311ec7",
+      "CloseUpA": "HUM_MB_Camera_Closeup_A",
+      "CloseUpB": "HUM_MB_Camera_Closeup_B",
+      "Overview": "HUM_MB_Camera_Overview_A",
       "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
     },
     "feminin_fort": {
       "BodyType": 1,
       "BodyShape": 1,
-      "RootTemplate": "A_REMPLIR",
-      "CloseUpA": "A_REMPLIR",
-      "CloseUpB": "A_REMPLIR",
-      "Overview": "A_REMPLIR",
+      "RootTemplate": "3303e8f6-a7e4-4b24-b64c-d64bbc152803",
+      "CloseUpA": "HUM_FB_Camera_Closeup_A",
+      "CloseUpB": "HUM_FB_Camera_Closeup_B",
+      "Overview": "HUM_FB_Camera_Overview_A",
       "VOLinesTableUUID": "14df8f45-90af-4bd0-8024-42624da9976e"
     }
   }
