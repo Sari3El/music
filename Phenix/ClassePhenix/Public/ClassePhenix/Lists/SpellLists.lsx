@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 1)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_FlammeBienfaitrice;Projectile_PHX_PlumeArdente"/>
+                    <attribute id="UUID" type="guid" value="daa2577d-1e8b-5064-862f-e1c87bc494c7"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 2)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_Attiser;Shout_PHX_Propager;Shout_PHX_Purifier"/>
+                    <attribute id="UUID" type="guid" value="0b13702c-6e04-5f3d-b4db-38fc49b79157"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 3)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_BondDeFlamme"/>
+                    <attribute id="UUID" type="guid" value="13a8f291-40d4-5966-a383-25abd7e47483"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 5)"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_PHX_PluieDePlumes;Target_PHX_LarmesDePhenix;Projectile_PHX_PlumeArdente_Rebond"/>
+                    <attribute id="UUID" type="guid" value="1560909c-2c6a-5f42-bc6a-1cb8e7ad3bee"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 7)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_BucherSacre"/>
+                    <attribute id="UUID" type="guid" value="ac644f55-f72c-5d0d-813d-ceed24f620eb"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 9)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_PlumeDeRenaissance"/>
+                    <attribute id="UUID" type="guid" value="b91a6d9c-b6e1-562a-914e-7ec080821cb9"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 11)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_EnvolDuPhenix"/>
+                    <attribute id="UUID" type="guid" value="199ff9cb-119b-57c7-9115-1a747c676b03"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix  : capacités (niveau 12)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_AvatarDuPhenix"/>
+                    <attribute id="UUID" type="guid" value="9abc1921-0fe6-5ec2-b681-f14975a8c981"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix Brasier : capacités (niveau 10)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PHX_Nova"/>
+                    <attribute id="UUID" type="guid" value="cd974c64-4897-5199-9a3e-fc85a9542bb6"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix Cendre : capacités (niveau 3)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_PlumeDeRenaissance_Cendre"/>
+                    <attribute id="UUID" type="guid" value="b6e1cf71-faa8-5f1f-89ab-ec6675aecf6a"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix Serres : capacités (niveau 3)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_ChargeArdente"/>
+                    <attribute id="UUID" type="guid" value="1476a1cb-b64b-5117-89f8-d51bb7ab635b"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

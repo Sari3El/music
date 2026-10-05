@@ -40,18 +40,6 @@
                     <attribute id="SelectorId" type="FixedString" value="DOC_TourCreation"/>
                     <attribute id="UUID" type="guid" value="1f533034-0538-5e55-b23f-7e8a7a3cb81b"/>
                 </node>
-                <node id="ProgressionDescription">
-                    <attribute id="Description" type="TranslatedString" handle="h4b67f0e2g762bg5fc2ga71dgfb22f5839eb0" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h9aa92a6eg3771g5839gafaegb58e1146d19e" version="1"/>
-                    <attribute id="SelectorId" type="FixedString" value="DOC_TourPhenix"/>
-                    <attribute id="UUID" type="guid" value="714a2be6-4bd2-5efd-a465-11abae50372f"/>
-                </node>
-                <node id="ProgressionDescription">
-                    <attribute id="Description" type="TranslatedString" handle="hf5aa460eg908eg5e2cgb2e3g5b9bc880bd08" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h901b4607g8595g5246ga739g22803882e7a3" version="1"/>
-                    <attribute id="SelectorId" type="FixedString" value="DOC_SortPhenix"/>
-                    <attribute id="UUID" type="guid" value="e876ff4d-a070-5b8f-851a-d0681b2bd756"/>
-                </node>
             </children>
         </node>
     </region>

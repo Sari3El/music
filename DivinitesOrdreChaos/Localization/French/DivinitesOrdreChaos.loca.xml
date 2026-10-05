@@ -538,123 +538,6 @@ Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divin
 	<content contentuid="h5c078f66g0a44g50f8g9b4eg6f7d4d74b55b" version="1">Avant l'Ordre et le Chaos, il y avait la Création. Ce domaine réunit les pouvoirs des dix autres : Vie, Justice, Magie, Soleil, Paix, Mort, Tromperie, Sorcellerie, Lune et Guerre. Vous gagnez toutes leurs capacités et tous leurs sorts de domaine, et l'Affinité divine pour les dix types de dégâts (radiant, foudre, force, feu, psychique, nécrotique, poison, acide, froid, tonnerre) : résistance, puis immunité au niveau 6, puis absorption au niveau 10. Aucun contrepoids.</content>
 	<content contentuid="hecf8ae4ege284g5b38g9cf1gbcd289623eec" version="1">Domaine de la Création</content>
 	<content contentuid="h38bfba54g23a4g5112gbfa6ge8b85190df6c" version="1">Création</content>
-	<content contentuid="hdc576d55gf688g524bgb4dege7ec69a74c2e" version="1">DOC_Phenix_Marqueur</content>
-	<content contentuid="hcb8c199fgc1a6g5711ga126g4da72c940027" version="1">Flamme loyale</content>
-	<content contentuid="ha24b5148gc538g581ag812ag9b0067e4f19d" version="1">Votre feu ne blesse jamais vos alliés ni vous-même : les dégâts de feu que vous leur infligez leur sont rendus aussitôt en PV, et ils ne prennent pas feu. Vos sorts de Phénix ne visent de toute façon que les ennemis.</content>
-	<content contentuid="h17e661acgde14g5b7eg819fg54d2a49412fa" version="1">Flamme bienfaitrice</content>
-	<content contentuid="he5e5536eg605eg5c25g9613g715eb4441e3a" version="1">Ces flammes soignent au lieu de brûler : 1d6 PV au début de chaque tour.</content>
-	<content contentuid="h8800c80cg64dcg501fg892ega9c022b2fe48" version="1">Flamme bienfaitrice</content>
-	<content contentuid="h35402fb7g6711g55c2g90d3ge944e334da46" version="1">Enveloppe un allié de flammes bienfaitrices : il récupère 1d8 + votre modificateur de Charisme PV, puis 1d6 PV au début de chacun de ses tours pendant 3 tours. Il a l'air en feu, mais ce feu le soigne.</content>
-	<content contentuid="hfade52e4g4ccag5e5fg9c0dgc476a0019acc" version="1">Cendres ardentes</content>
-	<content contentuid="hb4921143gaa69g5ab1gbb01gb5d28bbb17e6" version="1">Vos cendres couvent : au bout de 2 tours à terre, vous vous relevez avec 1/6 de vos PV maximum.</content>
-	<content contentuid="h20d0f077ga646g5f10gb503g96abb55b7b80" version="1">Cendres ardentes</content>
-	<content contentuid="h799d8096g70c8g561cga5c3g961f3887762c" version="1">Quand vous tombez à terre (0 PV), vos cendres couvent : au bout de 2 tours, si personne ne vous a relevé, vous vous relevez seul avec 1/6 de vos PV maximum.</content>
-	<content contentuid="hf295a03eg3ec7g5c46g958eg455ada9e81b6" version="1">Plume ardente</content>
-	<content contentuid="hc6ef06fag950ag5763g8d62ga5c8da031317" version="1">Tour de magie. Une plume de feu frappe une cible : 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).</content>
-	<content contentuid="h61429647g058eg5d5aga140g7314aa86d73a" version="1">Plume ardente (rebond)</content>
-	<content contentuid="he46627b9gd6c6g55fcg8b53g451128ca64aa" version="1">Tour de magie. Deux plumes de feu : choisissez deux cibles (ou deux fois la même). Chacune inflige 1d10 dégâts de feu (2d10 au niveau 5, 3d10 au niveau 10).</content>
-	<content contentuid="h3e80d3e5g9438g5c8fgb422g4b4d054730c2" version="1">Braises</content>
-	<content contentuid="he6d9a5e9ge449g53a9g9424g330dfc7474ba" version="1">Une fois par tour, quand vous infligez des dégâts de feu, vous gagnez 1 Braise (maximum 3, puis 5 au niveau 9). Dépensez-les avec Attiser, Propager ou Purifier.</content>
-	<content contentuid="h63815343g6923g5ea6g8b7fg174348553671" version="1">DOC_Phenix_BraisesAbsorbees</content>
-	<content contentuid="ha309c1aag7984g56b6g9192g08cdb63da926" version="1">DOC_Attiser_Effet</content>
-	<content contentuid="h84ac93e3g97b0g57f8gb26cg9770773a641f" version="1">Attiser</content>
-	<content contentuid="hf91cb143g58bdg5982ga15fg5080d549dee7" version="1">Votre prochaine attaque ou votre prochain sort de feu inflige 1d6 dégâts de feu supplémentaires.</content>
-	<content contentuid="h4a2c403ag4be2g538ag8c28gd3dc2c69149c" version="1">Braises : Attiser</content>
-	<content contentuid="h307917ebg9eeeg599cgbc81ge24808afd497" version="1">Action bonus, 1 Braise : votre prochaine attaque ou votre prochain sort de feu contre un ennemi inflige 1d6 dégâts de feu supplémentaires (dans les 2 tours).</content>
-	<content contentuid="h0da5adbfgbda6g5673ga84agfacb073ac895" version="1">Propagation</content>
-	<content contentuid="h05dd4d71g8dd4g56eag9f0cg079ef45f3183" version="1">Le feu se propage aux ennemis proches.</content>
-	<content contentuid="hec4c4af1g8edfg5523ga56ag6007230ffdf4" version="1">DOC_Propager_Effet</content>
-	<content contentuid="hddd78a38g6fefg5f27g9037g9e21a1f56269" version="1">Propager</content>
-	<content contentuid="h7054f6b3g507cg52aeg91c3g3182ef6ffc7c" version="1">Votre prochain sort de feu se propage autour de sa cible.</content>
-	<content contentuid="h422d4a17g6723g57fbga218g6d7301b59aa9" version="1">Braises : Propager</content>
-	<content contentuid="h035b49eagd89eg5b9ega92bgfa5ee4aa10f0" version="1">Action bonus, 1 Braise : votre prochain sort de feu qui touche un ennemi se propage : les ennemis à 3 m de lui subissent 2d6 dégâts de feu (moitié en cas de sauvegarde de Dextérité réussie).</content>
-	<content contentuid="h8f3ded1dgbda2g582bg82f2ge53bb381ded1" version="1">Braises : Purifier</content>
-	<content contentuid="hbf268f32gf6fcg5042g9f7dg5e45219d124e" version="1">Action bonus, 1 Braise : une onde de feu purificateur libère vos alliés à 9 m (et vous-même) des états Empoisonné, Aveuglé, Effrayé, Charmé, Paralysé et des maladies.</content>
-	<content contentuid="h1004fd09g3802g5d4fgb85ag1a1e9aafb8df" version="1">Gerbe de flammes</content>
-	<content contentuid="h0b6290edga7f1g582bgb7f2gdf5e15042824" version="1">Gerbe de feu au départ et à l'arrivée du bond.</content>
-	<content contentuid="hf2336a95g1d02g51fcg98d4g3fa1b85d67f0" version="1">Bond de flamme</content>
-	<content contentuid="h9893b258g6e37g53aeg9067gee82202a2181" version="1">Vous vous téléportez jusqu'à 9 m dans une gerbe de feu : les ennemis à 3 m de votre point de départ et de votre point d'arrivée subissent 2d6 dégâts de feu (moitié si sauvegarde de Dextérité réussie).</content>
-	<content contentuid="h36b5074egad30g56acg80f2ga1ce3b18aa1f" version="1">Ignifugé</content>
-	<content contentuid="hf2b9f4b7g6912g58ffga025ga99933d68ba6" version="1">Le feu ne vous atteint plus : immunité aux dégâts de feu et à l'état En feu.</content>
-	<content contentuid="hbb0b4e8cg7785g55e2g8381g011ce05cc527" version="1">Pluie de plumes</content>
-	<content contentuid="hfbff903bg237eg5ba8g8e07gf568f109e9cd" version="1">Une pluie de plumes enflammées sur une zone de 6 m : les ennemis subissent 4d6 dégâts de feu (moitié si sauvegarde de Dextérité réussie ; augmente aux niveaux 9 et 12), les alliés pris dedans récupèrent 2d8 PV.</content>
-	<content contentuid="h66ced55cgf426g5071g9c13gafa7b7df620e" version="1">Larmes de phénix</content>
-	<content contentuid="h21644efegb0feg5d63g8d5fg81f6c47612e4" version="1">Des larmes de feu guérisseur : un allié récupère 4d8 + votre modificateur de Charisme PV et est libéré des poisons, des maladies et des malédictions.</content>
-	<content contentuid="h3c074bd3g5327g59f2gaf84g49d156d88cd6" version="1">Bouclier de flammes</content>
-	<content contentuid="h46ec07ccg2d5eg593cga27agb83f82216513" version="1">Un ennemi qui vous frappe au corps à corps subit 1d8 dégâts de feu.</content>
-	<content contentuid="h1eeedab0gd444g5e99ga844gc70c3dc5eb79" version="1">Bouclier de flammes (2d8)</content>
-	<content contentuid="hf892fd8bg57d0g5085gae7agaf856373fb94" version="1">Un ennemi qui vous frappe au corps à corps subit 2d8 dégâts de feu.</content>
-	<content contentuid="hcf1f1831gfcd1g5728ga649g8df417f635a7" version="1">Feu sacré</content>
-	<content contentuid="h1949f9b5ga7e5g5e50g8f34g8cd23a3c59b4" version="1">Vos dégâts de feu ignorent la résistance au feu de vos cibles.</content>
-	<content contentuid="he917fa50gd362g5a05g8367g7a6314075448" version="1">Feu sacré (immunité)</content>
-	<content contentuid="hd4c15fe1ge737g586eg942ag16f9cedd3261" version="1">Vos dégâts de feu ignorent aussi l'immunité au feu de vos cibles.</content>
-	<content contentuid="h5d33573bg508dg55a9gb668g5a67081dd649" version="1">Bûcher sacré</content>
-	<content contentuid="h5a7a0c04gb16ag5adcg8629g42206d874b58" version="1">Vous subissez 2d8 dégâts de feu au début de votre tour.</content>
-	<content contentuid="h61cd738bg90cbg5993ga34agd6191a7dd00e" version="1">Bûcher sacré</content>
-	<content contentuid="hafe08325gea94g5fd6g9360gd6c18d9fbe45" version="1">Vous récupérez 1d8 PV au début de votre tour.</content>
-	<content contentuid="h4234f12cg8680g5dd4g99c2gb0bd893df25b" version="1">Bûcher sacré</content>
-	<content contentuid="h8bb00fbcg0d67g5fc8gab3aga0b867e01106" version="1">Un bûcher sacré brûle autour de vous.</content>
-	<content contentuid="hb6decd58gce32g5870g8c5bgb27d225e32d8" version="1">Bûcher sacré</content>
-	<content contentuid="hcee36b04ga656g5ddag94fbg930188931999" version="1">Pendant 4 tours, un bûcher sacré de 6 m brûle autour de vous : au début de leur tour, les ennemis subissent 2d8 dégâts de feu et vos alliés récupèrent 1d8 PV.</content>
-	<content contentuid="haec4f766g966fg5671g8415gff28d7fe5de0" version="1">Cœur de phénix</content>
-	<content contentuid="h9ec40121ga995g5185gb5acgc0168e9c05d5" version="1">Le feu vous soigne au lieu de vous blesser, y compris le vôtre : chaque fois que du feu vous atteint, vous récupérez 3d8 PV.</content>
-	<content contentuid="hc31e4c05gedccg5e95gbfb9g18cbdf850c02" version="1">Gerbe de renaissance</content>
-	<content contentuid="h9ca7df91ge018g5840gb8c2g4155eced6343" version="1">Gerbe de feu d'une Plume de renaissance.</content>
-	<content contentuid="hc0f849acg7f5dg5ae5g82c9gfad8c07a088e" version="1">Renaissance</content>
-	<content contentuid="h8481b7dagaa0eg57cbgab01g4b3f5c834365" version="1">Vous renaissez de vos cendres.</content>
-	<content contentuid="h5495c16cgc7edg5f1fg94a1ge3e23191210d" version="1">Plume de renaissance</content>
-	<content contentuid="h29565d53gbfe0g5619g9a1ag68ed9c17ccbd" version="1">Si vous tombez à 0 PV, vous renaissez aussitôt avec la moitié de vos PV dans une gerbe de feu (une fois).</content>
-	<content contentuid="h767b52aegc9c8g59acg8dcagf0cdbbf24852" version="1">Plume de renaissance</content>
-	<content contentuid="hc7e8b278g36e6g5a2bg8fd3g47f6cabbda2d" version="1">Un allié reçoit une plume de phénix jusqu'à son prochain repos long : s'il tombe à 0 PV, il renaît aussitôt avec la moitié de ses PV dans une gerbe de feu (3d6 dégâts aux ennemis à 4 m). Une seule fois.</content>
-	<content contentuid="hb4d43e7dg26b4g54ecgbe44g504839eb8d71" version="1">DOC_Renouveau_Effet</content>
-	<content contentuid="h9288d9b1gf0bfg526ag94d3g673dc6bb22be" version="1">Renouveau</content>
-	<content contentuid="ha3d6e1aagcb97g5e82gb057g15b082fac695" version="1">Vos attaques et vos sorts infligent 1d6 dégâts de feu supplémentaires.</content>
-	<content contentuid="h59a42233ge63eg5247gb25bgf85536ad6974" version="1">Renaissance du phénix</content>
-	<content contentuid="h70e47187gf48cg54ceg8a57ga1bf45992b62" version="1">Explosion de feu de la renaissance du Phénix.</content>
-	<content contentuid="h7fd9820ag24b9g55fega074g9b41c2f12973" version="1">Renaissance du phénix</content>
-	<content contentuid="h17fc3d0ag0435g5bf3gb9e5g9b44fb8e5b44" version="1">Vous renaissez de vos cendres.</content>
-	<content contentuid="h500e464ag6e02g5db7gba75g391e0e9d94fe" version="1">Renaissance du phénix</content>
-	<content contentuid="h3ae86883gb461g584egab01g13daecfe0a25" version="1">La prochaine fois que vous tombez à 0 PV, vous renaissez avec tous vos PV.</content>
-	<content contentuid="h156a03a1g4df1g5872gb5c7gd04e400b285f" version="1">Renaissance du phénix</content>
-	<content contentuid="h2f0f8a17g421ag5958gbd3dg45f6f74ea2a0" version="1">Une fois par repos long, quand vous tombez à 0 PV, vous ne tombez pas : vous renaissez aussitôt avec tous vos PV dans une grande explosion de feu (6d6 dégâts aux ennemis à 6 m, aucun aux alliés). Renouveau : pendant 2 tours, vos attaques et sorts infligent 1d6 dégâts de feu supplémentaires. Ensuite, Cendres ardentes reprend le relais.</content>
-	<content contentuid="h05ca4994gcb84g5183ga266gc6aea806b7bb" version="1">Envol du phénix</content>
-	<content contentuid="h5c569a61gd297g5474g9cc9g83e4c17ced54" version="1">Invoque une créature de feu pure qui combat à vos côtés (le jeu n'a pas de modèle de phénix : c'est un élémentaire de feu).</content>
-	<content contentuid="h6aaa9912ga0fcg5896gadbag46cffff788c1" version="1">Avatar du phénix</content>
-	<content contentuid="h6084c30fg33e3g555dg9de2g1108da042d8a" version="1">Vous subissez 2d6 dégâts de feu au début de votre tour.</content>
-	<content contentuid="hea3bfc98g14fbg5993gbaabg97d84b85ddd6" version="1">Avatar du phénix</content>
-	<content contentuid="h4276c5cagcdc4g50b7gba6bgbb350ea90397" version="1">Vous récupérez 2d6 PV au début de votre tour.</content>
-	<content contentuid="h20cb9612gbfd8g594fgae31g281096c93ac7" version="1">Avatar du phénix</content>
-	<content contentuid="h44b24c19g1dc9g5fa7gae52gf440f33c8d85" version="1">Vous êtes un phénix : vous volez, et une aura de feu de 3 m brûle les ennemis et soigne les alliés.</content>
-	<content contentuid="h03a313fegbb1bg582eg9126g72249ea939f7" version="1">Avatar du phénix</content>
-	<content contentuid="hd0381449ga3f2g5b71gb0eeg00257f05adc1" version="1">Une fois par repos long, pendant 5 tours : vous prenez la forme d'un phénix. Vous volez, et une aura de feu de 3 m inflige 2d6 dégâts de feu aux ennemis et rend 2d6 PV aux alliés au début de leur tour.</content>
-	<content contentuid="he7580c26gf1a6g5047ga268g63d882f66c49" version="1">Cœur du brasier</content>
-	<content contentuid="h1c68e45bg764cg5778g8a77g61e9a5879c60" version="1">Vos sorts de feu brûlent plus fort : une fois par attaque, ils infligent en plus votre modificateur de Charisme en dégâts de feu. Vous avez 2 Braises de plus.</content>
-	<content contentuid="hde4df0b3g1f94g5cbdg9edfg5cd2a3080c84" version="1">Nova</content>
-	<content contentuid="he353e410g1390g57f2g9ccbg0de603abc589" version="1">Explosion géante centrée sur le Phénix.</content>
-	<content contentuid="hf75411d8g0e2bg5e41ga283g4db5769e9647" version="1">Nova</content>
-	<content contentuid="h8621b206g090bg50d7gbea2g8f0e00377449" version="1">Une fois par repos long : une explosion géante de 9 m centrée sur vous. Les ennemis subissent 8d6 dégâts de feu (moitié si sauvegarde de Dextérité réussie), aucun dégât aux alliés, et le feu vous soigne de 4d8 PV (Cœur de phénix).</content>
-	<content contentuid="h052713aeg166ag5803g928bg5982c08bf8b6" version="1">Soins ardents</content>
-	<content contentuid="h9da5875eg0422g57cag92d1g7113cc9f26f4" version="1">Vos sorts de soins (hors tours de magie) rendent en plus votre niveau de Phénix en PV.</content>
-	<content contentuid="hca878520g0234g5784g9585g62fc4b42157b" version="1">Plume de renaissance (Cendre)</content>
-	<content contentuid="h6afa1309gd448g5d5bg9ddag988d62f20e4d" version="1">Une fois par repos long, sans emplacement de sort : un allié reçoit une Plume de renaissance. S'il tombe à 0 PV, il renaît aussitôt avec la moitié de ses PV dans une gerbe de feu. Une seule fois.</content>
-	<content contentuid="h5e4e5a56ga78cg5429g9ad3g47eea23b0b15" version="1">Renaissance collective</content>
-	<content contentuid="h44e8aceag49d4g5556g9751g0ef05d4a0b7e" version="1">L'explosion de votre Renaissance du phénix relève aussi les alliés à terre à 6 m, avec la moitié de leurs PV.</content>
-	<content contentuid="h090a4f4eged4eg5b7ag80d2g98f99b85d98d" version="1">Charge ardente</content>
-	<content contentuid="h77ce6840gc40bg533dgacbdg9fa74ae32c0c" version="1">Impact de feu de la Charge ardente.</content>
-	<content contentuid="hb24797eeg6e1cg5318g8b38g327bd3559aa2" version="1">Charge ardente</content>
-	<content contentuid="h6cded8eeg23dfg5bacga3c8g120a8fe851c2" version="1">Action bonus, une fois par tour : vous bondissez jusqu'à 9 m. À l'impact, les ennemis à 3 m subissent 2d8 dégâts de feu (moitié si sauvegarde de Dextérité réussie). Aucun dégât aux alliés.</content>
-	<content contentuid="h754763d0gefb0g57e5g8008g16f8ece95ddb" version="1">Un être de feu qui ne meurt jamais vraiment. Ses flammes épargnent ses alliés et peuvent même les soigner ; quand il tombe, ses cendres couvent, et il finit par renaître dans une explosion de feu. Lanceur de sorts complet (Charisme) avec les sorts de l'ensorceleur et ses propres sorts de feu.</content>
-	<content contentuid="h7bbce93ag698eg5822g8b65g6abfaeb6e0ce" version="1">Phénix</content>
-	<content contentuid="h1a100a92g81ecg5345gaac2g261f0d03bff9" version="1">Voie du Phénix</content>
-	<content contentuid="hf4ec46cdgaeb0g5bfdgb426ga9dc6df88a62" version="1">Le feu destructeur : vos sorts de feu brûlent plus fort, vous avez 2 Braises de plus, et au niveau 10 vous libérez Nova, une explosion géante qui vous soigne.</content>
-	<content contentuid="h57b2d1dcge9dag5292g920cg23f5dd782998" version="1">Voie du Brasier</content>
-	<content contentuid="h2482ac9cg0625g5bf6ga7c7g1129fa12fe8a" version="1">Brasier</content>
-	<content contentuid="h89225184ge0fbg5559g840cgc08769935c47" version="1">Le feu qui guérit : soins renforcés, une Plume de renaissance gratuite par repos long, et au niveau 10 votre Renaissance du phénix relève aussi les alliés à terre autour de vous.</content>
-	<content contentuid="ha79c7097g7d4cg5394gaaecgad10e73f6365" version="1">Voie de la Cendre</content>
-	<content contentuid="h794dcbe2g6458g5a73g85cegcf667f4285e4" version="1">Cendre</content>
-	<content contentuid="h295d2d05g7255g5c59gafdag9e4d31af3e97" version="1">Le phénix guerrier : armures intermédiaires, boucliers, armes de guerre, Charge ardente, et Attaque supplémentaire au niveau 5.</content>
-	<content contentuid="h35cf2357g8531g5113gbe44gae5e29a5df69" version="1">Voie des Serres</content>
-	<content contentuid="h83a15517g654eg556dga3f7g69efe9ec3a5b" version="1">Serres</content>
 	<content contentuid="hf5e08777g9eabg5ff7ga29dg65408be36c1f" version="1">Choisissez vos tours de magie (liste du clerc).</content>
 	<content contentuid="h402ae114g9ea5g5ecdg80a2g4d3ef1f828e0" version="1">Tours de magie de l'Ordre</content>
 	<content contentuid="h34b445e0g510ag5e6egb69cg40f6391ee3dd" version="1">Choisissez vos tours de magie (liste de l'ensorceleur).</content>
@@ -667,10 +550,6 @@ Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divin
 	<content contentuid="h4fb3b69cge1aag5381g80f5gc2391878b24c" version="1">Maîtrise des sorts</content>
 	<content contentuid="h645a2e26g1322g557fgbd49g8fbbc7f7defe" version="1">Choisissez vos tours de magie, dans les listes de toutes les classes.</content>
 	<content contentuid="h8b7f7a20g974bg5d20g952bgd382ca48f536" version="1">Tours de magie de la Création</content>
-	<content contentuid="h4b67f0e2g762bg5fc2ga71dgfb22f5839eb0" version="1">Choisissez vos tours de magie (liste de l'ensorceleur).</content>
-	<content contentuid="h9aa92a6eg3771g5839gafaegb58e1146d19e" version="1">Tours de magie du Phénix</content>
-	<content contentuid="hf5aa460eg908eg5e2cgb2e3g5b9bc880bd08" version="1">Choisissez de nouveaux sorts (liste de l'ensorceleur).</content>
-	<content contentuid="h901b4607g8595g5246ga739g22803882e7a3" version="1">Sorts du Phénix</content>
 	<content contentuid="hbf17bbc8gf14bg5166g8f13g1fe9299b0386" version="1">Pouvoir de la Divinité de l'Ordre pour imposer sa loi : Protéger, Purifier, Lier. Se recharge au repos court.</content>
 	<content contentuid="hfa4ec327g21aeg55c7g92f7gc26951ad7beb" version="1">Décrets</content>
 	<content contentuid="hcbe07348g8efeg5e9ag9bc2g94cf6768b87a" version="1">Chaos accumulé en combat : +1 à chaque coup critique et à chaque ennemi éliminé. Retombe à zéro au début et à la fin de chaque combat.</content>
@@ -679,6 +558,4 @@ Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divin
 	<content contentuid="h96f32a75g734eg5a1ag8c7cg211cb0a66c2a" version="1">Pouvoir divin</content>
 	<content contentuid="h4e1be3b4g6f58g5abbg8a04g6a12c454a792" version="1">Permet de lancer un sort maîtrisé sans emplacement de sort, une fois par tour.</content>
 	<content contentuid="h1b03bda6g3b6bg5792gb3c5g8bb847db3494" version="1">Maîtrise des sorts</content>
-	<content contentuid="hebe6a323g0454g5a07g8cd0g6de107ef9a53" version="1">Feu accumulé par le Phénix : +1 quand il inflige ou subit des dégâts de feu (une fois par tour). Se dépense pour Attiser, Propager ou Purifier.</content>
-	<content contentuid="h437df3a5g9190g53a2gb79bga06bb880e2c3" version="1">Braises</content>
 </contentList>

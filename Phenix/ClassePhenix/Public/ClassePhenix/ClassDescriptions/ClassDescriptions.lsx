@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="8"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_PHX_Phenix"/>
+                    <attribute id="ClassHotbarColumns" type="int32" value="5"/>
+                    <attribute id="CommonHotbarColumns" type="int32" value="9"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc806e07cg8b53g5b42g9196ga3690770ffd3" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0f0c9935g1233g539cg93dcga560250b9c4c" version="1"/>
+                    <attribute id="HpPerLevel" type="int32" value="5"/>
+                    <attribute id="ItemsHotbarColumns" type="int32" value="2"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MulticlassSpellcasterModifier" type="double" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="PHX_Phenix"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="696c54af-0240-55ef-b283-d7217e14fb93"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Sorcerer"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
+                    <attribute id="SubclassTitle" type="TranslatedString" handle="h4a90c3dega568g5d25g9052g881919bce009" version="1"/>
+                    <attribute id="UUID" type="guid" value="c590716c-8345-55b5-a0c9-34c4327609fe"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="hea0161f4gfd79g5dfbg8d8dgd4a0669cbe4c" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7760ad76gad06g5c12g83e1g98503d75c11c" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="PHX_Phenix_Brasier"/>
+                    <attribute id="ParentGuid" type="guid" value="c590716c-8345-55b5-a0c9-34c4327609fe"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="b53d3f1b-e755-55a2-8b12-60b2d98176bd"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h53170402g1307g53bcg90a6g69d9e18f6da0" version="1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Sorcerer"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
+                    <attribute id="UUID" type="guid" value="85595b92-1918-5f25-bea6-a708e015827a"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="h7d4a488fg137eg516ag91e4gd56df45af14b" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3049bc13g8ed6g583dgaf12g99a2538bd8d1" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="PHX_Phenix_Cendre"/>
+                    <attribute id="ParentGuid" type="guid" value="c590716c-8345-55b5-a0c9-34c4327609fe"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="96f54aac-dd19-510d-a646-bba10c986379"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h4d79c567g7552g54degafcegbbb6c79eac61" version="1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Sorcerer"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
+                    <attribute id="UUID" type="guid" value="5f6e44ba-6a1c-5283-bf78-f9d7317ff822"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="TranslatedString" handle="hdb2d5a04g4692g5050g91d4gad257fc2e4f1" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h8f19cd73g51d8g57b8gb919gb31b8433cace" version="1"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="PHX_Phenix_Serres"/>
+                    <attribute id="ParentGuid" type="guid" value="c590716c-8345-55b5-a0c9-34c4327609fe"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="e51dc84a-6aba-54e8-97bc-fe24e6987d89"/>
+                    <attribute id="ShortName" type="TranslatedString" handle="h710e06d2gbe47g52ccgbbd2g77206e6b9f06" version="1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Sorcerer"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
+                    <attribute id="UUID" type="guid" value="02eadc3f-e30a-5b4d-b3d6-232d5aa731fe"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

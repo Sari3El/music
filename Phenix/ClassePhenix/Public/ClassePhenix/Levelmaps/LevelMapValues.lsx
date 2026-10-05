@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="4d6"/>
+                    <attribute id="Level5" type="LSString" value="4d6"/>
+                    <attribute id="Level9" type="LSString" value="5d6"/>
+                    <attribute id="Level12" type="LSString" value="6d6"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_PluieDePlumes"/>
+                    <attribute id="UUID" type="guid" value="c4b3cc14-3fb4-5adf-babc-7414f0c103e3"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

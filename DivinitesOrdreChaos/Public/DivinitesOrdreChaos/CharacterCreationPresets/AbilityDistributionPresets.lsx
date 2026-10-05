@@ -34,16 +34,6 @@
                     <attribute id="ClassUUID" type="guid" value="f3a762f2-3c5e-53d5-923e-958ff8cd0080"/>
                     <attribute id="UUID" type="guid" value="fc50a3ea-0bb1-5d8f-8676-50ae38b1a36b"/>
                 </node>
-                <node id="AbilityDistributionPreset">
-                    <attribute id="Strength" type="int32" value="8"/>
-                    <attribute id="Dexterity" type="int32" value="13"/>
-                    <attribute id="Constitution" type="int32" value="14"/>
-                    <attribute id="Intelligence" type="int32" value="10"/>
-                    <attribute id="Wisdom" type="int32" value="12"/>
-                    <attribute id="Charisma" type="int32" value="15"/>
-                    <attribute id="ClassUUID" type="guid" value="fb4fb296-f400-5f8a-840f-d3da62100f5f"/>
-                    <attribute id="UUID" type="guid" value="18ec2420-7470-5c6e-bfce-4fedf5946b06"/>
-                </node>
             </children>
         </node>
     </region>

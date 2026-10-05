@@ -5,17 +5,18 @@ Ce mod ajoute :
 - la race **Divinité**, des dieux tombés sur Faerûn, déclinée en 11 races (Divinité humaine, elfe,
   drow, demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide, demi-orque) qui reprennent
   les corps, visages, couleurs et sous-races des peuples du jeu ;
-- trois classes divines : **Divinité de l'Ordre** (Sagesse, fiabilité), **Divinité du Chaos** (Charisme,
+- trois classes : **Divinité de l'Ordre** (Sagesse, fiabilité), **Divinité du Chaos** (Charisme,
   coups critiques et magie sauvage) et **Divinité Créatrice** (les bonus des deux sans les malus,
   n'importe quel sort du jeu, toutes les armures, 5 emplacements par niveau de sort) ;
-- une classe à part : le **Phénix** (Charisme, feu qui épargne les alliés et soigne, renaissance)
-  et ses 3 voies : Brasier, Cendre, Serres ;
 - **10 domaines** (sous-classes) en miroir : Vie/Mort, Justice/Tromperie, Magie/Sorcellerie,
   Soleil/Lune, Paix/Guerre ;
 - l'Affinité divine (résistance, puis immunité, puis absorption), le contrepoids (optionnel) et le
   bonus Divinité pure ;
 - 32 sorts exclusifs qui gagnent en puissance aux niveaux 5, 9 et 12, ainsi que les sorts du clerc,
   du paladin et de l'ensorceleur.
+
+> Ce dépôt contient aussi un autre mod, sans aucun lien avec celui-ci : la **Classe Phénix**, dans
+> le dossier [Phenix/](Phenix/README.md).
 
 Le détail de chaque capacité, et ce qui diffère du cahier des charges, est dans
 [docs/CONCEPTION.md](docs/CONCEPTION.md).
