@@ -8,7 +8,8 @@ Un mod **indépendant** qui ajoute une seule classe : le **Phénix**.
 - Quand il tombe, ses **cendres couvent** et il se relève ; au niveau 10, il **renaît** dans une
   explosion de feu.
 - **Braises** : une ressource gagnée par le feu, dépensée pour Attiser, Propager ou Purifier.
-- 3 voies au niveau 3 : **Brasier** (dégâts), **Cendre** (soins), **Serres** (corps à corps).
+- Une seule voie au niveau 3, la **Voie du Phénix éternel**, qui réunit dégâts (Brasier), soins
+  (Cendre) et corps à corps (Serres).
 
 Le détail de chaque capacité, et ce qui diffère du cahier des charges, est dans
 [CONCEPTION.md](CONCEPTION.md).

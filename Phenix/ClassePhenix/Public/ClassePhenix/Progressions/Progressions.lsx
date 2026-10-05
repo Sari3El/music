@@ -37,13 +37,7 @@
                         <node id="SubClasses">
                             <children>
                                 <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="85595b92-1918-5f25-bea6-a708e015827a"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="5f6e44ba-6a1c-5283-bf78-f9d7317ff822"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="02eadc3f-e30a-5b4d-b3d6-232d5aa731fe"/>
+                                    <attribute id="Object" type="guid" value="9ccdb69c-72cc-50b3-bc0f-cd93c94854a7"/>
                                 </node>
                             </children>
                         </node>
@@ -151,55 +145,31 @@
                     <attribute id="UUID" type="guid" value="caad26a8-00af-59d9-b5e6-75bfa57c0b5e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(PHX_Braise,2,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(PHX_Braise,2,0);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="PHX_Phenix_Brasier"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PHX_Brasier_Brasier"/>
+                    <attribute id="Name" type="LSString" value="PHX_Phenix_Eternel"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PHX_Brasier_Brasier;PHX_Cendre_SoinsArdents"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="b53d3f1b-e755-55a2-8b12-60b2d98176bd"/>
-                    <attribute id="UUID" type="guid" value="549d7919-e571-5e66-bc8f-012c822a314c"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="10"/>
-                    <attribute id="Name" type="LSString" value="PHX_Phenix_Brasier"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(cd974c64-4897-5199-9a3e-fc85a9542bb6,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="b53d3f1b-e755-55a2-8b12-60b2d98176bd"/>
-                    <attribute id="UUID" type="guid" value="f1dd5c21-fef8-578a-ac27-b446c277c156"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="PHX_Phenix_Cendre"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PHX_Cendre_SoinsArdents"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(b6e1cf71-faa8-5f1f-89ab-ec6675aecf6a,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="96f54aac-dd19-510d-a646-bba10c986379"/>
-                    <attribute id="UUID" type="guid" value="81fa9639-f185-5baa-862d-e61d8ba1f9aa"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="10"/>
-                    <attribute id="Name" type="LSString" value="PHX_Phenix_Cendre"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PHX_Cendre_RenaissanceCollective"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="96f54aac-dd19-510d-a646-bba10c986379"/>
-                    <attribute id="UUID" type="guid" value="5746cf5d-e2de-53cb-a378-06aa8c39434f"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"/>
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="PHX_Phenix_Serres"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(1476a1cb-b64b-5117-89f8-d51bb7ab635b,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="e51dc84a-6aba-54e8-97bc-fe24e6987d89"/>
-                    <attribute id="UUID" type="guid" value="3f452600-07f0-587d-b15c-fef25e3c3018"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5b9c0af0-7a3a-584e-8ea1-24f6b337c699,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="9a3fb7b4-d528-5cb1-b504-5baa2e5216cd"/>
+                    <attribute id="UUID" type="guid" value="3325075b-3735-5bba-9920-cd4e752a0e35"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="PHX_Phenix_Serres"/>
+                    <attribute id="Name" type="LSString" value="PHX_Phenix_Eternel"/>
                     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="e51dc84a-6aba-54e8-97bc-fe24e6987d89"/>
-                    <attribute id="UUID" type="guid" value="9890ed04-abd0-5718-a103-0e70b884f195"/>
+                    <attribute id="TableUUID" type="guid" value="9a3fb7b4-d528-5cb1-b504-5baa2e5216cd"/>
+                    <attribute id="UUID" type="guid" value="1bb5c136-a802-5e5a-9346-098b42afc048"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="PHX_Phenix_Eternel"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PHX_Cendre_RenaissanceCollective"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(21b37abd-88fe-5b1e-9ce4-d0351989d669,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="9a3fb7b4-d528-5cb1-b504-5baa2e5216cd"/>
+                    <attribute id="UUID" type="guid" value="6e433cd5-652b-52ea-ad83-30f20c602cb4"/>
                 </node>
             </children>
         </node>

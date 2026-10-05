@@ -383,7 +383,11 @@ feat(None, 11, passives=["PHX_BouclierFlammes_2", "PHX_FeuSacre_2"],
      removed=["PHX_BouclierFlammes_1"], spells=["Target_PHX_EnvolDuPhenix"])
 feat(None, 12, spells=["Shout_PHX_AvatarDuPhenix"])
 
-# ================================================================== VOIE DU BRASIER (dégâts)
+# ================================================================== VOIE DU PHÉNIX ÉTERNEL
+# Une seule voie qui réunit le Brasier (dégâts), la Cendre (soins) et les Serres (corps à corps).
+VOIE = "Eternel"
+
+# --- Brasier (dégâts)
 passive("PHX_Brasier_Brasier", "Cœur du brasier",
         "Vos sorts de feu brûlent plus fort : une fois par attaque, ils infligent en plus votre modificateur "
         "de Charisme en dégâts de feu. Vous avez 2 Braises de plus.",
@@ -399,26 +403,26 @@ spell("Shout_PHX_Nova", "Shout", "Nova",
       using="Shout_DivineSense", Icon="Spell_Evocation_FlameStrike", UseCosts="ActionPoint:1",
       Cooldown="OncePerRest", SpellProperties="CreateExplosion(Projectile_PHX_Nova);RegainHitPoints(4d8)",
       **FEATURE_SPELL)
-feat("Brasier", 3, passives=["PHX_Brasier_Brasier"], boosts=["ActionResource(PHX_Braise,2,0)"])
-feat("Brasier", 10, spells=["Shout_PHX_Nova"])
+feat(VOIE, 3, passives=["PHX_Brasier_Brasier"], boosts=["ActionResource(PHX_Braise,2,0)"])
+feat(VOIE, 10, spells=["Shout_PHX_Nova"])
 
-# ================================================================== VOIE DE LA CENDRE (soins)
+# --- Cendre (soins)
 passive("PHX_Cendre_SoinsArdents", "Soins ardents",
         "Vos sorts de soins (hors tours de magie) rendent en plus votre niveau de Phénix en PV.",
         "Spell_HarmonyOfFireAndWater", StatsFunctorContext="OnHeal",
         Conditions="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip()",
         StatsFunctors=f"RegainHitPoints(ClassLevel({PHENIX}))")
-spell("Target_PHX_PlumeDeRenaissance_Cendre", "Target", "Plume de renaissance (Cendre)",
+spell("Target_PHX_PlumeDeRenaissance_Cendre", "Target", "Plume de renaissance (gratuite)",
       "Une fois par repos long, sans emplacement de sort : un allié reçoit une Plume de renaissance. S'il tombe "
       "à 0 PV, il renaît aussitôt avec la moitié de ses PV dans une gerbe de feu. Une seule fois.",
       Level="0", UseCosts="ActionPoint:1", Cooldown="OncePerRest", **PLUME_RENAISSANCE, **NO_UPCAST)
 passive("PHX_Cendre_RenaissanceCollective", "Renaissance collective",
         "L'explosion de votre Renaissance du phénix relève aussi les alliés à terre à 6 m, avec la moitié "
         "de leurs PV.", "Status_Fly")
-feat("Cendre", 3, passives=["PHX_Cendre_SoinsArdents"], spells=["Target_PHX_PlumeDeRenaissance_Cendre"])
-feat("Cendre", 10, passives=["PHX_Cendre_RenaissanceCollective"])
+feat(VOIE, 3, passives=["PHX_Cendre_SoinsArdents"], spells=["Target_PHX_PlumeDeRenaissance_Cendre"])
+feat(VOIE, 10, passives=["PHX_Cendre_RenaissanceCollective"])
 
-# ================================================================== VOIE DES SERRES (corps à corps)
+# --- Serres (corps à corps)
 explosion("Projectile_PHX_ImpactCharge", "Charge ardente", "Impact de feu de la Charge ardente.", 3,
           "IF(Enemy()):DealDamage(2d8,Fire,Magical)", "IF(Enemy()):DealDamage((2d8)/2,Fire,Magical)")
 spell("Target_PHX_ChargeArdente", "Target", "Charge ardente",
@@ -428,20 +432,17 @@ spell("Target_PHX_ChargeArdente", "Target", "Charge ardente",
       Icon="Action_Monk_FangsOfTheFireSnake",
       SpellProperties="GROUND:TeleportSource();GROUND:CreateExplosion(Projectile_PHX_ImpactCharge)",
       **FEATURE_SPELL)
-feat("Serres", 3, boosts=["Proficiency(MediumArmor)", "Proficiency(Shields)", "Proficiency(MartialWeapons)"],
+feat(VOIE, 3, boosts=["Proficiency(MediumArmor)", "Proficiency(Shields)", "Proficiency(MartialWeapons)"],
      spells=["Target_PHX_ChargeArdente"])
-feat("Serres", 5, passives=["ExtraAttack"])
+feat(VOIE, 5, passives=["ExtraAttack"])
 
 VOIES = {
-    "Brasier": ("Voie du Brasier",
-                "Le feu destructeur : vos sorts de feu brûlent plus fort, vous avez 2 Braises de plus, et au "
-                "niveau 10 vous libérez Nova, une explosion géante qui vous soigne."),
-    "Cendre": ("Voie de la Cendre",
-               "Le feu qui guérit : soins renforcés, une Plume de renaissance gratuite par repos long, et au "
-               "niveau 10 votre Renaissance du phénix relève aussi les alliés à terre autour de vous."),
-    "Serres": ("Voie des Serres",
-               "Le phénix guerrier : armures intermédiaires, boucliers, armes de guerre, Charge ardente, et "
-               "Attaque supplémentaire au niveau 5."),
+    VOIE: ("Voie du Phénix éternel",
+           "Les trois visages du phénix réunis. Brasier : vos sorts de feu brûlent plus fort (+Charisme) et "
+           "vous avez 2 Braises de plus. Cendre : soins renforcés et une Plume de renaissance gratuite par repos "
+           "long. Serres : armures intermédiaires, boucliers, armes de guerre, Charge ardente et Attaque "
+           "supplémentaire au niveau 5. Au niveau 10 : Nova, et votre Renaissance relève aussi les alliés à "
+           "terre autour de vous."),
 }
 
 

@@ -47,11 +47,14 @@ dans `outils/contenu.py` (`TOURS_FEU_LUMIERE`, `SORTS_FEU_LUMIERE`).
 | 11 | Envol du phénix (sort niv. 6) | Invoque un élémentaire de feu. |
 | 12 | Avatar du phénix | 1 fois par repos long, 5 tours : vol + aura 3 m (2d6 feu aux ennemis, 2d6 PV aux alliés). |
 
-Voies : **Brasier** (niv. 3 : +Cha dégâts sur les sorts de feu et +2 Braises ; niv. 10 : Nova,
-8d6 feu à 9 m, soigne 4d8), **Cendre** (niv. 3 : soins +niveau de Phénix, Plume de renaissance
-gratuite 1/repos long ; niv. 10 : la Renaissance relève les alliés à terre à 6 m), **Serres**
-(niv. 3 : armures intermédiaires, boucliers, armes de guerre, Charge ardente ; niv. 5 : Attaque
-supplémentaire).
+Voie (une seule, au niveau 3) : **Voie du Phénix éternel**, qui réunit les trois voies prévues par
+le cahier des charges :
+
+| Niv. | Brasier (dégâts) | Cendre (soins) | Serres (corps à corps) |
+|---|---|---|---|
+| 3 | +Charisme aux dégâts des sorts de feu, +2 Braises | Soins +niveau de Phénix, Plume de renaissance gratuite 1/repos long | Armures intermédiaires, boucliers, armes de guerre, Charge ardente |
+| 5 | | | Attaque supplémentaire |
+| 10 | Nova : 8d6 feu à 9 m, soigne 4d8 | La Renaissance relève les alliés à terre à 6 m | |
 
 Écarts avec le cahier des charges, tous dus à l'absence de script :
 
@@ -71,7 +74,7 @@ supplémentaire).
 
 Ces points reposent sur des mécanismes du jeu que je n'ai pas pu vérifier sans lancer le jeu.
 
-1. La classe Phénix apparaît à la création, et ses 3 voies au niveau 3.
+1. La classe Phénix apparaît à la création, et sa voie au niveau 3.
 2. Flamme bienfaitrice : la cible a l'air en feu mais gagne des PV à chaque tour.
 3. Cendres ardentes : à terre, le Phénix se relève seul au bout de 2 tours.
 4. Renaissance du phénix (niv. 10) et Plume de renaissance (niv. 9) : renaissance dans une

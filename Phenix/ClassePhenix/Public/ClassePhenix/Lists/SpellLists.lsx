@@ -45,19 +45,14 @@
                     <attribute id="UUID" type="guid" value="9abc1921-0fe6-5ec2-b681-f14975a8c981"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Comment" type="LSString" value="Phénix Brasier : capacités (niveau 10)"/>
+                    <attribute id="Comment" type="LSString" value="Phénix Eternel : capacités (niveau 3)"/>
+                    <attribute id="Spells" type="LSString" value="Target_PHX_PlumeDeRenaissance_Cendre;Target_PHX_ChargeArdente"/>
+                    <attribute id="UUID" type="guid" value="5b9c0af0-7a3a-584e-8ea1-24f6b337c699"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Phénix Eternel : capacités (niveau 10)"/>
                     <attribute id="Spells" type="LSString" value="Shout_PHX_Nova"/>
-                    <attribute id="UUID" type="guid" value="cd974c64-4897-5199-9a3e-fc85a9542bb6"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Comment" type="LSString" value="Phénix Cendre : capacités (niveau 3)"/>
-                    <attribute id="Spells" type="LSString" value="Target_PHX_PlumeDeRenaissance_Cendre"/>
-                    <attribute id="UUID" type="guid" value="b6e1cf71-faa8-5f1f-89ab-ec6675aecf6a"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Comment" type="LSString" value="Phénix Serres : capacités (niveau 3)"/>
-                    <attribute id="Spells" type="LSString" value="Target_PHX_ChargeArdente"/>
-                    <attribute id="UUID" type="guid" value="1476a1cb-b64b-5117-89f8-d51bb7ab635b"/>
+                    <attribute id="UUID" type="guid" value="21b37abd-88fe-5b1e-9ce4-d0351989d669"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Phénix : tours de magie de feu et de lumière"/>
