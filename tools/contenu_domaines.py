@@ -1,5 +1,5 @@
 """Les 10 domaines (sous-classes) : affinité divine, contrepoids, capacités et sorts."""
-from contenu import (DOMAINES, TYPE_FR, TYPE_NOM, ICONE_TYPE, SCHOOLS, ORDRE, CHAOS, NO_UPCAST,
+from contenu import (DOMAINES, TYPE_FR, TYPE_NOM, ICONE_TYPE, SCHOOLS, ORDRE, CHAOS, CREATRICE, NO_UPCAST,
                      METAMAGIC_LIST, passive, hidden, status, spell, interrupt, palier, degats,
                      ally_aura, keep_applied, outcome, slot)
 
@@ -60,7 +60,7 @@ passive("DOC_Vie_VieDebordante", "Vie débordante",
         "de Divinité de l'Ordre, et la cible gagne autant de PV temporaires.",
         "PassiveFeature_DiscipleOfLife", StatsFunctorContext="OnHeal",
         Conditions="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip()",
-        StatsFunctors=f"RegainHitPoints(ClassLevel({ORDRE}));GainTemporaryHitPoints(ClassLevel({ORDRE}))")
+        StatsFunctors=f"RegainHitPoints((ClassLevel({ORDRE})+ClassLevel({CREATRICE})));GainTemporaryHitPoints((ClassLevel({ORDRE})+ClassLevel({CREATRICE})))")
 status("DOC_FIL_DE_VIE", "Fil de vie",
        "Si vous tombez à 0 PV, vous restez à 1 PV à la place (une fois).",
        "PassiveFeature_RelentlessEndurance", using="RELENTLESS_ENDURANCE", StackId="DOC_FIL_DE_VIE")
@@ -365,7 +365,7 @@ DOMAIN_SPELLS["Paix"] = {1: ["Target_DOC_TreveSacree", "Target_Sanctuary"], 3: [
 
 # ================================================================== CHAOS : MORT (nécrotique)
 status("DOC_TRIBUT_FAUCHEUR", "Tribut du faucheur", "Points de vie temporaires arrachés à vos victimes.",
-       "PassiveFeature_DarkOnesBlessing", Boosts=f"TemporaryHP(CharismaModifier+ClassLevel({CHAOS}))",
+       "PassiveFeature_DarkOnesBlessing", Boosts=f"TemporaryHP(CharismaModifier+(ClassLevel({CHAOS})+ClassLevel({CREATRICE})))",
        StackId="DOC_TRIBUT_FAUCHEUR")
 passive("DOC_Mort_TributFaucheur", "Tribut du faucheur",
         "Quand vous éliminez un ennemi, vous gagnez des PV temporaires égaux à votre modificateur de "

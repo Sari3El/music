@@ -35,6 +35,31 @@
                     <attribute id="UUID" type="guid" value="b4ea3a24-4733-5d79-88a2-2ab0568237c0"/>
                 </node>
                 <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementCreation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Benediction"/>
+                    <attribute id="UUID" type="guid" value="1dbabe79-a5d6-533c-ad4d-8cd6ece638c3"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementCreation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Eclat"/>
+                    <attribute id="UUID" type="guid" value="b75004f5-a277-59ae-b777-1683941438f8"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementCreation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Ascension"/>
+                    <attribute id="UUID" type="guid" value="5ea3e82a-ab41-58b2-b905-6126c886bcf9"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementCreation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Vitalite"/>
+                    <attribute id="UUID" type="guid" value="69019fbe-2632-5fbd-97f3-d28cd8280b98"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DOC_DeferlementCreation"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_DOC_Deferlement_Entropie"/>
+                    <attribute id="UUID" type="guid" value="e60f5d86-aeb2-5112-bc13-ea6b5b626c09"/>
+                </node>
+                <node id="Outcome">
                     <attribute id="GroupName" type="FixedString" value="DOC_Detonation"/>
                     <attribute id="Spell" type="FixedString" value="Shout_DOC_Detonation_Fire"/>
                     <attribute id="UUID" type="guid" value="f907e6f2-e6aa-5b1e-8bfd-1582ffcba6f0"/>

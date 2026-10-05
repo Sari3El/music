@@ -266,6 +266,32 @@ ailes enflammées et les auras visuelles sont prévues en V2.
 
 ---
 
+## Divinité Créatrice (3e classe, ajoutée à la demande)
+
+Hors cahier des charges : la Créatrice réunit l'Ordre et le Chaos, sans leurs malus.
+
+| Élément | Choix retenu |
+|---|---|
+| Caractéristique de sorts | Charisme (lanceur complet, sorts à préparer) |
+| Points de vie | d12 (12 au niveau 1, puis 7 par niveau) |
+| Jets de sauvegarde | maîtrise des 6 |
+| Compétences | 4 au choix parmi toutes |
+| Armures et armes | légères, intermédiaires, lourdes, boucliers ; armes courantes et de guerre |
+| Emplacements de sort | 5 d'un coup dès qu'un niveau de sort s'ouvre (niv. 1, 3, 5, 7, 9, 11), donc 5 par niveau de sort au niveau 12 |
+| Sorts | n'importe quel sort du jeu à préparer : listes du clerc, paladin, ensorceleur, magicien, druide, barde, rôdeur et occultiste (3 protecteurs) ; peut aussi copier des parchemins |
+| Tours de magie | 7 au niveau 1 (1 par classe, 2 de magicien), +2 aux niveaux 4 et 10 |
+| Capacités de l'Ordre | Loi absolue, Décrets, auras de l'Ordre, Inébranlable, Ordre parfait, sorts exclusifs de l'Ordre |
+| Capacités du Chaos | critiques 19/18/17, Entropie, auras du Chaos, Indomptable, Tempête primordiale, sorts exclusifs du Chaos |
+| Déferlement créateur | 1 chance sur 20 par sort : uniquement les effets divins favorables (ni magie sauvage, ni Contrecoup) |
+| Domaines | les 10 au choix (niveau 1), sans Contrepoids |
+| Divinité pure | +1 Décret et +1 Entropie |
+| Dons | niveaux 4, 8 et 12 |
+
+Les capacités de Vie (Vie débordante) et de Mort qui dépendent du niveau de classe comptent aussi
+le niveau de Créatrice.
+
+---
+
 ## À tester en priorité
 
 Ces points reposent sur des mécanismes du jeu que je n'ai pas pu vérifier sans lancer le jeu. Si
@@ -284,6 +310,8 @@ l'un d'eux ne marche pas, il suffit de me le dire.
 9. Maîtrise des sorts (Magie, niv. 10) : les sorts choisis se lancent sans emplacement.
 10. Outre-tombe et Ordre parfait gardent bien le personnage à 1 PV.
 11. Le multiclassage vers ces classes ne donne pas d'emplacements de sort en double.
+12. Créatrice : les listes de sorts de toutes les classes apparaissent à la préparation, et les 5
+    emplacements s'ajoutent bien à chaque nouveau niveau de sort.
 
 ## Prévu pour la V2
 

@@ -12,6 +12,10 @@
                     <attribute id="Skills" type="LSString" value="Arcana, Deception, Intimidation, Insight, Persuasion, Religion"/>
                     <attribute id="UUID" type="guid" value="a329d817-a4e1-5763-9f14-f4b4540ff368"/>
                 </node>
+                <node id="SkillList">
+                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, SleightOfHand, Stealth, Survival"/>
+                    <attribute id="UUID" type="guid" value="bf0f5f07-b364-5b5c-ba3d-1391dd98db64"/>
+                </node>
             </children>
         </node>
     </region>

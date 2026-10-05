@@ -119,6 +119,10 @@
 	<content contentuid="hcebc7e4cg26e1g58fbg9cbcga9f9ec126100" version="1">Vous gagnez 1 point d'Entropie.</content>
 	<content contentuid="h0fd8378dgb7a3g5e35g8b03g6b5ef0a8329c" version="1">Déferlement : Contrecoup divin</content>
 	<content contentuid="h951893f0g3b8cg5c2fga6d5ga786e6ed2bd6" version="1">Le chaos se retourne contre vous : vous subissez 1d10 dégâts de force.</content>
+	<content contentuid="h8286326bgdb06g5b7bg9a36g93cdbb609ae2" version="1">Déferlement créateur</content>
+	<content contentuid="hc25cb3feg32c7g598fgba94ga3b03ce7685d" version="1">Chaque sort lancé avec un emplacement a 1 chance sur 20 de déclencher un Déferlement créateur : un effet divin toujours favorable (bénédiction, éclat, vol, soins ou Entropie). Jamais de magie sauvage, jamais de contrecoup.</content>
+	<content contentuid="h050ae5edgf3a8g5505g9260gfa0662634667" version="1">Divinité pure (Création)</content>
+	<content contentuid="h7060bbcbg93e2g565eg9977g2b1c778fcc14" version="1">Si vous êtes de race Divinité : +1 charge de Décret et +1 Entropie maximum, et votre Forme divine prend le type de dégâts de votre domaine.</content>
 	<content contentuid="hbb452f21gbdf4g5bb1g8140g8dc8a47f18db" version="1">Détonation (feu)</content>
 	<content contentuid="hc2659f59g14ceg53e5gaf57g0071d5a03cd7" version="1">Les ennemis à 6 m subissent 4d6 dégâts de feu.</content>
 	<content contentuid="hc66c4273g5d13g5bcdgae06g45226a78404e" version="1">Détonation (froid)</content>
@@ -496,6 +500,9 @@ Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divin
 	<content contentuid="h22aff068g7ffbg508eg97baga0601898b95c" version="1">Un dieu du changement, de la ruine et du hasard. Le Chaos élève le plafond : coups critiques fréquents, déferlements de magie imprévisibles, dégâts dévastateurs. Lanceur de sorts complet (Charisme) avec les sorts de l'ensorceleur et les tours de l'occultiste, plus des sorts exclusifs.</content>
 	<content contentuid="hd96ec4a8g0633g5175g8c33g6ffcbfce2a2a" version="1">Divinité du Chaos</content>
 	<content contentuid="h223f17b3g7115g5ce5g8222ge927f22b8dc1" version="1">Domaine divin</content>
+	<content contentuid="h7fb52960gca6ag53aegbcebg32b920b464dc" version="1">Le dieu d'avant l'Ordre et le Chaos, celui qui a tout façonné. La Créatrice réunit les pouvoirs des deux sans leurs contreparties : la fiabilité de l'Ordre (Loi absolue, Décrets, Inébranlable), la puissance du Chaos (critiques étendus, Entropie, Indomptable), toutes les armures et toutes les armes. Elle peut préparer n'importe quel sort du jeu, toutes classes confondues, et dispose de 5 emplacements dès qu'un niveau de sort s'ouvre. Lanceur de sorts complet (Charisme).</content>
+	<content contentuid="hd89a8df0g92c2g5794gae00g2efdd4c94cdb" version="1">Divinité Créatrice</content>
+	<content contentuid="h531633f2g8216g537ag8fb8gfb898f23c0f7" version="1">Domaine divin</content>
 	<content contentuid="h7572b4bdg92aag5551gb27dgf895418ba569" version="1">La vie déborde de vous : soins renforcés, fil de vie qui retient vos alliés, aura de guérison et renaissance de groupe. Affinité : radiant.</content>
 	<content contentuid="h91a1f06ag7387g5a40g8e6dgefe24f3bddb0" version="1">Domaine de la Vie</content>
 	<content contentuid="h237a5d0eg4269g5d59g8eccg1c4d9835bb2c" version="1">Vie</content>
@@ -526,6 +533,36 @@ Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divin
 	<content contentuid="h553211fbg5267g5f98g93c0g9243d7b7a9bb" version="1">Vous êtes né pour la guerre : armures lourdes, attaque supplémentaire, cri de guerre, carnage et incarnation de la guerre. Affinité : tonnerre.</content>
 	<content contentuid="h6b27a55fgd01dg587cga2dagef34cd51b7b6" version="1">Domaine de la Guerre</content>
 	<content contentuid="hb74f9335g59e4g53eega0f1gc38e4c9f5ab4" version="1">Guerre</content>
+	<content contentuid="he064c695g3664g59f7g8103gc7cd7f9b10f4" version="1">La vie déborde de vous : soins renforcés, fil de vie qui retient vos alliés, aura de guérison et renaissance de groupe. Affinité : radiant. Sans contrepoids.</content>
+	<content contentuid="h6832c710g354fg57f6g8453ga4fadfbdbb7d" version="1">Domaine de la Vie</content>
+	<content contentuid="hf12e9c1bg185cg5ceag8727g1c661e7a7127" version="1">Vie</content>
+	<content contentuid="h70928011gad90g5587gb104gb37ef8465e80" version="1">Vous marquez les coupables et la foudre les juge : marque du jugement, vision véritable, rétribution et verdict final. Affinité : foudre. Sans contrepoids.</content>
+	<content contentuid="hd2678190g8f08g504agb361g2a048c9c6627" version="1">Domaine de la Justice</content>
+	<content contentuid="hffaf83b0g86b5g5660gb54cga6c25bde8f71" version="1">Justice</content>
+	<content contentuid="h9bb265ecge6e9g5ba5gb857g1f49cee39ec7" version="1">Vous êtes l'arbitre de la Trame : codex, contresort gratuit, concentration inébranlable et sorts maîtrisés. Affinité : force. Sans contrepoids.</content>
+	<content contentuid="h673d0533gacecg56c3gb888gd4c423db6e82" version="1">Domaine de la Magie</content>
+	<content contentuid="h82b93223g294eg5fa8gb794g00b97ea8b064" version="1">Magie</content>
+	<content contentuid="he4956fefgf57dg5501g9724gb3ade3dd2ba5" version="1">Le feu du soleil vous obéit : il ignore les résistances, aveugle, brûle les ennemis autour de vous et finit en supernova. Affinité : feu. Sans contrepoids.</content>
+	<content contentuid="he8454e6cg0500g5236gbcb6g41078aaa53ae" version="1">Domaine du Soleil</content>
+	<content contentuid="h70d468a5g2517g517eg9313g10e2a90a6a45" version="1">Soleil</content>
+	<content contentuid="hb3f1a981gf919g54abgb822g16ae5bf3804d" version="1">Vous liez vos alliés et désarmez vos ennemis : lien de paix, apaisement, lien protecteur et armistice. Affinité : psychique. Sans contrepoids.</content>
+	<content contentuid="haacc89b6gc049g51b7g98f1gccfd0d7bfd4d" version="1">Domaine de la Paix</content>
+	<content contentuid="h19ed26b3gf7f7g554fg86d8g068ce4a34fbb" version="1">Paix</content>
+	<content contentuid="h8827221cg8c6eg5a7cg8a21gfb7cb73707a9" version="1">Vous moissonnez les âmes : PV volés aux morts, serviteurs mort-vivants, soins empêchés et retour d'outre-tombe. Affinité : nécrotique. Sans contrepoids.</content>
+	<content contentuid="h7bf8cb93gff0bg5538gabbfg6bb114373c89" version="1">Domaine de la Mort</content>
+	<content contentuid="h3942a82bg48e5g5290ga3a5g2660f4c44f51" version="1">Mort</content>
+	<content contentuid="hea673b34gc624g5b62ga22eg90c304bc6ca1" version="1">Mensonges, illusions et poisons : double illusoire, escamotage, langue d'argent et marionnettiste. Affinité : poison. Sans contrepoids.</content>
+	<content contentuid="hbbe178d8gd909g56cbg875dgee7336dfaba4" version="1">Domaine de la Tromperie</content>
+	<content contentuid="h8fc37ff2g3cecg59dfg8d5cg3f1eb001daa0" version="1">Tromperie</content>
+	<content contentuid="he768c8b1gd767g557dg8a76g02ed58898604" version="1">Le chaos à l'état pur : marées du chaos, métamagie nourrie par l'entropie, déferlements maîtrisés et tempête arcanique. Affinité : acide. Sans contrepoids.</content>
+	<content contentuid="h333977f7g39aag5e92gbc99g3ba6337ba09f" version="1">Domaine de la Sorcellerie</content>
+	<content contentuid="h635740fbg317eg5bc7g9378g86b16677f536" version="1">Sorcellerie</content>
+	<content contentuid="hda70d511g4c75g5377gad62gcd2512f8a4ea" version="1">Les phases de la lune guident vos pouvoirs : pas de l'ombre, bête lunaire et éclipse glacée. Affinité : froid. Sans contrepoids.</content>
+	<content contentuid="hac4ea828geae2g5075g85cag1dfba5bfbe64" version="1">Domaine de la Lune</content>
+	<content contentuid="hd08807f7g40b7g56e3g98c9gc1f2cc5b0d44" version="1">Lune</content>
+	<content contentuid="h168a4c54gfe36g5736gbd04ga31263ffdd65" version="1">Vous êtes né pour la guerre : armures lourdes, attaque supplémentaire, cri de guerre, carnage et incarnation de la guerre. Affinité : tonnerre. Sans contrepoids.</content>
+	<content contentuid="h8cc04111gbe51g56bdgba97g8a2e1f0fa08a" version="1">Domaine de la Guerre</content>
+	<content contentuid="h9838f756g717eg5de7gab2ag2861aeb3c237" version="1">Guerre</content>
 	<content contentuid="hf5e08777g9eabg5ff7ga29dg65408be36c1f" version="1">Choisissez vos tours de magie (liste du clerc).</content>
 	<content contentuid="h402ae114g9ea5g5ecdg80a2g4d3ef1f828e0" version="1">Tours de magie de l'Ordre</content>
 	<content contentuid="h34b445e0g510ag5e6egb69cg40f6391ee3dd" version="1">Choisissez vos tours de magie (liste de l'ensorceleur).</content>
@@ -536,6 +573,8 @@ Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divin
 	<content contentuid="hf671e571g3cc2g5f29g9984g74bc3b99cafc" version="1">Sorts du Chaos</content>
 	<content contentuid="hf9ebfeedg38ebg54c8g8682gc4acb522303d" version="1">Choisissez un sort que vous pourrez lancer sans emplacement, une fois par tour.</content>
 	<content contentuid="h4fb3b69cge1aag5381g80f5gc2391878b24c" version="1">Maîtrise des sorts</content>
+	<content contentuid="h645a2e26g1322g557fgbd49g8fbbc7f7defe" version="1">Choisissez vos tours de magie, dans les listes de toutes les classes.</content>
+	<content contentuid="h8b7f7a20g974bg5d20g952bgd382ca48f536" version="1">Tours de magie de la Création</content>
 	<content contentuid="hbf17bbc8gf14bg5166g8f13g1fe9299b0386" version="1">Pouvoir de la Divinité de l'Ordre pour imposer sa loi : Protéger, Purifier, Lier. Se recharge au repos court.</content>
 	<content contentuid="hfa4ec327g21aeg55c7g92f7gc26951ad7beb" version="1">Décrets</content>
 	<content contentuid="hcbe07348g8efeg5e9ag9bc2g94cf6768b87a" version="1">Chaos accumulé en combat : +1 à chaque coup critique et à chaque ennemi éliminé. Retombe à zéro au début et à la fin de chaque combat.</content>

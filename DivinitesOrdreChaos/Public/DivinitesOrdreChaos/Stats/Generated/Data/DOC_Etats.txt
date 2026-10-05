@@ -402,7 +402,7 @@ data "StatusType" "BOOST"
 data "DisplayName" "h0b51bf59gc2efg5a02gb82cgd3cef57f35f9;1"
 data "Description" "hd71cbcfagbd68g5d7ega939gcf5a98e3a902;1"
 data "Icon" "PassiveFeature_DarkOnesBlessing"
-data "Boosts" "TemporaryHP(CharismaModifier+ClassLevel(DOC_DiviniteChaos))"
+data "Boosts" "TemporaryHP(CharismaModifier+(ClassLevel(DOC_DiviniteChaos)+ClassLevel(DOC_DiviniteCreatrice)))"
 data "StackId" "DOC_TRIBUT_FAUCHEUR"
 
 new entry "DOC_FLETRI"

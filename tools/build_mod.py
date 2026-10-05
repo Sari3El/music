@@ -85,6 +85,8 @@ def equipment_txt():
         "EQP_CC_DOC_DiviniteOrdre": ("Melee", ["WPN_Mace", "ARM_Shield", "ARM_ScaleMail_Body", "ARM_Boots_Leather"]),
         "EQP_CC_DOC_DiviniteChaos": ("Melee", ["WPN_Dagger", "WPN_LightCrossbow", "ARM_Leather_Body",
                                                "ARM_Boots_Leather"]),
+        "EQP_CC_DOC_DiviniteCreatrice": ("Melee", ["WPN_Longsword", "ARM_Shield", "ARM_ChainMail_Body",
+                                                   "ARM_Boots_Leather"]),
     }
     common = ["OBJ_Potion_Healing", "OBJ_Potion_Healing", "ARM_Camp_Body", "ARM_Camp_Shoes", "OBJ_Keychain",
               "OBJ_Bag_AlchemyPouch", "OBJ_Backpack_CampSupplies", "OBJ_Scroll_Revivify"]
@@ -221,7 +223,9 @@ def check():
     # 3. chaque liste citée par une progression existe (listes du mod ou du jeu)
     our_lists = {U("spelllist:" + n) for n, _, _ in C.SPELLLISTS} | {U("skilllist:" + n) for n, _ in C.SKILLLISTS}
     vanilla_lists = (set(C.CLERIC_SPELLS.values()) | set(C.PALADIN_SPELLS.values()) |
-                     set(C.SORCERER_SPELLS.values()) |
+                     set(C.SORCERER_SPELLS.values()) | set(C.WIZARD_SPELLS.values()) | set(C.DRUID_SPELLS.values()) |
+                     set(C.BARD_SPELLS.values()) | set(C.RANGER_SPELLS.values()) |
+                     {g for v in C.WARLOCK_SPELLS.values() for g in v} | set(C.ALL_CANTRIP_LISTS) |
                      {C.CLERIC_CANTRIPS, C.SORCERER_CANTRIPS, C.WARLOCK_CANTRIPS, C.ALL_ABILITIES_LIST,
                       C.METAMAGIC_LIST})
     for node in P.PROGRESSIONS:

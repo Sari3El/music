@@ -172,15 +172,25 @@ CHAOS_SKILLS = U("skilllist:chaos")
 C.SKILLLISTS.append(("ordre", ["History", "Insight", "Medicine", "Persuasion", "Religion", "Intimidation"]))
 C.SKILLLISTS.append(("chaos", ["Arcana", "Deception", "Intimidation", "Insight", "Persuasion", "Religion"]))
 
+CREATRICE_SKILLS = U("skilllist:creatrice")
+C.SKILLLISTS.append(("creatrice", ["Acrobatics", "AnimalHandling", "Arcana", "Athletics", "Deception", "History",
+                                   "Insight", "Intimidation", "Investigation", "Medicine", "Nature", "Perception",
+                                   "Performance", "Persuasion", "Religion", "SleightOfHand", "Stealth", "Survival"]))
+
 MAITRISE_RES = U("resource:DOC_MaitriseSorts")
 
 
+import functools  # noqa: E402
+
+
+@functools.lru_cache(maxsize=None)
 def domain_lists(dom):
     """Listes des sorts de domaine toujours préparés, par niveau de personnage."""
     return {lv: spelllist(f"DOC_{dom}_Domaine_{lv}", f"{dom} : sorts de domaine (niveau {lv})", spells)
             for lv, spells in D.DOMAIN_SPELLS[dom].items()}
 
 
+@functools.lru_cache(maxsize=None)
 def feature_lists(dom):
     out = {}
     for lv, f in D.FEATURES[dom].items():
@@ -211,6 +221,19 @@ CLASSES = {
         equipment="EQP_CC_DOC_DiviniteChaos", sound="Sorcerer", skills=CHAOS_SKILLS,
         prepare=False, excl=C.CHAOS_EXCL_LISTS, l12=C.CHAOS_L12,
         dist=dict(Strength=8, Dexterity=14, Constitution=13, Intelligence=10, Wisdom=12, Charisma=15)),
+    C.CREATRICE: dict(
+        titre="Divinité Créatrice", ability=6, saves=("Strength", "Dexterity", "Constitution", "Intelligence",
+                                                     "Wisdom", "Charisma"),
+        desc="Le dieu d'avant l'Ordre et le Chaos, celui qui a tout façonné. La Créatrice réunit les pouvoirs "
+             "des deux sans leurs contreparties : la fiabilité de l'Ordre (Loi absolue, Décrets, Inébranlable), "
+             "la puissance du Chaos (critiques étendus, Entropie, Indomptable), toutes les armures et toutes les "
+             "armes. Elle peut préparer n'importe quel sort du jeu, toutes classes confondues, et dispose de "
+             "5 emplacements dès qu'un niveau de sort s'ouvre. Lanceur de sorts complet (Charisme).",
+        armor=["Proficiency(LightArmor)", "Proficiency(MediumArmor)", "Proficiency(HeavyArmor)",
+               "Proficiency(Shields)", "Proficiency(SimpleWeapons)", "Proficiency(MartialWeapons)"],
+        equipment="EQP_CC_DOC_DiviniteCreatrice", sound="Cleric", skills=CREATRICE_SKILLS, nskills=4,
+        prepare=True, excl=None, l12=None, hp=(12, 7), slots=5, contrepoids=False,
+        dist=dict(Strength=13, Dexterity=12, Constitution=14, Intelligence=8, Wisdom=10, Charisma=15)),
 }
 SUBCLASS_SELECTION_LEVEL = 1
 
@@ -248,6 +271,8 @@ def class_level_features(cls, lv):
             s += [f"SelectSpells({C.CLERIC_CANTRIPS},3,0,DOC_TourOrdre,,,AlwaysPrepared)"]
         if lv in (4, 10):
             s += [f"SelectSpells({C.CLERIC_CANTRIPS},1,0,DOC_TourOrdre,,,AlwaysPrepared)"]
+    elif cls == C.CREATRICE:
+        return creatrice_level_features(lv)
     else:
         if lv == 1:
             p += ["DOC_Classe_Marqueur", "DOC_Chaos_Critique_19", "DOC_Chaos_Deferlement", "DOC_Chaos_UnNaturel",
@@ -289,17 +314,57 @@ def class_level_features(cls, lv):
     return b, p, r, s
 
 
+def creatrice_level_features(lv):
+    """Divinité Créatrice : socles de l'Ordre ET du Chaos, sans malus (ni Contrepoids, ni magie sauvage)."""
+    b, p, r, s = [], [], [], []
+    for cls in (C.ORDRE, C.CHAOS):
+        cb, cp, cr, cs = class_level_features(cls, lv)
+        b += cb
+        r += cr
+        p += [x for x in cp if x not in ("DOC_Chaos_Deferlement", "DOC_Chaos_UnNaturel", "DOC_Ordre_DivinitePure",
+                                         "DOC_Chaos_DivinitePure") and x not in p]
+        # on garde les capacités de classe (Décrets, Entropie, sorts exclusifs, niveau 12),
+        # mais pas les sorts de clerc/ensorceleur : la Créatrice a sa propre liste, plus large
+        s += [x for x in cs if "DOC_Tour" not in x and "DOC_SortChaos" not in x
+              and not any(g in x for g in list(C.CLERIC_SPELLS.values()) + list(C.PALADIN_SPELLS.values()))]
+    if lv == 1:
+        p += ["DOC_Creatrice_Deferlement", "DOC_Creatrice_DivinitePure"]
+    # n'importe quel sort du jeu : toutes les listes de toutes les classes, à préparer
+    if lv in NEW_SPELL_LEVEL:
+        s += [f"AddSpells({g})" for g in C.all_class_lists(NEW_SPELL_LEVEL[lv])]
+    if lv == 1:
+        s += [f"SelectSpells({g},{2 if g == C.WIZARD_CANTRIPS else 1},0,DOC_TourCreation,,,AlwaysPrepared)"
+              for g in C.ALL_CANTRIP_LISTS]
+    if lv in (4, 10):
+        s += [f"SelectSpells({C.WIZARD_CANTRIPS},1,0,DOC_TourCreation,,,AlwaysPrepared)",
+              f"SelectSpells({C.SORCERER_CANTRIPS},1,0,DOC_TourCreation,,,AlwaysPrepared)"]
+    return b, p, r, s
+
+
+def class_slot_boosts(info, lv):
+    """Lanceur complet ; la Créatrice a d'emblée 5 emplacements à chaque nouveau niveau de sort."""
+    if not info.get("slots"):
+        return slot_boosts(lv)
+    n = NEW_SPELL_LEVEL.get(lv)
+    return [f"ActionResource(SpellSlot,{info['slots']},{n})"] if n else []
+
+
+selector_label("DOC_TourCreation", "Tours de magie de la Création",
+               "Choisissez vos tours de magie, dans les listes de toutes les classes.")
+
 for cls, info in CLASSES.items():
     table = U("table:" + cls)
-    subclass_uuids = [U("class:DOC_" + d) for d, v in C.DOMAINES.items() if v[0] == cls]
+    if cls == C.CREATRICE:
+        subclass_uuids = [U("class:DOC_Creatrice_" + d) for d in C.DOMAINES]
+    else:
+        subclass_uuids = [U("class:DOC_" + d) for d, v in C.DOMAINES.items() if v[0] == cls]
     for lv in range(1, 13):
         b, p, r, s = class_level_features(cls, lv)
-        boosts = slot_boosts(lv) + b
+        boosts = class_slot_boosts(info, lv) + b
         passives = unlock_passive(lv) + p
         if lv == 1:
-            boosts = [f"ProficiencyBonus(SavingThrow,{info['saves'][0]})",
-                      f"ProficiencyBonus(SavingThrow,{info['saves'][1]})"] + info["armor"] + boosts
-            sel = [f"SelectSkills({info['skills']},2)",
+            boosts = [f"ProficiencyBonus(SavingThrow,{sv})" for sv in info["saves"]] + info["armor"] + boosts
+            sel = [f"SelectSkills({info['skills']},{info.get('nskills', 2)})",
                    f"SelectAbilityBonus({C.ALL_ABILITIES_LIST},AbilityBonus,2,1)"] + s
         else:
             sel = s
@@ -308,19 +373,19 @@ for cls, info in CLASSES.items():
                     subclasses=subclass_uuids if lv == SUBCLASS_SELECTION_LEVEL else None)
     # niveau 1 en multiclasse (sans sauvegardes ni compétences)
     b, p, r, s = class_level_features(cls, 1)
-    progression(cls, table, 1, 0, boosts=info["armor"][:3] + slot_boosts(1) + b, passives=unlock_passive(1) + p,
+    progression(cls, table, 1, 0, boosts=info["armor"][:3] + class_slot_boosts(info, 1) + b, passives=unlock_passive(1) + p,
                 selectors=s, multiclass=True, subclasses=subclass_uuids)
 
     CLASSDESCS.append(Node("ClassDescription", [
-        ("BaseHp", "int32", 10),
-        ("CanLearnSpells", "bool", "false"),
+        ("BaseHp", "int32", info.get("hp", (10, 6))[0]),
+        ("CanLearnSpells", "bool", "true" if cls == C.CREATRICE else "false"),
         ("CharacterCreationPose", "guid", C.CC_POSE),
         ("ClassEquipment", "FixedString", info["equipment"]),
         ("ClassHotbarColumns", "int32", 5),
         ("CommonHotbarColumns", "int32", 9),
         ("Description", "TranslatedString", L.add(f"class:{cls}:desc", info["desc"])),
         ("DisplayName", "TranslatedString", L.add(f"class:{cls}:nom", info["titre"])),
-        ("HpPerLevel", "int32", 6),
+        ("HpPerLevel", "int32", info.get("hp", (10, 6))[1]),
         ("ItemsHotbarColumns", "int32", 2),
         ("LearningStrategy", "uint8", 1),
         ("MulticlassSpellcasterModifier", "double", 1),
@@ -393,4 +458,45 @@ for dom, (cls, titre, dt, opp, fr) in C.DOMAINES.items():
         ("SoundClassType", "FixedString", CLASSES[cls]["sound"]),
         ("SpellCastingAbility", "uint8", CLASSES[cls]["ability"]),
         ("UUID", "guid", U("class:DOC_" + dom)),
+    ]))
+
+# ================================================================== DOMAINES DE LA CRÉATRICE
+# Les 10 domaines, mêmes capacités, sans le Contrepoids (aucun malus).
+for dom, (cls, titre, dt, opp, fr) in C.DOMAINES.items():
+    name = f"DOC_Creatrice_{dom}"
+    table = U("table:sub:creatrice:" + dom)
+    dlists = domain_lists(dom)
+    flists = feature_lists(dom)
+    for lv in sorted(set(dlists) | set(D.FEATURES[dom])):
+        f = D.FEATURES[dom].get(lv, {"passives": [], "removed": [], "spells": [], "boosts": [], "selectors": []})
+        sel = []
+        if lv in dlists:
+            sel.append(f"AddSpells({dlists[lv]},,,,AlwaysPrepared)")
+        if lv in flists:
+            sel.append(f"AddSpells({flists[lv]},,,,AlwaysPrepared)")
+        sel += f["selectors"]
+        boosts = f["boosts"]
+        if dom == "Magie" and lv == 10:
+            sel += [f"SelectSpells({C.CLERIC_SPELLS[1]},1,0,DOC_MaitriseSorts,,{MAITRISE_RES},AlwaysPrepared)",
+                    f"SelectSpells({C.CLERIC_SPELLS[2]},1,0,DOC_MaitriseSorts,,{MAITRISE_RES},AlwaysPrepared)"]
+            boosts = boosts + ["ActionResource(DOC_MaitriseSorts,1,0)"]
+        passives = [x for x in f["passives"] if not x.endswith("_Contrepoids")]
+        progression(name, table, lv, 1, boosts=boosts, passives=passives, removed=f["removed"],
+                    selectors=sel, key=name)
+    CLASSDESCS.append(Node("ClassDescription", [
+        ("CanLearnSpells", "bool", "true"),
+        ("CharacterCreationPose", "guid", C.CC_POSE),
+        ("Description", "TranslatedString", L.add(f"class:{name}:desc",
+                                                  DOMAIN_DESC[dom] + " Sans contrepoids.")),
+        ("DisplayName", "TranslatedString", L.add(f"class:{name}:nom", titre)),
+        ("LearningStrategy", "uint8", 1),
+        ("MustPrepareSpells", "bool", "true"),
+        ("Name", "FixedString", name),
+        ("ParentGuid", "guid", U("class:" + C.CREATRICE)),
+        ("PrimaryAbility", "uint8", CLASSES[C.CREATRICE]["ability"]),
+        ("ProgressionTableUUID", "guid", table),
+        ("ShortName", "TranslatedString", L.add(f"class:{name}:court", dom)),
+        ("SoundClassType", "FixedString", CLASSES[C.CREATRICE]["sound"]),
+        ("SpellCastingAbility", "uint8", CLASSES[C.CREATRICE]["ability"]),
+        ("UUID", "guid", U("class:" + name)),
     ]))

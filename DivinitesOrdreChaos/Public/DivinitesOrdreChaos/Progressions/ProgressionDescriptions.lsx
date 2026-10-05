@@ -34,6 +34,12 @@
                     <attribute id="SelectorId" type="FixedString" value="DOC_MaitriseSorts"/>
                     <attribute id="UUID" type="guid" value="29b191f1-39b1-5499-9d33-92cfcc424ede"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h645a2e26g1322g557fgbd49g8fbbc7f7defe" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h8b7f7a20g974bg5d20g952bgd382ca48f536" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="DOC_TourCreation"/>
+                    <attribute id="UUID" type="guid" value="1f533034-0538-5e55-b23f-7e8a7a3cb81b"/>
+                </node>
             </children>
         </node>
     </region>

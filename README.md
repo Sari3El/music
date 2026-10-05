@@ -5,8 +5,9 @@ Ce mod ajoute :
 - la race **Divinité**, des dieux tombés sur Faerûn, déclinée en 11 races (Divinité humaine, elfe,
   drow, demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide, demi-orque) qui reprennent
   les corps, visages, couleurs et sous-races des peuples du jeu ;
-- deux classes : **Divinité de l'Ordre** (Sagesse, fiabilité) et **Divinité du Chaos** (Charisme,
-  coups critiques et magie sauvage) ;
+- trois classes : **Divinité de l'Ordre** (Sagesse, fiabilité), **Divinité du Chaos** (Charisme,
+  coups critiques et magie sauvage) et **Divinité Créatrice** (les bonus des deux sans les malus,
+  n'importe quel sort du jeu, toutes les armures, 5 emplacements par niveau de sort) ;
 - **10 domaines** (sous-classes) en miroir : Vie/Mort, Justice/Tromperie, Magie/Sorcellerie,
   Soleil/Lune, Paix/Guerre ;
 - l'Affinité divine (résistance, puis immunité, puis absorption), le contrepoids (optionnel) et le
@@ -73,7 +74,7 @@ Sur la page GitHub du dépôt, choisis la branche `claude/baldurs-gate-3-modes-f
 ### 2.4 Jouer
 
 Lance une **nouvelle partie**. En création de personnage, tu trouveras la race **Divinité** et les
-classes **Divinité de l'Ordre** et **Divinité du Chaos**. Le domaine se choisit dès le niveau 1.
+classes **Divinité de l'Ordre**, **Divinité du Chaos** et **Divinité Créatrice**. Le domaine se choisit dès le niveau 1.
 
 ### 2.5 Me faire un retour
 
