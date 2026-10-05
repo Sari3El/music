@@ -68,22 +68,107 @@ progression(C.RACE, RACE_TABLE, 1, 2,
 progression(C.RACE, RACE_TABLE, 3, 2, selectors=[f"AddSpells({C.RACE_L3},,,,AlwaysPrepared)"])
 progression(C.RACE, RACE_TABLE, 5, 2, selectors=[f"AddSpells({C.RACE_L5},,,,AlwaysPrepared)"])
 
-RACE_NODE = Node("Race", [
+import json  # noqa: E402
+import os  # noqa: E402
+
+DONNEES_JEU = json.load(open(os.path.join(os.path.dirname(__file__), "donnees_jeu.json"), encoding="utf-8"))
+RACE_UUID = U("race:" + C.RACE)
+APPARENCES_FR = {
+    "Humain": ("Forme humaine", "les traits d'un humain"),
+    "Elfe": ("Forme elfique", "les traits d'un elfe"),
+    "Drow": ("Forme drow", "les traits d'un drow"),
+    "DemiElfe": ("Forme demi-elfe", "les traits d'un demi-elfe"),
+    "Nain": ("Forme naine", "les traits d'un nain"),
+    "Halfelin": ("Forme halfeline", "les traits d'un halfelin"),
+    "Gnome": ("Forme gnome", "les traits d'un gnome"),
+    "Tieffelin": ("Forme tieffeline", "les traits d'un tieffelin"),
+    "Githyanki": ("Forme githyanki", "les traits d'un githyanki"),
+    "Drakeide": ("Forme drakéide", "les traits d'un drakéide"),
+    "DemiOrque": ("Forme demi-orque", "les traits d'un demi-orque"),
+}
+LIST_NODES = ["SkinColors", "EyeColors", "HairColors", "HairHighlightColors", "HairGrayingColors",
+              "TattooColors", "MakeupColors", "LipsMakeupColors", "HornColors", "HornTipColors", "Visuals", "Tags"]
+
+
+def race_children(data):
+    return [Node(k, [("Object", "guid", g)]) for k in LIST_NODES for g in data["listes"].get(k, [])]
+
+
+def subrace_uuid(nom):
+    return U(f"race:{C.RACE}_{nom}")
+
+
+RACE_NODES = [Node("Race", [
     ("Description", "TranslatedString", L.add("race:desc",
         "Les Divinités sont de vrais dieux, tombés sur Faerûn. Ni mortels, ni esprits enfermés dans un corps : "
         "des dieux arrachés à leur royaume, privés de l'essentiel de leur puissance. Leur quête pour la "
         "retrouver les mène à la Porte de Baldur, là où la Couronne de Karsus – l'artefact de l'archimage "
         "qui osa voler la divinité de Mystryl – attire à elle tout ce qui touche au divin.\n\n"
+        "Un dieu peut prendre l'apparence qu'il veut : choisissez sa forme (humaine, elfique, naine, "
+        "drakéide...). Les pouvoirs divins sont les mêmes pour toutes les formes.\n\n"
         "Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divine au niveau 3 ; "
         "Forme divine au niveau 5.")),
     ("DisplayName", "TranslatedString", L.add("race:nom", "Divinité")),
     ("DisplayTypeUUID", "guid", C.HUMANOID),
     ("Name", "FixedString", C.RACE),
-    ("ParentGuid", "guid", C.HUMAN),
+    ("ParentGuid", "guid", C.HUMANOID),
     ("ProgressionTableUUID", "guid", RACE_TABLE),
-    ("RaceSoundSwitch", "FixedString", "Human"),
-    ("UUID", "guid", U("race:" + C.RACE)),
-])
+    ("RaceEquipment", "FixedString", DONNEES_JEU["Humain"]["RaceEquipment"]),
+    ("RaceSoundSwitch", "FixedString", DONNEES_JEU["Humain"]["RaceSoundSwitch"]),
+    ("UUID", "guid", RACE_UUID),
+], race_children(DONNEES_JEU["Humain"]))]
+
+for nom, data in DONNEES_JEU.items():
+    titre, traits = APPARENCES_FR[nom]
+    attrs = [
+        ("Description", "TranslatedString", L.add(f"race:{nom}:desc",
+            f"La divinité s'est incarnée sous {traits}. Apparence uniquement : les pouvoirs divins sont "
+            f"identiques pour toutes les formes.")),
+        ("DisplayName", "TranslatedString", L.add(f"race:{nom}:nom", titre)),
+        ("DisplayTypeUUID", "guid", C.HUMANOID),
+        ("Name", "FixedString", f"{C.RACE}_{nom}"),
+        ("ParentGuid", "guid", RACE_UUID),
+    ]
+    if data.get("RaceEquipment"):
+        attrs.append(("RaceEquipment", "FixedString", data["RaceEquipment"]))
+    if data.get("RaceSoundSwitch"):
+        attrs.append(("RaceSoundSwitch", "FixedString", data["RaceSoundSwitch"]))
+    attrs.append(("UUID", "guid", subrace_uuid(nom)))
+    RACE_NODES.append(Node("Race", attrs, race_children(data)))
+
+# Présélections de création de personnage : les corps de chaque race du jeu
+PRESET_NODES = []
+for nom, data in DONNEES_JEU.items():
+    for c in data["corps"]:
+        PRESET_NODES.append(Node("CharacterCreationPreset", [
+            ("BodyShape", "uint8", c.get("BodyShape", "0")), ("BodyType", "uint8", c["BodyType"]),
+            ("CloseUpA", "LSString", c["CloseUpA"]), ("CloseUpB", "LSString", c["CloseUpB"]),
+            ("Overview", "LSString", c["Overview"]), ("RaceUUID", "guid", RACE_UUID),
+            ("RootTemplate", "guid", c["RootTemplate"]), ("SubRaceUUID", "guid", subrace_uuid(nom)),
+            ("UUID", "guid", U(f"preset:{nom}:{c['BodyType']}:{c.get('BodyShape', '0')}")),
+            ("VOLinesTableUUID", "guid", c["VOLinesTableUUID"]),
+        ]))
+
+# Visages, coiffures, cornes... de chaque race du jeu, rattachés à la sous-race correspondante
+CC_SLOTS = {"0": "Head", "1": "Hair", "2": "Horns", "3": "Beard", "5": "DragonbornTop", "6": "DragonbornChin",
+         "7": "DragonbornJaw", "8": "Tail", "9": "Private Parts"}
+APPEARANCE_NODES = []
+for nom, data in DONNEES_JEU.items():
+    for v in data["visuels"]:
+        if v["SlotName"] not in CC_SLOTS:
+            continue
+        attrs = [("BodyShape", "uint8", v.get("BodyShape", "0")), ("BodyType", "uint8", v.get("BodyType", "0"))]
+        if v.get("DefaultSkinColor"):
+            attrs.append(("DefaultSkinColor", "guid", v["DefaultSkinColor"]))
+        attrs.append(("DisplayName", "TranslatedString", v["DisplayName"]))
+        if v.get("IconIdOverride"):
+            attrs.append(("IconIdOverride", "FixedString", v["IconIdOverride"]))
+        attrs.append(("RaceUUID", "guid", subrace_uuid(nom)))
+        if v.get("RootTemplate"):
+            attrs.append(("RootTemplate", "guid", v["RootTemplate"]))
+        attrs += [("SlotName", "FixedString", CC_SLOTS[v["SlotName"]]), ("UUID", "guid", U(f"ccav:{nom}:{v['UUID']}")),
+                  ("VisualResource", "guid", v["VisualResource"])]
+        APPEARANCE_NODES.append(Node("CharacterCreationAppearanceVisual", attrs))
 
 # ================================================================== LISTES COMMUNES
 ORDRE_SKILLS = U("skilllist:ordre")

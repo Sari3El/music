@@ -26,13 +26,15 @@ du personnage.
 | 3 | Injonction divine | Le sort Injonction (5 ordres), une fois par repos long, sans emplacement. |
 | 5 | Forme divine | Action bonus, une fois par repos long, 3 tours : vol + 1d6 dégâts de force aux attaques (armes et mains nues). |
 
-- **Apparence :** corps humain du jeu. Côté données, la race est rattachée aux Humains (elle hérite
-  des visages, couleurs et coiffures), mais elle s'affiche comme une race à part dans la création de
-  personnage.
+- **Apparence :** Divinité est une race à part dans la liste, avec 11 **formes** en sous-race :
+  humaine, elfique, drow, demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide,
+  demi-orque. Chaque forme reprend les corps, visages, coiffures, cornes et couleurs de la race du
+  jeu correspondante (données tirées des tables du jeu par `tools/extraire_donnees_jeu.py`). Les
+  pouvoirs divins sont les mêmes pour toutes les formes.
 - **Écart :** les yeux lumineux, les marques divines et le halo ou l'aura sombre de la Forme divine
   ne sont pas encore faits. Ils demandent des ressources visuelles à créer dans le Toolkit (V2).
-- **Écart :** les sous-races (Céleste, Infernal, Astral, Élémentaire), marquées optionnelles, sont
-  reportées en V2.
+- **Écart :** les sous-races du cahier des charges (Céleste, Infernal, Astral, Élémentaire) sont
+  reportées en V2 : en V1, les sous-races servent à choisir l'apparence.
 - **Hors périmètre V1 :** la quête liée à la Couronne de Karsus (nouveaux dialogues). Le lore passe
   par la description de la race.
 
@@ -265,8 +267,8 @@ ailes enflammées et les auras visuelles sont prévues en V2.
 Ces points reposent sur des mécanismes du jeu que je n'ai pas pu vérifier sans lancer le jeu. Si
 l'un d'eux ne marche pas, il suffit de me le dire.
 
-1. La race apparaît dans la création de personnage, avec un corps (après l'étape des présélections
-   humaines du README).
+1. La race Divinité apparaît dans la création de personnage, et chaque forme a un corps, des
+   visages et des coiffures (vérifier surtout les formes drakéide et tieffeline).
 2. Les deux classes apparaissent, ainsi que leurs 5 domaines au niveau 1.
 3. Les sorts du clerc (Ordre) se préparent, et les sorts de l'ensorceleur (Chaos) se choisissent à
    chaque niveau.

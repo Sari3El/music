@@ -475,8 +475,32 @@
 	<content contentuid="h47abdde5g3f7eg5164ga707g8e976941a5f2" version="1">Vous maîtrisez les armures lourdes et les armes de guerre. Au niveau 5, vous gagnez une attaque supplémentaire.</content>
 	<content contentuid="h8449a5b1g4040g5de4ga035g77ae9db5d5e0" version="1">Les Divinités sont de vrais dieux, tombés sur Faerûn. Ni mortels, ni esprits enfermés dans un corps : des dieux arrachés à leur royaume, privés de l'essentiel de leur puissance. Leur quête pour la retrouver les mène à la Porte de Baldur, là où la Couronne de Karsus – l'artefact de l'archimage qui osa voler la divinité de Mystryl – attire à elle tout ce qui touche au divin.
 
+Un dieu peut prendre l'apparence qu'il veut : choisissez sa forme (humaine, elfique, naine, drakéide...). Les pouvoirs divins sont les mêmes pour toutes les formes.
+
 Vue divine, Volonté divine, Étincelle immortelle, Présence ; Injonction divine au niveau 3 ; Forme divine au niveau 5.</content>
 	<content contentuid="h015d8c19g98dfg570cg95a1g4cbf6afe357d" version="1">Divinité</content>
+	<content contentuid="h53dbf29bg8b7bg5190ga719g0771d63fec69" version="1">La divinité s'est incarnée sous les traits d'un humain. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="h53039559ge42fg5f0egb928g38d105db4f2e" version="1">Forme humaine</content>
+	<content contentuid="heade678eg05a1g51c7gbf1cgaf8fa6a7b95a" version="1">La divinité s'est incarnée sous les traits d'un elfe. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="h562b74e5gb834g5a3aga9bagbfaa78d3391e" version="1">Forme elfique</content>
+	<content contentuid="hab855db2g7cf7g59b3gaf30g8bd0baf7b02d" version="1">La divinité s'est incarnée sous les traits d'un drow. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="h3cb7e208g6b09g5f4fga9c8g4879b04112d3" version="1">Forme drow</content>
+	<content contentuid="hbc93b01agb7d0g531dg8dccg9371944fa1fb" version="1">La divinité s'est incarnée sous les traits d'un demi-elfe. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="had0e668dgaaecg5329g8e7cg549c755c6af1" version="1">Forme demi-elfe</content>
+	<content contentuid="hc8499396g3660g5b46gbdddg13d5cc5f2906" version="1">La divinité s'est incarnée sous les traits d'un nain. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="hb1907e9egeb6bg57d3g9082gae18891c8fd0" version="1">Forme naine</content>
+	<content contentuid="h54531cffge3e3g5336gbaf9g8c8077e99107" version="1">La divinité s'est incarnée sous les traits d'un halfelin. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="h4e4d1046gdaadg50a3gbfc2gd58d203257b5" version="1">Forme halfeline</content>
+	<content contentuid="h51f0e64fg571fg5a15g83a1gbed620234fc5" version="1">La divinité s'est incarnée sous les traits d'un gnome. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="h2c10af09g4b97g535dg8cbcg2df2e013579b" version="1">Forme gnome</content>
+	<content contentuid="h354c8e03g604bg57bcg930dg13576e097dbf" version="1">La divinité s'est incarnée sous les traits d'un tieffelin. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="haaf672d0gc185g52d2g95c0gc51a43ad9d69" version="1">Forme tieffeline</content>
+	<content contentuid="h8b98d289gf903g5de8g8932g1fbf79ffc2d2" version="1">La divinité s'est incarnée sous les traits d'un githyanki. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="hfafeb546gb59cg5d61gacd1gced9b0d8862e" version="1">Forme githyanki</content>
+	<content contentuid="hc98377a7g9ee6g5391gadb0gee134febd1f9" version="1">La divinité s'est incarnée sous les traits d'un drakéide. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="hcb859a38g0a62g55ecga4dbg32b3c64caf9a" version="1">Forme drakéide</content>
+	<content contentuid="h9c84a693gbfa0g55f9gb582gf942b170f7c5" version="1">La divinité s'est incarnée sous les traits d'un demi-orque. Apparence uniquement : les pouvoirs divins sont identiques pour toutes les formes.</content>
+	<content contentuid="h5b4999d8g69e8g518fgb613g234f29c38f92" version="1">Forme demi-orque</content>
 	<content contentuid="he574c142ga205g5ce7g8833g7e70cef0f6f1" version="1">Un dieu de la loi, de la protection et de la certitude. L'Ordre élève le plancher : vos jets ne tombent jamais trop bas, vos décrets protègent vos alliés et enchaînent vos ennemis. Lanceur de sorts complet (Sagesse) avec les sorts du clerc et du paladin, plus des sorts exclusifs.</content>
 	<content contentuid="h53c78ceeg4ef4g5650gae32g68f4450647e8" version="1">Divinité de l'Ordre</content>
 	<content contentuid="hc03535aeg60afg5d76ga634g335289969a50" version="1">Domaine divin</content>

@@ -26,7 +26,6 @@ MOD_UUID = U("mod:" + FOLDER)
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", FOLDER))
 PUBLIC = os.path.join(ROOT, "Public", FOLDER)
-PRESETS_CONFIG = os.path.join(os.path.dirname(__file__), "presets_humains.json")
 
 
 def write(rel, text):
@@ -98,25 +97,6 @@ def equipment_txt():
     return "\n".join(out)
 
 
-def presets_nodes():
-    """Présélections de création de personnage (corps humains du jeu)."""
-    if not os.path.exists(PRESETS_CONFIG):
-        return None
-    cfg = json.load(open(PRESETS_CONFIG, encoding="utf-8"))
-    nodes = []
-    for key, p in cfg["presets"].items():
-        if "A_REMPLIR" in json.dumps(p):
-            return None
-        nodes.append(Node("CharacterCreationPreset", [
-            ("BodyShape", "uint8", p["BodyShape"]), ("BodyType", "uint8", p["BodyType"]),
-            ("CloseUpA", "LSString", p["CloseUpA"]), ("CloseUpB", "LSString", p["CloseUpB"]),
-            ("Overview", "LSString", p["Overview"]), ("RaceUUID", "guid", C.HUMAN),
-            ("RootTemplate", "guid", p["RootTemplate"]), ("SubRaceUUID", "guid", U("race:" + C.RACE)),
-            ("UUID", "guid", U("preset:" + key)), ("VOLinesTableUUID", "guid", p["VOLinesTableUUID"]),
-        ]))
-    return nodes
-
-
 def build():
     if os.path.isdir(ROOT):
         shutil.rmtree(ROOT)
@@ -131,7 +111,7 @@ def build():
     write(f"Public/{FOLDER}/Stats/Generated/Equipment.txt", equipment_txt())
 
     # --- race, classes, progressions
-    write(f"Public/{FOLDER}/Races/Races.lsx", lsx("Races", [P.RACE_NODE]))
+    write(f"Public/{FOLDER}/Races/Races.lsx", lsx("Races", P.RACE_NODES))
     write(f"Public/{FOLDER}/ClassDescriptions/ClassDescriptions.lsx", lsx("ClassDescriptions", P.CLASSDESCS))
     write(f"Public/{FOLDER}/Progressions/Progressions.lsx", lsx("Progressions", P.PROGRESSIONS))
     write(f"Public/{FOLDER}/Progressions/ProgressionDescriptions.lsx", lsx("ProgressionDescriptions", [
@@ -177,16 +157,16 @@ def build():
             [(k, "int32", v) for k, v in info["dist"].items()] +
             [("ClassUUID", "guid", U("class:" + cls)), ("UUID", "guid", U("abilitypreset:" + cls))])
             for cls, info in P.CLASSES.items()]))
-    presets = presets_nodes()
-    if presets:
-        write(f"Public/{FOLDER}/CharacterCreationPresets/CharacterCreationPresets.lsx",
-              lsx("CharacterCreationPresets", presets))
+    write(f"Public/{FOLDER}/CharacterCreationPresets/CharacterCreationPresets.lsx",
+          lsx("CharacterCreationPresets", P.PRESET_NODES))
+    write(f"Public/{FOLDER}/CharacterCreation/CharacterCreationAppearanceVisuals.lsx",
+          lsx("CharacterCreationAppearanceVisuals", P.APPEARANCE_NODES))
 
     # --- textes : français ; l'anglais reprend le français en attendant la traduction
     loca = C.L.xml()
     write(f"Localization/French/{FOLDER}.loca.xml", loca)
     write(f"Localization/English/{FOLDER}.loca.xml", loca)
-    return presets is not None
+    return True
 
 
 # ====================================================================== VÉRIFICATIONS
@@ -277,11 +257,8 @@ def check():
 
 def main():
     if "--check" not in sys.argv:
-        has_presets = build()
+        build()
         print(f"Mod généré dans {ROOT}")
-        if not has_presets:
-            print("ATTENTION : présélections humaines absentes (tools/presets_humains.json à remplir, "
-                  "voir README) : la race Divinité n'aura pas de corps en création de personnage.")
     problems, warnings = check()
     print(f"{len(C.STATS)} entrées de stats, {len(P.PROGRESSIONS)} progressions, "
           f"{len(C.SPELLLISTS)} listes de sorts, {len(C.L.texts)} textes.")

@@ -2,7 +2,9 @@
 
 Ce mod ajoute :
 
-- la race **Divinité**, des dieux tombés sur Faerûn ;
+- la race **Divinité**, des dieux tombés sur Faerûn, avec 11 formes au choix (humaine, elfique, drow,
+  demi-elfe, naine, halfeline, gnome, tieffeline, githyanki, drakéide, demi-orque) qui reprennent les
+  corps, visages et couleurs des races du jeu ;
 - deux classes : **Divinité de l'Ordre** (Sagesse, fiabilité) et **Divinité du Chaos** (Charisme,
   coups critiques et magie sauvage) ;
 - **10 domaines** (sous-classes) en miroir : Vie/Mort, Justice/Tromperie, Magie/Sorcellerie,
@@ -36,33 +38,6 @@ docs/CONCEPTION.md          <- description complète et liste des tests
 
 Ne modifie pas les fichiers de `DivinitesOrdreChaos/` à la main : ils sont régénérés à partir de
 `tools/`. Si tu veux un changement, demande-le-moi ou modifie `tools/` (voir plus bas).
-
----
-
-## Étape 1 (une seule fois) : donner un corps à la race
-
-Pour que la race Divinité ait un corps en création de personnage, le mod réutilise les 4 corps
-humains du jeu (homme, femme, homme fort, femme forte). Leurs identifiants sont dans les fichiers
-du jeu, pas sur internet, donc il faut les récupérer une fois.
-
-1. Télécharge **BG3 Modder's Multitool** :
-   <https://github.com/ShinyHobo/BG3-Modders-Multitool/releases> (le fichier `.zip` de la dernière
-   version). Dézippe-le et lance `bg3-modders-multitool.exe`.
-2. Au premier lancement, configure-le avec **Configuration** : indique le dossier du jeu
-   (en général `C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3`).
-3. Clique sur **Unpack Game Files**, coche seulement **Shared.pak**, puis valide. Ça prend quelques
-   minutes.
-4. Dans le dossier du Multitool, ouvre avec le Bloc-notes le fichier :
-   `UnpackedData\Shared\Public\Shared\CharacterCreationPresets\CharacterCreationPresets.lsx`
-5. Fais **Ctrl+F** et cherche `0eb594cb-8820-4be6-a58d-8be7a1a98fba` (c'est l'identifiant des
-   Humains). Tu vas trouver 4 blocs `<node id="CharacterCreationPreset"> … </node>` qui le
-   contiennent.
-6. **Copie ces 4 blocs et colle-les-moi dans la conversation.** Je remplis le mod et je le
-   régénère. Tu peux aussi remplir toi-même `tools/presets_humains.json`, puis relancer le
-   générateur.
-
-Tant que cette étape n'est pas faite, les deux classes fonctionnent avec n'importe quelle race du
-jeu. Seule la race Divinité reste sans corps.
 
 ---
 
