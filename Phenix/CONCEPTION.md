@@ -68,7 +68,7 @@ le cahier des charges :
 
 | Niv. | Brasier (dégâts) | Cendre (soins) | Serres (corps à corps) |
 |---|---|---|---|
-| 3 | +Charisme aux dégâts des sorts de feu, +2 Braises | Soins +niveau de Phénix, Plume de renaissance gratuite 1/repos long | Armures intermédiaires, boucliers, armes de guerre, Charge ardente |
+| 3 | +Charisme aux dégâts des sorts de feu, +2 Braises | Soins +niveau de Phénix, Plume de renaissance gratuite 1/repos long | Armures intermédiaires, boucliers, armes de guerre, Charge ardente (charge du don Chargeur : course jusqu'à 9 m + attaque d'arme, +2d8 feu si le coup porte, jusqu'à 5d8) |
 | 5 | | | Attaque supplémentaire |
 | 10 | Nova : 8d6 feu à 9 m, soigne 4d8 | La Renaissance relève les alliés à terre à 6 m | |
 

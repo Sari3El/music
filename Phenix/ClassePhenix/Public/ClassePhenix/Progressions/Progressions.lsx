@@ -233,7 +233,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(PHX_Braise,2,0);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(MartialWeapons)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="PHX_Phenix_Eternel"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PHX_Brasier_Brasier;PHX_Cendre_SoinsArdents"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PHX_Brasier_Brasier;PHX_Cendre_SoinsArdents;PHX_ChargeArdente_Feu"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(5b9c0af0-7a3a-584e-8ea1-24f6b337c699,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="9a3fb7b4-d528-5cb1-b504-5baa2e5216cd"/>

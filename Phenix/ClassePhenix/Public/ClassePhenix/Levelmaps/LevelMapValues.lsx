@@ -147,6 +147,17 @@
                     <attribute id="Name" type="FixedString" value="PHX_LM_SoleilRenaissant_Soin"/>
                     <attribute id="UUID" type="guid" value="7197a491-5c17-5879-a753-e3b70c2f63ba"/>
                 </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d8"/>
+                    <attribute id="Level5" type="LSString" value="2d8"/>
+                    <attribute id="Level9" type="LSString" value="3d8"/>
+                    <attribute id="Level12" type="LSString" value="3d8"/>
+                    <attribute id="Level15" type="LSString" value="4d8"/>
+                    <attribute id="Level17" type="LSString" value="4d8"/>
+                    <attribute id="Level20" type="LSString" value="5d8"/>
+                    <attribute id="Name" type="FixedString" value="PHX_LM_ChargeArdente"/>
+                    <attribute id="UUID" type="guid" value="20ccceb9-ab7d-573c-8e09-0ece841cec1e"/>
+                </node>
             </children>
         </node>
     </region>

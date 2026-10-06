@@ -656,17 +656,18 @@ feat(VOIE, 3, passives=["PHX_Cendre_SoinsArdents"], spells=["Target_PHX_PlumeDeR
 feat(VOIE, 10, passives=["PHX_Cendre_RenaissanceCollective"])
 
 # --- Serres (corps à corps)
-explosion("Projectile_PHX_ImpactCharge", "Charge ardente", "Impact de feu de la Charge ardente.", 3,
-          "IF(Enemy()):DealDamage(2d8,Fire,Magical)", "IF(Enemy()):DealDamage((2d8)/2,Fire,Magical)")
+# Charge ardente : la charge du don « Chargeur » du jeu (on court vers l'ennemi et on le frappe avec son arme),
+# plus du feu quand le coup porte. Bond de flamme, lui, est une téléportation qui explose.
+CHARGE_FEU = palier("PHX_LM_ChargeArdente", "2d8", "2d8", "3d8", "3d8", "4d8", "4d8", "5d8")
 spell("Target_PHX_ChargeArdente", "Target", "Charge ardente",
-      "Action bonus, une fois par tour : vous bondissez jusqu'à 9 m. À l'impact, les ennemis à 3 m subissent "
-      "2d8 dégâts de feu (moitié si sauvegarde de Dextérité réussie). Aucun dégât aux alliés.",
-      using="Target_MistyStep", UseCosts="BonusActionPoint:1", Range="9", Cooldown="OncePerTurn",
-      Icon="Action_Monk_FangsOfTheFireSnake",
-      SpellProperties="GROUND:TeleportSource();GROUND:CreateExplosion(Projectile_PHX_ImpactCharge)",
-      **FEATURE_SPELL)
+      "Vous fondez sur un ennemi jusqu'à 9 m et le frappez avec votre arme de corps à corps. Si le coup "
+      "porte, il subit en plus 2d8 dégâts de feu (3d8 au niveau 9, 4d8 au 15, 5d8 au 20).",
+      using="Target_Charger_Attack", Icon="Action_Monk_FangsOfTheFireSnake")
+hidden("PHX_ChargeArdente_Feu", props="IsHidden;OncePerAttack", StatsFunctorContext="OnDamage",
+       Conditions="SpellId('Target_PHX_ChargeArdente') and Enemy()",
+       StatsFunctors=f"DealDamage({CHARGE_FEU},Fire,Magical)")
 feat(VOIE, 3, boosts=["Proficiency(MediumArmor)", "Proficiency(Shields)", "Proficiency(MartialWeapons)"],
-     spells=["Target_PHX_ChargeArdente"])
+     passives=["PHX_ChargeArdente_Feu"], spells=["Target_PHX_ChargeArdente"])
 feat(VOIE, 5, passives=["ExtraAttack"])
 
 VOIES = {
