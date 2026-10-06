@@ -19,7 +19,7 @@ remplacement possible) parmi :
 
 | Niv. de sort | Sorts |
 |---|---|
-| 1 | Mains brûlantes, Éclair traçant, Représailles infernales, Châtiment brûlant, Faveur divine, Lueurs féeriques |
+| 1 | Mains brûlantes, Éclair traçant, **Flamme du Phénix** (Représailles infernales renommé), Châtiment brûlant, Faveur divine, Lueurs féeriques |
 | 2 | Rayon ardent, Sphère de feu, Chauffer le métal, Lame de feu, Rayon de lune, Châtiment révélateur |
 | 3 | Boule de feu, Esprits gardiens, Aura du croisé, Lumière du jour, Châtiment aveuglant |
 | 4 | Mur de feu, Bouclier de feu, Gardien de la foi |

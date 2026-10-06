@@ -23,7 +23,7 @@ CC_POSE = "0f07ec6e-4ef0-434e-9a51-1353260ccff8"
 TOURS_FEU_LUMIERE = ["Projectile_FireBolt", "Shout_ProduceFlame", "Target_SacredFlame", "Target_Light",
                      "Target_DancingLights"]
 SORTS_FEU_LUMIERE = {
-    1: ["Zone_BurningHands", "Projectile_GuidingBolt", "Target_HellishRebuke", "Target_Smite_Searing",
+    1: ["Zone_BurningHands", "Projectile_GuidingBolt", "Shout_PHX_FlammeDuPhenix", "Target_Smite_Searing",
         "Shout_DivineFavor", "Target_FaerieFire"],
     2: ["Projectile_ScorchingRay", "Target_FlamingSphere", "Target_HeatMetal", "Shout_FlameBlade",
         "Target_Moonbeam", "Target_Smite_Branding_Container"],
@@ -417,6 +417,40 @@ for n, (quand, cd, tours, rayon) in AVATAR.items():
           TooltipStatusApply=f"ApplyStatus(PHX_AVATAR_{n},100,{tours})", **FEATURE_SPELL)
     hidden(f"PHX_Avatar_{n}_Sort", Boosts=f"UnlockSpell(Shout_PHX_AvatarDuPhenix_{n})")
 
+
+
+# ================================================================== FLAMME DU PHÉNIX (Représailles infernales renommé)
+# Le sort qu'on apprend dans le jeu est Shout_HellishRebuke : il coûte un emplacement et prépare la réaction.
+# (Target_HellishRebuke n'est que l'effet lancé par la réaction, sans coût : il ne doit jamais être appris.)
+# Même effet que le jeu : 2d10 feu (+1d10 par niveau d'emplacement), sauvegarde de Dextérité pour moitié.
+for n in range(1, 7):
+    sfx = "" if n == 1 else f"_{n}"
+    dmg = f"{n + 1}d10"
+    spell(f"Target_PHX_FlammeDuPhenix{sfx}", "Target", "Flamme du Phénix",
+          f"Des flammes de phénix frappent l'ennemi qui vous a blessé : {dmg} dégâts de feu (moitié si "
+          f"sauvegarde de Dextérité réussie).", using=f"Target_HellishRebuke{sfx}", Icon="Spell_HellishRebuke")
+    interrupt(f"Interrupt_PHX_FlammeDuPhenix{sfx}", "Flamme du Phénix",
+              f"Réaction : quand un ennemi vous blesse, il subit {dmg} dégâts de feu (moitié si sauvegarde de "
+              f"Dextérité réussie).", "Spell_HellishRebuke",
+              InterruptContext="OnCastHit", InterruptContextScope="Self",
+              Conditions="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and "
+                         "Enemy(context.Source,context.Observer) and IsHit() and not AnyEntityIsItem() and "
+                         f"HasStatus('PHX_FLAMME_PHENIX{sfx}',context.Observer)",
+              Properties=f"UseSpell(OBSERVER_SOURCE,Target_PHX_FlammeDuPhenix{sfx},true,true,true);"
+                         f"RemoveStatus(OBSERVER_OBSERVER,PHX_FLAMME_PHENIX{sfx})",
+              Cost="ReactionActionPoint:1", Stack="PHX_FlammeDuPhenix",
+              InterruptDefaultValue="Ask;Enabled", Container="YesNoDecision")
+    status(f"PHX_FLAMME_PHENIX{sfx}", "Flamme du Phénix",
+           f"La prochaine fois qu'un ennemi vous blesse, vous pouvez lui renvoyer {dmg} dégâts de feu (réaction).",
+           "Spell_HellishRebuke", StackId="PHX_FLAMME_PHENIX",
+           Boosts=f"UnlockInterrupt(Interrupt_PHX_FlammeDuPhenix{sfx})")
+    extra = {} if n == 1 else dict(RootSpellID="Shout_PHX_FlammeDuPhenix", PowerLevel=str(n))
+    spell(f"Shout_PHX_FlammeDuPhenix{sfx}", "Shout", "Flamme du Phénix",
+          "Sort de niveau 1 (Représailles infernales). Préparez vos flammes : la prochaine fois qu'un ennemi vous "
+          "blesse, vous pouvez utiliser votre réaction pour lui infliger 2d10 dégâts de feu (moitié si "
+          "sauvegarde de Dextérité réussie), +1d10 par niveau d'emplacement au-delà du 1er.",
+          using=f"Shout_HellishRebuke{sfx}", SpellProperties=f"ApplyStatus(PHX_FLAMME_PHENIX{sfx},100,-1)",
+          InterruptPrototype=f"Interrupt_PHX_FlammeDuPhenix{sfx}", **extra)
 
 # ================================================================== RÉACTIONS (s'améliorent avec les niveaux)
 # Chaque réaction existe en plusieurs rangs ; un passif débloque le rang, et la progression retire le
