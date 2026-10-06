@@ -662,7 +662,8 @@ CHARGE_FEU = palier("PHX_LM_ChargeArdente", "2d8", "2d8", "3d8", "3d8", "4d8", "
 spell("Target_PHX_ChargeArdente", "Target", "Charge ardente",
       "Vous fondez sur un ennemi jusqu'à 9 m et le frappez avec votre arme de corps à corps. Si le coup "
       "porte, il subit en plus 2d8 dégâts de feu (3d8 au niveau 9, 4d8 au 15, 5d8 au 20).",
-      using="Target_Charger_Attack", Icon="Action_Monk_FangsOfTheFireSnake")
+      using="Target_Charger_Attack", Icon="Action_Monk_FangsOfTheFireSnake",
+      TooltipDamageList=f"DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType);DealDamage({CHARGE_FEU},Fire)")
 hidden("PHX_ChargeArdente_Feu", props="IsHidden;OncePerAttack", StatsFunctorContext="OnDamage",
        Conditions="SpellId('Target_PHX_ChargeArdente') and Enemy()",
        StatsFunctors=f"DealDamage({CHARGE_FEU},Fire,Magical)")
