@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="ha27c744bg7cbeg5409gadaag75af4b063c88" version="1">Temps ralenti</content>
+	<content contentuid="h60092d1dg69a1g54abgad35gc6be3ed70cf4" version="1">Votre temps s'écoule plus lentement : mouvement réduit de moitié.</content>
+	<content contentuid="h9a69c574g9e3fg5fcag8e5cg0a6540b6183d" version="1">Ralenti</content>
+	<content contentuid="h3c91fd7cgef57g587eg8e19gab9d9b785535" version="1">Le temps vous retient : mouvement réduit de moitié, -2 à la CA, ni action bonus ni réaction.</content>
+	<content contentuid="h5f3db34cg5ca9g5e09gb207g0a69f5b917c0" version="1">Prescience</content>
+	<content contentuid="hc2cb192cg468dg52d5g9665g8c9df71285d0" version="1">Vous voyez quelques secondes dans l'avenir : +5 à l'initiative, et vous ne pouvez pas être surpris.</content>
+	<content contentuid="hddd8785bgecceg541dga3d5g4656713c3b1c" version="1">Résonance temporelle</content>
+	<content contentuid="hff90213dg23cag5a72gb79fg254297d50af5" version="1">Vos tours de magie frappent deux fois dans le temps : une fois par attaque, ils infligent en plus votre modificateur d'Intelligence en dégâts de force.</content>
+	<content contentuid="hc33e3e2bg1d77g5684gadfcgfff1b2859414" version="1">Accélération</content>
+	<content contentuid="h192f61e6g58eag5a64g9aa2gd67173ecd4a8" version="1">1 Sablier, une fois par tour, sans action : vous accélérez votre propre temps et gagnez une action supplémentaire ce tour-ci.</content>
+	<content contentuid="h1e44fe2fgff34g586dg8312gde1c3c78ed9a" version="1">Rembobiné</content>
+	<content contentuid="h7a99cb29g854cg5fb0g9494ge95ae9aec959" version="1">Le temps est revenu en arrière : ce coup n'a jamais eu lieu.</content>
+	<content contentuid="h8367cb81g9e73g5932ga00egf4d033451b85" version="1">Rembobinage</content>
+	<content contentuid="h2bf6b3fbg9c0cg5d6bg8ba7g30ff6f8d6804" version="1">Réaction, 1 Sablier : quand un ennemi va infliger des dégâts à vous-même ou à un allié à 9 m ou moins, vous rembobinez le temps : ce coup n'a jamais eu lieu, la cible ne subit aucun dégât.</content>
+	<content contentuid="h9d30e68dgdf6cg549bga8ccgfd8b5699fe2d" version="1">Rembobinage</content>
+	<content contentuid="h568429d0geec8g55e1gadb2g5aa26e5a7daf" version="1">Réaction, 1 Sablier : un coup qui allait vous toucher, vous ou un allié proche, n'a jamais eu lieu.</content>
+	<content contentuid="h84701ce8g6a28g5d86gbb91gdf4fa3132989" version="1">Éclat temporel</content>
+	<content contentuid="h5540ce27gbb72g5213g8c62gafb2fbde35a3" version="1">Tour de magie. Un éclat de temps figé frappe la cible : 1d10 dégâts de force (2d10 au niveau 5, 3d10 au niveau 10, 4d10 au niveau 17) et son mouvement est réduit de moitié jusqu'à son prochain tour.</content>
+	<content contentuid="h4ef7095fg491bg5606g9c96g999dcb079443" version="1">Rayon d'entropie</content>
+	<content contentuid="h70147123g3693g5ffagb0e8g3964a8fa0bb1" version="1">Sort de niveau 1. Un rayon qui fait vieillir tout ce qu'il touche : 3d10 dégâts nécrotiques (jusqu'à 10d10 au niveau 20) et la cible est ralentie (mouvement réduit de moitié) pendant 2 tours.</content>
+	<content contentuid="h5b84cd5agac19g5f75gbe99gca969ec33512" version="1">Ralentir</content>
+	<content contentuid="hafb77bfdga1a5g50d1ga3f0g70f406212de8" version="1">Action bonus, 1 Sablier : la cible fait un jet de sauvegarde de Sagesse. Échec : elle est ralentie pendant 2 tours (mouvement réduit de moitié, -2 à la CA, ni action bonus ni réaction).</content>
+	<content contentuid="h299eb3f9g5dfcg5662g9583g2e34d884adf9" version="1">Mémoire du temps</content>
+	<content contentuid="h2f2b0d69g93e0g5f5cg9becgbede1d77eb1a" version="1">À chaque repos court, vous rembobinez votre magie : vous récupérez un emplacement de sort de niveau 1.</content>
+	<content contentuid="h8cfd3406g0450g52f5g9a26g90908698313d" version="1">Mémoire du temps (2)</content>
+	<content contentuid="h5970625cg1689g50d6g965agc1dbcaeaa468" version="1">À chaque repos court, vous rembobinez votre magie : vous récupérez un emplacement de sort de niveau 2.</content>
+	<content contentuid="h93e29f7fgf7fag5bcagb50eg1a64711bebcd" version="1">Mémoire du temps (3)</content>
+	<content contentuid="h19765377g8f78g57fbgb8f1g8118cbe8868f" version="1">À chaque repos court, vous rembobinez votre magie : vous récupérez un emplacement de sort de niveau 3.</content>
+	<content contentuid="h0a59c8a9ge73dg5ce0g8d6eg9978cf9b1c7c" version="1">Mémoire du temps (4)</content>
+	<content contentuid="hbd51ca53ge004g5771g8cc8ga2be07594a48" version="1">À chaque repos court, vous rembobinez votre magie : vous récupérez un emplacement de sort de niveau 4.</content>
+	<content contentuid="hea534630gd125g5b5agb6eeg59bc5c21feff" version="1">Faille</content>
+	<content contentuid="h8147154fg5d50g5cddgab36g253d17f69dc6" version="1">Action bonus, 1 Sablier, une fois par tour : vous ouvrez une faille jusqu'à 18 m. Visez le sol pour vous y téléporter, ou une créature (alliée ou ennemie) pour échanger vos places.</content>
+	<content contentuid="he33d60a4gd406g5666ga023gd9d718d6f449" version="1">Fracture spatiale</content>
+	<content contentuid="hab5ebb33g7d93g51bcg85begc67112e61054" version="1">Sort de niveau 2. L'espace se brise à un point choisi : les créatures à 3 m subissent 4d8 dégâts de force (jusqu'à 11d8 au niveau 20) et tombent à terre (moitié des dégâts et pas de chute si sauvegarde de Constitution réussie).</content>
+	<content contentuid="he6620fe5ge579g5d12g8ef4gab9cc02e8d3c" version="1">Effondrement gravitationnel</content>
+	<content contentuid="h336b0374g27d4g5089g880bgc86621a990c7" version="1">Sort de niveau 3. Un puits de gravité de 6 m : les créatures sont attirées vers son centre, subissent 6d8 dégâts de force (jusqu'à 12d8 au niveau 20) et tombent à terre (moitié des dégâts, ni attraction ni chute si sauvegarde de Force réussie).</content>
+	<content contentuid="he72b55d6g1b8cg5c59g9474gd406a8ca4822" version="1">Écho temporel</content>
+	<content contentuid="h909bddb6gb87ag5751gb2b4ga1892e60866d" version="1">Le sort vous frappe une seconde fois : dégâts de force au début de votre tour.</content>
+	<content contentuid="h1b74474agd2a9g5c2egb12dga1a513b1fc0b" version="1">Écho temporel</content>
+	<content contentuid="hca92fdb7gab41g5bb1ga37fg25c875614616" version="1">Une fois par tour, quand un de vos sorts (hors tours de magie) blesse un ennemi, son écho le frappe à nouveau au début de son tour : 2d8 dégâts de force (3d8 au niveau 12, 4d8 au 15, 5d8 au 20).</content>
+	<content contentuid="hd18410dcgb7f4g5693gad13gba5458c8bb58" version="1">Vieilli</content>
+	<content contentuid="h9c7ad8a4g95b1g5dc0gb6fagf87727a1abe8" version="1">Des années ont passé en un instant : désavantage aux attaques et -2 à la CA.</content>
+	<content contentuid="hbf0bd5cdgdd64g574eg8f3bg254ee312ba0b" version="1">Vieillissement accéléré</content>
+	<content contentuid="h20d43e67gc929g5a16g859dgb6d89a7c9dc2" version="1">Sort de niveau 4. Vous faites défiler des décennies sur la cible : 8d8 dégâts nécrotiques (jusqu'à 14d8 au niveau 20), et elle est vieillie pendant 3 tours (désavantage aux attaques, -2 à la CA). Moitié des dégâts et pas de vieillissement si sauvegarde de Constitution réussie.</content>
+	<content contentuid="hf671ff1bgdd4bg5e7bg82f3g77effb934b91" version="1">Prison temporelle</content>
+	<content contentuid="h98dc532bgfdb3g5285ga210ga1ec2feb5d22" version="1">Figé hors du temps : vous ne pouvez rien faire, mais rien ne peut vous blesser.</content>
+	<content contentuid="h01774668g9d0cg5bd0gadd9g7b226a58e539" version="1">Prison temporelle</content>
+	<content contentuid="h9a0642aegd3c8g51feg8296g16cddca49bcf" version="1">Action, 2 Sabliers, une fois par repos court : la cible fait un jet de sauvegarde de Sagesse. Échec : elle est figée hors du temps pendant 2 tours (aucune action, aucun mouvement, mais immunisée à tous les dégâts). Sur un allié, aucun jet : il est mis à l'abri.</content>
+	<content contentuid="h0df229c7g812dg573fga729g175d46f658db" version="1">Onde chronique</content>
+	<content contentuid="h6cc8bfc3ge852g590eg82e9g4e886a56f9a1" version="1">Sort de niveau 5. Un cône de 9 m où le temps se déchire : 10d8 dégâts de force (jusqu'à 15d8 au niveau 20), et les créatures sont ralenties pendant 2 tours (moitié des dégâts et pas de ralentissement si sauvegarde de Constitution réussie).</content>
+	<content contentuid="h8d38619ag6d77g5e6egbaebgfdd92622df03" version="1">Double temporel</content>
+	<content contentuid="hee4f229dg5e49g5588ga7a9ga01fa7b232ff" version="1">Un vous-même décalé d'une seconde veille sur vous : vous avez 2 réactions par round.</content>
+	<content contentuid="h9ecf04d6g678eg5351gbc3ag33a1f1f99e56" version="1">Maître de l'entropie</content>
+	<content contentuid="h7b3ea8e2g8d57g57fbga753g5b038063c383" version="1">Vos dégâts de force et nécrotiques ignorent la résistance de vos cibles.</content>
+	<content contentuid="he4206cebg195bg57fegb009g33b312db2f1c" version="1">Arrêt du temps</content>
+	<content contentuid="h4a582c55gf614g5f61g9550gb1b8535eb4c9" version="1">Une fois par repos long, sans action : le temps s'arrête pour tous sauf vous. Vous récupérez votre action, votre action bonus, votre réaction et tout votre mouvement : vous jouez un nouveau tour complet. Utilisez-le à la fin de votre tour.</content>
+	<content contentuid="hdf15e591g04e7g5b2eg8bfbg9ca0a63e363e" version="1">CHR_ArretDuTemps_1_Sort</content>
+	<content contentuid="h9dac5cd4g027ag59b2g87bdg6f6f8bddd069" version="1">Arrêt du temps</content>
+	<content contentuid="he9ba733ag94beg5e5fg9bf8gaa2d2f4fe65e" version="1">Une fois par repos court, sans action : le temps s'arrête pour tous sauf vous. Vous récupérez votre action, votre action bonus, votre réaction et tout votre mouvement : vous jouez un nouveau tour complet. Utilisez-le à la fin de votre tour.</content>
+	<content contentuid="h78b90aa8gba06g562fgb9dege0ba90bdf93b" version="1">CHR_ArretDuTemps_2_Sort</content>
+	<content contentuid="h9bc53e81g155eg5ce1g8994g2bbe109672c8" version="1">Rayon du néant</content>
+	<content contentuid="h7187a4e7g88bfg5d4ag8387g35549636082c" version="1">Sort de niveau 6. Un rayon qui efface la matière : 12d10 dégâts de force (jusqu'à 16d10 au niveau 20). Une sauvegarde de Dextérité réussie l'évite entièrement. Une créature réduite à 0 PV est réduite en poussière.</content>
+	<content contentuid="h46233329gda84g516dg8de4gb766c7ccf98e" version="1">Sablier inépuisable</content>
+	<content contentuid="h053d2f5egc387g5985g96ffgd265f1aec05a" version="1">Au début de chaque combat, vous récupérez 1 Sablier.</content>
+	<content contentuid="hedb81deag4799g5b13g9509gc10603cd762e" version="1">Singularité</content>
+	<content contentuid="hfc608d87g03eag5502gb35dg0c7ba03651e3" version="1">Sort de niveau 7. Un trou noir s'ouvre : les créatures à 9 m sont aspirées vers son centre, subissent 14d8 dégâts de force (16d8 au niveau 20) et tombent à terre (moitié des dégâts, ni attraction ni chute si sauvegarde de Force réussie).</content>
+	<content contentuid="h04cebc8cgb10ag5df8g9558g2fe001a92393" version="1">Réécrire l'instant</content>
+	<content contentuid="h7687d3eag4e91g581dga858gda37a7b3f024" version="1">Réaction, 1 Sablier : quand un allié (ou vous) à 18 m rate un jet de sauvegarde : il devient un 20. La réalité se plie à votre volonté.</content>
+	<content contentuid="h864ea74ag2421g5300g8e24g2ee988a405c7" version="1">Réécrire l'instant</content>
+	<content contentuid="h1adc3c7agecc5g506agaa30gcb32622e0cf1" version="1">Réaction, 1 Sablier : quand un ennemi à 18 m réussit un jet de sauvegarde : il devient un 1. La réalité se plie à votre volonté.</content>
+	<content contentuid="hdcac4b31g273fg5faagbe8ag1efd6d4560f2" version="1">Réécrire l'instant</content>
+	<content contentuid="hfb80997cgc671g542bg8ecfg95879ccaa11e" version="1">Réaction, 1 Sablier : un jet de sauvegarde raté par un allié à 18 m devient un 20, ou un jet réussi par un ennemi devient un 1.</content>
+	<content contentuid="h39825a59ga80eg5bceg825bg2d78ce22ccc8" version="1">Réalité brisée (critique 19-20)</content>
+	<content contentuid="ha116aaafg4022g5934gbd2bgce9805a6e797" version="1">La réalité cède sous vos coups : vos attaques, y compris vos sorts d'attaque, infligent un coup critique sur 19-20.</content>
+	<content contentuid="h8b5dd676gd903g54a3g9ebbg42bafa31d017" version="1">Réalité brisée (critique 18-20)</content>
+	<content contentuid="h3e2a5578ga4e1g53d5ga912g320be97a241c" version="1">La réalité cède sous vos coups : vos attaques, y compris vos sorts d'attaque, infligent un coup critique sur 18-20.</content>
+	<content contentuid="h2c1ef153g039dg585bg8ccfgad8c2b7fac06" version="1">Réalité altérée</content>
+	<content contentuid="h11ee8d55g3f4bg562dg8e60gbcd9c687ef98" version="1">Votre réalité est réécrite : vulnérable à tous les dégâts.</content>
+	<content contentuid="h38cf89f1g58cbg5596ga8f7g5438d0440ff5" version="1">Altération</content>
+	<content contentuid="hf2672fa7gf62fg52e4g9c55g3368195fd620" version="1">Sort de niveau 8. Vous réécrivez la réalité dans une zone de 6 m : les ennemis subissent 8d8 dégâts psychiques et deviennent vulnérables à tous les dégâts pendant 3 tours (moitié des dégâts et pas de vulnérabilité si sauvegarde de Sagesse réussie).</content>
+	<content contentuid="h1628dffagc487g5bbagb1fdg498b4222342c" version="1">Effacement</content>
+	<content contentuid="h0a30af82ga157g5f89g801fg30c792821d30" version="1">Sort de niveau 9. Vous effacez une créature de la réalité : si elle a 150 PV ou moins, elle cesse d'exister. Sinon, elle subit 16d10 dégâts de force. Aucun jet de sauvegarde.</content>
+	<content contentuid="h1e447717g26ceg5bdcg8104g7b62f6224f69" version="1">Ancrage temporel</content>
+	<content contentuid="h81783a50gf77eg5e45gb84ag7dfac2da83f9" version="1">Vous êtes ancré dans le temps et l'espace : immunité aux états Ralenti, Paralysé, Étourdi, Entravé, Banni et À terre.</content>
+	<content contentuid="h7225976fg3eceg5556g9203g69721d798f6f" version="1">Paradoxe</content>
+	<content contentuid="hed2b8d93gcb5ag51b0gaa52gf138bfde0e94" version="1">Une fois par repos long : le temps revient en arrière pour vous et vos alliés à 18 m. Tous retrouvent la totalité de leurs PV, de leurs emplacements de sort et de leurs capacités à recharge.</content>
+	<content contentuid="hefa4ad34g08b7g5f0fg835bg0558ba2b9dbb" version="1">Un mage qui plie le temps et l'espace : il accélère ses propres actions, rembobine les coups qui allaient tomber, ouvre des failles, écrase ses ennemis sous la gravité et les fait vieillir en un instant. À partir du niveau 14, il réécrit la réalité elle-même. Lanceur de sorts complet (Intelligence) qui prépare des sorts d'espace et de temps, plus ses propres sorts de dégâts.</content>
+	<content contentuid="h78d4eb75g81d8g5b03gb0efg7323234037c5" version="1">Chronomancien</content>
+	<content contentuid="h401faddfgd314g5cafg8a11g42afc04573a2" version="1">Choisissez vos tours de magie : espace, temps et entropie.</content>
+	<content contentuid="h5b7f75ecg74cag5551ga6beg100a8e0d5e2e" version="1">Tours de magie du Chronomancien</content>
+	<content contentuid="h75cfd324g09d6g5d7cgad29g7f001b2ef353" version="1">Le temps que le Chronomancien peut plier : Accélération, Rembobinage, Ralentir, Faille, Prison temporelle, Réécrire l'instant. Se recharge au repos court.</content>
+	<content contentuid="hd18433d9g11d1g543agbecegc9aae593f88e" version="1">Sablier</content>
+</contentList>

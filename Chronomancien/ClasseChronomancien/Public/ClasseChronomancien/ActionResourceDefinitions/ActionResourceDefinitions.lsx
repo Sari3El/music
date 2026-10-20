@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h75cfd324g09d6g5d7cgad29g7f001b2ef353" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd18433d9g11d1g543agbecegc9aae593f88e" version="1"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="CHR_Sablier"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="3a52e464-29d0-50b3-b01b-58ce6f42a1f1"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

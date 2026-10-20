@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(SimpleWeapons);ActionResource(SpellSlot,2,1);ActionResource(CHR_Sablier,2,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;CHR_Prescience;CHR_Resonance;CHR_Rembobinage"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(7af64820-b0d1-5607-a491-39821d2bc9a2,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(e3449a60-124d-5fed-b5f7-c2b99ae193d9,,,,AlwaysPrepared);AddSpells(ba7630fb-7e9d-54ed-ad1a-820f3b096a52);SelectSpells(fbbc6068-682e-52d6-b7c0-691fdafae3f9,3,0,CHR_TourChrono,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="c67f315b-32bb-5840-9379-01b2398c9be8"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_Memoire_1"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ab3f56ac-c798-549b-8ada-35fab0c528f0,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="3b58e83e-ce75-5fcc-9ea1-c178196711e3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,2,2)"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(bf2fa5f6-a96f-5aa4-9866-d3fd73061bc1,,,,AlwaysPrepared);AddSpells(81d60eed-645d-5460-a076-c5dda508dc32)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="67562cd0-421d-5283-adf5-78d59566c077"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2)"/>
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(fbbc6068-682e-52d6-b7c0-691fdafae3f9,1,0,CHR_TourChrono,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="f70abdbc-e10a-5db1-b5e0-f6c10ae5eb1f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(CHR_Sablier,1,0)"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel3"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(19d85a3d-d5f8-5ff1-a4b2-750152ea5692,,,,AlwaysPrepared);AddSpells(210b2d6d-c435-5768-b0be-c80aa9a7f475)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="d05aad5b-b438-5a35-860a-550341d08a3e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,3)"/>
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_EchoTemporel;CHR_Memoire_2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="0a936cdb-1da4-5f7f-b110-a6ccea30fee0"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/>
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel4"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(4df094c6-ca52-5f2e-b8c4-71ae1553dc85,,,,AlwaysPrepared);AddSpells(dc8a8799-396b-51f3-b77d-19aee90ada25)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="4f2b66a6-a9a5-5086-931c-8654cc542632"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4)"/>
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="9fdbe316-0027-562d-80f7-85d87a6ccb48"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5);ActionResource(CHR_Sablier,1,0)"/>
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel5"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(8ed21031-6b12-55d7-a752-961f46cf0792,,,,AlwaysPrepared);AddSpells(cad3346e-02cd-5947-a889-c494986d9ee6)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="6b095763-8550-529d-a9cf-a88e4c97d52f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_DoubleTemporel;CHR_MaitreEntropie;CHR_Memoire_3"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(fbbc6068-682e-52d6-b7c0-691fdafae3f9,1,0,CHR_TourChrono,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="a17c8b51-6a39-5b7b-984a-b01d9e95bdac"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6)"/>
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel6;CHR_ArretDuTemps_1_Sort"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(520c2ed5-40d3-5b08-8bec-233d277dd03c,,,,AlwaysPrepared);AddSpells(2541f5c3-c8a0-5ccf-bf37-4c453cad2aa7)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="07376a7c-b4bc-5a3b-b462-38cbf77f01d9"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_SablierDeCombat"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="90b9e690-07a3-59ef-97c6-a93f7a26c797"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7);ActionResource(CHR_Sablier,1,0)"/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel7"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0681dafc-9d35-565b-9d3c-174a2f980568,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="76c01ea2-1a9d-57db-9c2c-c921f1f5c825"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_ReecrireInstant;CHR_RealiteBrisee_1;CHR_Memoire_4"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="dff1bea9-ff8a-5165-8dfc-ccbb69872dd4"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,8)"/>
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel8"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(4b5222ac-d69a-54ed-a627-e1c19d4e352b,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="5ab09dde-c054-5ce5-8ed7-032afaf2332e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="69e798f9-914d-5a9f-92a8-54b38cb13322"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,9);ActionResource(CHR_Sablier,1,0)"/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel9"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(dd58c527-1fef-5bd4-ad84-4486afee33bc,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="fc1888da-c529-54f2-850c-835fbba1b01c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,5)"/>
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_Ancrage;CHR_RealiteBrisee_2"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="CHR_RealiteBrisee_1"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="83a2cf81-b0c0-544b-a4ab-2352a1c82393"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="true"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,6)"/>
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CHR_ArretDuTemps_2_Sort"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="CHR_ArretDuTemps_1_Sort"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="01ae2b22-c4b9-5958-ac94-b0c2e7c7ed3c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7)"/>
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7c8d7b35-0d47-50e3-8094-87dd7fe9afe2,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="48fe3a0a-76e8-54ca-8dfe-22f530ca48e5"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);ActionResource(SpellSlot,2,1);ActionResource(CHR_Sablier,2,0)"/>
+                    <attribute id="IsMulticlass" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="CHR_Chronomancien"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;CHR_Prescience;CHR_Resonance;CHR_Rembobinage"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(e3449a60-124d-5fed-b5f7-c2b99ae193d9,,,,AlwaysPrepared);AddSpells(ba7630fb-7e9d-54ed-ad1a-820f3b096a52);SelectSpells(fbbc6068-682e-52d6-b7c0-691fdafae3f9,3,0,CHR_TourChrono,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="aaff8aed-6cfa-5bea-a572-b03eb540faf6"/>
+                    <attribute id="UUID" type="guid" value="a6ab920f-14c3-5cc5-8093-9913a937693f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

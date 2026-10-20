@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h401faddfgd314g5cafg8a11g42afc04573a2" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5b7f75ecg74cag5551ga6beg100a8e0d5e2e" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="CHR_TourChrono"/>
+                    <attribute id="UUID" type="guid" value="c8aaf4eb-4a88-54c6-bf65-a900e49331a1"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

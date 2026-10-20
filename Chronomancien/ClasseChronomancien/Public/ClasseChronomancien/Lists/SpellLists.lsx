@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 1)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CHR_Acceleration;Projectile_CHR_EclatTemporel;Projectile_CHR_RayonEntropie"/>
+                    <attribute id="UUID" type="guid" value="e3449a60-124d-5fed-b5f7-c2b99ae193d9"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 2)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_Ralentir"/>
+                    <attribute id="UUID" type="guid" value="ab3f56ac-c798-549b-8ada-35fab0c528f0"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 3)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_Faille;Target_CHR_FractureSpatiale"/>
+                    <attribute id="UUID" type="guid" value="bf2fa5f6-a96f-5aa4-9866-d3fd73061bc1"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 5)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_Effondrement"/>
+                    <attribute id="UUID" type="guid" value="19d85a3d-d5f8-5ff1-a4b2-750152ea5692"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 7)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_Vieillissement"/>
+                    <attribute id="UUID" type="guid" value="4df094c6-ca52-5f2e-b8c4-71ae1553dc85"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 9)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_PrisonTemporelle;Zone_CHR_OndeChronique"/>
+                    <attribute id="UUID" type="guid" value="8ed21031-6b12-55d7-a752-961f46cf0792"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 11)"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_CHR_RayonDuNeant"/>
+                    <attribute id="UUID" type="guid" value="520c2ed5-40d3-5b08-8bec-233d277dd03c"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 13)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_Singularite"/>
+                    <attribute id="UUID" type="guid" value="0681dafc-9d35-565b-9d3c-174a2f980568"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 15)"/>
+                    <attribute id="Spells" type="LSString" value="Target_CHR_Alteration"/>
+                    <attribute id="UUID" type="guid" value="4b5222ac-d69a-54ed-a627-e1c19d4e352b"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 17)"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_CHR_Effacement"/>
+                    <attribute id="UUID" type="guid" value="dd58c527-1fef-5bd4-ad84-4486afee33bc"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : capacités (niveau 20)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CHR_Paradoxe"/>
+                    <attribute id="UUID" type="guid" value="7c8d7b35-0d47-50e3-8094-87dd7fe9afe2"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : tours de magie"/>
+                    <attribute id="Spells" type="LSString" value="Target_MageHand;Target_TrueStrike;Shout_BladeWard;Target_MinorIllusion;Target_ChillTouch"/>
+                    <attribute id="UUID" type="guid" value="fbbc6068-682e-52d6-b7c0-691fdafae3f9"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : sorts de niveau 1"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_MagicMissile;Shout_Shield_Wizard;Shout_FeatherFall;Shout_ExpeditiousRetreat;Target_Longstrider;Target_Jump"/>
+                    <attribute id="UUID" type="guid" value="ba7630fb-7e9d-54ed-ad1a-820f3b096a52"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : sorts de niveau 2"/>
+                    <attribute id="Spells" type="LSString" value="Target_MistyStep;Shout_Blur;Target_HoldPerson;Shout_MirrorImage;Projectile_RayOfEnfeeblement;Target_Darkness"/>
+                    <attribute id="UUID" type="guid" value="81d60eed-645d-5460-a076-c5dda508dc32"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : sorts de niveau 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_Haste;Target_Slow;Shout_Blink;Target_Counterspell;Target_GaseousForm"/>
+                    <attribute id="UUID" type="guid" value="210b2d6d-c435-5768-b0be-c80aa9a7f475"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : sorts de niveau 4"/>
+                    <attribute id="Spells" type="LSString" value="Teleportation_DimensionDoor;Target_Banishment;Target_ResilientSphere;Target_Blight"/>
+                    <attribute id="UUID" type="guid" value="dc8a8799-396b-51f3-b77d-19aee90ada25"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : sorts de niveau 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_HoldMonster;Throw_Telekinesis"/>
+                    <attribute id="UUID" type="guid" value="cad3346e-02cd-5947-a889-c494986d9ee6"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Chronomancien : sorts de niveau 6"/>
+                    <attribute id="Spells" type="LSString" value="Teleportation_ArcaneGate;Target_GlobeOfInvulnerability;Projectile_Disintegrate;Target_CircleOfDeath"/>
+                    <attribute id="UUID" type="guid" value="2541f5c3-c8a0-5ccf-bf37-4c453cad2aa7"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

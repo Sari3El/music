@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="3d10"/>
+                    <attribute id="Level5" type="LSString" value="4d10"/>
+                    <attribute id="Level9" type="LSString" value="5d10"/>
+                    <attribute id="Level12" type="LSString" value="6d10"/>
+                    <attribute id="Level15" type="LSString" value="7d10"/>
+                    <attribute id="Level17" type="LSString" value="8d10"/>
+                    <attribute id="Level20" type="LSString" value="10d10"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_RayonEntropie"/>
+                    <attribute id="UUID" type="guid" value="b8471045-903d-584f-a8bb-072db5edb8e4"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="4d8"/>
+                    <attribute id="Level5" type="LSString" value="5d8"/>
+                    <attribute id="Level9" type="LSString" value="6d8"/>
+                    <attribute id="Level12" type="LSString" value="7d8"/>
+                    <attribute id="Level15" type="LSString" value="8d8"/>
+                    <attribute id="Level17" type="LSString" value="9d8"/>
+                    <attribute id="Level20" type="LSString" value="11d8"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Fracture"/>
+                    <attribute id="UUID" type="guid" value="0e9048de-0d25-5c50-b090-fc69e0cc6b70"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="6d8"/>
+                    <attribute id="Level5" type="LSString" value="6d8"/>
+                    <attribute id="Level9" type="LSString" value="7d8"/>
+                    <attribute id="Level12" type="LSString" value="8d8"/>
+                    <attribute id="Level15" type="LSString" value="9d8"/>
+                    <attribute id="Level17" type="LSString" value="10d8"/>
+                    <attribute id="Level20" type="LSString" value="12d8"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Effondrement"/>
+                    <attribute id="UUID" type="guid" value="489d52f8-e17a-51a9-83e3-ecc6d80552d5"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2d8"/>
+                    <attribute id="Level5" type="LSString" value="2d8"/>
+                    <attribute id="Level9" type="LSString" value="2d8"/>
+                    <attribute id="Level12" type="LSString" value="3d8"/>
+                    <attribute id="Level15" type="LSString" value="4d8"/>
+                    <attribute id="Level17" type="LSString" value="4d8"/>
+                    <attribute id="Level20" type="LSString" value="5d8"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Echo"/>
+                    <attribute id="UUID" type="guid" value="11820f83-3ce6-52ed-806d-53d074284da1"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="8d8"/>
+                    <attribute id="Level5" type="LSString" value="8d8"/>
+                    <attribute id="Level9" type="LSString" value="9d8"/>
+                    <attribute id="Level12" type="LSString" value="10d8"/>
+                    <attribute id="Level15" type="LSString" value="11d8"/>
+                    <attribute id="Level17" type="LSString" value="12d8"/>
+                    <attribute id="Level20" type="LSString" value="14d8"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Vieillissement"/>
+                    <attribute id="UUID" type="guid" value="d19e5c96-b802-50a6-9f97-34f4ee64a05e"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="10d8"/>
+                    <attribute id="Level5" type="LSString" value="10d8"/>
+                    <attribute id="Level9" type="LSString" value="10d8"/>
+                    <attribute id="Level12" type="LSString" value="11d8"/>
+                    <attribute id="Level15" type="LSString" value="12d8"/>
+                    <attribute id="Level17" type="LSString" value="13d8"/>
+                    <attribute id="Level20" type="LSString" value="15d8"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Onde"/>
+                    <attribute id="UUID" type="guid" value="e78f6f01-9898-5309-a2bb-a87f5db2af91"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="12d10"/>
+                    <attribute id="Level5" type="LSString" value="12d10"/>
+                    <attribute id="Level9" type="LSString" value="12d10"/>
+                    <attribute id="Level12" type="LSString" value="12d10"/>
+                    <attribute id="Level15" type="LSString" value="13d10"/>
+                    <attribute id="Level17" type="LSString" value="14d10"/>
+                    <attribute id="Level20" type="LSString" value="16d10"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Neant"/>
+                    <attribute id="UUID" type="guid" value="49deacc0-a84a-514e-98bb-e8dbad77b863"/>
+                </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="14d8"/>
+                    <attribute id="Level5" type="LSString" value="14d8"/>
+                    <attribute id="Level9" type="LSString" value="14d8"/>
+                    <attribute id="Level12" type="LSString" value="14d8"/>
+                    <attribute id="Level15" type="LSString" value="14d8"/>
+                    <attribute id="Level17" type="LSString" value="15d8"/>
+                    <attribute id="Level20" type="LSString" value="16d8"/>
+                    <attribute id="Name" type="FixedString" value="CHR_LM_Singularite"/>
+                    <attribute id="UUID" type="guid" value="8bc01a82-17fc-5621-ab84-8c4e5214c51a"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
