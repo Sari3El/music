@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="331"/>
+    <region id="Templates">
+        <node id="Templates">
+            <children>
+                <node id="GameObjects">
+                    <attribute id="Description" type="TranslatedString" handle="h9fedb01fgc204g5e53ga789gb61b9d566848" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h1fc92610ga7a8g5290g91ddg3c2f250b784a" version="1"/>
+                    <attribute id="LevelName" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="5d5d9ed1-103b-5de0-a842-4e22e58b3283"/>
+                    <attribute id="Name" type="LSString" value="WPN_CHR_SceptreDuContinuum"/>
+                    <attribute id="ParentTemplateId" type="FixedString" value="7e39ad11-f8c3-421a-940c-05348c420c7d"/>
+                    <attribute id="Stats" type="FixedString" value="WPN_CHR_SceptreDuContinuum"/>
+                    <attribute id="Type" type="FixedString" value="item"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

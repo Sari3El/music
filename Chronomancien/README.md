@@ -9,6 +9,8 @@ l'**espace**, puis la **réalité** à partir du niveau 14.
   Réécrire l'instant.
 - **Beaucoup de dégâts** : un sort de dégâts propre à chaque niveau de sort, de Rayon d'entropie (niv. 1)
   à Effacement (niv. 9), qui montent tous avec le niveau du personnage.
+- Équipement de départ : tenue d'ensorceleur et **Sceptre du Continuum**, une arme légendaire créée pour
+  le mod.
 - Progression **jusqu'au niveau 20** (avec un mod qui débloque le niveau 20).
 
 Le détail de chaque capacité est dans [CONCEPTION.md](CONCEPTION.md).

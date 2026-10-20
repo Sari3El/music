@@ -1,0 +1,8 @@
+new entry "WPN_CHR_SceptreDuContinuum"
+type "Weapon"
+using "WPN_Quarterstaff"
+data "RootTemplate" "5d5d9ed1-103b-5de0-a842-4e22e58b3283"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);WeaponDamage(2d6,Force)"
+data "Boosts" "SpellSaveDC(3);RollBonus(SpellAttack,3);ActionResource(CHR_Sablier,2,0);Initiative(3);UnlockSpell(Shout_CHR_Stase)"
+data "PassivesOnEquip" "CHR_Sceptre_Distorsion;CHR_Sceptre_Reserve"

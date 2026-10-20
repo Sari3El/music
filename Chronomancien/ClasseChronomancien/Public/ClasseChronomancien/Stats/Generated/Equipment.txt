@@ -1,11 +1,13 @@
 new equipment "EQP_CC_CHR_Chronomancien"
 add initialweaponset "Melee"
 add equipmentgroup
-add equipment entry "WPN_Quarterstaff"
+add equipment entry "WPN_CHR_SceptreDuContinuum"
 add equipmentgroup
-add equipment entry "ARM_Leather_Body"
+add equipment entry "ARM_Robe_Body_Sorcerer"
 add equipmentgroup
 add equipment entry "ARM_Boots_Leather"
+add equipmentgroup
+add equipment entry "OBJ_Dye_WhiteBlack"
 add equipmentgroup
 add equipment entry "OBJ_Potion_Healing"
 add equipmentgroup

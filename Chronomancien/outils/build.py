@@ -80,13 +80,25 @@ def meta_lsx():
 
 
 def equipment_txt():
-    items = ["WPN_Quarterstaff", "ARM_Leather_Body", "ARM_Boots_Leather", "OBJ_Potion_Healing",
-             "OBJ_Potion_Healing", "ARM_Camp_Body", "ARM_Camp_Shoes", "OBJ_Keychain", "OBJ_Bag_AlchemyPouch",
+    items = P.EQUIPMENT_ITEMS + ["OBJ_Potion_Healing", "OBJ_Potion_Healing", "ARM_Camp_Body", "ARM_Camp_Shoes", "OBJ_Keychain", "OBJ_Bag_AlchemyPouch",
              "OBJ_Backpack_CampSupplies", "OBJ_Scroll_Revivify"]
     out = [f'new equipment "{P.EQUIPMENT}"', 'add initialweaponset "Melee"']
     for it in items:
         out += ["add equipmentgroup", f'add equipment entry "{it}"']
     return "\n".join(out) + "\n"
+
+
+def root_templates():
+    """Modèle d'objet du Sceptre du Continuum : apparence de Markoheshkir, nom et description propres."""
+    attrs = [("Description", "TranslatedString", C.SCEPTRE_DESC), ("DisplayName", "TranslatedString", C.SCEPTRE_NOM),
+             ("LevelName", "FixedString", ""), ("MapKey", "FixedString", C.SCEPTRE_TEMPLATE),
+             ("Name", "LSString", C.SCEPTRE), ("ParentTemplateId", "FixedString", C.MARKOHESHKIR_TEMPLATE),
+             ("Stats", "FixedString", C.SCEPTRE), ("Type", "FixedString", "item")]
+    lines = ['<?xml version="1.0" encoding="utf-8"?>', "<save>", '    <version major="4" minor="0" revision="9" build="331"/>',
+             '    <region id="Templates">', '        <node id="Templates">', "            <children>"]
+    lines += Node("GameObjects", attrs).render(16)
+    lines += ["            </children>", "        </node>", "    </region>", "</save>"]
+    return "\n".join(lines) + "\n"
 
 
 def build():
@@ -97,10 +109,13 @@ def build():
 
     # --- stats
     groups = {"CHR_Passifs.txt": "PassiveData", "CHR_Etats.txt": "StatusData", "CHR_Sorts.txt": "SpellData",
-              "CHR_Reactions.txt": "InterruptData"}
+              "CHR_Reactions.txt": "InterruptData", "CHR_Objets.txt": "Weapon"}
     for fname, typ in groups.items():
         write(f"{pub}/Stats/Generated/Data/{fname}", stats_file([e for e in C.STATS if e.type == typ]))
     write(f"{pub}/Stats/Generated/Equipment.txt", equipment_txt())
+
+    # --- modèles d'objets (le Multitool convertit les .lsf.lsx en .lsf)
+    write(f"{pub}/RootTemplates/CHR_Objets.lsf.lsx", root_templates())
 
     # --- classe, voies, progressions
     write(f"{pub}/ClassDescriptions/ClassDescriptions.lsx", lsx("ClassDescriptions", P.CLASSDESCS))

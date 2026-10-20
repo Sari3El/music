@@ -18,6 +18,9 @@ FEATS = (4, 8, 12, 16, 19)
 ARMOR = ["Proficiency(LightArmor)", "Proficiency(SimpleWeapons)"]
 DIST = dict(Strength=8, Dexterity=14, Constitution=13, Intelligence=15, Wisdom=12, Charisma=10)
 EQUIPMENT = "EQP_CC_CHR_Chronomancien"
+# Tenue de l'ensorceleur, Sceptre du Continuum et une teinture (le jeu n'a pas de teinture blanche pure :
+# la plus proche est « noir et blanc arlequin », à appliquer soi-même en combinant les objets).
+EQUIPMENT_ITEMS = [C.SCEPTRE, "ARM_Robe_Body_Sorcerer", "ARM_Boots_Leather", "OBJ_Dye_WhiteBlack"]
 INTELLIGENCE = 4
 
 

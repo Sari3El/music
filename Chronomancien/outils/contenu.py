@@ -374,6 +374,43 @@ spell("Shout_CHR_Paradoxe", "Shout", "Paradoxe",
       SpellRoll="", SpellSuccess="", SpellFail="", SpellProperties=PARADOXE, TooltipDamageList="",
       **FEATURE_SPELL)
 
+# ================================================================== ÉQUIPEMENT DE DÉPART : SCEPTRE DU CONTINUUM
+# Arme légendaire propre au mod. Son modèle d'objet (RootTemplate) reprend l'apparence de Markoheshkir,
+# le bâton légendaire du jeu ; build.py l'écrit dans RootTemplates/CHR_Objets.lsf.lsx.
+SCEPTRE = "WPN_CHR_SceptreDuContinuum"
+SCEPTRE_TEMPLATE = U("template:" + SCEPTRE)
+MARKOHESHKIR_TEMPLATE = "7e39ad11-f8c3-421a-940c-05348c420c7d"
+SCEPTRE_NOM = L.add("objet:sceptre:nom", "Sceptre du Continuum")
+SCEPTRE_DESC = L.add("objet:sceptre:desc",
+    "Un sceptre taillé dans un éclat de temps figé. Le passé et l'avenir tournent autour de sa pointe, et "
+    "celui qui le tient sent chaque seconde lui obéir.\n\n"
+    "+3 aux attaques, aux dégâts, aux jets d'attaque des sorts et au DD de vos sorts ; +2d6 dégâts de force "
+    "sur chaque coup ; +2 Sabliers ; +3 à l'initiative ; une fois par tour, vos sorts infligent 3d6 dégâts de "
+    "force supplémentaires ; au début de chaque combat, vous récupérez un emplacement de sort de niveau 3 ; "
+    "accorde le sort Stase.")
+spell("Shout_CHR_Stase", "Shout", "Stase",
+      "Sort du Sceptre du Continuum, une fois par repos court : le temps se fige autour de vous. Les ennemis à "
+      "9 m subissent 4d8 dégâts de force et sont ralentis pendant 2 tours (moitié des dégâts et pas de "
+      "ralentissement si sauvegarde de Sagesse réussie).",
+      using="Shout_ArmsOfHadar", UseCosts="ActionPoint:1", Cooldown="OncePerShortRest", AreaRadius="9",
+      Icon="statIcons_END_Netherbrain_Slow_Aura", TargetConditions="Enemy() and not Dead()",
+      SpellRoll="not SavingThrow(Ability.Wisdom, SourceSpellDC())",
+      SpellSuccess="DealDamage(4d8,Force,Magical);ApplyStatus(CHR_RALENTI,100,2)",
+      SpellFail="DealDamage((4d8)/2,Force,Magical)", TooltipDamageList="DealDamage(4d8,Force)", **FEATURE_SPELL)
+passive("CHR_Sceptre_Distorsion", "Sceptre du Continuum : distorsion",
+        "Une fois par tour, quand un de vos sorts blesse un ennemi, il subit 3d6 dégâts de force supplémentaires.",
+        "Spell_Transmutation_Haste", props="Highlighted;OncePerTurn", StatsFunctorContext="OnDamage",
+        Conditions="IsSpell() and Enemy()", StatsFunctors="DealDamage(3d6,Force,Magical)")
+passive("CHR_Sceptre_Reserve", "Sceptre du Continuum : réserve du temps",
+        "Au début de chaque combat, vous récupérez un emplacement de sort de niveau 3.",
+        "Skill_Wizard_ArcaneRecovery", StatsFunctorContext="OnCombatStarted",
+        StatsFunctors="RestoreResource(SELF,SpellSlot,1,3)")
+add(Entry(SCEPTRE, "Weapon", "WPN_Quarterstaff", RootTemplate=SCEPTRE_TEMPLATE, Rarity="Legendary",
+          DefaultBoosts="WeaponEnchantment(3);WeaponProperty(Magical);WeaponDamage(2d6,Force)",
+          Boosts=f"SpellSaveDC(3);RollBonus(SpellAttack,3);ActionResource({SABLIER},2,0);Initiative(3);"
+                 "UnlockSpell(Shout_CHR_Stase)",
+          PassivesOnEquip="CHR_Sceptre_Distorsion;CHR_Sceptre_Reserve"))
+
 # ================================================================== PROGRESSION (capacités)
 feat(1, passives=["CHR_Prescience", "CHR_Resonance", "CHR_Rembobinage"], boosts=[f"ActionResource({SABLIER},2,0)"],
      spells=["Shout_CHR_Acceleration", "Projectile_CHR_EclatTemporel", "Projectile_CHR_RayonEntropie"])

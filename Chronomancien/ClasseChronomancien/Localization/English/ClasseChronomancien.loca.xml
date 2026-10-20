@@ -86,6 +86,16 @@
 	<content contentuid="h81783a50gf77eg5e45gb84ag7dfac2da83f9" version="1">Vous êtes ancré dans le temps et l'espace : immunité aux états Ralenti, Paralysé, Étourdi, Entravé, Banni et À terre.</content>
 	<content contentuid="h7225976fg3eceg5556g9203g69721d798f6f" version="1">Paradoxe</content>
 	<content contentuid="hed2b8d93gcb5ag51b0gaa52gf138bfde0e94" version="1">Une fois par repos long : le temps revient en arrière pour vous et vos alliés à 18 m. Tous retrouvent la totalité de leurs PV, de leurs emplacements de sort et de leurs capacités à recharge.</content>
+	<content contentuid="h1fc92610ga7a8g5290g91ddg3c2f250b784a" version="1">Sceptre du Continuum</content>
+	<content contentuid="h9fedb01fgc204g5e53ga789gb61b9d566848" version="1">Un sceptre taillé dans un éclat de temps figé. Le passé et l'avenir tournent autour de sa pointe, et celui qui le tient sent chaque seconde lui obéir.
+
++3 aux attaques, aux dégâts, aux jets d'attaque des sorts et au DD de vos sorts ; +2d6 dégâts de force sur chaque coup ; +2 Sabliers ; +3 à l'initiative ; une fois par tour, vos sorts infligent 3d6 dégâts de force supplémentaires ; au début de chaque combat, vous récupérez un emplacement de sort de niveau 3 ; accorde le sort Stase.</content>
+	<content contentuid="h2cecce5bgd392g58e4g8ecegefdf7d986210" version="1">Stase</content>
+	<content contentuid="h7fe0e007gec9ag5529gbe58gaef4e0745bc5" version="1">Sort du Sceptre du Continuum, une fois par repos court : le temps se fige autour de vous. Les ennemis à 9 m subissent 4d8 dégâts de force et sont ralentis pendant 2 tours (moitié des dégâts et pas de ralentissement si sauvegarde de Sagesse réussie).</content>
+	<content contentuid="h792193b8g5c4cg56b3gb928gd6daf320968f" version="1">Sceptre du Continuum : distorsion</content>
+	<content contentuid="h96b54e0cg6c94g54fdgbdd3g96bf92d0c001" version="1">Une fois par tour, quand un de vos sorts blesse un ennemi, il subit 3d6 dégâts de force supplémentaires.</content>
+	<content contentuid="h0f345bb8ga669g5f6cg84bfg4b2f57fefef4" version="1">Sceptre du Continuum : réserve du temps</content>
+	<content contentuid="h561119c7g69fcg5a14g8214gccb9db37e6c1" version="1">Au début de chaque combat, vous récupérez un emplacement de sort de niveau 3.</content>
 	<content contentuid="hefa4ad34g08b7g5f0fg835bg0558ba2b9dbb" version="1">Un mage qui plie le temps et l'espace : il accélère ses propres actions, rembobine les coups qui allaient tomber, ouvre des failles, écrase ses ennemis sous la gravité et les fait vieillir en un instant. À partir du niveau 14, il réécrit la réalité elle-même. Lanceur de sorts complet (Intelligence) qui prépare des sorts d'espace et de temps, plus ses propres sorts de dégâts.</content>
 	<content contentuid="h78d4eb75g81d8g5b03gb0efg7323234037c5" version="1">Chronomancien</content>
 	<content contentuid="h401faddfgd314g5cafg8a11g42afc04573a2" version="1">Choisissez vos tours de magie : espace, temps et entropie.</content>

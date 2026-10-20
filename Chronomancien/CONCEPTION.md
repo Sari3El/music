@@ -62,6 +62,18 @@ court ; +1 au début de chaque combat à partir du niveau 12.
 | 18 | Ancrage temporel | Immunité à Ralenti, Paralysé, Étourdi, Entravé, Banni, À terre. |
 | 20 | Paradoxe | 1 fois par repos long : toi et tes alliés à 18 m retrouvez tous vos PV, emplacements et capacités. |
 
+### Équipement de départ
+
+- **Sceptre du Continuum** (légendaire, créé pour le mod, apparence de Markoheshkir) : +3 aux attaques,
+  dégâts, jets d'attaque des sorts et DD des sorts ; +2d6 force par coup ; +2 Sabliers ; +3 à
+  l'initiative ; 1 fois par tour, +3d6 force sur un sort qui blesse ; au début de chaque combat, un
+  emplacement de niveau 3 récupéré ; sort **Stase** (1 fois par repos court : 4d8 force et ralenti aux
+  ennemis à 9 m, sauvegarde de Sagesse pour moitié).
+- **Tenue de l'ensorceleur** (robe) et bottes de cuir.
+- **Teinture noir et blanc arlequin** dans l'inventaire : le jeu n'a pas de teinture blanche pure, et la
+  tenue ne peut être livrée déjà teinte qu'avec l'identifiant de la couleur, introuvable sans les fichiers
+  du jeu. Combine la teinture avec la robe pour l'appliquer.
+
 ### Ce qui n'est pas faisable sans script
 
 - Un vrai retour en arrière (remettre les positions, annuler les actions d'un tour) : remplacé par
@@ -81,6 +93,7 @@ Ces points reposent sur des mécanismes du jeu que je n'ai pas pu vérifier sans
 7. Arrêt du temps rend bien un tour complet.
 8. Réécrire l'instant se propose sur les jets de sauvegarde.
 9. Effacement efface une créature sous 150 PV.
+10. Sceptre du Continuum : il a bien l'apparence de Markoheshkir, son nom, ses bonus et le sort Stase.
 
 ## Pistes pour plus tard
 
