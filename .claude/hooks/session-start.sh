@@ -18,6 +18,12 @@ if [ ! -x "${BLENDER_DIR}/blender" ]; then
 fi
 ln -sf "${BLENDER_DIR}/blender" /usr/local/bin/blender
 
+# System libraries Blender needs to render headless (EGL/X11 client libs)
+if ! ldconfig -p | grep -q 'libEGL.so.1'; then
+  apt-get install -y -q libegl1 libgl1 libxkbcommon0 libsm6 libxi6 libxrender1 libxxf86vm1 libxfixes3 >/dev/null 2>&1 \
+    || { apt-get update -q >/dev/null 2>&1 && apt-get install -y -q libegl1 libgl1 libxkbcommon0 libsm6 libxi6 libxrender1 libxxf86vm1 libxfixes3 >/dev/null 2>&1; }
+fi
+
 # Blender Source Tools add-on
 ADDONS_DIR="$(blender -b --factory-startup --python-expr \
   "import bpy;print('ADDONS='+bpy.utils.user_resource('SCRIPTS',path='addons',create=True))" 2>/dev/null \
