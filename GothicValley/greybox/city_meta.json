@@ -1,0 +1,5531 @@
+{
+ "rooms": [
+  {
+   "name": "Church nave (hall)",
+   "x0": -336,
+   "x1": -304,
+   "y0": -549,
+   "y1": -511,
+   "z0": 35.0,
+   "z1": 57.0,
+   "interior": "church"
+  },
+  {
+   "name": "Church choir",
+   "x0": -330,
+   "x1": -310,
+   "y0": -511,
+   "y1": -479,
+   "z0": 35.0,
+   "z1": 57.0,
+   "interior": "church"
+  },
+  {
+   "name": "Sacristy",
+   "x0": -310,
+   "x1": -302.0,
+   "y0": -510.0,
+   "y1": -500.0,
+   "z0": 35.0,
+   "z1": 40.0,
+   "interior": "church"
+  },
+  {
+   "name": "Church crypt",
+   "x0": -329.0,
+   "x1": -311.0,
+   "y0": -510.0,
+   "y1": -480.0,
+   "z0": 30.0,
+   "z1": 34.5,
+   "interior": "church"
+  },
+  {
+   "name": "Church tower hall",
+   "x0": -327,
+   "x1": -313,
+   "y0": -563,
+   "y1": -549,
+   "z0": 35.0,
+   "z1": 41.0,
+   "interior": "church"
+  },
+  {
+   "name": "Bell chamber",
+   "x0": -327,
+   "x1": -313,
+   "y0": -563,
+   "y1": -549,
+   "z0": 80.0,
+   "z1": 88.0,
+   "interior": "church"
+  },
+  {
+   "name": "Church south porch",
+   "x0": -342.0,
+   "x1": -336,
+   "y0": -527.0,
+   "y1": -521.0,
+   "z0": 35.0,
+   "z1": 41.0,
+   "interior": "church"
+  },
+  {
+   "name": "Manor gatehouse",
+   "x0": -362.0,
+   "x1": -350.0,
+   "y0": -427.0,
+   "y1": -419.0,
+   "z0": 35.2,
+   "z1": 39.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor entrance hall",
+   "x0": -345.0,
+   "x1": -333.0,
+   "y0": -420.0,
+   "y1": -404.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor great chamber",
+   "x0": -333.0,
+   "x1": -313.0,
+   "y0": -420.0,
+   "y1": -410.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor ground corridor",
+   "x0": -333.0,
+   "x1": -300.0,
+   "y0": -410.0,
+   "y1": -404.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor guard room",
+   "x0": -313.0,
+   "x1": -300.0,
+   "y0": -420.0,
+   "y1": -410.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor lobby",
+   "x0": -300.0,
+   "x1": -282.0,
+   "y0": -411.0,
+   "y1": -404.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor muniment room",
+   "x0": -300.0,
+   "x1": -291.0,
+   "y0": -420.0,
+   "y1": -411.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor dining room",
+   "x0": -300.0,
+   "x1": -282.0,
+   "y0": -404.0,
+   "y1": -390.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor kitchen",
+   "x0": -300.0,
+   "x1": -282.0,
+   "y0": -390.0,
+   "y1": -372.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor cellar strongroom",
+   "x0": -300.0,
+   "x1": -282.0,
+   "y0": -390.0,
+   "y1": -372.0,
+   "z0": 30.200000000000003,
+   "z1": 34.800000000000004,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor study (city records)",
+   "x0": -345.0,
+   "x1": -333.0,
+   "y0": -420.0,
+   "y1": -404.0,
+   "z0": 40.2,
+   "z1": 44.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor bedchamber (lord)",
+   "x0": -333.0,
+   "x1": -313.0,
+   "y0": -420.0,
+   "y1": -404.0,
+   "z0": 40.2,
+   "z1": 44.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor bedchamber (lady)",
+   "x0": -313.0,
+   "x1": -300.0,
+   "y0": -420.0,
+   "y1": -404.0,
+   "z0": 40.2,
+   "z1": 44.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor upper hall",
+   "x0": -300.0,
+   "x1": -282.0,
+   "y0": -411.0,
+   "y1": -404.0,
+   "z0": 40.2,
+   "z1": 44.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor solar",
+   "x0": -300.0,
+   "x1": -282.0,
+   "y0": -404.0,
+   "y1": -390.0,
+   "z0": 40.2,
+   "z1": 44.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor tower base",
+   "x0": -291.0,
+   "x1": -282.0,
+   "y0": -420.0,
+   "y1": -411.0,
+   "z0": 35.2,
+   "z1": 39.900000000000006,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor tower top room",
+   "x0": -291.0,
+   "x1": -282.0,
+   "y0": -420.0,
+   "y1": -411.0,
+   "z0": 55.2,
+   "z1": 59.7,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor stables",
+   "x0": -369.0,
+   "x1": -358.0,
+   "y0": -362.0,
+   "y1": -322.0,
+   "z0": 35.2,
+   "z1": 40.2,
+   "interior": "manor"
+  },
+  {
+   "name": "Manor private chapel",
+   "x0": -345.0,
+   "x1": -333.0,
+   "y0": -372.0,
+   "y1": -364.0,
+   "z0": 35.2,
+   "z1": 42.2,
+   "interior": "manor"
+  },
+  {
+   "name": "Town hall: archive",
+   "x0": -478,
+   "x1": -458.0,
+   "y0": -515,
+   "y1": -494,
+   "z0": 34.1,
+   "z1": 39.1,
+   "interior": "town_hall"
+  },
+  {
+   "name": "Town hall: holding cells",
+   "x0": -458.0,
+   "x1": -440.0,
+   "y0": -515,
+   "y1": -494,
+   "z0": 34.1,
+   "z1": 39.1,
+   "interior": "town_hall"
+  },
+  {
+   "name": "Town hall: council chamber",
+   "x0": -478,
+   "x1": -440.0,
+   "y0": -515,
+   "y1": -494,
+   "z0": 39.4,
+   "z1": 45.4,
+   "interior": "town_hall"
+  },
+  {
+   "name": "Town hall: clock tower base",
+   "x0": -440.0,
+   "x1": -430,
+   "y0": -504.0,
+   "y1": -494,
+   "z0": 34.1,
+   "z1": 39.1,
+   "interior": "town_hall"
+  },
+  {
+   "name": "Guild hall",
+   "x0": -506,
+   "x1": -489,
+   "y0": -478,
+   "y1": -432,
+   "z0": 32.7,
+   "z1": 41.7,
+   "interior": "guild_hall"
+  },
+  {
+   "name": "Watch barracks: guard hall",
+   "x0": -315.1,
+   "x1": -301.1,
+   "y0": -311.7,
+   "y1": -261.7,
+   "z0": 30.5,
+   "z1": 35.5,
+   "interior": "barracks"
+  },
+  {
+   "name": "Watch barracks: dormitory",
+   "x0": -301.1,
+   "x1": -285.1,
+   "y0": -311.7,
+   "y1": -281.7,
+   "z0": 30.5,
+   "z1": 35.5,
+   "interior": "barracks"
+  },
+  {
+   "name": "Watch barracks: lock-up",
+   "x0": -301.1,
+   "x1": -285.1,
+   "y0": -281.7,
+   "y1": -261.7,
+   "z0": 30.5,
+   "z1": 35.5,
+   "interior": "barracks"
+  },
+  {
+   "name": "Parish house: ground floor",
+   "x0": -351.7,
+   "x1": -334.3,
+   "y0": -617.7,
+   "y1": -604.3,
+   "z0": 34.41,
+   "z1": 39.11,
+   "interior": "parish"
+  },
+  {
+   "name": "Parish house: floor 1",
+   "x0": -351.7,
+   "x1": -334.3,
+   "y0": -617.7,
+   "y1": -604.3,
+   "z0": 39.41,
+   "z1": 44.11,
+   "interior": "parish"
+  },
+  {
+   "name": "Main inn: ground floor",
+   "x0": -426.93125,
+   "x1": -409.68125,
+   "y0": -390.2496828752642,
+   "y1": -378.4818181818181,
+   "z0": 34.04,
+   "z1": 38.74,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: floor 1",
+   "x0": -426.93125,
+   "x1": -409.68125,
+   "y0": -390.2496828752642,
+   "y1": -378.4818181818181,
+   "z0": 39.04,
+   "z1": 43.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: bedroom 1",
+   "x0": -426.93125,
+   "x1": -418.68125,
+   "y0": -390.2496828752642,
+   "y1": -386.7270613107822,
+   "z0": 39.04,
+   "z1": 43.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: bedroom 2",
+   "x0": -426.93125,
+   "x1": -418.68125,
+   "y0": -386.1270613107822,
+   "y1": -382.6044397463001,
+   "z0": 39.04,
+   "z1": 43.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: bedroom 3",
+   "x0": -426.93125,
+   "x1": -418.68125,
+   "y0": -382.00443974630014,
+   "y1": -378.4818181818181,
+   "z0": 39.04,
+   "z1": 43.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: floor 2",
+   "x0": -426.93125,
+   "x1": -409.68125,
+   "y0": -390.2496828752642,
+   "y1": -378.4818181818181,
+   "z0": 43.64,
+   "z1": 48.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: bedroom 4",
+   "x0": -426.93125,
+   "x1": -418.68125,
+   "y0": -390.2496828752642,
+   "y1": -386.7270613107822,
+   "z0": 43.64,
+   "z1": 48.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: bedroom 5",
+   "x0": -426.93125,
+   "x1": -418.68125,
+   "y0": -386.1270613107822,
+   "y1": -382.6044397463001,
+   "z0": 43.64,
+   "z1": 48.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Main inn: bedroom 6",
+   "x0": -426.93125,
+   "x1": -418.68125,
+   "y0": -382.00443974630014,
+   "y1": -378.4818181818181,
+   "z0": 43.64,
+   "z1": 48.34,
+   "interior": "inn"
+  },
+  {
+   "name": "Tavern at the East Gate: ground floor",
+   "x0": -426.29374999999993,
+   "x1": -409.68125,
+   "y0": -200.60909090909087,
+   "y1": -190.4268498942917,
+   "z0": 25.92,
+   "z1": 30.62,
+   "interior": "tavern"
+  },
+  {
+   "name": "Tavern at the East Gate: floor 1",
+   "x0": -426.29374999999993,
+   "x1": -409.68125,
+   "y0": -200.60909090909087,
+   "y1": -190.4268498942917,
+   "z0": 30.92,
+   "z1": 35.620000000000005,
+   "interior": "tavern"
+  },
+  {
+   "name": "Tavern in the River Quarter: ground floor",
+   "x0": -658.98125,
+   "x1": -642.3687499999999,
+   "y0": -486.021353065539,
+   "y1": -474.57061310782234,
+   "z0": 18.35,
+   "z1": 23.05,
+   "interior": "tavern"
+  },
+  {
+   "name": "Tavern in the River Quarter: floor 1",
+   "x0": -658.98125,
+   "x1": -642.3687499999999,
+   "y0": -486.021353065539,
+   "y1": -474.57061310782234,
+   "z0": 23.35,
+   "z1": 28.05,
+   "interior": "tavern"
+  },
+  {
+   "name": "Blacksmith: ground floor",
+   "x0": -489.40625,
+   "x1": -475.34375,
+   "y0": -687.7126849894291,
+   "y1": -677.5304439746299,
+   "z0": 27.55,
+   "z1": 32.25,
+   "interior": "smith"
+  },
+  {
+   "name": "Blacksmith: floor 1",
+   "x0": -489.40625,
+   "x1": -475.34375,
+   "y0": -687.7126849894291,
+   "y1": -677.5304439746299,
+   "z0": 32.55,
+   "z1": 37.25,
+   "interior": "smith"
+  },
+  {
+   "name": "Apothecary: ground floor",
+   "x0": -426.93125,
+   "x1": -412.86875,
+   "y0": -377.88181818181806,
+   "y1": -366.74820295983085,
+   "z0": 34.05,
+   "z1": 38.75,
+   "interior": "shop"
+  },
+  {
+   "name": "Apothecary: floor 1",
+   "x0": -426.93125,
+   "x1": -412.86875,
+   "y0": -377.88181818181806,
+   "y1": -366.74820295983085,
+   "z0": 39.05,
+   "z1": 43.75,
+   "interior": "shop"
+  },
+  {
+   "name": "Bakery: ground floor",
+   "x0": -511.71874999999994,
+   "x1": -497.65625,
+   "y0": -579.8902748414375,
+   "y1": -569.0737843551796,
+   "z0": 30.54,
+   "z1": 35.24,
+   "interior": "bakery"
+  },
+  {
+   "name": "Bakery: floor 1",
+   "x0": -511.71874999999994,
+   "x1": -497.65625,
+   "y0": -579.8902748414375,
+   "y1": -569.0737843551796,
+   "z0": 35.54,
+   "z1": 40.24,
+   "interior": "bakery"
+  },
+  {
+   "name": "Butcher: ground floor",
+   "x0": -576.10625,
+   "x1": -561.40625,
+   "y0": -526.6133192389007,
+   "y1": -515.7968287526426,
+   "z0": 27.32,
+   "z1": 32.02,
+   "interior": "shop"
+  },
+  {
+   "name": "Butcher: floor 1",
+   "x0": -576.10625,
+   "x1": -561.40625,
+   "y0": -526.6133192389007,
+   "y1": -515.7968287526426,
+   "z0": 32.32,
+   "z1": 37.02,
+   "interior": "shop"
+  },
+  {
+   "name": "Cloth merchant and tailor: ground floor",
+   "x0": -493.54999999999995,
+   "x1": -475.34375,
+   "y0": -350.29196617336146,
+   "y1": -338.8412262156448,
+   "z0": 31.65,
+   "z1": 36.35,
+   "interior": "shop"
+  },
+  {
+   "name": "Cloth merchant and tailor: floor 1",
+   "x0": -493.54999999999995,
+   "x1": -475.34375,
+   "y0": -350.29196617336146,
+   "y1": -338.8412262156448,
+   "z0": 36.65,
+   "z1": 41.35,
+   "interior": "shop"
+  },
+  {
+   "name": "General store: ground floor",
+   "x0": -426.29374999999993,
+   "x1": -410.31875,
+   "y0": -309.0657505285412,
+   "y1": -297.93213530655385,
+   "z0": 31.86,
+   "z1": 36.56,
+   "interior": "shop"
+  },
+  {
+   "name": "General store: floor 1",
+   "x0": -426.29374999999993,
+   "x1": -410.31875,
+   "y0": -309.0657505285412,
+   "y1": -297.93213530655385,
+   "z0": 36.86,
+   "z1": 41.56,
+   "interior": "shop"
+  },
+  {
+   "name": "Bathhouse: ground floor",
+   "x0": -639.85625,
+   "x1": -622.6062499999998,
+   "y0": -431.79302325581386,
+   "y1": -407.3401691331923,
+   "z0": 22.69,
+   "z1": 27.39,
+   "interior": "bath"
+  },
+  {
+   "name": "Bathhouse: floor 1",
+   "x0": -639.85625,
+   "x1": -622.6062499999998,
+   "y0": -431.79302325581386,
+   "y1": -407.3401691331923,
+   "z0": 27.69,
+   "z1": 32.39,
+   "interior": "bath"
+  },
+  {
+   "name": "Barber-surgeon: ground floor",
+   "x0": -533.39375,
+   "x1": -516.78125,
+   "y0": -416.88816067653266,
+   "y1": -406.7059196617335,
+   "z0": 30.44,
+   "z1": 35.14,
+   "interior": "shop"
+  },
+  {
+   "name": "Barber-surgeon: floor 1",
+   "x0": -533.39375,
+   "x1": -516.78125,
+   "y0": -416.88816067653266,
+   "y1": -406.7059196617335,
+   "z0": 35.44,
+   "z1": 40.14,
+   "interior": "shop"
+  },
+  {
+   "name": "Scribe and notary: ground floor",
+   "x0": -534.66875,
+   "x1": -517.4187499999998,
+   "y0": -525.344820295983,
+   "y1": -515.7968287526426,
+   "z0": 30.51,
+   "z1": 35.21000000000001,
+   "interior": "shop"
+  },
+  {
+   "name": "Scribe and notary: floor 1",
+   "x0": -534.66875,
+   "x1": -517.4187499999998,
+   "y0": -525.344820295983,
+   "y1": -515.7968287526426,
+   "z0": 35.510000000000005,
+   "z1": 40.21000000000001,
+   "interior": "shop"
+  },
+  {
+   "name": "Poor house 1: ground floor",
+   "x0": -362.54375,
+   "x1": -348.48125,
+   "y0": -674.3934460887949,
+   "y1": -663.5769556025368,
+   "z0": 32.19,
+   "z1": 36.89,
+   "interior": "house_poor"
+  },
+  {
+   "name": "Poor house 1: floor 1",
+   "x0": -362.54375,
+   "x1": -348.48125,
+   "y0": -674.3934460887949,
+   "y1": -663.5769556025368,
+   "z0": 37.19,
+   "z1": 41.89,
+   "interior": "house_poor"
+  },
+  {
+   "name": "Poor house 2: ground floor",
+   "x0": -384.21875,
+   "x1": -369.51875,
+   "y0": -688.6640591966172,
+   "y1": -675.9448202959829,
+   "z0": 31.08,
+   "z1": 35.78,
+   "interior": "house_poor"
+  },
+  {
+   "name": "Poor house 2: floor 1",
+   "x0": -384.21875,
+   "x1": -369.51875,
+   "y0": -688.6640591966172,
+   "y1": -675.9448202959829,
+   "z0": 36.08,
+   "z1": 40.78,
+   "interior": "house_poor"
+  },
+  {
+   "name": "Artisan house 1: ground floor",
+   "x0": -576.10625,
+   "x1": -559.4937499999999,
+   "y0": -647.1207188160677,
+   "y1": -635.3528541226215,
+   "z0": 22.04,
+   "z1": 26.74,
+   "interior": "house"
+  },
+  {
+   "name": "Artisan house 1: floor 1",
+   "x0": -576.10625,
+   "x1": -559.4937499999999,
+   "y0": -647.1207188160677,
+   "y1": -635.3528541226215,
+   "z0": 27.04,
+   "z1": 31.74,
+   "interior": "house"
+  },
+  {
+   "name": "Artisan house 2: ground floor",
+   "x0": -636.66875,
+   "x1": -622.6062499999998,
+   "y0": -565.9367864693445,
+   "y1": -554.1689217758984,
+   "z0": 20.66,
+   "z1": 25.36,
+   "interior": "house"
+  },
+  {
+   "name": "Artisan house 2: floor 1",
+   "x0": -636.66875,
+   "x1": -622.6062499999998,
+   "y0": -565.9367864693445,
+   "y1": -554.1689217758984,
+   "z0": 25.66,
+   "z1": 30.36,
+   "interior": "house"
+  },
+  {
+   "name": "Merchant house 1: ground floor",
+   "x0": -491.95624999999995,
+   "x1": -476.61875,
+   "y0": -268.4737843551796,
+   "y1": -257.02304439746297,
+   "z0": 28.6,
+   "z1": 33.300000000000004,
+   "interior": "house_rich"
+  },
+  {
+   "name": "Merchant house 1: floor 1",
+   "x0": -491.95624999999995,
+   "x1": -476.61875,
+   "y0": -268.4737843551796,
+   "y1": -257.02304439746297,
+   "z0": 33.6,
+   "z1": 37.900000000000006,
+   "interior": "house_rich"
+  },
+  {
+   "name": "Merchant house 1: floor 2",
+   "x0": -491.95624999999995,
+   "x1": -476.61875,
+   "y0": -268.4737843551796,
+   "y1": -257.02304439746297,
+   "z0": 38.2,
+   "z1": 42.900000000000006,
+   "interior": "house_rich"
+  },
+  {
+   "name": "Merchant house 2: ground floor",
+   "x0": -553.79375,
+   "x1": -536.5437499999998,
+   "y0": -310.65137420718804,
+   "y1": -299.5177589852008,
+   "z0": 26.35,
+   "z1": 31.05,
+   "interior": "house_rich"
+  },
+  {
+   "name": "Merchant house 2: floor 1",
+   "x0": -553.79375,
+   "x1": -536.5437499999998,
+   "y0": -310.65137420718804,
+   "y1": -299.5177589852008,
+   "z0": 31.35,
+   "z1": 35.650000000000006,
+   "interior": "house_rich"
+  },
+  {
+   "name": "Merchant house 2: floor 2",
+   "x0": -553.79375,
+   "x1": -536.5437499999998,
+   "y0": -310.65137420718804,
+   "y1": -299.5177589852008,
+   "z0": 35.95,
+   "z1": 40.650000000000006,
+   "interior": "house_rich"
+  }
+ ],
+ "voids": [
+  [
+   -330.8,
+   -309.2,
+   -511.8,
+   -478.2,
+   28.5
+  ],
+  [
+   -301.0,
+   -281.0,
+   -391.0,
+   -371.0,
+   28.700000000000003
+  ]
+ ],
+ "movable": [
+  {
+   "name": "SM_GB_City_GateDoors_North",
+   "pivot": [
+    -220.51,
+    -439.96,
+    30.99
+   ]
+  },
+  {
+   "name": "SM_GB_City_NorthPortcullis",
+   "pivot": [
+    -220.51,
+    -439.96,
+    30.99
+   ]
+  },
+  {
+   "name": "SM_GB_City_GateDoors_Barbican",
+   "pivot": [
+    -185.56,
+    -438.16,
+    30.99
+   ]
+  },
+  {
+   "name": "SM_GB_City_GateDoors_East",
+   "pivot": [
+    -450.0,
+    -160.0,
+    23.99
+   ]
+  },
+  {
+   "name": "SM_GB_City_GateDoors_West",
+   "pivot": [
+    -450.0,
+    -760.0,
+    23.97
+   ]
+  },
+  {
+   "name": "SM_GB_City_GateDoors_Water",
+   "pivot": [
+    -679.87,
+    -469.99,
+    15.81
+   ]
+  },
+  {
+   "name": "SM_GB_Manor_GateDoors",
+   "pivot": [
+    -359.5,
+    -426.5,
+    35.2
+   ]
+  }
+ ],
+ "towers": [
+  {
+   "xy": [
+    -225.4,
+    -389.8
+   ],
+   "height": 18.0,
+   "walk_z": 41.18
+  },
+  {
+   "xy": [
+    -253.0,
+    -302.8
+   ],
+   "height": 25.0,
+   "walk_z": 39.21
+  },
+  {
+   "xy": [
+    -299.9,
+    -231.2
+   ],
+   "height": 24.0,
+   "walk_z": 37.18
+  },
+  {
+   "xy": [
+    -361.5,
+    -182.0
+   ],
+   "height": 23.0,
+   "walk_z": 34.67
+  },
+  {
+   "xy": [
+    -512.8,
+    -170.3
+   ],
+   "height": 22.0,
+   "walk_z": 32.34
+  },
+  {
+   "xy": [
+    -578.4,
+    -209.8
+   ],
+   "height": 21.0,
+   "walk_z": 30.99
+  },
+  {
+   "xy": [
+    -631.5,
+    -273.8
+   ],
+   "height": 20.0,
+   "walk_z": 29.47
+  },
+  {
+   "xy": [
+    -666.7,
+    -355.9
+   ],
+   "height": 19.0,
+   "walk_z": 27.9
+  },
+  {
+   "xy": [
+    -676.6,
+    -518.7
+   ],
+   "height": 18.0,
+   "walk_z": 25.99
+  },
+  {
+   "xy": [
+    -651.6,
+    -607.0
+   ],
+   "height": 25.0,
+   "walk_z": 26.07
+  },
+  {
+   "xy": [
+    -606.9,
+    -680.9
+   ],
+   "height": 24.0,
+   "walk_z": 27.36
+  },
+  {
+   "xy": [
+    -546.8,
+    -733.3
+   ],
+   "height": 23.0,
+   "walk_z": 29.84
+  },
+  {
+   "xy": [
+    -396.0,
+    -752.7
+   ],
+   "height": 22.0,
+   "walk_z": 37.23
+  },
+  {
+   "xy": [
+    -329.2,
+    -716.6
+   ],
+   "height": 21.0,
+   "walk_z": 40.35
+  },
+  {
+   "xy": [
+    -274.3,
+    -655.4
+   ],
+   "height": 20.0,
+   "walk_z": 42.43
+  },
+  {
+   "xy": [
+    -236.6,
+    -575.1
+   ],
+   "height": 19.0,
+   "walk_z": 43.19
+  }
+ ],
+ "wall_stairs": [
+  [
+   -265.0,
+   -289.0,
+   28.5
+  ],
+  [
+   -586.6,
+   -223.4,
+   20.5
+  ],
+  [
+   -640.2,
+   -621.0,
+   16.1
+  ],
+  [
+   -321.7,
+   -704.5,
+   30.5
+  ]
+ ],
+ "gates": {
+  "north": {
+   "centre": [
+    -220.5,
+    -440.0,
+    31.0
+   ],
+   "tower_m": 30.0,
+   "passage_w": 6.0,
+   "passage_h": 6.0
+  },
+  "east": {
+   "centre": [
+    -450.0,
+    -160.0,
+    24.0
+   ],
+   "tower_m": 20.0,
+   "passage_w": 6.0,
+   "passage_h": 6.0
+  },
+  "west": {
+   "centre": [
+    -450.0,
+    -760.0,
+    24.0
+   ],
+   "tower_m": 20.0,
+   "passage_w": 6.0,
+   "passage_h": 6.0
+  },
+  "water": {
+   "centre": [
+    -679.9,
+    -470.0,
+    15.8
+   ],
+   "tower_m": 14.0,
+   "passage_w": 5.0,
+   "passage_h": 4.5
+  }
+ },
+ "houses": [
+  {
+   "i": 0,
+   "rect": [
+    -257.02,
+    -240.44,
+    -473.64,
+    -460.95
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.15,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 1,
+   "rect": [
+    -258.29,
+    -240.44,
+    -431.14,
+    -420.99
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 32.49,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 2,
+   "rect": [
+    -257.66,
+    -241.08,
+    -498.37,
+    -486.32
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.38,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 3,
+   "rect": [
+    -258.29,
+    -241.72,
+    -458.41,
+    -447.63
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.02,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 4,
+   "rect": [
+    -259.57,
+    -241.72,
+    -417.82,
+    -405.45
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 32.22,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 5,
+   "rect": [
+    -260.84,
+    -242.36,
+    -405.45,
+    -393.72
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 31.94,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 6,
+   "rect": [
+    -258.29,
+    -242.99,
+    -486.32,
+    -473.64
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.38,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 7,
+   "rect": [
+    -259.57,
+    -243.63,
+    -512.96,
+    -501.54
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.54,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 8,
+   "rect": [
+    -303.24,
+    -283.79,
+    -620.15,
+    -609.37
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.51,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 9,
+   "rect": [
+    -320.77,
+    -303.24,
+    -620.78,
+    -608.73
+   ],
+   "district": "upper",
+   "front": "-x",
+   "floor_z": 34.02,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 10,
+   "rect": [
+    -323.32,
+    -305.47,
+    -647.42,
+    -635.69
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 33.07,
+   "variant": 10,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 11,
+   "rect": [
+    -323.96,
+    -306.11,
+    -635.69,
+    -623.32
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 33.46,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 12,
+   "rect": [
+    -342.44,
+    -325.23,
+    -255.45,
+    -244.04
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 28.62,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 13,
+   "rect": [
+    -343.08,
+    -327.14,
+    -634.1,
+    -623.32
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 33.64,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 14,
+   "rect": [
+    -343.72,
+    -328.42,
+    -689.28,
+    -677.23
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 31.59,
+   "variant": 6,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 15,
+   "rect": [
+    -343.72,
+    -328.42,
+    -296.68,
+    -284.63
+   ],
+   "district": "guard",
+   "front": "-x",
+   "floor_z": 31.12,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 16,
+   "rect": [
+    -342.44,
+    -338.62,
+    -242.77,
+    -231.35
+   ],
+   "district": "guard",
+   "front": "+y",
+   "floor_z": 27.87,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 17,
+   "rect": [
+    -364.12,
+    -346.27,
+    -310.0,
+    -299.22
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 31.79,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 18,
+   "rect": [
+    -363.48,
+    -346.27,
+    -255.45,
+    -243.4
+   ],
+   "district": "guard",
+   "front": "-x",
+   "floor_z": 29.25,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 19,
+   "rect": [
+    -362.84,
+    -346.27,
+    -228.18,
+    -217.4
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 27.45,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 20,
+   "rect": [
+    -362.21,
+    -346.91,
+    -701.33,
+    -689.6
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 30.96,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 21,
+   "rect": [
+    -366.03,
+    -347.54,
+    -243.4,
+    -230.72
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 28.34,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 23,
+   "rect": [
+    -365.39,
+    -348.82,
+    -689.6,
+    -677.23
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 31.51,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 24,
+   "rect": [
+    -365.39,
+    -348.82,
+    -269.41,
+    -257.99
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 29.85,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 25,
+   "rect": [
+    -379.42,
+    -367.31,
+    -715.29,
+    -702.28
+   ],
+   "district": "poor",
+   "front": "-y",
+   "floor_z": 29.6,
+   "variant": 3,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 26,
+   "rect": [
+    -383.88,
+    -367.31,
+    -662.01,
+    -649.96
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 32.47,
+   "variant": 10,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 27,
+   "rect": [
+    -384.52,
+    -367.94,
+    -268.77,
+    -257.36
+   ],
+   "district": "guard",
+   "front": "-x",
+   "floor_z": 30.09,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 28,
+   "rect": [
+    -378.14,
+    -368.58,
+    -702.28,
+    -688.96
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 30.52,
+   "variant": 8,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 29,
+   "rect": [
+    -387.07,
+    -368.58,
+    -215.81,
+    -203.45
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 26.92,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 31,
+   "rect": [
+    -384.52,
+    -369.22,
+    -257.36,
+    -244.67
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 29.39,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 32,
+   "rect": [
+    -388.02,
+    -369.86,
+    -675.64,
+    -662.01
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 31.9,
+   "variant": 4,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 33,
+   "rect": [
+    -384.52,
+    -369.86,
+    -282.73,
+    -271.31
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 30.74,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 34,
+   "rect": [
+    -385.16,
+    -369.86,
+    -241.5,
+    -230.72
+   ],
+   "district": "guard",
+   "front": "-x",
+   "floor_z": 28.63,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 35,
+   "rect": [
+    -385.16,
+    -369.86,
+    -228.18,
+    -215.81
+   ],
+   "district": "guard",
+   "front": "+x",
+   "floor_z": 27.71,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 36,
+   "rect": [
+    -405.56,
+    -388.34,
+    -431.14,
+    -420.36
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 35.29,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 37,
+   "rect": [
+    -399.82,
+    -388.02,
+    -674.69,
+    -663.28
+   ],
+   "district": "upper",
+   "front": "-x",
+   "floor_z": 31.27,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 38,
+   "rect": [
+    -399.18,
+    -389.62,
+    -728.6,
+    -715.6
+   ],
+   "district": "upper",
+   "front": "-y",
+   "floor_z": 28.36,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 39,
+   "rect": [
+    -407.47,
+    -389.62,
+    -633.47,
+    -623.32
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.11,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 40,
+   "rect": [
+    -408.11,
+    -389.62,
+    -268.77,
+    -257.99
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 30.11,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 41,
+   "rect": [
+    -406.83,
+    -389.62,
+    -215.81,
+    -202.49
+   ],
+   "district": "upper",
+   "front": "-x",
+   "floor_z": 26.98,
+   "variant": 4,
+   "storeys": 4,
+   "corner": false
+  },
+  {
+   "i": 42,
+   "rect": [
+    -397.27,
+    -390.26,
+    -687.38,
+    -677.23
+   ],
+   "district": "upper",
+   "front": "-y",
+   "floor_z": 30.57,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 43,
+   "rect": [
+    -409.06,
+    -390.26,
+    -660.74,
+    -649.32
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 32.1,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 44,
+   "rect": [
+    -406.83,
+    -390.26,
+    -646.79,
+    -636.0
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 32.63,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 45,
+   "rect": [
+    -404.92,
+    -390.26,
+    -390.55,
+    -379.13
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 34.55,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 46,
+   "rect": [
+    -406.19,
+    -390.26,
+    -363.91,
+    -353.13
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 33.88,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 47,
+   "rect": [
+    -406.19,
+    -390.26,
+    -282.09,
+    -271.31
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 30.76,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 48,
+   "rect": [
+    -406.83,
+    -390.26,
+    -254.82,
+    -243.09
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 29.35,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 49,
+   "rect": [
+    -406.19,
+    -390.26,
+    -202.49,
+    -190.13
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 25.99,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 50,
+   "rect": [
+    -405.56,
+    -390.89,
+    -295.41,
+    -284.63
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 31.38,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 51,
+   "rect": [
+    -406.83,
+    -390.89,
+    -243.09,
+    -231.99
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 28.72,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 52,
+   "rect": [
+    -399.82,
+    -391.53,
+    -715.6,
+    -702.92
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 29.52,
+   "variant": 1,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 53,
+   "rect": [
+    -406.83,
+    -391.53,
+    -228.82,
+    -215.81
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 27.83,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 54,
+   "rect": [
+    -406.83,
+    -392.17,
+    -323.32,
+    -311.27
+   ],
+   "district": "upper",
+   "front": "+x",
+   "floor_z": 32.5,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 55,
+   "rect": [
+    -397.91,
+    -393.44,
+    -702.92,
+    -691.18
+   ],
+   "district": "upper",
+   "front": "+y",
+   "floor_z": 30.34,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 58,
+   "rect": [
+    -427.87,
+    -409.06,
+    -660.74,
+    -649.32
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 30.99,
+   "variant": 10,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 59,
+   "rect": [
+    -428.51,
+    -410.02,
+    -649.32,
+    -636.64
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 31.46,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 61,
+   "rect": [
+    -426.59,
+    -410.02,
+    -284.0,
+    -270.68
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 30.47,
+   "variant": 3,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 62,
+   "rect": [
+    -427.87,
+    -410.02,
+    -215.5,
+    -203.45
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 26.82,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 63,
+   "rect": [
+    -428.51,
+    -410.66,
+    -633.47,
+    -622.68
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 32.03,
+   "variant": 13,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 64,
+   "rect": [
+    -425.96,
+    -410.66,
+    -608.41,
+    -596.05
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 33.44,
+   "variant": 4,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 65,
+   "rect": [
+    -425.32,
+    -410.66,
+    -527.23,
+    -513.59
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 35.06,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 66,
+   "rect": [
+    -428.51,
+    -410.66,
+    -351.23,
+    -339.81
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 33.29,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 67,
+   "rect": [
+    -427.23,
+    -410.66,
+    -297.63,
+    -284.0
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 31.05,
+   "variant": 13,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 68,
+   "rect": [
+    -426.59,
+    -410.66,
+    -270.68,
+    -257.04
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 29.83,
+   "variant": 4,
+   "storeys": 4,
+   "corner": false
+  },
+  {
+   "i": 69,
+   "rect": [
+    -427.23,
+    -410.66,
+    -257.04,
+    -244.67
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 29.17,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 70,
+   "rect": [
+    -426.59,
+    -410.66,
+    -229.77,
+    -218.03
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 27.7,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 71,
+   "rect": [
+    -427.87,
+    -411.29,
+    -620.15,
+    -608.41
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 33.05,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 72,
+   "rect": [
+    -426.59,
+    -411.93,
+    -716.24,
+    -703.23
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 28.89,
+   "variant": 12,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 73,
+   "rect": [
+    -427.87,
+    -411.93,
+    -566.24,
+    -554.5
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 34.43,
+   "variant": 3,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 74,
+   "rect": [
+    -427.23,
+    -411.93,
+    -554.5,
+    -542.77
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 34.65,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 75,
+   "rect": [
+    -427.23,
+    -411.93,
+    -363.91,
+    -351.23
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 33.36,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 76,
+   "rect": [
+    -427.23,
+    -411.93,
+    -337.27,
+    -324.27
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 32.8,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 77,
+   "rect": [
+    -426.59,
+    -411.93,
+    -324.27,
+    -311.9
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 32.13,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 78,
+   "rect": [
+    -428.51,
+    -411.93,
+    -242.14,
+    -229.77
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 28.35,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 79,
+   "rect": [
+    -427.87,
+    -412.57,
+    -676.28,
+    -663.28
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 30.86,
+   "variant": 13,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 80,
+   "rect": [
+    -427.23,
+    -412.57,
+    -593.51,
+    -581.14
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 33.8,
+   "variant": 4,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 81,
+   "rect": [
+    -429.14,
+    -412.57,
+    -539.6,
+    -527.23
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 34.86,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 83,
+   "rect": [
+    -428.51,
+    -413.21,
+    -703.23,
+    -691.18
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 29.51,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 84,
+   "rect": [
+    -428.51,
+    -413.21,
+    -581.14,
+    -569.41
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 34.08,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 85,
+   "rect": [
+    -426.59,
+    -413.84,
+    -728.6,
+    -716.24
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 28.11,
+   "variant": 7,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 86,
+   "rect": [
+    -427.87,
+    -413.84,
+    -688.01,
+    -676.28
+   ],
+   "district": "poor",
+   "front": "+x",
+   "floor_z": 30.24,
+   "variant": 14,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 87,
+   "rect": [
+    -447.63,
+    -430.42,
+    -336.64,
+    -325.86
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 32.1,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 88,
+   "rect": [
+    -446.99,
+    -431.06,
+    -580.19,
+    -567.19
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 33.0,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 89,
+   "rect": [
+    -450.18,
+    -431.69,
+    -701.97,
+    -689.6
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 28.09,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 90,
+   "rect": [
+    -447.63,
+    -431.69,
+    -689.6,
+    -677.23
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 28.85,
+   "variant": 10,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 91,
+   "rect": [
+    -449.54,
+    -431.69,
+    -674.69,
+    -663.28
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 29.47,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 92,
+   "rect": [
+    -447.63,
+    -432.33,
+    -728.6,
+    -716.24
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 26.71,
+   "variant": 8,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 93,
+   "rect": [
+    -450.18,
+    -432.33,
+    -594.46,
+    -582.73
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 33.15,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 94,
+   "rect": [
+    -446.99,
+    -432.33,
+    -567.19,
+    -553.55
+   ],
+   "district": "poor",
+   "front": "-x",
+   "floor_z": 33.3,
+   "variant": 6,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 95,
+   "rect": [
+    -446.36,
+    -432.33,
+    -539.6,
+    -528.82
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 33.81,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 96,
+   "rect": [
+    -449.54,
+    -432.97,
+    -646.79,
+    -635.69
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 30.68,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 97,
+   "rect": [
+    -450.18,
+    -432.97,
+    -553.55,
+    -542.14
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 34.05,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 98,
+   "rect": [
+    -450.18,
+    -433.61,
+    -620.78,
+    -610.0
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 32.29,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 99,
+   "rect": [
+    -448.91,
+    -434.24,
+    -716.24,
+    -704.5
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 27.35,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 100,
+   "rect": [
+    -448.91,
+    -434.24,
+    -635.69,
+    -623.32
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 31.17,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 101,
+   "rect": [
+    -448.91,
+    -434.24,
+    -607.46,
+    -594.46
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 32.73,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 102,
+   "rect": [
+    -449.54,
+    -434.88,
+    -660.74,
+    -650.59
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 30.07,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 103,
+   "rect": [
+    -469.31,
+    -451.46,
+    -608.41,
+    -596.05
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 31.18,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 104,
+   "rect": [
+    -469.31,
+    -451.46,
+    -579.56,
+    -569.41
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 31.99,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 105,
+   "rect": [
+    -469.94,
+    -453.37,
+    -620.78,
+    -608.41
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 30.73,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 106,
+   "rect": [
+    -469.94,
+    -454.01,
+    -592.88,
+    -582.09
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 31.61,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 107,
+   "rect": [
+    -471.86,
+    -454.01,
+    -566.24,
+    -554.19
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 32.22,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 108,
+   "rect": [
+    -472.49,
+    -454.01,
+    -554.19,
+    -541.18
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 32.46,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 109,
+   "rect": [
+    -471.22,
+    -464.21,
+    -541.18,
+    -530.72
+   ],
+   "district": "artisan",
+   "front": "+y",
+   "floor_z": 32.98,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 110,
+   "rect": [
+    -489.71,
+    -473.13,
+    -728.6,
+    -715.92
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 25.38,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 111,
+   "rect": [
+    -490.34,
+    -473.13,
+    -715.92,
+    -703.23
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.13,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 112,
+   "rect": [
+    -490.34,
+    -473.13,
+    -364.86,
+    -353.13
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 32.05,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 113,
+   "rect": [
+    -489.71,
+    -473.77,
+    -391.18,
+    -379.77
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 32.58,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 114,
+   "rect": [
+    -490.34,
+    -473.77,
+    -297.0,
+    -284.31
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 29.84,
+   "variant": 6,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 115,
+   "rect": [
+    -492.89,
+    -473.77,
+    -256.72,
+    -244.04
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 28.04,
+   "variant": 13,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 116,
+   "rect": [
+    -490.34,
+    -473.77,
+    -228.18,
+    -215.81
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 26.55,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 117,
+   "rect": [
+    -489.07,
+    -474.41,
+    -215.81,
+    -204.08
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 25.83,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 118,
+   "rect": [
+    -492.89,
+    -475.04,
+    -700.7,
+    -690.55
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.81,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 121,
+   "rect": [
+    -491.62,
+    -475.04,
+    -310.95,
+    -297.0
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 30.3,
+   "variant": 7,
+   "storeys": 4,
+   "corner": false
+  },
+  {
+   "i": 122,
+   "rect": [
+    -490.98,
+    -475.04,
+    -241.5,
+    -231.35
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 27.29,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 123,
+   "rect": [
+    -490.98,
+    -475.68,
+    -377.23,
+    -364.86
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 32.22,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 124,
+   "rect": [
+    -492.26,
+    -475.68,
+    -336.0,
+    -324.59
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 31.17,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 125,
+   "rect": [
+    -491.62,
+    -476.32,
+    -324.59,
+    -310.95
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 30.74,
+   "variant": 3,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 126,
+   "rect": [
+    -490.98,
+    -476.32,
+    -284.31,
+    -271.31
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 29.22,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 128,
+   "rect": [
+    -511.38,
+    -493.53,
+    -403.87,
+    -393.09
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 31.91,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 129,
+   "rect": [
+    -503.73,
+    -492.89,
+    -257.36,
+    -243.72
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 26.9,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 130,
+   "rect": [
+    -512.02,
+    -493.85,
+    -349.96,
+    -338.22
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 29.92,
+   "variant": 6,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 131,
+   "rect": [
+    -511.38,
+    -494.81,
+    -715.92,
+    -704.5
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 23.64,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 132,
+   "rect": [
+    -511.38,
+    -494.81,
+    -621.73,
+    -608.41
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 29.34,
+   "variant": 3,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 133,
+   "rect": [
+    -512.66,
+    -494.81,
+    -608.41,
+    -596.05
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 29.79,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 134,
+   "rect": [
+    -505.01,
+    -494.81,
+    -243.72,
+    -229.77
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 26.16,
+   "variant": 2,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 135,
+   "rect": [
+    -511.38,
+    -495.44,
+    -701.97,
+    -691.18
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 24.43,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 136,
+   "rect": [
+    -512.66,
+    -495.44,
+    -648.69,
+    -635.05
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 28.22,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 137,
+   "rect": [
+    -513.29,
+    -495.44,
+    -593.51,
+    -582.73
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 30.21,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 138,
+   "rect": [
+    -505.01,
+    -495.44,
+    -229.77,
+    -216.77
+   ],
+   "district": "merchant",
+   "front": "+y",
+   "floor_z": 25.3,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 139,
+   "rect": [
+    -512.66,
+    -496.08,
+    -688.65,
+    -675.96
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.25,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 140,
+   "rect": [
+    -513.93,
+    -496.08,
+    -418.46,
+    -407.04
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 31.96,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 141,
+   "rect": [
+    -511.38,
+    -496.08,
+    -390.55,
+    -379.77
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 31.59,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 142,
+   "rect": [
+    -512.02,
+    -496.08,
+    -365.5,
+    -352.49
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 30.27,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 143,
+   "rect": [
+    -511.38,
+    -496.08,
+    -338.22,
+    -325.86
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 29.63,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 144,
+   "rect": [
+    -513.29,
+    -496.08,
+    -309.37,
+    -297.32
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 28.63,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 145,
+   "rect": [
+    -505.64,
+    -496.08,
+    -297.32,
+    -285.9
+   ],
+   "district": "merchant",
+   "front": "+y",
+   "floor_z": 28.57,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 146,
+   "rect": [
+    -511.38,
+    -496.72,
+    -675.96,
+    -663.28
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.85,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 147,
+   "rect": [
+    -511.38,
+    -496.72,
+    -660.74,
+    -648.69
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 27.57,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 148,
+   "rect": [
+    -512.66,
+    -496.72,
+    -377.23,
+    -365.5
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 31.3,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 149,
+   "rect": [
+    -512.02,
+    -496.72,
+    -322.68,
+    -312.54
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 29.9,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 150,
+   "rect": [
+    -513.29,
+    -497.36,
+    -728.6,
+    -715.92
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 22.76,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 151,
+   "rect": [
+    -512.66,
+    -497.36,
+    -635.05,
+    -621.73
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 28.67,
+   "variant": 8,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 153,
+   "rect": [
+    -503.09,
+    -497.36,
+    -282.73,
+    -270.04
+   ],
+   "district": "merchant",
+   "front": "-y",
+   "floor_z": 28.47,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 154,
+   "rect": [
+    -505.01,
+    -497.36,
+    -270.04,
+    -257.36
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 27.45,
+   "variant": 14,
+   "storeys": 4,
+   "corner": false
+  },
+  {
+   "i": 155,
+   "rect": [
+    -533.06,
+    -515.21,
+    -702.92,
+    -689.6
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 22.82,
+   "variant": 4,
+   "storeys": 4,
+   "corner": false
+  },
+  {
+   "i": 156,
+   "rect": [
+    -533.06,
+    -515.21,
+    -689.6,
+    -677.86
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 23.53,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 157,
+   "rect": [
+    -532.42,
+    -515.21,
+    -512.33,
+    -501.54
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 30.77,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 158,
+   "rect": [
+    -532.42,
+    -515.21,
+    -350.91,
+    -337.27
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 28.78,
+   "variant": 10,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 159,
+   "rect": [
+    -533.69,
+    -515.84,
+    -634.1,
+    -623.32
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 26.15,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 160,
+   "rect": [
+    -532.42,
+    -515.84,
+    -606.83,
+    -594.46
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 27.34,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 161,
+   "rect": [
+    -533.06,
+    -515.84,
+    -580.19,
+    -568.14
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 28.15,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 162,
+   "rect": [
+    -531.78,
+    -515.84,
+    -486.32,
+    -474.9
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 30.99,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 163,
+   "rect": [
+    -532.42,
+    -515.84,
+    -472.37,
+    -466.66
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 31.05,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 165,
+   "rect": [
+    -532.42,
+    -516.48,
+    -403.87,
+    -392.14
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 30.7,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 166,
+   "rect": [
+    -531.14,
+    -516.48,
+    -392.14,
+    -378.18
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 29.66,
+   "variant": 2,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 167,
+   "rect": [
+    -531.14,
+    -516.48,
+    -378.18,
+    -365.81
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 29.44,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 168,
+   "rect": [
+    -534.97,
+    -516.48,
+    -324.9,
+    -310.95
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 28.95,
+   "variant": 0,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 169,
+   "rect": [
+    -534.97,
+    -517.12,
+    -714.65,
+    -702.92
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 21.93,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 170,
+   "rect": [
+    -531.14,
+    -517.12,
+    -662.64,
+    -650.59
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 25.08,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 171,
+   "rect": [
+    -532.42,
+    -517.12,
+    -620.78,
+    -610.0
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 27.89,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 172,
+   "rect": [
+    -531.78,
+    -517.12,
+    -552.92,
+    -540.55
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 29.96,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 174,
+   "rect": [
+    -524.13,
+    -517.12,
+    -242.14,
+    -230.08
+   ],
+   "district": "merchant",
+   "front": "+y",
+   "floor_z": 25.09,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 175,
+   "rect": [
+    -534.97,
+    -517.76,
+    -674.69,
+    -662.64
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 25.48,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 176,
+   "rect": [
+    -533.69,
+    -517.76,
+    -647.42,
+    -636.64
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.74,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 177,
+   "rect": [
+    -533.69,
+    -517.76,
+    -594.46,
+    -582.73
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 27.66,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 178,
+   "rect": [
+    -532.42,
+    -517.76,
+    -499.01,
+    -486.32
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 30.77,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 179,
+   "rect": [
+    -534.33,
+    -518.39,
+    -568.14,
+    -555.45
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 29.51,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 180,
+   "rect": [
+    -533.06,
+    -518.39,
+    -540.55,
+    -529.45
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 30.12,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 181,
+   "rect": [
+    -533.06,
+    -518.39,
+    -431.78,
+    -420.99
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 30.85,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 182,
+   "rect": [
+    -535.29,
+    -518.39,
+    -363.28,
+    -350.91
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 29.89,
+   "variant": 2,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 183,
+   "rect": [
+    -534.33,
+    -518.39,
+    -337.27,
+    -324.9
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 29.23,
+   "variant": 9,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 184,
+   "rect": [
+    -533.06,
+    -518.39,
+    -310.95,
+    -297.63
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 28.4,
+   "variant": 0,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 185,
+   "rect": [
+    -525.41,
+    -519.03,
+    -268.77,
+    -257.04
+   ],
+   "district": "merchant",
+   "front": "-y",
+   "floor_z": 26.83,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 186,
+   "rect": [
+    -532.42,
+    -519.67,
+    -297.63,
+    -285.9
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 27.88,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 187,
+   "rect": [
+    -525.41,
+    -519.67,
+    -257.04,
+    -245.31
+   ],
+   "district": "merchant",
+   "front": "+y",
+   "floor_z": 25.76,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 188,
+   "rect": [
+    -524.77,
+    -520.31,
+    -282.73,
+    -271.31
+   ],
+   "district": "merchant",
+   "front": "-y",
+   "floor_z": 27.39,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 189,
+   "rect": [
+    -553.46,
+    -536.24,
+    -417.82,
+    -405.77
+   ],
+   "district": "market",
+   "front": "-x",
+   "floor_z": 28.46,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 190,
+   "rect": [
+    -554.09,
+    -535.29,
+    -363.91,
+    -353.13
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 27.69,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 192,
+   "rect": [
+    -554.73,
+    -536.88,
+    -431.78,
+    -420.36
+   ],
+   "district": "market",
+   "front": "-x",
+   "floor_z": 28.45,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 193,
+   "rect": [
+    -554.09,
+    -536.88,
+    -391.18,
+    -378.82
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 28.14,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 194,
+   "rect": [
+    -554.73,
+    -536.88,
+    -296.05,
+    -283.68
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 25.74,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 195,
+   "rect": [
+    -554.73,
+    -537.52,
+    -701.97,
+    -691.18
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 21.0,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 196,
+   "rect": [
+    -554.09,
+    -537.52,
+    -660.74,
+    -649.01
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 24.67,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 197,
+   "rect": [
+    -555.37,
+    -537.52,
+    -621.73,
+    -609.37
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.4,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 198,
+   "rect": [
+    -554.09,
+    -537.52,
+    -606.83,
+    -595.1
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 25.64,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 199,
+   "rect": [
+    -554.73,
+    -537.52,
+    -581.46,
+    -568.14
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 27.81,
+   "variant": 8,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 200,
+   "rect": [
+    -552.82,
+    -537.52,
+    -554.5,
+    -541.18
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 27.36,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 201,
+   "rect": [
+    -552.82,
+    -537.52,
+    -527.23,
+    -514.86
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 27.93,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 202,
+   "rect": [
+    -555.37,
+    -537.52,
+    -486.64,
+    -472.68
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 29.58,
+   "variant": 12,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 203,
+   "rect": [
+    -555.37,
+    -537.52,
+    -405.77,
+    -393.72
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 28.22,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 204,
+   "rect": [
+    -554.73,
+    -537.52,
+    -270.04,
+    -258.63
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 24.75,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 205,
+   "rect": [
+    -554.73,
+    -538.16,
+    -649.01,
+    -637.27
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 25.18,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 206,
+   "rect": [
+    -555.37,
+    -538.16,
+    -634.1,
+    -621.73
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 25.85,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 207,
+   "rect": [
+    -554.09,
+    -538.16,
+    -511.69,
+    -501.54
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 29.25,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 208,
+   "rect": [
+    -553.46,
+    -538.16,
+    -499.01,
+    -486.64
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 29.42,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 209,
+   "rect": [
+    -553.46,
+    -538.16,
+    -378.82,
+    -366.45
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 28.0,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 210,
+   "rect": [
+    -553.46,
+    -538.16,
+    -337.91,
+    -325.86
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 27.13,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 211,
+   "rect": [
+    -555.37,
+    -538.79,
+    -688.01,
+    -675.64
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 21.79,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 212,
+   "rect": [
+    -556.64,
+    -538.79,
+    -675.64,
+    -663.28
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 22.35,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 213,
+   "rect": [
+    -554.73,
+    -538.79,
+    -595.1,
+    -581.46
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 27.29,
+   "variant": 10,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 214,
+   "rect": [
+    -554.09,
+    -538.79,
+    -349.96,
+    -337.91
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 27.38,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 215,
+   "rect": [
+    -556.01,
+    -539.43,
+    -568.14,
+    -554.5
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 28.04,
+   "variant": 8,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 216,
+   "rect": [
+    -554.73,
+    -539.43,
+    -541.18,
+    -527.23
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 28.68,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 217,
+   "rect": [
+    -554.73,
+    -539.43,
+    -472.68,
+    -461.59
+   ],
+   "district": "market",
+   "front": "-x",
+   "floor_z": 28.42,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 218,
+   "rect": [
+    -555.37,
+    -539.43,
+    -322.68,
+    -310.95
+   ],
+   "district": "merchant",
+   "front": "-x",
+   "floor_z": 26.58,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 219,
+   "rect": [
+    -554.09,
+    -539.43,
+    -283.68,
+    -270.04
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 26.21,
+   "variant": 5,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 220,
+   "rect": [
+    -556.01,
+    -539.43,
+    -255.45,
+    -244.67
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 25.06,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 221,
+   "rect": [
+    -554.09,
+    -539.43,
+    -242.14,
+    -231.35
+   ],
+   "district": "merchant",
+   "front": "+x",
+   "floor_z": 24.43,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 222,
+   "rect": [
+    -574.49,
+    -557.28,
+    -499.64,
+    -488.86
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 27.99,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 223,
+   "rect": [
+    -575.77,
+    -557.92,
+    -540.55,
+    -526.91
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 25.79,
+   "variant": 0,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 224,
+   "rect": [
+    -575.77,
+    -558.56,
+    -635.05,
+    -622.68
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 22.62,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 225,
+   "rect": [
+    -576.41,
+    -558.56,
+    -581.46,
+    -568.77
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.15,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 226,
+   "rect": [
+    -575.77,
+    -558.56,
+    -566.24,
+    -556.09
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 25.09,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 227,
+   "rect": [
+    -574.49,
+    -559.19,
+    -661.37,
+    -650.59
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 21.45,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 229,
+   "rect": [
+    -576.41,
+    -559.19,
+    -512.33,
+    -499.64
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 27.68,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 230,
+   "rect": [
+    -577.04,
+    -559.19,
+    -485.05,
+    -474.27
+   ],
+   "district": "market",
+   "front": "+x",
+   "floor_z": 27.99,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 231,
+   "rect": [
+    -576.41,
+    -559.83,
+    -592.88,
+    -581.46
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 25.65,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 232,
+   "rect": [
+    -575.13,
+    -559.83,
+    -552.92,
+    -540.55
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 26.83,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 233,
+   "rect": [
+    -575.77,
+    -560.47,
+    -620.15,
+    -608.73
+   ],
+   "district": "artisan",
+   "front": "-x",
+   "floor_z": 23.24,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 234,
+   "rect": [
+    -575.13,
+    -560.47,
+    -608.73,
+    -596.05
+   ],
+   "district": "artisan",
+   "front": "+x",
+   "floor_z": 25.05,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 236,
+   "rect": [
+    -596.81,
+    -578.32,
+    -499.01,
+    -486.64
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 24.64,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 237,
+   "rect": [
+    -596.17,
+    -578.32,
+    -431.14,
+    -419.73
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 26.62,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 238,
+   "rect": [
+    -597.44,
+    -578.96,
+    -579.56,
+    -567.19
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 22.71,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 239,
+   "rect": [
+    -595.53,
+    -578.96,
+    -525.64,
+    -515.5
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 24.29,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 240,
+   "rect": [
+    -594.89,
+    -579.59,
+    -540.87,
+    -528.18
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 24.04,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 241,
+   "rect": [
+    -594.89,
+    -579.59,
+    -417.19,
+    -405.45
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 26.46,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 242,
+   "rect": [
+    -596.81,
+    -579.59,
+    -405.45,
+    -393.09
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 26.37,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 243,
+   "rect": [
+    -594.89,
+    -579.59,
+    -269.41,
+    -257.99
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 23.01,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 244,
+   "rect": [
+    -596.81,
+    -580.23,
+    -607.46,
+    -594.46
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 21.78,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 245,
+   "rect": [
+    -598.08,
+    -580.23,
+    -594.46,
+    -582.09
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 22.13,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 246,
+   "rect": [
+    -594.89,
+    -580.23,
+    -567.19,
+    -554.5
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 23.35,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 247,
+   "rect": [
+    -597.44,
+    -580.23,
+    -512.96,
+    -501.54
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 24.36,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 248,
+   "rect": [
+    -594.89,
+    -580.23,
+    -486.64,
+    -474.27
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 24.97,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 249,
+   "rect": [
+    -595.53,
+    -580.23,
+    -282.73,
+    -271.95
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 23.49,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 250,
+   "rect": [
+    -597.44,
+    -582.14,
+    -554.5,
+    -540.87
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 23.47,
+   "variant": 11,
+   "storeys": 4,
+   "corner": false
+  },
+  {
+   "i": 251,
+   "rect": [
+    -598.08,
+    -582.14,
+    -445.73,
+    -433.68
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 26.32,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 252,
+   "rect": [
+    -617.21,
+    -600.63,
+    -390.55,
+    -378.18
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 24.43,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 253,
+   "rect": [
+    -617.21,
+    -601.27,
+    -444.46,
+    -433.68
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 23.14,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 254,
+   "rect": [
+    -619.76,
+    -601.91,
+    -431.14,
+    -419.09
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 24.58,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 255,
+   "rect": [
+    -619.76,
+    -601.91,
+    -404.5,
+    -393.72
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 24.46,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 256,
+   "rect": [
+    -619.12,
+    -601.91,
+    -351.54,
+    -339.18
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 23.7,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 257,
+   "rect": [
+    -617.21,
+    -601.91,
+    -336.64,
+    -325.86
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 23.39,
+   "variant": 12,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 258,
+   "rect": [
+    -619.76,
+    -601.91,
+    -297.63,
+    -285.26
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.27,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 259,
+   "rect": [
+    -618.48,
+    -602.54,
+    -378.18,
+    -365.81
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 24.11,
+   "variant": 10,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 260,
+   "rect": [
+    -619.12,
+    -602.54,
+    -363.28,
+    -351.54
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 23.88,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 261,
+   "rect": [
+    -618.48,
+    -602.54,
+    -323.32,
+    -310.63
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.98,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 262,
+   "rect": [
+    -617.84,
+    -602.54,
+    -310.63,
+    -297.63
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.61,
+   "variant": 15,
+   "storeys": 2,
+   "corner": false
+  },
+  {
+   "i": 263,
+   "rect": [
+    -618.48,
+    -603.82,
+    -419.09,
+    -407.04
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 24.37,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 264,
+   "rect": [
+    -638.88,
+    -620.39,
+    -512.33,
+    -502.18
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.11,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 265,
+   "rect": [
+    -638.88,
+    -621.03,
+    -499.01,
+    -486.32
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.29,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 266,
+   "rect": [
+    -635.06,
+    -621.03,
+    -337.59,
+    -325.86
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 20.34,
+   "variant": 11,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 267,
+   "rect": [
+    -638.88,
+    -621.67,
+    -540.55,
+    -528.82
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 21.38,
+   "variant": 2,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 268,
+   "rect": [
+    -634.42,
+    -621.67,
+    -390.55,
+    -379.77
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 21.24,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 269,
+   "rect": [
+    -636.97,
+    -621.67,
+    -377.23,
+    -365.81
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 20.83,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 270,
+   "rect": [
+    -640.16,
+    -622.31,
+    -581.14,
+    -569.41
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 20.11,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 274,
+   "rect": [
+    -638.88,
+    -622.31,
+    -404.5,
+    -393.09
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 20.88,
+   "variant": 3,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 275,
+   "rect": [
+    -640.79,
+    -622.94,
+    -553.87,
+    -540.55
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 20.92,
+   "variant": 10,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 276,
+   "rect": [
+    -641.43,
+    -622.94,
+    -525.64,
+    -514.86
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 21.58,
+   "variant": 1,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 277,
+   "rect": [
+    -638.88,
+    -622.94,
+    -486.32,
+    -474.27
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.26,
+   "variant": 8,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 278,
+   "rect": [
+    -637.61,
+    -622.94,
+    -349.96,
+    -337.59
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 20.33,
+   "variant": 15,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 279,
+   "rect": [
+    -640.16,
+    -623.58,
+    -444.46,
+    -432.09
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 22.51,
+   "variant": 6,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 280,
+   "rect": [
+    -633.78,
+    -623.58,
+    -363.28,
+    -352.49
+   ],
+   "district": "river",
+   "front": "+y",
+   "floor_z": 21.37,
+   "variant": 13,
+   "storeys": 3,
+   "corner": true
+  },
+  {
+   "i": 281,
+   "rect": [
+    -639.52,
+    -624.22,
+    -593.51,
+    -581.14
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 19.47,
+   "variant": 4,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 283,
+   "rect": [
+    -658.64,
+    -642.07,
+    -418.77,
+    -405.45
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 18.8,
+   "variant": 2,
+   "storeys": 3,
+   "corner": false
+  },
+  {
+   "i": 284,
+   "rect": [
+    -659.28,
+    -642.07,
+    -405.45,
+    -393.72
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 18.69,
+   "variant": 9,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 285,
+   "rect": [
+    -659.92,
+    -642.71,
+    -512.33,
+    -499.96
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 17.78,
+   "variant": 0,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 286,
+   "rect": [
+    -658.64,
+    -642.71,
+    -446.36,
+    -433.68
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 18.76,
+   "variant": 7,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 287,
+   "rect": [
+    -660.56,
+    -642.71,
+    -431.14,
+    -418.77
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 18.59,
+   "variant": 14,
+   "storeys": 4,
+   "corner": true
+  },
+  {
+   "i": 288,
+   "rect": [
+    -661.83,
+    -643.34,
+    -458.41,
+    -446.36
+   ],
+   "district": "river",
+   "front": "+x",
+   "floor_z": 20.38,
+   "variant": 5,
+   "storeys": 2,
+   "corner": true
+  },
+  {
+   "i": 289,
+   "rect": [
+    -660.56,
+    -645.26,
+    -499.96,
+    -486.32
+   ],
+   "district": "river",
+   "front": "-x",
+   "floor_z": 17.95,
+   "variant": 12,
+   "storeys": 2,
+   "corner": false
+  }
+ ],
+ "interiors": [
+  {
+   "name": "Parish house",
+   "kind": "parish",
+   "props": "table + armoury racks",
+   "rect": [
+    -352.0,
+    -334.0,
+    -618.0,
+    -604.0
+   ],
+   "front": "+y",
+   "floor_z": [
+    34.41,
+    39.41
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_ParishHouse"
+  },
+  {
+   "name": "Main inn",
+   "kind": "inn",
+   "props": "counter + 6 tables",
+   "rect": [
+    -427.23,
+    -409.38,
+    -390.55,
+    -378.18
+   ],
+   "front": "-x",
+   "floor_z": [
+    34.04,
+    39.04,
+    43.64
+   ],
+   "door_w": 3.0,
+   "door_h": 4.5,
+   "group": "SM_GB_City_Int_MainInn"
+  },
+  {
+   "name": "Tavern at the East Gate",
+   "kind": "tavern",
+   "props": "counter + 4 tables",
+   "rect": [
+    -426.59,
+    -409.38,
+    -200.91,
+    -190.13
+   ],
+   "front": "-x",
+   "floor_z": [
+    25.92,
+    30.92
+   ],
+   "door_w": 3.0,
+   "door_h": 4.5,
+   "group": "SM_GB_City_Int_TavernAtTheEastGate"
+  },
+  {
+   "name": "Tavern in the River Quarter",
+   "kind": "tavern",
+   "props": "counter + 4 tables",
+   "rect": [
+    -659.28,
+    -642.07,
+    -486.32,
+    -474.27
+   ],
+   "front": "-x",
+   "floor_z": [
+    18.35,
+    23.35
+   ],
+   "door_w": 3.0,
+   "door_h": 4.5,
+   "group": "SM_GB_City_Int_TavernInTheRiverQuarter"
+  },
+  {
+   "name": "Blacksmith",
+   "kind": "smith",
+   "props": "forge + anvil",
+   "rect": [
+    -489.71,
+    -475.04,
+    -688.01,
+    -677.23
+   ],
+   "front": "+x",
+   "floor_z": [
+    27.55,
+    32.55
+   ],
+   "door_w": 3.0,
+   "door_h": 4.5,
+   "group": "SM_GB_City_Int_Blacksmith"
+  },
+  {
+   "name": "Apothecary",
+   "kind": "shop",
+   "props": "counter + shelves",
+   "rect": [
+    -427.23,
+    -412.57,
+    -378.18,
+    -366.45
+   ],
+   "front": "+x",
+   "floor_z": [
+    34.05,
+    39.05
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_Apothecary"
+  },
+  {
+   "name": "Bakery",
+   "kind": "bakery",
+   "props": "two bread ovens",
+   "rect": [
+    -512.02,
+    -497.36,
+    -580.19,
+    -568.77
+   ],
+   "front": "+x",
+   "floor_z": [
+    30.54,
+    35.54
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_Bakery"
+  },
+  {
+   "name": "Butcher",
+   "kind": "shop",
+   "props": "counter + shelves",
+   "rect": [
+    -576.41,
+    -561.11,
+    -526.91,
+    -515.5
+   ],
+   "front": "+x",
+   "floor_z": [
+    27.32,
+    32.32
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_Butcher"
+  },
+  {
+   "name": "Cloth merchant and tailor",
+   "kind": "shop",
+   "props": "counter + shelves",
+   "rect": [
+    -493.85,
+    -475.04,
+    -350.59,
+    -338.54
+   ],
+   "front": "+x",
+   "floor_z": [
+    31.65,
+    36.65
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_ClothMerchantAndTailor"
+  },
+  {
+   "name": "General store",
+   "kind": "shop",
+   "props": "counter + shelves",
+   "rect": [
+    -426.59,
+    -410.02,
+    -309.37,
+    -297.63
+   ],
+   "front": "+x",
+   "floor_z": [
+    31.86,
+    36.86
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_GeneralStore"
+  },
+  {
+   "name": "Bathhouse",
+   "kind": "bath",
+   "props": "four tubs",
+   "rect": [
+    -640.16,
+    -622.31,
+    -432.09,
+    -407.04
+   ],
+   "front": "+x",
+   "floor_z": [
+    22.69,
+    27.69
+   ],
+   "door_w": 3.0,
+   "door_h": 4.5,
+   "group": "SM_GB_City_Int_Bathhouse"
+  },
+  {
+   "name": "Barber-surgeon",
+   "kind": "shop",
+   "props": "counter + shelves",
+   "rect": [
+    -533.69,
+    -516.48,
+    -417.19,
+    -406.41
+   ],
+   "front": "-y",
+   "floor_z": [
+    30.44,
+    35.44
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_BarberSurgeon"
+  },
+  {
+   "name": "Scribe and notary",
+   "kind": "shop",
+   "props": "counter + shelves",
+   "rect": [
+    -534.97,
+    -517.12,
+    -525.64,
+    -515.5
+   ],
+   "front": "+x",
+   "floor_z": [
+    30.51,
+    35.510000000000005
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_ScribeAndNotary"
+  },
+  {
+   "name": "Poor house 1",
+   "kind": "house_poor",
+   "props": "hearth + pallets",
+   "rect": [
+    -362.84,
+    -348.18,
+    -674.69,
+    -663.28
+   ],
+   "front": "+x",
+   "floor_z": [
+    32.19,
+    37.19
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_PoorHouse1"
+  },
+  {
+   "name": "Poor house 2",
+   "kind": "house_poor",
+   "props": "hearth + pallets",
+   "rect": [
+    -384.52,
+    -369.22,
+    -688.96,
+    -675.64
+   ],
+   "front": "-x",
+   "floor_z": [
+    31.08,
+    36.08
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_PoorHouse2"
+  },
+  {
+   "name": "Artisan house 1",
+   "kind": "house",
+   "props": "workbench + hearth",
+   "rect": [
+    -576.41,
+    -559.19,
+    -647.42,
+    -635.05
+   ],
+   "front": "-x",
+   "floor_z": [
+    22.04,
+    27.04
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_ArtisanHouse1"
+  },
+  {
+   "name": "Artisan house 2",
+   "kind": "house",
+   "props": "workbench + hearth",
+   "rect": [
+    -636.97,
+    -622.31,
+    -566.24,
+    -553.87
+   ],
+   "front": "+x",
+   "floor_z": [
+    20.66,
+    25.66
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_ArtisanHouse2"
+  },
+  {
+   "name": "Merchant house 1",
+   "kind": "house_rich",
+   "props": "table + hearth",
+   "rect": [
+    -492.26,
+    -476.32,
+    -268.77,
+    -256.72
+   ],
+   "front": "+x",
+   "floor_z": [
+    28.6,
+    33.6,
+    38.2
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_MerchantHouse1"
+  },
+  {
+   "name": "Merchant house 2",
+   "kind": "house_rich",
+   "props": "table + hearth",
+   "rect": [
+    -554.09,
+    -536.24,
+    -310.95,
+    -299.22
+   ],
+   "front": "-x",
+   "floor_z": [
+    26.35,
+    31.35,
+    35.95
+   ],
+   "door_w": 2.4,
+   "door_h": 3.2,
+   "group": "SM_GB_City_Int_MerchantHouse2"
+  }
+ ],
+ "plots_from_plan": 295,
+ "plots_dropped": {
+  "landmark": 3,
+  "v1_sightline": 2
+ },
+ "buildings_inside_walls": 294,
+ "manor_court_z": 35.2,
+ "barracks_rect": [
+  -315.1,
+  -285.1,
+  -311.7,
+  -261.7
+ ],
+ "barracks_shift_m": 15.5,
+ "church_floor_z": 35.0,
+ "bell_chamber_z": 80.0
+}

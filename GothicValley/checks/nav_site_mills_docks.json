@@ -1,0 +1,51 @@
+{
+ "name": "site_mills_docks",
+ "cells": [
+  280,
+  690,
+  500
+ ],
+ "hulls": 1294,
+ "nodes": 195777,
+ "reached": 185159,
+ "seeds": [
+  [
+   -744.73,
+   -225.36,
+   2.2202699184417725,
+   true
+  ],
+  [
+   -719.57,
+   -465.82,
+   11.340195655822754,
+   true
+  ],
+  [
+   -760.0,
+   -300.0,
+   -0.3822895288467407,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Watermill",
+   "z": -0.48,
+   "floor_cells": 532,
+   "reached_cells": 468,
+   "reached": true,
+   "share": 0.88
+  },
+  {
+   "name": "Dock warehouse",
+   "z": 1.21,
+   "floor_cells": 1462,
+   "reached_cells": 1462,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

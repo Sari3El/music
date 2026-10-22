@@ -1,0 +1,71 @@
+{
+ "name": "site_cemetery",
+ "cells": [
+  300,
+  300,
+  400
+ ],
+ "hulls": 1294,
+ "nodes": 91636,
+ "reached": 87248,
+ "seeds": [
+  [
+   -96.94,
+   -375.51,
+   23.09010124206543,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Mortuary chapel",
+   "z": 23.83,
+   "floor_cells": 924,
+   "reached_cells": 879,
+   "reached": true,
+   "share": 0.95
+  },
+  {
+   "name": "Family mausoleum 1",
+   "z": 24.31,
+   "floor_cells": 70,
+   "reached_cells": 70,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Family mausoleum 2",
+   "z": 23.53,
+   "floor_cells": 77,
+   "reached_cells": 77,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Family mausoleum 3",
+   "z": 23.2,
+   "floor_cells": 70,
+   "reached_cells": 70,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Ossuary",
+   "z": 23.29,
+   "floor_cells": 72,
+   "reached_cells": 72,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Watchman's hut",
+   "z": 23.46,
+   "floor_cells": 44,
+   "reached_cells": 44,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

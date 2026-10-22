@@ -1,0 +1,236 @@
+{
+ "travel": [
+  {
+   "route": "Market square to North Gate",
+   "distance_m": 232,
+   "doc_m": 230,
+   "walk_min": 2.6,
+   "run_min": 0.6,
+   "horse_min": 0.3,
+   "run_le_6min": true
+  },
+  {
+   "route": "North Gate to castle gate by road",
+   "distance_m": 2101,
+   "doc_m": 2050,
+   "walk_min": 23.3,
+   "run_min": 5.8,
+   "horse_min": 2.9,
+   "run_le_6min": true
+  },
+  {
+   "route": "North Gate to castle gate by the stairs",
+   "distance_m": 1308,
+   "doc_m": 1270,
+   "walk_min": 14.5,
+   "run_min": 3.6,
+   "horse_min": 1.8,
+   "run_le_6min": true
+  },
+  {
+   "route": "East Gate to hamlet",
+   "distance_m": 900,
+   "doc_m": 890,
+   "walk_min": 10.0,
+   "run_min": 2.5,
+   "horse_min": 1.3,
+   "run_le_6min": true
+  },
+  {
+   "route": "West Gate to abbey ruin",
+   "distance_m": 895,
+   "doc_m": 890,
+   "walk_min": 9.9,
+   "run_min": 2.5,
+   "horse_min": 1.2,
+   "run_le_6min": true
+  },
+  {
+   "route": "East Gate to east pass (arrival)",
+   "distance_m": 1722,
+   "doc_m": 1710,
+   "walk_min": 19.1,
+   "run_min": 4.8,
+   "horse_min": 2.4,
+   "run_le_6min": true
+  }
+ ],
+ "core_rooms": [
+  {
+   "id": 1,
+   "name": "Great Hall",
+   "built": [
+    32,
+    20,
+    16.0
+   ],
+   "doc": [
+    32,
+    20,
+    16
+   ],
+   "ok": true
+  },
+  {
+   "id": 2,
+   "name": "Throne Room",
+   "built": [
+    45,
+    20,
+    20.0
+   ],
+   "doc": [
+    45,
+    20,
+    20
+   ],
+   "ok": true
+  },
+  {
+   "id": 3,
+   "name": "Banquet Hall",
+   "built": [
+    36,
+    14,
+    12.0
+   ],
+   "doc": [
+    36,
+    14,
+    12
+   ],
+   "ok": true
+  },
+  {
+   "id": 8,
+   "name": "Kitchen",
+   "built": [
+    16,
+    12,
+    8.0
+   ],
+   "doc": [
+    16,
+    12,
+    8
+   ],
+   "ok": true
+  },
+  {
+   "id": 4,
+   "name": "War Room",
+   "built": [
+    16,
+    12,
+    7.0
+   ],
+   "doc": [
+    16,
+    12,
+    7
+   ],
+   "ok": true
+  },
+  {
+   "id": 5,
+   "name": "Lord's Study",
+   "built": [
+    12,
+    9,
+    6.0
+   ],
+   "doc": [
+    12,
+    9,
+    6
+   ],
+   "ok": true
+  },
+  {
+   "id": 9,
+   "name": "Library",
+   "built": [
+    24,
+    14,
+    9.0
+   ],
+   "doc": [
+    24,
+    14,
+    9
+   ],
+   "ok": true
+  },
+  {
+   "id": 11,
+   "name": "Lord's Apartments",
+   "built": [
+    14,
+    10,
+    6.0
+   ],
+   "doc": [
+    14,
+    10,
+    6
+   ],
+   "ok": true
+  },
+  {
+   "id": 7,
+   "name": "Larder",
+   "built": [
+    18,
+    10,
+    5.0
+   ],
+   "doc": [
+    18,
+    10,
+    5
+   ],
+   "ok": true
+  },
+  {
+   "id": 10,
+   "name": "Crypt",
+   "built": [
+    26,
+    14,
+    6.0
+   ],
+   "doc": [
+    26,
+    14,
+    6
+   ],
+   "ok": true
+  },
+  {
+   "id": 6,
+   "name": "Dungeon",
+   "built": [
+    40,
+    24,
+    4.5
+   ],
+   "doc": "40 m corridor, 10 cells 3 x 3, guard room, interrogation room, pit cell",
+   "ok": true
+  },
+  {
+   "id": 12,
+   "name": "Chapel",
+   "built": [
+    32,
+    12,
+    15.0
+   ],
+   "doc": [
+    32,
+    12,
+    15
+   ],
+   "ok": true
+  }
+ ]
+}

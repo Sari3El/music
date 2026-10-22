@@ -1,0 +1,45 @@
+{
+ "name": "site_abbey",
+ "cells": [
+  220,
+  190,
+  400
+ ],
+ "hulls": 1294,
+ "nodes": 43420,
+ "reached": 37599,
+ "seeds": [
+  [
+   123.94,
+   -1192.81,
+   85.15016174316406,
+   true
+  ],
+  [
+   178.62,
+   -1191.02,
+   85.8999252319336,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Abbey nave (roofless)",
+   "z": 88.1,
+   "floor_cells": 1947,
+   "reached_cells": 1915,
+   "reached": true,
+   "share": 0.98
+  },
+  {
+   "name": "Abbey hidden reliquary",
+   "z": 83.1,
+   "floor_cells": 113,
+   "reached_cells": 15,
+   "reached": true,
+   "share": 0.13
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

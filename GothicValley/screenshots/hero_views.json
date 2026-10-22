@@ -1,0 +1,137 @@
+[
+ {
+  "id": "V1",
+  "name": "Market square",
+  "camera_used": [
+   -452,
+   -445,
+   35.51
+  ],
+  "look_at": [
+   781,
+   381,
+   279
+  ],
+  "file": "V1_Market_square.png"
+ },
+ {
+  "id": "V2",
+  "name": "Throne Room balcony",
+  "camera_used": [
+   623,
+   310,
+   206
+  ],
+  "look_at": [
+   -320,
+   -556,
+   80
+  ],
+  "file": "V2_Throne_Room_balcony.png"
+ },
+ {
+  "id": "V3",
+  "name": "Great Bridge",
+  "camera_used": [
+   742,
+   140,
+   203.6
+  ],
+  "look_at": [
+   742,
+   200,
+   214
+  ],
+  "file": "V3_Great_Bridge.png"
+ },
+ {
+  "id": "V4",
+  "name": "Great Hall portal",
+  "camera_used": [
+   684,
+   330,
+   206
+  ],
+  "look_at": [
+   623,
+   330,
+   210
+  ],
+  "file": "V4_Great_Hall_portal.png"
+ },
+ {
+  "id": "V5",
+  "name": "Church bell chamber",
+  "camera_used": [
+   -320,
+   -555,
+   81.7
+  ],
+  "look_at": [
+   781,
+   381,
+   279
+  ],
+  "file": "V5_Church_bell_chamber.png"
+ },
+ {
+  "id": "V6",
+  "name": "Third hairpin",
+  "camera_used": [
+   612,
+   90,
+   163
+  ],
+  "look_at": [
+   700,
+   230,
+   230
+  ],
+  "file": "V6_Third_hairpin.png"
+ },
+ {
+  "id": "V7",
+  "name": "East pass",
+  "camera_used": [
+   -300,
+   1400,
+   97
+  ],
+  "look_at": [
+   -450,
+   -460,
+   40
+  ],
+  "file": "V7_East_pass.png"
+ },
+ {
+  "id": "V8",
+  "name": "Abbey ruin at dusk",
+  "camera_used": [
+   150,
+   -1200,
+   90
+  ],
+  "look_at": [
+   720,
+   310,
+   240
+  ],
+  "file": "V8_Abbey_ruin_at_dusk.png"
+ },
+ {
+  "id": "V0",
+  "name": "Valley overview",
+  "camera_used": [
+   -1450,
+   -1650,
+   950
+  ],
+  "look_at": [
+   200,
+   -100,
+   60
+  ],
+  "file": "V0_Valley_overview.png"
+ }
+]

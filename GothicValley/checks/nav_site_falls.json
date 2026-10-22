@@ -1,0 +1,37 @@
+{
+ "name": "site_falls",
+ "cells": [
+  190,
+  160,
+  800
+ ],
+ "hulls": 1294,
+ "nodes": 23304,
+ "reached": 17356,
+ "seeds": [
+  [
+   1150.0,
+   -1150.0,
+   103.99163055419922,
+   true
+  ],
+  [
+   1185.0,
+   -1138.0,
+   62.69609069824219,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Cave behind the falls",
+   "z": 62.0,
+   "floor_cells": 260,
+   "reached_cells": 260,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

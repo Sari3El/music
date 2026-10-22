@@ -1,0 +1,39 @@
+{
+ "name": "site_camp",
+ "cells": [
+  240,
+  240,
+  500
+ ],
+ "hulls": 1294,
+ "nodes": 57876,
+ "reached": 56259,
+ "seeds": [
+  [
+   380.76,
+   -620.32,
+   83.14055633544922,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Log cabin 1",
+   "z": 83.2,
+   "floor_cells": 107,
+   "reached_cells": 107,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Log cabin 2",
+   "z": 83.2,
+   "floor_cells": 98,
+   "reached_cells": 98,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

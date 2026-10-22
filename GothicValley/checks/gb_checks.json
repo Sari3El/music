@@ -1,0 +1,63 @@
+{
+ "groups": 86,
+ "prims": 12932,
+ "tris": 161794,
+ "hulls": 8044,
+ "issues": [],
+ "per_file": {
+  "castle": {
+   "groups": 15,
+   "tris": 37244
+  },
+  "city": {
+   "groups": 42,
+   "tris": 85130
+  },
+  "sites": {
+   "groups": 29,
+   "tris": 39420
+  }
+ },
+ "rooms": 138,
+ "rooms_under_4m": [],
+ "enterable_interiors": 28,
+ "enterable_list": [
+  "Great Church",
+  "Noble Manor",
+  "Town hall",
+  "Guild hall",
+  "City Watch barracks",
+  "Parish house",
+  "Main inn",
+  "Tavern at the East Gate",
+  "Tavern in the River Quarter",
+  "Blacksmith",
+  "Apothecary",
+  "Bakery",
+  "Butcher",
+  "Cloth merchant and tailor",
+  "General store",
+  "Bathhouse",
+  "Barber-surgeon",
+  "Scribe and notary",
+  "Poor house 1",
+  "Poor house 2",
+  "Artisan house 1",
+  "Artisan house 2",
+  "Merchant house 1",
+  "Merchant house 2",
+  "Mortuary chapel",
+  "Faubourg stables",
+  "Watermill",
+  "Dock warehouse"
+ ],
+ "city_buildings_inside_walls": 294,
+ "checks": {
+  "interiors >= 25": true,
+  "city buildings 260-320": true,
+  "city towers 16": true,
+  "ceilings >= 4 m": true,
+  "castle stairs <= 28 deg": true,
+  "no stray primitives": true
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "name": "site_border",
+ "cells": [
+  360,
+  290,
+  600
+ ],
+ "hulls": 1294,
+ "nodes": 104484,
+ "reached": 103746,
+ "seeds": [
+  [
+   -301.47,
+   1436.24,
+   96.4094009399414,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Border guard hut",
+   "z": 97.23,
+   "floor_cells": 56,
+   "reached_cells": 56,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

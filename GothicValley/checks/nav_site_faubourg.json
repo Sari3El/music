@@ -1,0 +1,37 @@
+{
+ "name": "site_faubourg",
+ "cells": [
+  480,
+  1080,
+  500
+ ],
+ "hulls": 1294,
+ "nodes": 522773,
+ "reached": 483302,
+ "seeds": [
+  [
+   -428.72,
+   78.99,
+   13.870165824890137,
+   true
+  ],
+  [
+   -479.99,
+   -139.18,
+   21.63994598388672,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Faubourg stables",
+   "z": 21.34,
+   "floor_cells": 462,
+   "reached_cells": 456,
+   "reached": true,
+   "share": 0.99
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

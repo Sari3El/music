@@ -1,0 +1,22 @@
+{
+ "name": "site_west_bridge",
+ "cells": [
+  160,
+  240,
+  500
+ ],
+ "hulls": 1294,
+ "nodes": 39572,
+ "reached": 37420,
+ "seeds": [
+  [
+   -452.1,
+   -849.97,
+   0.40875083208084106,
+   true
+  ]
+ ],
+ "rooms": [],
+ "probes": {},
+ "leaks": []
+}

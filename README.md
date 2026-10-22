@@ -17,6 +17,7 @@ Ce mod ajoute :
 
 > Ce dépôt contient aussi deux autres mods, sans aucun lien avec celui-ci : la **Classe Phénix**
 > ([Phenix/](Phenix/README.md)) et la **Classe Chronomancien** ([Chronomancien/](Chronomancien/README.md)).
+> Il contient également la carte Unreal **Gothic Valley** ([GothicValley/](GothicValley/README.md)), un projet séparé.
 
 Le détail de chaque capacité, et ce qui diffère du cahier des charges, est dans
 [docs/CONCEPTION.md](docs/CONCEPTION.md).

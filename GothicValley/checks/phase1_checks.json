@@ -1,0 +1,377 @@
+{
+ "poi": [
+  {
+   "id": 1,
+   "name": "Castle",
+   "target": 204,
+   "terrain": 203.9,
+   "delta": -0.1,
+   "ok": true
+  },
+  {
+   "id": 2,
+   "name": "Barbican and Great Bridge",
+   "target": 200,
+   "terrain": 199.1,
+   "delta": -0.9,
+   "ok": true
+  },
+  {
+   "id": 3,
+   "name": "Serpentine Road and Castle Stairs",
+   "target": 142,
+   "terrain": 141.5,
+   "delta": -0.5,
+   "ok": true
+  },
+  {
+   "id": 4,
+   "name": "Watchtower ruin",
+   "target": 67,
+   "terrain": 66.5,
+   "delta": -0.5,
+   "ok": true
+  },
+  {
+   "id": 5,
+   "name": "North Cemetery",
+   "target": 23,
+   "terrain": 23.1,
+   "delta": 0.1,
+   "ok": true
+  },
+  {
+   "id": 6,
+   "name": "Walled City",
+   "target": 34,
+   "terrain": 34.0,
+   "delta": 0.0,
+   "ok": true
+  },
+  {
+   "id": 7,
+   "name": "Great Church",
+   "target": 35,
+   "terrain": 35.4,
+   "delta": 0.4,
+   "ok": true
+  },
+  {
+   "id": 8,
+   "name": "Noble Manor",
+   "target": 34,
+   "terrain": 33.8,
+   "delta": -0.2,
+   "ok": true
+  },
+  {
+   "id": 9,
+   "name": "West Bridge",
+   "target": -1,
+   "terrain": 1.9,
+   "delta": 2.9,
+   "ok": true
+  },
+  {
+   "id": 10,
+   "name": "Gallows Hill and crossroads",
+   "target": 9,
+   "terrain": 4.3,
+   "delta": -4.7,
+   "ok": true
+  },
+  {
+   "id": 11,
+   "name": "Abbey ruin",
+   "target": 88,
+   "terrain": 88.0,
+   "delta": 0.0,
+   "ok": true
+  },
+  {
+   "id": 12,
+   "name": "Woodcutters' camp",
+   "target": 83,
+   "terrain": 83.0,
+   "delta": -0.0,
+   "ok": true
+  },
+  {
+   "id": 13,
+   "name": "Stone circle",
+   "target": 119,
+   "terrain": 119.0,
+   "delta": 0.0,
+   "ok": true
+  },
+  {
+   "id": 14,
+   "name": "River falls",
+   "target": 82,
+   "terrain": 82,
+   "delta": 0,
+   "ok": true
+  },
+  {
+   "id": 15,
+   "name": "East Faubourg",
+   "target": 19,
+   "terrain": 19.0,
+   "delta": 0.0,
+   "ok": true
+  },
+  {
+   "id": 16,
+   "name": "Watermills and tannery",
+   "target": -4,
+   "terrain": -2.9,
+   "delta": 1.1,
+   "ok": true
+  },
+  {
+   "id": 17,
+   "name": "Farming hamlet",
+   "target": 7,
+   "terrain": 7.1,
+   "delta": 0.1,
+   "ok": true
+  },
+  {
+   "id": 18,
+   "name": "Quarry",
+   "target": 150,
+   "terrain": 150.0,
+   "delta": -0.0,
+   "ok": true
+  },
+  {
+   "id": 19,
+   "name": "East Pass border post",
+   "target": 95,
+   "terrain": 96.6,
+   "delta": 1.6,
+   "ok": true
+  },
+  {
+   "id": 20,
+   "name": "West Pass",
+   "target": 35,
+   "terrain": 35.0,
+   "delta": 0.0,
+   "ok": true
+  },
+  {
+   "id": 21,
+   "name": "The Fen",
+   "target": 4,
+   "terrain": 3.4,
+   "delta": -0.6,
+   "ok": true
+  },
+  {
+   "id": 22,
+   "name": "River gorge",
+   "target": -21,
+   "terrain": -20.0,
+   "delta": 1.0,
+   "ok": true
+  }
+ ],
+ "roads": [
+  {
+   "id": "castle_road_lower",
+   "type": "cart road",
+   "length": 644.0,
+   "max_grade_pct": 16.1,
+   "p95_grade_pct": 12.0,
+   "profile_max_grade_pct": 12.0,
+   "rule_pct": 10.0,
+   "bed_dev_max_m": 0.71,
+   "ok": false
+  },
+  {
+   "id": "serpentine",
+   "type": "cart road",
+   "length": 1335.0,
+   "max_grade_pct": 12.9,
+   "p95_grade_pct": 12.1,
+   "profile_max_grade_pct": 12.0,
+   "rule_pct": 12.0,
+   "bed_dev_max_m": 0.02,
+   "ok": true
+  },
+  {
+   "id": "castle_stairs",
+   "type": "stairs",
+   "length": 526.0,
+   "max_grade_pct": 56.9,
+   "p95_grade_pct": 48.1,
+   "profile_max_grade_pct": 48.8,
+   "rule_pct": 53.2,
+   "bed_dev_max_m": 2.9,
+   "ok": true
+  },
+  {
+   "id": "great_bridge",
+   "type": "bridge",
+   "length": 100.0,
+   "note": "span over the ravine (greybox mesh)"
+  },
+  {
+   "id": "west_road",
+   "type": "cart road",
+   "length": 782.0,
+   "max_grade_pct": 17.9,
+   "p95_grade_pct": 17.8,
+   "profile_max_grade_pct": 17.9,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.12,
+   "ok": true
+  },
+  {
+   "id": "trade_road",
+   "type": "cart road",
+   "length": 1716.0,
+   "max_grade_pct": 14.0,
+   "p95_grade_pct": 14.0,
+   "profile_max_grade_pct": 14.0,
+   "rule_pct": 10.0,
+   "bed_dev_max_m": 0.46,
+   "ok": false
+  },
+  {
+   "id": "abbey_road",
+   "type": "track",
+   "length": 587.0,
+   "max_grade_pct": 18.2,
+   "p95_grade_pct": 18.2,
+   "profile_max_grade_pct": 18.2,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.18,
+   "ok": true
+  },
+  {
+   "id": "fen_path",
+   "type": "footpath",
+   "length": 750.0,
+   "max_grade_pct": 7.0,
+   "p95_grade_pct": 7.0,
+   "profile_max_grade_pct": 7.0,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.01,
+   "ok": true
+  },
+  {
+   "id": "forest_track",
+   "type": "track",
+   "length": 984.0,
+   "max_grade_pct": 17.5,
+   "p95_grade_pct": 17.5,
+   "profile_max_grade_pct": 17.4,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.02,
+   "ok": true
+  },
+  {
+   "id": "quarry_road",
+   "type": "track",
+   "length": 590.0,
+   "max_grade_pct": 33.8,
+   "p95_grade_pct": 33.8,
+   "profile_max_grade_pct": 33.8,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.04,
+   "ok": true
+  },
+  {
+   "id": "mill_track",
+   "type": "track",
+   "length": 348.0,
+   "max_grade_pct": 11.5,
+   "p95_grade_pct": 11.4,
+   "profile_max_grade_pct": 11.4,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.01,
+   "ok": true
+  },
+  {
+   "id": "dock_lane",
+   "type": "track",
+   "length": 69.0,
+   "max_grade_pct": 11.7,
+   "p95_grade_pct": 11.7,
+   "profile_max_grade_pct": 11.6,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.02,
+   "ok": true
+  },
+  {
+   "id": "falls_path",
+   "type": "footpath",
+   "length": 1018.0,
+   "max_grade_pct": 7.1,
+   "p95_grade_pct": 7.0,
+   "profile_max_grade_pct": 7.0,
+   "rule_pct": 35.0,
+   "bed_dev_max_m": 0.01,
+   "ok": true
+  }
+ ],
+ "features": {
+  "ravine_bed": {
+   "max_excess_m": 0.0,
+   "at": [
+    880.0,
+    146.0
+   ],
+   "ok": true
+  },
+  "crag_top": {
+   "z": 204,
+   "flat_tolerance_m": 1.0,
+   "extent_x": [
+    614,
+    830
+   ],
+   "extent_y": [
+    188,
+    420
+   ],
+   "size_m": [
+    216,
+    232
+   ],
+   "spec": "about 240 x 220 m"
+  },
+  "cliff_south_m": 51.3,
+  "cliff_east_m": 88.1,
+  "saddle_north_z": 171.3,
+  "terrace_z": 199.0,
+  "terrace_flank_slope_deg": 25.0,
+  "ravine_floor_at_bridge_z": 108.3,
+  "ravine_depth_under_bridge_m": 91.7,
+  "ravine_wall_max_deg": 75.0,
+  "city_crown_z": 35.4,
+  "market_square_z": 33.9,
+  "fen_basin_z": 3.4,
+  "fen_rim_min_z": 8.8,
+  "relief_min_max": [
+   -26.7,
+   440.0
+  ],
+  "rock_over_45deg_pct": 7.1,
+  "river_bank_exit_max_gap_m": {
+   "1": 13.8,
+   "-1": 13.8
+  }
+ },
+ "pass": true,
+ "falls": {
+  "lip": 116.0,
+  "lip_target": 116,
+  "pool": 56.0,
+  "foot_bed": 56.0,
+  "base_target": 60,
+  "ok": true
+ }
+}

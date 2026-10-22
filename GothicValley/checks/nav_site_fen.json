@@ -1,0 +1,31 @@
+{
+ "name": "site_fen",
+ "cells": [
+  680,
+  600,
+  400
+ ],
+ "hulls": 1294,
+ "nodes": 410123,
+ "reached": 409788,
+ "seeds": [
+  [
+   -1119.86,
+   -1217.53,
+   8.10009479522705,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Fen hut on stilts",
+   "z": 6.41150131225586,
+   "floor_cells": 100,
+   "reached_cells": 100,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

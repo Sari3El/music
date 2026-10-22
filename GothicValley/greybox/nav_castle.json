@@ -1,0 +1,182 @@
+{
+ "name": "castle",
+ "bbox": [
+  560,
+  832,
+  60,
+  432,
+  100,
+  290
+ ],
+ "groups": [
+  "greybox/castle_groups.json"
+ ],
+ "meta": [
+  "greybox/castle_meta.json"
+ ],
+ "exclude": [
+  "SM_GB_Castle_Portcullis",
+  "SM_GB_Castle_IronGate",
+  "SM_GB_Castle_TunnelExitDoor",
+  "SM_GB_Castle_HiddenPanel",
+  "SM_GB_Castle_RobingPanel"
+ ],
+ "seeds": [
+  [
+   726,
+   232,
+   204
+  ],
+  [
+   742,
+   66,
+   199
+  ]
+ ],
+ "probes": {
+  "tunnel_exit_apron": [
+   568,
+   384,
+   117.8
+  ],
+  "eyrie": [
+   776,
+   376,
+   269
+  ],
+  "keep_bridge_level": [
+   775,
+   385,
+   226
+  ],
+  "covered_bridge": [
+   720,
+   398.4,
+   226
+  ],
+  "balcony": [
+   615.5,
+   312.0,
+   203.2
+  ],
+  "library_mezzanine": [
+   672.3,
+   380,
+   222.4
+  ],
+  "throne_dais": [
+   625.5,
+   330,
+   205.4
+  ],
+  "drawbridge": [
+   742,
+   187,
+   204
+  ],
+  "great_bridge_mid": [
+   742,
+   140,
+   201.8
+  ],
+  "tunnel_spiral_bottom": [
+   630,
+   389.9,
+   123.6
+  ],
+  "dungeon_cell": [
+   692,
+   222.5,
+   188
+  ],
+  "chapel_altar": [
+   778,
+   325,
+   205
+  ],
+  "tower_0_walk": [
+   820.6,
+   355.0,
+   213.0
+  ],
+  "tower_1_walk": [
+   803.1,
+   393.1,
+   213.0
+  ],
+  "tower_2_walk": [
+   758.9,
+   416.6,
+   213.0
+  ],
+  "tower_3_walk": [
+   711.3,
+   415.1,
+   213.0
+  ],
+  "tower_4_walk": [
+   662.4,
+   415.8,
+   213.0
+  ],
+  "tower_5_walk": [
+   621.8,
+   229.8,
+   213.0
+  ],
+  "tower_6_walk": [
+   662.6,
+   200.6,
+   213.0
+  ],
+  "tower_7_walk": [
+   710.9,
+   191.7,
+   221.0
+  ],
+  "tower_8_walk": [
+   792.8,
+   221.6,
+   221.0
+  ],
+  "tower_9_walk": [
+   814.1,
+   255.3,
+   221.0
+  ]
+ },
+ "levels": {
+  "Lm2": [
+   186,
+   193
+  ],
+  "Lm1": [
+   194,
+   201
+  ],
+  "L0": [
+   198,
+   212
+  ],
+  "L1": [
+   215,
+   224
+  ],
+  "L2": [
+   224.5,
+   233
+  ],
+  "tunnel": [
+   115,
+   130
+  ],
+  "upper": [
+   233,
+   290
+  ],
+  "walk": [
+   208,
+   224
+  ]
+ }
+}

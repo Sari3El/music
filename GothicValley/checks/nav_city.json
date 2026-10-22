@@ -1,0 +1,922 @@
+{
+ "name": "city",
+ "cells": [
+  1020,
+  1300,
+  800
+ ],
+ "hulls": 4077,
+ "nodes": 1277886,
+ "reached": 946682,
+ "seeds": [
+  [
+   -452,
+   -445,
+   33.9,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Church nave (hall)",
+   "z": 35.0,
+   "floor_cells": 4157,
+   "reached_cells": 4141,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Church choir",
+   "z": 35.0,
+   "floor_cells": 2199,
+   "reached_cells": 1842,
+   "reached": true,
+   "share": 0.84
+  },
+  {
+   "name": "Sacristy",
+   "z": 35.0,
+   "floor_cells": 194,
+   "reached_cells": 194,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Church crypt",
+   "z": 30.0,
+   "floor_cells": 1693,
+   "reached_cells": 1553,
+   "reached": true,
+   "share": 0.92
+  },
+  {
+   "name": "Church tower hall",
+   "z": 35.0,
+   "floor_cells": 559,
+   "reached_cells": 559,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Bell chamber",
+   "z": 80.0,
+   "floor_cells": 505,
+   "reached_cells": 385,
+   "reached": true,
+   "share": 0.76
+  },
+  {
+   "name": "Church south porch",
+   "z": 35.0,
+   "floor_cells": 74,
+   "reached_cells": 74,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor gatehouse",
+   "z": 35.2,
+   "floor_cells": 232,
+   "reached_cells": 232,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor entrance hall",
+   "z": 35.2,
+   "floor_cells": 562,
+   "reached_cells": 562,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor great chamber",
+   "z": 35.2,
+   "floor_cells": 568,
+   "reached_cells": 456,
+   "reached": true,
+   "share": 0.8
+  },
+  {
+   "name": "Manor ground corridor",
+   "z": 35.2,
+   "floor_cells": 516,
+   "reached_cells": 516,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor guard room",
+   "z": 35.2,
+   "floor_cells": 356,
+   "reached_cells": 356,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor lobby",
+   "z": 35.2,
+   "floor_cells": 336,
+   "reached_cells": 336,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor muniment room",
+   "z": 35.2,
+   "floor_cells": 200,
+   "reached_cells": 200,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor dining room",
+   "z": 35.2,
+   "floor_cells": 776,
+   "reached_cells": 776,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor kitchen",
+   "z": 35.2,
+   "floor_cells": 984,
+   "reached_cells": 891,
+   "reached": true,
+   "share": 0.91
+  },
+  {
+   "name": "Manor cellar strongroom",
+   "z": 30.200000000000003,
+   "floor_cells": 1014,
+   "reached_cells": 954,
+   "reached": true,
+   "share": 0.94
+  },
+  {
+   "name": "Manor study (city records)",
+   "z": 40.2,
+   "floor_cells": 516,
+   "reached_cells": 478,
+   "reached": true,
+   "share": 0.93
+  },
+  {
+   "name": "Manor bedchamber (lord)",
+   "z": 40.2,
+   "floor_cells": 1016,
+   "reached_cells": 1016,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor bedchamber (lady)",
+   "z": 40.2,
+   "floor_cells": 624,
+   "reached_cells": 624,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor upper hall",
+   "z": 40.2,
+   "floor_cells": 332,
+   "reached_cells": 332,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor solar",
+   "z": 40.2,
+   "floor_cells": 772,
+   "reached_cells": 772,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor tower base",
+   "z": 35.2,
+   "floor_cells": 177,
+   "reached_cells": 177,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor tower top room",
+   "z": 55.2,
+   "floor_cells": 132,
+   "reached_cells": 116,
+   "reached": true,
+   "share": 0.88
+  },
+  {
+   "name": "Manor stables",
+   "z": 35.2,
+   "floor_cells": 1560,
+   "reached_cells": 1560,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Manor private chapel",
+   "z": 35.2,
+   "floor_cells": 244,
+   "reached_cells": 244,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Town hall: archive",
+   "z": 34.1,
+   "floor_cells": 1361,
+   "reached_cells": 1361,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Town hall: holding cells",
+   "z": 34.1,
+   "floor_cells": 1152,
+   "reached_cells": 1152,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Town hall: council chamber",
+   "z": 39.4,
+   "floor_cells": 2688,
+   "reached_cells": 2616,
+   "reached": true,
+   "share": 0.97
+  },
+  {
+   "name": "Town hall: clock tower base",
+   "z": 34.1,
+   "floor_cells": 260,
+   "reached_cells": 260,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Guild hall",
+   "z": 32.7,
+   "floor_cells": 2648,
+   "reached_cells": 2180,
+   "reached": true,
+   "share": 0.82
+  },
+  {
+   "name": "Watch barracks: guard hall",
+   "z": 30.5,
+   "floor_cells": 2324,
+   "reached_cells": 2324,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Watch barracks: dormitory",
+   "z": 30.5,
+   "floor_cells": 1578,
+   "reached_cells": 1578,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Watch barracks: lock-up",
+   "z": 30.5,
+   "floor_cells": 956,
+   "reached_cells": 956,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Parish house: ground floor",
+   "z": 34.41,
+   "floor_cells": 706,
+   "reached_cells": 610,
+   "reached": true,
+   "share": 0.86
+  },
+  {
+   "name": "Parish house: floor 1",
+   "z": 39.41,
+   "floor_cells": 683,
+   "reached_cells": 662,
+   "reached": true,
+   "share": 0.97
+  },
+  {
+   "name": "Main inn: ground floor",
+   "z": 34.04,
+   "floor_cells": 628,
+   "reached_cells": 588,
+   "reached": true,
+   "share": 0.94
+  },
+  {
+   "name": "Main inn: floor 1",
+   "z": 39.04,
+   "floor_cells": 498,
+   "reached_cells": 420,
+   "reached": true,
+   "share": 0.84
+  },
+  {
+   "name": "Main inn: bedroom 1",
+   "z": 39.04,
+   "floor_cells": 75,
+   "reached_cells": 75,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Main inn: bedroom 2",
+   "z": 39.04,
+   "floor_cells": 90,
+   "reached_cells": 90,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Main inn: bedroom 3",
+   "z": 39.04,
+   "floor_cells": 75,
+   "reached_cells": 75,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Main inn: floor 2",
+   "z": 43.64,
+   "floor_cells": 514,
+   "reached_cells": 489,
+   "reached": true,
+   "share": 0.95
+  },
+  {
+   "name": "Main inn: bedroom 4",
+   "z": 43.64,
+   "floor_cells": 75,
+   "reached_cells": 75,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Main inn: bedroom 5",
+   "z": 43.64,
+   "floor_cells": 90,
+   "reached_cells": 90,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Main inn: bedroom 6",
+   "z": 43.64,
+   "floor_cells": 75,
+   "reached_cells": 75,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Tavern at the East Gate: ground floor",
+   "z": 25.92,
+   "floor_cells": 509,
+   "reached_cells": 443,
+   "reached": true,
+   "share": 0.87
+  },
+  {
+   "name": "Tavern at the East Gate: floor 1",
+   "z": 30.92,
+   "floor_cells": 481,
+   "reached_cells": 471,
+   "reached": true,
+   "share": 0.98
+  },
+  {
+   "name": "Tavern in the River Quarter: ground floor",
+   "z": 18.35,
+   "floor_cells": 578,
+   "reached_cells": 555,
+   "reached": true,
+   "share": 0.96
+  },
+  {
+   "name": "Tavern in the River Quarter: floor 1",
+   "z": 23.35,
+   "floor_cells": 583,
+   "reached_cells": 561,
+   "reached": true,
+   "share": 0.96
+  },
+  {
+   "name": "Blacksmith: ground floor",
+   "z": 27.55,
+   "floor_cells": 435,
+   "reached_cells": 329,
+   "reached": true,
+   "share": 0.76
+  },
+  {
+   "name": "Blacksmith: floor 1",
+   "z": 32.55,
+   "floor_cells": 398,
+   "reached_cells": 387,
+   "reached": true,
+   "share": 0.97
+  },
+  {
+   "name": "Apothecary: ground floor",
+   "z": 34.05,
+   "floor_cells": 461,
+   "reached_cells": 386,
+   "reached": true,
+   "share": 0.84
+  },
+  {
+   "name": "Apothecary: floor 1",
+   "z": 39.05,
+   "floor_cells": 422,
+   "reached_cells": 413,
+   "reached": true,
+   "share": 0.98
+  },
+  {
+   "name": "Bakery: ground floor",
+   "z": 30.54,
+   "floor_cells": 373,
+   "reached_cells": 289,
+   "reached": true,
+   "share": 0.77
+  },
+  {
+   "name": "Bakery: floor 1",
+   "z": 35.54,
+   "floor_cells": 414,
+   "reached_cells": 390,
+   "reached": true,
+   "share": 0.94
+  },
+  {
+   "name": "Butcher: ground floor",
+   "z": 27.32,
+   "floor_cells": 476,
+   "reached_cells": 396,
+   "reached": true,
+   "share": 0.83
+  },
+  {
+   "name": "Butcher: floor 1",
+   "z": 32.32,
+   "floor_cells": 452,
+   "reached_cells": 430,
+   "reached": true,
+   "share": 0.95
+  },
+  {
+   "name": "Cloth merchant and tailor: ground floor",
+   "z": 31.65,
+   "floor_cells": 642,
+   "reached_cells": 564,
+   "reached": true,
+   "share": 0.88
+  },
+  {
+   "name": "Cloth merchant and tailor: floor 1",
+   "z": 36.65,
+   "floor_cells": 617,
+   "reached_cells": 596,
+   "reached": true,
+   "share": 0.97
+  },
+  {
+   "name": "General store: ground floor",
+   "z": 31.86,
+   "floor_cells": 545,
+   "reached_cells": 479,
+   "reached": true,
+   "share": 0.88
+  },
+  {
+   "name": "General store: floor 1",
+   "z": 36.86,
+   "floor_cells": 517,
+   "reached_cells": 511,
+   "reached": true,
+   "share": 0.99
+  },
+  {
+   "name": "Bathhouse: ground floor",
+   "z": 22.69,
+   "floor_cells": 1339,
+   "reached_cells": 1054,
+   "reached": true,
+   "share": 0.79
+  },
+  {
+   "name": "Bathhouse: floor 1",
+   "z": 27.69,
+   "floor_cells": 1313,
+   "reached_cells": 1307,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Barber-surgeon: ground floor",
+   "z": 30.44,
+   "floor_cells": 455,
+   "reached_cells": 333,
+   "reached": true,
+   "share": 0.73
+  },
+  {
+   "name": "Barber-surgeon: floor 1",
+   "z": 35.44,
+   "floor_cells": 429,
+   "reached_cells": 423,
+   "reached": true,
+   "share": 0.99
+  },
+  {
+   "name": "Scribe and notary: ground floor",
+   "z": 30.51,
+   "floor_cells": 482,
+   "reached_cells": 426,
+   "reached": true,
+   "share": 0.88
+  },
+  {
+   "name": "Scribe and notary: floor 1",
+   "z": 35.510000000000005,
+   "floor_cells": 457,
+   "reached_cells": 432,
+   "reached": true,
+   "share": 0.95
+  },
+  {
+   "name": "Poor house 1: ground floor",
+   "z": 32.19,
+   "floor_cells": 454,
+   "reached_cells": 410,
+   "reached": true,
+   "share": 0.9
+  },
+  {
+   "name": "Poor house 1: floor 1",
+   "z": 37.19,
+   "floor_cells": 430,
+   "reached_cells": 406,
+   "reached": true,
+   "share": 0.94
+  },
+  {
+   "name": "Poor house 2: ground floor",
+   "z": 31.08,
+   "floor_cells": 576,
+   "reached_cells": 516,
+   "reached": true,
+   "share": 0.9
+  },
+  {
+   "name": "Poor house 2: floor 1",
+   "z": 36.08,
+   "floor_cells": 543,
+   "reached_cells": 535,
+   "reached": true,
+   "share": 0.99
+  },
+  {
+   "name": "Artisan house 1: ground floor",
+   "z": 22.04,
+   "floor_cells": 598,
+   "reached_cells": 558,
+   "reached": true,
+   "share": 0.93
+  },
+  {
+   "name": "Artisan house 1: floor 1",
+   "z": 27.04,
+   "floor_cells": 586,
+   "reached_cells": 565,
+   "reached": true,
+   "share": 0.96
+  },
+  {
+   "name": "Artisan house 2: ground floor",
+   "z": 20.66,
+   "floor_cells": 485,
+   "reached_cells": 429,
+   "reached": true,
+   "share": 0.88
+  },
+  {
+   "name": "Artisan house 2: floor 1",
+   "z": 25.66,
+   "floor_cells": 459,
+   "reached_cells": 441,
+   "reached": true,
+   "share": 0.96
+  },
+  {
+   "name": "Merchant house 1: ground floor",
+   "z": 28.6,
+   "floor_cells": 544,
+   "reached_cells": 544,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Merchant house 1: floor 1",
+   "z": 33.6,
+   "floor_cells": 491,
+   "reached_cells": 408,
+   "reached": true,
+   "share": 0.83
+  },
+  {
+   "name": "Merchant house 1: floor 2",
+   "z": 38.2,
+   "floor_cells": 516,
+   "reached_cells": 491,
+   "reached": true,
+   "share": 0.95
+  },
+  {
+   "name": "Merchant house 2: ground floor",
+   "z": 26.35,
+   "floor_cells": 589,
+   "reached_cells": 589,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Merchant house 2: floor 1",
+   "z": 31.35,
+   "floor_cells": 545,
+   "reached_cells": 468,
+   "reached": true,
+   "share": 0.86
+  },
+  {
+   "name": "Merchant house 2: floor 2",
+   "z": 35.95,
+   "floor_cells": 566,
+   "reached_cells": 541,
+   "reached": true,
+   "share": 0.96
+  }
+ ],
+ "probes": {
+  "bell_chamber": {
+   "at": [
+    -316.0,
+    -552.0,
+    80.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 80.0
+  },
+  "organ_loft": {
+   "at": [
+    -320.0,
+    -546.0,
+    44.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 44.0
+  },
+  "church_crypt": {
+   "at": [
+    -324.0,
+    -486.0,
+    30.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 30.0
+  },
+  "manor_tower_top": {
+   "at": [
+    -284.0,
+    -413.0,
+    55.2
+   ],
+   "found": true,
+   "reached": true,
+   "z": 55.2
+  },
+  "manor_garden_terrace": {
+   "at": [
+    -284.6,
+    -340.0,
+    35.800000000000004
+   ],
+   "found": true,
+   "reached": true,
+   "z": 35.8
+  },
+  "outside_north_gate": {
+   "at": [
+    -200.0,
+    -440.0,
+    30.4
+   ],
+   "found": true,
+   "reached": true,
+   "z": 30.4
+  },
+  "outside_east_gate": {
+   "at": [
+    -450.0,
+    -140.0,
+    22.99991798400879
+   ],
+   "found": true,
+   "reached": true,
+   "z": 23.0
+  },
+  "outside_west_gate": {
+   "at": [
+    -450.0,
+    -780.0,
+    20.42153549194336
+   ],
+   "found": true,
+   "reached": true,
+   "z": 20.4
+  },
+  "outside_water_gate": {
+   "at": [
+    -700.0,
+    -466.0,
+    12.9
+   ],
+   "found": true,
+   "reached": true,
+   "z": 12.4
+  },
+  "wall_tower_0": {
+   "at": [
+    -225.4,
+    -389.8,
+    41.18
+   ],
+   "found": true,
+   "reached": true,
+   "z": 41.2
+  },
+  "wall_tower_1": {
+   "at": [
+    -253.0,
+    -302.8,
+    39.21
+   ],
+   "found": true,
+   "reached": true,
+   "z": 39.2
+  },
+  "wall_tower_2": {
+   "at": [
+    -299.9,
+    -231.2,
+    37.18
+   ],
+   "found": true,
+   "reached": true,
+   "z": 37.2
+  },
+  "wall_tower_3": {
+   "at": [
+    -361.5,
+    -182.0,
+    34.67
+   ],
+   "found": true,
+   "reached": true,
+   "z": 34.7
+  },
+  "wall_tower_4": {
+   "at": [
+    -512.8,
+    -170.3,
+    32.34
+   ],
+   "found": true,
+   "reached": true,
+   "z": 32.3
+  },
+  "wall_tower_5": {
+   "at": [
+    -578.4,
+    -209.8,
+    30.99
+   ],
+   "found": true,
+   "reached": true,
+   "z": 31.0
+  },
+  "wall_tower_6": {
+   "at": [
+    -631.5,
+    -273.8,
+    29.47
+   ],
+   "found": true,
+   "reached": true,
+   "z": 29.5
+  },
+  "wall_tower_7": {
+   "at": [
+    -666.7,
+    -355.9,
+    27.9
+   ],
+   "found": true,
+   "reached": true,
+   "z": 27.9
+  },
+  "wall_tower_8": {
+   "at": [
+    -676.6,
+    -518.7,
+    25.99
+   ],
+   "found": true,
+   "reached": true,
+   "z": 26.0
+  },
+  "wall_tower_9": {
+   "at": [
+    -651.6,
+    -607.0,
+    26.07
+   ],
+   "found": true,
+   "reached": true,
+   "z": 26.1
+  },
+  "wall_tower_10": {
+   "at": [
+    -606.9,
+    -680.9,
+    27.36
+   ],
+   "found": true,
+   "reached": true,
+   "z": 27.4
+  },
+  "wall_tower_11": {
+   "at": [
+    -546.8,
+    -733.3,
+    29.84
+   ],
+   "found": true,
+   "reached": true,
+   "z": 29.9
+  },
+  "wall_tower_12": {
+   "at": [
+    -396.0,
+    -752.7,
+    37.23
+   ],
+   "found": true,
+   "reached": true,
+   "z": 37.2
+  },
+  "wall_tower_13": {
+   "at": [
+    -329.2,
+    -716.6,
+    40.35
+   ],
+   "found": true,
+   "reached": true,
+   "z": 40.4
+  },
+  "wall_tower_14": {
+   "at": [
+    -274.3,
+    -655.4,
+    42.43
+   ],
+   "found": true,
+   "reached": true,
+   "z": 42.4
+  },
+  "wall_tower_15": {
+   "at": [
+    -236.6,
+    -575.1,
+    43.19
+   ],
+   "found": true,
+   "reached": true,
+   "z": 43.2
+  }
+ },
+ "leaks": []
+}

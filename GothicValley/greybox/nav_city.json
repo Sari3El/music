@@ -1,0 +1,178 @@
+{
+ "name": "city",
+ "bbox": [
+  -705,
+  -195,
+  -785,
+  -135,
+  10,
+  90
+ ],
+ "groups": [
+  "greybox/city_groups.json"
+ ],
+ "meta": [
+  "greybox/city_meta.json"
+ ],
+ "exclude": [
+  "SM_GB_City_GateDoors_North",
+  "SM_GB_City_GateDoors_East",
+  "SM_GB_City_GateDoors_West",
+  "SM_GB_City_GateDoors_Water",
+  "SM_GB_City_NorthPortcullis",
+  "SM_GB_City_GateDoors_Barbican",
+  "SM_GB_Manor_GateDoors"
+ ],
+ "seeds": [
+  [
+   -452,
+   -445,
+   33.9
+  ]
+ ],
+ "probes": {
+  "bell_chamber": [
+   -316.0,
+   -552.0,
+   80.0
+  ],
+  "organ_loft": [
+   -320.0,
+   -546.0,
+   44.0
+  ],
+  "church_crypt": [
+   -324.0,
+   -486.0,
+   30.0
+  ],
+  "manor_tower_top": [
+   -284.0,
+   -413.0,
+   55.2
+  ],
+  "manor_garden_terrace": [
+   -284.6,
+   -340.0,
+   35.800000000000004
+  ],
+  "outside_north_gate": [
+   -200.0,
+   -440.0,
+   30.4
+  ],
+  "outside_east_gate": [
+   -450.0,
+   -140.0,
+   22.99991798400879
+  ],
+  "outside_west_gate": [
+   -450.0,
+   -780.0,
+   20.42153549194336
+  ],
+  "outside_water_gate": [
+   -700.0,
+   -466.0,
+   12.9
+  ],
+  "wall_tower_0": [
+   -225.4,
+   -389.8,
+   41.18
+  ],
+  "wall_tower_1": [
+   -253.0,
+   -302.8,
+   39.21
+  ],
+  "wall_tower_2": [
+   -299.9,
+   -231.2,
+   37.18
+  ],
+  "wall_tower_3": [
+   -361.5,
+   -182.0,
+   34.67
+  ],
+  "wall_tower_4": [
+   -512.8,
+   -170.3,
+   32.34
+  ],
+  "wall_tower_5": [
+   -578.4,
+   -209.8,
+   30.99
+  ],
+  "wall_tower_6": [
+   -631.5,
+   -273.8,
+   29.47
+  ],
+  "wall_tower_7": [
+   -666.7,
+   -355.9,
+   27.9
+  ],
+  "wall_tower_8": [
+   -676.6,
+   -518.7,
+   25.99
+  ],
+  "wall_tower_9": [
+   -651.6,
+   -607.0,
+   26.07
+  ],
+  "wall_tower_10": [
+   -606.9,
+   -680.9,
+   27.36
+  ],
+  "wall_tower_11": [
+   -546.8,
+   -733.3,
+   29.84
+  ],
+  "wall_tower_12": [
+   -396.0,
+   -752.7,
+   37.23
+  ],
+  "wall_tower_13": [
+   -329.2,
+   -716.6,
+   40.35
+  ],
+  "wall_tower_14": [
+   -274.3,
+   -655.4,
+   42.43
+  ],
+  "wall_tower_15": [
+   -236.6,
+   -575.1,
+   43.19
+  ]
+ },
+ "levels": {
+  "ground": [
+   14,
+   40
+  ],
+  "upper": [
+   38,
+   60
+  ],
+  "crypt": [
+   25,
+   33
+  ],
+  "high": [
+   60,
+   90
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+castle_road_lower: grade rule 10% cannot be met on the Appendix polyline (best 12%); needs a longer alignment (open question)
+serpentine endpoint [320.0, -95.0] pinned to castle_road_lower at z 66.5 (Appendix 67)
+serpentine point 5 [722.0, -70.0, 205.0] -> z 200.0: hairpin on the barbican terrace: terrace is flat at +199 (MUST), Appendix says 205
+castle_stairs endpoint [320.0, -95.0] pinned to castle_road_lower at z 66.5 (Appendix 67)
+west_road point 1 [-452.0, -855.0, -1.0] -> z 7.0: West Bridge deck at +7 m: the -1 m of the Appendix is the river level (POI tolerance 10 m kept)
+trade_road: grade rule 10% cannot be met on the Appendix polyline (best 14%); needs a longer alignment (open question)
+forest_track endpoint [40.0, -300.0] pinned to castle_road_lower at z 25.3 (Appendix 16)
+quarry_road endpoint [-250.0, 900.0] pinned to trade_road at z 21.0 (Appendix 9)
+mill_track endpoint [-450.0, -140.0] pinned to trade_road at z 23.0 (Appendix 22)
+stairs x serpentine at [328.9, -90.5]: stairs 68.8 m, road 67.7 m -> level
+stairs x serpentine at [507.0, -40.0]: stairs 123.2 m, road 111.8 m -> footbridge
+stairs x serpentine at [597.0, -40.0]: stairs 154.0 m, road 145.3 m -> footbridge
+stairs x serpentine at [647.0, -40.0]: stairs 177.9 m, road 177.6 m -> level
+stairs x serpentine at [730.0, -12.7]: stairs 198.6 m, road 200.0 m -> level
+stairs x serpentine at [736.8, 14.3]: stairs 199.3 m, road 200.0 m -> level
+stairs x serpentine at [738.4, 34.2]: stairs 199.5 m, road 200.0 m -> level
+stairs x serpentine at [739.9, 54.2]: stairs 199.7 m, road 200.0 m -> level

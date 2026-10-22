@@ -1,0 +1,546 @@
+{
+ "name": "castle",
+ "cells": [
+  544,
+  744,
+  1900
+ ],
+ "hulls": 2659,
+ "nodes": 539782,
+ "reached": 318690,
+ "seeds": [
+  [
+   726,
+   232,
+   204,
+   true
+  ],
+  [
+   742,
+   66,
+   199,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Great Hall",
+   "z": 204.0,
+   "floor_cells": 2116,
+   "reached_cells": 2096,
+   "reached": true,
+   "share": 0.99
+  },
+  {
+   "name": "Throne Room",
+   "z": 204.0,
+   "floor_cells": 2907,
+   "reached_cells": 2907,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Banquet Hall",
+   "z": 204.0,
+   "floor_cells": 1641,
+   "reached_cells": 1301,
+   "reached": true,
+   "share": 0.79
+  },
+  {
+   "name": "Kitchen",
+   "z": 204.0,
+   "floor_cells": 407,
+   "reached_cells": 324,
+   "reached": true,
+   "share": 0.8
+  },
+  {
+   "name": "Servery",
+   "z": 204.0,
+   "floor_cells": 48,
+   "reached_cells": 48,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Antechamber",
+   "z": 204.0,
+   "floor_cells": 521,
+   "reached_cells": 521,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Robing room",
+   "z": 204.0,
+   "floor_cells": 342,
+   "reached_cells": 342,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Portal porch",
+   "z": 204.0,
+   "floor_cells": 100,
+   "reached_cells": 100,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "East passage",
+   "z": 204.0,
+   "floor_cells": 800,
+   "reached_cells": 800,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Throne balcony loggia",
+   "z": 204.0,
+   "floor_cells": 648,
+   "reached_cells": 648,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "War Room",
+   "z": 218.0,
+   "floor_cells": 564,
+   "reached_cells": 424,
+   "reached": true,
+   "share": 0.75
+  },
+  {
+   "name": "Lord's Study",
+   "z": 218.0,
+   "floor_cells": 291,
+   "reached_cells": 291,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library",
+   "z": 218.0,
+   "floor_cells": 1030,
+   "reached_cells": 1030,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Gallery (west wing)",
+   "z": 218.0,
+   "floor_cells": 2404,
+   "reached_cells": 2404,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Gallery (north)",
+   "z": 218.0,
+   "floor_cells": 492,
+   "reached_cells": 492,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Gallery (east wing)",
+   "z": 218.0,
+   "floor_cells": 812,
+   "reached_cells": 812,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Study passage",
+   "z": 218.0,
+   "floor_cells": 55,
+   "reached_cells": 55,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library corridor",
+   "z": 218.0,
+   "floor_cells": 316,
+   "reached_cells": 316,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library corridor (b)",
+   "z": 218.0,
+   "floor_cells": 28,
+   "reached_cells": 28,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Lord's corridor",
+   "z": 226.0,
+   "floor_cells": 151,
+   "reached_cells": 151,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Lord's corridor (b)",
+   "z": 226.0,
+   "floor_cells": 168,
+   "reached_cells": 168,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Apartments antechamber",
+   "z": 226.0,
+   "floor_cells": 104,
+   "reached_cells": 104,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Lord's Apartments",
+   "z": 226.0,
+   "floor_cells": 392,
+   "reached_cells": 392,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Bridge corridor",
+   "z": 226.0,
+   "floor_cells": 56,
+   "reached_cells": 56,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Bridge landing",
+   "z": 226.0,
+   "floor_cells": 40,
+   "reached_cells": 40,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Larder",
+   "z": 196.0,
+   "floor_cells": 520,
+   "reached_cells": 520,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Wine and blood cellar",
+   "z": 196.0,
+   "floor_cells": 516,
+   "reached_cells": 516,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Service stair",
+   "z": 196.0,
+   "floor_cells": 150,
+   "reached_cells": 150,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Crypt",
+   "z": 188.0,
+   "floor_cells": 1132,
+   "reached_cells": 910,
+   "reached": true,
+   "share": 0.8
+  },
+  {
+   "name": "Crypt vestibule",
+   "z": 188.0,
+   "floor_cells": 8,
+   "reached_cells": 8,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Gate corridor (a)",
+   "z": 188.0,
+   "floor_cells": 386,
+   "reached_cells": 386,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Gate corridor (b)",
+   "z": 188.0,
+   "floor_cells": 184,
+   "reached_cells": 184,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Gate corridor (iron gate)",
+   "z": 188.0,
+   "floor_cells": 16,
+   "reached_cells": 16,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Dungeon",
+   "z": 188.0,
+   "floor_cells": 2598,
+   "reached_cells": 2598,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Guard room",
+   "z": 204.0,
+   "floor_cells": 1060,
+   "reached_cells": 1060,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Secret tunnel (head)",
+   "z": 188.0,
+   "floor_cells": 28,
+   "reached_cells": 28,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Chapel",
+   "z": 204.0,
+   "floor_cells": 1208,
+   "reached_cells": 1208,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {
+  "tunnel_exit_apron": {
+   "at": [
+    568,
+    384,
+    117.8
+   ],
+   "found": true,
+   "reached": true,
+   "z": 117.8
+  },
+  "eyrie": {
+   "at": [
+    776,
+    376,
+    269
+   ],
+   "found": true,
+   "reached": true,
+   "z": 269.0
+  },
+  "keep_bridge_level": {
+   "at": [
+    775,
+    385,
+    226
+   ],
+   "found": true,
+   "reached": true,
+   "z": 226.0
+  },
+  "covered_bridge": {
+   "at": [
+    720,
+    398.4,
+    226
+   ],
+   "found": true,
+   "reached": true,
+   "z": 226.0
+  },
+  "balcony": {
+   "at": [
+    615.5,
+    312.0,
+    203.2
+   ],
+   "found": true,
+   "reached": true,
+   "z": 203.2
+  },
+  "library_mezzanine": {
+   "at": [
+    672.3,
+    380,
+    222.4
+   ],
+   "found": true,
+   "reached": true,
+   "z": 222.4
+  },
+  "throne_dais": {
+   "at": [
+    625.5,
+    330,
+    205.4
+   ],
+   "found": true,
+   "reached": true,
+   "z": 204.8
+  },
+  "drawbridge": {
+   "at": [
+    742,
+    187,
+    204
+   ],
+   "found": true,
+   "reached": true,
+   "z": 204.0
+  },
+  "great_bridge_mid": {
+   "at": [
+    742,
+    140,
+    201.8
+   ],
+   "found": true,
+   "reached": true,
+   "z": 201.9
+  },
+  "tunnel_spiral_bottom": {
+   "at": [
+    630,
+    389.9,
+    123.6
+   ],
+   "found": true,
+   "reached": true,
+   "z": 124.0
+  },
+  "dungeon_cell": {
+   "at": [
+    692,
+    222.5,
+    188
+   ],
+   "found": true,
+   "reached": true,
+   "z": 188.0
+  },
+  "chapel_altar": {
+   "at": [
+    778,
+    325,
+    205
+   ],
+   "found": true,
+   "reached": true,
+   "z": 204.6
+  },
+  "tower_0_walk": {
+   "at": [
+    820.6,
+    355.0,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_1_walk": {
+   "at": [
+    803.1,
+    393.1,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_2_walk": {
+   "at": [
+    758.9,
+    416.6,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_3_walk": {
+   "at": [
+    711.3,
+    415.1,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_4_walk": {
+   "at": [
+    662.4,
+    415.8,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_5_walk": {
+   "at": [
+    621.8,
+    229.8,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_6_walk": {
+   "at": [
+    662.6,
+    200.6,
+    213.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 213.0
+  },
+  "tower_7_walk": {
+   "at": [
+    710.9,
+    191.7,
+    221.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 221.0
+  },
+  "tower_8_walk": {
+   "at": [
+    792.8,
+    221.6,
+    221.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 221.0
+  },
+  "tower_9_walk": {
+   "at": [
+    814.1,
+    255.3,
+    221.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 221.0
+  }
+ },
+ "leaks": []
+}

@@ -1,0 +1,31 @@
+{
+ "name": "site_quarry",
+ "cells": [
+  300,
+  320,
+  1100
+ ],
+ "hulls": 1294,
+ "nodes": 96132,
+ "reached": 93243,
+ "seeds": [
+  [
+   203.06,
+   1162.45,
+   131.69012451171875,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Quarry workers' hut",
+   "z": 154.32,
+   "floor_cells": 50,
+   "reached_cells": 50,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

@@ -1,0 +1,51 @@
+{
+ "name": "site_approach",
+ "cells": [
+  940,
+  660,
+  1670
+ ],
+ "hulls": 1294,
+ "nodes": 616494,
+ "reached": 609800,
+ "seeds": [
+  [
+   320.0,
+   -95.0,
+   66.51676940917969,
+   true
+  ],
+  [
+   594.43,
+   -27.69,
+   146.5500030517578,
+   true
+  ],
+  [
+   567.02,
+   -40.0,
+   143.86997985839844,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Watchtower ruin (ground)",
+   "z": 67.2,
+   "floor_cells": 227,
+   "reached_cells": 227,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Watchtower top floor (roofless)",
+   "z": 79.2,
+   "floor_cells": 176,
+   "reached_cells": 176,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

@@ -1,0 +1,31 @@
+{
+ "name": "site_hamlet",
+ "cells": [
+  480,
+  480,
+  550
+ ],
+ "hulls": 1294,
+ "nodes": 232809,
+ "reached": 217809,
+ "seeds": [
+  [
+   -259.93,
+   690.23,
+   7.000020980834961,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Hamlet wooden church",
+   "z": 7.28,
+   "floor_cells": 564,
+   "reached_cells": 564,
+   "reached": true,
+   "share": 1.0
+  }
+ ],
+ "probes": {},
+ "leaks": []
+}

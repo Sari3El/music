@@ -1,0 +1,158 @@
+{
+ "approach": {
+  "seeds": 3,
+  "rooms": [
+   [
+    "Watchtower ruin (ground)",
+    true
+   ],
+   [
+    "Watchtower top floor (roofless)",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "cemetery": {
+  "seeds": 1,
+  "rooms": [
+   [
+    "Mortuary chapel",
+    true
+   ],
+   [
+    "Family mausoleum 1",
+    true
+   ],
+   [
+    "Family mausoleum 2",
+    true
+   ],
+   [
+    "Family mausoleum 3",
+    true
+   ],
+   [
+    "Ossuary",
+    true
+   ],
+   [
+    "Watchman's hut",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "abbey": {
+  "seeds": 2,
+  "rooms": [
+   [
+    "Abbey nave (roofless)",
+    true
+   ],
+   [
+    "Abbey hidden reliquary",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "camp": {
+  "seeds": 1,
+  "rooms": [
+   [
+    "Log cabin 1",
+    true
+   ],
+   [
+    "Log cabin 2",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "circle": {
+  "seeds": 1,
+  "rooms": [],
+  "leaks": 0
+ },
+ "falls": {
+  "seeds": 2,
+  "rooms": [
+   [
+    "Cave behind the falls",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "faubourg": {
+  "seeds": 2,
+  "rooms": [
+   [
+    "Faubourg stables",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "mills_docks": {
+  "seeds": 3,
+  "rooms": [
+   [
+    "Watermill",
+    true
+   ],
+   [
+    "Dock warehouse",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "hamlet": {
+  "seeds": 1,
+  "rooms": [
+   [
+    "Hamlet wooden church",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "quarry": {
+  "seeds": 1,
+  "rooms": [
+   [
+    "Quarry workers' hut",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "border": {
+  "seeds": 1,
+  "rooms": [
+   [
+    "Border guard hut",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "fen": {
+  "seeds": 1,
+  "rooms": [
+   [
+    "Fen hut on stilts",
+    true
+   ]
+  ],
+  "leaks": 0
+ },
+ "west_bridge": {
+  "seeds": 1,
+  "rooms": [],
+  "leaks": 0
+ }
+}
