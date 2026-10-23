@@ -1,21 +1,21 @@
 {
  "groups": 86,
- "prims": 12932,
- "tris": 161794,
- "hulls": 8044,
+ "prims": 13058,
+ "tris": 164170,
+ "hulls": 8053,
  "issues": [],
  "per_file": {
   "castle": {
    "groups": 15,
-   "tris": 37244
+   "tris": 37364
   },
   "city": {
    "groups": 42,
-   "tris": 85130
+   "tris": 86366
   },
   "sites": {
    "groups": 29,
-   "tris": 39420
+   "tris": 40440
   }
  },
  "rooms": 138,

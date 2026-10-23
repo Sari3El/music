@@ -5,9 +5,9 @@
   190,
   400
  ],
- "hulls": 1294,
- "nodes": 43420,
- "reached": 37599,
+ "hulls": 1290,
+ "nodes": 43226,
+ "reached": 37567,
  "seeds": [
   [
    123.94,
@@ -26,18 +26,18 @@
   {
    "name": "Abbey nave (roofless)",
    "z": 88.1,
-   "floor_cells": 1947,
-   "reached_cells": 1915,
+   "floor_cells": 1934,
+   "reached_cells": 1878,
    "reached": true,
-   "share": 0.98
+   "share": 0.97
   },
   {
    "name": "Abbey hidden reliquary",
    "z": 83.1,
-   "floor_cells": 113,
-   "reached_cells": 15,
+   "floor_cells": 110,
+   "reached_cells": 18,
    "reached": true,
-   "share": 0.13
+   "share": 0.16
   }
  ],
  "probes": {},

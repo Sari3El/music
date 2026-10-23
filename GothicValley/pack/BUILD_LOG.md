@@ -60,7 +60,7 @@ Elle demande l'ADK Nanos World et un serveur local, que je n'ai pas : projet UE 
 
 ## Phase 2 : greybox
 
-**86 maillages** (`SM_GB_*`), 161 794 triangles, 8 044 coques de collision simples (UCX). Pivots à la base de chaque objet, et sur la charnière pour les portes, herses, grilles et trappes.
+**86 maillages** (`SM_GB_*`), 164 170 triangles, 8 053 coques de collision simples (UCX). Pivots à la base de chaque objet, et sur la charnière pour les portes, herses, grilles et trappes.
 
 ### Château
 - Barbacane, Grand Pont (100 m, tablier de 6 m, parapets de 1,1 m, 4 piles dont la plus haute fait 93.3 m, pont-levis), châtelet (tours de 13 m sur 28 m, herse), courtine (17 m côté porte, 9 m sur les falaises, 3 m d'épaisseur, parapets de 1,1 m des deux côtés et merlons), **10 tours** rondes de 11 m (30 à 35 m) traversées par le chemin de ronde, dont 2 tours-escaliers. Viennent ensuite la basse-cour et ses bâtiments, la porte intérieure, la cour intérieure, le palais (146 × 69 m, faîte à +38 m), le donjon (75 m, aire à +65 m, balcon), le pont couvert et la chapelle.
@@ -132,7 +132,16 @@ Aucun trajet entre deux pôles ne dépasse 6 minutes en courant.
 - no stray primitives : oui
 - Portes principales de 3 × 4,5 m sur les circulations publiques, portes de service d'au moins 1,6 × 2,6 m, couloirs d'au moins 2 m (service) et 3 m (public), escaliers d'au moins 2,5 m, colimaçons à marches de 2,2 m, marches de 20 cm maximum, parapets de 1,1 m sur les ponts, balcons et chemins de ronde : appliqués par construction et confirmés par les tests de marche.
 
-**Vues héros** (rendus greybox dans `Screenshots/`, à refaire dans Unreal de jour et de nuit aux phases suivantes) : V1 Market square, V2 Throne Room balcony, V3 Great Bridge, V4 Great Hall portal, V5 Church bell chamber, V6 Third hairpin, V7 East pass, V8 Abbey ruin at dusk, V0 Valley overview.
+**Audit géométrique** (`scripts/gb_audit.py`, `Checks/audit.json`) : chaque pièce visible doit reposer sur quelque chose, le terrain, une autre pièce dessous ou une pièce accolée. Le premier audit a trouvé un pilier de l'abbaye à moitié au-dessus de la trémie de l'escalier, des têtes d'arc et des linteaux tenus d'un seul côté, des hourds en bois détachés des remparts, des merlons plus larges que le parapet, une cloche et une cage pendues dans le vide, des contreforts décrochés sous le palais, des clôtures, tombes et charrettes flottant sur les pentes, et le terrain qui traversait le sol de 16 pièces. Tout est corrigé. Il reste 32 pièces isolées en partie sans appui, vérifiées une à une en image : couronnes d'ifs sur leur tronc, peaux qui sèchent sous leur perche, chaîne de la cage, toits de mausolées. Pièces avec du terrain au-dessus du sol : 0.
+
+**Vues héros** (rendus texturés Cycles dans `Screenshots/`, à refaire dans Unreal de jour et de nuit aux phases suivantes) : V1 Market square, V2 Throne Room balcony, V3 Great Bridge, V4 Great Hall portal, V5 Church bell chamber, V6 Third hairpin, V7 East pass, V8 Abbey ruin at dusk, V0 Valley overview.
+
+## Textures (début de la phase 3)
+
+- 22 jeux de textures tuilables générés par `scripts/make_textures.py`, sans aucun asset tiers. Pour les bâtiments (16) : pierre de taille sombre (château, remparts), calcaire clair (église), dalles, enduit intérieur, enduit à la chaux, planches, colombages, tuiles de terre cuite, ardoise, fer rouillé, tissu, terre, feuillage, vitraux sertis de plomb (éteints ou éclairés), roche naturelle. Pour le sol (6) : herbe, boue, chemin, pavés, roche, neige. Chacun a une carte de couleur, de relief (normal map, convention OpenGL, canal vert inversé à l'import Unreal) et de rugosité, en 1024 px pour une tuile de 2 m (bâtiments) ou de 4 m (sol).
+- UV à l'échelle du monde (`gb_build.py`) : sols en plan, chaque autre face dans son plan avec le haut vers le haut, ce qui garde les assises et les tuiles horizontales et le motif continu d'un bâtiment à l'autre.
+- Paysage : herbe, boue des berges et du marais, chemins, pavés (ville et plateau du château), roche (pentes de plus de 35° environ) et neige (au-dessus de +385 m), mélangés par deux cartes de répartition calculées à partir du relief final (`T_GV_Splat`, `T_GV_Splat2`, 2048 px sur toute la carte). Le script Unreal construit `M_GV_Landscape` avec la même logique et l'applique au paysage importé.
+- Les kits d'architecture sous licence de la phase 4 remplaceront ces surfaces ; les noms de matériaux (`MI_GB_*`) restent les mêmes.
 
 ## Écarts au cahier des charges et raisons
 

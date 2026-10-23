@@ -5,9 +5,9 @@
   1300,
   800
  ],
- "hulls": 4077,
- "nodes": 1277886,
- "reached": 946682,
+ "hulls": 4080,
+ "nodes": 1277954,
+ "reached": 946664,
  "seeds": [
   [
    -452,
@@ -20,8 +20,8 @@
   {
    "name": "Church nave (hall)",
    "z": 35.0,
-   "floor_cells": 4157,
-   "reached_cells": 4141,
+   "floor_cells": 4158,
+   "reached_cells": 4142,
    "reached": true,
    "share": 1.0
   },
@@ -52,16 +52,16 @@
   {
    "name": "Church tower hall",
    "z": 35.0,
-   "floor_cells": 559,
-   "reached_cells": 559,
+   "floor_cells": 564,
+   "reached_cells": 564,
    "reached": true,
    "share": 1.0
   },
   {
    "name": "Bell chamber",
    "z": 80.0,
-   "floor_cells": 505,
-   "reached_cells": 385,
+   "floor_cells": 497,
+   "reached_cells": 377,
    "reached": true,
    "share": 0.76
   },
@@ -308,8 +308,8 @@
   {
    "name": "Main inn: ground floor",
    "z": 34.04,
-   "floor_cells": 628,
-   "reached_cells": 588,
+   "floor_cells": 632,
+   "reached_cells": 592,
    "reached": true,
    "share": 0.94
   },
@@ -396,10 +396,10 @@
   {
    "name": "Tavern in the River Quarter: ground floor",
    "z": 18.35,
-   "floor_cells": 578,
-   "reached_cells": 555,
+   "floor_cells": 607,
+   "reached_cells": 525,
    "reached": true,
-   "share": 0.96
+   "share": 0.86
   },
   {
    "name": "Tavern in the River Quarter: floor 1",
@@ -588,10 +588,10 @@
   {
    "name": "Artisan house 1: ground floor",
    "z": 22.04,
-   "floor_cells": 598,
+   "floor_cells": 610,
    "reached_cells": 558,
    "reached": true,
-   "share": 0.93
+   "share": 0.91
   },
   {
    "name": "Artisan house 1: floor 1",
@@ -644,8 +644,8 @@
   {
    "name": "Merchant house 2: ground floor",
    "z": 26.35,
-   "floor_cells": 589,
-   "reached_cells": 589,
+   "floor_cells": 599,
+   "reached_cells": 599,
    "reached": true,
    "share": 1.0
   },

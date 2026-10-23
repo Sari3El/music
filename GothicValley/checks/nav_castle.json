@@ -5,9 +5,9 @@
   744,
   1900
  ],
- "hulls": 2659,
- "nodes": 539782,
- "reached": 318690,
+ "hulls": 2669,
+ "nodes": 539647,
+ "reached": 318858,
  "seeds": [
   [
    726,
@@ -290,8 +290,8 @@
   {
    "name": "Dungeon",
    "z": 188.0,
-   "floor_cells": 2598,
-   "reached_cells": 2598,
+   "floor_cells": 2594,
+   "reached_cells": 2594,
    "reached": true,
    "share": 1.0
   },
