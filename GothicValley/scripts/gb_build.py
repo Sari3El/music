@@ -14,13 +14,58 @@ COL = {"GB_Stone": (0.42, 0.42, 0.44), "GB_Roof": (0.17, 0.15, 0.17), "GB_Wood":
        "GB_Floor": (0.50, 0.48, 0.45), "GB_Detail": (0.62, 0.16, 0.12), "GB_Metal": (0.12, 0.12, 0.14), "GB_Plaster": (0.72, 0.67, 0.56),
        "GB_Tile": (0.48, 0.24, 0.17), "GB_Timber": (0.30, 0.20, 0.13), "GB_Water": (0.22, 0.34, 0.42), "GB_Church": (0.70, 0.68, 0.62),
        "GB_Ground": (0.35, 0.33, 0.28), "GB_Hedge": (0.18, 0.26, 0.14), "GB_Marker": (0.95, 0.75, 0.10),
-       "GB_WinLit": (0.95, 0.62, 0.25), "GB_WinDark": (0.08, 0.09, 0.12)}
+       "GB_WinLit": (0.95, 0.62, 0.25), "GB_WinDark": (0.08, 0.09, 0.12), "GB_Rock": (0.30, 0.29, 0.28)}
+TEX = f"{ROOT}/textures"
+TILE = 2.0                                            # metres per texture tile on buildings (UVs = world metres / TILE)
 MAT = {}
+
+
+def textured(m, name):
+    """Principled BSDF fed by the generated maps T_<name>_D/_N/_R (renders; Unreal rebuilds its own materials)."""
+    nt = m.node_tree; bsdf = nt.nodes["Principled BSDF"]
+    d, r, nm = (f"{TEX}/T_{name}_{k}" for k in ("D.jpg", "R.jpg", "N.png"))
+    if not os.path.exists(d):
+        return
+    def img(path, colour):
+        n = nt.nodes.new("ShaderNodeTexImage"); n.image = bpy.data.images.load(path, check_existing=True)
+        n.image.colorspace_settings.name = "sRGB" if colour else "Non-Color"
+        return n
+    di, ri, ni = img(d, True), img(r, False), img(nm, False)
+    nmap = nt.nodes.new("ShaderNodeNormalMap"); nmap.inputs["Strength"].default_value = 0.8
+    nt.links.new(di.outputs["Color"], bsdf.inputs["Base Color"])
+    nt.links.new(ri.outputs["Color"], bsdf.inputs["Roughness"])
+    nt.links.new(ni.outputs["Color"], nmap.inputs["Color"]); nt.links.new(nmap.outputs["Normal"], bsdf.inputs["Normal"])
+    if name == "GB_WinLit":
+        nt.links.new(di.outputs["Color"], bsdf.inputs["Emission Color"]); bsdf.inputs["Emission Strength"].default_value = 6.0
+    if name == "GB_Metal":
+        bsdf.inputs["Metallic"].default_value = 0.7
+
+
 for n, c in COL.items():
     m = bpy.data.materials.new(n); m.use_nodes = True
     m.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*c, 1)
     m.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.85
+    textured(m, n)
     MAT[n] = m
+
+
+def face_uv(W, f):
+    """World-planar UVs for one face (world metres / TILE): floors and ceilings in plan, every other face in its own
+    plane with v up the slope, so textures run on continuously from face to face and from building to building."""
+    P = W[f]
+    n = np.zeros(3)
+    for i in range(len(P)):                                   # Newell normal
+        a, b = P[i], P[(i + 1) % len(P)]
+        n += [(a[1] - b[1]) * (a[2] + b[2]), (a[2] - b[2]) * (a[0] + b[0]), (a[0] - b[0]) * (a[1] + b[1])]
+    ln = np.linalg.norm(n)
+    n = n / ln if ln > 1e-12 else np.array([0, 0, 1.0])
+    if abs(n[2]) > 0.95:
+        uv = P[:, :2]
+    else:
+        h = np.array([-n[1], n[0], 0.0]); h /= np.linalg.norm(h)
+        up = np.cross(n, h)
+        uv = np.stack([P @ h, P @ up], 1)
+    return uv / TILE
 common = dict(object_types={'MESH'}, use_selection=True, apply_unit_scale=True, apply_scale_options='FBX_SCALE_NONE',
               mesh_smooth_type='FACE', use_mesh_modifiers=False, add_leaf_bones=False, bake_anim=False,
               path_mode='STRIP', embed_textures=False, axis_forward='-Z', axis_up='Y')
@@ -35,21 +80,25 @@ def to_blender(v):
 
 
 def build(name, prims):
-    V, F, MI, mats = [], [], [], []
+    V, F, MI, mats, UV = [], [], [], [], []
     off = 0
     for p in prims:
         if p["col"] == "only":
             continue
-        v = to_blender(p["v"])
+        W = np.asarray(p["v"], float)
+        v = to_blender(W)
         if p["m"] not in mats:
             mats.append(p["m"])
         for f in p["f"]:
             F.append([off + i for i in f[::-1]]); MI.append(mats.index(p["m"]))
+            UV.append(face_uv(W, list(f[::-1])))
         V.append(v); off += len(v)
     if not V:
         return None
     me = bpy.data.meshes.new(name)
     me.from_pydata(np.concatenate(V).tolist(), [], F)
+    uvl = me.uv_layers.new(name="UVMap")
+    uvl.data.foreach_set("uv", np.concatenate(UV).ravel().astype(np.float32))
     for m in mats:
         me.materials.append(MAT.get(m, MAT["GB_Stone"]))
     me.polygons.foreach_set("material_index", MI)

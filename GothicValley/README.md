@@ -4,12 +4,13 @@ Réalisation du cahier des charges *Gothic Vampire Map: Design Document for Unre
 3 × 3 km avec un château sur son éperon, une ville fortifiée (église, manoir, 294 bâtiments), 22 points d'intérêt,
 des routes, une rivière, un ruisseau et une cascade. Cible : ADK Nanos World (UE 5.7).
 
-> **État : phases 1 (relief) et 2 (greybox) terminées et vérifiées automatiquement.** La phase 0 (test
-> World Partition sur un serveur Nanos World) et l'import dans Unreal se font chez vous. Les phases 3 à 10
-> (matériaux, architecture finale, lumière, gameplay, optimisation) viennent ensuite.
+> **État : phases 1 (relief) et 2 (greybox) terminées et vérifiées automatiquement, textures de la phase 3
+> en place.** La phase 0 (test World Partition sur un serveur Nanos World) et l'import dans Unreal se font chez
+> vous. Les phases 4 à 10 (architecture finale, intérieurs, lumière, gameplay, optimisation) viennent ensuite.
 
-Tout est généré par les scripts de ce dossier, sans asset tiers ni contenu de franchise. Le paquet prêt à
-importer (FBX, heightmap, script Unreal, rendus, contrôles) se reconstruit avec `scripts/run_all.sh`.
+Tout est généré par les scripts de ce dossier, sans asset tiers ni contenu de franchise, textures comprises.
+Le paquet prêt à importer (FBX, heightmap, textures, script Unreal, rendus, contrôles) se reconstruit avec
+`scripts/full_build.sh`.
 
 ## Résultats
 
@@ -24,7 +25,9 @@ importer (FBX, heightmap, script Unreal, rendus, contrôles) se reconstruit avec
 | Test de marche, ville | 81/81 pièces, 0 chute vers les vides |
 | Test de marche, sites secondaires | toutes les pièces atteintes, dont la grotte de la cascade |
 | Plafonds ≥ 4 m, escaliers du château ≤ 28° | conformes |
-| Vues héros V1 à V8 | rendues depuis les caméras du cahier (`screenshots/`) |
+| Audit géométrique (`scripts/gb_audit.py`) | aucune pièce posée sur le vide, aucun terrain au-dessus d'un sol ; pièces isolées restantes vérifiées une à une en image |
+| Textures | 16 surfaces de bâtiments et 6 couches de sol générées, UV à l'échelle du monde, matériaux Unreal construits par le script |
+| Vues héros V1 à V8 | rendus texturés (Cycles) depuis les caméras du cahier (`screenshots/`) |
 
 Écarts au cahier et questions ouvertes (par exemple les pentes des routes basse du château et commerciale, 12 et
 14 % au lieu de 10 %) : voir le journal de build [`pack/BUILD_LOG.md`](pack/BUILD_LOG.md).
@@ -39,7 +42,7 @@ d'apparition, les caméras des vues héros, les volumes et la rivière, règle l
 ## Contenu du dossier
 
 ```
-scripts/        générateurs Python (relief, greybox, tests de marche, export Blender, rendus, journal, paquet)
+scripts/        générateurs Python (relief, greybox, tests de marche, audit, textures, export Blender, rendus, journal, paquet)
 data/           annexe A (layout_manifest.json), tracés finaux des routes, parcelles du plan de la ville
 doc/            plans du cahier utilisés par les contrôles de superposition
 greybox/        métadonnées lues par le relief (vides couverts, plateformes) et configurations des tests de marche
@@ -54,8 +57,7 @@ Prérequis : Python 3 avec numpy, scipy, numba et Pillow, ainsi que Blender 4.5 
 
 ```bash
 cd GothicValley
-python3 scripts/terrain_gv.py "$PWD" && python3 scripts/terrain_check.py "$PWD" && touch terrain/check_done
-scripts/run_all.sh "$PWD"          # greybox, tests de marche, export FBX, rendus, journal, paquet
+scripts/full_build.sh "$PWD"       # relief, greybox, tests de marche, audit, textures, export FBX, rendus, journal, paquet
 ```
 
 Le relief lit les métadonnées de `greybox/` (vides sous les souterrains et le tunnel, plateformes, talus), et les

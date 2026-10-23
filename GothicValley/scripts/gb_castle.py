@@ -2,7 +2,7 @@
 import sys, os, json, math
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from gb_lib import Group, rect_minus
+from gb_lib import Group, rect_minus, ground_snap
 from tlib import sample
 from castle_shape import rim_sd as _rim_sd
 
@@ -186,7 +186,7 @@ pal_d.room(dun, doors=[D(256.4, 258.6, L2_, L2_ + 3, "s")], holes_floor=[(688.8,
            holes_ceil=[(701.6, 708.0, 229.8, 245.0)])
 for xw in (694.5, 697.5):                                                      # corridor walls with barred cell doors
     holes = [(221.8 + 4 * i, 223.4 + 4 * i, L2_, L2_ + 2.6) for i in range(5)] + [(242.0, 247.0, L2_, L2_ + 3.0)]
-    pal_d.wall("y", xw - 0.3, xw + 0.3, 220.4, 247.0, L2_, L2_ + 4.5, "GB_Interior", holes=holes)
+    pal_d.wall("y", xw - 0.3, xw + 0.3, 220.4, 247.6, L2_, L2_ + 4.5, "GB_Interior", holes=holes)
 for i in range(6):                                                             # partitions: five 3 x 3 cells each side
     y = 220.6 + 4 * i
     pal_d.box(690.6, 694.2, y - 0.3, y + 0.3, L2_, L2_ + 4.5, "GB_Interior")
@@ -261,9 +261,9 @@ for xa in np.arange(574.0, 619.0, 2.0):
     top = max(max(hs) + 0.3, zf + 4.4 + 1.6)
     bot = min(min(hs) - 1.0, zf - 3.0)
     for y0_, y1_ in ((379.8, 382.2), (385.8, 388.2)):
-        talus.box(xa, xb, y0_, y1_, bot, top, "GB_Stone")
-    talus.box(xa, xb, 382.2, 385.8, zf + 4.4, top, "GB_Stone")
-    talus.box(xa, xb, 382.2, 385.8, bot, zf - 0.4, "GB_Stone")
+        talus.box(xa, xb, y0_, y1_, bot, top, "GB_Rock")
+    talus.box(xa, xb, 382.2, 385.8, zf + 4.4, top, "GB_Rock")
+    talus.box(xa, xb, 382.2, 385.8, bot, zf - 0.4, "GB_Rock")
 VOID_PATHS.append(dict(pts=[[round(x, 2), round(y, 2), round(z - 0.45, 2)] for x, y, z in TPATH], half=2.6,
                        note="secret tunnel: landscape kept just under the gallery floor"))
 VOID_DISCS.append([TSX, TSY, RSP + 0.75 + 0.8, TZ0 - 0.5])
@@ -299,6 +299,10 @@ for yb in np.arange(262, 392, 13):
     if 302 < yb < 334:
         continue                                                                # balcony and the 14 m lancet
     ext.box(616.6, PX0 - TE / 2, yb - 0.9, yb + 0.9, L0 - 22.0, L0, "GB_Stone")
+    xo = PX0 - TE / 2                                                           # corbel: the pier widens 1.4 m over 3 m
+    ext.add([(616.6, yb - 0.9, L0 - 3.0), (xo, yb - 0.9, L0 - 3.0), (xo, yb + 0.9, L0 - 3.0), (616.6, yb + 0.9, L0 - 3.0),
+             (615.2, yb - 0.9, L0), (xo, yb - 0.9, L0), (xo, yb + 0.9, L0), (615.2, yb + 0.9, L0)],
+            [[0, 3, 2, 1], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]], "GB_Stone")
     ext.box(615.2, PX0 - TE / 2, yb - 0.9, yb + 0.9, L0, L0 + 14.0, "GB_Stone")
     ext.cone(616.7, yb, 1.1, L0 + 14.0, L0 + 19.0, "GB_Roof", 8)
     ext.ramp((616.0, yb), (PX0, yb), 1.0, L0 + 13.0, L0 + 24.0, 1.6, "GB_Stone")
@@ -365,7 +369,8 @@ for i in range(NP):
     ext.ramp(tuple(A_ - nrm * 1.3), tuple(B_ - nrm * 1.3), 0.4, za + 1.1, zb + 1.1, 1.1, "GB_Stone")     # inner parapet
     for k in np.arange(1.0, Lg - 0.8, 2.2):                                    # merlons on the outer parapet
         p = A_ + d * k + nrm * 1.25; zk = za + (zb - za) * k / Lg
-        ext.box(p[0] - 0.4, p[0] + 0.4, p[1] - 0.4, p[1] + 0.4, zk + 1.1, zk + 2.0, "GB_Stone")
+        q = [p - d * 0.4 - nrm * 0.25, p - d * 0.4 + nrm * 0.25, p + d * 0.4 + nrm * 0.25, p + d * 0.4 - nrm * 0.25]
+        ext.poly_prism([tuple(v) for v in q], zk + 1.1, zk + 2.0, "GB_Stone")                  # sits on the 0.5 m parapet
 # ten round towers (11 m wide, 30-35 m, conical slate roofs), hollow at walk level so the wall-walk runs through them;
 # two of them carry a spiral stair from the ward to the walk (outer ward on the gate side, inner ward on the cliffs)
 STAIR_TW = [min(TW_IDX, key=lambda i: math.hypot(poly[i][0] - 706, poly[i][1] - 210)),
@@ -474,6 +479,7 @@ draw.box(739.0, 745.0, 182.0, 192.0, 203.3, 204.0, "GB_Wood")
 DOORS_MOVABLE.append(dict(name="SM_GB_Castle_Drawbridge", pivot=[742.0, 192.0, 204.0], note="hinge at the gatehouse"))
 
 groups = [pal, pal_d, gate_iron, tun, hidden, talus, ext, portc, keep, br, chap, app, draw] + PANELS
+print("ground-snapped pieces", ground_snap(groups, H, sample))
 json.dump([g.to_json() for g in groups], open(f"{ROOT}/greybox/castle_groups.json", "w"))
 meta = dict(rooms=ROOMS, voids=VOIDS, void_paths=VOID_PATHS, void_discs=VOID_DISCS, aprons=APRONS, movable=DOORS_MOVABLE, towers=TOWERS, piers=PIERS,
             tunnel_length_m=round(TUNNEL_LEN, 1), rim_polygon=[[round(x, 1), round(y, 1)] for x, y in poly])

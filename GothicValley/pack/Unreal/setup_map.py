@@ -3,13 +3,15 @@
 #
 # What it does (Phase 2 of the build plan, section 12 of the design document):
 #  1. imports every greybox FBX (simple collision UCX_, Nanite on) into /Game/<PACK>/Environment/... as listed in the doc
-#  2. builds M_GB_Master + one MI_ per greybox surface, with the matching physical material when the project has it
+#  2. imports the generated textures (Textures/) and builds M_GB_MasterTex + one MI_ per surface (albedo, normal,
+#     roughness; UVs are world metres / 2 m), with the matching physical material when the project has it
 #  3. places every mesh at its world position (1 m = 100 UU, +X north, +Y east), doors/gates/portcullis as Movable
 #  4. spawn markers (named empty actors), hero cameras V1-V8, blocking volumes behind the natural borders,
 #     NavMeshBoundsVolumes (castle, city, roads), river + fen water (Water plugin, if enabled)
 #  5. World Settings: GameMode override None, Kill Z -20000; one sky set (directional light, sky light, sky atmosphere,
 #     height fog with volumetric fog) tagged "Sun"
-#  6. if a Landscape is already in the level: placeholder auto material + checks (crag at [720, 310] = +204 m)
+#  6. if a Landscape is already in the level: auto material M_GV_Landscape (grass, mud, road, rock, snow blended by the
+#     splat map T_GV_Splat, which follows the terrain) + checks (crag at [720, 310] = +204 m)
 #
 # The landscape itself is imported by hand first (Unreal Python cannot create a landscape):
 #   Landscape mode > Manage > New > Import from File > Heightmap/heightmap_base_4033.png
@@ -23,6 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
 FBX = os.path.join(ROOT, "Content")
 DATA = os.path.join(ROOT, "Data")
+TEXDIR = os.path.join(ROOT, "Textures")
 DEST = "/Game/" + PACK
 USE_NANITE = True
 REPLACE_EXISTING_ACTORS = True             # removes the actors this script placed before (folder "GV/...") and re-places them
@@ -104,10 +107,10 @@ COLORS = {"GB_Stone": (0.42, 0.42, 0.44), "GB_Roof": (0.17, 0.15, 0.17), "GB_Woo
           "GB_Floor": (0.50, 0.48, 0.45), "GB_Detail": (0.62, 0.16, 0.12), "GB_Metal": (0.12, 0.12, 0.14), "GB_Plaster": (0.72, 0.67, 0.56),
           "GB_Tile": (0.48, 0.24, 0.17), "GB_Timber": (0.30, 0.20, 0.13), "GB_Water": (0.22, 0.34, 0.42), "GB_Church": (0.70, 0.68, 0.62),
           "GB_Ground": (0.35, 0.33, 0.28), "GB_Hedge": (0.18, 0.26, 0.14), "GB_Marker": (0.95, 0.75, 0.10),
-          "GB_WinLit": (0.95, 0.62, 0.25), "GB_WinDark": (0.08, 0.09, 0.12)}
+          "GB_WinLit": (0.95, 0.62, 0.25), "GB_WinDark": (0.08, 0.09, 0.12), "GB_Rock": (0.30, 0.29, 0.28)}
 PHYS = {"GB_Stone": "Stone", "GB_Roof": "Stone", "GB_Wood": "Wood", "GB_Interior": "Stone", "GB_Floor": "Stone", "GB_Detail": "Wood",
         "GB_Metal": "Metal", "GB_Plaster": "Stone", "GB_Tile": "Stone", "GB_Timber": "Wood", "GB_Water": "Water", "GB_Church": "Stone",
-        "GB_Ground": "Dirt", "GB_Hedge": "Grass", "GB_Marker": "Wood", "GB_WinLit": "Wood", "GB_WinDark": "Wood"}
+        "GB_Ground": "Dirt", "GB_Hedge": "Grass", "GB_Marker": "Wood", "GB_WinLit": "Wood", "GB_WinDark": "Wood", "GB_Rock": "Stone"}
 
 
 def find_phys_materials():
@@ -123,27 +126,84 @@ def find_phys_materials():
     return found
 
 
-def build_materials():
+def import_textures():
+    """Textures/T_*.jpg|png -> /Game/<PACK>/Textures, with the right compression for each map."""
+    tasks, names = [], []
+    for f in sorted(os.listdir(TEXDIR)):
+        if f.startswith("T_") and f.lower().endswith((".png", ".jpg")):
+            t = unreal.AssetImportTask()
+            for k, v in (("filename", os.path.join(TEXDIR, f)), ("destination_path", f"{DEST}/Textures"), ("automated", True),
+                         ("replace_existing", True), ("save", True)):
+                t.set_editor_property(k, v)
+            tasks.append(t); names.append(os.path.splitext(f)[0])
+    AT.import_asset_tasks(tasks)
+    tex = {}
+    for name in names:
+        a = EAL.load_asset(f"{DEST}/Textures/{name}")
+        if a is None:
+            warn("texture not imported: " + name)
+            continue
+        if name.endswith("_N"):
+            a.set_editor_property("compression_settings", unreal.TextureCompressionSettings.TC_NORMALMAP)
+            a.set_editor_property("srgb", False)
+            a.set_editor_property("flip_green_channel", True)               # the maps are OpenGL (green up)
+        elif name.endswith("_R"):
+            a.set_editor_property("compression_settings", unreal.TextureCompressionSettings.TC_MASKS)
+            a.set_editor_property("srgb", False)
+        elif name.startswith("T_GV_Splat"):
+            a.set_editor_property("compression_settings", unreal.TextureCompressionSettings.TC_VECTOR_DISPLACEMENTMAP)
+            a.set_editor_property("srgb", False)
+            a.set_editor_property("address_x", unreal.TextureAddress.TA_CLAMP)
+            a.set_editor_property("address_y", unreal.TextureAddress.TA_CLAMP)
+        EAL.save_loaded_asset(a)
+        tex[name] = a
+    log(f"{len(tex)} textures -> {DEST}/Textures")
+    return tex
+
+
+SAMPLER = {"D": unreal.MaterialSamplerType.SAMPLERTYPE_COLOR, "N": unreal.MaterialSamplerType.SAMPLERTYPE_NORMAL,
+           "R": unreal.MaterialSamplerType.SAMPLERTYPE_MASKS}
+
+
+def tex_param(mat, name, default, kind, uv, x, y):
+    t = MEL.create_material_expression(mat, unreal.MaterialExpressionTextureSampleParameter2D, x, y)
+    t.set_editor_property("parameter_name", name)
+    t.set_editor_property("texture", default)
+    t.set_editor_property("sampler_type", SAMPLER[kind])
+    t.set_editor_property("sampler_source", unreal.SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS)
+    MEL.connect_material_expressions(uv, "", t, "UVs")
+    return t
+
+
+def build_materials(tex):
     path = f"{DEST}/Materials"
-    mp = f"{path}/M_GB_Master"
+    mp = f"{path}/M_GB_MasterTex"
     created = not EAL.does_asset_exist(mp)
-    mat = AT.create_asset("M_GB_Master", path, unreal.Material, unreal.MaterialFactoryNew()) if created else EAL.load_asset(mp)
+    mat = AT.create_asset("M_GB_MasterTex", path, unreal.Material, unreal.MaterialFactoryNew()) if created else EAL.load_asset(mp)
     if created:
-        col = MEL.create_material_expression(mat, unreal.MaterialExpressionVectorParameter, -600, 0)
-        col.set_editor_property("parameter_name", "Color")
-        col.set_editor_property("default_value", unreal.LinearColor(0.5, 0.5, 0.5, 1.0))
-        rough = MEL.create_material_expression(mat, unreal.MaterialExpressionScalarParameter, -600, 250)
-        rough.set_editor_property("parameter_name", "Roughness")
-        rough.set_editor_property("default_value", 0.85)
-        emis = MEL.create_material_expression(mat, unreal.MaterialExpressionScalarParameter, -600, 400)
-        emis.set_editor_property("parameter_name", "Emissive")
-        emis.set_editor_property("default_value", 0.0)
-        mul = MEL.create_material_expression(mat, unreal.MaterialExpressionMultiply, -300, 400)
-        MEL.connect_material_expressions(col, "", mul, "A")
-        MEL.connect_material_expressions(emis, "", mul, "B")
+        tc = MEL.create_material_expression(mat, unreal.MaterialExpressionTextureCoordinate, -1200, 0)
+        til = MEL.create_material_expression(mat, unreal.MaterialExpressionScalarParameter, -1200, 150)
+        til.set_editor_property("parameter_name", "Tiling"); til.set_editor_property("default_value", 1.0)
+        uv = MEL.create_material_expression(mat, unreal.MaterialExpressionMultiply, -1000, 50)
+        MEL.connect_material_expressions(tc, "", uv, "A"); MEL.connect_material_expressions(til, "", uv, "B")
+        d = tex_param(mat, "BaseColorTex", tex["T_GB_Stone_D"], "D", uv, -700, -300)
+        n = tex_param(mat, "NormalTex", tex["T_GB_Stone_N"], "N", uv, -700, 0)
+        r = tex_param(mat, "RoughnessTex", tex["T_GB_Stone_R"], "R", uv, -700, 300)
+        tint = MEL.create_material_expression(mat, unreal.MaterialExpressionVectorParameter, -700, -550)
+        tint.set_editor_property("parameter_name", "Tint"); tint.set_editor_property("default_value", unreal.LinearColor(1, 1, 1, 1))
+        col = MEL.create_material_expression(mat, unreal.MaterialExpressionMultiply, -350, -350)
+        MEL.connect_material_expressions(d, "RGB", col, "A"); MEL.connect_material_expressions(tint, "", col, "B")
+        met = MEL.create_material_expression(mat, unreal.MaterialExpressionScalarParameter, -350, 150)
+        met.set_editor_property("parameter_name", "Metallic"); met.set_editor_property("default_value", 0.0)
+        emis = MEL.create_material_expression(mat, unreal.MaterialExpressionScalarParameter, -700, 550)
+        emis.set_editor_property("parameter_name", "Emissive"); emis.set_editor_property("default_value", 0.0)
+        em = MEL.create_material_expression(mat, unreal.MaterialExpressionMultiply, -350, 500)
+        MEL.connect_material_expressions(col, "", em, "A"); MEL.connect_material_expressions(emis, "", em, "B")
         MEL.connect_material_property(col, "", unreal.MaterialProperty.MP_BASE_COLOR)
-        MEL.connect_material_property(rough, "", unreal.MaterialProperty.MP_ROUGHNESS)
-        MEL.connect_material_property(mul, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+        MEL.connect_material_property(n, "RGB", unreal.MaterialProperty.MP_NORMAL)
+        MEL.connect_material_property(r, "R", unreal.MaterialProperty.MP_ROUGHNESS)
+        MEL.connect_material_property(met, "", unreal.MaterialProperty.MP_METALLIC)
+        MEL.connect_material_property(em, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR)
         MEL.recompile_material(mat)
         EAL.save_loaded_asset(mat)
     phys = find_phys_materials()
@@ -155,11 +215,19 @@ def build_materials():
         mi = EAL.load_asset(ip) if EAL.does_asset_exist(ip) else AT.create_asset(f"MI_{name}", path, unreal.MaterialInstanceConstant,
                                                                                   unreal.MaterialInstanceConstantFactoryNew())
         MEL.set_material_instance_parent(mi, mat)
-        MEL.set_material_instance_vector_parameter_value(mi, "Color", unreal.LinearColor(c[0], c[1], c[2], 1.0))
+        for prm, k in (("BaseColorTex", "D"), ("NormalTex", "N"), ("RoughnessTex", "R")):
+            t = tex.get(f"T_{name}_{k}")
+            if t is not None:
+                MEL.set_material_instance_texture_parameter_value(mi, prm, t)
+        if f"T_{name}_D" not in tex:                                            # water, markers: plain colour
+            white = EAL.load_asset("/Engine/EngineResources/WhiteSquareTexture")
+            if white is not None:
+                MEL.set_material_instance_texture_parameter_value(mi, "BaseColorTex", white)
+            MEL.set_material_instance_vector_parameter_value(mi, "Tint", unreal.LinearColor(c[0], c[1], c[2], 1.0))
         if name == "GB_WinLit":
-            MEL.set_material_instance_scalar_parameter_value(mi, "Emissive", 4.0)
-        if name == "GB_Water":
-            MEL.set_material_instance_scalar_parameter_value(mi, "Roughness", 0.1)
+            MEL.set_material_instance_scalar_parameter_value(mi, "Emissive", 6.0)
+        if name == "GB_Metal":
+            MEL.set_material_instance_scalar_parameter_value(mi, "Metallic", 0.7)
         pm = phys.get(PHYS[name])
         if pm is not None:
             try:
@@ -168,7 +236,7 @@ def build_materials():
                 pass
         EAL.save_loaded_asset(mi)
         mis[name] = mi
-    log(f"{len(mis)} material instances, physical materials found: {sorted(phys)}")
+    log(f"{len(mis)} material instances (textured), physical materials found: {sorted(phys)}")
     return mis
 
 
@@ -358,47 +426,79 @@ def world_settings():
 
 
 # ------------------------------------------------------------------ 6. landscape checks + placeholder material
-def landscape_material():
+def landscape_material(tex):
+    """Auto material: grass, then mud (banks, fen), road, paving (town, castle), rock (slopes over ~35 deg) and snow
+    (above +385 m), blended by T_GV_Splat / T_GV_Splat2 sampled in world space (they cover -1512..+1512 m), layers tiled
+    every 4 m."""
     path = f"{DEST}/Materials"
-    mp = f"{path}/M_GB_Landscape"
+    mp = f"{path}/M_GV_Landscape"
     if EAL.does_asset_exist(mp):
         return EAL.load_asset(mp)
-    mat = AT.create_asset("M_GB_Landscape", path, unreal.Material, unreal.MaterialFactoryNew())
-    nrm = MEL.create_material_expression(mat, unreal.MaterialExpressionVertexNormalWS, -900, 0)
-    msk = MEL.create_material_expression(mat, unreal.MaterialExpressionComponentMask, -700, 0)
-    msk.set_editor_property("r", False); msk.set_editor_property("g", False); msk.set_editor_property("b", True)
-    MEL.connect_material_expressions(nrm, "", msk, "")
-    pw = MEL.create_material_expression(mat, unreal.MaterialExpressionPower, -500, 0)
-    ex = MEL.create_material_expression(mat, unreal.MaterialExpressionConstant, -700, 150)
-    ex.set_editor_property("r", 8.0)
-    MEL.connect_material_expressions(msk, "", pw, "Base")
-    MEL.connect_material_expressions(ex, "", pw, "Exp")
-    rock = MEL.create_material_expression(mat, unreal.MaterialExpressionConstant3Vector, -500, -250)
-    rock.set_editor_property("constant", unreal.LinearColor(0.26, 0.25, 0.24, 1))
-    grass = MEL.create_material_expression(mat, unreal.MaterialExpressionConstant3Vector, -500, 250)
-    grass.set_editor_property("constant", unreal.LinearColor(0.16, 0.18, 0.10, 1))
-    lp = MEL.create_material_expression(mat, unreal.MaterialExpressionLinearInterpolate, -250, 0)
-    MEL.connect_material_expressions(rock, "", lp, "A")
-    MEL.connect_material_expressions(grass, "", lp, "B")
-    MEL.connect_material_expressions(pw, "", lp, "Alpha")
-    MEL.connect_material_property(lp, "", unreal.MaterialProperty.MP_BASE_COLOR)
-    r = MEL.create_material_expression(mat, unreal.MaterialExpressionConstant, -250, 250)
-    r.set_editor_property("r", 0.9)
-    MEL.connect_material_property(r, "", unreal.MaterialProperty.MP_ROUGHNESS)
+    mat = AT.create_asset("M_GV_Landscape", path, unreal.Material, unreal.MaterialFactoryNew())
+    E = lambda cls, x, y: MEL.create_material_expression(mat, cls, x, y)
+    wp = E(unreal.MaterialExpressionWorldPosition, -2400, 0)
+    rg = E(unreal.MaterialExpressionComponentMask, -2200, 0)
+    for ch, on in (("r", True), ("g", True), ("b", False), ("a", False)):
+        rg.set_editor_property(ch, on)
+    MEL.connect_material_expressions(wp, "", rg, "")
+    tile = E(unreal.MaterialExpressionDivide, -2000, -200); tile.set_editor_property("const_b", 400.0)
+    MEL.connect_material_expressions(rg, "", tile, "A")
+    off = E(unreal.MaterialExpressionAdd, -2000, 200); off.set_editor_property("const_b", 151200.0)
+    MEL.connect_material_expressions(rg, "", off, "A")
+    suv = E(unreal.MaterialExpressionDivide, -1850, 200); suv.set_editor_property("const_b", 302400.0)
+    MEL.connect_material_expressions(off, "", suv, "A")
+
+    def sample(t, kind, uv, x, y):
+        n = E(unreal.MaterialExpressionTextureSample, x, y)
+        n.set_editor_property("texture", t)
+        n.set_editor_property("sampler_type", SAMPLER.get(kind, unreal.MaterialSamplerType.SAMPLERTYPE_LINEAR_COLOR))
+        n.set_editor_property("sampler_source", unreal.SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS)
+        MEL.connect_material_expressions(uv, "", n, "UVs")
+        return n
+    sp = sample(tex["T_GV_Splat"], "S", suv, -1600, 600)
+    sp.set_editor_property("sampler_source", unreal.SamplerSourceMode.SSM_FROM_TEXTURE_ASSET)   # clamped, never repeats
+    sp2 = sample(tex["T_GV_Splat2"], "S", suv, -1600, 850)
+    sp2.set_editor_property("sampler_source", unreal.SamplerSourceMode.SSM_FROM_TEXTURE_ASSET)
+    layers = ["L_Grass", "L_Mud", "L_Road", "L_Paving", "L_Rock", "L_Snow"]
+    alpha = {"L_Mud": (sp, "B"), "L_Road": (sp, "G"), "L_Paving": (sp2, "R"), "L_Rock": (sp, "R"), "L_Snow": (sp, "A")}
+    outs = {}
+    for j, (k, pin) in enumerate((("D", "RGB"), ("N", "RGB"), ("R", "R"))):
+        cur = sample(tex[f"T_L_Grass_{k}"], k, tile, -1400, -900 + j * 900)
+        cur_pin = pin
+        for i, L in enumerate(layers[1:]):
+            s_ = sample(tex[f"T_{L}_{k}"], k, tile, -1100 + i * 250, -800 + j * 900)
+            lp = E(unreal.MaterialExpressionLinearInterpolate, -950 + i * 250, -700 + j * 900)
+            MEL.connect_material_expressions(cur, cur_pin, lp, "A")
+            MEL.connect_material_expressions(s_, pin, lp, "B")
+            MEL.connect_material_expressions(alpha[L][0], alpha[L][1], lp, "Alpha")
+            cur, cur_pin = lp, ""
+        outs[k] = cur
+    macro_uv = E(unreal.MaterialExpressionDivide, -2000, -500); macro_uv.set_editor_property("const_b", 25000.0)
+    MEL.connect_material_expressions(rg, "", macro_uv, "A")
+    macro = sample(tex["T_L_Grass_R"], "R", macro_uv, -1600, -1300)            # large-scale tone variation, breaks the tiling
+    mm = E(unreal.MaterialExpressionMultiply, -1300, -1300); mm.set_editor_property("const_b", 1.4)
+    MEL.connect_material_expressions(macro, "R", mm, "A")
+    col = E(unreal.MaterialExpressionMultiply, -200, -700)
+    MEL.connect_material_expressions(outs["D"], "", col, "A"); MEL.connect_material_expressions(mm, "", col, "B")
+    MEL.connect_material_property(col, "", unreal.MaterialProperty.MP_BASE_COLOR)
+    MEL.connect_material_property(outs["N"], "", unreal.MaterialProperty.MP_NORMAL)
+    MEL.connect_material_property(outs["R"], "", unreal.MaterialProperty.MP_ROUGHNESS)
     MEL.recompile_material(mat)
     EAL.save_loaded_asset(mat)
     return mat
 
 
-def landscape_checks():
+def landscape_checks(tex):
     lands = [a for a in ACT.get_all_level_actors() if isinstance(a, unreal.LandscapeProxy)]
     if not lands:
         warn("no Landscape in the level yet: import Heightmap/heightmap_base_4033.png first (see the top of this script), then run again")
         return
-    mat = landscape_material()
+    mat = landscape_material(tex)
     for l in lands:
-        if l.get_editor_property("landscape_material") is None:
+        cur = l.get_editor_property("landscape_material")
+        if cur is None or cur.get_name() == "M_GB_Landscape":                   # never overrides a material of yours
             l.set_editor_property("landscape_material", mat)
+            log(f"landscape material: {mat.get_name()}")
     checks = load_json("landscape_checks.json")
     for c in checks:
         start, end = ue([c["x"], c["y"], 600.0]), ue([c["x"], c["y"], -100.0])
@@ -422,8 +522,9 @@ def main():
         task.make_dialog(True)
         task.enter_progress_frame(1, "Import FBX")
         import_all(report)
-        task.enter_progress_frame(1, "Materials")
-        mis = build_materials()
+        task.enter_progress_frame(1, "Textures and materials")
+        tex = import_textures()
+        mis = build_materials(tex)
         task.enter_progress_frame(1, "Placement")
         clear_previous()
         place_meshes(report, mis)
@@ -433,7 +534,7 @@ def main():
         task.enter_progress_frame(1, "World settings and sky")
         world_settings()
         task.enter_progress_frame(1, "Landscape")
-        landscape_checks()
+        landscape_checks(tex)
     unreal.EditorLoadingAndSavingUtils.save_dirty_packages(True, True)
     log(f"done: {REPORT['imported']} meshes imported, {REPORT['placed']} placed, {len(REPORT['warnings'])} warning(s)")
     for w in REPORT["warnings"]:

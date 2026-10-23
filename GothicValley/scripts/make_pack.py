@@ -11,6 +11,9 @@ os.makedirs(f"{OUT}/Heightmap", exist_ok=True)
 shutil.copy(f"{ROOT}/terrain/heightmap_base_4033.png", f"{OUT}/Heightmap/heightmap_base_4033.png")
 os.makedirs(f"{OUT}/Unreal", exist_ok=True)
 shutil.copy(f"{ROOT}/pack/Unreal/setup_map.py", f"{OUT}/Unreal/setup_map.py")
+os.makedirs(f"{OUT}/Textures", exist_ok=True)                                  # generated surface textures + splat map
+for f in sorted(glob.glob(f"{ROOT}/textures/T_*")) + [f"{ROOT}/textures/textures.json"]:
+    shutil.copy(f, f"{OUT}/Textures/")
 # build report (all parts) -> one list
 rep = []
 for part in ("castle", "city", "sites"):
@@ -26,7 +29,7 @@ json.dump([dict(name="castle crag top", x=720, y=310, z=203.85, tol=1.0), dict(n
 for part in ("castle", "city", "sites"):
     shutil.copy(f"{ROOT}/greybox/{part}_meta.json", f"{OUT}/Data/{part}_meta.json")
 os.makedirs(f"{OUT}/Checks", exist_ok=True)
-for f in (glob.glob(f"{ROOT}/terrain/phase1_checks.json") + glob.glob(f"{ROOT}/greybox/gb_checks.json") + glob.glob(f"{ROOT}/greybox/nav/nav_*.json")
+for f in (glob.glob(f"{ROOT}/terrain/phase1_checks.json") + glob.glob(f"{ROOT}/greybox/gb_checks.json") + glob.glob(f"{ROOT}/greybox/audit.json") + glob.glob(f"{ROOT}/greybox/nav/nav_*.json")
           + glob.glob(f"{ROOT}/terrain/*_master_map.png") + glob.glob(f"{ROOT}/terrain/topview_phase1.png") + glob.glob(f"{ROOT}/greybox/city_overlay_plan.png")):
     shutil.copy(f, f"{OUT}/Checks/")
 if os.path.isdir(f"{ROOT}/renders/hero"):

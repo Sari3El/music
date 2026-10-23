@@ -4,7 +4,7 @@
 import sys, os, json, math
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from gb_lib import Group, rect_minus
+from gb_lib import Group, rect_minus, ground_snap
 from tlib import sample
 
 ROOT = sys.argv[1]
@@ -134,9 +134,14 @@ for i in range(NSEG):
         walls.ramp(tuple(a - n_out * 3.6), tuple(b - n_out * 3.6), 3.2, za, zb, 0.4, "GB_Timber")
         walls.ramp(tuple(a - n_out * 5.35), tuple(b - n_out * 5.35), 0.3, za + 1.1, zb + 1.1, 1.1, "GB_Timber")
         obox(walls, b - n_out * 3.75 - t * 0.15, t, 0.15, 1.5, zb, zb + 1.1, "GB_Timber")
-    if i % 9 == 4:                                                                                # timber hoardings
-        walls.ramp(tuple(a + n_out * 1.9), tuple(b + n_out * 1.9), 1.2, za + 3.2, zb + 3.2, 0.2, "GB_Timber", col=False)
-        walls.ramp(tuple(a + n_out * 2.5), tuple(b + n_out * 2.5), 0.15, za + 3.2, zb + 3.2, 3.2, "GB_Timber", col=False)
+    for a2, b2, za2, zb2 in (clip_towers(a, b, za, zb, r=5.0) if i % 9 == 4 else []):            # timber hoardings on the wall top
+        walls.ramp(tuple(a2 + n_out * 1.9), tuple(b2 + n_out * 1.9), 1.2, za2, zb2, 0.3, "GB_Timber", col=False)            # floor
+        walls.ramp(tuple(a2 + n_out * 2.45), tuple(b2 + n_out * 2.45), 0.15, za2 + 2.1, zb2 + 2.1, 2.4, "GB_Timber", col=False)  # boarding
+        walls.ramp(tuple(a2 + n_out * 1.7), tuple(b2 + n_out * 1.7), 1.8, za2 + 2.3, zb2 + 2.3, 0.2, "GB_Timber", col=False)  # roof on the merlons
+        Lh = np.linalg.norm(b2 - a2)
+        for s_ in np.arange(0.8, Lh - 0.5, 2.0):                                                  # struts under the floor
+            z_ = za2 + (zb2 - za2) * s_ / Lh
+            obox(walls, a2 + t * s_ + n_out * 1.9, n_out, 0.6, 0.1, z_ - 1.4, z_ - 0.3, "GB_Timber", col=False)
 TOWERS = []
 for k, i in enumerate(TW):
     c = P[i]; t = (P[i + 1] - P[i - 1]); t /= np.linalg.norm(t)
@@ -332,6 +337,9 @@ for k8 in range(8):
     for k in range(2, 5):
         church.poly_prism(mid, BELL + 1.6 + k * 0.75, BELL + 1.75 + k * 0.75, "GB_Wood", False)   # louvres above eye level
 church.cyl(TCX, TCY, 1.2, BELL + 5.0, BELL + 6.6, "GB_Metal", 12, col=False)           # bell (hung above the stair head)
+for sx in (-1, 1):                                                                       # its timber frame: two posts + headstock
+    church.box(TCX + sx * (RSP + 0.3) - 0.15, TCX + sx * (RSP + 0.3) + 0.15, TCY - 0.15, TCY + 0.15, BELL - 0.3, BELL + 7.0, "GB_Timber")
+church.box(TCX - RSP - 0.45, TCX + RSP + 0.45, TCY - 0.2, TCY + 0.2, BELL + 6.6, BELL + 7.0, "GB_Timber")
 R8 = (A_OUT + 0.6) / math.cos(math.radians(22.5))
 church.poly_prism([(TCX + R8 * math.cos(math.radians(22.5 + 45 * k)), TCY + R8 * math.sin(math.radians(22.5 + 45 * k))) for k in range(8)],
                   BELL + 8.0, BELL + 8.6, "GB_Church")                                   # octagonal cornice
@@ -979,6 +987,7 @@ for spec in ENTER_SPECS:
 # ---------------------------------------------------------------- outputs
 groups = [walls, gates] + [v["doors"] for v in GATE_INFO.values()] + [GATE_INFO["north"]["portcullis"], GATE_INFO["north"]["barbican_doors"],
           church, yard, man, gd, pub, gup, bkp, mkt] + list(house_groups.values()) + interiors
+print("ground-snapped pieces", ground_snap(groups, H, sample))
 json.dump([g.to_json() for g in groups], open(f"{ROOT}/greybox/city_groups.json", "w"))
 n_bld = len(HOUSES) + len(interiors) - 1 + 4                                     # + town hall, guild hall, barracks, church
 meta = dict(rooms=ROOMS, voids=VOIDS, movable=MOVABLE, towers=TOWERS, wall_stairs=WALK_STAIRS,

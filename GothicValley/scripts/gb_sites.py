@@ -5,7 +5,7 @@
 import sys, os, json, math
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from gb_lib import Group, rect_minus
+from gb_lib import Group, rect_minus, ground_snap
 from tlib import sample
 
 ROOT = sys.argv[1]
@@ -211,7 +211,10 @@ for i in edge_i:
             nstakes += 1
 hp = np.array(sp["xy"])[np.argmin(np.hypot(spxy[:, 0] - 436, spxy[:, 1] - 90))]
 cp = hp + np.array([-9.0, 0.0]); zc = gz(*cp)
-props_g.box(cp[0] - 1.0, cp[0] + 1.0, cp[1] - 2.0, cp[1] + 2.0, zc + 0.4, zc + 1.3, "GB_Wood")        # abandoned cart
+props_g.box(cp[0] - 1.0, cp[0] + 1.0, cp[1] - 2.0, cp[1] + 2.0, zc + 0.75, zc + 1.45, "GB_Wood")       # abandoned cart
+for wx in (-1.1, 1.1):                                                                              # four wheels
+    for wy in (-1.2, 1.2):
+        props_g.wheel((cp[0] + wx, cp[1] + wy, zc + 0.6), (1, 0), 0.6, 0.06, "GB_Wood", col=False)
 for dx_, dy_ in ((-1.1, -1.4), (1.1, -1.4)):
     props_g.cyl(cp[0] + dx_, cp[1] + dy_, 0.6, zc, zc + 0.15, "GB_Wood", 10, col=False)
 props_g.box(cp[0] + 2.0, cp[0] + 2.6, cp[1] - 1.0, cp[1] + 1.5, zc, zc + 0.4, "GB_Interior", col=False)  # horse skeleton
@@ -308,7 +311,9 @@ for (px_, py_) in pts3:
     gal.box(px_ - 0.2, px_ + 0.2, py_ - 0.2, py_ + 0.2, zg - 1.0, zg + 5.0, "GB_Wood")
 for (p, q) in zip(pts3, pts3[1:] + pts3[:1]):
     gal.ramp(p, q, 0.3, zg + 5.0, zg + 5.0, 0.3, "GB_Wood")
+gal.ramp(pts3[0], tuple((np.array(pts3[1]) + np.array(pts3[2])) / 2), 0.3, zg + 5.0, zg + 5.0, 0.3, "GB_Wood")   # beam over the centre
 gal.box(gx - 0.5, gx + 0.5, gy - 0.4, gy + 0.4, zg + 2.2, zg + 4.0, "GB_Metal", col=False)          # empty gibbet cage
+gal.box(gx - 0.04, gx + 0.04, gy - 0.04, gy + 0.04, zg + 3.95, zg + 4.75, "GB_Metal", col=False)    # its chain
 cxr = (-420.0, -1060.0)
 zx = gz(cxr[0] + 6.0, cxr[1] + 6.0)
 gal.box(cxr[0] + 5.8, cxr[0] + 6.2, cxr[1] + 5.8, cxr[1] + 6.2, zx - 0.5, zx + 3.2, "GB_Wood")      # wayside cross
@@ -326,17 +331,19 @@ for (a0, a1, b0, b1) in rect_minus((NX0 - 1.0, NX1 + 1.0, NY0 - 1.0, NY1 + 1.0),
 R("Abbey nave (roofless)", NX0 + 0.6, NX1 - 0.6, NY0 + 0.6, NY1 - 0.6, za, 12.0, "ruin")
 hts = [11, 13, 6, 3, 12, 9, 14, 4, 10, 12]
 for side, xw in (("s", NX0), ("n", NX1)):
+    hs = [hts[(k + (3 if side == "n" else 0)) % 10] for k in range(9)]
+    br = [(side == "s" and k in (1, 2)) or (side == "n" and k in (6, 8)) for k in range(9)]   # road breach, collapses (V8 line)
     for k in range(9):
         y0_, y1_ = NY0 + k * 5.0, NY0 + (k + 1) * 5.0
-        hh = hts[(k + (3 if side == "n" else 0)) % 10]
-        breach = (side == "s" and k in (1, 2)) or (side == "n" and k in (6, 8))                     # road breach, collapses (V8 line)
-        if breach:
+        hh = hs[k]
+        if br[k]:
             ab.box(xw - 0.6, xw + 0.6, y0_, y1_, za - 0.3, za + 0.6, "GB_Stone")
             continue
         ab.box(xw - 0.6, xw + 0.6, y0_, y0_ + 1.4, za - 0.3, za + hh, "GB_Stone")                     # pier
         ab.box(xw - 0.6, xw + 0.6, y0_ + 1.4, y1_, za - 0.3, za + 1.2, "GB_Stone")                    # sill
-        if hh > 8:
-            ab.box(xw - 0.6, xw + 0.6, y0_ + 1.4, y1_, za + hh - 2.0, za + hh, "GB_Stone")           # arch head (standing arch)
+        nxt = 15.0 if k == 8 else (0.0 if br[k + 1] else hs[k + 1])                                 # next pier (east gable)
+        if hh > 8 and nxt >= hh:
+            ab.box(xw - 0.6, xw + 0.6, y0_ + 1.4, y1_, za + hh - 2.0, za + hh, "GB_Stone")           # standing arch: both springers up
 v8 = next(v for v in M["hero_views"] if v["id"] == "V8")
 c8 = np.array(v8["camera"][:2], float); d8 = np.array(v8["look_at"][:2], float) - c8; d8 /= np.linalg.norm(d8)
 for k in range(4):                                                                                   # arcade piers inside
@@ -368,14 +375,16 @@ for k in range(40):                                                             
 RQ0, RQ1, RQY0, RQY1 = ax_ - 3.0, ax_ + 3.0, NY1 - 12.0, NY1 - 2.0
 rel = R("Abbey hidden reliquary", RQ0, RQ1, RQY0, RQY1, za - 5.0, 4.0, "ruin")
 ab.room(rel, mat_wall="GB_Stone", t=0.8, ceil=False)
-ab.stairs((ax_ + 1.25, RQY0 + 0.6), (0, 1), 2.5, za - 5.0, za, "GB_Stone", 0.2, 0.27)                # rises east to the trapdoor
-for (a0, a1, b0, b1) in rect_minus((NX0 - 0.8, NX1 + 0.8, NY0 - 0.8, NY1 + 0.8), [(ax_ - 0.05, ax_ + 2.55, RQY0 + 0.5, RQY0 + 7.4)]):
+ab.stairs((ax_, RQY0 + 0.6), (0, 1), 2.5, za - 5.0, za, "GB_Stone", 0.2, 0.27)                      # rises east to the trapdoor
+for (a0, a1, b0, b1) in rect_minus((NX0 - 0.8, NX1 + 0.8, NY0 - 0.8, NY1 + 0.8), [(ax_ - 1.3, ax_ + 1.3, RQY0 + 0.5, RQY0 + 7.4)]):
     ab.box(a0, a1, b0, b1, za - 0.35, za, "GB_Floor")                                                 # nave floor over the void
-ab.box(ax_ - 1.5, ax_ - 0.5, RQY1 - 3.0, RQY1 - 1.8, za - 5.0, za - 4.0, "GB_Detail")                # reliquary chest
+ab.box(ax_ + 1.6, ax_ + 2.6, RQY1 - 3.0, RQY1 - 1.8, za - 5.0, za - 4.0, "GB_Detail")                # reliquary chest
 trap = G("SM_GB_Ruin_AbbeyTrapdoor", "Environment/Ruins")
-trap.box(ax_ - 0.05, ax_ + 2.55, RQY0 + 4.6, RQY0 + 7.4, za - 0.05, za + 0.05, "GB_Wood")
-MOVABLE.append(dict(name=trap.name, pivot=[ax_ - 0.05, RQY0 + 4.6, za]))
-ab.box(ax_ - 0.35, ax_ - 0.05, RQY0 + 0.5, RQY0 + 4.6, za, za + 0.9, "GB_Stone")                     # low kerb round the opening
+trap.box(ax_ - 1.3, ax_ + 1.3, RQY0 + 4.6, RQY0 + 7.4, za - 0.05, za + 0.05, "GB_Wood")
+MOVABLE.append(dict(name=trap.name, pivot=[ax_ - 1.3, RQY0 + 4.6, za]))
+for xk in (ax_ - 1.6, ax_ + 1.3):                                                                    # low kerbs along the open part
+    ab.box(xk, xk + 0.3, RQY0 + 0.5, RQY0 + 4.6, za - 0.35, za + 0.9, "GB_Stone")
+ab.box(ax_ - 1.6, ax_ + 1.6, RQY0 + 0.2, RQY0 + 0.5, za - 0.35, za + 0.9, "GB_Stone")
 VOIDS.append([NX0 + 0.6, NX1 - 0.6, NY0 + 0.6, NY1 - 0.6, za - 6.5])
 
 # ====================================================================== 12 woodcutters' camp
@@ -505,7 +514,7 @@ for k, yy in enumerate((my - 16.0, my + 14.0)):
         mill_i.box((x0 + x1) / 2 - 1.5, (x0 + x1) / 2 + 1.5, yy - 1.5, yy + 1.5, zp, zp + 1.0, "GB_Stone")   # millstones
     else:
         closed_house(mill, x0, x1, y0, y1, "+x", storeys=2, upper="GB_Timber")
-    obox(mill, (EDGE + 0.6, yy), (1, 0), 3.2, 0.3, rbz - 0.5, rbz + 5.9, "GB_Wood", col=False)       # undershot wheel
+    mill.wheel((EDGE + 0.6, yy, zp + 0.7), (1, 0), max(2.0, zp + 0.4 - rbz), 0.3, "GB_Wood", col=False)   # undershot wheel on the axle, rim in the stream
     mill.box(EDGE + 0.3, EDGE + 2.0, yy - 0.3, yy + 0.3, zp + 0.4, zp + 1.0, "GB_Wood", col=False)    # axle
 MOVABLE.append(dict(name="SM_GB_Site_Watermills (wheels)", note="the wheel panels at the river margin; rotate them in a Blueprint"))
 mx = EDGE + 8.0
@@ -587,11 +596,14 @@ z = gz(*cr)
 qy.box(cr[0] - 0.4, cr[0] + 0.4, cr[1] - 0.4, cr[1] + 0.4, z - 0.5, z + 12.0, "GB_Wood")              # timber crane mast
 qy.ramp((cr[0], cr[1]), (cr[0], cr[1] + 14.0), 0.5, z + 11.0, z + 9.0, 0.5, "GB_Wood")               # jib over the cut
 qy.box(cr[0] - 3.0, cr[0] + 3.0, cr[1] - 3.0, cr[1] + 3.0, z - 0.3, z + 0.6, "GB_Wood")              # treadwheel base
-qy.cyl(cr[0], cr[1] - 3.5, 2.6, z + 0.6, z + 1.6, "GB_Wood", 16, col=False)
+qy.wheel((cr[0] + 1.8, cr[1], z + 0.6 + 2.6), (1, 0), 2.6, 0.6, "GB_Wood", col=False)               # treadwheel beside the mast
 for k in range(2):
     c = (qx_ - 20.0 + k * 6.0, qy_ - 58.0)
     zz = gz(*c)
-    qy.box(c[0] - 1.0, c[0] + 1.0, c[1] - 2.0, c[1] + 2.0, zz + 0.4, zz + 1.4, "GB_Wood")
+    qy.box(c[0] - 1.0, c[0] + 1.0, c[1] - 2.0, c[1] + 2.0, zz + 0.75, zz + 1.45, "GB_Wood")
+    for wx in (-1.1, 1.1):
+        for wy in (-1.2, 1.2):
+            qy.wheel((c[0] + wx, c[1] + wy, zz + 0.6), (1, 0), 0.6, 0.06, "GB_Wood", col=False)
 x0q, y0q = max(((qx_ + ox, qy_ + oy) for ox in np.arange(-70, -30, 4.0) for oy in np.arange(-70, -20, 4.0)),
                key=lambda o: min(rect_clear(o[0], o[0] + 6.0, o[1], o[1] + 5.0, 2.0), 3.0) - 0.02 * abs(gz(o[0], o[1]) - gz(o[0] + 6, o[1] + 5)))
 hut(qy, "Quarry workers' hut", x0q, x0q + 6.0, y0q, y0q + 5.0, "n", h=4.2, t=0.4, mat="GB_Wood", roof="GB_Roof", kind="hut")
@@ -621,9 +633,12 @@ for k in range(16):
     z = gz(px_, py_)
     s = rng.uniform(2.0, 5.0)
     a = rng.uniform(0, math.pi)
-    obox(wp, (px_, py_), (math.cos(a), math.sin(a)), s, s * rng.uniform(0.6, 1.0), z - 1.0, z + s * rng.uniform(0.9, 1.6), "GB_Stone")
+    obox(wp, (px_, py_), (math.cos(a), math.sin(a)), s, s * rng.uniform(0.6, 1.0), z - 1.0, z + s * rng.uniform(0.9, 1.6), "GB_Rock")
 cc = (wx_ + 10.0, wy_ + 18.0); z = gz(*cc)
-wp.box(cc[0] - 1.0, cc[0] + 1.0, cc[1] - 2.0, cc[1] + 2.0, z + 0.4, z + 1.3, "GB_Wood")                # abandoned cart
+wp.box(cc[0] - 1.0, cc[0] + 1.0, cc[1] - 2.0, cc[1] + 2.0, z + 0.75, z + 1.45, "GB_Wood")               # abandoned cart
+for wx in (-1.1, 1.1):                                                                              # four wheels
+    for wy in (-1.2, 1.2):
+        wp.wheel((cc[0] + wx, cc[1] + wy, z + 0.6), (1, 0), 0.6, 0.06, "GB_Wood", col=False)
 wp.box(cc[0] + 2.0, cc[0] + 3.0, cc[1] - 1.2, cc[1] + 1.2, z, z + 0.8, "GB_Detail", col=False)        # dead horse
 BLOCKERS.append(dict(name="BV_WestPass", centre=[wx_, wy_ - 50.0, wz_ + 40.0], extent=[120.0, 40.0, 100.0], note="behind the rockfall"))
 
@@ -735,9 +750,10 @@ for i in range(NR - 1):
         a0, a1 = i * NA + k, i * NA + (k + 1) % NA
         b0, b1 = (i + 1) * NA + k, (i + 1) * NA + (k + 1) % NA
         Fb.append([a0, a1, b1]); Fb.append([a0, b1, b0])
-bd.add(Vb, Fb, "GB_Stone", col=False)
+bd.add(Vb, Fb, "GB_Rock", col=False)
 
 # ====================================================================== outputs
+print("ground-snapped pieces", ground_snap(groups, H, sample))
 json.dump([g.to_json() for g in groups], open(f"{ROOT}/greybox/sites_groups.json", "w"))
 meta = dict(rooms=ROOMS, voids=VOIDS, void_paths=VOID_PATHS, aprons=APRONS, movable=MOVABLE, blockers=BLOCKERS, markers=SIGNS,
             stairs=STAIR_LOG, serpentine_wall_segments=nwall, stakes=nstakes, watchtower_xy=[TX, TY], faubourg_buildings=len(FAUB),

@@ -8,6 +8,8 @@ python3 gb_castle.py $S | tail -1
 python3 gb_city.py $S | tail -2
 python3 gb_sites.py $S | tail -1
 python3 gb_checks.py $S | grep -A8 '"checks"'
+python3 gb_audit.py $S | tail -1
+python3 make_textures.py $S | tail -1
 echo "== nav"
 python3 nav_check.py $S $S/greybox/nav_castle.json 2>&1 | grep -v "reached': True"
 python3 nav_check.py $S $S/greybox/nav_city.json 2>&1 | grep -v "reached': True"

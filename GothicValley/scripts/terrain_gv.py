@@ -356,6 +356,42 @@ for vp in FEAT["void_paths"]:
     H = np.where(m, np.minimum(H, att_v[..., 0]), H)
 log("aprons + voids", len(FEAT["aprons"]), len(FEAT["voids"]), len(FEAT["void_discs"]), len(FEAT["void_paths"]))
 
+# ground-floor rooms: the landscape must never show above a floor. Where it reaches a room's floor, it is lowered to the
+# underside of the floor slab over the room and its walls (0.9 m), with a 45 deg bank outside (no trench); the bank
+# never digs under another greybox piece (their bottoms are protected), so no neighbour is left hanging
+ROOMS_ALL = []
+for fn in sorted(glob.glob(f"{ROOT}/greybox/*_meta.json")):
+    ROOMS_ALL += json.load(open(fn)).get("rooms", [])
+PCS = []
+for fn in sorted(glob.glob(f"{ROOT}/greybox/*_groups.json")):
+    for g in json.load(open(fn)):
+        for p_ in g["prims"]:
+            if p_["col"] != "only":
+                v_ = np.asarray(p_["v"]); PCS.append([*v_.min(0)[:2], *v_.max(0)[:2], v_[:, 2].min()])
+PCS = np.array(PCS).reshape(-1, 5)
+ax_ = X[0]; ncut = 0
+for r in ROOMS_ALL:
+    x0, x1, y0, y1, z0 = r["x0"], r["x1"], r["y0"], r["y1"], r["z0"]
+    ci = np.nonzero((ax_ >= x0 - 4.5) & (ax_ <= x1 + 4.5))[0]; ri = np.nonzero((ax_ >= y0 - 4.5) & (ax_ <= y1 + 4.5))[0]
+    if len(ci) == 0 or len(ri) == 0:
+        continue
+    win = np.ix_(ri, ci)
+    Xw, Yw, Hw = X[win], Y[win], H[win]
+    inner = (Xw >= x0) & (Xw <= x1) & (Yw >= y0) & (Yw <= y1)
+    if not inner.any() or Hw[inner].max() <= z0 - 0.05 or z0 - np.median(Hw[inner]) > 3.0:      # skip upper floors
+        continue
+    dbox = np.maximum.reduce([x0 - Xw, Xw - x1, y0 - Yw, Yw - y1])
+    low = np.minimum(Hw, z0 - 0.3 + np.maximum(dbox - 0.9, 0.0))
+    near_ = (PCS[:, 0] < x1 + 4.5) & (PCS[:, 2] > x0 - 4.5) & (PCS[:, 1] < y1 + 4.5) & (PCS[:, 3] > y0 - 4.5)
+    cx_, cy_ = (PCS[:, 0] + PCS[:, 2]) / 2, (PCS[:, 1] + PCS[:, 3]) / 2
+    own = (cx_ > x0 - 0.9) & (cx_ < x1 + 0.9) & (cy_ > y0 - 0.9) & (cy_ < y1 + 0.9)
+    for px0, py0, px1, py1, pz in PCS[near_ & ~own]:
+        m_ = (Xw >= px0) & (Xw <= px1) & (Yw >= py0) & (Yw <= py1)
+        if m_.any() and pz <= Hw[m_].max() + 0.3:                               # only pieces resting on the ground
+            low = np.where(m_, np.maximum(low, np.minimum(Hw, pz)), low)
+    H[win] = low; ncut += 1
+log("ground-floor cuts", ncut)
+
 # ---------------------------------------------------------------- 5) export + acceptance checks
 H = np.minimum(H, 440.0).astype(np.float32)                      # relief -26 .. +440 m
 np.save(f"{OUT}/H_4033.npy", H)

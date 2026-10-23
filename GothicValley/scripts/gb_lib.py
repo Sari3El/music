@@ -181,6 +181,15 @@ class Group:
                        (cx + r_out * math.cos(a1), cy + r_out * math.sin(a1)), (cx + r_in * math.cos(a1), cy + r_in * math.sin(a1))]
                 self.poly_prism(pts, za, zb_, mat, True)
 
+    def wheel(self, c, axis, r, hw, mat, sides=16, col=True):
+        """Upright wheel: centre c = (x, y, z), horizontal axle along the xy direction `axis`, half-width hw."""
+        ax = np.array([axis[0], axis[1], 0.0]); ax /= np.linalg.norm(ax)
+        u = np.array([-ax[1], ax[0], 0.0]); w = np.array([0.0, 0.0, 1.0])
+        ring = [np.asarray(c, float) + r * (math.cos(2 * math.pi * k / sides) * u + math.sin(2 * math.pi * k / sides) * w) for k in range(sides)]
+        v = [p - ax * hw for p in ring] + [p + ax * hw for p in ring]
+        f = [list(range(sides)), list(range(2 * sides - 1, sides - 1, -1))] + [[i, sides + i, sides + (i + 1) % sides, (i + 1) % sides] for i in range(sides)]
+        self.add(v, f, mat, col)
+
     def floor_ring(self, x0, x1, y0, y1, z, hole, mat="GB_Stone", thick=0.3):
         """Landing slab filling a stair tower at level z, with a square hole around the spiral."""
         for (a0, a1, b0, b1) in rect_minus((x0, x1, y0, y1), [hole]):
@@ -220,3 +229,25 @@ def rect_room(name, x0, x1, y0, y1, z0, h):
 
 def save(groups, path):
     json.dump([g.to_json() for g in groups], open(path, "w"))
+
+
+def ground_snap(groups, H, sample, max_ext=3.0, max_size=30.0):
+    """Pieces standing on the landscape (flat bottom touching the ground somewhere under them) are extended down to
+    25 cm under the lowest ground point of their footprint, so nothing hovers on a slope. Returns the count."""
+    n = 0
+    for g in groups:
+        for p in g.prims:
+            if p["col"] == "only":
+                continue
+            v = np.asarray(p["v"], float)
+            zb = v[:, 2].min(); bot = v[:, 2] < zb + 0.01
+            lo, hi = v.min(0), v.max(0)
+            if bot.sum() < 3 or hi[0] - lo[0] > max_size or hi[1] - lo[1] > max_size:
+                continue
+            gx, gy = np.meshgrid(np.linspace(lo[0], hi[0], 6), np.linspace(lo[1], hi[1], 6))
+            t = sample(H, gx.ravel(), gy.ravel())
+            if zb > t.max() + 0.3 or zb <= t.min() + 0.05 or zb - (t.min() - 0.25) > max_ext:
+                continue
+            v[bot, 2] = t.min() - 0.25
+            p["v"] = np.round(v, 3).tolist(); n += 1
+    return n

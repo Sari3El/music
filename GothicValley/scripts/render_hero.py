@@ -1,4 +1,5 @@
-# Blender (Workbench): greybox hero views V1-V8 of the design document + an overview, terrain at 2.25 m, river and fen water.
+# Blender (Cycles): textured hero views V1-V8 of the design document + an overview, terrain at 2.25 m with the same splat
+# layering as the Unreal landscape material, river and fen water, physical sky with a low autumn sun.
 # usage: blender -b --factory-startup --python render_hero.py -- ROOT OUTDIR castle.blend city.blend sites.blend
 import bpy, sys, os, json, math
 import numpy as np
@@ -20,15 +21,15 @@ print("objects", len(sc.objects), flush=True)
 # ------------------------------------------------------------------ terrain + water
 H = np.load(f"{ROOT}/terrain/H_4033.npy")
 DEP = np.load(f"{ROOT}/terrain/river_depth.npy").astype(np.float32)
-RM = np.load(f"{ROOT}/terrain/road_mask.npy")
+TEX = f"{ROOT}/textures"
 ST = 3
-Hs, Ds, Rs = H[::ST, ::ST], DEP[::ST, ::ST], RM[::ST, ::ST]
+Hs, Ds = H[::ST, ::ST], DEP[::ST, ::ST]
 n = Hs.shape[0]
 ax = np.linspace(-1512.0, 1512.0, H.shape[0])[::ST]
 Xg, Yg = np.meshgrid(ax, ax)                     # arrays are [row = Y, col = X]
 
 
-def grid_mesh(name, Z, mask_faces, mats, mat_index):
+def grid_mesh(name, Z, mask_faces, mat, uvs=()):
     verts = np.stack([Xg.ravel(), -Yg.ravel(), Z.ravel()], 1).astype(np.float32)
     r, c = np.nonzero(mask_faces)
     i0 = r * n + c
@@ -39,52 +40,100 @@ def grid_mesh(name, Z, mask_faces, mats, mat_index):
     me.polygons.add(len(quads))
     me.polygons.foreach_set("loop_start", (np.arange(len(quads)) * 4).astype(np.int32))
     me.polygons.foreach_set("loop_total", np.full(len(quads), 4, np.int32))
-    for m in mats:
-        me.materials.append(m)
-    me.polygons.foreach_set("material_index", mat_index[r, c].astype(np.int32))
+    for uname, U, V in uvs:                                                      # per-vertex UVs spread to the loops
+        lay = me.uv_layers.new(name=uname)
+        lay.data.foreach_set("uv", np.stack([U.ravel()[quads.ravel()], V.ravel()[quads.ravel()]], 1).ravel().astype(np.float32))
+    me.materials.append(mat)
     me.update(); me.validate()
     ob = bpy.data.objects.new(name, me); sc.collection.objects.link(ob)
     return ob
 
 
-def mat(name, rgb, rough=0.9):
-    m = bpy.data.materials.new(name); m.use_nodes = False
-    m.diffuse_color = (*rgb, 1.0); m.roughness = rough
+def img_node(nt, path, colour, uvnode):
+    t = nt.nodes.new("ShaderNodeTexImage"); t.image = bpy.data.images.load(path, check_existing=True)
+    t.image.colorspace_settings.name = "sRGB" if colour else "Non-Color"
+    t.image.alpha_mode = "CHANNEL_PACKED"
+    nt.links.new(uvnode.outputs["UV"], t.inputs["Vector"])
+    return t
+
+
+def terrain_material():
+    """Same layering as the Unreal landscape material: grass, then mud, road, paving, rock and snow by the splat maps."""
+    m = bpy.data.materials.new("T_Terrain"); m.use_nodes = True
+    nt = m.node_tree; bsdf = nt.nodes["Principled BSDF"]
+    uvt = nt.nodes.new("ShaderNodeUVMap"); uvt.uv_map = "tile"
+    uvs = nt.nodes.new("ShaderNodeUVMap"); uvs.uv_map = "splat"
+    sp = img_node(nt, f"{TEX}/T_GV_Splat.png", False, uvs)
+    sep = nt.nodes.new("ShaderNodeSeparateColor"); nt.links.new(sp.outputs["Color"], sep.inputs["Color"])
+    sp2 = img_node(nt, f"{TEX}/T_GV_Splat2.png", False, uvs)
+    sep2 = nt.nodes.new("ShaderNodeSeparateColor"); nt.links.new(sp2.outputs["Color"], sep2.inputs["Color"])
+    w = {"L_Mud": sep.outputs["Blue"], "L_Road": sep.outputs["Green"], "L_Paving": sep2.outputs["Red"], "L_Rock": sep.outputs["Red"],
+         "L_Snow": sp.outputs["Alpha"]}
+    outs = {}
+    for k, colour in (("D", True), ("R", False), ("N", False)):
+        ext = "png" if k == "N" else "jpg"
+        cur = img_node(nt, f"{TEX}/T_L_Grass_{k}.{ext}", colour, uvt).outputs["Color"]
+        for layer in ("L_Mud", "L_Road", "L_Paving", "L_Rock", "L_Snow"):
+            mix = nt.nodes.new("ShaderNodeMix"); mix.data_type = "RGBA"
+            nt.links.new(w[layer], mix.inputs["Factor"]); nt.links.new(cur, mix.inputs[6])
+            nt.links.new(img_node(nt, f"{TEX}/T_{layer}_{k}.{ext}", colour, uvt).outputs["Color"], mix.inputs[7])
+            cur = mix.outputs[2]
+        outs[k] = cur
+    macro = nt.nodes.new("ShaderNodeTexNoise"); macro.inputs["Scale"].default_value = 0.004   # large-scale tone variation
+    tc = nt.nodes.new("ShaderNodeTexCoord"); nt.links.new(tc.outputs["Object"], macro.inputs["Vector"])
+    ramp = nt.nodes.new("ShaderNodeMapRange"); ramp.inputs["To Min"].default_value = 0.75; ramp.inputs["To Max"].default_value = 1.2
+    nt.links.new(macro.outputs["Fac"], ramp.inputs["Value"])
+    mul = nt.nodes.new("ShaderNodeMix"); mul.data_type = "RGBA"; mul.blend_type = "MULTIPLY"; mul.inputs["Factor"].default_value = 1.0
+    nt.links.new(outs["D"], mul.inputs[6]); nt.links.new(ramp.outputs["Result"], mul.inputs[7])
+    nt.links.new(mul.outputs[2], bsdf.inputs["Base Color"])
+    nt.links.new(outs["R"], bsdf.inputs["Roughness"])
+    nm = nt.nodes.new("ShaderNodeNormalMap"); nm.inputs["Strength"].default_value = 0.7
+    nt.links.new(outs["N"], nm.inputs["Color"]); nt.links.new(nm.outputs["Normal"], bsdf.inputs["Normal"])
     return m
 
 
-gy, gx = np.gradient(Hs, ax[1] - ax[0])
-slope = np.degrees(np.arctan(np.hypot(gx, gy)))[:-1, :-1]
-idx = np.where(slope > 38, 1, 0)
-idx = np.where((Rs[:-1, :-1] > 0) & (Rs[:-1, :-1] < 5), 2, idx)
-idx = np.where(Hs[:-1, :-1] > 390, 3, idx)
-TM = [mat("T_Grass", (0.22, 0.26, 0.15)), mat("T_Rock", (0.34, 0.33, 0.32)), mat("T_Road", (0.45, 0.40, 0.32)), mat("T_Snow", (0.85, 0.86, 0.88))]
-grid_mesh("Terrain", Hs, np.ones((n - 1, n - 1), bool), TM, idx)
+TERR = terrain_material()
+grid_mesh("Terrain", Hs, np.ones((n - 1, n - 1), bool), TERR,
+          uvs=[("tile", Xg / 4.0, Yg / 4.0), ("splat", (Xg + 1512.0) / 3024.0, 1.0 - (Yg + 1512.0) / 3024.0)])
 wet = Ds > 0.05
 fen = (np.hypot(Xg + 1230, Yg + 1230) < 270) & (Hs < 3.0)
 WZ = np.where(wet, Hs + Ds - 0.6, np.where(fen, 3.0, Hs - 5))
 wm = (wet | fen)
 wf = wm[:-1, :-1] & wm[1:, :-1] & wm[:-1, 1:] & wm[1:, 1:]
-grid_mesh("Water", WZ.astype(np.float32), wf, [mat("T_Water", (0.12, 0.20, 0.26), 0.05)], np.zeros((n - 1, n - 1), int))
+water = bpy.data.materials.new("T_Water"); water.use_nodes = True
+wb = water.node_tree.nodes["Principled BSDF"]
+wb.inputs["Base Color"].default_value = (0.012, 0.018, 0.02, 1); wb.inputs["Roughness"].default_value = 0.04
+grid_mesh("Water", WZ.astype(np.float32), wf, water)
 
-# ------------------------------------------------------------------ render settings
-sc.render.engine = "BLENDER_WORKBENCH"
-wo = bpy.data.worlds.new("sky"); wo.color = (0.58, 0.64, 0.72); sc.world = wo
+# ------------------------------------------------------------------ render settings: Cycles, physical sky, low sun
+sc.render.engine = "CYCLES"
+sc.cycles.device = "CPU"
+sc.cycles.samples = int(os.environ.get("GV_SAMPLES", "48"))
+sc.cycles.use_adaptive_sampling = True
+sc.cycles.use_denoising = True
+sc.cycles.denoiser = "OPENIMAGEDENOISE"
+sc.cycles.max_bounces = 4; sc.cycles.diffuse_bounces = 2; sc.cycles.glossy_bounces = 2; sc.cycles.transmission_bounces = 2
+sc.cycles.caustics_reflective = False; sc.cycles.caustics_refractive = False
+wo = bpy.data.worlds.new("sky"); wo.use_nodes = True; sc.world = wo
+sky = wo.node_tree.nodes.new("ShaderNodeTexSky"); sky.sky_type = "NISHITA"
+sky.sun_elevation = math.radians(16.0); sky.sun_rotation = math.radians(215.0); sky.sun_disc = False
+sky.air_density = 1.6; sky.dust_density = 4.0
+bg = wo.node_tree.nodes["Background"]; bg.inputs["Strength"].default_value = 0.35
+wo.node_tree.links.new(sky.outputs["Color"], bg.inputs["Color"])
+sun_d = bpy.data.lights.new("sun", "SUN"); sun_d.energy = 2.6; sun_d.angle = math.radians(1.5); sun_d.color = (1.0, 0.86, 0.70)
+sun = bpy.data.objects.new("sun", sun_d); sc.collection.objects.link(sun)
+sun.rotation_euler = (math.radians(90 - 16.0), 0.0, math.radians(215.0 - 90.0))
 sc.render.resolution_x, sc.render.resolution_y = 1600, 900
-sc.display.shading.light = "STUDIO"
-sc.display.shading.color_type = "MATERIAL"
-sc.display.shading.show_shadows = True
-sc.display.shading.shadow_intensity = 0.55
-sc.display.shading.show_cavity = True
-sc.display.shading.cavity_type = "BOTH"
-sc.display.shading.show_specular_highlight = False
-sc.display.shading.background_type = "VIEWPORT"
-sc.display.shading.background_color = (0.58, 0.64, 0.72)
-sc.display.light_direction = (0.45, -0.35, 0.82)
-sc.display.render_aa = "8"
-sc.view_settings.view_transform = "Standard"
+sc.view_settings.view_transform = "AgX"
+try:
+    sc.view_settings.look = "AgX - Medium High Contrast"
+except Exception:
+    pass
+sc.view_settings.exposure = 0.3
 cam_d = bpy.data.cameras.new("cam"); cam_d.lens = 24; cam_d.clip_start = 0.3; cam_d.clip_end = 20000
 cam = bpy.data.objects.new("cam", cam_d); sc.collection.objects.link(cam); sc.camera = cam
+torch_d = bpy.data.lights.new("torch", "POINT"); torch_d.energy = 1500.0; torch_d.color = (1.0, 0.62, 0.32); torch_d.shadow_soft_size = 0.3
+torch = bpy.data.objects.new("torch", torch_d); sc.collection.objects.link(torch)
 M = json.load(open(f"{ROOT}/data/layout_manifest.json"))
 
 
@@ -96,7 +145,9 @@ def ground(x, y):
 FIX = {"V3": 201.9 + 1.7, "V5": 80.0 + 1.7}                       # deck of the Great Bridge, floor of the bell chamber
 views = [dict(v) for v in M["hero_views"]] + [dict(id="V0", name="Valley overview", camera=[-1450, -1650, 950], look_at=[200, -100, 60])]
 LOG = []
-for v in views:
+ONLY = [x for x in os.environ.get("GV_VIEWS", "").split(",") if x]
+sc.render.resolution_percentage = int(os.environ.get("GV_SCALE", "100"))
+for v in [v for v in views if not ONLY or v["id"] in ONLY]:
     cx, cy, cz = v["camera"]
     cz = FIX.get(v["id"], max(cz, ground(cx, cy) + 1.6))
     tx, ty, tz = v["look_at"]
@@ -104,6 +155,9 @@ for v in views:
     cam.location = loc
     cam.rotation_euler = (tgt - loc).to_track_quat("-Z", "Y").to_euler()
     cam_d.lens = 18 if v["id"] in ("V4", "V5", "V2") else 24
+    sc.view_settings.exposure = {"V4": 2.4, "V5": 1.4}.get(v["id"], 0.3)       # interiors lit only through their openings
+    torch.hide_render = v["id"] not in ("V4", "V5")                              # + a warm hand-held light (phase 7 will add torches)
+    torch.location = loc + (tgt - loc).normalized() * 1.5 + Vector((0, 0, 0.6))
     fn = f"{OUT}/{v['id']}_{v['name'].replace(' ', '_')}.png"
     sc.render.filepath = fn
     bpy.ops.render.render(write_still=True)
