@@ -5,10 +5,14 @@ Réalisation du cahier des charges *Gothic Vampire Map: Design Document for Unre
 des routes, une rivière, un ruisseau et une cascade. Cible : ADK Nanos World (UE 5.7).
 
 > **État : phases 1 (relief) et 2 (greybox) terminées et vérifiées automatiquement, textures de la phase 3
-> en place.** La phase 0 (test World Partition sur un serveur Nanos World) et l'import dans Unreal se font chez
-> vous. Les phases 4 à 10 (architecture finale, intérieurs, lumière, gameplay, optimisation) viennent ensuite.
+> en place, phase 4 commencée** avec les modèles des packs fournis : la maison des chasseurs, son passage secret
+> et la bibliothèque souterraine sont terminés. Suivent le château des vampires (Castle 2.0), les maisons de la
+> ville, l'église et la maison du noble. La phase 0 (test World Partition sur un serveur Nanos World) et l'import
+> dans Unreal se font chez vous.
 
-Tout est généré par les scripts de ce dossier, sans asset tiers ni contenu de franchise, textures comprises.
+Le relief et le greybox sont générés par les scripts de ce dossier, sans contenu de franchise. Les modèles tiers de
+la phase 4 (licences et autorisations déclarées par le commanditaire, crédits dans le journal de build) ne sont pas
+stockés ici : `scripts/prep_assets.sh` les prépare à partir du dossier des packs.
 Le paquet prêt à importer (FBX, heightmap, textures, script Unreal, rendus, contrôles) se reconstruit avec
 `scripts/full_build.sh`.
 
@@ -28,6 +32,7 @@ Le paquet prêt à importer (FBX, heightmap, textures, script Unreal, rendus, co
 | Audit géométrique (`scripts/gb_audit.py`) | aucune pièce posée sur le vide, aucun terrain au-dessus d'un sol ; pièces isolées restantes vérifiées une à une en image |
 | Textures | 16 surfaces de bâtiments et 6 couches de sol générées, UV à l'échelle du monde, matériaux Unreal construits par le script |
 | Vues héros V1 à V8 | rendus texturés (Cycles) depuis les caméras du cahier (`screenshots/`) |
+| Maison des chasseurs + bibliothèque | grande salle, cabinet, armoire coulissante, colimaçon, escalier secret de 154 marches, nef de 45 × 120 m à trois niveaux ; test de marche 15/15 salles, 0 fuite ; rendus dans `screenshots/lodge/` |
 
 Écarts au cahier et questions ouvertes (par exemple les pentes des routes basse du château et commerciale, 12 et
 14 % au lieu de 10 %) : voir le journal de build [`pack/BUILD_LOG.md`](pack/BUILD_LOG.md).
@@ -42,13 +47,15 @@ d'apparition, les caméras des vues héros, les volumes et la rivière, règle l
 ## Contenu du dossier
 
 ```
-scripts/        générateurs Python (relief, greybox, tests de marche, audit, textures, export Blender, rendus, journal, paquet)
-data/           annexe A (layout_manifest.json), tracés finaux des routes, parcelles du plan de la ville
+scripts/        générateurs Python (relief, greybox, tests de marche, audit, textures, export Blender, rendus, journal, paquet),
+                préparation des packs (prep_assets.sh), maison et bibliothèque (gb_lodge.py, render_lodge.py, track_lodge.py)
+data/           annexe A (layout_manifest.json), tracés finaux des routes (dont le chemin des chasseurs), parcelles du plan
+                de la ville, pièces du kit de bibliothèque (kit_library.json), matériaux des packs, placements
 doc/            plans du cahier utilisés par les contrôles de superposition
 greybox/        métadonnées lues par le relief (vides couverts, plateformes) et configurations des tests de marche
 pack/           script Unreal, guide d'installation, journal de build (copiés dans le paquet)
 checks/         résultats des contrôles (POI, règles, tests de marche, temps de trajet, superpositions)
-screenshots/    vues héros V1 à V8 et vue d'ensemble (rendus greybox)
+screenshots/    vues héros V1 à V8 et vue d'ensemble (rendus greybox) ; lodge/ : maison des chasseurs et bibliothèque
 ```
 
 ## Reconstruire le paquet
@@ -57,6 +64,7 @@ Prérequis : Python 3 avec numpy, scipy, numba et Pillow, ainsi que Blender 4.5 
 
 ```bash
 cd GothicValley
+scripts/prep_assets.sh "$PWD" /chemin/des/packs   # une fois : modèles des packs (maison, kit de bibliothèque, textures)
 scripts/full_build.sh "$PWD"       # relief, greybox, tests de marche, audit, textures, export FBX, rendus, journal, paquet
 ```
 

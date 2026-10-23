@@ -1,0 +1,17 @@
+[
+ {
+  "id": "B3",
+  "name": "East aisle, second gallery",
+  "camera": [
+   -1383.6999999999998,
+   -592.8199999999999,
+   51.900000000000006
+  ],
+  "target": [
+   -1378.6,
+   -557.02,
+   51.2
+  ],
+  "file": "B3_East_aisle,_second_gallery.png"
+ }
+]

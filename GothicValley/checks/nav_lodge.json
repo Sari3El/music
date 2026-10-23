@@ -1,0 +1,244 @@
+{
+ "name": "lodge",
+ "cells": [
+  132,
+  450,
+  660
+ ],
+ "hulls": 869,
+ "nodes": 110201,
+ "reached": 86196,
+ "seeds": [
+  [
+   -1375.0,
+   -701.6,
+   81.08,
+   true
+  ]
+ ],
+ "rooms": [
+  {
+   "name": "Lodge study",
+   "z": 81.08,
+   "floor_cells": 77,
+   "reached_cells": 17,
+   "reached": true,
+   "share": 0.22
+  },
+  {
+   "name": "Lodge hidden stair (top platform)",
+   "z": 81.08,
+   "floor_cells": 4,
+   "reached_cells": 4,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Lodge great hall",
+   "z": 81.08,
+   "floor_cells": 295,
+   "reached_cells": 206,
+   "reached": true,
+   "share": 0.7
+  },
+  {
+   "name": "Secret stair, foot of the spiral",
+   "z": 76.28,
+   "floor_cells": 6,
+   "reached_cells": 6,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Secret stair, middle landing",
+   "z": 62.73,
+   "floor_cells": 4,
+   "reached_cells": 4,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library, dais under the great window",
+   "z": 40.45,
+   "floor_cells": 21,
+   "reached_cells": 21,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library balcony (arrival of the secret stair)",
+   "z": 50.2,
+   "floor_cells": 118,
+   "reached_cells": 118,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library landing L1",
+   "z": 45.1,
+   "floor_cells": 154,
+   "reached_cells": 154,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library west aisle, level 0",
+   "z": 40.0,
+   "floor_cells": 1386,
+   "reached_cells": 1386,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library west aisle, level 1",
+   "z": 45.1,
+   "floor_cells": 1386,
+   "reached_cells": 1386,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library west aisle, level 2",
+   "z": 50.2,
+   "floor_cells": 1314,
+   "reached_cells": 1314,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library east aisle, level 0",
+   "z": 40.0,
+   "floor_cells": 1386,
+   "reached_cells": 1386,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library east aisle, level 1",
+   "z": 45.1,
+   "floor_cells": 1386,
+   "reached_cells": 1386,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library east aisle, level 2",
+   "z": 50.2,
+   "floor_cells": 1314,
+   "reached_cells": 1314,
+   "reached": true,
+   "share": 1.0
+  },
+  {
+   "name": "Library nave floor",
+   "z": 40.0,
+   "floor_cells": 3234,
+   "reached_cells": 1947,
+   "reached": true,
+   "share": 0.6
+  }
+ ],
+ "probes": {
+  "hall": {
+   "at": [
+    -1383.0,
+    -698.2,
+    81.08
+   ],
+   "found": true,
+   "reached": true,
+   "z": 81.1
+  },
+  "study": {
+   "at": [
+    -1388.7,
+    -702.0,
+    81.08
+   ],
+   "found": true,
+   "reached": true,
+   "z": 81.1
+  },
+  "spiral_top": {
+   "at": [
+    -1389.9,
+    -699.5,
+    81.08
+   ],
+   "found": true,
+   "reached": true,
+   "z": 81.1
+  },
+  "spiral_foot": {
+   "at": [
+    -1391.1,
+    -695.5,
+    76.28
+   ],
+   "found": true,
+   "reached": true,
+   "z": 76.3
+  },
+  "balcony": {
+   "at": [
+    -1391.1,
+    -624.52,
+    50.2
+   ],
+   "found": true,
+   "reached": true,
+   "z": 50.2
+  },
+  "landing_L1": {
+   "at": [
+    -1391.1,
+    -610.02,
+    45.1
+   ],
+   "found": true,
+   "reached": true,
+   "z": 45.1
+  },
+  "nave_floor": {
+   "at": [
+    -1391.1,
+    -567.02,
+    40.0
+   ],
+   "found": true,
+   "reached": true,
+   "z": 40.0
+  },
+  "east_aisle_L2": {
+   "at": [
+    -1382.1,
+    -567.02,
+    50.2
+   ],
+   "found": true,
+   "reached": true,
+   "z": 50.2
+  },
+  "west_aisle_L2": {
+   "at": [
+    -1400.1,
+    -567.02,
+    50.2
+   ],
+   "found": true,
+   "reached": true,
+   "z": 50.2
+  },
+  "dais": {
+   "at": [
+    -1391.1,
+    -514.02,
+    40.45
+   ],
+   "found": true,
+   "reached": true,
+   "z": 40.5
+  }
+ },
+ "leaks": []
+}

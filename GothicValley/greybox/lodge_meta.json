@@ -1,0 +1,1385 @@
+{
+ "rooms": [
+  {
+   "name": "Lodge study",
+   "x0": -1393.4,
+   "x1": -1388.0,
+   "y0": -706.6,
+   "y1": -700.5,
+   "z0": 81.08,
+   "z1": 85.78,
+   "interior": "lodge"
+  },
+  {
+   "name": "Lodge hidden stair (top platform)",
+   "x0": -1390.75,
+   "x1": -1389.2,
+   "y0": -700.1,
+   "y1": -698.6,
+   "z0": 81.08,
+   "z1": 85.78,
+   "interior": "lodge",
+   "sealed": true
+  },
+  {
+   "name": "Lodge great hall",
+   "x0": -1386.1,
+   "x1": -1377.8,
+   "y0": -706.6,
+   "y1": -696.2,
+   "z0": 81.08,
+   "z1": 88.28,
+   "interior": "lodge"
+  },
+  {
+   "name": "Secret stair, foot of the spiral",
+   "x0": -1392.1,
+   "x1": -1390.1,
+   "y0": -696.45,
+   "y1": -694.4,
+   "z0": 76.28,
+   "z1": 79.28,
+   "interior": "lodge",
+   "sealed": true
+  },
+  {
+   "name": "Secret stair, middle landing",
+   "x0": -1392.1,
+   "x1": -1390.1,
+   "y0": -662.3,
+   "y1": -660.7,
+   "z0": 62.73,
+   "z1": 65.73,
+   "interior": "lodge",
+   "sealed": true
+  },
+  {
+   "name": "Library, dais under the great window",
+   "x0": -1396.6,
+   "x1": -1385.6,
+   "y0": -514.62,
+   "y1": -513.62,
+   "z0": 40.45,
+   "z1": 44.45,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library balcony (arrival of the secret stair)",
+   "x0": -1396.6,
+   "x1": -1385.6,
+   "y0": -626.42,
+   "y1": -622.62,
+   "z0": 50.2,
+   "z1": 54.2,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library landing L1",
+   "x0": -1396.9,
+   "x1": -1385.3,
+   "y0": -612.02,
+   "y1": -607.82,
+   "z0": 45.1,
+   "z1": 49.1,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library west aisle, level 0",
+   "x0": -1411.1,
+   "x1": -1401.6,
+   "y0": -597.02,
+   "y1": -527.02,
+   "z0": 40.0,
+   "z1": 44.6,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library west aisle, level 1",
+   "x0": -1411.1,
+   "x1": -1401.6,
+   "y0": -597.02,
+   "y1": -527.02,
+   "z0": 45.1,
+   "z1": 49.7,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library west aisle, level 2",
+   "x0": -1411.1,
+   "x1": -1401.6,
+   "y0": -597.02,
+   "y1": -527.02,
+   "z0": 50.2,
+   "z1": 54.8,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library east aisle, level 0",
+   "x0": -1380.6,
+   "x1": -1371.1,
+   "y0": -597.02,
+   "y1": -527.02,
+   "z0": 40.0,
+   "z1": 44.6,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library east aisle, level 1",
+   "x0": -1380.6,
+   "x1": -1371.1,
+   "y0": -597.02,
+   "y1": -527.02,
+   "z0": 45.1,
+   "z1": 49.7,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library east aisle, level 2",
+   "x0": -1380.6,
+   "x1": -1371.1,
+   "y0": -597.02,
+   "y1": -527.02,
+   "z0": 50.2,
+   "z1": 54.8,
+   "interior": "library",
+   "sealed": true
+  },
+  {
+   "name": "Library nave floor",
+   "x0": -1396.6,
+   "x1": -1385.6,
+   "y0": -595.02,
+   "y1": -517.02,
+   "z0": 40.0,
+   "z1": 50.0,
+   "interior": "library",
+   "sealed": true
+  }
+ ],
+ "voids": [
+  [
+   -1393.0,
+   -1388.6,
+   -700.7,
+   -696.3,
+   75.58
+  ]
+ ],
+ "pads": [
+  [
+   -1400.0,
+   -700.0,
+   81.0,
+   40.0,
+   "hunters_lodge"
+  ]
+ ],
+ "movable": [
+  {
+   "name": "SM_GB_Lodge_SecretWardrobe",
+   "pivot": [
+    -1391.0,
+    -700.52,
+    81.08
+   ],
+   "motion": "slide",
+   "offset": [
+    -2.0,
+    0.0,
+    0.0
+   ],
+   "note": "slides 2 m along the false wall, uncovering the hidden door"
+  },
+  {
+   "name": "SM_GB_Lodge_DoorL",
+   "pivot": [
+    -1378.22,
+    -702.7,
+    81.08
+   ],
+   "motion": "hinge",
+   "note": "open (90 deg); closes to the door plane"
+  },
+  {
+   "name": "SM_GB_Lodge_DoorR",
+   "pivot": [
+    -1378.22,
+    -700.45,
+    81.08
+   ],
+   "motion": "hinge",
+   "note": "open (90 deg); closes to the door plane"
+  }
+ ],
+ "lights": [
+  {
+   "name": "lodge_study",
+   "xyz": [
+    -1390.6,
+    -704.0,
+    84.4
+   ],
+   "lumens": 1500,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "lodge_hidden_room",
+   "xyz": [
+    -1390.8,
+    -698.5,
+    83.6
+   ],
+   "lumens": 250,
+   "radius": 6,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "lodge_shaft_bottom",
+   "xyz": [
+    -1391.1,
+    -697.0,
+    78.58
+   ],
+   "lumens": 400,
+   "radius": 6,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "lodge_hall_chandelier_17",
+   "xyz": [
+    -1383.4,
+    -701.4,
+    84.6
+   ],
+   "lumens": 2500,
+   "radius": 11,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "lodge_hall_chandelier_19",
+   "xyz": [
+    -1381.3,
+    -701.4,
+    84.6
+   ],
+   "lumens": 2500,
+   "radius": 11,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "lodge_hall_fire",
+   "xyz": [
+    -1386.4,
+    -699.0,
+    81.9
+   ],
+   "lumens": 3500,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": true
+  },
+  {
+   "name": "lodge_porch",
+   "xyz": [
+    -1376.5,
+    -701.6,
+    84.6
+   ],
+   "lumens": 800,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "stair_torch_0",
+   "xyz": [
+    -1390.5,
+    -695.4,
+    78.58
+   ],
+   "lumens": 700,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": true
+  },
+  {
+   "name": "stair_torch_2",
+   "xyz": [
+    -1390.5,
+    -681.66,
+    73.16
+   ],
+   "lumens": 700,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": false
+  },
+  {
+   "name": "stair_torch_4",
+   "xyz": [
+    -1390.5,
+    -668.22,
+    67.74
+   ],
+   "lumens": 700,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": true
+  },
+  {
+   "name": "stair_torch_6",
+   "xyz": [
+    -1390.5,
+    -654.78,
+    62.32
+   ],
+   "lumens": 700,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": false
+  },
+  {
+   "name": "stair_torch_8",
+   "xyz": [
+    -1390.5,
+    -641.34,
+    56.9
+   ],
+   "lumens": 700,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": true
+  },
+  {
+   "name": "stair_torch_10",
+   "xyz": [
+    -1390.5,
+    -629.32,
+    52.5
+   ],
+   "lumens": 700,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_window_glow",
+   "xyz": [
+    -1391.1,
+    -511.02,
+    51.0
+   ],
+   "lumens": 9000,
+   "radius": 30,
+   "color": [
+    0.75,
+    0.55,
+    0.95
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_balcony_door",
+   "xyz": [
+    -1391.1,
+    -625.02,
+    53.4
+   ],
+   "lumens": 1500,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w0_0",
+   "xyz": [
+    -1405.1,
+    -619.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w0_1",
+   "xyz": [
+    -1405.1,
+    -604.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w0_2",
+   "xyz": [
+    -1405.1,
+    -589.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w0_3",
+   "xyz": [
+    -1405.1,
+    -574.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w0_4",
+   "xyz": [
+    -1405.1,
+    -559.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w0_5",
+   "xyz": [
+    -1405.1,
+    -544.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w0_6",
+   "xyz": [
+    -1405.1,
+    -529.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w0_7",
+   "xyz": [
+    -1405.1,
+    -514.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w1_0",
+   "xyz": [
+    -1405.1,
+    -619.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w1_1",
+   "xyz": [
+    -1405.1,
+    -604.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w1_2",
+   "xyz": [
+    -1405.1,
+    -589.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w1_3",
+   "xyz": [
+    -1405.1,
+    -574.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w1_4",
+   "xyz": [
+    -1405.1,
+    -559.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w1_5",
+   "xyz": [
+    -1405.1,
+    -544.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w1_6",
+   "xyz": [
+    -1405.1,
+    -529.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w1_7",
+   "xyz": [
+    -1405.1,
+    -514.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w2_0",
+   "xyz": [
+    -1405.1,
+    -619.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w2_1",
+   "xyz": [
+    -1405.1,
+    -604.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w2_2",
+   "xyz": [
+    -1405.1,
+    -589.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w2_3",
+   "xyz": [
+    -1405.1,
+    -574.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w2_4",
+   "xyz": [
+    -1405.1,
+    -559.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_w2_5",
+   "xyz": [
+    -1405.1,
+    -544.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w2_6",
+   "xyz": [
+    -1405.1,
+    -529.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_w2_7",
+   "xyz": [
+    -1405.1,
+    -514.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e0_0",
+   "xyz": [
+    -1377.1,
+    -619.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e0_1",
+   "xyz": [
+    -1377.1,
+    -604.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e0_2",
+   "xyz": [
+    -1377.1,
+    -589.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e0_3",
+   "xyz": [
+    -1377.1,
+    -574.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e0_4",
+   "xyz": [
+    -1377.1,
+    -559.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e0_5",
+   "xyz": [
+    -1377.1,
+    -544.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e0_6",
+   "xyz": [
+    -1377.1,
+    -529.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e0_7",
+   "xyz": [
+    -1377.1,
+    -514.52,
+    43.6
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e1_0",
+   "xyz": [
+    -1377.1,
+    -619.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e1_1",
+   "xyz": [
+    -1377.1,
+    -604.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e1_2",
+   "xyz": [
+    -1377.1,
+    -589.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e1_3",
+   "xyz": [
+    -1377.1,
+    -574.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e1_4",
+   "xyz": [
+    -1377.1,
+    -559.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e1_5",
+   "xyz": [
+    -1377.1,
+    -544.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e1_6",
+   "xyz": [
+    -1377.1,
+    -529.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e1_7",
+   "xyz": [
+    -1377.1,
+    -514.52,
+    48.7
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e2_0",
+   "xyz": [
+    -1377.1,
+    -619.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e2_1",
+   "xyz": [
+    -1377.1,
+    -604.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e2_2",
+   "xyz": [
+    -1377.1,
+    -589.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e2_3",
+   "xyz": [
+    -1377.1,
+    -574.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e2_4",
+   "xyz": [
+    -1377.1,
+    -559.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_aisle_e2_5",
+   "xyz": [
+    -1377.1,
+    -544.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e2_6",
+   "xyz": [
+    -1377.1,
+    -529.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_aisle_e2_7",
+   "xyz": [
+    -1377.1,
+    -514.52,
+    53.8
+   ],
+   "lumens": 2400,
+   "radius": 13,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_nave_1",
+   "xyz": [
+    -1391.1,
+    -604.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_nave_2",
+   "xyz": [
+    -1391.1,
+    -589.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_nave_3",
+   "xyz": [
+    -1391.1,
+    -574.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_nave_4",
+   "xyz": [
+    -1391.1,
+    -559.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_nave_5",
+   "xyz": [
+    -1391.1,
+    -544.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  },
+  {
+   "name": "library_nave_6",
+   "xyz": [
+    -1391.1,
+    -529.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "library_nave_7",
+   "xyz": [
+    -1391.1,
+    -514.52,
+    50.5
+   ],
+   "lumens": 7000,
+   "radius": 24,
+   "color": [
+    1.0,
+    0.72,
+    0.45
+   ],
+   "shadows": true
+  }
+ ],
+ "lodge": {
+  "origin": [
+   -1400.0,
+   -700.0,
+   81.0
+  ],
+  "floor": 81.08,
+  "door": [
+   -1377.7,
+   -701.58,
+   81.08
+  ]
+ },
+ "library": {
+  "origin": [
+   -1391.1,
+   -627.02,
+   40.0
+  ],
+  "levels": [
+   40.0,
+   45.1,
+   50.2
+  ],
+  "size": [
+   45.0,
+   120.0
+  ],
+  "vault_apex": 68.071,
+  "rock_cover_min_m": 12.4
+ },
+ "secret_stair": {
+  "risers": 154,
+  "riser_m": 0.1694,
+  "tread_m": 0.32,
+  "flights": 10,
+  "length_m": 68.8,
+  "drop_m": 26.08,
+  "rock_cover_min_m": 3.97
+ },
+ "sealed_note": "rooms flagged sealed lie under the landscape: no terrain cut, the audit checks the rock above them"
+}

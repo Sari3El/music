@@ -109551,6 +109551,331 @@
     24.48
    ],
    "terrain_gap": 1.23
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 1,
+   "mat": "LB_WoodFloor",
+   "col": true,
+   "unsupported": 0.44,
+   "kind": "spanning",
+   "faces_touched": 4,
+   "height": 0.35,
+   "size": [
+    0.7,
+    10.6
+   ],
+   "lo": [
+    -1393.5,
+    -706.7,
+    80.73
+   ],
+   "hi": [
+    -1392.8,
+    -696.1,
+    81.08
+   ],
+   "terrain_gap": -0.27
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 2,
+   "mat": "LB_WoodFloor",
+   "col": true,
+   "unsupported": 0.3,
+   "kind": "spanning",
+   "faces_touched": 4,
+   "height": 0.35,
+   "size": [
+    0.8,
+    10.6
+   ],
+   "lo": [
+    -1388.8,
+    -706.7,
+    80.73
+   ],
+   "hi": [
+    -1388.0,
+    -696.1,
+    81.08
+   ],
+   "terrain_gap": -0.27
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 3,
+   "mat": "LB_WoodFloor",
+   "col": true,
+   "unsupported": 0.12,
+   "kind": "spanning",
+   "faces_touched": 4,
+   "height": 0.35,
+   "size": [
+    4.0,
+    6.2
+   ],
+   "lo": [
+    -1392.8,
+    -706.7,
+    80.73
+   ],
+   "hi": [
+    -1388.8,
+    -700.5,
+    81.08
+   ],
+   "terrain_gap": -0.27
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 4,
+   "mat": "LB_WoodFloor",
+   "col": true,
+   "unsupported": 0.96,
+   "kind": "spanning",
+   "faces_touched": 4,
+   "height": 0.35,
+   "size": [
+    4.0,
+    0.4
+   ],
+   "lo": [
+    -1392.8,
+    -696.5,
+    80.73
+   ],
+   "hi": [
+    -1388.8,
+    -696.1,
+    81.08
+   ],
+   "terrain_gap": 0.42
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 10,
+   "mat": "FC_WoodPlanks",
+   "col": true,
+   "unsupported": 0.62,
+   "kind": "spanning",
+   "faces_touched": 4,
+   "height": 0.2,
+   "size": [
+    5.5,
+    10.6
+   ],
+   "lo": [
+    -1393.5,
+    -706.7,
+    85.8
+   ],
+   "hi": [
+    -1388.0,
+    -696.1,
+    86.0
+   ],
+   "terrain_gap": 4.8
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 11,
+   "mat": "LB_GlossyWood",
+   "col": false,
+   "unsupported": 0.74,
+   "kind": "spanning",
+   "faces_touched": 3,
+   "height": 0.35,
+   "size": [
+    0.3,
+    10.6
+   ],
+   "lo": [
+    -1392.55,
+    -706.7,
+    85.45
+   ],
+   "hi": [
+    -1392.25,
+    -696.1,
+    85.8
+   ],
+   "terrain_gap": 4.45
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 12,
+   "mat": "LB_GlossyWood",
+   "col": false,
+   "unsupported": 0.89,
+   "kind": "spanning",
+   "faces_touched": 3,
+   "height": 0.35,
+   "size": [
+    0.3,
+    10.6
+   ],
+   "lo": [
+    -1390.85,
+    -706.7,
+    85.45
+   ],
+   "hi": [
+    -1390.55,
+    -696.1,
+    85.8
+   ],
+   "terrain_gap": 4.45
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 13,
+   "mat": "LB_GlossyWood",
+   "col": false,
+   "unsupported": 0.61,
+   "kind": "spanning",
+   "faces_touched": 4,
+   "height": 0.35,
+   "size": [
+    0.3,
+    10.6
+   ],
+   "lo": [
+    -1389.15,
+    -706.7,
+    85.45
+   ],
+   "hi": [
+    -1388.85,
+    -696.1,
+    85.8
+   ],
+   "terrain_gap": 4.45
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 24,
+   "mat": "FC_StoneBrickWall",
+   "col": true,
+   "unsupported": 1.0,
+   "kind": "spanning",
+   "faces_touched": 3,
+   "height": 6.82,
+   "size": [
+    2.0,
+    0.3
+   ],
+   "lo": [
+    -1392.1,
+    -696.8,
+    78.98
+   ],
+   "hi": [
+    -1390.1,
+    -696.5,
+    85.8
+   ],
+   "terrain_gap": 2.14
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 31,
+   "mat": "FC_WoodPlanks",
+   "col": false,
+   "unsupported": 0.99,
+   "kind": "spanning",
+   "faces_touched": 2,
+   "height": 0.45,
+   "size": [
+    0.34,
+    10.6
+   ],
+   "lo": [
+    -1385.67,
+    -706.7,
+    87.85
+   ],
+   "hi": [
+    -1385.33,
+    -696.1,
+    88.3
+   ],
+   "terrain_gap": 6.85
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 32,
+   "mat": "FC_WoodPlanks",
+   "col": false,
+   "unsupported": 0.99,
+   "kind": "spanning",
+   "faces_touched": 2,
+   "height": 0.45,
+   "size": [
+    0.34,
+    10.6
+   ],
+   "lo": [
+    -1383.57,
+    -706.7,
+    87.85
+   ],
+   "hi": [
+    -1383.23,
+    -696.1,
+    88.3
+   ],
+   "terrain_gap": 6.85
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 33,
+   "mat": "FC_WoodPlanks",
+   "col": false,
+   "unsupported": 0.99,
+   "kind": "spanning",
+   "faces_touched": 2,
+   "height": 0.45,
+   "size": [
+    0.34,
+    10.6
+   ],
+   "lo": [
+    -1381.47,
+    -706.7,
+    87.85
+   ],
+   "hi": [
+    -1381.13,
+    -696.1,
+    88.3
+   ],
+   "terrain_gap": 6.85
+  },
+  {
+   "group": "SM_GB_Lodge_Interior",
+   "prim": 34,
+   "mat": "FC_WoodPlanks",
+   "col": false,
+   "unsupported": 0.99,
+   "kind": "spanning",
+   "faces_touched": 2,
+   "height": 0.45,
+   "size": [
+    0.34,
+    10.6
+   ],
+   "lo": [
+    -1379.37,
+    -706.7,
+    87.85
+   ],
+   "hi": [
+    -1379.03,
+    -696.1,
+    88.3
+   ],
+   "terrain_gap": 6.85
   }
  ],
  "rooms": []

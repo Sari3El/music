@@ -10,7 +10,11 @@
 #     NavMeshBoundsVolumes (castle, city, roads), river + fen water (Water plugin, if enabled)
 #  5. World Settings: GameMode override None, Kill Z -20000; one sky set (directional light, sky light, sky atmosphere,
 #     height fog with volumetric fog) tagged "Sun"
-#  6. if a Landscape is already in the level: auto material M_GV_Landscape (grass, mud, road, rock, snow blended by the
+#  6. asset packs (lodge, underground library, ...): imports their meshes (Content/Props, Content/Environment/Lodge),
+#     builds their material instances from Textures/T_LB_*, T_FC_* (two-sided shells, translucent glass), places every
+#     piece listed in Data/placements_*.json (no collision on them: the invisible UCX of the SM_GB_ meshes carry it) and
+#     the point lights of Data/lights.json (lumens, warm candle / torch colours)
+#  7. if a Landscape is already in the level: auto material M_GV_Landscape (grass, mud, road, rock, snow blended by the
 #     splat map T_GV_Splat, which follows the terrain) + checks (crag at [720, 310] = +204 m)
 #
 # The landscape itself is imported by hand first (Unreal Python cannot create a landscape):
@@ -113,6 +117,16 @@ PHYS = {"GB_Stone": "Stone", "GB_Roof": "Stone", "GB_Wood": "Wood", "GB_Interior
         "GB_Ground": "Dirt", "GB_Hedge": "Grass", "GB_Marker": "Wood", "GB_WinLit": "Wood", "GB_WinDark": "Wood", "GB_Rock": "Stone"}
 
 
+def load_json_opt(name):
+    p = os.path.join(DATA, name)
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
+KITMAT = load_json_opt("materials_kit.json") or {}                     # pack materials: colour, surface, flags
+for _n, _k in KITMAT.items():
+    COLORS[_n] = tuple(_k["color"]); PHYS[_n] = _k["phys"]
+
+
 def find_phys_materials():
     """The ADK ships physical materials for footsteps; pick them up by name wherever they are."""
     found = {}
@@ -206,6 +220,26 @@ def build_materials(tex):
         MEL.connect_material_property(em, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR)
         MEL.recompile_material(mat)
         EAL.save_loaded_asset(mat)
+    glass = None
+    if any(k.get("translucent") for k in KITMAT.values()):
+        gp = f"{path}/M_GB_MasterGlass"
+        if EAL.does_asset_exist(gp):
+            glass = EAL.load_asset(gp)
+        else:
+            glass = AT.create_asset("M_GB_MasterGlass", path, unreal.Material, unreal.MaterialFactoryNew())
+            glass.set_editor_property("blend_mode", unreal.BlendMode.BLEND_TRANSLUCENT)
+            glass.set_editor_property("two_sided", True)
+            tc = MEL.create_material_expression(glass, unreal.MaterialExpressionTextureCoordinate, -900, 0)
+            d = tex_param(glass, "BaseColorTex", tex["T_GB_Stone_D"], "D", tc, -600, -200)
+            op = MEL.create_material_expression(glass, unreal.MaterialExpressionScalarParameter, -600, 200)
+            op.set_editor_property("parameter_name", "Opacity"); op.set_editor_property("default_value", 0.35)
+            rg = MEL.create_material_expression(glass, unreal.MaterialExpressionConstant, -600, 350)
+            rg.set_editor_property("r", 0.08)
+            MEL.connect_material_property(d, "RGB", unreal.MaterialProperty.MP_BASE_COLOR)
+            MEL.connect_material_property(op, "", unreal.MaterialProperty.MP_OPACITY)
+            MEL.connect_material_property(rg, "", unreal.MaterialProperty.MP_ROUGHNESS)
+            MEL.recompile_material(glass)
+            EAL.save_loaded_asset(glass)
     phys = find_phys_materials()
     if not phys:
         warn("no PhysicalMaterial found in the project: footstep sounds will use the default (assign the ADK ones to the MI_GB_ later)")
@@ -214,7 +248,8 @@ def build_materials(tex):
         ip = f"{path}/MI_{name}"
         mi = EAL.load_asset(ip) if EAL.does_asset_exist(ip) else AT.create_asset(f"MI_{name}", path, unreal.MaterialInstanceConstant,
                                                                                   unreal.MaterialInstanceConstantFactoryNew())
-        MEL.set_material_instance_parent(mi, mat)
+        kit = KITMAT.get(name, {})
+        MEL.set_material_instance_parent(mi, glass if kit.get("translucent") and glass is not None else mat)
         for prm, k in (("BaseColorTex", "D"), ("NormalTex", "N"), ("RoughnessTex", "R")):
             t = tex.get(f"T_{name}_{k}")
             if t is not None:
@@ -228,6 +263,18 @@ def build_materials(tex):
             MEL.set_material_instance_scalar_parameter_value(mi, "Emissive", 6.0)
         if name == "GB_Metal":
             MEL.set_material_instance_scalar_parameter_value(mi, "Metallic", 0.7)
+        if kit.get("metallic"):
+            MEL.set_material_instance_scalar_parameter_value(mi, "Metallic", float(kit["metallic"]))
+        if kit.get("emissive") and not kit.get("translucent"):
+            MEL.set_material_instance_scalar_parameter_value(mi, "Emissive", float(kit["emissive"]))
+        if kit.get("two_sided"):                                              # single-sided shells seen from inside
+            try:
+                ov = mi.get_editor_property("base_property_overrides")
+                ov.set_editor_property("override_two_sided", True)
+                ov.set_editor_property("two_sided", True)
+                mi.set_editor_property("base_property_overrides", ov)
+            except Exception as ex:
+                warn(f"MI_{name}: two-sided override not set ({ex}); tick Two Sided in its details panel")
         pm = phys.get(PHYS[name])
         if pm is not None:
             try:
@@ -277,7 +324,11 @@ def clear_previous():
         log(f"{n} actors from a previous run removed")
 
 
-ZONE = {"Environment/Castle": "GV/Castle", "Environment/City": "GV/City", "Environment/Church": "GV/City/Church",
+MOTION = {}                                                              # name -> extra tags (sliding pieces)
+for _m in (load_json_opt("ue_extra.json") or {}).get("movable", []):
+    if _m.get("motion") == "slide":
+        MOTION[_m["name"]] = ["Slide", "SlideOffsetCm_" + "_".join(str(int(round(v * 100))) for v in _m["offset"])]
+ZONE = {"Environment/Lodge": "GV/Lodge", "Environment/Library": "GV/Lodge/Library", "Environment/Castle": "GV/Castle", "Environment/City": "GV/City", "Environment/Church": "GV/City/Church",
         "Environment/Manor": "GV/City/Manor", "Environment/Ruins": "GV/Ruins", "Environment/Nature": "GV/Nature",
         "Environment/Landscape": "GV/Backdrop", "Environment/Props": "GV/Props", "Maps": "GV/Debug"}
 
@@ -301,7 +352,8 @@ def place_meshes(report, mis):
         smc = a.get_component_by_class(unreal.StaticMeshComponent)
         if r.get("movable"):
             smc.set_mobility(unreal.ComponentMobility.MOVABLE)
-            a.set_editor_property("tags", [unreal.Name("ScriptedDoor")])
+            tags = ["ScriptedDoor"] + MOTION.get(r["name"], [])
+            a.set_editor_property("tags", [unreal.Name(t) for t in tags])
         if "Backdrop" in r["name"]:
             smc.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION)
             smc.set_editor_property("cast_shadow", False)
@@ -314,6 +366,62 @@ def place_meshes(report, mis):
         else:
             log("axis probe OK: +X north, +Y east")
         ACT.destroy_actor(probe[0])
+
+
+# ------------------------------------------------------------------ 3b. asset packs: kit meshes, placements, lights
+def import_kit():
+    kit = load_json_opt("kit_report.json") or []
+    if kit:
+        import_all(kit)
+    return kit
+
+
+ZONE_OF = {"placements_lodge.json": "GV/Lodge"}
+
+
+def place_kit(mis):
+    import glob
+    done = {}
+    for f in sorted(glob.glob(os.path.join(DATA, "placements_*.json"))):
+        zone = ZONE_OF.get(os.path.basename(f), "GV/Props")
+        n = 0
+        for p in load_json(os.path.basename(f)):
+            key = f"{DEST}/{p['folder']}/{p['mesh']}"
+            mesh = done.get(key)
+            if mesh is None:
+                mesh = EAL.load_asset(key)
+                if mesh is None:
+                    warn("missing kit mesh after import: " + p["mesh"])
+                    continue
+                assign_materials(mesh, mis)
+                done[key] = mesh
+            a = ACT.spawn_actor_from_object(mesh, ue(p["loc"]), unreal.Rotator(0.0, 0.0, p["yaw"]))
+            a.set_actor_scale3d(unreal.Vector(*p["scale"]))
+            a.set_folder_path(zone + "/" + p["folder"].split("/")[-1])
+            smc = a.get_component_by_class(unreal.StaticMeshComponent)
+            smc.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION)      # the SM_GB_ UCX hulls are the collision
+            n += 1
+        REPORT["placed"] += n
+        log(f"{n} kit pieces placed from {os.path.basename(f)}")
+
+
+def lights():
+    n = 0
+    for L in load_json_opt("lights.json") or []:
+        a = spawn(unreal.PointLight, ue(L["xyz"]), label="LIGHT_" + L["name"], folder="GV/Lights")
+        c = a.get_component_by_class(unreal.PointLightComponent)
+        try:
+            c.set_editor_property("intensity_units", unreal.LightUnits.LUMENS)
+        except Exception:
+            pass
+        c.set_editor_property("intensity", float(L["lumens"]))
+        c.set_editor_property("attenuation_radius", float(L["radius"]) * 100.0)
+        c.set_editor_property("source_radius", 4.0)
+        c.set_editor_property("cast_shadows", bool(L["shadows"]))
+        c.set_light_color(unreal.LinearColor(L["color"][0], L["color"][1], L["color"][2], 1.0))
+        n += 1
+    if n:
+        log(f"{n} point lights (candles, chandeliers, torches)")
 
 
 # ------------------------------------------------------------------ 4. markers, cameras, volumes, water
@@ -350,7 +458,8 @@ def markers(manifest, extra):
         if a.get_actor_bounds(False)[1].x < 1.0:
             warn(f"{b['name']}: the volume has no brush; resize it by hand (half-size {b['extent']} m)")
     for name, c, e in (("NAV_Castle", (700, 260, 200), (190, 200, 120)), ("NAV_City", (-450, -460, 30), (260, 330, 80)),
-                       ("NAV_Approach", (450, -60, 120), (330, 200, 120)), ("NAV_Valley", (-250, 0, 40), (1250, 1300, 220))):
+                       ("NAV_Approach", (450, -60, 120), (330, 200, 120)), ("NAV_Valley", (-250, 0, 40), (1250, 1300, 220)),
+                       ("NAV_LodgeLibrary", (-1391, -610, 62), (40, 105, 30))):
         a = spawn(unreal.NavMeshBoundsVolume, ue(c), label=name, folder="GV/Navigation")
         a.set_actor_scale3d(unreal.Vector(e[0], e[1], e[2]))
     for m in extra.get("markers", []):
@@ -518,16 +627,20 @@ def main():
     report = load_json("build_report.json")
     manifest = load_json("layout_manifest.json")
     extra = load_json("ue_extra.json")
-    with unreal.ScopedSlowTask(6, "Gothic Vampire Map - greybox") as task:
+    with unreal.ScopedSlowTask(7, "Gothic Vampire Map - greybox") as task:
         task.make_dialog(True)
         task.enter_progress_frame(1, "Import FBX")
         import_all(report)
+        import_kit()
         task.enter_progress_frame(1, "Textures and materials")
         tex = import_textures()
         mis = build_materials(tex)
         task.enter_progress_frame(1, "Placement")
         clear_previous()
         place_meshes(report, mis)
+        task.enter_progress_frame(1, "Asset packs: placements and lights")
+        place_kit(mis)
+        lights()
         task.enter_progress_frame(1, "Markers, cameras, volumes, water")
         markers(manifest, extra)
         water(manifest)

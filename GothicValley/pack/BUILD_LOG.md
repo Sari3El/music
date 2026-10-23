@@ -57,6 +57,7 @@ Elle demande l'ADK Nanos World et un serveur local, que je n'ai pas : projet UE 
   - mill_track (track, 348.0 m) : pente max du profil 11.4 % (règle 35.0 %) : OK
   - dock_lane (track, 69.0 m) : pente max du profil 11.6 % (règle 35.0 %) : OK
   - falls_path (footpath, 1018.0 m) : pente max du profil 7.0 % (règle 35.0 %) : OK
+  - hunters_track (track, 786.0 m) : pente max du profil 14.0 % (règle 35.0 %) : OK
 
 ## Phase 2 : greybox
 
@@ -142,6 +143,29 @@ Aucun trajet entre deux pôles ne dépasse 6 minutes en courant.
 - UV à l'échelle du monde (`gb_build.py`) : sols en plan, chaque autre face dans son plan avec le haut vers le haut, ce qui garde les assises et les tuiles horizontales et le motif continu d'un bâtiment à l'autre.
 - Paysage : herbe, boue des berges et du marais, chemins, pavés (ville et plateau du château), roche (pentes de plus de 35° environ) et neige (au-dessus de +385 m), mélangés par deux cartes de répartition calculées à partir du relief final (`T_GV_Splat`, `T_GV_Splat2`, 2048 px sur toute la carte). Le script Unreal construit `M_GV_Landscape` avec la même logique et l'applique au paysage importé.
 - Les kits d'architecture sous licence de la phase 4 remplaceront ces surfaces ; les noms de matériaux (`MI_GB_*`) restent les mêmes.
+
+## Phase 4 (en cours) : maison des chasseurs et bibliothèque souterraine
+
+- Maison de la famille de chasseurs (modèle « Fantasy Castle ») : le point le plus éloigné du château des vampires, à [-1400, -700], sur une plate-forme à +81 m. La porte regarde la vallée (nord). Le modèle n'a pas d'intérieur : l'aile basse est aménagée en grande salle (cheminée, table, lustres, coffres, râteliers) et en cabinet de travail (bibliothèque, table de lecture). Ses matériaux sont rendus double face pour que les murs se voient de l'intérieur ; la porte et les panneaux sombres derrière les fenêtres de cette aile sont retirés.
+- Passage secret : dans le cabinet, une armoire coulisse de 2 m (maillage *Movable*, tags `ScriptedDoor`, `Slide`) et découvre une porte cachée. Derrière, un escalier en colimaçon en fer (kit de la bibliothèque) descend de 4,8 m. Ensuite, un long escalier de pierre voûté de 69 m (154 marches de 16,9 cm sur 32 cm, 10 volées, paliers éclairés de torches) descend de 26,1 m jusqu'au balcon de la bibliothèque. Il reste au moins 4,0 m de roche au-dessus de sa voûte.
+- Bibliothèque souterraine : nef gothique de 45 × 120 m, sol à +40 m, voûtes à +68,1 m, avec au moins 12 m de roche au-dessus. Elle est construite avec les pièces du kit « Classic Library » : colonnes, croisées d'ogives et nervures à l'échelle 1,5, rayonnages et livres à l'échelle 1. On arrive par un balcon. Un escalier d'honneur (volée centrale, palier, puis deux volées) descend dans la nef. Deux galeries de bois courent dans chaque bas-côté (+5,1 et +10,2 m), reliées par quatre escaliers en colimaçon. Il y a des rayonnages muraux à trois niveaux, des épis de rayonnages doubles, des tables de lecture et de grands lustres, et une grande verrière gothique au fond.
+- 665 pièces de kit placées (`Data/placements_lodge.json`), 70 lumières ponctuelles (`Data/lights.json`). Les collisions sont des enveloppes `UCX_` invisibles portées par les maillages `SM_GB_Lodge_*` et `SM_GB_Library_*` ; les pièces du kit n'en ont pas. Les colimaçons ont une rampe hélicoïdale de collision.
+- Test de marche (`nav_lodge.json`, depuis l'extérieur de la porte) : 15/15 salles atteintes, 10/10 points de contrôle, 0 fuite. Le chemin passe par l'armoire ouverte, le colimaçon, l'escalier secret, le balcon, les galeries et les quatre colimaçons.
+- Relief : plate-forme de la maison et vide sous le puits secret. Les salles souterraines sont marquées `sealed` : le relief n'y est jamais creusé, et l'audit vérifie la roche au-dessus.
+- Chemin des chasseurs : piste de 3 m, longue de 793 m, du sentier du marais (même rive que la maison) jusqu'à sa porte, pente maximale 14 % (calcul du chemin le moins coûteux, `track_lodge.py`).
+
+## Modèles tiers (phase 4)
+
+Le commanditaire déclare détenir les licences et les autorisations écrites des créateurs pour ces modèles, utilisés dans la carte. Les crédits et attributions sont conservés ici :
+
+- « Fantasy Castle » par **Hawtor Studio** : maison des chasseurs (coque extérieure, textures). Attribution requise.
+- « Classic Library for Blender Eevee and Cycles » par **denniswoo1993** : kit de la bibliothèque souterraine et mobilier de la maison. Ses textures intégrées viennent d'ambientCG, de Poly Haven et de Textures.com.
+- « Castle 2,0 » par **EldersCrawler** : château des vampires (à venir).
+- « Medieval Houses Package » par **Daniel** : maisons de la ville (à venir).
+- « Medieval Church » par **Daniel** : vitraux et textures de l'église (à venir). Attribution requise.
+- « Medieval castle » par **Misha Kiselev** : maison du noble (à venir).
+
+Trois cartes de couleur du pack « Fantasy Castle » (enduit, toit, bois) étaient vides, et le kit de bibliothèque n'avait pas de couleur pour la pierre, le fer et les vitraux. Ces cartes ont été recalculées à partir des cartes de relief et de rugosité du même pack (`fc_fix_colors.py`, `lib_fix_colors.py`). Les vitraux utilisent un motif au plomb généré.
 
 ## Écarts au cahier des charges et raisons
 

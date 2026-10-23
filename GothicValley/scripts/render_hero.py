@@ -144,6 +144,16 @@ def ground(x, y):
 
 FIX = {"V3": 201.9 + 1.7, "V5": 80.0 + 1.7}                       # deck of the Great Bridge, floor of the bell chamber
 views = [dict(v) for v in M["hero_views"]] + [dict(id="V0", name="Valley overview", camera=[-1450, -1650, 950], look_at=[200, -100, 60])]
+def unmirror(fn):
+    """The scene is built in Blender axes (y = -Y east), i.e. mirrored: flip the image back to the real view."""
+    im = bpy.data.images.load(fn, check_existing=False)
+    w, h = im.size
+    px = np.empty(w * h * 4, np.float32); im.pixels.foreach_get(px)
+    im.pixels.foreach_set(np.ascontiguousarray(px.reshape(h, w, 4)[:, ::-1]).ravel())
+    im.filepath_raw = fn; im.file_format = "PNG"; im.save()
+    bpy.data.images.remove(im)
+
+
 LOG = []
 ONLY = [x for x in os.environ.get("GV_VIEWS", "").split(",") if x]
 sc.render.resolution_percentage = int(os.environ.get("GV_SCALE", "100"))
@@ -161,6 +171,7 @@ for v in [v for v in views if not ONLY or v["id"] in ONLY]:
     fn = f"{OUT}/{v['id']}_{v['name'].replace(' ', '_')}.png"
     sc.render.filepath = fn
     bpy.ops.render.render(write_still=True)
+    unmirror(fn)
     LOG.append(dict(id=v["id"], name=v["name"], camera_used=[cx, cy, round(cz, 2)], look_at=v["look_at"], file=os.path.basename(fn)))
     print("rendered", fn, flush=True)
 json.dump(LOG, open(f"{OUT}/hero_views.json", "w"), indent=1)

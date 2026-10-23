@@ -17,6 +17,12 @@ COL = {"GB_Stone": (0.42, 0.42, 0.44), "GB_Roof": (0.17, 0.15, 0.17), "GB_Wood":
        "GB_WinLit": (0.95, 0.62, 0.25), "GB_WinDark": (0.08, 0.09, 0.12), "GB_Rock": (0.30, 0.29, 0.28)}
 TEX = f"{ROOT}/textures"
 TILE = 2.0                                            # metres per texture tile on buildings (UVs = world metres / TILE)
+TILES = {}                                            # pack materials (lodge, library): their own tile size
+KITM = {}
+if os.path.exists(f"{ROOT}/data/materials_kit.json"):
+    KITM = json.load(open(f"{ROOT}/data/materials_kit.json"))
+    for n_, k_ in KITM.items():
+        COL[n_] = tuple(k_["color"]); TILES[n_] = k_["tile_m"]
 MAT = {}
 
 
@@ -24,17 +30,29 @@ def textured(m, name):
     """Principled BSDF fed by the generated maps T_<name>_D/_N/_R (renders; Unreal rebuilds its own materials)."""
     nt = m.node_tree; bsdf = nt.nodes["Principled BSDF"]
     d, r, nm = (f"{TEX}/T_{name}_{k}" for k in ("D.jpg", "R.jpg", "N.png"))
+    if not os.path.exists(d) and os.path.exists(d[:-4] + ".png"):
+        d = d[:-4] + ".png"
     if not os.path.exists(d):
+        if KITM.get(name, {}).get("emissive"):
+            bsdf.inputs["Emission Color"].default_value = (*COL[name], 1)
+            bsdf.inputs["Emission Strength"].default_value = KITM[name]["emissive"]
         return
     def img(path, colour):
         n = nt.nodes.new("ShaderNodeTexImage"); n.image = bpy.data.images.load(path, check_existing=True)
         n.image.colorspace_settings.name = "sRGB" if colour else "Non-Color"
         return n
-    di, ri, ni = img(d, True), img(r, False), img(nm, False)
-    nmap = nt.nodes.new("ShaderNodeNormalMap"); nmap.inputs["Strength"].default_value = 0.8
+    di = img(d, True)
     nt.links.new(di.outputs["Color"], bsdf.inputs["Base Color"])
-    nt.links.new(ri.outputs["Color"], bsdf.inputs["Roughness"])
-    nt.links.new(ni.outputs["Color"], nmap.inputs["Color"]); nt.links.new(nmap.outputs["Normal"], bsdf.inputs["Normal"])
+    if os.path.exists(r):
+        nt.links.new(img(r, False).outputs["Color"], bsdf.inputs["Roughness"])
+    if os.path.exists(nm):
+        nmap = nt.nodes.new("ShaderNodeNormalMap"); nmap.inputs["Strength"].default_value = 0.8
+        nt.links.new(img(nm, False).outputs["Color"], nmap.inputs["Color"]); nt.links.new(nmap.outputs["Normal"], bsdf.inputs["Normal"])
+    k_ = KITM.get(name, {})
+    if k_.get("emissive"):
+        nt.links.new(di.outputs["Color"], bsdf.inputs["Emission Color"]); bsdf.inputs["Emission Strength"].default_value = k_["emissive"]
+    if k_.get("metallic"):
+        bsdf.inputs["Metallic"].default_value = k_["metallic"]
     if name == "GB_WinLit":
         nt.links.new(di.outputs["Color"], bsdf.inputs["Emission Color"]); bsdf.inputs["Emission Strength"].default_value = 6.0
     if name == "GB_Metal":
@@ -49,7 +67,7 @@ for n, c in COL.items():
     MAT[n] = m
 
 
-def face_uv(W, f):
+def face_uv(W, f, tile=TILE):
     """World-planar UVs for one face (world metres / TILE): floors and ceilings in plan, every other face in its own
     plane with v up the slope, so textures run on continuously from face to face and from building to building."""
     P = W[f]
@@ -65,7 +83,7 @@ def face_uv(W, f):
         h = np.array([-n[1], n[0], 0.0]); h /= np.linalg.norm(h)
         up = np.cross(n, h)
         uv = np.stack([P @ h, P @ up], 1)
-    return uv / TILE
+    return uv / tile
 common = dict(object_types={'MESH'}, use_selection=True, apply_unit_scale=True, apply_scale_options='FBX_SCALE_NONE',
               mesh_smooth_type='FACE', use_mesh_modifiers=False, add_leaf_bones=False, bake_anim=False,
               path_mode='STRIP', embed_textures=False, axis_forward='-Z', axis_up='Y')
@@ -91,7 +109,7 @@ def build(name, prims):
             mats.append(p["m"])
         for f in p["f"]:
             F.append([off + i for i in f[::-1]]); MI.append(mats.index(p["m"]))
-            UV.append(face_uv(W, list(f[::-1])))
+            UV.append(face_uv(W, list(f[::-1]), TILES.get(p["m"], TILE)))
         V.append(v); off += len(v)
     if not V:
         return None

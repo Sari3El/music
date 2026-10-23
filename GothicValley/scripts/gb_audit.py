@@ -12,7 +12,7 @@ from tlib import sample
 ROOT = sys.argv[1]
 H = np.load(f"{ROOT}/terrain/H_4033.npy")
 P, PF = [], []                                           # (group, index, mat, col, V, planes, lo, hi), faces
-for part in ("castle", "city", "sites"):
+for part in [p for p in ("castle", "city", "sites", "lodge") if os.path.exists(f"{ROOT}/greybox/{p}_groups.json")]:
     for g in json.load(open(f"{ROOT}/greybox/{part}_groups.json")):
         for i, p in enumerate(g["prims"]):
             V = np.asarray(p["v"], float); c = V.mean(0); pl = []
@@ -124,12 +124,17 @@ for k, (gn, gi, mat, col, V, pl, lo, hi) in enumerate(P):
 
 # landscape through room floors / floors hanging over air (rooms of the three metas)
 rooms = []
-for part in ("castle", "city", "sites"):
-    rooms += json.load(open(f"{ROOT}/greybox/{part}_meta.json")).get("rooms", [])
+for part in ("castle", "city", "sites", "lodge"):
+    if os.path.exists(f"{ROOT}/greybox/{part}_meta.json"):
+        rooms += json.load(open(f"{ROOT}/greybox/{part}_meta.json")).get("rooms", [])
 room_issues = []
 for r in rooms:
     xs, ys = np.meshgrid(np.linspace(r["x0"] + 0.9, r["x1"] - 0.9, 12), np.linspace(r["y0"] + 0.9, r["y1"] - 0.9, 12))   # inside the walls
     t = sample(H, xs.ravel(), ys.ravel())
+    if r.get("sealed"):                                    # under the landscape: the rock must stay above the ceiling
+        if r["interior"] == "library" and float(t.min()) < r["z1"] + 1.0:
+            room_issues.append(dict(room=r["name"], z1=r["z1"], rock_cover_m=round(float(t.min() - r["z1"]), 2)))
+        continue
     over = float((t > r["z0"] + 0.05).mean())
     if over > 0.02:
         room_issues.append(dict(room=r["name"], z0=r["z0"], terrain_above_floor_frac=round(over, 2), max_excess=round(float((t - r["z0"]).max()), 2)))

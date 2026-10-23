@@ -7,7 +7,7 @@ from scipy import ndimage
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tlib import (axis, grid, spectral, smoothstep, densify, band_field, tension_interp, zoom_to, sample, HALF)
-sys.path.insert(0, os.path.expanduser("/tmp/claude-0/-home-user-music/2e61b1ad-0b90-519f-adab-93e9ab8b2aed/scratchpad/castle/scripts"))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from terrain_core import flow, stream_power, diffuse, thermal
 from castle_shape import rim_sd
 
@@ -371,6 +371,8 @@ for fn in sorted(glob.glob(f"{ROOT}/greybox/*_groups.json")):
 PCS = np.array(PCS).reshape(-1, 5)
 ax_ = X[0]; ncut = 0
 for r in ROOMS_ALL:
+    if r.get("sealed"):                                  # closed rooms under the landscape (library, secret stair)
+        continue
     x0, x1, y0, y1, z0 = r["x0"], r["x1"], r["y0"], r["y1"], r["z0"]
     ci = np.nonzero((ax_ >= x0 - 4.5) & (ax_ <= x1 + 4.5))[0]; ri = np.nonzero((ax_ >= y0 - 4.5) & (ax_ <= y1 + 4.5))[0]
     if len(ci) == 0 or len(ri) == 0:

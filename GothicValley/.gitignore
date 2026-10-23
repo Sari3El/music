@@ -10,3 +10,6 @@ greybox/gb_checks.json
 greybox/phase2_travel_rooms.json
 greybox/city_overlay_plan*.png
 greybox/nav/
+# licensed asset packs, prepared by scripts/prep_assets.sh (never committed)
+assets/
+textures/

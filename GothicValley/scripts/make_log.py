@@ -106,6 +106,62 @@ w("- Paysage : herbe, boue des berges et du marais, chemins, pavés (ville et pl
   "(`T_GV_Splat`, `T_GV_Splat2`, 2048 px sur toute la carte). Le script Unreal construit `M_GV_Landscape` avec la même "
   "logique et l'applique au paysage importé.")
 w("- Les kits d'architecture sous licence de la phase 4 remplaceront ces surfaces ; les noms de matériaux (`MI_GB_*`) restent les mêmes.")
+# ---- phase 4 (in progress): asset packs
+if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
+    n0 = len(L)
+    LM = json.load(open(f"{ROOT}/greybox/lodge_meta.json"))
+    NL = json.load(open(f"{ROOT}/greybox/nav/nav_lodge.json")) if os.path.exists(f"{ROOT}/greybox/nav/nav_lodge.json") else None
+    PLc = len(json.load(open(f"{ROOT}/data/placements_lodge.json")))
+    ss, lb = LM["secret_stair"], LM["library"]
+    w("\n## Phase 4 (en cours) : maison des chasseurs et bibliothèque souterraine\n")
+    w(f"- Maison de la famille de chasseurs (modèle « Fantasy Castle ») : le point le plus éloigné du château des vampires, "
+      f"à [{LM['lodge']['origin'][0]:.0f}, {LM['lodge']['origin'][1]:.0f}], sur une plate-forme à +{LM['lodge']['origin'][2]:.0f} m. La porte "
+      f"regarde la vallée (nord). Le modèle n'a pas d'intérieur : l'aile basse est aménagée en grande salle (cheminée, table, "
+      f"lustres, coffres, râteliers) et en cabinet de travail (bibliothèque, table de lecture). Ses matériaux sont rendus double face "
+      f"pour que les murs se voient de l'intérieur ; la porte et les panneaux sombres derrière les fenêtres de cette aile sont retirés.")
+    w("- Passage secret : dans le cabinet, une armoire coulisse de 2 m (maillage *Movable*, tags `ScriptedDoor`, `Slide`) et "
+      "découvre une porte cachée. Derrière, un escalier en colimaçon en fer (kit de la bibliothèque) descend de 4,8 m. "
+      f"Ensuite, un long escalier de pierre voûté de {ss['length_m']:.0f} m ({ss['risers']} marches de {ss['riser_m'] * 100:.1f} cm sur "
+      f"{ss['tread_m'] * 100:.0f} cm, {ss['flights']} volées, paliers éclairés de torches) descend de {ss['drop_m']:.1f} m jusqu'au balcon de la "
+      f"bibliothèque. Il reste au moins {ss['rock_cover_min_m']:.1f} m de roche au-dessus de sa voûte.")
+    w(f"- Bibliothèque souterraine : nef gothique de {lb['size'][0]:.0f} × {lb['size'][1]:.0f} m, sol à +{lb['levels'][0]:.0f} m, voûtes "
+      f"à +{lb['vault_apex']:.1f} m, avec au moins {lb['rock_cover_min_m']:.0f} m de roche au-dessus. Elle est construite avec les pièces du kit "
+      "« Classic Library » : colonnes, croisées d'ogives et nervures à l'échelle 1,5, rayonnages et livres à l'échelle 1. "
+      "On arrive par un balcon. Un escalier d'honneur (volée centrale, palier, puis deux volées) descend dans la nef. Deux "
+      "galeries de bois courent dans chaque bas-côté (+5,1 et +10,2 m), reliées par quatre escaliers en colimaçon. Il y a des "
+      "rayonnages muraux à trois niveaux, des épis de rayonnages doubles, des tables de lecture et de grands lustres, et une "
+      "grande verrière gothique au fond.")
+    w(f"- {PLc} pièces de kit placées (`Data/placements_lodge.json`), {len(LM['lights'])} lumières ponctuelles (`Data/lights.json`). "
+      "Les collisions sont des enveloppes `UCX_` invisibles portées par les maillages `SM_GB_Lodge_*` et `SM_GB_Library_*` ; "
+      "les pièces du kit n'en ont pas. Les colimaçons ont une rampe hélicoïdale de collision.")
+    if NL:
+        ok = sum(r["reached"] for r in NL["rooms"])
+        pr = sum(v["reached"] for v in NL["probes"].values())
+        w(f"- Test de marche (`nav_lodge.json`, depuis l'extérieur de la porte) : {ok}/{len(NL['rooms'])} salles atteintes, "
+          f"{pr}/{len(NL['probes'])} points de contrôle, {len(NL['leaks'])} fuite. Le chemin passe par l'armoire ouverte, le colimaçon, "
+          f"l'escalier secret, le balcon, les galeries et les quatre colimaçons.")
+    w("- Relief : plate-forme de la maison et vide sous le puits secret. Les salles souterraines sont marquées `sealed` : le relief "
+      "n'y est jamais creusé, et l'audit vérifie la roche au-dessus.")
+    if "hunters_track" in json.load(open(f"{ROOT}/data/roads_final.json")):
+        ht = json.load(open(f"{ROOT}/data/roads_final.json"))["hunters_track"]
+        w(f"- Chemin des chasseurs : piste de 3 m, longue de {ht['s'][-1]:.0f} m, du sentier du marais (même rive que la maison) jusqu'à "
+          f"sa porte, pente maximale {ht['max_grade'] * 100:.0f} % (calcul du chemin le moins coûteux, `track_lodge.py`).")
+    w("\n## Modèles tiers (phase 4)\n")
+    w("Le commanditaire déclare détenir les licences et les autorisations écrites des créateurs pour ces modèles, utilisés "
+      "dans la carte. Les crédits et attributions sont conservés ici :\n")
+    for c in ["« Fantasy Castle » par **Hawtor Studio** : maison des chasseurs (coque extérieure, textures). Attribution requise.",
+              "« Classic Library for Blender Eevee and Cycles » par **denniswoo1993** : kit de la bibliothèque souterraine et mobilier "
+              "de la maison. Ses textures intégrées viennent d'ambientCG, de Poly Haven et de Textures.com.",
+              "« Castle 2.0 » par **EldersCrawler** : château des vampires (à venir).",
+              "« Medieval Houses Package » par **Daniel** : maisons de la ville (à venir).",
+              "« Medieval Church » par **Daniel** : vitraux et textures de l'église (à venir). Attribution requise.",
+              "« Medieval castle » par **Misha Kiselev** : maison du noble (à venir)."]:
+        w(f"- {c}")
+    w("\nTrois cartes de couleur du pack « Fantasy Castle » (enduit, toit, bois) étaient vides, et le kit de bibliothèque "
+      "n'avait pas de couleur pour la pierre, le fer et les vitraux. Ces cartes ont été recalculées à partir des cartes de relief "
+      "et de rugosité du même pack (`fc_fix_colors.py`, `lib_fix_colors.py`). Les vitraux utilisent un motif au plomb généré.")
+    import re
+    L[n0:] = [re.sub(r"(?<![\w/])(\d+)\.(\d)", r"\1,\2", x) for x in L[n0:]]          # French decimal commas
 w("\n## Écarts au cahier des charges et raisons\n")
 dev = [
     "Heightmap : le cahier mentionne un `heightmap_base_4033.png` livré avec le document, mais je ne l'ai pas reçu. Je l'ai généré à partir de l'annexe A, avec le même encodage et la même orientation.",

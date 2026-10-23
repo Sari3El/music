@@ -1,0 +1,9977 @@
+[
+{
+"mesh": "SM_FC_Lodge",
+"folder": "Environment/Lodge",
+"loc": [
+-1400.0,
+-700.0,
+81.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_SpiralStair",
+"folder": "Props/LibraryKit",
+"loc": [
+-1390.8,
+-698.5,
+76.28
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_Bookcase",
+"folder": "Props/LibraryKit",
+"loc": [
+-1393.22,
+-703.8,
+81.08
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1390.6,
+-704.05,
+81.08
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1382.8,
+-701.4,
+81.08
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_Chandelier",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.4,
+-701.4,
+87.85
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_Chandelier",
+"folder": "Props/LibraryKit",
+"loc": [
+-1381.3,
+-701.4,
+87.85
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-627.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-612.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-597.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-582.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-567.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-552.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-537.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-522.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-507.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-627.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-612.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-597.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-582.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-567.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-552.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-537.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-522.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-507.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-627.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-612.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-597.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-582.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-567.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-552.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-537.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-522.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-507.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-627.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-612.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-597.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-582.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-567.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-552.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-537.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-522.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Column",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-507.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-619.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-604.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-589.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-574.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-559.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-544.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-529.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-514.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-627.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-612.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-597.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-582.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-567.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-552.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-537.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-522.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-507.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-619.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-604.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-589.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-574.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-559.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-544.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-529.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-514.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-627.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-612.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-597.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-582.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-567.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-552.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-537.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-522.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-507.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-619.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-604.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-589.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-574.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-559.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-544.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-529.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Vault",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-514.52,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-627.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-612.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-597.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-582.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-567.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-552.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-537.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-522.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-507.02,
+52.0
+],
+"yaw": 0.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-619.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-604.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-589.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-574.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-559.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-544.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-529.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-514.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-619.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-604.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-589.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-574.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-559.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-544.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-529.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1398.6,
+-514.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-619.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-604.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-589.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-574.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-559.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-544.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-529.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1383.6,
+-514.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-619.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-604.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-589.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-574.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-559.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-544.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-529.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_Rib",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-514.52,
+52.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_WindowWall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-507.02,
+40.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_StainedGlass",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-507.02,
+40.0
+],
+"yaw": 90.0,
+"scale": [
+1.5,
+1.5,
+1.5
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-511.62,
+40.45
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_DoorArch",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-627.17,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.25,
+1.25,
+1.25
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-622.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-616.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-605.22,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.8611,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-600.82,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.8611,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-592.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-586.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-577.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-571.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-562.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-556.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-547.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-541.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-532.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-526.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-517.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-511.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1401.22,
+-529.52,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1399.5,
+-531.24,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.78,
+-530.38,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1400.36,
+-527.8,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-619.92,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.8219,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-615.72,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.8219,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-607.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-601.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-592.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-586.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-577.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-571.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-562.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-556.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-547.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-541.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-532.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-526.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-517.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.45,
+-511.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1401.22,
+-544.52,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1399.5,
+-546.24,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.78,
+-545.38,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1400.36,
+-542.8,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-622.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-616.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-605.22,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.8611,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-600.82,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.8611,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-592.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-586.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-577.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-571.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-562.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-556.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-547.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-541.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-532.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-526.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-517.47,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-511.57,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1380.98,
+-529.52,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1382.7,
+-527.8,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.42,
+-528.66,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1381.84,
+-531.24,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-619.92,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.8219,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-615.72,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.8219,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-607.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-601.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-592.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-586.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-577.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-571.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-562.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-556.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-547.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-541.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-532.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-526.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-517.47,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.75,
+-511.57,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1380.98,
+-544.52,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1382.7,
+-542.8,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+0.6732,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1384.42,
+-543.66,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1381.84,
+-546.24,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+0.3366,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_SpiralStair",
+"folder": "Props/LibraryKit",
+"loc": [
+-1382.7,
+-529.52,
+40.3
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_SpiralStair",
+"folder": "Props/LibraryKit",
+"loc": [
+-1382.7,
+-544.52,
+45.4
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_SpiralStair",
+"folder": "Props/LibraryKit",
+"loc": [
+-1399.5,
+-529.52,
+40.3
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_SpiralStair",
+"folder": "Props/LibraryKit",
+"loc": [
+-1399.5,
+-544.52,
+45.4
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1395.5,
+-621.9,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+0.7045,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1386.7,
+-621.9,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+0.7045,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1395.51,
+-612.54,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.7006,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1397.125,
+-607.3,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.0685,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1386.69,
+-612.54,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.7006,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1385.075,
+-607.3,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+0.0685,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_RailingWood",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-607.3,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.1546,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-622.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-617.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-623.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-623.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-619.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-619.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-615.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-615.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-607.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-602.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-608.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-608.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-604.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-604.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-600.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-600.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-592.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-587.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-593.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-593.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-589.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-589.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-585.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-585.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-577.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-572.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-578.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-578.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-574.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-574.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-570.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-570.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-562.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-557.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-563.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-563.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-559.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-559.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-555.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-555.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-547.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-542.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-548.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-548.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-544.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-544.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-540.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-540.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-532.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-527.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-533.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-533.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-525.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-525.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-517.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-512.02,
+40.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-518.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-518.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-514.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-514.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-510.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-510.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.6,
+-627.02,
+40.0
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.6,
+-627.02,
+40.0
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.6,
+-507.02,
+40.0
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.6,
+-507.02,
+40.0
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-622.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-617.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-623.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-623.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-619.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-619.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-615.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-615.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-607.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-602.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-608.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-608.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-604.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-604.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-600.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-600.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-592.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-587.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-593.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-593.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-589.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-589.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-585.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-585.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-577.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-572.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-578.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-578.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-574.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-574.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-570.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-570.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-562.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-557.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-563.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-563.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-559.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-559.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-555.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-555.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-547.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-542.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-548.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-548.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-540.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-540.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-532.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-527.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-533.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-533.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-529.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-529.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-525.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-525.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-517.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-512.02,
+45.1
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-518.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-518.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-514.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-514.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-510.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-510.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.6,
+-627.02,
+45.1
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.6,
+-627.02,
+45.1
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.6,
+-507.02,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.6,
+-507.02,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-622.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-617.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-619.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-619.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-615.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-615.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-607.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-602.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-608.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-608.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-604.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-604.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-600.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-600.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-592.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-587.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-593.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-593.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-589.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-589.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-585.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-585.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-577.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-572.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-578.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-578.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-574.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-574.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-570.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-570.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-562.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-557.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-563.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-563.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-559.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-559.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-555.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-555.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-547.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-542.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-548.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-548.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-544.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-544.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-540.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-540.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-532.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-527.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-533.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-533.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-529.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-529.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-525.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-525.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-517.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1413.6,
+-512.02,
+50.2
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-518.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-518.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-514.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-514.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.835,
+-510.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.885,
+-510.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.6,
+-627.02,
+50.2
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.6,
+-627.02,
+50.2
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1403.6,
+-507.02,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1408.6,
+-507.02,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-622.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-617.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-623.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-623.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-619.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-619.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-615.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-615.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-607.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-602.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-608.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-608.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-604.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-604.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-600.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-600.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-592.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-587.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-593.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-593.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-589.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-589.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-585.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-585.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-577.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-572.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-578.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-578.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-574.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-574.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-570.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-570.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-562.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-557.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-563.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-563.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-559.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-559.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-555.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-555.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-547.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-542.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-548.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-548.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-544.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-544.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-540.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-540.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-532.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-527.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-533.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-533.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-525.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-525.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-517.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-512.02,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-518.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-518.27,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-514.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-514.52,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-510.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-510.77,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.6,
+-627.02,
+40.0
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.6,
+-627.02,
+40.0
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.6,
+-507.02,
+40.0
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.6,
+-507.02,
+40.0
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-622.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-617.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-623.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-623.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-619.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-619.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-615.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-615.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-607.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-602.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-608.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-608.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-604.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-604.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-600.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-600.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-592.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-587.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-593.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-593.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-589.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-589.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-585.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-585.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-577.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-572.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-578.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-578.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-574.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-574.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-570.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-570.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-562.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-557.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-563.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-563.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-559.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-559.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-555.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-555.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-547.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-542.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-548.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-548.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-540.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-540.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-532.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-527.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-533.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-533.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-529.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-529.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-525.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-525.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-517.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-512.02,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-518.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-518.27,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-514.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-514.52,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-510.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-510.77,
+45.1
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.6,
+-627.02,
+45.1
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.6,
+-627.02,
+45.1
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.6,
+-507.02,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.6,
+-507.02,
+45.1
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-622.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-617.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-619.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-619.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-615.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-615.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-607.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-602.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-608.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-608.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-604.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-604.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-600.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-600.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-592.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-587.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-593.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-593.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-589.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-589.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-585.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-585.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-577.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-572.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-578.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-578.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-574.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-574.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-570.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-570.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-562.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-557.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-563.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-563.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-559.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-559.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-555.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-555.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-547.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-542.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-548.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-548.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-544.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-544.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-540.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-540.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-532.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-527.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-533.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-533.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-529.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-529.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-525.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-525.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-517.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1368.6,
+-512.02,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-518.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-518.27,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-514.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-514.52,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.365,
+-510.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseDouble",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.315,
+-510.77,
+50.2
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.6,
+-627.02,
+50.2
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.6,
+-627.02,
+50.2
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1378.6,
+-507.02,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTallUpper",
+"folder": "Props/LibraryKit",
+"loc": [
+-1373.6,
+-507.02,
+50.2
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-593.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-585.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-593.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-585.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-578.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-570.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-578.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-570.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-563.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-555.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-563.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-555.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-548.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-540.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-548.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-540.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-533.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-525.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-533.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-525.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-518.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1394.3,
+-510.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-518.12,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ReadingSet",
+"folder": "Props/LibraryKit",
+"loc": [
+-1387.9,
+-510.92,
+40.0
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_BookcaseTall",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-607.42,
+40.0
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-604.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-589.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-574.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-559.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-544.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-529.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1391.1,
+-514.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.4,
+1.4,
+1.4
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-619.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-604.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-589.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-574.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-559.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-544.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-529.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1406.1,
+-514.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-619.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-604.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-589.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-574.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-559.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-544.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-529.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_LB_ChandelierLong",
+"folder": "Props/LibraryKit",
+"loc": [
+-1376.1,
+-514.52,
+68.071
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+}
+]

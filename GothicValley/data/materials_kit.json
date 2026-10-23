@@ -1,0 +1,296 @@
+{
+ "LB_GlossyWood": {
+  "color": [
+   0.35,
+   0.22,
+   0.13
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.5,
+  "files": {
+   "D": "T_LB_GlossyWood_D.jpg",
+   "N": "T_LB_GlossyWood_N.png",
+   "R": "T_LB_GlossyWood_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_WoodFloor": {
+  "color": [
+   0.4,
+   0.28,
+   0.18
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 2.5,
+  "files": {
+   "D": "T_LB_WoodFloor_D.jpg",
+   "N": "T_LB_WoodFloor_N.png",
+   "R": "T_LB_WoodFloor_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_Leather": {
+  "color": [
+   0.3,
+   0.15,
+   0.1
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_LB_Leather_D.jpg",
+   "N": "T_LB_Leather_N.png",
+   "R": "T_LB_Leather_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_Sandstone": {
+  "color": [
+   0.55,
+   0.45,
+   0.35
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 2.0,
+  "files": {
+   "D": "T_LB_Sandstone_D.jpg",
+   "N": "T_LB_Sandstone_N.png",
+   "R": "T_LB_Sandstone_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_Stone": {
+  "color": [
+   0.45,
+   0.41,
+   0.36
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 2.0,
+  "files": {
+   "D": "T_LB_Stone_D.jpg",
+   "N": "T_LB_Stone_N.png",
+   "R": "T_LB_Stone_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_Metal": {
+  "color": [
+   0.08,
+   0.07,
+   0.06
+  ],
+  "phys": "Metal",
+  "metallic": 0.85,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_LB_Metal_D.jpg",
+   "N": "T_LB_Metal_N.png",
+   "R": "T_LB_Metal_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_OldBook": {
+  "color": [
+   0.3,
+   0.2,
+   0.15
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_LB_OldBook_D.jpg",
+   "N": "T_LB_OldBook_N.png",
+   "R": "T_LB_OldBook_R.jpg"
+  },
+  "translucent": false
+ },
+ "LB_Paper": {
+  "color": [
+   0.75,
+   0.68,
+   0.52
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_LB_Paper_D.jpg"
+  },
+  "translucent": false
+ },
+ "LB_StainedGlass": {
+  "color": [
+   0.5,
+   0.25,
+   0.6
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 3.0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_LB_StainedGlass_D.jpg"
+  },
+  "translucent": false
+ },
+ "LB_CandleLight": {
+  "color": [
+   1.0,
+   0.7,
+   0.35
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 12.0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {},
+  "translucent": false
+ },
+ "FC_Concrete": {
+  "color": [
+   0.45,
+   0.41,
+   0.35
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 4.0,
+  "files": {
+   "D": "T_FC_Concrete_D.jpg",
+   "N": "T_FC_Concrete_N.png",
+   "R": "T_FC_Concrete_R.jpg"
+  },
+  "translucent": false
+ },
+ "FC_StoneBrickWall": {
+  "color": [
+   0.27,
+   0.26,
+   0.26
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 3.0,
+  "files": {
+   "D": "T_FC_StoneBrickWall_D.jpg",
+   "N": "T_FC_StoneBrickWall_N.png",
+   "R": "T_FC_StoneBrickWall_R.jpg"
+  },
+  "translucent": false
+ },
+ "FC_Roof": {
+  "color": [
+   0.13,
+   0.13,
+   0.15
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 2.0,
+  "files": {
+   "D": "T_FC_Roof_D.jpg",
+   "N": "T_FC_Roof_N.png",
+   "R": "T_FC_Roof_R.jpg"
+  },
+  "translucent": false
+ },
+ "FC_WoodPlanks": {
+  "color": [
+   0.25,
+   0.16,
+   0.1
+  ],
+  "phys": "Wood",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 2.0,
+  "files": {
+   "D": "T_FC_WoodPlanks_D.jpg",
+   "N": "T_FC_WoodPlanks_N.png",
+   "R": "T_FC_WoodPlanks_R.jpg"
+  },
+  "translucent": false
+ },
+ "FC_Glass": {
+  "color": [
+   0.3,
+   0.35,
+   0.4
+  ],
+  "phys": "Metal",
+  "metallic": 0,
+  "emissive": 0.4,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_FC_Glass_D.png",
+   "N": "T_FC_Glass_N.png",
+   "R": "T_FC_Glass_R.jpg"
+  },
+  "translucent": true
+ },
+ "FC_Back": {
+  "color": [
+   0.02,
+   0.02,
+   0.025
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {},
+  "translucent": false
+ },
+ "FC_StoneTiles": {
+  "color": [
+   0.31,
+   0.3,
+   0.29
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 3.0,
+  "files": {
+   "D": "T_FC_StoneTiles_D.jpg",
+   "N": "T_FC_StoneTiles_N.png",
+   "R": "T_FC_StoneTiles_R.jpg"
+  },
+  "translucent": false
+ }
+}

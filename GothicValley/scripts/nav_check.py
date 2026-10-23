@@ -47,13 +47,17 @@ Xc, Yc = np.meshgrid(xs, ys, indexing="ij")
 HC = sample(H, Xc.ravel(), Yc.ravel()).reshape(nx, ny)
 
 
+CRUST = float(CFG.get("landscape_crust", 1e6))          # only this thickness under the surface is solid (sealed rooms below)
+
+
 @njit(cache=True)
-def voxelise(planes, starts, boxes, HC, nx, ny, nz, x0, y0, z0, DX, DZ):
+def voxelise(planes, starts, boxes, HC, nx, ny, nz, x0, y0, z0, DX, DZ, CRUST):
     S = np.zeros((nx, ny, nz), np.uint8)
     for i in range(nx):
         for j in range(ny):
             kt = int(math.floor((HC[i, j] - z0) / DZ - 0.5))
-            for k in range(0, min(kt + 1, nz)):
+            kb = max(0, int(math.floor((HC[i, j] - CRUST - z0) / DZ - 0.5)))
+            for k in range(kb, min(kt + 1, nz)):
                 S[i, j, k] = 2                                               # 2 = landscape
     for p in range(len(starts) - 1):
         bx = boxes[p]
@@ -128,7 +132,7 @@ def flood(N, cnt, ny, seeds, STEP):
     return lab
 
 
-S = voxelise(planes, starts, boxes, HC, nx, ny, nz, x0, y0, z0, DX, DZ)
+S = voxelise(planes, starts, boxes, HC, nx, ny, nz, x0, y0, z0, DX, DZ, CRUST)
 N, cnt = nodes_of(S, HB)
 NZ = z0 + N[:, 2] * DZ                                                       # standing height of each node
 NXw, NYw = x0 + (N[:, 0] + 0.5) * DX, y0 + (N[:, 1] + 0.5) * DX

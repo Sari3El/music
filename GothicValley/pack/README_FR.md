@@ -1,17 +1,17 @@
 # Gothic Valley : greybox (phases 1 et 2 du cahier des charges)
 
 Ce paquet contient la carte « Gothic Vampire Map » au stade **greybox** : le relief complet (3 024 m de côté) et tous les volumes jouables. On y trouve le château avec ses 12 salles, la ville avec ses remparts, l'église, le manoir, 294 bâtiments dans les murs (plus 52 au faubourg Est) et 28 intérieurs visitables, ainsi que les 15 sites secondaires, les routes, les ponts, les points d'apparition et les caméras des 8 vues héros.
-Rien ne vient d'une licence existante : tout est généré par les scripts du projet à partir du cahier des charges.
+Le greybox est généré par les scripts du projet à partir du cahier des charges. La phase 4 a commencé avec les modèles des packs fournis par le commanditaire (licences et autorisations déclarées par lui ; crédits dans `BUILD_LOG.md`). Elle contient la **maison des chasseurs** au sud-ouest (modèle « Fantasy Castle »), avec sa grande salle, son cabinet et le passage secret derrière une armoire. Ce passage mène, par un colimaçon et un long escalier, à une **bibliothèque souterraine** de 45 × 120 m bâtie avec le kit « Classic Library ».
 
 ## Contenu
 
 | Dossier | Contenu |
 |---|---|
 | `Heightmap/heightmap_base_4033.png` | Relief 16 bits, 4033 × 4033, encodé `32768 + 64 × altitude (m)` |
-| `Content/` | 86 maillages FBX (`SM_GB_*`) avec collisions simples `UCX_`, rangés comme l'exige le cahier : `Environment/Castle`, `City`, `Church`, `Manor`, `Ruins`, `Nature`, `Landscape`, `Props` |
+| `Content/` | 86 maillages FBX (`SM_GB_*`) avec collisions simples `UCX_`, rangés comme l'exige le cahier : `Environment/Castle`, `City`, `Church`, `Manor`, `Ruins`, `Nature`, `Landscape`, `Lodge`, `Library`, `Props`. S'y ajoutent les maillages des packs : `Environment/Lodge/SM_FC_Lodge` (la maison) et `Props/LibraryKit/SM_LB_*` (colonnes, voûtes, rayonnages et livres, escaliers en colimaçon, lustres, tables, verrière, etc.) |
 | `Unreal/setup_map.py` | Script d'installation automatique pour l'éditeur (ADK Nanos World, UE 5.7) |
-| `Textures/` | Textures générées (couleur, relief, rugosité) de chaque surface et du paysage, plus la carte de répartition du sol `T_GV_Splat` |
-| `Data/` | Annexe A (`layout_manifest.json`), routes finales, positions et pivots des maillages, salles, vides, volumes |
+| `Textures/` | Textures générées (couleur, relief, rugosité) de chaque surface et du paysage, la carte de répartition du sol `T_GV_Splat`, et les textures des packs renommées `T_LB_*` (bibliothèque) et `T_FC_*` (maison) |
+| `Data/` | Annexe A (`layout_manifest.json`), routes finales, positions et pivots des maillages, salles, vides, volumes, placements des pièces des packs (`placements_*.json`), matériaux des packs (`materials_kit.json`) et lumières (`lights.json`) |
 | `Screenshots/` | Vues héros V1 à V8 et vue d'ensemble (rendus greybox) |
 | `Checks/` | Résultats des contrôles : altitudes des POI, superposition sur la carte maîtresse et le plan de la ville, tests de marche, règles |
 | `NanosWorld/` | Modèle d'`Assets.toml` et vignette `.webp` pour l'export |
@@ -28,6 +28,7 @@ Rien ne vient d'une licence existante : tout est généré par les scripts du pr
    - Scale : X = 75, Y = 75, Z = 200
 4. *Tools* › *Execute Python Script…* › choisissez `Unreal/setup_map.py`. Le script :
    - importe les 86 maillages avec leurs collisions et Nanite, importe les textures et crée les matériaux texturés `M_GB_MasterTex` / `MI_GB_*` ;
+   - importe les maillages des packs et crée leurs matériaux (`MI_LB_*`, `MI_FC_*`, double face pour la coque de la maison, verre translucide `M_GB_MasterGlass`), place les 665 pièces de la maison et de la bibliothèque (sans collision propre : les enveloppes `UCX_` des maillages `SM_GB_Lodge_*` et `SM_GB_Library_*` la portent) et les 70 lumières ponctuelles (bougies, lustres, torches) ;
    - place chaque maillage à sa position exacte (1 m = 100 UU, +X = nord, +Y = est) ; les portes, herses, grilles et trappes sont en *Movable* avec le tag `ScriptedDoor` ;
    - pose les 6 points d'apparition (`SPAWN_*`, celui de la place du marché porte le tag `DefaultSpawn`), les 8 caméras `HERO_V1…V8`, les volumes de blocage derrière les frontières naturelles et les NavMeshBoundsVolume ;
    - crée la rivière (plugin Water), règle *GameMode Override* = None et Kill Z = -20000, puis ajoute le ciel (DirectionalLight, SkyLight, SkyAtmosphere, brouillard volumétrique) tagué `Sun` ;
@@ -35,6 +36,7 @@ Rien ne vient d'une licence existante : tout est généré par les scripts du pr
    - vérifie l'orientation (un cube témoin doit tomber à +1000 m nord / +500 m est) et l'altitude du relief : rocher du château à +204 m, place du marché à +33,9 m, etc.
 5. Lisez les lignes `GV |` du *Output Log* : la dernière ligne résume le travail et liste les avertissements éventuels.
 6. Enregistrez, puis testez en PIE. Points d'apparition : `SPAWN_city_square`, `SPAWN_castle_inner_ward`, etc.
+7. Passage secret : l'armoire du cabinet (`GB_Lodge_SecretWardrobe`) est *Movable* avec les tags `ScriptedDoor`, `Slide` et `SlideOffsetCm_-200_0_0`. Votre script la fait glisser de 2 m vers le sud (-X) pour ouvrir la porte cachée.
 
 Vous pouvez relancer le script : il supprime d'abord ce qu'il a placé (dossiers `GV/...` de l'Outliner).
 

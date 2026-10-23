@@ -1,0 +1,100 @@
+{
+ "name": "lodge",
+ "bbox": [
+  -1423,
+  -1357,
+  -726,
+  -501,
+  34,
+  100
+ ],
+ "landscape_crust": 1.0,
+ "groups": [
+  "greybox/lodge_groups.json"
+ ],
+ "meta": [
+  "greybox/lodge_meta.json"
+ ],
+ "exclude": [
+  "SM_GB_Lodge_SecretWardrobe",
+  "SM_GB_Lodge_DoorL",
+  "SM_GB_Lodge_DoorR"
+ ],
+ "seeds": [
+  [
+   -1375.0,
+   -701.6,
+   81.08
+  ]
+ ],
+ "probes": {
+  "hall": [
+   -1383.0,
+   -698.2,
+   81.08
+  ],
+  "study": [
+   -1388.7,
+   -702.0,
+   81.08
+  ],
+  "spiral_top": [
+   -1389.9,
+   -699.5,
+   81.08
+  ],
+  "spiral_foot": [
+   -1391.1,
+   -695.5,
+   76.28
+  ],
+  "balcony": [
+   -1391.1,
+   -624.52,
+   50.2
+  ],
+  "landing_L1": [
+   -1391.1,
+   -610.02,
+   45.1
+  ],
+  "nave_floor": [
+   -1391.1,
+   -567.02,
+   40.0
+  ],
+  "east_aisle_L2": [
+   -1382.1,
+   -567.02,
+   50.2
+  ],
+  "west_aisle_L2": [
+   -1400.1,
+   -567.02,
+   50.2
+  ],
+  "dais": [
+   -1391.1,
+   -514.02,
+   40.45
+  ]
+ },
+ "levels": {
+  "lodge": [
+   80.0,
+   84.0
+  ],
+  "library_floor": [
+   39.5,
+   42.5
+  ],
+  "library_L1": [
+   44.6,
+   47.0
+  ],
+  "library_L2": [
+   49.7,
+   52.0
+  ]
+ }
+}

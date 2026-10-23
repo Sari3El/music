@@ -15,18 +15,25 @@ os.makedirs(f"{OUT}/Textures", exist_ok=True)                                  #
 for f in sorted(glob.glob(f"{ROOT}/textures/T_*")) + [f"{ROOT}/textures/textures.json"]:
     shutil.copy(f, f"{OUT}/Textures/")
 # build report (all parts) -> one list
+PARTS = [p for p in ("castle", "city", "sites", "lodge") if os.path.exists(f"{ROOT}/greybox/build_report_{p}.json")]
 rep = []
-for part in ("castle", "city", "sites"):
+for part in PARTS:
     rep += json.load(open(f"{ROOT}/greybox/build_report_{part}.json"))
 json.dump(rep, open(f"{OUT}/Data/build_report.json", "w"), indent=1)
 shutil.copy(f"{ROOT}/data/layout_manifest.json", f"{OUT}/Data/layout_manifest.json")
 shutil.copy(f"{ROOT}/data/roads_final.json", f"{OUT}/Data/roads_final.json")
 sites = json.load(open(f"{ROOT}/greybox/sites_meta.json"))
-json.dump(dict(blockers=sites["blockers"], markers=sites["markers"]), open(f"{OUT}/Data/ue_extra.json", "w"), indent=1)
+metas = {p: json.load(open(f"{ROOT}/greybox/{p}_meta.json")) for p in PARTS}
+json.dump(dict(blockers=sites["blockers"], markers=sites["markers"], movable=[m for p in PARTS for m in metas[p].get("movable", [])]),
+          open(f"{OUT}/Data/ue_extra.json", "w"), indent=1)
+json.dump([L for p in PARTS for L in metas[p].get("lights", [])], open(f"{OUT}/Data/lights.json", "w"), indent=1)
+for f in glob.glob(f"{ROOT}/data/placements_*.json") + glob.glob(f"{ROOT}/data/materials_kit.json") + glob.glob(f"{ROOT}/export/kit_report.json"):
+    shutil.copy(f, f"{OUT}/Data/")
 json.dump([dict(name="castle crag top", x=720, y=310, z=203.85, tol=1.0), dict(name="barbican terrace", x=700, y=-40, z=199.0, tol=1.5),
            dict(name="market square", x=-470, y=-470, z=33.9, tol=1.5), dict(name="fen basin", x=-1230, y=-1230, z=3.4, tol=2.0),
-           dict(name="ravine under the bridge", x=742, y=145, z=108.3, tol=6.0)], open(f"{OUT}/Data/landscape_checks.json", "w"), indent=1)
-for part in ("castle", "city", "sites"):
+           dict(name="ravine under the bridge", x=742, y=145, z=108.3, tol=6.0),
+           dict(name="hunters' lodge pad (door)", x=-1374.5, y=-701.6, z=81.0, tol=1.0)], open(f"{OUT}/Data/landscape_checks.json", "w"), indent=1)
+for part in PARTS:
     shutil.copy(f"{ROOT}/greybox/{part}_meta.json", f"{OUT}/Data/{part}_meta.json")
 os.makedirs(f"{OUT}/Checks", exist_ok=True)
 for f in (glob.glob(f"{ROOT}/terrain/phase1_checks.json") + glob.glob(f"{ROOT}/greybox/gb_checks.json") + glob.glob(f"{ROOT}/greybox/audit.json") + glob.glob(f"{ROOT}/greybox/nav/nav_*.json")
@@ -34,6 +41,8 @@ for f in (glob.glob(f"{ROOT}/terrain/phase1_checks.json") + glob.glob(f"{ROOT}/g
     shutil.copy(f, f"{OUT}/Checks/")
 if os.path.isdir(f"{ROOT}/renders/hero"):
     shutil.copytree(f"{ROOT}/renders/hero", f"{OUT}/Screenshots")
+if os.path.isdir(f"{ROOT}/renders/lodge"):
+    shutil.copytree(f"{ROOT}/renders/lodge", f"{OUT}/Screenshots/Lodge")
 for f in ("README_FR.md", "BUILD_LOG.md"):
     if os.path.exists(f"{ROOT}/pack/{f}"):
         txt = re.sub(r"\b\d+ maillages", f"{len(rep)} maillages", open(f"{ROOT}/pack/{f}").read())
