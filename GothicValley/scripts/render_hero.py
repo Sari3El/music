@@ -16,6 +16,19 @@ for bp in BLENDS:
     for ob in dst.objects:
         if ob is not None and ob.type == "MESH":
             sc.collection.objects.link(ob)
+# pack meshes (castle model, lodge, kit pieces) instanced from the placement files, as in Unreal
+if os.path.exists(f"{ROOT}/export/kit.blend"):
+    with bpy.data.libraries.load(f"{ROOT}/export/kit.blend", link=False) as (src, dst):
+        dst.meshes = list(src.meshes)
+    KITM = {m.name: m for m in dst.meshes if m is not None}
+    for pf in sorted(f for f in os.listdir(f"{ROOT}/data") if f.startswith("placements_")):
+        for i, p in enumerate(json.load(open(f"{ROOT}/data/{pf}"))):
+            me = KITM.get(p["mesh"])
+            if me is None:
+                continue
+            ob = bpy.data.objects.new(f"{p['mesh']}_{i}", me); sc.collection.objects.link(ob)
+            x, y, z = p["loc"]
+            ob.location = (x, -y, z); ob.rotation_euler = (0, 0, -math.radians(p["yaw"])); ob.scale = p["scale"]
 print("objects", len(sc.objects), flush=True)
 
 # ------------------------------------------------------------------ terrain + water
@@ -143,7 +156,10 @@ def ground(x, y):
 
 
 FIX = {"V3": 201.9 + 1.7, "V5": 80.0 + 1.7}                       # deck of the Great Bridge, floor of the bell chamber
-views = [dict(v) for v in M["hero_views"]] + [dict(id="V0", name="Valley overview", camera=[-1450, -1650, 950], look_at=[200, -100, 60])]
+CMH = json.load(open(f"{ROOT}/greybox/castle_meta.json")).get("hero_views", {})     # re-aimed at the castle model
+views = [dict(v, **CMH.get(v["id"], {})) for v in M["hero_views"]]
+FIX = {k: v for k, v in FIX.items() if k not in CMH or "camera" not in CMH[k]}
+views = views + [dict(id="V0", name="Valley overview", camera=[-1450, -1650, 950], look_at=[200, -100, 60])]
 def unmirror(fn):
     """The scene is built in Blender axes (y = -Y east), i.e. mirrored: flip the image back to the real view."""
     im = bpy.data.images.load(fn, check_existing=False)

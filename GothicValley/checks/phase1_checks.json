@@ -4,8 +4,8 @@
    "id": 1,
    "name": "Castle",
    "target": 204,
-   "terrain": 203.9,
-   "delta": -0.1,
+   "terrain": 213.5,
+   "delta": 9.5,
    "ok": true
   },
   {
@@ -341,16 +341,16 @@
    "z": 204,
    "flat_tolerance_m": 1.0,
    "extent_x": [
-    614,
-    830
+    -1512,
+    1512
    ],
    "extent_y": [
-    188,
-    420
+    -1512,
+    1512
    ],
    "size_m": [
-    216,
-    232
+    3024,
+    3024
    ],
    "spec": "about 240 x 220 m"
   },

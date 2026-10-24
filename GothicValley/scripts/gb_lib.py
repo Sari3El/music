@@ -13,7 +13,15 @@ class Group:
 
     # ---------------------------------------------------------------- raw solids
     def add(self, v, f, mat, col=True):
-        self.prims.append(dict(v=np.round(np.asarray(v, float), 3).tolist(), f=f, m=mat, col=col))
+        va = np.asarray(v, float)
+        if len(va) <= 64:                                  # closed convex solids: faces turned outward (single-sided in Unreal)
+            c = va.mean(0); vol = 0.0
+            for q in f:
+                for i in range(1, len(q) - 1):
+                    vol += np.dot(va[q[0]] - c, np.cross(va[q[i]] - c, va[q[i + 1]] - c))
+            if vol < 0:
+                f = [list(q)[::-1] for q in f]
+        self.prims.append(dict(v=np.round(va, 3).tolist(), f=f, m=mat, col=col))
 
     def box(self, x0, x1, y0, y1, z0, z1, mat, col=True):
         if x1 - x0 < 0.02 or y1 - y0 < 0.02 or z1 - z0 < 0.02:

@@ -376,7 +376,7 @@ def import_kit():
     return kit
 
 
-ZONE_OF = {"placements_lodge.json": "GV/Lodge"}
+ZONE_OF = {"placements_lodge.json": "GV/Lodge", "placements_castle.json": "GV/Castle"}
 
 
 def place_kit(mis):
@@ -399,7 +399,15 @@ def place_kit(mis):
             a.set_actor_scale3d(unreal.Vector(*p["scale"]))
             a.set_folder_path(zone + "/" + p["folder"].split("/")[-1])
             smc = a.get_component_by_class(unreal.StaticMeshComponent)
-            smc.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION)      # the SM_GB_ UCX hulls are the collision
+            if p.get("collision") == "complex":                                 # big shells (castle): per-polygon collision
+                try:
+                    bs = mesh.get_editor_property("body_setup")
+                    bs.set_editor_property("collision_trace_flag", unreal.CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE)
+                    EAL.save_loaded_asset(mesh)
+                except Exception as ex:
+                    warn(f"{p['mesh']}: set Collision Complexity to 'Use Complex Collision As Simple' by hand ({ex})")
+            else:
+                smc.set_collision_enabled(unreal.CollisionEnabled.NO_COLLISION)  # the SM_GB_ UCX hulls are the collision
             n += 1
         REPORT["placed"] += n
         log(f"{n} kit pieces placed from {os.path.basename(f)}")
@@ -444,10 +452,12 @@ def look_rot(cam, tgt):
 
 
 def markers(manifest, extra):
+    cmo = load_json_opt("castle_meta.json") or {}                       # castle model: spawn heights, re-aimed hero views
+    spo, hvo = cmo.get("spawn_overrides", {}), cmo.get("hero_views", {})
     for s in manifest["spawn_markers"]:
-        spawn(unreal.TargetPoint, ue(s["xyz"]), label=f"SPAWN_{s['id']}", folder="GV/Spawns",
+        spawn(unreal.TargetPoint, ue(spo.get(s["id"], s["xyz"])), label=f"SPAWN_{s['id']}", folder="GV/Spawns",
               tags=["Spawn"] + (["DefaultSpawn"] if s.get("default") else []))
-    for v in manifest["hero_views"]:
+    for v in [dict(v, **hvo.get(v["id"], {})) for v in manifest["hero_views"]]:
         p, y, _ = look_rot(v["camera"], v["look_at"])
         cam = ACT.spawn_actor_from_class(unreal.CineCameraActor, ue(v["camera"]), unreal.Rotator(0.0, p, y))
         cam.set_actor_label(f"HERO_{v['id']}_{v['name'].replace(' ', '_')}")

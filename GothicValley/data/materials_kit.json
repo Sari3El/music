@@ -261,6 +261,59 @@
   },
   "translucent": true
  },
+ "C2_Wall": {
+  "color": [
+   0.3,
+   0.29,
+   0.28
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_C2_Wall_D.jpg",
+   "N": "T_C2_Wall_N.png"
+  },
+  "translucent": false
+ },
+ "C2_Roof": {
+  "color": [
+   0.2,
+   0.19,
+   0.2
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_C2_Roof_D.jpg",
+   "N": "T_C2_Roof_N.png",
+   "R": "T_C2_Roof_R.jpg"
+  },
+  "translucent": false
+ },
+ "C2_Floor": {
+  "color": [
+   0.3,
+   0.3,
+   0.29
+  ],
+  "phys": "Stone",
+  "metallic": 0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_C2_Floor_D.jpg",
+   "N": "T_C2_Floor_N.png",
+   "R": "T_C2_Floor_R.jpg"
+  },
+  "translucent": false
+ },
  "FC_Back": {
   "color": [
    0.02,

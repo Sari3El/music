@@ -14,4 +14,14 @@ $B $S/scripts/prep_library.py -- "$LIB" $S/assets/library | grep -E "SIZE|DONE"
 $B $S/scripts/lib_prefabs.py -- $S/assets/library/library.blend $S/assets/library | grep -E "DONE"
 cp $S/assets/library/prefabs.json $S/data/kit_library.json
 python3 -I $S/scripts/kit_textures.py $S "$P" | tail -1
+# vampires' castle (Castle 2.0): face table -> materials per UV island, centred model at scale 160, walk-test triangles,
+# ground plate (the hill it was built on: the crag top takes its relief). data/castle20_rooms.json and
+# data/castle20_plate.npz are stored in the repository (analysis results).
+C2=$(ls -d "$P"/EldersCrawler/*/ | head -1); C2FBX=$(ls "$C2"*.fbx "$C2"*.FBX 2>/dev/null | head -1)
+mkdir -p $S/assets/castle20
+$B $S/scripts/c20_faces.py -- "$C2FBX" $S/assets/castle20/faces.npz | grep -E "FACES|Error" || true
+python3 -I $S/scripts/c20_classes.py $S | tail -1
+$B $S/scripts/prep_castle20.py -- "$C2" $S 160 island | grep -E "SIZE|DONE"
+$B $S/scripts/blend_tris.py -- $S/assets/castle20/castle20_island.blend $S/assets/castle20/tris.npz | grep TRIS
+$B $S/scripts/c20_ground.py -- "$C2FBX" $S/assets/castle20/ground.npz 160 | grep GROUND
 echo PREP_ASSETS_DONE

@@ -11,11 +11,11 @@ Elle demande l'ADK Nanos World et un serveur local, que je n'ai pas : projet UE 
 ## Phase 1 : relief
 
 - Paysage 4033 × 4033, 0,75 m entre sommets, 3 024 m de côté, centré sur l'origine. Relief de -26.7 m à 440.0 m.
-- **22 POI sur 22 à ±10 m de leur altitude** (écart maximal 4.7 m) :
+- **22 POI sur 22 à ±10 m de leur altitude** (écart maximal 9.5 m) :
 
 | # | POI | cible | terrain | écart |
 |---|---|---|---|---|
-| 1 | Castle | 204 | 203.9 | -0.1 |
+| 1 | Castle | 204 | 213.5 | +9.5 |
 | 2 | Barbican and Great Bridge | 200 | 199.1 | -0.9 |
 | 3 | Serpentine Road and Castle Stairs | 142 | 141.5 | -0.5 |
 | 4 | Watchtower ruin | 67 | 66.5 | -0.5 |
@@ -38,7 +38,7 @@ Elle demande l'ADK Nanos World et un serveur local, que je n'ai pas : projet UE 
 | 21 | The Fen | 4 | 3.4 | -0.6 |
 | 22 | River gorge | -21 | -20.0 | +1.0 |
 
-- Rocher du château : sommet plat à +204 m (posé à +203,85 m, 15 cm sous les sols du palais, dans la tolérance de ±1 m), 216 × 232 m (cahier : environ 240 × 220), falaise sud 51.3 m, falaise est 88.1 m. La façade sud du palais prolonge la falaise (bord du rocher sur la face extérieure de la façade).
+- Rocher du château : le bord de l'éperon est à +203,85 m ; à l'intérieur de l'enceinte, le sommet reprend le relief de la colline sur laquelle le modèle « Castle 2.0 » a été construit (cours de +203,8 à +218,0 m, phase 4). Falaise sud 51.3 m, falaise est 88.1 m.
 - Terrasse de la barbacane à +199.0 m, flanc à 25.0° ; ravin de 91.7 m sous le pont (fond +108.3, parois à 75.0°).
 - Ville : couronne +35.4 m, place +33.9 m ; marais : cuvette +3.4 m, bord minimal +8.8 m.
 - Ravin du ruisseau du château : le lit suit le ruisseau de X 430 à 1000 (écart maximal 0.0 m). Le flanc de la terrasse le comblait sur environ 270 m ; il est recreusé après la terrasse jusqu'au débouché (X 380), et le contrôle porte désormais sur toute la longueur.
@@ -61,28 +61,10 @@ Elle demande l'ADK Nanos World et un serveur local, que je n'ai pas : projet UE 
 
 ## Phase 2 : greybox
 
-**86 maillages** (`SM_GB_*`), 164 170 triangles, 8 053 coques de collision simples (UCX). Pivots à la base de chaque objet, et sur la charnière pour les portes, herses, grilles et trappes.
+**81 maillages** (`SM_GB_*`), 161 216 triangles, 6 048 coques de collision simples (UCX). Pivots à la base de chaque objet, et sur la charnière pour les portes, herses, grilles et trappes.
 
 ### Château
-- Barbacane, Grand Pont (100 m, tablier de 6 m, parapets de 1,1 m, 4 piles dont la plus haute fait 93.3 m, pont-levis), châtelet (tours de 13 m sur 28 m, herse), courtine (17 m côté porte, 9 m sur les falaises, 3 m d'épaisseur, parapets de 1,1 m des deux côtés et merlons), **10 tours** rondes de 11 m (30 à 35 m) traversées par le chemin de ronde, dont 2 tours-escaliers. Viennent ensuite la basse-cour et ses bâtiments, la porte intérieure, la cour intérieure, le palais (146 × 69 m, faîte à +38 m), le donjon (75 m, aire à +65 m, balcon), le pont couvert et la chapelle.
-- 12 salles principales aux dimensions exactes du cahier, plus les salles secondaires (37 pièces en tout) :
-
-| Salle | construite (L × l × h) | cahier | conforme |
-|---|---|---|---|
-| Great Hall | 32 × 20 × 16.0 | 32 × 20 × 16 | oui |
-| Throne Room | 45 × 20 × 20.0 | 45 × 20 × 20 | oui |
-| Banquet Hall | 36 × 14 × 12.0 | 36 × 14 × 12 | oui |
-| Kitchen | 16 × 12 × 8.0 | 16 × 12 × 8 | oui |
-| War Room | 16 × 12 × 7.0 | 16 × 12 × 7 | oui |
-| Lord's Study | 12 × 9 × 6.0 | 12 × 9 × 6 | oui |
-| Library | 24 × 14 × 9.0 | 24 × 14 × 9 | oui |
-| Lord's Apartments | 14 × 10 × 6.0 | 14 × 10 × 6 | oui |
-| Larder | 18 × 10 × 5.0 | 18 × 10 × 5 | oui |
-| Crypt | 26 × 14 × 6.0 | 26 × 14 × 6 | oui |
-| Dungeon | 40 × 24 × 4.5 | 40 m corridor, 10 cells 3 x 3, guard room, interrogation room, pit cell | oui |
-| Chapel | 32 × 12 × 15.0 | 32 × 12 × 15 | oui |
-
-- Escalier dérobé : panneau derrière l'estrade du trône, puis colimaçon qui relie la crypte (L-2), le trône (L0), le cabinet (L1) et les appartements (L2). Tunnel secret de **297.7 m** jusqu'à la porte cachée au pied de la falaise sud [574, 384, 118].
+- Barbacane et Grand Pont (tablier de 6 m, parapets de 1,1 m, 4 piles dont la plus haute fait 93.2 m, pont-levis). Le château lui-même (enceinte, tours, palais, donjon et ses salles) était un greybox en phase 2 ; il est remplacé en phase 4 par le modèle « Castle 2.0 » (section suivante).
 ### Ville
 - Remparts (ellipse 460 × 600 m, 10,5 m de haut, 2,5 m d'épaisseur, chemin de ronde de 2,85 m avec parapets, hourds), **16 tours** carrées de 18 à 25 m, **4 portes** (porte Nord double avec barbacane, tour de 30 m et herse ; porte Est avec péage ; porte Ouest ; porte d'Eau), rue de ronde de 5 m, 4 escaliers d'accès au chemin de ronde.
 - **294 bâtiments dans les murs** (cahier : 260 à 320) posés sur les 295 parcelles du plan (3 parcelles écartées car elles chevauchaient un monument, 2 pour ouvrir la vue V1 sur le donjon) : 271 maisons fermées en 16 variantes (2 à 4 étages, pignon ou gouttereau sur rue, encorbellement, toits de 50 à 60°, fenêtres éclairées ou sombres), plus les édifices publics.
@@ -96,7 +78,7 @@ Elle demande l'ADK Nanos World et un serveur local, que je n'ai pas : projet UE 
 
 **Tests de marche** : simulation de la capsule Nanos World (rayon 0,35 m, hauteur 1,8 m, marche franchissable 0,4 m, pente maximale d'environ 39°) sur les collisions réelles et le relief, à 0,5 m × 0,1 m de résolution. La recherche de chute vers les vides a été faite pour le château et la ville, pas pour les sites. Le test avec le vrai personnage reste à faire dans Unreal.
 
-- Château : 37/37 pièces atteintes depuis la basse-cour et la terrasse, ainsi que le chemin de ronde, les 10 tours, le Grand Pont, le pont-levis, le balcon, l'aire du donjon et le tunnel jusqu'à sa sortie. Chutes vers les vides : 0.
+- Château : voir la phase 4 (le test de marche porte désormais sur le modèle « Castle 2.0 » et ses salles).
 - Ville : 81/81 pièces atteintes depuis la place, ainsi que les 16 tours, les 4 portes vers l'extérieur, la chambre des cloches, la tribune d'orgue et la tour du manoir. Chutes vers les vides : 0.
 - Site « approach » : 2/2 pièces atteintes depuis la route.
 - Site « cemetery » : 6/6 pièces atteintes depuis la route.
@@ -133,9 +115,9 @@ Aucun trajet entre deux pôles ne dépasse 6 minutes en courant.
 - no stray primitives : oui
 - Portes principales de 3 × 4,5 m sur les circulations publiques, portes de service d'au moins 1,6 × 2,6 m, couloirs d'au moins 2 m (service) et 3 m (public), escaliers d'au moins 2,5 m, colimaçons à marches de 2,2 m, marches de 20 cm maximum, parapets de 1,1 m sur les ponts, balcons et chemins de ronde : appliqués par construction et confirmés par les tests de marche.
 
-**Audit géométrique** (`scripts/gb_audit.py`, `Checks/audit.json`) : chaque pièce visible doit reposer sur quelque chose, le terrain, une autre pièce dessous ou une pièce accolée. Le premier audit a trouvé un pilier de l'abbaye à moitié au-dessus de la trémie de l'escalier, des têtes d'arc et des linteaux tenus d'un seul côté, des hourds en bois détachés des remparts, des merlons plus larges que le parapet, une cloche et une cage pendues dans le vide, des contreforts décrochés sous le palais, des clôtures, tombes et charrettes flottant sur les pentes, et le terrain qui traversait le sol de 16 pièces. Tout est corrigé. Il reste 32 pièces isolées en partie sans appui, vérifiées une à une en image : couronnes d'ifs sur leur tronc, peaux qui sèchent sous leur perche, chaîne de la cage, toits de mausolées. Pièces avec du terrain au-dessus du sol : 0.
+**Audit géométrique** (`scripts/gb_audit.py`, `Checks/audit.json`) : chaque pièce visible doit reposer sur quelque chose, le terrain, une autre pièce dessous ou une pièce accolée. Le premier audit a trouvé un pilier de l'abbaye à moitié au-dessus de la trémie de l'escalier, des têtes d'arc et des linteaux tenus d'un seul côté, des hourds en bois détachés des remparts, des merlons plus larges que le parapet, une cloche et une cage pendues dans le vide, des contreforts décrochés sous le palais, des clôtures, tombes et charrettes flottant sur les pentes, et le terrain qui traversait le sol de 16 pièces. Tout est corrigé. Il reste 33 pièces isolées en partie sans appui, vérifiées une à une en image : couronnes d'ifs sur leur tronc, peaux qui sèchent sous leur perche, chaîne de la cage, toits de mausolées. Pièces avec du terrain au-dessus du sol : 0.
 
-**Vues héros** (rendus texturés Cycles dans `Screenshots/`, à refaire dans Unreal de jour et de nuit aux phases suivantes) : V1 Market square, V2 Throne Room balcony, V3 Great Bridge, V4 Great Hall portal, V5 Church bell chamber, V6 Third hairpin, V7 East pass, V8 Abbey ruin at dusk, V0 Valley overview.
+**Vues héros** (rendus texturés Cycles dans `Screenshots/`, à refaire dans Unreal de jour et de nuit aux phases suivantes) : V1 Market square, V2 Castle walls toward the city, V3 Great Bridge, V4 Great Hall portal, V5 Church bell chamber, V6 Third hairpin, V7 East pass, V8 Abbey ruin at dusk, V0 Valley overview.
 
 ## Textures (début de la phase 3)
 
@@ -154,13 +136,46 @@ Aucun trajet entre deux pôles ne dépasse 6 minutes en courant.
 - Relief : plate-forme de la maison et vide sous le puits secret. Les salles souterraines sont marquées `sealed` : le relief n'y est jamais creusé, et l'audit vérifie la roche au-dessus.
 - Chemin des chasseurs : piste de 3 m, longue de 793 m, du sentier du marais (même rive que la maison) jusqu'à sa porte, pente maximale 14 % (calcul du chemin le moins coûteux, `track_lodge.py`).
 
+## Phase 4 (suite) : château des vampires (« Castle 2.0 »)
+
+- Modèle « Castle 2.0 » (EldersCrawler) posé sur l'éperon à l'échelle 160 (environ 200 × 166 m, 70,7 m de haut à la flèche de la tour du palais), centre [719, 290], base à +195,4 m, porte tournée vers le Grand Pont. À l'intérieur de l'enceinte, le terrain reprend le relief de la colline sur laquelle le modèle a été construit (`Data/castle20_plate.npz`), raccordé au bord du rocher.
+- Analyse du modèle : l'export du pack avait perdu ses matériaux (un seul matériau sur 13 morceaux). Ils sont reconstitués par îlot UV et par orientation (murs, toits, sols) avec les textures du pack (`c20_classes.py`). Les volumes intérieurs sont trouvés par voxelisation à 0,5 m et remplissage de l'air extérieur (`c20_interiors.py`), les accès par le test de marche, et les bâtiments par leurs toits (`c20_buildings.py`). Le modèle a peu de vrais intérieurs : les salles sont placées dans ses propres salles et tours quand elles existent, dans des salles doublées (murs, sol et plafond propres) à l'intérieur de ses bâtiments, ou sous le terrain.
+- Grand Pont réorienté vers la nouvelle porte (115,4 m, cap 101,7°), pont-levis *Movable*, torches dans l'avant-cour. Les vantaux de la porte du modèle sont découpés et remplacés par deux vantaux *Movable* ouverts.
+- Découpes du modèle (14 boîtes : vantaux, portes percées, puits, encombrement des salles doublées, fondations sous les sous-sols). Les triangles traversés sont recoupés exactement par les plans de chaque boîte (`c2cuts.py`) ; le même calcul sert au test de marche et à l'export. Chaque porte percée reçoit un seuil, des jambages et un linteau ; quand le sol extérieur n'est pas au niveau du seuil, le terrain est raccordé (talus) ou un perron est construit.
+
+Salles principales (cahier, section 5) :
+
+| Salle | emplacement | construite (L × l × h) | cahier | conforme |
+|---|---|---|---|---|
+| Great Hall | grande salle du modèle (palais) | 24,2 × 15,4 × 10,6 | 32 × 20 × 16 | **non** |
+| Throne Room | salle doublée dans le corps du palais | 26,5 × 11,0 × 11,0 | 45 × 20 × 20 | **non** |
+| Banquet Hall | sous-sol L-1, voûtée | 36,0 × 14,0 × 12,0 | 36 × 14 × 12 | oui |
+| War Room | salle doublée, aile est | 14,4 × 6,8 × 6,0 | 16 × 12 × 7 | **non** |
+| Lord's Study | salle du modèle, aile est | 6,5 × 6,0 × 4,5 | 12 × 9 × 6 | **non** |
+| Dungeon | sous-sol L-2 | 40,0 × 2,0 × 4,5 | 40 m corridor, 10 cells 3 x 3, guard room, interrogation room, pit cell | oui |
+| Larder | sous-sol L-1 | 18,0 × 10,0 × 5,0 | 18 × 10 × 5 | oui |
+| Kitchen | sous-sol L-1 | 16,0 × 12,0 × 8,0 | 16 × 12 × 8 | oui |
+| Library | tour nord-est du modèle | 10,1 × 10,1 × 6,5 | 24 × 14 × 9 | **non** |
+| Crypt | sous-sol L-2, voûtée | 26,0 × 14,0 × 6,0 | 26 × 14 × 6 | oui |
+| Lord's Apartments | tour nord-ouest du modèle | 9,1 × 9,1 × 6,5 | 14 × 10 × 6 | **non** |
+| Chapel | salle à colonnes du modèle | 15,4 × 15,0 × 8,0 | 32 × 12 × 15 | **non** |
+
+Les salles creusées sous le terrain ont les dimensions du cahier. Celles logées dans le modèle prennent la taille que ses murs permettent (tours rondes, corps de bâtiment de 11 m de large).
+
+- Grande Salle : la salle à colonnes du palais, tables de banquet et lustres. Salle du trône derrière elle (porte dans l'axe de la nef) : estrade à trois degrés, trône, tapis, bannières, pilastres, plafond à caissons. Chapelle : la salle à six colonnes ouverte sur la cour du palais par une arcade (autel, retable, croix, bancs dans la nef). Salle de guerre : table des cartes, râtelier de lances, bannières, perron depuis la cour est. Bibliothèque et appartements dans deux tours rondes, cabinet du seigneur dans l'aile est.
+- Escalier dérobé : un panneau de pierre (*Movable*) s'ouvre dans le mur derrière l'estrade du trône, à côté du trône. Derrière, un colimaçon de 113 marches descend dans un puits aux murs de 1,6 m jusqu'à la crypte (L-2, 22,6 m sous l'estrade).
+- Sous-sols : deux niveaux sous le terrain du palais (L-1 à +202,4 m, L-2 à +195,4 m), sans trou dans le paysage : seuls les deux puits le coupent, et leurs murs de 1,6 m en masquent le bord. Il reste au moins 1,4 m de roche au-dessus des salles. Un grand escalier rampe sur rampe (six volées, mur d'échiffre central, balustrade) descend du bas-côté ouest de la Grande Salle. L-1 : salle de banquet voûtée (deux rangées de piliers, ogives, table de 28 m, grande cheminée), cuisine (âtre, chaudron, tables de travail, étagères), garde-manger (étagères, salaisons), cave à vin et à sang (tonneaux, cuves). L-2 : crypte voûtée (sarcophage du seigneur sur son socle, six tombeaux de famille), grille de fer vers les cachots (couloir de 40 m, 10 cellules de 3 × 3 m à barreaux, salle des gardes, salle d'interrogatoire, oubliette).
+- Tunnel secret : 244,4 m depuis la crypte, en trois branches dans le rocher (deux longs escaliers puis une galerie de niveau), toujours sous le paysage, jusqu'à une porte cachée (*Movable*) au pied de la falaise sud, en [597, 349, 114].
+- 24 pièces de kit et le maillage du château (`SM_C2_Castle`, collision complexe) dans `Data/placements_castle.json`, 52 lumières ponctuelles.
+- Test de marche (`nav_castle.json`, depuis la barbacane) : 21/21 salles atteintes, 14/14 points de contrôle (pont, avant-cour, cours, estrade, chambre secrète, pied du colimaçon, grand escalier, coudes du tunnel, devant la porte cachée), 0 chute vers les vides.
+
 ## Modèles tiers (phase 4)
 
 Le commanditaire déclare détenir les licences et les autorisations écrites des créateurs pour ces modèles, utilisés dans la carte. Les crédits et attributions sont conservés ici :
 
 - « Fantasy Castle » par **Hawtor Studio** : maison des chasseurs (coque extérieure, textures). Attribution requise.
 - « Classic Library for Blender Eevee and Cycles » par **denniswoo1993** : kit de la bibliothèque souterraine et mobilier de la maison. Ses textures intégrées viennent d'ambientCG, de Poly Haven et de Textures.com.
-- « Castle 2,0 » par **EldersCrawler** : château des vampires (à venir).
+- « Castle 2.0 » par **EldersCrawler** : château des vampires (modèle complet et textures ; matériaux reconstitués par face).
 - « Medieval Houses Package » par **Daniel** : maisons de la ville (à venir).
 - « Medieval Church » par **Daniel** : vitraux et textures de l'église (à venir). Attribution requise.
 - « Medieval castle » par **Misha Kiselev** : maison du noble (à venir).
@@ -174,10 +189,10 @@ Trois cartes de couleur du pack « Fantasy Castle » (enduit, toit, bois) étaie
 - Serpentine, point 5 : z 205 → 200 (la terrasse est plate à +199, exigence MUST). Route ouest au pont : le -1 m de l'annexe est le niveau de la rivière. Le tablier du pont Ouest va de +12,4 à +9,0 m (5 arches, 60 m, 1,1 m de parapet).
 - Raccords : les routes secondaires partent à l'altitude de la route qu'elles rejoignent : forest_track 25,3 m (annexe 16), quarry_road 21 m (annexe 9), mill_track 23 m (annexe 22).
 - Escaliers × serpentine : 2 passerelles en [507, -40] et [597, -40] (l'escalier passe 8 à 11 m au-dessus de la route), croisements à niveau ailleurs.
-- Palais : la crête est tenue à +38 m (exigence de silhouette) par des toits à 55° tronqués, avec les gouttières à +29 m pour loger le niveau L2 (+22). Les arcs-boutants côté vallée partent de piles encorbellées dans la falaise, puisque la façade prolonge la falaise.
-- Souterrains : au lieu de trous dans le paysage, que Python ne sait pas peindre, le terrain est abaissé sous le palais, le cachot, la crypte de l'église, la cave du manoir, la nef de l'abbaye, le tunnel et la grotte. Murs de 1,6 m, dalles et talus en masquent les bords. Le rocher est posé à +203,85 m (15 cm sous les sols) pour éviter le scintillement.
+- Château : le greybox de la phase 2 est remplacé par le modèle « Castle 2.0 ». Sa silhouette, ses tours et son palais sont ceux du modèle ; la Grande Salle, la salle du trône, la chapelle, la bibliothèque, les appartements, le cabinet et la salle de guerre prennent la taille que ses bâtiments permettent (tableau de la phase 4). La salle du trône n'a plus de balcon.
+- Souterrains : au lieu de trous dans le paysage, que Python ne sait pas peindre, le terrain est abaissé sous la crypte de l'église, la cave du manoir, la nef de l'abbaye, le puits de la maison des chasseurs et la grotte. Murs de 1,6 m, dalles et talus en masquent les bords. Les sous-sols du château et son tunnel sont entièrement sous le paysage ; seuls leurs deux puits le coupent.
 - Règle caméra (plafonds d'au moins 4 m) : les intérieurs de ville ont des étages de 5,0 et 4,6 m, plus hauts que des maisons réelles. Le tunnel secret fait 4 m de haut.
-- Tunnel secret (298 m) : galerie sinueuse sous le palais, puis traversée droite de la falaise sud sous un éboulis jusqu'à la porte cachée [574, 384, 118].
+- Tunnel secret : 244.4 m au lieu de 298 m. Il descend de 79 m dans le rocher par deux longs escaliers en lacet, puis une galerie de niveau sous la falaise sud, jusqu'à la porte cachée au pied de la falaise, en [597, 349, 114] au lieu de [574, 384, 118].
 - Caserne du guet : la boîte de l'annexe dépassait de 10 m hors du rempart ; elle a été glissée de 15,5 m vers l'intérieur.
 - Puits du marché et fontaine sèche de la cour intérieure : déplacés hors des points d'apparition imposés par l'annexe.
 - Grotte de la cascade : accès depuis la berge par une rampe, puis par une corniche de 4 m posée sur la vasque au pied de la falaise, sous le rideau d'eau, jusqu'à l'entrée de la grotte. Le chemin de la cascade passe 40 m plus haut.
@@ -187,7 +202,7 @@ Trois cartes de couleur du pack « Fantasy Castle » (enduit, toit, bois) étaie
 - Faubourg Est : 52 bâtiments générés le long de la route commerciale (le plan en dessine 18, le texte en demande environ 50).
 - Tour de guet : 11 × 11 m pour loger un colimaçon à marches de 2,2 m (le cahier ne donne que la hauteur de 18 m).
 - Vue V1 : 2 parcelles au nord-est de la place ne sont pas bâties, pour que le donjon apparaisse entre les toits comme le demande le cahier.
-- Balcon de la salle du trône (V2) : sa moitié extérieure est 0,8 m plus bas (4 marches de 20 cm dans l'ouverture de la façade). Sinon le parapet de 1,1 m masquait la ville depuis la caméra imposée.
+- Vues héros et château : V2 (balcon de la salle du trône) n'existe plus ; elle est prise depuis le rempart sud du château, au-dessus de la caméra du cahier, vers l'église. V3 est sur le tablier du Grand Pont réorienté, V4 au portail de la Grande Salle du modèle. V1, V5, V6 et V8 visent la tour du palais (point culminant du modèle) au lieu de l'ancien donjon.
 - Vue V7 : la route commerciale monte au col Est par une vallée ouverte (flancs à 14°), et non dans une tranchée de 40 m, pour que le plan d'établissement voie la vallée.
 - Vue V6 : depuis le troisième lacet, l'éperon entre la route et le bord du ravin montait 13 m au-dessus de la caméra du cahier. Il est entaillé sous la ligne de visée (1,5 m de marge, flancs à 45°) pour que les murs du château apparaissent au-dessus.
 - Chambre des cloches (V5) : l'étage des cloches est octogonal sur la tour carrée de l'annexe, avec une baie par face. Sur une chambre carrée, la ligne vers le donjon tombait dans l'angle ; la face nord-est regarde désormais le château (« la tour fait face à la tour »). Abat-sons seulement au-dessus de la hauteur des yeux.

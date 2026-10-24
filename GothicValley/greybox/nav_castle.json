@@ -1,12 +1,12 @@
 {
  "name": "castle",
  "bbox": [
-  560,
-  832,
-  60,
-  432,
+  590,
+  840,
+  66,
+  385,
   100,
-  290
+  300
  ],
  "groups": [
   "greybox/castle_groups.json"
@@ -14,169 +14,104 @@
  "meta": [
   "greybox/castle_meta.json"
  ],
+ "meshes": [
+  "assets/castle20/tris_world.npz"
+ ],
+ "landscape_crust": 1.0,
  "exclude": [
-  "SM_GB_Castle_Portcullis",
-  "SM_GB_Castle_IronGate",
-  "SM_GB_Castle_TunnelExitDoor",
-  "SM_GB_Castle_HiddenPanel",
-  "SM_GB_Castle_RobingPanel"
+  "SM_GB_Castle_GateLeafW",
+  "SM_GB_Castle_GateLeafE",
+  "SM_GB_Castle_SecretPanel",
+  "SM_GB_Castle_CryptGate",
+  "SM_GB_Castle_TunnelDoor"
  ],
  "seeds": [
   [
-   726,
-   232,
-   204
-  ],
-  [
-   742,
-   66,
-   199
+   742.0,
+   88.0,
+   199.1
   ]
  ],
  "probes": {
-  "tunnel_exit_apron": [
-   568,
-   384,
-   117.8
+  "bridge_mid": [
+   730.35,
+   136.5,
+   201.5
   ],
-  "eyrie": [
-   776,
-   376,
-   269
+  "forecourt": [
+   718.7,
+   215.0,
+   203.85
   ],
-  "keep_bridge_level": [
-   775,
-   385,
-   226
+  "gate_passage": [
+   718.7,
+   246.0,
+   203.9
   ],
-  "covered_bridge": [
-   720,
-   398.4,
-   226
+  "lower_court": [
+   719.0,
+   270.0,
+   205.79384174346924
   ],
-  "balcony": [
-   615.5,
-   312.0,
-   203.2
-  ],
-  "library_mezzanine": [
-   672.3,
-   380,
-   222.4
+  "palace_court": [
+   689.0,
+   330.0,
+   215.92687454223633
   ],
   "throne_dais": [
-   625.5,
-   330,
-   205.4
+   705.5,
+   348.5,
+   218.0
   ],
-  "drawbridge": [
-   742,
-   187,
-   204
+  "throne_door": [
+   721.25,
+   340.5,
+   217.43
   ],
-  "great_bridge_mid": [
-   742,
-   140,
-   201.8
+  "secret_stair_top": [
+   702.7,
+   349.6,
+   218.0
   ],
-  "tunnel_spiral_bottom": [
-   630,
-   389.9,
-   123.6
+  "spiral_foot": [
+   705.9,
+   349.0,
+   195.43
   ],
-  "dungeon_cell": [
-   692,
-   222.5,
-   188
+  "grand_stair_mid": [
+   712.6,
+   335.5,
+   213.54500000000002
   ],
-  "chapel_altar": [
-   778,
-   325,
-   205
+  "tunnel_turn_1": [
+   621.7,
+   344.45,
+   147.43
   ],
-  "tower_0_walk": [
-   820.6,
-   355.0,
-   213.0
+  "tunnel_turn_2": [
+   682.145,
+   347.75,
+   109.4
   ],
-  "tower_1_walk": [
-   803.1,
-   393.1,
-   213.0
+  "tunnel_outside": [
+   595.4,
+   349.4,
+   114.48
   ],
-  "tower_2_walk": [
-   758.9,
-   416.6,
-   213.0
-  ],
-  "tower_3_walk": [
-   711.3,
-   415.1,
-   213.0
-  ],
-  "tower_4_walk": [
-   662.4,
-   415.8,
-   213.0
-  ],
-  "tower_5_walk": [
-   621.8,
-   229.8,
-   213.0
-  ],
-  "tower_6_walk": [
-   662.6,
-   200.6,
-   213.0
-  ],
-  "tower_7_walk": [
-   710.9,
-   191.7,
-   221.0
-  ],
-  "tower_8_walk": [
-   792.8,
-   221.6,
-   221.0
-  ],
-  "tower_9_walk": [
-   814.1,
-   255.3,
-   221.0
+  "exit_spiral_top": [
+   600.3,
+   349.4,
+   114.48
   ]
  },
  "levels": {
-  "Lm2": [
-   186,
-   193
-  ],
-  "Lm1": [
-   194,
-   201
-  ],
-  "L0": [
-   198,
+  "courts": [
+   200,
    212
   ],
-  "L1": [
-   215,
-   224
-  ],
-  "L2": [
-   224.5,
-   233
-  ],
-  "tunnel": [
-   115,
-   130
-  ],
-  "upper": [
-   233,
-   290
-  ],
-  "walk": [
-   208,
-   224
+  "palace": [
+   212,
+   226
   ]
  }
 }

@@ -2,931 +2,1584 @@
  "rooms": [
   {
    "name": "Great Hall",
-   "x0": 664,
-   "x1": 684,
-   "y0": 314,
-   "y1": 346,
-   "z0": 204.0,
-   "z1": 220.0,
+   "x0": 709.0,
+   "x1": 733.2,
+   "y0": 324.3,
+   "y1": 339.7,
+   "z0": 217.43,
+   "z1": 228.03,
+   "interior": "castle",
+   "note": "the model's pillared hall in the palace (nave vault at +10.6 m, aisles 4.7 m)",
    "core_id": 1
   },
   {
    "name": "Throne Room",
-   "x0": 619,
-   "x1": 664,
-   "y0": 320,
-   "y1": 340,
-   "z0": 204.0,
-   "z1": 224.0,
+   "x0": 704.0,
+   "x1": 730.5,
+   "y0": 341.0,
+   "y1": 352.0,
+   "z0": 217.43,
+   "z1": 228.43,
+   "interior": "castle",
+   "note": "liner room in the main block of the palace",
    "core_id": 2
   },
   {
+   "name": "Secret stair chamber",
+   "x0": 699.5,
+   "x1": 703.6,
+   "y0": 347.0,
+   "y1": 351.0,
+   "z0": 218.0,
+   "z1": 228.4,
+   "interior": "castle",
+   "note": "behind the throne: top of the spiral down to the crypt"
+  },
+  {
+   "name": "Library",
+   "x0": 772.26,
+   "x1": 782.34,
+   "y0": 358.56,
+   "y1": 368.64,
+   "z0": 210.07,
+   "z1": 216.57,
+   "interior": "castle",
+   "core_id": 9
+  },
+  {
+   "name": "Lord's Apartments",
+   "x0": 644.94,
+   "x1": 654.06,
+   "y0": 346.44,
+   "y1": 355.56,
+   "z0": 210.43,
+   "z1": 216.93,
+   "interior": "castle",
+   "core_id": 11
+  },
+  {
+   "name": "Lord's Study",
+   "x0": 797.5,
+   "x1": 803.5,
+   "y0": 335.5,
+   "y1": 342.0,
+   "z0": 205.35,
+   "z1": 209.85,
+   "interior": "castle",
+   "core_id": 5
+  },
+  {
+   "name": "Chapel",
+   "x0": 681.0,
+   "x1": 696.4,
+   "y0": 335.8,
+   "y1": 350.8,
+   "z0": 216.8,
+   "z1": 224.8,
+   "interior": "castle",
+   "note": "the model's pillared hall north of the palace court",
+   "core_id": 12
+  },
+  {
+   "name": "War Room",
+   "x0": 756.0,
+   "x1": 762.8,
+   "y0": 269.0,
+   "y1": 283.4,
+   "z0": 209.93,
+   "z1": 215.93,
+   "interior": "castle",
+   "note": "liner in the east-wing building, door from the east court",
+   "core_id": 4
+  },
+  {
+   "name": "Grand stair (L-1 landing)",
+   "x0": 708.9,
+   "x1": 713.7,
+   "y0": 325.0,
+   "y1": 327.0,
+   "z0": 202.43,
+   "z1": 209.03,
+   "interior": "castle",
+   "sealed": true
+  },
+  {
+   "name": "Grand stair (L-2 landing)",
+   "x0": 708.9,
+   "x1": 713.7,
+   "y0": 325.0,
+   "y1": 327.0,
+   "z0": 195.43,
+   "z1": 202.03,
+   "interior": "castle",
+   "sealed": true
+  },
+  {
    "name": "Banquet Hall",
-   "x0": 643,
-   "x1": 657,
-   "y0": 272,
-   "y1": 308,
-   "z0": 204.0,
-   "z1": 216.0,
+   "x0": 715.3,
+   "x1": 751.3,
+   "y0": 325.0,
+   "y1": 339.0,
+   "z0": 202.43,
+   "z1": 214.4,
+   "interior": "castle",
+   "sealed": true,
+   "note": "vaulted hall of the undercroft (L-1), under the Great Hall",
    "core_id": 3
   },
   {
    "name": "Kitchen",
-   "x0": 645,
-   "x1": 657,
-   "y0": 253,
-   "y1": 269,
-   "z0": 204.0,
-   "z1": 212.0,
+   "x0": 715.3,
+   "x1": 731.3,
+   "y0": 339.4,
+   "y1": 351.4,
+   "z0": 202.43,
+   "z1": 210.4,
+   "interior": "castle",
+   "sealed": true,
    "core_id": 8
   },
   {
-   "name": "Servery",
-   "x0": 645,
-   "x1": 657,
-   "y0": 269,
-   "y1": 272,
-   "z0": 204.0,
-   "z1": 208.5
-  },
-  {
-   "name": "Antechamber",
-   "x0": 650,
-   "x1": 684,
-   "y0": 308,
-   "y1": 314,
-   "z0": 204.0,
-   "z1": 210.0
-  },
-  {
-   "name": "Robing room",
-   "x0": 636,
-   "x1": 649,
-   "y0": 340.5,
-   "y1": 350,
-   "z0": 204.0,
-   "z1": 209.0
-  },
-  {
-   "name": "Portal porch",
-   "x0": 684,
-   "x1": 688,
-   "y0": 324,
-   "y1": 336,
-   "z0": 204.0,
-   "z1": 214.0
-  },
-  {
-   "name": "East passage",
-   "x0": 649,
-   "x1": 684,
-   "y0": 346,
-   "y1": 354,
-   "z0": 204.0,
-   "z1": 208.5
-  },
-  {
-   "name": "Throne balcony loggia",
-   "x0": 619,
-   "x1": 632,
-   "y0": 304,
-   "y1": 320,
-   "z0": 204.0,
-   "z1": 212.0
-  },
-  {
-   "name": "War Room",
-   "x0": 645,
-   "x1": 657,
-   "y0": 280,
-   "y1": 296,
-   "z0": 218.0,
-   "z1": 225.0,
-   "core_id": 4
-  },
-  {
-   "name": "Lord's Study",
-   "x0": 640,
-   "x1": 649,
-   "y0": 350,
-   "y1": 362,
-   "z0": 218.0,
-   "z1": 224.0,
-   "core_id": 5
-  },
-  {
-   "name": "Library",
-   "x0": 660,
-   "x1": 674,
-   "y0": 371,
-   "y1": 395,
-   "z0": 218.0,
-   "z1": 227.0,
-   "core_id": 9
-  },
-  {
-   "name": "Gallery (west wing)",
-   "x0": 645,
-   "x1": 684,
-   "y0": 296,
-   "y1": 314,
-   "z0": 218.0,
-   "z1": 223.5
-  },
-  {
-   "name": "Gallery (north)",
-   "x0": 684,
-   "x1": 688,
-   "y0": 296,
-   "y1": 354,
-   "z0": 218.0,
-   "z1": 223.5
-  },
-  {
-   "name": "Gallery (east wing)",
-   "x0": 649,
-   "x1": 684,
-   "y0": 346,
-   "y1": 354,
-   "z0": 218.0,
-   "z1": 223.5
-  },
-  {
-   "name": "Study passage",
-   "x0": 636,
-   "x1": 640,
-   "y0": 346,
-   "y1": 354,
-   "z0": 218.0,
-   "z1": 223.5
-  },
-  {
-   "name": "Library corridor",
-   "x0": 643,
-   "x1": 664,
-   "y0": 362,
-   "y1": 368,
-   "z0": 218.0,
-   "z1": 223.5
-  },
-  {
-   "name": "Library corridor (b)",
-   "x0": 658,
-   "x1": 664,
-   "y0": 368,
-   "y1": 371,
-   "z0": 218.0,
-   "z1": 223.5
-  },
-  {
-   "name": "Lord's corridor",
-   "x0": 636,
-   "x1": 650,
-   "y0": 343,
-   "y1": 348,
-   "z0": 226.0,
-   "z1": 230.5
-  },
-  {
-   "name": "Lord's corridor (b)",
-   "x0": 646,
-   "x1": 650,
-   "y0": 348,
-   "y1": 370,
-   "z0": 226.0,
-   "z1": 230.5
-  },
-  {
-   "name": "Apartments antechamber",
-   "x0": 646,
-   "x1": 654,
-   "y0": 370,
-   "y1": 376,
-   "z0": 226.0,
-   "z1": 232.0
-  },
-  {
-   "name": "Lord's Apartments",
-   "x0": 646,
-   "x1": 656,
-   "y0": 376,
-   "y1": 390,
-   "z0": 226.0,
-   "z1": 232.0,
-   "core_id": 11
-  },
-  {
-   "name": "Bridge corridor",
-   "x0": 648,
-   "x1": 653,
-   "y0": 390,
-   "y1": 396,
-   "z0": 226.0,
-   "z1": 230.5
-  },
-  {
-   "name": "Bridge landing",
-   "x0": 648,
-   "x1": 653,
-   "y0": 396.8,
-   "y1": 400.4,
-   "z0": 226.0,
-   "z1": 230.0
-  },
-  {
    "name": "Larder",
-   "x0": 626,
-   "x1": 636,
-   "y0": 252,
-   "y1": 270,
-   "z0": 196.0,
-   "z1": 201.0,
+   "x0": 731.7,
+   "x1": 749.7,
+   "y0": 339.4,
+   "y1": 349.4,
+   "z0": 202.43,
+   "z1": 207.4,
+   "interior": "castle",
+   "sealed": true,
    "core_id": 7
   },
   {
    "name": "Wine and blood cellar",
-   "x0": 626,
-   "x1": 636,
-   "y0": 271,
-   "y1": 289,
-   "z0": 196.0,
-   "z1": 201.0
+   "x0": 750.1,
+   "x1": 760.1,
+   "y0": 339.4,
+   "y1": 349.4,
+   "z0": 202.43,
+   "z1": 207.4,
+   "interior": "castle",
+   "sealed": true
   },
   {
-   "name": "Service stair",
-   "x0": 636,
-   "x1": 648.6,
-   "y0": 252.6,
-   "y1": 258,
-   "z0": 196.0,
-   "z1": 204.0
+   "name": "Dungeon stair corridor",
+   "x0": 726.4,
+   "x1": 728.4,
+   "y0": 327.0,
+   "y1": 339.2,
+   "z0": 195.43,
+   "z1": 199.43,
+   "interior": "castle",
+   "sealed": true
   },
   {
    "name": "Crypt",
-   "x0": 620,
-   "x1": 634,
-   "y0": 352,
-   "y1": 378,
-   "z0": 188.0,
-   "z1": 194.0,
+   "x0": 699.4,
+   "x1": 725.4,
+   "y0": 338.6,
+   "y1": 352.6,
+   "z0": 195.43,
+   "z1": 201.43,
+   "interior": "castle",
+   "sealed": true,
+   "note": "vaulted crypt (L-2) under the throne room; the secret spiral lands in it",
    "core_id": 10
   },
   {
-   "name": "Crypt vestibule",
-   "x0": 627,
-   "x1": 632,
-   "y0": 350,
-   "y1": 352,
-   "z0": 188.0,
-   "z1": 192.0
-  },
-  {
-   "name": "Gate corridor (a)",
-   "x0": 637,
-   "x1": 640,
-   "y0": 259,
-   "y1": 356,
-   "z0": 188.0,
-   "z1": 192.0
-  },
-  {
-   "name": "Gate corridor (b)",
-   "x0": 637,
-   "x1": 684,
-   "y0": 256,
-   "y1": 259,
-   "z0": 188.0,
-   "z1": 192.0
-  },
-  {
-   "name": "Gate corridor (iron gate)",
-   "x0": 634,
-   "x1": 637,
-   "y0": 352,
-   "y1": 356,
-   "z0": 188.0,
-   "z1": 192.0
-  },
-  {
    "name": "Dungeon",
-   "x0": 684,
-   "x1": 708,
-   "y0": 220,
-   "y1": 260,
-   "z0": 188.0,
-   "z1": 192.5,
+   "x0": 725.8,
+   "x1": 765.8,
+   "y0": 339.6,
+   "y1": 341.6,
+   "z0": 195.43,
+   "z1": 199.9,
+   "interior": "castle",
+   "sealed": true,
+   "note": "40 m corridor, 10 cells 3 x 3, guard room, interrogation room, pit cell",
    "core_id": 6
   },
   {
    "name": "Guard room",
-   "x0": 690,
-   "x1": 708,
-   "y0": 224,
-   "y1": 246,
-   "z0": 204.0,
-   "z1": 209.0
+   "x0": 746.2,
+   "x1": 756.2,
+   "y0": 332.6,
+   "y1": 339.6,
+   "z0": 195.43,
+   "z1": 199.9,
+   "interior": "castle",
+   "sealed": true
+  },
+  {
+   "name": "Interrogation room",
+   "x0": 746.2,
+   "x1": 756.2,
+   "y0": 341.6,
+   "y1": 348.6,
+   "z0": 195.43,
+   "z1": 199.9,
+   "interior": "castle",
+   "sealed": true
   },
   {
    "name": "Secret tunnel (head)",
-   "x0": 624.5,
-   "x1": 627.5,
-   "y0": 378,
-   "y1": 386,
-   "z0": 188.0,
-   "z1": 192.0
+   "x0": 692.4,
+   "x1": 699.0,
+   "y0": 341.8,
+   "y1": 343.8,
+   "z0": 195.43,
+   "z1": 199.43,
+   "interior": "castle",
+   "sealed": true
   },
   {
-   "name": "Chapel",
-   "x0": 772,
-   "x1": 784,
-   "y0": 296,
-   "y1": 328,
-   "z0": 204.0,
-   "z1": 219.0,
-   "core_id": 12
+   "name": "Secret tunnel (exit)",
+   "x0": 605.1,
+   "x1": 613.1,
+   "y0": 348.4,
+   "y1": 350.4,
+   "z0": 109.4,
+   "z1": 113.4,
+   "interior": "castle",
+   "sealed": true
   }
  ],
  "voids": [
   [
-   682.8,
-   709.2,
-   218.8,
-   261.2,
-   186.0
+   698.7,
+   704.3,
+   346.2,
+   351.8,
+   195.25
   ],
   [
-   619.0,
-   688.0,
-   250.0,
-   396.0,
-   186.0
-  ]
- ],
- "void_paths": [
-  {
-   "pts": [
-    [
-     628.7,
-     389.9,
-     123.55
-    ],
-    [
-     668.0,
-     389.9,
-     121.99
-    ],
-    [
-     668.0,
-     378.0,
-     121.52
-    ],
-    [
-     632.0,
-     378.0,
-     120.09
-    ],
-    [
-     632.0,
-     384.0,
-     119.85
-    ],
-    [
-     574.0,
-     384.0,
-     117.55
-    ]
-   ],
-   "half": 2.6,
-   "note": "secret tunnel: landscape kept just under the gallery floor"
-  }
- ],
- "void_discs": [
+   708.1,
+   714.5,
+   324.2,
+   338.3,
+   195.25
+  ],
   [
-   626.0,
-   389.9,
-   4.2,
-   123.5
+   598.7,
+   604.3,
+   346.6,
+   352.2,
+   109.22
   ]
  ],
+ "void_paths": [],
+ "void_discs": [],
  "aprons": [
   [
-   566.0,
-   384.0,
-   117.8,
-   7.0,
-   22.0
+   765.75,
+   363.25,
+   210.04,
+   1.6,
+   4.0
+  ],
+  [
+   653.25,
+   340.25,
+   210.4,
+   1.6,
+   4.0
+  ],
+  [
+   797.75,
+   345.75,
+   205.32,
+   1.6,
+   4.0
+  ],
+  [
+   595.9,
+   349.4,
+   114.48,
+   1.6,
+   4.0
   ]
  ],
  "movable": [
   {
-   "name": "SM_GB_Castle_HiddenPanel",
-   "pivot": [
-    628.0,
-    340.0,
-    204.0
-   ]
-  },
-  {
-   "name": "SM_GB_Castle_RobingPanel",
-   "pivot": [
-    640.5,
-    340.0,
-    204.0
-   ]
-  },
-  {
-   "name": "SM_GB_Castle_IronGate",
-   "pivot": [
-    635.5,
-    352.6,
-    188.0
-   ]
-  },
-  {
-   "name": "SM_GB_Castle_TunnelExitDoor",
-   "pivot": [
-    573.8,
-    382.8,
-    118.0
-   ]
-  },
-  {
-   "name": "SM_GB_Castle_Portcullis",
-   "pivot": [
-    742.0,
-    196.15,
-    204.0
-   ]
-  },
-  {
    "name": "SM_GB_Castle_Drawbridge",
    "pivot": [
-    742.0,
-    192.0,
-    204.0
+    718.8,
+    192.51,
+    203.9
    ],
-   "note": "hinge at the gatehouse"
+   "motion": "hinge",
+   "note": "hinge on the crag side; raised, it closes the castle"
+  },
+  {
+   "name": "SM_GB_Castle_GateLeafW",
+   "pivot": [
+    716.0,
+    241.8,
+    202.82
+   ],
+   "motion": "hinge",
+   "note": "gate leaf open against the passage wall; swings 90 deg to close the gate"
+  },
+  {
+   "name": "SM_GB_Castle_GateLeafE",
+   "pivot": [
+    721.4,
+    241.8,
+    202.82
+   ],
+   "motion": "hinge",
+   "note": "gate leaf open against the passage wall; swings 90 deg to close the gate"
+  },
+  {
+   "name": "SM_GB_Castle_SecretPanel",
+   "pivot": [
+    703.8,
+    349.7,
+    218.0
+   ],
+   "motion": "hinge",
+   "note": "secret panel in the wall behind the dais (sandstone like the wall); swings into the stair chamber"
+  },
+  {
+   "name": "SM_GB_Castle_CryptGate",
+   "pivot": [
+    725.6,
+    339.6,
+    195.43
+   ],
+   "motion": "hinge",
+   "note": "iron gate crypt / dungeon"
+  },
+  {
+   "name": "SM_GB_Castle_TunnelDoor",
+   "pivot": [
+    598.12,
+    348.72,
+    114.48
+   ],
+   "motion": "hinge",
+   "note": "hidden door of the secret tunnel: stone cell at the foot of the south cliff; opens inward"
   }
  ],
- "towers": [
-  [
-   820.6,
-   355.0,
-   30.0,
-   213.0,
-   true
-  ],
-  [
-   803.1,
-   393.1,
-   32.5,
-   213.0,
-   false
-  ],
-  [
-   758.9,
-   416.6,
-   35.0,
-   213.0,
-   false
-  ],
-  [
-   711.3,
-   415.1,
-   30.0,
-   213.0,
-   false
-  ],
-  [
-   662.4,
-   415.8,
-   32.5,
-   213.0,
-   false
-  ],
-  [
-   621.8,
-   229.8,
-   35.0,
-   213.0,
-   false
-  ],
-  [
-   662.6,
-   200.6,
-   30.0,
-   213.0,
-   false
-  ],
-  [
-   710.9,
-   191.7,
-   32.5,
-   221.0,
-   true
-  ],
-  [
-   792.8,
-   221.6,
-   35.0,
-   221.0,
-   false
-  ],
-  [
-   814.1,
-   255.3,
-   30.0,
-   221.0,
-   false
-  ]
+ "lights": [
+  {
+   "name": "castle_forecourt_torch_0a",
+   "xyz": [
+    714.2,
+    205.2,
+    206.85
+   ],
+   "lumens": 900,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_forecourt_torch_0b",
+   "xyz": [
+    723.2,
+    205.2,
+    207.06
+   ],
+   "lumens": 900,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_forecourt_torch_1a",
+   "xyz": [
+    714.2,
+    229.6,
+    206.85
+   ],
+   "lumens": 900,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_forecourt_torch_1b",
+   "xyz": [
+    723.2,
+    229.6,
+    206.85
+   ],
+   "lumens": 900,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_gate_passage",
+   "xyz": [
+    718.7,
+    250.0,
+    207.56212177276612
+   ],
+   "lumens": 1500,
+   "radius": 14,
+   "color": [
+    1.0,
+    0.6,
+    0.3
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_great_hall_37",
+   "xyz": [
+    721.25,
+    327.0,
+    221.4
+   ],
+   "lumens": 3500,
+   "radius": 16,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_great_hall_41",
+   "xyz": [
+    721.25,
+    331.25,
+    221.4
+   ],
+   "lumens": 3500,
+   "radius": 16,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_great_hall_46",
+   "xyz": [
+    721.25,
+    335.5,
+    221.4
+   ],
+   "lumens": 3500,
+   "radius": 16,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_throne_-7",
+   "xyz": [
+    712.0,
+    346.5,
+    222.4
+   ],
+   "lumens": 4000,
+   "radius": 18,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_throne_1",
+   "xyz": [
+    720.25,
+    346.5,
+    222.4
+   ],
+   "lumens": 4000,
+   "radius": 18,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_throne_dais",
+   "xyz": [
+    708.0,
+    346.5,
+    220.4
+   ],
+   "lumens": 1500,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.45,
+    0.3
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_secret_stair_0",
+   "xyz": [
+    699.65,
+    349.0,
+    198.4
+   ],
+   "lumens": 700,
+   "radius": 7,
+   "color": [
+    1.0,
+    0.5,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_secret_stair_1",
+   "xyz": [
+    703.35,
+    349.0,
+    203.9
+   ],
+   "lumens": 700,
+   "radius": 7,
+   "color": [
+    1.0,
+    0.5,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_secret_stair_2",
+   "xyz": [
+    699.65,
+    349.0,
+    209.4
+   ],
+   "lumens": 700,
+   "radius": 7,
+   "color": [
+    1.0,
+    0.5,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_secret_stair_3",
+   "xyz": [
+    703.35,
+    349.0,
+    214.9
+   ],
+   "lumens": 700,
+   "radius": 7,
+   "color": [
+    1.0,
+    0.5,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_library",
+   "xyz": [
+    777.3,
+    363.6,
+    213.07
+   ],
+   "lumens": 2500,
+   "radius": 12,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_apartments",
+   "xyz": [
+    649.5,
+    351.0,
+    213.43
+   ],
+   "lumens": 1800,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_study",
+   "xyz": [
+    800.5,
+    338.75,
+    208.15
+   ],
+   "lumens": 1500,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_chapel_altar",
+   "xyz": [
+    693.5,
+    344.2,
+    219.4
+   ],
+   "lumens": 1500,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_chapel_nave",
+   "xyz": [
+    687.5,
+    344.2,
+    221.8
+   ],
+   "lumens": 1800,
+   "radius": 14,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_chapel_moon",
+   "xyz": [
+    688.0,
+    337.5,
+    220.8
+   ],
+   "lumens": 700,
+   "radius": 12,
+   "color": [
+    0.55,
+    0.62,
+    0.9
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_war_room",
+   "xyz": [
+    759.4,
+    276.2,
+    213.5
+   ],
+   "lumens": 2200,
+   "radius": 11,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_grand_stair_0",
+   "xyz": [
+    709.32,
+    335.1,
+    216.04500000000002
+   ],
+   "lumens": 1400,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_grand_stair_1",
+   "xyz": [
+    709.32,
+    335.1,
+    208.635
+   ],
+   "lumens": 1400,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_grand_stair_2",
+   "xyz": [
+    709.32,
+    334.95,
+    201.43
+   ],
+   "lumens": 1400,
+   "radius": 10,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_banquet_0",
+   "xyz": [
+    724.3,
+    332.0,
+    207.93
+   ],
+   "lumens": 6000,
+   "radius": 18,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_banquet_1",
+   "xyz": [
+    730.3,
+    332.0,
+    207.93
+   ],
+   "lumens": 6000,
+   "radius": 18,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_banquet_2",
+   "xyz": [
+    736.3,
+    332.0,
+    207.93
+   ],
+   "lumens": 6000,
+   "radius": 18,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_banquet_3",
+   "xyz": [
+    742.3,
+    332.0,
+    207.93
+   ],
+   "lumens": 6000,
+   "radius": 18,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_banquet_fire",
+   "xyz": [
+    749.3,
+    332.0,
+    203.63
+   ],
+   "lumens": 4000,
+   "radius": 14,
+   "color": [
+    1.0,
+    0.45,
+    0.2
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_kitchen_fire",
+   "xyz": [
+    717.7,
+    345.5,
+    203.73000000000002
+   ],
+   "lumens": 4000,
+   "radius": 12,
+   "color": [
+    1.0,
+    0.45,
+    0.2
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_kitchen",
+   "xyz": [
+    724.3,
+    345.4,
+    207.43
+   ],
+   "lumens": 4000,
+   "radius": 14,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_larder",
+   "xyz": [
+    740.7,
+    344.4,
+    206.03
+   ],
+   "lumens": 2400,
+   "radius": 12,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_cellar",
+   "xyz": [
+    755.1,
+    344.4,
+    206.03
+   ],
+   "lumens": 2600,
+   "radius": 12,
+   "color": [
+    1.0,
+    0.45,
+    0.32
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_corridor_l2",
+   "xyz": [
+    727.98,
+    331.0,
+    197.93
+   ],
+   "lumens": 500,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_crypt_lord",
+   "xyz": [
+    712.5,
+    345.6,
+    198.83
+   ],
+   "lumens": 2600,
+   "radius": 12,
+   "color": [
+    1.0,
+    0.55,
+    0.3
+   ],
+   "shadows": true
+  },
+  {
+   "name": "castle_crypt",
+   "xyz": [
+    707.0,
+    342.0,
+    199.43
+   ],
+   "lumens": 1800,
+   "radius": 14,
+   "color": [
+    0.6,
+    0.68,
+    1.0
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_crypt_east",
+   "xyz": [
+    721.5,
+    345.6,
+    199.43
+   ],
+   "lumens": 1400,
+   "radius": 12,
+   "color": [
+    0.6,
+    0.68,
+    1.0
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_guard_room",
+   "xyz": [
+    751.2,
+    336.1,
+    198.63
+   ],
+   "lumens": 900,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.68,
+    0.4
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_interrogation",
+   "xyz": [
+    751.2,
+    347.1,
+    197.03
+   ],
+   "lumens": 900,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.4,
+    0.2
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_dungeon_0",
+   "xyz": [
+    729.8,
+    340.6,
+    198.23000000000002
+   ],
+   "lumens": 600,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_dungeon_1",
+   "xyz": [
+    738.8,
+    340.6,
+    198.23000000000002
+   ],
+   "lumens": 600,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_dungeon_2",
+   "xyz": [
+    747.8,
+    340.6,
+    198.23000000000002
+   ],
+   "lumens": 600,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_dungeon_3",
+   "xyz": [
+    756.8,
+    340.6,
+    198.23000000000002
+   ],
+   "lumens": 600,
+   "radius": 9,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_exit",
+   "xyz": [
+    601.5,
+    349.4,
+    113.48
+   ],
+   "lumens": 400,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.5,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_a0",
+   "xyz": [
+    685.4,
+    343.38,
+    191.06333333333333
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_a1",
+   "xyz": [
+    661.4,
+    343.38,
+    175.06333333333333
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_a2",
+   "xyz": [
+    637.4,
+    343.38,
+    159.06333333333333
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_c0",
+   "xyz": [
+    680.445,
+    349.98,
+    111.7
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_c1",
+   "xyz": [
+    656.445,
+    349.98,
+    111.7
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_c2",
+   "xyz": [
+    632.445,
+    349.98,
+    111.7
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "castle_tunnel_c3",
+   "xyz": [
+    608.445,
+    349.98,
+    111.7
+   ],
+   "lumens": 350,
+   "radius": 8,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  }
  ],
  "piers": [
   {
-   "y": 112.0,
-   "bottom": 190.9,
-   "top": 198.6,
-   "height": 7.7
+   "at": [
+    735.0,
+    113.9
+   ],
+   "bottom": 190.2,
+   "top": 198.5,
+   "height": 8.3
   },
   {
-   "y": 129.0,
-   "bottom": 147.9,
+   "at": [
+    731.0,
+    133.1
+   ],
+   "bottom": 129.6,
    "top": 199.4,
-   "height": 51.5
+   "height": 69.7
   },
   {
-   "y": 145.0,
-   "bottom": 106.8,
+   "at": [
+    727.3,
+    151.2
+   ],
+   "bottom": 107.0,
    "top": 200.1,
-   "height": 93.3
+   "height": 93.2
   },
   {
-   "y": 162.0,
-   "bottom": 151.6,
+   "at": [
+    723.4,
+    170.4
+   ],
+   "bottom": 178.0,
    "top": 200.9,
-   "height": 49.3
+   "height": 22.9
   }
  ],
- "tunnel_length_m": 297.7,
- "rim_polygon": [
-  [
-   826.4,
-   308.0
-  ],
-  [
-   826.4,
-   315.8
-  ],
-  [
-   826.0,
-   323.6
-  ],
-  [
-   825.2,
-   331.4
-  ],
-  [
-   824.0,
-   339.3
-  ],
-  [
-   822.5,
-   347.1
-  ],
-  [
-   820.6,
-   355.0
-  ],
-  [
-   818.3,
-   362.9
-  ],
-  [
-   815.5,
-   370.8
-  ],
-  [
-   812.1,
-   378.6
-  ],
-  [
-   808.0,
-   386.1
-  ],
-  [
-   803.1,
-   393.1
-  ],
-  [
-   797.4,
-   399.5
-  ],
-  [
-   790.8,
-   405.0
-  ],
-  [
-   783.5,
-   409.5
-  ],
-  [
-   775.6,
-   412.9
-  ],
-  [
-   767.3,
-   415.2
-  ],
-  [
-   758.9,
-   416.6
-  ],
-  [
-   750.5,
-   417.2
-  ],
-  [
-   742.2,
-   417.1
-  ],
-  [
-   734.2,
-   416.7
-  ],
-  [
-   726.4,
-   416.0
-  ],
-  [
-   718.8,
-   415.4
-  ],
-  [
-   711.3,
-   415.1
-  ],
-  [
-   703.8,
-   415.0
-  ],
-  [
-   696.1,
-   415.2
-  ],
-  [
-   688.2,
-   415.6
-  ],
-  [
-   679.9,
-   415.9
-  ],
-  [
-   671.3,
-   416.1
-  ],
-  [
-   662.4,
-   415.8
-  ],
-  [
-   653.4,
-   414.8
-  ],
-  [
-   644.4,
-   412.6
-  ],
-  [
-   635.9,
-   409.2
-  ],
-  [
-   628.2,
-   404.4
-  ],
-  [
-   621.6,
-   398.2
-  ],
-  [
-   621.2,
-   386.7
-  ],
-  [
-   621.2,
-   376.1
-  ],
-  [
-   621.2,
-   366.6
-  ],
-  [
-   621.2,
-   357.9
-  ],
-  [
-   621.2,
-   349.8
-  ],
-  [
-   621.2,
-   342.1
-  ],
-  [
-   621.2,
-   334.9
-  ],
-  [
-   621.2,
-   327.9
-  ],
-  [
-   621.2,
-   321.2
-  ],
-  [
-   621.2,
-   314.6
-  ],
-  [
-   621.2,
-   308.0
-  ],
-  [
-   621.2,
-   301.4
-  ],
-  [
-   621.2,
-   294.8
-  ],
-  [
-   621.2,
-   288.1
-  ],
-  [
-   621.2,
-   281.1
-  ],
-  [
-   621.2,
-   273.9
-  ],
-  [
-   621.2,
-   266.2
-  ],
-  [
-   621.2,
-   258.1
-  ],
-  [
-   621.2,
-   249.4
-  ],
-  [
-   617.8,
-   237.4
-  ],
-  [
-   621.8,
-   229.8
-  ],
-  [
-   626.8,
-   222.9
-  ],
-  [
-   632.8,
-   216.7
-  ],
-  [
-   639.6,
-   211.5
-  ],
-  [
-   646.9,
-   207.1
-  ],
-  [
-   654.7,
-   203.5
-  ],
-  [
-   662.6,
-   200.6
-  ],
-  [
-   670.7,
-   198.2
-  ],
-  [
-   678.7,
-   196.3
-  ],
-  [
-   686.8,
-   194.7
-  ],
-  [
-   694.8,
-   193.4
-  ],
-  [
-   702.9,
-   192.4
-  ],
-  [
-   710.9,
-   191.7
-  ],
-  [
-   719.1,
-   191.3
-  ],
-  [
-   727.3,
-   191.4
-  ],
-  [
-   735.5,
-   191.9
-  ],
-  [
-   743.6,
-   193.1
-  ],
-  [
-   751.7,
-   195.1
-  ],
-  [
-   759.5,
-   197.8
-  ],
-  [
-   767.1,
-   201.2
-  ],
-  [
-   774.2,
-   205.4
-  ],
-  [
-   780.9,
-   210.2
-  ],
-  [
-   787.1,
-   215.7
-  ],
-  [
-   792.8,
-   221.6
-  ],
-  [
-   797.9,
-   227.9
-  ],
-  [
-   802.6,
-   234.5
-  ],
-  [
-   806.8,
-   241.3
-  ],
-  [
-   810.6,
-   248.2
-  ],
-  [
-   814.1,
-   255.3
-  ],
-  [
-   817.2,
-   262.5
-  ],
-  [
-   819.9,
-   269.8
-  ],
-  [
-   822.1,
-   277.3
-  ],
-  [
-   823.9,
-   284.8
-  ],
-  [
-   825.2,
-   292.5
-  ],
-  [
-   826.0,
-   300.2
+ "tunnel_length_m": 244.4,
+ "tunnel_exit": [
+  597.4,
+  349.4,
+  114.48
+ ],
+ "undercroft": {
+  "L1_floor": 202.43,
+  "L2_floor": 195.43,
+  "note": "under the terrain of the palace (no landscape hole); voids only over the two shafts"
+ },
+ "model": {
+  "name": "Castle 2.0 (EldersCrawler)",
+  "scale": 160.0,
+  "origin": [
+   719.0,
+   290.0,
+   195.4
+  ],
+  "gate": [
+   718.7,
+   241.8,
+   202.82
+  ],
+  "gate_cut": {
+   "x": [
+    -3.0,
+    2.4
+   ],
+   "y": [
+    -48.9,
+    -47.6
+   ],
+   "z": [
+    6.0,
+    14.2
+   ]
+  },
+  "cuts": [
+   {
+    "x": [
+     -3.0,
+     2.4
+    ],
+    "y": [
+     -48.9,
+     -47.6
+    ],
+    "z": [
+     6.0,
+     14.2
+    ],
+    "what": "gate leaves"
+   },
+   {
+    "x": [
+     -19.5,
+     11.5
+    ],
+    "y": [
+     51.0,
+     62.0
+    ],
+    "z": [
+     22.035,
+     33.0
+    ],
+    "what": "model clutter inside the Throne Room (to the lining)"
+   },
+   {
+    "x": [
+     0.75,
+     3.75
+    ],
+    "y": [
+     49.8,
+     51.6
+    ],
+    "z": [
+     22.04,
+     25.6
+    ],
+    "what": "door Great Hall -> Throne Room"
+   },
+   {
+    "x": [
+     -19.5,
+     -15.5
+    ],
+    "y": [
+     57.0,
+     61.0
+    ],
+    "z": [
+     -0.97,
+     22.1
+    ],
+    "what": "secret stair shaft"
+   },
+   {
+    "x": [
+     47.25,
+     51.25
+    ],
+    "y": [
+     72.4,
+     74.1
+    ],
+    "z": [
+     14.68,
+     17.54
+    ],
+    "what": "door Library"
+   },
+   {
+    "x": [
+     -66.6,
+     -64.9
+    ],
+    "y": [
+     50.75,
+     55.25
+    ],
+    "z": [
+     15.04,
+     17.9
+    ],
+    "what": "door Lord's Apartments"
+   },
+   {
+    "x": [
+     77.9,
+     79.6
+    ],
+    "y": [
+     51.25,
+     55.25
+    ],
+    "z": [
+     9.959999999999999,
+     12.82
+    ],
+    "what": "door Lord's Study"
+   },
+   {
+    "x": [
+     37.0,
+     43.8
+    ],
+    "y": [
+     -21.0,
+     -6.6
+    ],
+    "z": [
+     14.535,
+     20.5
+    ],
+    "what": "model clutter inside the War Room (to the lining)"
+   },
+   {
+    "x": [
+     42.599999999999994,
+     46.599999999999994
+    ],
+    "y": [
+     -14.6,
+     -12.9
+    ],
+    "z": [
+     14.54,
+     17.4
+    ],
+    "what": "door War Room"
+   },
+   {
+    "x": [
+     -10.1,
+     -5.3
+    ],
+    "y": [
+     37.0,
+     47.5
+    ],
+    "z": [
+     18.85,
+     22.450000000000003
+    ],
+    "what": "Great Hall floor over the grand stair"
+   },
+   {
+    "x": [
+     -10.1,
+     -5.3
+    ],
+    "y": [
+     35.0,
+     47.5
+    ],
+    "z": [
+     -0.97,
+     18.85
+    ],
+    "what": "grand stair shaft"
+   },
+   {
+    "x": [
+     -4.199999999999999,
+     41.6
+    ],
+    "y": [
+     34.5,
+     61.9
+    ],
+    "z": [
+     6.430000000000001,
+     19.53
+    ],
+    "what": "undercroft L-1 (model foundations)"
+   },
+   {
+    "x": [
+     -20.1,
+     47.3
+    ],
+    "y": [
+     34.5,
+     63.1
+    ],
+    "z": [
+     -0.57,
+     6.53
+    ],
+    "what": "undercroft L-2 (model foundations)"
+   },
+   {
+    "x": [
+     -24.6,
+     -19.6
+    ],
+    "y": [
+     50.8,
+     54.8
+    ],
+    "z": [
+     -0.97,
+     5.03
+    ],
+    "what": "tunnel head (model foundations)"
+   }
   ]
- ]
+ },
+ "castle_plate": {
+  "origin": [
+   719.0,
+   290.0,
+   195.4
+  ],
+  "file": "data/castle20_plate.npz",
+  "min_rel": 8.45,
+  "note": "crag top = origin z + hill"
+ },
+ "bridge": {
+  "start": [
+   742.0,
+   80.0,
+   199.1
+  ],
+  "end": [
+   718.7,
+   193.0,
+   203.9
+  ],
+  "length_m": 115.4,
+  "heading_deg": 101.7
+ },
+ "hero_views": {
+  "V1": {
+   "look_at": [
+    736.4,
+    350.6,
+    255.4
+   ]
+  },
+  "V5": {
+   "look_at": [
+    736.4,
+    350.6,
+    255.4
+   ]
+  },
+  "V2": {
+   "name": "Castle walls toward the city",
+   "camera": [
+    622.0,
+    310.0,
+    215.5
+   ],
+   "look_at": [
+    -320,
+    -556,
+    80
+   ]
+  },
+  "V3": {
+   "camera": [
+    731.52,
+    130.85,
+    202.96
+   ],
+   "look_at": [
+    718.7,
+    241.8,
+    207.4
+   ]
+  },
+  "V4": {
+   "camera": [
+    721.0,
+    319.0,
+    218.3
+   ],
+   "look_at": [
+    721.0,
+    340.0,
+    219.9
+   ]
+  },
+  "V6": {
+   "look_at": [
+    716.0,
+    280.0,
+    225.4
+   ]
+  },
+  "V8": {
+   "look_at": [
+    719.0,
+    300.0,
+    235.4
+   ]
+  }
+ },
+ "spawn_overrides": {
+  "castle_inner_ward": [
+   728.0,
+   318.0,
+   216.45
+  ]
+ }
 }

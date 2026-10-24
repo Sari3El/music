@@ -133,6 +133,11 @@ def flood(N, cnt, ny, seeds, STEP):
 
 
 S = voxelise(planes, starts, boxes, HC, nx, ny, nz, x0, y0, z0, DX, DZ, CRUST)
+for mp in CFG.get("meshes", []):                      # asset shells with complex collision: their triangles, inflated
+    from meshvox import voxelise as mvox, dilate_xy
+    T = np.load(f"{ROOT}/{mp}")["tris"].astype(np.float64)
+    V = dilate_xy(mvox(T, (x0, x1, y0, y1, z0, z1), DX, DZ), 1)
+    S[(V == 1) & (S == 0)] = 1
 N, cnt = nodes_of(S, HB)
 NZ = z0 + N[:, 2] * DZ                                                       # standing height of each node
 NXw, NYw = x0 + (N[:, 0] + 0.5) * DX, y0 + (N[:, 1] + 0.5) * DX

@@ -478,6 +478,15 @@
     22.9
    ],
    "kind": "castle/church/mill pictograms"
+  },
+  {
+   "name": "signpost",
+   "xyz": [
+    -974.4,
+    -1205.9,
+    18.2
+   ],
+   "kind": "castle/church/mill pictograms"
   }
  ],
  "stairs": {

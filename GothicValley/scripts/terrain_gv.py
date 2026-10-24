@@ -238,6 +238,19 @@ crag_top = sd < 0
 face = 203.85 - np.maximum(sd, 0) * np.tan(np.radians(82))              # cliff
 H = np.where(sd < 70, np.maximum(H, face), H)
 H = np.where(crag_top, 203.85, H)               # 15 cm under the L0 floors (no z-fighting), inside the +-1 m tolerance
+# castle model (Castle 2.0): the crag top takes the relief of the hill the model was built on, raised from the rim
+CM_ = json.load(open(f"{ROOT}/greybox/castle_meta.json")) if os.path.exists(f"{ROOT}/greybox/castle_meta.json") else {}
+if "castle_plate" in CM_:
+    from scipy.interpolate import RegularGridInterpolator
+    cp = CM_["castle_plate"]; pl = np.load(f"{ROOT}/{cp['file']}")
+    PZ = np.nan_to_num(pl["plate"], nan=float(np.nanmin(pl["plate"])))
+    itp = RegularGridInterpolator((pl["xs"], pl["ys"]), PZ, bounds_error=False, fill_value=float(cp["min_rel"]))
+    ox_, oy_, oz_ = cp["origin"]
+    m_ = sd < 0
+    hill = oz_ + np.maximum(itp(np.stack([X[m_] - ox_, Y[m_] - oy_], 1)), cp["min_rel"])
+    w_ = smoothstep(0.0, -6.0, sd[m_])
+    H[m_] = np.maximum(203.85, 203.85 * (1 - w_) + hill * w_)
+    log("castle hill on the crag", float(hill.max()))
 # the ravine wins over the terrace flank and the crag skirts: the castle brook runs through it from the ridge to X 430
 inr2 = np.isfinite(dist_b) & (X > 375) & (X < 1045)
 rav2 = smoothstep(375, 395, X) * smoothstep(1045, 1015, X)

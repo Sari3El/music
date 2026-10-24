@@ -1,5 +1,95 @@
 [
  {
+  "id": "L1",
+  "name": "Lodge from the valley track",
+  "camera": [
+   -1338.0,
+   -670.0,
+   90.0
+  ],
+  "target": [
+   -1396.0,
+   -702.0,
+   89.0
+  ],
+  "file": "L1_Lodge_from_the_valley_track.png"
+ },
+ {
+  "id": "L2",
+  "name": "Great hall",
+  "camera": [
+   -1378.4,
+   -697.1,
+   82.7
+  ],
+  "target": [
+   -1387.4,
+   -702.5,
+   82.9
+  ],
+  "file": "L2_Great_hall.png"
+ },
+ {
+  "id": "L3",
+  "name": "Study and the wardrobe moved aside",
+  "camera": [
+   -1388.4,
+   -706.2,
+   82.7
+  ],
+  "target": [
+   -1391.4,
+   -700.6,
+   82.3
+  ],
+  "file": "L3_Study_and_the_wardrobe_moved_aside.png"
+ },
+ {
+  "id": "L4",
+  "name": "Secret stair",
+  "camera": [
+   -1391.1,
+   -693.8,
+   78.0
+  ],
+  "target": [
+   -1391.1,
+   -670.0,
+   67.0
+  ],
+  "file": "L4_Secret_stair.png"
+ },
+ {
+  "id": "B1",
+  "name": "Library from the balcony",
+  "camera": [
+   -1391.1,
+   -624.52,
+   51.900000000000006
+  ],
+  "target": [
+   -1391.1,
+   -527.02,
+   46.0
+  ],
+  "file": "B1_Library_from_the_balcony.png"
+ },
+ {
+  "id": "B2",
+  "name": "Library nave and the grand stair",
+  "camera": [
+   -1387.1,
+   -575.02,
+   41.7
+  ],
+  "target": [
+   -1391.1,
+   -617.02,
+   48.0
+  ],
+  "file": "B2_Library_nave_and_the_grand_stair.png"
+ },
+ {
   "id": "B3",
   "name": "East aisle, second gallery",
   "camera": [
@@ -13,5 +103,20 @@
    51.2
   ],
   "file": "B3_East_aisle,_second_gallery.png"
+ },
+ {
+  "id": "B4",
+  "name": "Great window",
+  "camera": [
+   -1397.1,
+   -547.02,
+   41.7
+  ],
+  "target": [
+   -1391.1,
+   -507.02,
+   52.0
+  ],
+  "file": "B4_Great_window.png"
  }
 ]

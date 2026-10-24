@@ -1,0 +1,302 @@
+[
+ {
+  "id": "C1",
+  "name": "Castle from the Great Bridge",
+  "camera": [
+   744.0,
+   96.0,
+   202.0
+  ],
+  "target": [
+   716.0,
+   260.0,
+   222.0
+  ],
+  "file": "C1_Castle_from_the_Great_Bridge.png"
+ },
+ {
+  "id": "C2",
+  "name": "Castle on its crag from the city side",
+  "camera": [
+   520.0,
+   120.0,
+   260.0
+  ],
+  "target": [
+   715.0,
+   300.0,
+   215.0
+  ],
+  "file": "C2_Castle_on_its_crag_from_the_city_side.png"
+ },
+ {
+  "id": "C3",
+  "name": "Forecourt and gate",
+  "camera": [
+   718.5,
+   205.0,
+   205.6
+  ],
+  "target": [
+   718.7,
+   245.0,
+   208.0
+  ],
+  "file": "C3_Forecourt_and_gate.png"
+ },
+ {
+  "id": "C4",
+  "name": "Inner court toward the palace",
+  "camera": [
+   713.0,
+   262.0,
+   207.9
+  ],
+  "target": [
+   719.0,
+   320.0,
+   221.4
+  ],
+  "file": "C4_Inner_court_toward_the_palace.png"
+ },
+ {
+  "id": "C5",
+  "name": "Great Hall",
+  "camera": [
+   721.1,
+   325.532,
+   219.13
+  ],
+  "target": [
+   721.1,
+   338.93,
+   219.93
+  ],
+  "file": "C5_Great_Hall.png"
+ },
+ {
+  "id": "C6",
+  "name": "Throne Room",
+  "camera": [
+   728.645,
+   346.5,
+   219.13
+  ],
+  "target": [
+   704.0,
+   346.5,
+   219.43
+  ],
+  "file": "C6_Throne_Room.png"
+ },
+ {
+  "id": "C7",
+  "name": "Library tower",
+  "camera": [
+   773.772,
+   360.576,
+   211.76999999999998
+  ],
+  "target": [
+   780.828,
+   366.62399999999997,
+   211.26999999999998
+  ],
+  "file": "C7_Library_tower.png"
+ },
+ {
+  "id": "C8",
+  "name": "Lord's apartments",
+  "camera": [
+   652.692,
+   348.264,
+   212.13
+  ],
+  "target": [
+   645.8520000000001,
+   353.736,
+   211.43
+  ],
+  "file": "C8_Lord's_apartments.png"
+ },
+ {
+  "id": "C9",
+  "name": "Chapel",
+  "camera": [
+   681.8,
+   344.2,
+   218.5
+  ],
+  "target": [
+   696.0,
+   344.2,
+   218.8
+  ],
+  "file": "C9_Chapel.png"
+ },
+ {
+  "id": "C10",
+  "name": "War Room",
+  "camera": [
+   762.2,
+   270.2,
+   211.6
+  ],
+  "target": [
+   757.0,
+   281.0,
+   210.6
+  ],
+  "file": "C10_War_Room.png"
+ },
+ {
+  "id": "C11",
+  "name": "Banquet Hall (undercroft)",
+  "camera": [
+   750.2199999999999,
+   326.68,
+   204.23000000000002
+  ],
+  "target": [
+   715.3,
+   334.8,
+   205.93
+  ],
+  "file": "C11_Banquet_Hall_(undercroft).png"
+ },
+ {
+  "id": "C12",
+  "name": "Kitchen",
+  "camera": [
+   730.5,
+   350.2,
+   204.13
+  ],
+  "target": [
+   716.0999999999999,
+   344.2,
+   203.43
+  ],
+  "file": "C12_Kitchen.png"
+ },
+ {
+  "id": "C13",
+  "name": "Wine and blood cellar",
+  "camera": [
+   759.6,
+   340.2,
+   204.13
+  ],
+  "target": [
+   751.1,
+   346.4,
+   203.43
+  ],
+  "file": "C13_Wine_and_blood_cellar.png"
+ },
+ {
+  "id": "C14",
+  "name": "Crypt",
+  "camera": [
+   724.1,
+   340.70000000000005,
+   197.13
+  ],
+  "target": [
+   709.8,
+   346.3,
+   196.43
+  ],
+  "file": "C14_Crypt.png"
+ },
+ {
+  "id": "C15",
+  "name": "Dungeon",
+  "camera": [
+   726.1999999999999,
+   340.6,
+   197.13
+  ],
+  "target": [
+   765.8,
+   340.6,
+   196.63
+  ],
+  "file": "C15_Dungeon.png"
+ },
+ {
+  "id": "C16",
+  "name": "Grand stair from the Great Hall",
+  "camera": [
+   714.4,
+   337.3,
+   218.8
+  ],
+  "target": [
+   710.4,
+   327.5,
+   207.4
+  ],
+  "file": "C16_Grand_stair_from_the_Great_Hall.png"
+ },
+ {
+  "id": "C17",
+  "name": "Foot of the secret spiral (crypt)",
+  "camera": [
+   710.5,
+   345.5,
+   197.20000000000002
+  ],
+  "target": [
+   704.5,
+   349.0,
+   197.20000000000002
+  ],
+  "file": "C17_Foot_of_the_secret_spiral_(crypt).png"
+ },
+ {
+  "id": "C18",
+  "name": "Secret tunnel, last leg",
+  "camera": [
+   659.0,
+   349.4,
+   111.10000000000001
+  ],
+  "target": [
+   604.0,
+   349.4,
+   110.80000000000001
+  ],
+  "file": "C18_Secret_tunnel,_last_leg.png"
+ },
+ {
+  "id": "C19",
+  "name": "Hidden door at the foot of the cliff",
+  "camera": [
+   586.0,
+   357.0,
+   117.4
+  ],
+  "target": [
+   601.5,
+   349.4,
+   115.9
+  ],
+  "file": "C19_Hidden_door_at_the_foot_of_the_cliff.png"
+ },
+ {
+  "id": "C20",
+  "name": "Secret panel behind the throne",
+  "camera": [
+   711.0,
+   343.2,
+   219.1
+  ],
+  "target": [
+   704.0,
+   349.0,
+   219.0
+  ],
+  "file": "C20_Secret_panel_behind_the_throne.png"
+ }
+]

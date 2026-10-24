@@ -5,7 +5,9 @@
 # usage: blender -b --factory-startup --python export_kit.py -- ROOT OUT_CONTENT
 import bpy, bmesh, sys, os, json
 import numpy as np
-from mathutils import Matrix
+from mathutils import Matrix, Vector
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from c2cuts import planes, corners
 
 a = sys.argv[sys.argv.index("--") + 1:]
 ROOT, OUT = a[0], a[1]
@@ -69,6 +71,51 @@ shell = bpy.context.view_layer.objects.active
 shell.name = shell.data.name = "SM_FC_Lodge"
 mirror(shell)
 export(shell, "Environment/Lodge")
+# vampires' castle (Castle 2.0): one mesh at scale 160 (centred frame), minus the gate leaves (Movable ones replace them)
+c2 = f"{ROOT}/assets/castle20/castle20_island.blend"
+if os.path.exists(c2):
+    CUTS = json.load(open(f"{ROOT}/greybox/castle_meta.json"))["model"]["cuts"]      # gate leaves, cut doorways, room clutter
+    parts = [o for o in take(c2) if not o.get("not_exported")]
+    BOX = [(planes(k), corners(k).min(0), corners(k).max(0), k["z"]) for k in CUTS]
+    ncut = 0
+    for o in parts:
+        sc.collection.objects.link(o)
+        bm = bmesh.new(); bm.from_mesh(o.data); bm.transform(o.matrix_world)
+        # candidate faces (bounding box against any cut box), then each box: bisect them by its 6 planes, delete inside
+        co = np.array([v.co[:] for v in bm.verts]); bm.faces.ensure_lookup_table()
+        fmin = np.array([co[[v.index for v in f.verts]].min(0) for f in bm.faces]); fmax = np.array([co[[v.index for v in f.verts]].max(0) for f in bm.faces])
+        hit = np.zeros(len(fmin), bool)
+        for P, lo2, hi2, zz in BOX:
+            hit |= ((fmax[:, 0] > lo2[0]) & (fmin[:, 0] < hi2[0]) & (fmax[:, 1] > lo2[1]) & (fmin[:, 1] < hi2[1]) & (fmax[:, 2] > zz[0]) & (fmin[:, 2] < zz[1]))
+        pool = set(bm.faces[i] for i in np.nonzero(hit)[0])
+        for P, lo2, hi2, zz in BOX:
+            def near(f):
+                c = np.array([v.co[:] for v in f.verts]); mn, mx = c.min(0), c.max(0)
+                return mx[0] > lo2[0] and mn[0] < hi2[0] and mx[1] > lo2[1] and mn[1] < hi2[1] and mx[2] > zz[0] and mn[2] < zz[1]
+            fs = [f for f in pool if f.is_valid and near(f)]
+            for p0, n in P:
+                if not fs:
+                    break
+                geom = list(set(fs) | {e for f in fs for e in f.edges} | {v for f in fs for v in f.verts})
+                r = bmesh.ops.bisect_plane(bm, geom=geom, plane_co=Vector(p0), plane_no=Vector(n), dist=1e-5)
+                new = {g for g in r["geom"] if isinstance(g, bmesh.types.BMFace)}
+                pool |= new
+                fs = [f for f in set(fs) | new if f.is_valid and near(f)]
+            kill = [f for f in fs if f.is_valid and all(np.dot(np.array(f.calc_center_median()[:]) - p0, n) < 0 for p0, n in P)]
+            ncut += len(kill)
+            bmesh.ops.delete(bm, geom=kill, context="FACES")
+            pool = {f for f in pool if f.is_valid}
+        bm.to_mesh(o.data); bm.free(); o.matrix_world = Matrix.Identity(4)
+    print("CASTLE_CUT_FACES", ncut)
+    bpy.ops.object.select_all(action="DESELECT")
+    for o in parts:
+        o.select_set(True)
+    bpy.context.view_layer.objects.active = parts[0]
+    bpy.ops.object.join()
+    castle = bpy.context.view_layer.objects.active
+    castle.name = castle.data.name = "SM_C2_Castle"
+    mirror(castle)
+    export(castle, "Environment/Castle")
 json.dump(REP, open(f"{ROOT}/export/kit_report.json", "w"), indent=1)
 bpy.ops.wm.save_as_mainfile(filepath=f"{ROOT}/export/kit.blend")
 print("KIT_DONE", len(REP))

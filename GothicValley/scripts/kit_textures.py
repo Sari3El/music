@@ -10,6 +10,9 @@ ROOT, PACKS = sys.argv[1], sys.argv[2]
 OUT = os.path.join(ROOT, "textures")
 LIB = glob.glob(os.path.join(PACKS, "denniswoo1993", "*"))[0]
 FC = glob.glob(os.path.join(PACKS, "HawtorStudio", "*"))[0]
+C2 = glob.glob(os.path.join(PACKS, "EldersCrawler", "*"))[0]
+DXN = {"C2_Wall", "C2_Roof", "C2_Floor"}                                 # DirectX normal maps: green flipped to OpenGL
+AO = {"C2_Wall": (C2, r"WallStoneMix101_OCC")}                           # ambient occlusion baked into the colour
 FIX_LB, FIX_FC = os.path.join(ROOT, "assets", "library", "tex"), os.path.join(ROOT, "assets", "fantasy", "tex")
 MAXRES = 2048
 
@@ -38,6 +41,9 @@ MATS = {
     "FC_Roof": ((FIX_FC, r"T_FC_Roof_D"), (FC, r"RoofNormal"), (FC, r"RoofRoughness"), (0.13, 0.13, 0.15), "Stone", 0, 0, True, 2.0),
     "FC_WoodPlanks": ((FIX_FC, r"T_FC_WoodPlanks_D"), (FC, r"WoodPlanksNormal"), (FC, r"WoodPlanksRoughness"), (0.25, 0.16, 0.1), "Wood", 0, 0, True, 2.0),
     "FC_Glass": ((FC, r"GlassColor"), (FC, r"GlassNormal"), (FC, r"GlassRoughness"), (0.3, 0.35, 0.4), "Metal", 0, 0.4, True, 1.0),
+    "C2_Wall": ((C2, r"WallStoneMix101_CLR"), (C2, r"WallStoneMix101_NRM"), None, (0.3, 0.29, 0.28), "Stone", 0, 0, True, 1.0),
+    "C2_Roof": ((C2, r"RoofsDetails01_CLRA"), (C2, r"RoofsDetails01_NRM"), (C2, r"RoofsDetails01_RGH"), (0.2, 0.19, 0.2), "Stone", 0, 0, True, 1.0),
+    "C2_Floor": ((C2, r"FloorStone101Mix2_CLR"), (C2, r"FloorStone101Mix2_NRM"), (C2, r"FloorStone101Mix2_RGH"), (0.3, 0.3, 0.29), "Stone", 0, 0, True, 1.0),
     "FC_Back": (None, None, None, (0.02, 0.02, 0.025), "Stone", 0, 0, True, 1.0),
     "FC_StoneTiles": ((FC, r"StoneTilesGroundColors"), (FC, r"StoneTilesGroundNormal"), (FC, r"StoneTilesGroundRoughness"), (0.31, 0.3, 0.29), "Stone", 0, 0, True, 3.0),
 }
@@ -61,8 +67,15 @@ for name, (d, n, r, col, phys, metal, emis, two, tile) in MATS.items():
         alpha = name == "FC_Glass"
         dst = os.path.join(OUT, f"T_{name}_D" + (".png" if alpha else ".jpg"))
         save(find(*d), dst, "RGB"); files["D"] = os.path.basename(dst)
+        if name in AO:
+            im = Image.open(dst).convert("RGB"); ao = Image.open(find(*AO[name])).convert("L").resize(im.size, Image.LANCZOS)
+            a_ = np.asarray(im).astype(np.float32) * (0.35 + 0.65 * np.asarray(ao, np.float32)[..., None] / 255.0)
+            Image.fromarray(np.clip(a_, 0, 255).astype(np.uint8)).save(dst, quality=90)
     if n:
         dst = os.path.join(OUT, f"T_{name}_N.png"); save(find(*n), dst, "RGB"); files["N"] = os.path.basename(dst)
+        if name in DXN:
+            a_ = np.asarray(Image.open(dst).convert("RGB")).copy(); a_[..., 1] = 255 - a_[..., 1]
+            Image.fromarray(a_).save(dst, optimize=True)
     if r:
         dst = os.path.join(OUT, f"T_{name}_R.jpg"); save(find(*r), dst, "L"); files["R"] = os.path.basename(dst)
     meta[name] = dict(color=list(col), phys=phys, metallic=metal, emissive=emis, two_sided=two, tile_m=tile, files=files,

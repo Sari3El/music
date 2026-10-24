@@ -685,6 +685,9 @@ for x0, x1, y0, y1, _ in raw:
 plots = np.array(plots)
 # V1 (market square -> keep): drop the few plots whose roofs would hide the keep, so it reads framed between roofs
 v1 = [v for v in M["hero_views"] if v["id"] == "V1"][0]
+_cm = f"{ROOT}/greybox/castle_meta.json"                                        # re-aimed at the castle model (gb_castle2.py)
+if os.path.exists(_cm):
+    v1 = dict(v1, **json.load(open(_cm)).get("hero_views", {}).get("V1", {}))
 c1 = np.array(v1["camera"], float); c1[2] = max(c1[2], gz(c1[0], c1[1]) + 1.6)
 t1 = np.array(v1["look_at"], float)
 az = math.atan2(t1[1] - c1[1], t1[0] - c1[0]); el = math.atan2(t1[2] - c1[2], math.hypot(*(t1 - c1)[:2]))

@@ -31,7 +31,10 @@ for p in pois:
     w(f"| {p['id']} | {p['name']} | {p['target']} | {p['terrain']} | {p['delta']:+.1f} |")
 f = P1["features"]
 w("")
-w(f"- Rocher du château : sommet plat à +204 m (posé à +203,85 m, 15 cm sous les sols du palais, dans la tolérance de ±1 m), {f['crag_top']['size_m'][0]} × {f['crag_top']['size_m'][1]} m (cahier : environ 240 × 220), falaise sud {f['cliff_south_m']} m, falaise est {f['cliff_east_m']} m. La façade sud du palais prolonge la falaise (bord du rocher sur la face extérieure de la façade).")
+import numpy as _np
+_pl = _np.load(f"{ROOT}/data/castle20_plate.npz"); _cp = CM["castle_plate"]
+_hz = [_cp["origin"][2] + max(float(_np.nanmin(_pl["plate"])), _cp["min_rel"]), _cp["origin"][2] + float(_np.nanmax(_pl["plate"]))]
+w(f"- Rocher du château : le bord de l'éperon est à +203,85 m ; à l'intérieur de l'enceinte, le sommet reprend le relief de la colline sur laquelle le modèle « Castle 2.0 » a été construit (cours de +{f"{_hz[0]:.1f}".replace(".", ",")} à +{f"{_hz[1]:.1f}".replace(".", ",")} m, phase 4). Falaise sud {f['cliff_south_m']} m, falaise est {f['cliff_east_m']} m.")
 w(f"- Terrasse de la barbacane à +{f['terrace_z']} m, flanc à {f['terrace_flank_slope_deg']}° ; ravin de {f['ravine_depth_under_bridge_m']} m sous le pont (fond +{f['ravine_floor_at_bridge_z']}, parois à {f['ravine_wall_max_deg']}°).")
 w(f"- Ville : couronne +{f['city_crown_z']} m, place +{f['market_square_z']} m ; marais : cuvette +{f['fen_basin_z']} m, bord minimal +{f['fen_rim_min_z']} m.")
 if "falls" in P1:
@@ -46,12 +49,8 @@ w("")
 w("## Phase 2 : greybox\n")
 w(f"**{GB['groups']} maillages** (`SM_GB_*`), {GB['tris']:,} triangles, {GB['hulls']:,} coques de collision simples (UCX). Pivots à la base de chaque objet, et sur la charnière pour les portes, herses, grilles et trappes.\n".replace(",", "\u202f").replace("\u202f ", ", "))
 w("### Château")
-w(f"- Barbacane, Grand Pont (100 m, tablier de 6 m, parapets de 1,1 m, 4 piles dont la plus haute fait {max(p['height'] for p in CM['piers'])} m, pont-levis), châtelet (tours de 13 m sur 28 m, herse), courtine (17 m côté porte, 9 m sur les falaises, 3 m d'épaisseur, parapets de 1,1 m des deux côtés et merlons), **{len(CM['towers'])} tours** rondes de 11 m (30 à 35 m) traversées par le chemin de ronde, dont 2 tours-escaliers. Viennent ensuite la basse-cour et ses bâtiments, la porte intérieure, la cour intérieure, le palais (146 × 69 m, faîte à +38 m), le donjon (75 m, aire à +65 m, balcon), le pont couvert et la chapelle.")
-w(f"- 12 salles principales aux dimensions exactes du cahier, plus les salles secondaires ({len(CM['rooms'])} pièces en tout) :\n")
-w("| Salle | construite (L × l × h) | cahier | conforme |\n|---|---|---|---|")
-for r in TR["core_rooms"]:
-    w(f"| {r['name']} | {' × '.join(str(v) for v in r['built'])} | {r['doc'] if isinstance(r['doc'], str) else ' × '.join(str(v) for v in r['doc'])} | {ok(r['ok'])} |")
-w(f"\n- Escalier dérobé : panneau derrière l'estrade du trône, puis colimaçon qui relie la crypte (L-2), le trône (L0), le cabinet (L1) et les appartements (L2). Tunnel secret de **{CM['tunnel_length_m']} m** jusqu'à la porte cachée au pied de la falaise sud [574, 384, 118].")
+w(f"- Barbacane et Grand Pont (tablier de 6 m, parapets de 1,1 m, {len(CM['piers'])} piles dont la plus haute fait {max(p['height'] for p in CM['piers'])} m, pont-levis). "
+  "Le château lui-même (enceinte, tours, palais, donjon et ses salles) était un greybox en phase 2 ; il est remplacé en phase 4 par le modèle « Castle 2.0 » (section suivante).")
 w("### Ville")
 w(f"- Remparts (ellipse 460 × 600 m, 10,5 m de haut, 2,5 m d'épaisseur, chemin de ronde de 2,85 m avec parapets, hourds), **{len(CI['towers'])} tours** carrées de 18 à 25 m, **4 portes** (porte Nord double avec barbacane, tour de 30 m et herse ; porte Est avec péage ; porte Ouest ; porte d'Eau), rue de ronde de 5 m, 4 escaliers d'accès au chemin de ronde.")
 w(f"- **{CI['buildings_inside_walls']} bâtiments dans les murs** (cahier : 260 à 320) posés sur les {CI['plots_from_plan']} parcelles du plan ({CI['plots_dropped'].get('landmark', 0)} parcelles écartées car elles chevauchaient un monument, {CI['plots_dropped'].get('v1_sightline', 0)} pour ouvrir la vue V1 sur le donjon) : {len(CI['houses'])} maisons fermées en 16 variantes (2 à 4 étages, pignon ou gouttereau sur rue, encorbellement, toits de 50 à 60°, fenêtres éclairées ou sombres), plus les édifices publics.")
@@ -64,7 +63,7 @@ w(f"- Escaliers du château : 3 m de large, palier tous les 15 m ({st['landings'
 w(f"- Tour de guet en ruine (escalier jusqu'au sommet sans toit), cimetière Nord (120 × 120 m, 300 tombes, chapelle mortuaire de 14 × 22 m, 3 mausolées, ossuaire, cabane du gardien, ifs), gibet et carrefour (croix, borne), abbaye en ruine (nef de 45 × 14 m, arcs, moignon de tour, cloître, reliquaire caché sous le chœur), camp des bûcherons, cercle de pierres, grotte derrière la cascade, faubourg Est ({SI['faubourg_buildings']} bâtiments, écuries visitables), moulins et tannerie, quais et 3 entrepôts, hameau (12 fermes dont une brûlée, église en bois à flèche, tombes fraîches), carrière, poste frontière Est (palissade), éboulement du col Ouest, marais (passerelles, cabane sur pilotis, bouleaux morts), pont Ouest (5 arches, 60 m, oratoire), panneaux aux carrefours, montagnes de fond.")
 w("### Contrôles d'acceptation de la phase 2\n")
 w("**Tests de marche** : simulation de la capsule Nanos World (rayon 0,35 m, hauteur 1,8 m, marche franchissable 0,4 m, pente maximale d'environ 39°) sur les collisions réelles et le relief, à 0,5 m × 0,1 m de résolution. La recherche de chute vers les vides a été faite pour le château et la ville, pas pour les sites. Le test avec le vrai personnage reste à faire dans Unreal.\n")
-w(f"- Château : {sum(r['reached'] for r in NC['rooms'])}/{len(NC['rooms'])} pièces atteintes depuis la basse-cour et la terrasse, ainsi que le chemin de ronde, les 10 tours, le Grand Pont, le pont-levis, le balcon, l'aire du donjon et le tunnel jusqu'à sa sortie. Chutes vers les vides : {len(NC['leaks'])}.")
+w("- Château : voir la phase 4 (le test de marche porte désormais sur le modèle « Castle 2.0 » et ses salles).")
 w(f"- Ville : {sum(r['reached'] for r in NV['rooms'])}/{len(NV['rooms'])} pièces atteintes depuis la place, ainsi que les 16 tours, les 4 portes vers l'extérieur, la chambre des cloches, la tribune d'orgue et la tour du manoir. Chutes vers les vides : {len(NV['leaks'])}.")
 for k, v in NS.items():
     if v["rooms"]:
@@ -146,13 +145,67 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
         ht = json.load(open(f"{ROOT}/data/roads_final.json"))["hunters_track"]
         w(f"- Chemin des chasseurs : piste de 3 m, longue de {ht['s'][-1]:.0f} m, du sentier du marais (même rive que la maison) jusqu'à "
           f"sa porte, pente maximale {ht['max_grade'] * 100:.0f} % (calcul du chemin le moins coûteux, `track_lodge.py`).")
+    w("\n## Phase 4 (suite) : château des vampires (« Castle 2.0 »)\n")
+    md = CM["model"]; br = CM["bridge"]; uc = CM["undercroft"]
+    PLC = json.load(open(f"{ROOT}/data/placements_castle.json"))
+    w(f"- Modèle « Castle 2.0 » (EldersCrawler) posé sur l'éperon à l'échelle {md['scale']:.0f} (environ 200 × 166 m, 70,7 m de haut "
+      f"à la flèche de la tour du palais), centre [{md['origin'][0]:.0f}, {md['origin'][1]:.0f}], base à +{md['origin'][2]:.1f} m, porte "
+      f"tournée vers le Grand Pont. À l'intérieur de l'enceinte, le terrain reprend le relief de la colline sur laquelle le modèle a été "
+      f"construit (`Data/castle20_plate.npz`), raccordé au bord du rocher.")
+    w("- Analyse du modèle : l'export du pack avait perdu ses matériaux (un seul matériau sur 13 morceaux). Ils sont reconstitués "
+      "par îlot UV et par orientation (murs, toits, sols) avec les textures du pack (`c20_classes.py`). Les volumes intérieurs sont "
+      "trouvés par voxelisation à 0,5 m et remplissage de l'air extérieur (`c20_interiors.py`), les accès par le test de marche, et "
+      "les bâtiments par leurs toits (`c20_buildings.py`). Le modèle a peu de vrais intérieurs : les salles sont placées dans ses "
+      "propres salles et tours quand elles existent, dans des salles doublées (murs, sol et plafond propres) à l'intérieur de ses "
+      "bâtiments, ou sous le terrain.")
+    w(f"- Grand Pont réorienté vers la nouvelle porte ({br['length_m']} m, cap {br['heading_deg']}°), pont-levis *Movable*, torches "
+      "dans l'avant-cour. Les vantaux de la porte du modèle sont découpés et remplacés par deux vantaux *Movable* ouverts.")
+    w(f"- Découpes du modèle ({len(md['cuts'])} boîtes : vantaux, portes percées, puits, encombrement des salles doublées, fondations "
+      "sous les sous-sols). Les triangles traversés sont recoupés exactement par les plans de chaque boîte (`c2cuts.py`) ; le même calcul "
+      "sert au test de marche et à l'export. Chaque porte percée reçoit un seuil, des jambages et un linteau ; quand le sol "
+      "extérieur n'est pas au niveau du seuil, le terrain est raccordé (talus) ou un perron est construit.")
+    w("\nSalles principales (cahier, section 5) :\n")
+    w("| Salle | emplacement | construite (L × l × h) | cahier | conforme |\n|---|---|---|---|---|")
+    WHERE = {"Great Hall": "grande salle du modèle (palais)", "Throne Room": "salle doublée dans le corps du palais",
+             "Banquet Hall": "sous-sol L-1, voûtée", "War Room": "salle doublée, aile est", "Lord's Study": "salle du modèle, aile est",
+             "Dungeon": "sous-sol L-2", "Larder": "sous-sol L-1", "Kitchen": "sous-sol L-1", "Library": "tour nord-est du modèle",
+             "Crypt": "sous-sol L-2, voûtée", "Lord's Apartments": "tour nord-ouest du modèle", "Chapel": "salle à colonnes du modèle"}
+    for r in sorted(TR["core_rooms"], key=lambda r: r["id"]):
+        w(f"| {r['name']} | {WHERE.get(r['name'], '')} | {' × '.join(str(v) for v in r['built'])} | "
+          f"{r['doc'] if isinstance(r['doc'], str) else ' × '.join(str(v) for v in r['doc'])} | {'oui' if r['ok'] else '**non**'} |")
+    w("\nLes salles creusées sous le terrain ont les dimensions du cahier. Celles logées dans le modèle prennent la taille que "
+      "ses murs permettent (tours rondes, corps de bâtiment de 11 m de large).\n")
+    w(f"- Grande Salle : la salle à colonnes du palais, tables de banquet et lustres. Salle du trône derrière elle (porte dans l'axe "
+      "de la nef) : estrade à trois degrés, trône, tapis, bannières, pilastres, plafond à caissons. Chapelle : la salle à six colonnes "
+      "ouverte sur la cour du palais par une arcade (autel, retable, croix, bancs dans la nef). Salle de guerre : table des cartes, "
+      "râtelier de lances, bannières, perron depuis la cour est. Bibliothèque et appartements dans deux tours rondes, cabinet du seigneur "
+      "dans l'aile est.")
+    w(f"- Escalier dérobé : un panneau de pierre (*Movable*) s'ouvre dans le mur derrière l'estrade du trône, à côté du trône. "
+      f"Derrière, un colimaçon de 113 marches descend dans un puits aux murs de 1,6 m jusqu'à la crypte (L-2, "
+      f"{md['origin'][2] + 22.6 - uc['L2_floor']:.1f} m sous l'estrade).")
+    w(f"- Sous-sols : deux niveaux sous le terrain du palais (L-1 à +{uc['L1_floor']:.1f} m, L-2 à +{uc['L2_floor']:.1f} m), sans trou dans "
+      "le paysage : seuls les deux puits le coupent, et leurs murs de 1,6 m en masquent le bord. Il reste au moins 1,4 m de roche au-dessus "
+      "des salles. Un grand escalier rampe sur rampe (six volées, mur d'échiffre central, balustrade) descend du bas-côté ouest de la "
+      "Grande Salle. L-1 : salle de banquet voûtée (deux rangées de piliers, ogives, table de 28 m, grande cheminée), cuisine (âtre, "
+      "chaudron, tables de travail, étagères), garde-manger (étagères, salaisons), cave à vin et à sang (tonneaux, cuves). L-2 : crypte "
+      "voûtée (sarcophage du seigneur sur son socle, six tombeaux de famille), grille de fer vers les cachots (couloir de 40 m, "
+      "10 cellules de 3 × 3 m à barreaux, salle des gardes, salle d'interrogatoire, oubliette).")
+    w(f"- Tunnel secret : {CM['tunnel_length_m']} m depuis la crypte, en trois branches dans le rocher (deux longs escaliers puis une galerie "
+      f"de niveau), toujours sous le paysage, jusqu'à une porte cachée (*Movable*) au pied de la falaise sud, en "
+      f"[{CM['tunnel_exit'][0]:.0f}, {CM['tunnel_exit'][1]:.0f}, {CM['tunnel_exit'][2]:.0f}].")
+    w(f"- {len(PLC) - 1} pièces de kit et le maillage du château (`SM_C2_Castle`, collision complexe) dans `Data/placements_castle.json`, "
+      f"{len(CM['lights'])} lumières ponctuelles.")
+    ok_r = sum(r["reached"] for r in NC["rooms"]); pr = sum(v["reached"] for v in NC["probes"].values())
+    w(f"- Test de marche (`nav_castle.json`, depuis la barbacane) : {ok_r}/{len(NC['rooms'])} salles atteintes, "
+      f"{pr}/{len(NC['probes'])} points de contrôle (pont, avant-cour, cours, estrade, chambre secrète, pied du colimaçon, grand "
+      f"escalier, coudes du tunnel, devant la porte cachée), {len(NC['leaks'])} chute vers les vides.")
     w("\n## Modèles tiers (phase 4)\n")
     w("Le commanditaire déclare détenir les licences et les autorisations écrites des créateurs pour ces modèles, utilisés "
       "dans la carte. Les crédits et attributions sont conservés ici :\n")
     for c in ["« Fantasy Castle » par **Hawtor Studio** : maison des chasseurs (coque extérieure, textures). Attribution requise.",
               "« Classic Library for Blender Eevee and Cycles » par **denniswoo1993** : kit de la bibliothèque souterraine et mobilier "
               "de la maison. Ses textures intégrées viennent d'ambientCG, de Poly Haven et de Textures.com.",
-              "« Castle 2.0 » par **EldersCrawler** : château des vampires (à venir).",
+              "« Castle 2.0 » par **EldersCrawler** : château des vampires (modèle complet et textures ; matériaux reconstitués par face).",
               "« Medieval Houses Package » par **Daniel** : maisons de la ville (à venir).",
               "« Medieval Church » par **Daniel** : vitraux et textures de l'église (à venir). Attribution requise.",
               "« Medieval castle » par **Misha Kiselev** : maison du noble (à venir)."]:
@@ -162,6 +215,7 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
       "et de rugosité du même pack (`fc_fix_colors.py`, `lib_fix_colors.py`). Les vitraux utilisent un motif au plomb généré.")
     import re
     L[n0:] = [re.sub(r"(?<![\w/])(\d+)\.(\d)", r"\1,\2", x) for x in L[n0:]]          # French decimal commas
+    L[n0:] = [x.replace("Castle 2,0", "Castle 2.0") for x in L[n0:]]                               # (a model name)
 w("\n## Écarts au cahier des charges et raisons\n")
 dev = [
     "Heightmap : le cahier mentionne un `heightmap_base_4033.png` livré avec le document, mais je ne l'ai pas reçu. Je l'ai généré à partir de l'annexe A, avec le même encodage et la même orientation.",
@@ -169,10 +223,10 @@ dev = [
     "Serpentine, point 5 : z 205 → 200 (la terrasse est plate à +199, exigence MUST). Route ouest au pont : le -1 m de l'annexe est le niveau de la rivière. Le tablier du pont Ouest va de +12,4 à +9,0 m (5 arches, 60 m, 1,1 m de parapet).",
     "Raccords : les routes secondaires partent à l'altitude de la route qu'elles rejoignent : forest_track 25,3 m (annexe 16), quarry_road 21 m (annexe 9), mill_track 23 m (annexe 22).",
     "Escaliers × serpentine : 2 passerelles en [507, -40] et [597, -40] (l'escalier passe 8 à 11 m au-dessus de la route), croisements à niveau ailleurs.",
-    "Palais : la crête est tenue à +38 m (exigence de silhouette) par des toits à 55° tronqués, avec les gouttières à +29 m pour loger le niveau L2 (+22). Les arcs-boutants côté vallée partent de piles encorbellées dans la falaise, puisque la façade prolonge la falaise.",
-    "Souterrains : au lieu de trous dans le paysage, que Python ne sait pas peindre, le terrain est abaissé sous le palais, le cachot, la crypte de l'église, la cave du manoir, la nef de l'abbaye, le tunnel et la grotte. Murs de 1,6 m, dalles et talus en masquent les bords. Le rocher est posé à +203,85 m (15 cm sous les sols) pour éviter le scintillement.",
+    "Château : le greybox de la phase 2 est remplacé par le modèle « Castle 2.0 ». Sa silhouette, ses tours et son palais sont ceux du modèle ; la Grande Salle, la salle du trône, la chapelle, la bibliothèque, les appartements, le cabinet et la salle de guerre prennent la taille que ses bâtiments permettent (tableau de la phase 4). La salle du trône n'a plus de balcon.",
+    "Souterrains : au lieu de trous dans le paysage, que Python ne sait pas peindre, le terrain est abaissé sous la crypte de l'église, la cave du manoir, la nef de l'abbaye, le puits de la maison des chasseurs et la grotte. Murs de 1,6 m, dalles et talus en masquent les bords. Les sous-sols du château et son tunnel sont entièrement sous le paysage ; seuls leurs deux puits le coupent.",
     "Règle caméra (plafonds d'au moins 4 m) : les intérieurs de ville ont des étages de 5,0 et 4,6 m, plus hauts que des maisons réelles. Le tunnel secret fait 4 m de haut.",
-    "Tunnel secret (298 m) : galerie sinueuse sous le palais, puis traversée droite de la falaise sud sous un éboulis jusqu'à la porte cachée [574, 384, 118].",
+    f"Tunnel secret : {CM['tunnel_length_m']} m au lieu de 298 m. Il descend de 79 m dans le rocher par deux longs escaliers en lacet, puis une galerie de niveau sous la falaise sud, jusqu'à la porte cachée au pied de la falaise, en [{CM['tunnel_exit'][0]:.0f}, {CM['tunnel_exit'][1]:.0f}, {CM['tunnel_exit'][2]:.0f}] au lieu de [574, 384, 118].",
     "Caserne du guet : la boîte de l'annexe dépassait de 10 m hors du rempart ; elle a été glissée de 15,5 m vers l'intérieur.",
     "Puits du marché et fontaine sèche de la cour intérieure : déplacés hors des points d'apparition imposés par l'annexe.",
     "Grotte de la cascade : accès depuis la berge par une rampe, puis par une corniche de 4 m posée sur la vasque au pied de la falaise, sous le rideau d'eau, jusqu'à l'entrée de la grotte. Le chemin de la cascade passe 40 m plus haut.",
@@ -182,7 +236,7 @@ dev = [
     "Faubourg Est : 52 bâtiments générés le long de la route commerciale (le plan en dessine 18, le texte en demande environ 50).",
     "Tour de guet : 11 × 11 m pour loger un colimaçon à marches de 2,2 m (le cahier ne donne que la hauteur de 18 m).",
     "Vue V1 : 2 parcelles au nord-est de la place ne sont pas bâties, pour que le donjon apparaisse entre les toits comme le demande le cahier.",
-    "Balcon de la salle du trône (V2) : sa moitié extérieure est 0,8 m plus bas (4 marches de 20 cm dans l'ouverture de la façade). Sinon le parapet de 1,1 m masquait la ville depuis la caméra imposée.",
+    "Vues héros et château : V2 (balcon de la salle du trône) n'existe plus ; elle est prise depuis le rempart sud du château, au-dessus de la caméra du cahier, vers l'église. V3 est sur le tablier du Grand Pont réorienté, V4 au portail de la Grande Salle du modèle. V1, V5, V6 et V8 visent la tour du palais (point culminant du modèle) au lieu de l'ancien donjon.",
     "Vue V7 : la route commerciale monte au col Est par une vallée ouverte (flancs à 14°), et non dans une tranchée de 40 m, pour que le plan d'établissement voie la vallée.",
     "Vue V6 : depuis le troisième lacet, l'éperon entre la route et le bord du ravin montait 13 m au-dessus de la caméra du cahier. Il est entaillé sous la ligne de visée (1,5 m de marge, flancs à 45°) pour que les murs du château apparaissent au-dessus.",
     "Chambre des cloches (V5) : l'étage des cloches est octogonal sur la tour carrée de l'annexe, avec une baie par face. Sur une chambre carrée, la ligne vers le donjon tombait dans l'angle ; la face nord-est regarde désormais le château (« la tour fait face à la tour »). Abat-sons seulement au-dessus de la hauteur des yeux.",

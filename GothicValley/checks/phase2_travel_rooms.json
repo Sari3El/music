@@ -60,38 +60,113 @@
    "id": 1,
    "name": "Great Hall",
    "built": [
-    32,
-    20,
-    16.0
+    24.2,
+    15.4,
+    10.6
    ],
    "doc": [
     32,
     20,
     16
    ],
-   "ok": true
+   "ok": false
   },
   {
    "id": 2,
    "name": "Throne Room",
    "built": [
-    45,
-    20,
-    20.0
+    26.5,
+    11.0,
+    11.0
    ],
    "doc": [
     45,
     20,
     20
    ],
-   "ok": true
+   "ok": false
+  },
+  {
+   "id": 9,
+   "name": "Library",
+   "built": [
+    10.1,
+    10.1,
+    6.5
+   ],
+   "doc": [
+    24,
+    14,
+    9
+   ],
+   "ok": false
+  },
+  {
+   "id": 11,
+   "name": "Lord's Apartments",
+   "built": [
+    9.1,
+    9.1,
+    6.5
+   ],
+   "doc": [
+    14,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "id": 5,
+   "name": "Lord's Study",
+   "built": [
+    6.5,
+    6.0,
+    4.5
+   ],
+   "doc": [
+    12,
+    9,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "id": 12,
+   "name": "Chapel",
+   "built": [
+    15.4,
+    15.0,
+    8.0
+   ],
+   "doc": [
+    32,
+    12,
+    15
+   ],
+   "ok": false
+  },
+  {
+   "id": 4,
+   "name": "War Room",
+   "built": [
+    14.4,
+    6.8,
+    6.0
+   ],
+   "doc": [
+    16,
+    12,
+    7
+   ],
+   "ok": false
   },
   {
    "id": 3,
    "name": "Banquet Hall",
    "built": [
-    36,
-    14,
+    36.0,
+    14.0,
     12.0
    ],
    "doc": [
@@ -105,8 +180,8 @@
    "id": 8,
    "name": "Kitchen",
    "built": [
-    16,
-    12,
+    16.0,
+    12.0,
     8.0
    ],
    "doc": [
@@ -117,71 +192,11 @@
    "ok": true
   },
   {
-   "id": 4,
-   "name": "War Room",
-   "built": [
-    16,
-    12,
-    7.0
-   ],
-   "doc": [
-    16,
-    12,
-    7
-   ],
-   "ok": true
-  },
-  {
-   "id": 5,
-   "name": "Lord's Study",
-   "built": [
-    12,
-    9,
-    6.0
-   ],
-   "doc": [
-    12,
-    9,
-    6
-   ],
-   "ok": true
-  },
-  {
-   "id": 9,
-   "name": "Library",
-   "built": [
-    24,
-    14,
-    9.0
-   ],
-   "doc": [
-    24,
-    14,
-    9
-   ],
-   "ok": true
-  },
-  {
-   "id": 11,
-   "name": "Lord's Apartments",
-   "built": [
-    14,
-    10,
-    6.0
-   ],
-   "doc": [
-    14,
-    10,
-    6
-   ],
-   "ok": true
-  },
-  {
    "id": 7,
    "name": "Larder",
    "built": [
-    18,
-    10,
+    18.0,
+    10.0,
     5.0
    ],
    "doc": [
@@ -195,8 +210,8 @@
    "id": 10,
    "name": "Crypt",
    "built": [
-    26,
-    14,
+    26.0,
+    14.0,
     6.0
    ],
    "doc": [
@@ -210,26 +225,11 @@
    "id": 6,
    "name": "Dungeon",
    "built": [
-    40,
-    24,
+    40.0,
+    2.0,
     4.5
    ],
    "doc": "40 m corridor, 10 cells 3 x 3, guard room, interrogation room, pit cell",
-   "ok": true
-  },
-  {
-   "id": 12,
-   "name": "Chapel",
-   "built": [
-    32,
-    12,
-    15.0
-   ],
-   "doc": [
-    32,
-    12,
-    15
-   ],
    "ok": true
   }
  ]

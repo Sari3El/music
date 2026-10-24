@@ -4,7 +4,7 @@ S=$1
 cd $S/scripts
 until [ -f $S/terrain/check_done ]; do sleep 5; done
 echo "== terrain"; grep "PASS_ALL" $S/terrain/check_log.txt || true
-python3 gb_castle.py $S | tail -1
+python3 gb_castle2.py $S | tail -1
 python3 gb_city.py $S | tail -2
 python3 gb_sites.py $S | tail -1
 python3 gb_lodge.py $S | tail -1
@@ -33,6 +33,8 @@ blender -b --factory-startup --python render_hero.py -- $S $S/renders/hero $S/ex
 if [ -f $S/export/kit.blend ]; then
   rm -rf $S/renders/lodge
   blender -b --factory-startup --python render_lodge.py -- $S $S/renders/lodge 2>&1 | grep -E "rendered|Error" | tail -10
+  rm -rf $S/renders/castle
+  blender -b --factory-startup --python render_castle.py -- $S $S/renders/castle 2>&1 | grep -E "rendered|Error" | tail -20
 fi
 echo "== log + pack"
 python3 overlay_city.py $S

@@ -29,7 +29,12 @@ json.dump(dict(blockers=sites["blockers"], markers=sites["markers"], movable=[m 
 json.dump([L for p in PARTS for L in metas[p].get("lights", [])], open(f"{OUT}/Data/lights.json", "w"), indent=1)
 for f in glob.glob(f"{ROOT}/data/placements_*.json") + glob.glob(f"{ROOT}/data/materials_kit.json") + glob.glob(f"{ROOT}/export/kit_report.json"):
     shutil.copy(f, f"{OUT}/Data/")
-json.dump([dict(name="castle crag top", x=720, y=310, z=203.85, tol=1.0), dict(name="barbican terrace", x=700, y=-40, z=199.0, tol=1.5),
+import numpy as _np
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from tlib import sample as _sample
+_H = _np.load(f"{ROOT}/terrain/H_4033.npy")
+_zc = round(float(_sample(_H, _np.atleast_1d(719.0), _np.atleast_1d(270.0))[0]), 2)
+json.dump([dict(name="castle lower court (relief of the Castle 2.0 hill)", x=719, y=270, z=_zc, tol=1.0), dict(name="barbican terrace", x=700, y=-40, z=199.0, tol=1.5),
            dict(name="market square", x=-470, y=-470, z=33.9, tol=1.5), dict(name="fen basin", x=-1230, y=-1230, z=3.4, tol=2.0),
            dict(name="ravine under the bridge", x=742, y=145, z=108.3, tol=6.0),
            dict(name="hunters' lodge pad (door)", x=-1374.5, y=-701.6, z=81.0, tol=1.0)], open(f"{OUT}/Data/landscape_checks.json", "w"), indent=1)
@@ -43,6 +48,8 @@ if os.path.isdir(f"{ROOT}/renders/hero"):
     shutil.copytree(f"{ROOT}/renders/hero", f"{OUT}/Screenshots")
 if os.path.isdir(f"{ROOT}/renders/lodge"):
     shutil.copytree(f"{ROOT}/renders/lodge", f"{OUT}/Screenshots/Lodge")
+if os.path.isdir(f"{ROOT}/renders/castle"):
+    shutil.copytree(f"{ROOT}/renders/castle", f"{OUT}/Screenshots/Castle")
 for f in ("README_FR.md", "BUILD_LOG.md"):
     if os.path.exists(f"{ROOT}/pack/{f}"):
         txt = re.sub(r"\b\d+ maillages", f"{len(rep)} maillages", open(f"{ROOT}/pack/{f}").read())

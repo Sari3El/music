@@ -8,39 +8,39 @@
    35.51
   ],
   "look_at": [
-   781,
-   381,
-   279
+   736.4,
+   350.6,
+   255.4
   ],
   "file": "V1_Market_square.png"
  },
  {
   "id": "V2",
-  "name": "Throne Room balcony",
+  "name": "Castle walls toward the city",
   "camera_used": [
-   623,
-   310,
-   206
+   622.0,
+   310.0,
+   215.5
   ],
   "look_at": [
    -320,
    -556,
    80
   ],
-  "file": "V2_Throne_Room_balcony.png"
+  "file": "V2_Castle_walls_toward_the_city.png"
  },
  {
   "id": "V3",
   "name": "Great Bridge",
   "camera_used": [
-   742,
-   140,
-   203.6
+   731.52,
+   130.85,
+   202.96
   ],
   "look_at": [
-   742,
-   200,
-   214
+   718.7,
+   241.8,
+   207.4
   ],
   "file": "V3_Great_Bridge.png"
  },
@@ -48,14 +48,14 @@
   "id": "V4",
   "name": "Great Hall portal",
   "camera_used": [
-   684,
-   330,
-   206
+   721.0,
+   319.0,
+   218.3
   ],
   "look_at": [
-   623,
-   330,
-   210
+   721.0,
+   340.0,
+   219.9
   ],
   "file": "V4_Great_Hall_portal.png"
  },
@@ -68,9 +68,9 @@
    81.7
   ],
   "look_at": [
-   781,
-   381,
-   279
+   736.4,
+   350.6,
+   255.4
   ],
   "file": "V5_Church_bell_chamber.png"
  },
@@ -83,9 +83,9 @@
    163
   ],
   "look_at": [
-   700,
-   230,
-   230
+   716.0,
+   280.0,
+   225.4
   ],
   "file": "V6_Third_hairpin.png"
  },
@@ -113,9 +113,9 @@
    90
   ],
   "look_at": [
-   720,
-   310,
-   240
+   719.0,
+   300.0,
+   235.4
   ],
   "file": "V8_Abbey_ruin_at_dusk.png"
  },

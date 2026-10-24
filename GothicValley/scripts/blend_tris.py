@@ -5,7 +5,7 @@ a = sys.argv[sys.argv.index("--") + 1:]
 bpy.ops.wm.open_mainfile(filepath=a[0])
 T, I, names = [], [], []
 for o in bpy.data.objects:
-    if o.type != "MESH" or not len(o.data.polygons):
+    if o.type != "MESH" or not len(o.data.polygons) or o.get("not_exported"):
         continue
     m = o.data; m.calc_loop_triangles()
     co = np.empty(len(m.vertices) * 3); m.vertices.foreach_get("co", co); co = co.reshape(-1, 3)
