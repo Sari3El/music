@@ -1,4 +1,5 @@
-# Blender: asset-pack meshes -> FBX for Unreal + kit.blend for renders. The kit pieces (assets/library/prefabs.blend) and
+# Blender: asset-pack meshes -> FBX for Unreal + kit.blend for renders. The kit pieces (assets/library/prefabs.blend), the
+# props (assets/props/props.blend) and
 # the lodge shell (assets/fantasy/fantasy.blend) are authored in world axes (+X north, +Y east); like gb_build, the mesh
 # is mirrored to Blender's y = -Y so that the FBX exporter + Unreal importer give back +Y east. The shell loses the door
 # leaf (the door is open in game) and the fake-interior panels behind the windows of the visited hall wing.
@@ -49,6 +50,16 @@ for o in take(f"{ROOT}/assets/library/prefabs.blend"):
     o.matrix_world = Matrix.Identity(4)
     mirror(o)
     export(o, "Props/LibraryKit")
+# the commissioner's prop packs (assets/props/props.blend, prep_props.py): one FBX per prefab, in its pack's folder
+if os.path.exists(f"{ROOT}/assets/props/props.blend"):
+    PJ = json.load(open(f"{ROOT}/assets/props/props.json"))
+    for o in take(f"{ROOT}/assets/props/props.blend"):
+        sc.collection.objects.link(o)
+        folder = PJ[o.name]["folder"]
+        o.name = o.name.replace("PF_", "SM_"); o.data.name = o.name
+        o.matrix_world = Matrix.Identity(4)
+        mirror(o)
+        export(o, folder)
 # lodge shell: one mesh, minus the door leaf and the hall-wing fake-interior panels
 parts = take(f"{ROOT}/assets/fantasy/fantasy.blend")
 for o in parts:

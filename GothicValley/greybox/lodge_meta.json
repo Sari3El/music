@@ -301,18 +301,18 @@
    "shadows": false
   },
   {
-   "name": "lodge_hall_fire",
+   "name": "lodge_hall_crucifix",
    "xyz": [
-    -1386.4,
+    -1386.6,
     -699.0,
-    81.9
+    83.2
    ],
-   "lumens": 3500,
-   "radius": 9,
+   "lumens": 1800,
+   "radius": 8,
    "color": [
     1.0,
-    0.55,
-    0.25
+    0.6,
+    0.3
    ],
    "shadows": true
   },
@@ -329,6 +329,38 @@
     1.0,
     0.72,
     0.45
+   ],
+   "shadows": false
+  },
+  {
+   "name": "lodge_porch_torch_a",
+   "xyz": [
+    -1376.2,
+    -703.6,
+    82.9
+   ],
+   "lumens": 500,
+   "radius": 7,
+   "color": [
+    1.0,
+    0.55,
+    0.25
+   ],
+   "shadows": false
+  },
+  {
+   "name": "lodge_porch_torch_b",
+   "xyz": [
+    -1376.2,
+    -699.6,
+    82.9
+   ],
+   "lumens": 500,
+   "radius": 7,
+   "color": [
+    1.0,
+    0.55,
+    0.25
    ],
    "shadows": false
   },

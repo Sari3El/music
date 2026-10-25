@@ -1,8 +1,9 @@
 # The hunters' lodge (Fantasy Castle shell, Hawtor Studio) at the far south-west of the valley, its secret stair and
 # the underground library (Classic Library kit, denniswoo1993, architecture scaled x1.5). World metres, +X north, +Y east.
 # Our geometry (floors, partitions, the stair tunnel, the library walls, galleries and grand stair) and the invisible
-# collision of every kit piece go to greybox/lodge_groups.json; the kit pieces themselves (mesh, position, yaw, scale)
-# to data/placements_lodge.json; rooms, pad, voids, movable pieces and lights to greybox/lodge_meta.json.
+# collision of every kit piece go to greybox/lodge_groups.json; the kit pieces and the props of the commissioner's packs
+# (mesh, position, yaw, scale) to data/placements_lodge.json; rooms, pad, voids, movable pieces and lights to
+# greybox/lodge_meta.json. Furniture and objects come only from the packs; built here: architecture, doors, wardrobe.
 #
 # Lodge frame: origin at the shell centre (O) on the pad (P), axes = world axes; the main door is on +X (north, facing
 # the valley), the library lies to +Y (east). Library frame: u = x - X0 (across), v = y - Y0 (along), w = z - F.
@@ -16,6 +17,7 @@ ROOT = sys.argv[1]
 HN = f"{ROOT}/terrain/H_natural_4033.npy"
 H = np.load(HN if os.path.exists(HN) else f"{ROOT}/terrain/H_4033.npy")
 KIT = json.load(open(f"{ROOT}/data/kit_library.json"))
+PROPS = json.load(open(f"{ROOT}/data/props_library.json"))          # prop packs: PF_PR_*, front = +X
 gz = lambda x, y: float(sample(H, np.atleast_1d(float(x)), np.atleast_1d(float(y)))[0])
 
 O = np.array([-1400.0, -700.0]); P = 81.0           # lodge: shell centre, pad level
@@ -50,15 +52,17 @@ def rot(yaw):
 
 
 def place(frame, key, x, y, z, yaw=0.0, s=1.0, col=None, gcol=None, folder="Props/LibraryKit"):
-    """Kit piece `key` (PF_LB_* in the kit file) -> placement of SM_LB_*; col='box' adds its bounding box (rotated) to
-    the collision group, col='treads' one hull per step (spiral stair)."""
+    """Kit piece `key` (PF_LB_* in the kit file, or PF_PR_* of the prop packs) -> placement of SM_*; col='box' adds its
+    bounding box (rotated) to the collision group, col='treads' one hull per step (spiral stair)."""
+    if key in PROPS:
+        folder = PROPS[key]["folder"]
     ox, oy, oz = frame
     sc = np.array([s, s, s] if np.isscalar(s) else s, float)
     PL.append(dict(mesh=key.replace("PF_", "SM_"), folder=folder, loc=[round(x + ox, 3), round(y + oy, 3), round(z + oz, 3)],
                    yaw=round(yaw, 2), scale=sc.round(4).tolist()))
     if col is None or gcol is None:
         return
-    k = KIT[key]; Rm = rot(yaw)
+    k = KIT[key] if key in KIT else PROPS[key]; Rm = rot(yaw)
     if col == "box":
         lo, hi = np.array(k["lo"]) * sc, np.array(k["hi"]) * sc
         pts = [Rm @ p + [x, y] for p in ([lo[0], lo[1]], [hi[0], lo[1]], [hi[0], hi[1]], [lo[0], hi[1]])]
@@ -84,6 +88,13 @@ def place(frame, key, x, y, z, yaw=0.0, s=1.0, col=None, gcol=None, folder="Prop
         pts = [tuple(Rm @ (np.array(p) * sc[:2]) + [x, y]) for p in t["poly"]]
         gcol.poly_prism(pts, z + t["z"] * sc[2] - 0.3, z + t["z"] * sc[2], "GB_Stone", "only")
         gcol.cyl(x, y, 0.16, z, z + k["hi"][2] * sc[2], "GB_Stone", 8, "only")
+
+
+def on_wall(frame, key, x, y, z, wall, s=1.0, gcol=None):
+    """Prop against a wall, its back on the wall face at (x, y); wall = unit direction from the room to the wall."""
+    off = -PROPS[key]["lo"][0] * s + 0.01
+    place(frame, key, x - wall[0] * off, y - wall[1] * off, z, math.degrees(math.atan2(-wall[1], -wall[0])), s,
+          col="box" if gcol is not None else None, gcol=gcol)
 
 
 def rail_x(g, gc, frame, y, xa, xb, z, h=1.2):
@@ -176,45 +187,35 @@ MOVABLE.append(dict(name="SM_GB_Lodge_SecretWardrobe", pivot=[round(O[0] + WX0, 
 # study furniture: bookcase on the west wall, reading table
 place(LF, "PF_LB_Bookcase", 6.78, -3.8, FL, 180.0, col="box", gcol=gC)
 place(LF, "PF_LB_ReadingSet", 9.4, -4.05, FL, 0.0, col="box", gcol=gC)
+place(LF, "PF_PR_RugLight_Rug8", 9.4, -4.05, FL + 0.004, 90.0)
+on_wall(LF, "PF_PR_Painting_3", 12.0, -2.5, FL + 1.75, (1, 0))
+place(LF, "PF_PR_Candelabra", 7.2, -6.0, FL, 0.0, col="box", gcol=gC)
 R(LF, "Lodge study", 6.6, 12.0, -6.6, -0.5, FL, 4.7, interior="lodge")
 R(LF, "Lodge hidden stair (top platform)", 9.25, 10.8, -0.1, 1.4, FL, 4.7, interior="lodge", sealed=True)
 light(LF, "lodge_study", 9.4, -4.0, 3.4, 1500, 9, shadows=True)
 light(LF, "lodge_hidden_room", 9.2, 1.5, 2.6, 250, 6)
 light(LF, "lodge_shaft_bottom", 8.9, 3.0, SB + 2.3, 400, 6)
-# great hall: fireplace on the partition, beams, banquet table, chandeliers, chests, rug, open double door
-gI.box(12.4, 12.6, -0.6, 2.6, FL, 7.3, "LB_Stone")                               # chimney breast: back,
-gI.wall("y", 12.6, 13.3, -0.6, 2.6, FL, 7.3, "LB_Stone", holes=[(0.1, 1.9, FL, FL + 1.75)])   # front with the firebox
-gI.box(12.6, 13.25, 0.1, 1.9, FL + 1.75, FL + 1.95, "GB_WinDark", False)        # soot under the hood
-gI.box(12.6, 12.66, 0.1, 1.9, FL, FL + 1.75, "GB_WinDark", False)               # fire back
-gI.box(12.4, 13.5, -0.9, 2.9, FL + 2.3, FL + 2.65, "LB_Stone")                  # mantel
-gI.box(13.3, 13.9, -1.0, 3.0, FL, FL + 0.12, "LB_Stone")                        # hearth stone
-gI.box(12.66, 13.2, 0.3, 1.7, FL, FL + 0.08, "GB_WinLit", False)                # embers
-for k_, (y_a, y_b) in enumerate(((0.35, 1.55), (0.5, 1.7), (0.42, 1.62))):     # logs on the fire dogs
-    xx = 12.8 + 0.13 * k_; zz = FL + 0.1 + (0.12 if k_ == 2 else 0.0)
-    gI.box(xx - 0.07, xx + 0.07, y_a, y_b, zz, zz + 0.14, "FC_WoodPlanks", False)
-for yy in (0.4, 1.6):
-    gI.box(13.0, 13.08, yy - 0.04, yy + 0.04, FL, FL + 0.3, "LB_Metal", False)
-gC.box(12.4, 13.9, -1.0, 3.0, FL, 7.3, "GB_Stone", "only")
+# great hall: beams, table, chandeliers, the hunters' crucifix on the partition, chests and benches under the windows,
+# light rugs, open double door
 for bx in (14.5, 16.6, 18.7, 20.8):
     gI.box(bx - 0.17, bx + 0.17, -6.7, 3.9, 6.85, 7.3, "FC_WoodPlanks", False)
+place(LF, "PF_PR_RugLight_Rug8", 17.2, -1.4, FL + 0.004, 0.0)
 place(LF, "PF_LB_ReadingSet", 17.2, -1.4, FL, 90.0, col="box", gcol=gC)
-gI.box(14.6, 19.8, -2.9, 0.1, FL, FL + 0.015, "LB_Leather", False)              # rug
 for cx in (16.6, 18.7):                                                           # hung from the beams
-    place(LF, "PF_LB_Chandelier", cx, -1.4, 6.85)
+    place(LF, "PF_PR_Chandelier", cx, -1.4, 6.85, 0.0, 1.2)
     light(LF, f"lodge_hall_chandelier_{cx:.0f}", cx, -1.4, 3.6, 2500, 11, shadows=cx < 17)
-light(LF, "lodge_hall_fire", 13.6, 1.0, 0.9, 3500, 9, color=(1.0, 0.55, 0.25), shadows=True)
-for cx in (14.7, 16.75, 18.8, 20.85):                                            # chests under the windows
-    for cy, dy in ((-6.7, 1), (3.9, -1)):
-        y_a, y_b = sorted((cy + dy * 0.05, cy + dy * 0.65))
-        gI.box(cx - 0.55, cx + 0.55, y_a, y_b, FL, FL + 0.62, "LB_GlossyWood")
-        gI.box(cx - 0.58, cx + 0.58, y_a - 0.02, y_b + 0.02, FL + 0.62, FL + 0.7, "FC_WoodPlanks")
-for cy0, cy1 in ((-6.2, -3.1), (0.6, 3.4)):                                       # weapon racks flanking the door
-    gI.box(21.95, 22.25, cy0, cy1, FL, FL + 0.25, "LB_GlossyWood")
-    gI.box(21.95, 22.25, cy0, cy1, FL + 1.75, FL + 1.9, "LB_GlossyWood")
-    for k in range(6):
-        yy = cy0 + 0.25 + k * (cy1 - cy0 - 0.5) / 5
-        gI.box(22.02, 22.08, yy - 0.02, yy + 0.02, FL + 0.25, FL + 1.75, "LB_Metal", False)
-    gC.box(21.9, 22.3, cy0, cy1, FL, FL + 1.9, "GB_Stone", "only")
+on_wall(LF, "PF_PR_Crucifixion", 12.4, 1.0, FL + 1.55, (-1, 0))                  # bronze crucifix, flanked by candelabra
+for yy in (-0.3, 2.3):
+    place(LF, "PF_PR_Candelabra", 13.0, yy, FL, 0.0, col="box", gcol=gC)
+place(LF, "PF_PR_RugLight_Rug9", 14.0, 1.0, FL + 0.004, 0.0)
+on_wall(LF, "PF_PR_Painting_13", 12.4, -2.6, FL + 1.75, (-1, 0))
+light(LF, "lodge_hall_crucifix", 13.4, 1.0, 2.2, 1800, 8, color=(1.0, 0.6, 0.3), shadows=True)
+for k_, cx in enumerate((14.7, 16.75, 18.8, 20.85)):                             # under the windows: chests and settles
+    for cy, wl in ((-6.7, (0, -1)), (3.9, (0, 1))):
+        on_wall(LF, "PF_PR_Furniture_Chest" if k_ % 2 == 0 else "PF_PR_Furniture_Settle", cx, cy, FL, wl, gcol=gC)
+place(LF, "PF_PR_Furniture_BearSkin", 20.4, 1.6, FL, 0.0)                        # hunting trophy by the door
+for yy, key in ((-5.6, "PF_PR_Furniture_Axe"), (-5.2, "PF_PR_Furniture_Mallet"), (2.6, "PF_PR_Furniture_Hoe")):
+    on_wall(LF, key, 22.3, yy, FL, (1, 0))
 for side, yh in (("L", -2.7), ("R", -0.45)):                                     # door leaves, open inward
     gD = G(f"SM_GB_Lodge_Door{side}", "Environment/Lodge", LF)
     sgn = 1 if side == "L" else -1
@@ -223,6 +224,9 @@ for side, yh in (("L", -2.7), ("R", -0.45)):                                    
                         motion="hinge", note="open (90 deg); closes to the door plane"))
 R(LF, "Lodge great hall", 13.9, 22.2, -6.6, 3.8, FL, 7.2, interior="lodge")
 light(LF, "lodge_porch", 23.5, -1.6, 3.6, 800, 8)
+for yy in (-3.6, 0.4):                                                            # torch stands either side of the door
+    place(LF, "PF_PR_Furniture_TorchStand", 23.8, yy, 0.0, 180.0, col="box", gcol=gC)
+    light(LF, f"lodge_porch_torch_{'ab'[yy > 0]}", 23.8, yy, 1.9, 500, 7, color=(1.0, 0.55, 0.25))
 
 # =====================================================================================================================
 # 2. the secret stair: shaft foot (SB) -> long stone stair toward +Y -> the library balcony (F + LV[2]), lodge frame
@@ -270,10 +274,9 @@ for s in segs:
         clear.append((round(yy, 1), round(gz(O[0] + TX, O[1] + yy) - (P + top), 2)))
 landings = [s for s in segs if s[0] == "flat"]
 for i, s in enumerate(landings):
-    if i % 2 == 0 or i == len(landings) - 1:                                  # torches on every other landing
+    if i % 2 == 0 or i == len(landings) - 1:                                  # wall lamps on every other landing
         ym = (s[1] + s[2]) / 2
-        gT.box(xb - 0.05, xb, ym - 0.15, ym + 0.15, s[3] + 1.9, s[3] + 2.3, "LB_Metal", False)
-        gT.box(xb - 0.25, xb - 0.05, ym - 0.06, ym + 0.06, s[3] + 2.25, s[3] + 2.45, "GB_WinLit", False)
+        on_wall(LF, "PF_PR_Furniture_WallLamp", xb, ym, s[3] + 2.3 - 1.45, (1, 0))
         light(LF, f"stair_torch_{i}", xb - 0.4, ym, s[3] + 2.3, 700, 9, color=(1.0, 0.6, 0.3), shadows=i % 4 == 0)
 cover = min(c for yy, c in clear if yy > 10)            # past the hall wing the vault is under the landscape
 R(LF, "Secret stair, foot of the spiral", xa, xb, HR[3] + 0.35, HR[3] + 2.4, SB, 3.0, interior="lodge", sealed=True)

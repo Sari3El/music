@@ -9,7 +9,7 @@ from PIL import Image
 ROOT, PACKS = sys.argv[1], sys.argv[2]
 OUT = os.path.join(ROOT, "textures")
 LIB = glob.glob(os.path.join(PACKS, "denniswoo1993", "*"))[0]
-FC = glob.glob(os.path.join(PACKS, "HawtorStudio", "*"))[0]
+FC = glob.glob(os.path.join(PACKS, "HawtorStudio", "*Fantasy*"))[0]
 C2 = glob.glob(os.path.join(PACKS, "EldersCrawler", "*"))[0]
 DXN = {"C2_Wall", "C2_Roof", "C2_Floor"}                                 # DirectX normal maps: green flipped to OpenGL
 AO = {"C2_Wall": (C2, r"WallStoneMix101_OCC")}                           # ambient occlusion baked into the colour
@@ -80,5 +80,49 @@ for name, (d, n, r, col, phys, metal, emis, two, tile) in MATS.items():
         dst = os.path.join(OUT, f"T_{name}_R.jpg"); save(find(*r), dst, "L"); files["R"] = os.path.basename(dst)
     meta[name] = dict(color=list(col), phys=phys, metallic=metal, emissive=emis, two_sided=two, tile_m=tile, files=files,
                       translucent=name == "FC_Glass")
+    print(name, files)
+json.dump(meta, open(os.path.join(ROOT, "data", "materials_kit.json"), "w"), indent=1)
+
+# prop packs (props_defs.MATS): same naming; a material with an alpha mask keeps it in the alpha of a PNG _D (Unreal:
+# masked parent), an emissive map becomes _E
+import importlib.util
+_spec = importlib.util.spec_from_file_location("props_defs", os.path.join(os.path.dirname(os.path.abspath(__file__)), "props_defs.py"))
+PD = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(PD)
+for name, s in PD.MATS.items():
+    folder = glob.glob(os.path.join(PACKS, PD.PACKS[s["pack"]]["dir"]))[0]
+    files = {}
+    if s["D"]:
+        src = find(folder, s["D"])
+        im = Image.open(src); rgb = im.convert("RGB")
+        if max(rgb.size) > MAXRES:
+            rgb = rgb.resize((MAXRES, MAXRES), Image.LANCZOS)
+        if s.get("ao"):
+            ao = Image.open(find(folder, s["ao"])).convert("L").resize(rgb.size, Image.LANCZOS)
+            a_ = np.asarray(rgb).astype(np.float32) * (0.35 + 0.65 * np.asarray(ao, np.float32)[..., None] / 255.0)
+            rgb = Image.fromarray(np.clip(a_, 0, 255).astype(np.uint8))
+        if s.get("alpha"):
+            m = (im.convert("RGBA").getchannel("A") if s["alpha"] == "D" else Image.open(find(folder, s["alpha"])).convert("L"))
+            rgba = rgb.convert("RGBA"); rgba.putalpha(m.resize(rgb.size, Image.LANCZOS))
+            dst = os.path.join(OUT, f"T_{name}_D.png"); rgba.save(dst, optimize=True)
+        else:
+            dst = os.path.join(OUT, f"T_{name}_D.jpg"); rgb.save(dst, quality=90)
+        files["D"] = os.path.basename(dst)
+        if s.get("emit"):
+            e = rgb if s["emit"] == "D" else Image.open(find(folder, s["emit"])).convert("RGB").resize(rgb.size, Image.LANCZOS)
+            dst = os.path.join(OUT, f"T_{name}_E.jpg"); e.save(dst, quality=90); files["E"] = os.path.basename(dst)
+    if s.get("N"):
+        dst = os.path.join(OUT, f"T_{name}_N.png"); save(find(folder, s["N"]), dst, "RGB"); files["N"] = os.path.basename(dst)
+        if s.get("dxn"):
+            a_ = np.asarray(Image.open(dst).convert("RGB")).copy(); a_[..., 1] = 255 - a_[..., 1]
+            Image.fromarray(a_).save(dst, optimize=True)
+    if s.get("R"):
+        dst = os.path.join(OUT, f"T_{name}_R.jpg"); save(find(folder, s["R"]), dst, "L"); files["R"] = os.path.basename(dst)
+        if s.get("rough_from_spec"):
+            Image.fromarray(255 - np.asarray(Image.open(dst).convert("L"))).save(dst, quality=90)
+    elif s.get("rough") is not None:                                    # uniform roughness (polished bronze)
+        dst = os.path.join(OUT, f"T_{name}_R.jpg"); Image.new("L", (16, 16), int(s["rough"] * 255)).save(dst, quality=95)
+        files["R"] = os.path.basename(dst)
+    meta[name] = dict(color=list(s["col"]), phys=s["phys"], metallic=s.get("metal", 0.0), emissive=4.0 if s.get("emit") else 0,
+                      two_sided=bool(s.get("two")), tile_m=1.0, files=files, translucent=False, masked=bool(s.get("alpha")))
     print(name, files)
 json.dump(meta, open(os.path.join(ROOT, "data", "materials_kit.json"), "w"), indent=1)

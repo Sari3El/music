@@ -5,9 +5,9 @@
   450,
   660
  ],
- "hulls": 869,
- "nodes": 110201,
- "reached": 86196,
+ "hulls": 853,
+ "nodes": 110232,
+ "reached": 86198,
  "seeds": [
   [
    -1375.0,
@@ -36,10 +36,10 @@
   {
    "name": "Lodge great hall",
    "z": 81.08,
-   "floor_cells": 295,
-   "reached_cells": 206,
+   "floor_cells": 320,
+   "reached_cells": 214,
    "reached": true,
-   "share": 0.7
+   "share": 0.67
   },
   {
    "name": "Secret stair, foot of the spiral",

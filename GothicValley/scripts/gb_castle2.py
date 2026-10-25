@@ -3,6 +3,8 @@
 # point at z = 0) with its gate facing the Great Bridge; the crag top takes the relief of the hill the model was built on
 # (data/castle20_plate.npz); the Great Bridge is re-aimed at the new gate; the gate leaves of the model are cut out and
 # replaced by two Movable leaves; interiors are fitted into the model's own halls and towers. World metres, +X north.
+# Furniture and objects come only from the commissioner's packs (Classic Library kit, data/kit_library.json; prop packs,
+# data/props_library.json): what is built here is architecture and the pieces the game moves (gate, panels, doors).
 # Writes greybox/castle_groups.json + castle_meta.json (same names as the greybox castle, read by the other scripts),
 # data/placements_castle.json, greybox/nav_castle.json and the walk-test triangles of the shell (assets/castle20).
 import sys, os, json, math
@@ -70,14 +72,13 @@ draw = G("SM_GB_Castle_Drawbridge", "Environment/Castle")
 draw.ramp(B1, RIM - u * 0.5, 5.8, zb1, z1, 0.6, "GB_Wood")
 MOVABLE.append(dict(name="SM_GB_Castle_Drawbridge", pivot=[round(RIM[0] - u[0] * 0.5, 2), round(RIM[1] - u[1] * 0.5, 2), round(z1, 2)],
                     motion="hinge", note="hinge on the crag side; raised, it closes the castle"))
-# forecourt: torches on posts along the way from the bridge to the gate
+FORECOURT = []                                       # torch stands along the way from the bridge to the gate (placed below)
 for k, f in enumerate((0.25, 0.75)):
     for s in (-1, 1):
         p = RIM + (np.array(gate_w[:2]) - RIM) * f + np.array([s * 4.5, 0.0])
         zz = gz(*p)
-        app.box(p[0] - 0.15, p[0] + 0.15, p[1] - 0.15, p[1] + 0.15, zz - 0.5, zz + 2.6, "GB_Wood")
-        app.box(p[0] - 0.12, p[0] + 0.12, p[1] - 0.12, p[1] + 0.12, zz + 2.6, zz + 2.9, "GB_WinLit", False)
-        LIGHTS.append(dict(name=f"castle_forecourt_torch_{k}{'ab'[s > 0]}", xyz=[round(p[0], 2), round(p[1], 2), round(zz + 3.0, 2)],
+        FORECOURT.append((p[0], p[1], zz))
+        LIGHTS.append(dict(name=f"castle_forecourt_torch_{k}{'ab'[s > 0]}", xyz=[round(p[0], 2), round(p[1], 2), round(zz + 1.9, 2)],
                            lumens=900, radius=10, color=[1.0, 0.55, 0.25], shadows=False))
 
 # ---------------------------------------------------------------- gate leaves (the model's are cut out): open inward
@@ -120,13 +121,56 @@ def kit(key, x, y, z, yaw=0.0, s=1.0):
                    scale=[s, s, s] if np.isscalar(s) else list(s)))
 
 
-def kitbox(key, x, y, z, yaw=0.0, s=1.0):
-    """Kit piece + its bounding box as collision."""
-    kit(key, x, y, z, yaw, s)
-    k = KIT[key]; R_ = np.array([[math.cos(math.radians(yaw)), -math.sin(math.radians(yaw))], [math.sin(math.radians(yaw)), math.cos(math.radians(yaw))]])
+def boxcol(k, x, y, z, yaw, s):
+    """Bounding box of a placed piece (turned by yaw) as invisible collision."""
+    R_ = np.array([[math.cos(math.radians(yaw)), -math.sin(math.radians(yaw))], [math.sin(math.radians(yaw)), math.cos(math.radians(yaw))]])
     lo, hi = np.array(k["lo"]) * s, np.array(k["hi"]) * s
     pts = [tuple(R_ @ p + [x + T[0], y + T[1]]) for p in ([lo[0], lo[1]], [hi[0], lo[1]], [hi[0], hi[1]], [lo[0], hi[1]])]
     gF.poly_prism(pts, z + T[2] + lo[2], z + T[2] + hi[2], "GB_Stone", "only")
+
+
+def kitbox(key, x, y, z, yaw=0.0, s=1.0):
+    """Kit piece + its bounding box as collision."""
+    kit(key, x, y, z, yaw, s)
+    boxcol(KIT[key], x, y, z, yaw, s)
+
+
+def prop(key, x, y, z, yaw=0.0, s=1.0, col=True):
+    """Prop of the commissioner's packs (PF_PR_<key> in data/props_library.json, front = +X) at (x, y, z), turned by yaw;
+    col: its bounding box collides."""
+    k = PROPS["PF_PR_" + key]
+    PL.append(dict(mesh="SM_PR_" + key, folder=k["folder"], loc=[round(v, 3) for v in W(x, y, z)], yaw=round(float(yaw), 2), scale=[s, s, s]))
+    if col:
+        boxcol(k, x, y, z, yaw, s)
+
+
+def on_wall(key, x, y, z, wall, s=1.0, col=False):
+    """Prop against a wall, its back on the wall face at (x, y); wall = unit direction from the room to the wall."""
+    off = -PROPS["PF_PR_" + key]["lo"][0] * s + 0.01
+    prop(key, x - wall[0] * off, y - wall[1] * off, z, math.degrees(math.atan2(-wall[1], -wall[0])), s, col)
+
+
+def painting(n, x, y, zc, wall, s=1.3):
+    """Painting n of the paintings pack on a wall, its centre at height zc."""
+    on_wall(f"Painting_{n}", x, y, zc - PROPS[f"PF_PR_Painting_{n}"]["hi"][2] * s / 2, wall, s)
+
+
+def rug(key, x, y, z, yaw=0.0, s=1.0):
+    prop(key, x, y, z + 0.004, yaw, s, col=False)
+
+
+def runner(a, b, c, z, axis="x", key="RugDark_MedievalRugrunner", s=1.4):
+    """Runners laid end to end from a to b along `axis`, centred on c across."""
+    L = (PROPS["PF_PR_" + key]["hi"][1] - PROPS["PF_PR_" + key]["lo"][1]) * s
+    n = max(1, int(abs(b - a) // L)); a0 = min(a, b) + (abs(b - a) - n * L) / 2
+    for i in range(n):
+        u = a0 + L * (i + 0.5)
+        rug(key, *((u, c) if axis == "x" else (c, u)), z, 90.0 if axis == "x" else 0.0, s)
+
+
+def chandelier(x, y, ztop, s=1.4):
+    """Medieval Chandelier hung from ztop (its chain top)."""
+    prop("Chandelier", x, y, ztop, 0.0, s, col=False)
 
 
 def B(g, x0, x1, y0, y1, z0, z1, mat, col=True):
@@ -138,45 +182,26 @@ def door_cut(x0, x1, y0, y1, fz, h=2.9, what="door"):
     CUTS.append(dict(x=[x0, x1], y=[y0, y1], z=[fz + 0.04, fz + h], what=what))
 
 
-def table(x, y, fz, L_, axis, w=1.2, seats=True):
-    """Long trestle table with benches (oak), along `axis` ('x' or 'y')."""
-    if axis == "y":
-        B(gF, x - w / 2, x + w / 2, y - L_ / 2, y + L_ / 2, fz + 0.74, fz + 0.82, "LB_GlossyWood")
-        for yy in np.linspace(y - L_ / 2 + 0.4, y + L_ / 2 - 0.4, max(2, int(L_ / 3) + 1)):
-            B(gF, x - w / 2 + 0.1, x + w / 2 - 0.1, yy - 0.08, yy + 0.08, fz, fz + 0.74, "LB_GlossyWood", False)
-        if seats:
-            for s_ in (-1, 1):
-                B(gF, x + s_ * (w / 2 + 0.35) - 0.18, x + s_ * (w / 2 + 0.35) + 0.18, y - L_ / 2 + 0.2, y + L_ / 2 - 0.2, fz, fz + 0.45, "LB_GlossyWood")
-        B(gF, x - w / 2 - 0.6, x + w / 2 + 0.6, y - L_ / 2, y + L_ / 2, fz, fz + 0.82, "GB_Stone", "only")
-    else:
-        B(gF, x - L_ / 2, x + L_ / 2, y - w / 2, y + w / 2, fz + 0.74, fz + 0.82, "LB_GlossyWood")
-        for xx in np.linspace(x - L_ / 2 + 0.4, x + L_ / 2 - 0.4, max(2, int(L_ / 3) + 1)):
-            B(gF, xx - 0.08, xx + 0.08, y - w / 2 + 0.1, y + w / 2 - 0.1, fz, fz + 0.74, "LB_GlossyWood", False)
-        if seats:
-            for s_ in (-1, 1):
-                B(gF, x - L_ / 2 + 0.2, x + L_ / 2 - 0.2, y + s_ * (w / 2 + 0.35) - 0.18, y + s_ * (w / 2 + 0.35) + 0.18, fz, fz + 0.45, "LB_GlossyWood")
-        B(gF, x - L_ / 2, x + L_ / 2, y - w / 2 - 0.6, y + w / 2 + 0.6, fz, fz + 0.82, "GB_Stone", "only")
-
-
 def candelabrum(x, y, fz, h=1.9):
-    B(gF, x - 0.25, x + 0.25, y - 0.25, y + 0.25, fz, fz + 0.12, "LB_Metal")
-    B(gF, x - 0.05, x + 0.05, y - 0.05, y + 0.05, fz, fz + h, "LB_Metal", False)
-    for dx_, dy_ in ((0, 0), (0.22, 0), (-0.22, 0), (0, 0.22), (0, -0.22)):
-        B(gF, x + dx_ - 0.03, x + dx_ + 0.03, y + dy_ - 0.03, y + dy_ + 0.03, fz + h, fz + h + 0.22, "LB_CandleLight", False)
-    B(gF, x - 0.3, x + 0.3, y - 0.05, y + 0.05, fz + h - 0.05, fz + h, "LB_Metal", False)
-    B(gF, x - 0.05, x + 0.05, y - 0.3, y + 0.3, fz + h - 0.05, fz + h, "LB_Metal", False)
+    """Medieval Candelabra standing at (x, y), h tall."""
+    prop("Candelabra", x, y, fz, 0.0, h / 1.9)
 
 
 KIT = json.load(open(f"{ROOT}/data/kit_library.json"))
+PROPS = json.load(open(f"{ROOT}/data/props_library.json"))
+for (x_, y_, z_) in FORECOURT:
+    prop("Furniture_TorchStand", x_ - T[0], y_ - T[1], z_ - T[2], 0.0)
 RJ = json.load(open(f"{ROOT}/data/castle20_rooms.json"))
 
 # Great Hall: the model's own cross-shaped hall with its pillars (reached from the palace court); long tables down the nave
 gh = RJ["Great Hall"]; x0_, x1_, y0_, y1_ = gh["rect"]; fz = gh["floor"]
 B(gR, x0_ - 0.5, x1_ + 0.5, y0_, y1_, fz - 0.25, fz + 0.03, "C2_Floor")
-for xc in (x0_ + 2.0, x1_ - 2.0):
-    table(xc, (y0_ + y1_) / 2, fz + 0.03, (y1_ - y0_) - 5.0, "y")
+for xc in (x0_ + 2.0, x1_ - 2.0):                                          # tables with their chairs down the nave
+    for yt in np.linspace(y0_ + 4.0, y1_ - 4.0, 3):
+        kitbox("PF_LB_ReadingSet", xc, yt, fz + 0.03, 0.0)
+runner(y0_ + 1.0, y1_ - 1.0, (x0_ + x1_) / 2, fz + 0.03, "y")
 for yc in (y0_ + 4.5, (y0_ + y1_) / 2, y1_ - 4.5):
-    kit("PF_LB_Chandelier", (x0_ + x1_) / 2, yc, fz + 9.0, 0.0, 1.3)
+    chandelier((x0_ + x1_) / 2, yc, fz + 10.4, 1.4)
     light(f"castle_great_hall_{yc:.0f}", (x0_ + x1_) / 2, yc, fz + 4.0, 3500, 16, sh=yc == y0_ + 4.5)
 for yc in (y0_ + 1.2, y1_ - 1.2):
     for xc in (x0_ + 0.5, x1_ - 0.5):
@@ -242,72 +267,10 @@ def liner(x0, x1, y0, y1, fz, h, t=0.4, doors=(), mw="LB_Stone", mf="C2_Floor", 
             B(gR, a0, a1, b0, b1, fz + h, fz + h + ft, mc)
 
 
-def _rib(p, q, axis, c, zs, rise, w, d, mat, n):
-    """Pointed rib from p to q along `axis` ('x' or 'y') at the other coordinate c: continuous sloped segments."""
-    zf = lambda t: zs + rise * math.sin(math.pi * t) ** 0.7
-    for k in range(n):
-        t0, t1 = k / n, (k + 1) / n
-        u0, u1 = p + (q - p) * t0, p + (q - p) * t1
-        za, zb = zf(t0), zf(t1)
-        if axis == "y":
-            v = [(c - w / 2, u0, za - d / 2), (c - w / 2, u1, zb - d / 2), (c + w / 2, u1, zb - d / 2), (c + w / 2, u0, za - d / 2),
-                 (c - w / 2, u0, za + d / 2), (c - w / 2, u1, zb + d / 2), (c + w / 2, u1, zb + d / 2), (c + w / 2, u0, za + d / 2)]
-        else:
-            v = [(u0, c - w / 2, za - d / 2), (u1, c - w / 2, zb - d / 2), (u1, c + w / 2, zb - d / 2), (u0, c + w / 2, za - d / 2),
-                 (u0, c - w / 2, za + d / 2), (u1, c - w / 2, zb + d / 2), (u1, c + w / 2, zb + d / 2), (u0, c + w / 2, za + d / 2)]
-        f = [[0, 3, 2, 1], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]]
-        if (axis == "y") == (q > p):                                   # keep the faces outward
-            f = [r[::-1] for r in f]
-        gF.add([(a_ + T[0], b_ + T[1], c_ + T[2]) for a_, b_, c_ in v], f, mat, False)
-
-
-def arch_y(x, ya, yb, zs, rise, w=0.5, d=0.45, mat="C2_Wall", n=16):
-    """Pointed rib along y (between ya and yb), springing at zs, centred on x (visual only)."""
-    _rib(ya, yb, "y", x, zs, rise, w, d, mat, n)
-
-
-def arch_x(y, xa, xb, zs, rise, w=0.5, d=0.45, mat="C2_Wall", n=16):
-    _rib(xa, xb, "x", y, zs, rise, w, d, mat, n)
-
-
 def pier(x, y, fz, h, s=0.45, mat="C2_Wall"):
     B(gR, x - s, x + s, y - s, y + s, fz - 0.05, fz + h, mat)
     B(gF, x - s - 0.12, x + s + 0.12, y - s - 0.12, y + s + 0.12, fz, fz + 0.35, mat, False)            # base
     B(gF, x - s - 0.1, x + s + 0.1, y - s - 0.1, y + s + 0.1, fz + h - 0.9, fz + h - 0.6, mat, False)   # capital
-
-
-def barrel_up(x, y, fz, r=0.38, h=0.95, mat="LB_GlossyWood"):
-    gF.cyl(x + T[0], y + T[1], r, fz + T[2], fz + h + T[2], mat, 12, True)
-    for zb in (0.15, h - 0.2):
-        gF.cyl(x + T[0], y + T[1], r + 0.02, fz + zb + T[2], fz + zb + 0.06 + T[2], "LB_Metal", 12, False)
-
-
-def barrel_lying(x, y, z, axis, r=0.42, hw=0.55):
-    gF.wheel((x + T[0], y + T[1], z + T[2]), axis, r, hw, "LB_GlossyWood", 12, False)
-    for s in (-0.7, 0.7):
-        a = np.array(axis, float) / np.linalg.norm(axis)
-        gF.wheel((x + a[0] * hw * s + T[0], y + a[1] * hw * s + T[1], z + T[2]), axis, r + 0.02, 0.04, "LB_Metal", 12, False)
-
-
-def hearth(x0, x1, y0, y1, fz, hood_z, top, side):
-    """Fireplace against a wall: hearth stone, glowing fire, hood and chimney breast to `top`. side: wall at 'n','s','e','w'."""
-    B(gR, x0, x1, y0, y1, fz - 0.05, fz + 0.3, "LB_Stone")
-    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    B(gF, cx - 0.5, cx + 0.5, cy - 0.35, cy + 0.35, fz + 0.3, fz + 0.55, "GB_WinLit", False)
-    e = 0.35
-    hx0, hx1, hy0, hy1 = x0 - e, x1 + e, y0 - e, y1 + e
-    if side == "n": hx1 = x1
-    if side == "s": hx0 = x0
-    if side == "e": hy1 = y1
-    if side == "w": hy0 = y0
-    B(gF, hx0, hx1, hy0, hy1, fz + hood_z, fz + hood_z + 0.9, "LB_Stone", False)
-    bx0, bx1, by0, by1 = {"n": (x1 - 0.6, x1, y0, y1), "s": (x0, x0 + 0.6, y0, y1), "e": (x0, x1, y1 - 0.6, y1), "w": (x0, x1, y0, y0 + 0.6)}[side]
-    B(gF, bx0, bx1, by0, by1, fz + hood_z + 0.9, top, "LB_Stone", False)
-    for s_ in (0, 1):                                                                                    # jambs
-        if side in "ns":
-            B(gR, x0, x1, (y0 if s_ == 0 else y1 - 0.3), (y0 + 0.3 if s_ == 0 else y1), fz, fz + hood_z, "LB_Stone")
-        else:
-            B(gR, (x0 if s_ == 0 else x1 - 0.3), (x0 + 0.3 if s_ == 0 else x1), y0, y1, fz, fz + hood_z, "LB_Stone")
 
 
 def bars_y(x0, x1, y, fz, h, gaps=(), mat="GB_Metal"):
@@ -327,38 +290,25 @@ def rect_minus_1d(r, gaps):
     return out
 
 
-def sarcophagus(x, y, fz, axis="x", L=2.3, Wd=1.0, lord=False):
-    hx, hy = (L / 2, Wd / 2) if axis == "x" else (Wd / 2, L / 2)
+def sarcophagus(x, y, fz, axis="x", lord=False):
+    """Coffin of the coffin pack along `axis`; the lord's lies on a two-step stone plinth."""
     if lord:
+        hx, hy = (1.25, 0.45) if axis == "x" else (0.45, 1.25)
         B(gR, x - hx - 0.8, x + hx + 0.8, y - hy - 0.6, y + hy + 0.6, fz - 0.05, fz + 0.25, "LB_Stone")
         B(gR, x - hx - 0.4, x + hx + 0.4, y - hy - 0.3, y + hy + 0.3, fz + 0.25, fz + 0.5, "LB_Stone")
         fz = fz + 0.5
-    B(gF, x - hx, x + hx, y - hy, y + hy, fz, fz + 0.8, "LB_Stone")
-    B(gF, x - hx - 0.08, x + hx + 0.08, y - hy - 0.08, y + hy + 0.08, fz + 0.8, fz + 0.95, "C2_Wall")
-    B(gF, x - hx + 0.15, x + hx - 0.15, y - hy + 0.15, y + hy - 0.15, fz + 0.95, fz + 1.12, "C2_Wall")
-    B(gF, x - hx - 0.1, x + hx + 0.1, y - hy - 0.1, y + hy + 0.1, fz, fz + 1.12, "GB_Stone", "only")
+    prop("Coffin", x, y, fz, 0.0 if axis == "x" else 90.0, 1.2 if lord else 1.0)
 
 
-def chair(x, y, fz, face, high=False):
-    """Chair facing `face` (unit xy): seat, back on the far side."""
-    B(gF, x - 0.25, x + 0.25, y - 0.25, y + 0.25, fz + 0.42, fz + 0.5, "LB_GlossyWood", False)
-    for sx_ in (-0.2, 0.2):
-        for sy_ in (-0.2, 0.2):
-            B(gF, x + sx_ - 0.03, x + sx_ + 0.03, y + sy_ - 0.03, y + sy_ + 0.03, fz, fz + 0.42, "LB_GlossyWood", False)
-    bx, by = x - face[0] * 0.23, y - face[1] * 0.23
-    hh = 1.6 if high else 1.05
-    if abs(face[0]) > 0.5:
-        B(gF, bx - 0.03, bx + 0.03, y - 0.25, y + 0.25, fz + 0.5, fz + hh, "LB_GlossyWood", False)
-    else:
-        B(gF, x - 0.25, x + 0.25, by - 0.03, by + 0.03, fz + 0.5, fz + hh, "LB_GlossyWood", False)
-    B(gF, x - 0.27, x + 0.27, y - 0.27, y + 0.27, fz, fz + 0.5, "GB_Stone", "only")
+def chair(x, y, fz, face):
+    """Chair of the furniture pack facing `face` (unit xy)."""
+    prop("Furniture_Chair", x, y, fz, math.degrees(math.atan2(face[1], face[0])))
 
 
 def torch(name, x, y, z, wall, lm=600, rad=8):
-    """Wall torch: iron bracket + flame; wall = direction from the torch to the wall (unit xy)."""
-    B(gF, x - 0.05, x + 0.05, y - 0.05, y + 0.05, z - 0.45, z, "LB_Metal", False)
-    B(gF, x + wall[0] * 0.15 - 0.04, x + wall[0] * 0.15 + 0.04, y + wall[1] * 0.15 - 0.04, y + wall[1] * 0.15 + 0.04, z - 0.3, z - 0.22, "LB_Metal", False)
-    B(gF, x - 0.07, x + 0.07, y - 0.07, y + 0.07, z, z + 0.22, "GB_WinLit", False)
+    """Wall lamp of the furniture pack (its flame card is left out: the light is the flame) about the height z;
+    (x, y) 0.12 m off the wall, wall = direction from the lamp to the wall (unit xy)."""
+    on_wall("Furniture_WallLamp", x + wall[0] * 0.12, y + wall[1] * 0.12, z - 1.45, wall)
     light(name, x - wall[0] * 0.3, y - wall[1] * 0.3, z + 0.3, lm, rad, col=(1.0, 0.55, 0.25))
 
 
@@ -421,25 +371,19 @@ for xp in np.arange(TT0 + 4.0, TX1 - 1.0, 6.0):                                 
 yc = (TY0 + TY1) / 2
 for k_, (dx_, hh) in enumerate(((5.0, 0.2), (4.2, 0.4), (3.4, 0.6))):
     B(gR, TT0, TT0 + dx_, yc - 4.0 + 0.4 * k_, yc + 4.0 - 0.4 * k_, TFZ, TFZ + hh, "LB_Stone")
-tz_ = DAIS
-B(gF, TT0 + 1.0, TT0 + 2.0, yc - 0.8, yc + 0.8, tz_, tz_ + 0.5, "LB_GlossyWood")                 # seat
-B(gF, TT0 + 0.6, TT0 + 1.0, yc - 0.85, yc + 0.85, tz_, tz_ + 3.4, "LB_GlossyWood")               # tall back
-B(gF, TT0 + 0.62, TT0 + 0.98, yc - 0.55, yc + 0.55, tz_ + 3.4, tz_ + 3.9, "GB_Detail")            # crest
-B(gF, TT0 + 1.05, TT0 + 1.95, yc - 0.7, yc + 0.7, tz_ + 0.5, tz_ + 0.62, "GB_Detail")             # cushion
-for s_ in (-1, 1):
-    B(gF, TT0 + 1.0, TT0 + 2.05, yc + s_ * 0.8 - 0.12, yc + s_ * 0.8 + 0.12, tz_, tz_ + 1.05, "LB_GlossyWood")
-B(gF, TT0 + 0.6, TT0 + 2.05, yc - 0.95, yc + 0.95, tz_, tz_ + 1.2, "GB_Stone", "only")
-B(gF, TT0 + 5.0, (DX0 + DX1) / 2 + 1.0, yc - 1.4, yc + 1.4, TFZ + 0.03, TFZ + 0.05, "GB_Detail", False)   # carpet
-B(gF, (DX0 + DX1) / 2 - 1.4, (DX0 + DX1) / 2 + 1.4, yc - 1.4, TY0 + 0.1, TFZ + 0.03, TFZ + 0.05, "GB_Detail", False)
-for xp in np.arange(TT0 + 7.0, TX1 - 2.0, 6.0):
-    for yp, s_ in ((TY0 + 0.05, 1), (TY1 - 0.05, -1)):
-        y_a, y_b = sorted((yp, yp + s_ * 0.06))
-        B(gF, xp - 0.9, xp + 0.9, y_a, y_b, TFZ + 3.0, TFZ + 8.5, "GB_Detail", False)                # banners
+prop("Throne", TT0 + 1.55, yc, DAIS, 0.0)                     # Dark Gothic throne (without its base and floor candles)
+runner(TT0 + 5.2, (DX0 + DX1) / 2 + 1.0, yc, TFZ + 0.03, "x")                                    # carpet from the door
+runner(TY0 + 0.2, yc - 1.0, (DX0 + DX1) / 2, TFZ + 0.03, "y")
+rug("RugDark_MedievalRugcircular", TT0 + 6.6, yc, TFZ + 0.03, 0.0, 1.6)
+for k_, xp in enumerate(np.arange(TT0 + 7.0, TX1 - 1.0, 6.0)):                                  # paintings between pilasters
+    if abs(xp - (DX0 + DX1) / 2) > 2.5:
+        painting((17, 9, 21, 22)[k_ % 4], xp, TY0, TFZ + 4.2, (0, -1), 1.4)
+    painting((14, 18, 16, 10)[k_ % 4], xp, TY1, TFZ + 4.2, (0, 1), 1.4)
 for xp in np.arange(TT0 + 7.0, TX1 - 1.0, 6.0):
     for yp in (yc - 2.6, yc + 2.6):
         candelabrum(xp, yp, TFZ + 0.03)
 for xp in (TT0 + 8.0, (TT0 + TX1) / 2 + 3.0):
-    kit("PF_LB_Chandelier", xp, yc, TFZ + TH - 0.5, 0.0, 1.5)
+    chandelier(xp, yc, TFZ + TH - 0.5, 1.5)
     light(f"castle_throne_{xp:.0f}", xp, yc, TFZ + 5.0, 4000, 18, sh=True)
 light("castle_throne_dais", TT0 + 4.0, yc, TFZ + 3.0, 1500, 9, col=(1.0, 0.45, 0.3))
 room("Throne Room", TT0, TX1, TY0, TY1, TFZ + 0.03, TH, note="liner room in the main block of the palace")
@@ -489,14 +433,11 @@ def library_recipe(cx, cy, r, fz):
 
 
 def apartments_recipe(cx, cy, r, fz):
-    bx, by = cx - 2.0, cy + 1.5                                          # four-poster bed
-    B(gF, bx - 1.1, bx + 1.1, by - 1.2, by + 1.2, fz, fz + 0.6, "LB_GlossyWood")
-    B(gF, bx - 1.05, bx + 1.05, by - 1.15, by + 1.15, fz + 0.6, fz + 0.8, "GB_Detail")
-    for sx_ in (-1, 1):
-        for sy_ in (-1, 1):
-            B(gF, bx + sx_ * 1.05 - 0.07, bx + sx_ * 1.05 + 0.07, by + sy_ * 1.15 - 0.07, by + sy_ * 1.15 + 0.07, fz, fz + 2.6, "LB_GlossyWood", False)
-    B(gF, bx - 1.15, bx + 1.15, by - 1.25, by + 1.25, fz + 2.6, fz + 2.75, "GB_Detail", False)
-    B(gF, bx - 1.1, bx + 1.1, by - 1.2, by + 1.2, fz, fz + 0.8, "GB_Stone", "only")
+    bx, by = cx - 2.0, cy + 1.5                                          # the lord sleeps in a coffin, on a dark rug
+    rug("RugDark_MedievalRuglarge", bx, by, fz, 0.0, 1.3)
+    prop("Coffin", bx, by, fz, 90.0, 1.1)
+    prop("Furniture_Chest", bx + 2.0, by, fz, 180.0)
+    rug("RugDark_MedievalRugcircular", cx + 1.5, cy - 2.5, fz, 0.0, 1.4)
     kitbox("PF_LB_Bookcase", cx + r - 1.3, cy - 1.0, fz, 0.0)
     kitbox("PF_LB_ReadingSet", cx + 1.5, cy - 2.5, fz, 90.0)
     candelabrum(cx - 3.5, cy - 2.0, fz)
@@ -507,6 +448,7 @@ def study_recipe(x0, x1, y0, y1, fz):
     kitbox("PF_LB_Bookcase", x1 - 0.05, (y0 + y1) / 2, fz, 0.0)
     kitbox("PF_LB_ReadingSet", (x0 + x1) / 2 - 0.5, (y0 + y1) / 2, fz, 0.0)
     candelabrum(x0 + 0.8, y0 + 0.8, fz)
+    rug("RugDark_MedievalRug", (x0 + x1) / 2 - 0.5, y0 + 1.2, fz, 90.0, 1.0)
     light("castle_study", (x0 + x1) / 2, (y0 + y1) / 2, fz + 2.8, 1500, 9, sh=True)
 
 
@@ -527,23 +469,14 @@ CHF = 21.4
 CX0, CX1, CY0, CY1 = -38.0, -22.6, 45.8, 60.8
 B(gR, -26.4, -22.5, 52.0, 56.4, CHF - 0.1, CHF + 0.2, "LB_Stone")                                 # sanctuary step
 B(gR, -25.6, -22.5, 52.6, 55.8, CHF + 0.2, CHF + 0.45, "LB_Stone")
-B(gF, -24.9, -23.9, 53.2, 55.2, CHF + 0.45, CHF + 1.45, "LB_Stone")                               # altar
-B(gF, -24.95, -23.85, 53.1, 55.3, CHF + 1.45, CHF + 1.5, "GB_Detail", False)                       # altar cloth
-B(gF, -22.75, -22.45, 52.4, 56.0, CHF + 0.45, CHF + 5.6, "LB_GlossyWood", False)                   # reredos
-B(gF, -22.8, -22.75, 53.0, 55.4, CHF + 1.2, CHF + 5.0, "GB_Detail", False)
-B(gF, -22.95, -22.8, 54.12, 54.28, CHF + 1.8, CHF + 4.6, "LB_Metal", False)                         # cross
-B(gF, -22.95, -22.8, 53.55, 54.85, CHF + 3.7, CHF + 3.86, "LB_Metal", False)
-B(gF, -24.95, -22.45, 52.4, 56.0, CHF + 0.45, CHF + 1.5, "GB_Stone", "only")
+prop("ChurchCross", -23.65, 54.2, CHF + 0.45, 180.0)                                             # wrought-iron crucifix
 for yp in (52.9, 55.5):
-    candelabrum(-25.2, yp, CHF + 0.45, 1.6)
-for xr in (-37.3, -36.1, -34.0, -32.8, -31.6, -30.4, -28.2, -27.0):                                # pews (avoid the columns)
-    for ya, yb in ((52.0, 53.7), (54.7, 56.4)):
-        B(gF, xr - 0.2, xr + 0.2, ya, yb, CHF + 0.42, CHF + 0.48, "LB_GlossyWood", False)
-        B(gF, xr - 0.24, xr - 0.18, ya, yb, CHF + 0.48, CHF + 1.0, "LB_GlossyWood", False)
-        for yy in (ya + 0.05, yb - 0.11):
-            B(gF, xr - 0.2, xr + 0.2, yy, yy + 0.06, CHF, CHF + 0.42, "LB_GlossyWood", False)
-        B(gF, xr - 0.25, xr + 0.22, ya, yb, CHF, CHF + 1.0, "GB_Stone", "only")
-kit("PF_LB_Chandelier", -31.5, 54.2, CHF + 9.0, 0.0, 1.2)
+    candelabrum(-24.9, yp, CHF + 0.45, 1.6)
+for xr in (-37.3, -36.1, -34.0, -32.8, -31.6, -30.4, -28.2, -27.0):                                # benches (avoid the columns)
+    for yb in (52.85, 55.75):
+        prop("Furniture_Settle", xr, yb, CHF, 0.0, 0.9)
+runner(-37.8, -26.6, 54.3, CHF, "x", s=1.2)
+chandelier(-31.5, 54.2, CHF + 8.6, 1.3)
 light("castle_chapel_altar", -25.5, 54.2, CHF + 2.6, 1500, 9, sh=True)
 light("castle_chapel_nave", -31.5, 54.2, CHF + 5.0, 1800, 14)
 light("castle_chapel_moon", -31.0, 47.5, CHF + 4.0, 700, 12, col=(0.55, 0.62, 0.9))
@@ -556,20 +489,16 @@ liner(WX0, WX1, WY0, WY1, WFZ, WH, doors=[("n", -14.6, -12.9, 2.9)], mw="LB_Sand
 pb = passage("War Room", (WX1 - 0.2, -13.75), (WX1 + 1.8, -13.75), 0, WFZ, apron=False)
 zc_ = ground_rel(pb[1] + 1.9, -13.75)
 gR.stairs((pb[1] + 1.9 + T[0], -13.75 + T[1]), (-1, 0), 1.7, zc_ + T[2], WFZ + 0.03 + T[2], "LB_Stone", step_h=0.19)
-B(gF, 38.9, 41.9, -16.3, -11.3, WFZ + 0.03, WFZ + 0.82, "LB_GlossyWood", False)                     # map table
-B(gF, 39.0, 41.8, -16.2, -11.4, WFZ + 0.82, WFZ + 0.86, "GB_Plaster", False)                   # map
-B(gF, 38.8, 42.0, -16.4, -11.2, WFZ + 0.03, WFZ + 0.86, "GB_Stone", "only")
-for yy in (-15.4, -13.8, -12.2):
-    chair(38.4, yy, WFZ + 0.03, (1, 0)); chair(42.4, yy, WFZ + 0.03, (-1, 0))
-chair(40.4, -17.0, WFZ + 0.03, (0, 1), high=True)
-for xx in np.arange(37.6, 43.4, 0.55):                                                             # spear rack, south wall
-    B(gF, xx - 0.03, xx + 0.03, WY0 + 0.15, WY0 + 0.21, WFZ + 0.1, WFZ + 2.6, "LB_Metal", False)
-B(gF, 37.4, 43.4, WY0 + 0.05, WY0 + 0.3, WFZ + 1.2, WFZ + 1.3, "LB_GlossyWood", False)
-for xx in (38.4, 42.4):
-    B(gF, xx - 0.8, xx + 0.8, WY1 - 0.07, WY1 - 0.01, WFZ + 2.0, WFZ + 5.0, "GB_Detail", False)  # banners, north wall
+rug("RugDark_MedievalRuglarge", 40.4, -13.8, WFZ + 0.03, 0.0, 1.7)                                # council table on a rug
+kitbox("PF_LB_ReadingSet", 40.4, -13.8, WFZ + 0.03, 0.0)
+chair(40.4, -17.0, WFZ + 0.03, (0, 1))
+for xx, n_ in ((38.4, 5), (42.4, 4)):
+    painting(n_, xx, WY1, WFZ + 2.8, (0, 1), 1.3)
+painting(12, 40.4, WY0, WFZ + 2.8, (0, -1), 1.4)
+prop("Furniture_Chest", 39.6, -20.3, WFZ + 0.03, 90.0)
 kitbox("PF_LB_Bookcase", WX0 + 0.05, -9.1, WFZ + 0.03, 180.0)
 candelabrum(WX1 - 0.6, WY0 + 0.8, WFZ + 0.03); candelabrum(WX0 + 0.6, WY0 + 0.8, WFZ + 0.03)
-kit("PF_LB_Chandelier", 40.4, -13.8, WFZ + WH - 0.05, 0.0, 0.8)
+chandelier(40.4, -13.8, WFZ + WH - 0.05, 1.1)
 light("castle_war_room", 40.4, -13.8, WFZ + 3.6, 2200, 11, sh=True)
 room("War Room", WX0, WX1, WY0, WY1, WFZ + 0.03, WH, note="liner in the east-wing building, door from the east court")
 
@@ -623,73 +552,69 @@ PXS = [BX0 + 6.0 * k for k in range(1, 6)]; PYS = [BY0 + 14.0 / 3, BY0 + 28.0 / 
 for px in PXS:
     for py in PYS:
         pier(px, py, U1F, BH - 0.03, s=0.55)
-    arch_y(px, BY0, PYS[0] - 0.55, U1F + 7.0, 4.3, w=0.6, d=0.55); arch_y(px, PYS[0] + 0.55, PYS[1] - 0.55, U1F + 7.0, 4.3, w=0.6, d=0.55)
-    arch_y(px, PYS[1] + 0.55, BY1, U1F + 7.0, 4.3, w=0.6, d=0.55)
-for py in PYS:
-    xs_ = [BX0] + PXS + [BX1]
-    for a_, b_ in zip(xs_[:-1], xs_[1:]):
-        arch_x(py, a_ + (0.55 if a_ > BX0 else 0), b_ - (0.55 if b_ < BX1 else 0), U1F + 7.0, 4.3, w=0.6, d=0.55)
-table((BX0 + BX1) / 2 + 1.0, (BY0 + BY1) / 2, U1F, 28.0, "x", w=1.5)
-chair(BX0 + 1.4, (BY0 + BY1) / 2, U1F, (1, 0), high=True)
+for xx in np.arange(BX0 + 3.0, BX1 - 2.0, 6.0):                                                    # tables between the piers
+    kitbox("PF_LB_ReadingSet", xx, (BY0 + BY1) / 2, U1F, 90.0)
+chair(BX0 + 0.6, (BY0 + BY1) / 2, U1F, (1, 0))
 for k_, xx in enumerate(PXS[:-1]):
-    kit("PF_LB_Chandelier", xx + 3.0, (BY0 + BY1) / 2, U1F + BH - 0.05, 0.0, 1.3)
+    chandelier(xx + 3.0, (BY0 + BY1) / 2, U1F + BH - 0.05, 1.6)
     light(f"castle_banquet_{k_}", xx + 3.0, (BY0 + BY1) / 2, U1F + 5.5, 6000, 18, sh=k_ in (1, 3))
-hearth(BX1 - 1.0, BX1, 39.5, 44.5, U1F, 2.8, U1F + BH, "n")                                         # great fireplace, east end
-light("castle_banquet_fire", BX1 - 2.0, 42.0, U1F + 1.2, 4000, 14, col=(1.0, 0.45, 0.2), sh=True)
+light("castle_banquet_east", BX1 - 2.0, 42.0, U1F + 2.2, 3000, 14, col=(1.0, 0.55, 0.3), sh=True)
 for xx in PXS:
     for yy in (BY0 + 0.8, BY1 - 0.8):
         candelabrum(xx, yy, U1F)
-for xx in np.arange(BX0 + 3.0, BX1 - 2.0, 6.0):
-    B(gF, xx - 0.8, xx + 0.8, BY0 + 0.01, BY0 + 0.07, U1F + 4.0, U1F + 7.5, "GB_Detail", False)     # banners
-    B(gF, xx - 0.8, xx + 0.8, BY1 - 0.07, BY1 - 0.01, U1F + 4.0, U1F + 7.5, "GB_Detail", False)
+for k_, xx in enumerate(np.arange(BX0 + 3.0, BX1 - 2.0, 6.0)):                                     # paintings on the long walls
+    painting((1, 11, 13, 6, 8, 20)[k_ % 6], xx, BY0, U1F + 4.2, (0, -1), 1.6)
+    if not 3.4 < xx < 7.1:                                                                         # (not over the door)
+        painting((19, 2, 23, 3, 7, 15)[k_ % 6], xx, BY1, U1F + 4.2, (0, 1), 1.6)
 room("Banquet Hall", BX0, BX1, BY0, BY1, U1F, BH - 0.03, sealed=True, note="vaulted hall of the undercroft (L-1), under the Great Hall")
 
 KX0, KX1, KY0, KY1, KH = BX0, BX0 + 16.0, BY1 + 0.4, BY1 + 12.4, 8.0                               # Kitchen
 liner(KX0, KX1, KY0, KY1, U1F - 0.03, KH, doors=[("n", 52.0, 54.0, 2.8)], mw="C2_Wall", mc="C2_Wall", thick=dict(w=0.0))
-hearth(KX0, KX0 + 1.6, 53.0, 58.0, U1F, 2.6, U1F + KH, "s")                                        # hearth on the west wall
-gF.cyl(KX0 + 0.8 + T[0], 55.5 + T[1], 0.5, U1F + 0.3 + T[2], U1F + 1.05 + T[2], "LB_Metal", 12, False)        # cauldron
-B(gF, KX0 + 0.1, KX0 + 1.5, 55.45, 55.55, U1F + 1.4, U1F + 1.46, "LB_Metal", False)                          # spit
-table(KX0 + 6.5, 55.4, U1F, 5.0, "y", w=1.2, seats=False)
-table(KX0 + 11.0, 55.4, U1F, 5.0, "y", w=1.2, seats=False)
-for xx in np.arange(KX0 + 3.0, KX1 - 0.8, 1.6):                                                    # shelves on the north side
-    for zz in (1.0, 1.7, 2.4):
-        B(gF, xx - 0.75, xx + 0.75, KY1 - 0.45, KY1 - 0.02, U1F + zz, U1F + zz + 0.05, "LB_GlossyWood", False)
-    B(gF, xx - 0.8, xx + 0.8, KY1 - 0.5, KY1, U1F, U1F + 2.5, "GB_Stone", "only")
-for xx, yy in ((KX1 - 0.6, KY0 + 0.6), (KX1 - 1.4, KY0 + 0.6), (KX1 - 0.6, KY0 + 1.4)):
-    barrel_up(xx, yy, U1F)
-light("castle_kitchen_fire", KX0 + 2.4, 55.5, U1F + 1.3, 4000, 12, col=(1.0, 0.45, 0.2), sh=True)
+prop("Furniture_Oven", KX0 + 0.52, 55.5, U1F, 0.0)                                               # bread oven, south wall
+for yy in (58.6, 59.1):
+    on_wall("Furniture_Axe" if yy < 59 else "Furniture_Shovel", KX0, yy, U1F, (-1, 0))
+for xx in (KX0 + 6.5, KX0 + 11.0):                                                                 # work tables (two end to end)
+    for yy in (54.9, 55.97):
+        prop("Furniture_Table", xx, yy, U1F, 0.0)
+    prop("Furniture_Stool", xx - 0.8, 55.4, U1F, 0.0)
+prop("Furniture_ClothTable", KX0 + 8.8, 59.2, U1F, 90.0)
+for xx in (KX0 + 4.0, KX0 + 13.5):                                                                 # east wall: cupboards, shelves
+    on_wall("Furniture_Cupboard", xx, KY1, U1F, (0, 1), col=True)
+for xx in (KX0 + 6.4, KX0 + 11.1):
+    on_wall("Furniture_WallShelf", xx, KY1, U1F, (0, 1))
+on_wall("Furniture_PlateRack", KX0 + 8.8, KY1, U1F + 0.4, (0, 1))
+for k_, xx in enumerate(np.arange(KX0 + 3.0, KX0 + 12.0, 1.4)):                                   # west wall: low racks
+    on_wall(("Furniture_LowShelfA", "Furniture_LowShelfB", "Furniture_LowShelfC")[k_ % 3], xx, KY0, U1F, (0, -1), col=True)
+for xx, yy, key in ((KX1 - 0.6, KY0 + 0.6, "Furniture_Tub"), (KX1 - 1.2, KY0 + 0.5, "Furniture_Churn"), (KX1 - 0.6, KY0 + 1.3, "Furniture_Tub"),
+                    (KX0 + 1.2, KY0 + 0.6, "Furniture_Churn")):
+    prop(key, xx, yy, U1F, 0.0)
+light("castle_kitchen_fire", KX0 + 1.2, 55.5, U1F + 0.7, 3000, 10, col=(1.0, 0.45, 0.2), sh=True)
 light("castle_kitchen", KX0 + 9.0, 55.4, U1F + 5.0, 4000, 14)
 room("Kitchen", KX0, KX1, KY0, KY1, U1F, KH - 0.03, sealed=True)
 
 LX0, LX1, LY0, LY1, LH = KX1 + 0.4, KX1 + 18.4, KY0, KY0 + 10.0, 5.0                              # Larder
 liner(LX0, LX1, LY0, LY1, U1F - 0.03, LH, doors=[("n", 52.0, 54.0, 2.8)], mw="C2_Wall", mc="C2_Wall", thick=dict(w=0.0, s=0.0))
-for xx in np.arange(LX0 + 1.0, LX1 - 0.5, 1.7):                                                    # shelves on both long walls
-    for yy in (LY0 + 0.25, LY1 - 0.25):
-        for zz in (0.6, 1.3, 2.0):
-            B(gF, xx - 0.8, xx + 0.8, yy - 0.25, yy + 0.25, U1F + zz, U1F + zz + 0.05, "LB_GlossyWood", False)
-        B(gF, xx - 0.85, xx + 0.85, yy - 0.3, yy + 0.3, U1F, U1F + 2.1, "GB_Stone", "only")
-for yy in np.arange(LY0 + 2.2, LY1 - 1.5, 1.6):                                                    # hams and game on beams
-    B(gF, LX0 + 1.5, LX1 - 1.5, yy - 0.03, yy + 0.03, U1F + 3.9, U1F + 3.96, "LB_GlossyWood", False)
-    for xx in np.arange(LX0 + 2.0, LX1 - 1.5, 1.2):
-        B(gF, xx - 0.12, xx + 0.12, yy - 0.15, yy + 0.15, U1F + 3.1, U1F + 3.9, "GB_Detail", False)
-for xx, yy in (((LX0 + LX1) / 2, LY0 + 1.2), ((LX0 + LX1) / 2 + 0.8, LY0 + 1.2)):
-    barrel_up(xx, yy, U1F)
+for k_, xx in enumerate(np.arange(LX0 + 1.0, LX1 - 3.0, 1.4)):                                   # racks along both long walls
+    for yy, wl in ((LY0, (0, -1)), (LY1, (0, 1))):
+        on_wall(("Furniture_LowShelfA", "Furniture_LowShelfB", "Furniture_LowShelfC")[(k_ + (yy > LY0)) % 3], xx, yy, U1F, wl, col=True)
+for yy, wl in ((LY0, (0, -1)), (LY1, (0, 1))):
+    on_wall("Furniture_Cupboard", LX1 - 1.4, yy, U1F, wl, col=True)
+prop("Furniture_Table", (LX0 + LX1) / 2, (LY0 + LY1) / 2, U1F, 90.0)
+for xx, yy, key in (((LX0 + LX1) / 2 - 1.5, LY0 + 1.6, "Furniture_Chest"), ((LX0 + LX1) / 2 + 1.5, LY1 - 1.6, "Furniture_Chest"),
+                    (LX0 + 1.0, LY0 + 1.5, "Furniture_Tub"), (LX0 + 1.0, LY1 - 1.5, "Furniture_Churn")):
+    prop(key, xx, yy, U1F, 90.0 if yy < (LY0 + LY1) / 2 else -90.0)
 light("castle_larder", (LX0 + LX1) / 2, (LY0 + LY1) / 2, U1F + 3.6, 2400, 12)
 room("Larder", LX0, LX1, LY0, LY1, U1F, LH - 0.03, sealed=True)
 
 CX0_, CX1_, CY0_, CY1_, CH = LX1 + 0.4, LX1 + 10.4, LY0, LY1, 5.0                                 # Wine and blood cellar
 liner(CX0_, CX1_, CY0_, CY1_, U1F - 0.03, CH, mw="C2_Wall", mc="C2_Wall", thick=dict(s=0.0, w=0.0))
 B(gR, BX1 + 0.4, CX1_ + 0.4, CY0_ - 0.4, CY0_, U1F - 0.43, U1F + CH + 0.4, "C2_Wall")
-for xx in np.arange(CX0_ + 0.8, CX1_ - 0.5, 1.15):                                                 # casks along the north wall
-    for zz in (0.55, 1.45):
-        barrel_lying(xx, CY1_ - 0.6, U1F + zz, (0, 1))
-    B(gF, xx - 0.5, xx + 0.5, CY1_ - 1.2, CY1_ - 0.05, U1F, U1F + 0.15, "LB_GlossyWood", False)
-B(gF, CX0_ + 0.3, CX1_ - 0.2, CY1_ - 1.2, CY1_, U1F, U1F + 1.9, "GB_Stone", "only")
-for k_, xx in enumerate((CX0_ + 2.4, CX1_ - 2.4)):                                                 # vats of blood
-    gF.cyl(xx + T[0], CY0_ + 3.0 + T[1], 1.15, U1F + T[2], U1F + 2.1 + T[2], "LB_GlossyWood", 16, True)
-    for zb in (0.3, 1.0, 1.75):
-        gF.cyl(xx + T[0], CY0_ + 3.0 + T[1], 1.18, U1F + zb + T[2], U1F + zb + 0.08 + T[2], "LB_Metal", 16, False)
-    gF.cyl(xx + T[0], CY0_ + 3.0 + T[1], 1.08, U1F + 2.04 + T[2], U1F + 2.08 + T[2], "GB_Detail", 16, False)
+for k_, xx in enumerate(np.arange(CX0_ + 0.8, CX1_ - 0.5, 0.75)):                                  # tubs and churns, east wall
+    prop("Furniture_Tub" if k_ % 3 else "Furniture_Churn", xx, CY1_ - 0.4, U1F, 0.0)
+for k_, xx in enumerate((CX0_ + 1.5, CX0_ + 3.0, CX1_ - 3.0, CX1_ - 1.5)):                        # racks on the west side
+    on_wall(("Furniture_LowShelfA", "Furniture_LowShelfB")[k_ % 2], xx, CY0_, U1F, (0, -1), col=True)
+prop("Furniture_Table", (CX0_ + CX1_) / 2, (CY0_ + CY1_) / 2, U1F, 0.0)
+prop("Furniture_Stool", (CX0_ + CX1_) / 2 + 0.7, (CY0_ + CY1_) / 2, U1F, 0.0)
 light("castle_cellar", (CX0_ + CX1_) / 2, (CY0_ + CY1_) / 2, U1F + 3.6, 2600, 12, col=(1.0, 0.45, 0.32))
 room("Wine and blood cellar", CX0_, CX1_, CY0_, CY1_, U1F, CH - 0.03, sealed=True)
 CUTS.append(dict(x=[BX0 - 0.5, CX1_ + 0.5], y=[BY0 - 0.5, KY1 + 0.5], z=[U1F - 0.6, U1F + BH + 0.5], what="undercroft L-1 (model foundations)"))
@@ -718,12 +643,12 @@ liner(RX0, RX1, RY0, RY1, U2F - 0.03, RH, doors=[("n", DGY0, DGY1, 3.0), ("s", 5
 for px in (-10.0, -3.0, 4.0):
     for py in (53.2, 58.0):
         pier(px, py, U2F, RH - 0.03)
-    arch_y(px, RY0, 52.75, U2F + 3.4, 2.3); arch_y(px, 53.65, 57.55, U2F + 3.4, 2.3); arch_y(px, 58.45, RY1, U2F + 3.4, 2.3)
-sarcophagus(-6.5, 55.6, U2F, "x", 2.4, 1.1, lord=True)
+sarcophagus(-6.5, 55.6, U2F, "x", lord=True)
 for xx in (-12.5, -6.5, 0.5):
     sarcophagus(xx, RY0 + 0.6, U2F, "x")
 for xx in (-6.5, 0.5):
     sarcophagus(xx, RY1 - 0.6, U2F, "x")
+rug("RugDark_MedievalRugrunner", -6.5, 52.4, U2F + 0.03, 90.0, 1.3)
 for xx in (-8.6, -4.4):
     for yy in (54.1, 57.1):
         candelabrum(xx, yy, U2F, 1.5)
@@ -755,31 +680,27 @@ for side, (ya, yb) in (("s", (DGY0 - 3.4, DGY0)), ("n", (DGY1, DGY1 + 3.4))):
         B(gR, xa - 0.4, xb + 0.4, min(y0c, y1c) - 0.4, max(y0c, y1c) + 0.4, U2F + 3.2, U2F + 3.6, "C2_Wall")
         xm = (xa + xb) / 2
         bars_y(xa, xb, (DGY0 - 0.2 if side == "s" else DGY1 + 0.2), U2F, 2.6, gaps=[(xm - 0.45, xm + 0.45)])
-        yw = y0c + 0.05 if side == "s" else y1c - 0.09
-        B(gF, xm - 0.8, xm - 0.76, yw, yw + 0.04, U2F + 0.8, U2F + 1.8, "LB_Metal", False)             # chains, straw
-        B(gF, xm + 0.76, xm + 0.8, yw, yw + 0.04, U2F + 0.8, U2F + 1.8, "LB_Metal", False)
-        B(gF, xa + 0.2, xb - 0.2, (y0c + 0.2 if side == "s" else y1c - 1.6), (y0c + 1.6 if side == "s" else y1c - 0.2), U2F, U2F + 0.08, "GB_Wood", False)
 B(gR, GX0, GX1, DGY0 - 7.0, DGY0, U2F - 0.4, U2F, "C2_Floor"); B(gR, GX0, GX1, DGY1, DGY1 + 7.0, U2F - 0.4, U2F, "C2_Floor")
 for (ya, yb) in ((DGY0 - 7.4, DGY0 - 7.0), (DGY1 + 7.0, DGY1 + 7.4)):
     B(gR, GX0 - 0.4, GX1 + 0.4, ya, yb, U2F - 0.4, U2F + DH, "C2_Wall")
 for xw in (GX0 - 0.4, GX1):
     B(gR, xw, xw + 0.4, DGY0 - 7.0, DGY0, U2F - 0.4, U2F + DH, "C2_Wall"); B(gR, xw, xw + 0.4, DGY1, DGY1 + 7.0, U2F - 0.4, U2F + DH, "C2_Wall")
 B(gR, GX0 - 0.4, GX1 + 0.4, DGY0 - 7.4, DGY0, U2F + DH, U2F + DH + 0.4, "C2_Wall"); B(gR, GX0 - 0.4, GX1 + 0.4, DGY1, DGY1 + 7.4, U2F + DH, U2F + DH + 0.4, "C2_Wall")
-table((GX0 + GX1) / 2, DGY0 - 4.0, U2F, 3.0, "x", w=1.0)                                           # guard room
-B(gF, GX1 - 0.3, GX1 - 0.05, DGY0 - 6.5, DGY0 - 2.5, U2F + 0.3, U2F + 2.4, "LB_GlossyWood", False)  # weapon rack
-table((GX0 + GX1) / 2, DGY1 + 4.5, U2F, 2.4, "x", w=0.9, seats=False)                               # interrogation: the rack
-for xx in (GX0 + 1.5, GX1 - 1.5):
-    gF.cyl(xx + T[0], DGY1 + 6.2 + T[1], 0.35, U2F + T[2], U2F + 0.9 + T[2], "LB_Metal", 10, True)   # braziers
-    B(gF, xx - 0.25, xx + 0.25, DGY1 + 5.95, DGY1 + 6.45, U2F + 0.9, U2F + 1.05, "GB_WinLit", False)
+gm = (GX0 + GX1) / 2                                                                               # guard room
+for xx in (gm - 0.54, gm + 0.54):
+    prop("Furniture_Table", xx, DGY0 - 4.0, U2F, 90.0)
+for yy in (DGY0 - 4.75, DGY0 - 3.25):
+    prop("Furniture_Bench", gm, yy, U2F, 90.0)
+prop("Furniture_Chest", GX1 - 0.6, DGY0 - 6.2, U2F, 180.0)
+for xx in (gm - 0.54, gm + 0.54):                                                                  # interrogation room
+    prop("Furniture_Table", xx, DGY1 + 4.5, U2F, 90.0)
+chair(gm + 1.6, DGY1 + 4.5, U2F, (-1, 0))
 PX0 = GX1 + 0.4                                                                                    # pit cell (oubliette) at the end
-B(gF, PX0 + 0.6, PX0 + 2.6, DGY0 + 0.1, DGY1 - 0.1, U2F, U2F + 0.04, "GB_Metal", False)
+prop("Furniture_Trapdoor", PX0 + 1.6, (DGY0 + DGY1) / 2, U2F, 0.0, col=False)
 light("castle_guard_room", (GX0 + GX1) / 2, DGY0 - 3.5, U2F + 3.2, 900, 9)
 light("castle_interrogation", (GX0 + GX1) / 2, DGY1 + 5.5, U2F + 1.6, 900, 8, col=(1.0, 0.4, 0.2))
-for k_, xx in enumerate(np.arange(DX0_ + 4.0, DX1_, 9.0)):                                         # lanterns on chains
-    ym = (DGY0 + DGY1) / 2
-    B(gF, xx - 0.02, xx + 0.02, ym - 0.02, ym + 0.02, U2F + 3.3, U2F + DH, "LB_Metal", False)
-    B(gF, xx - 0.13, xx + 0.13, ym - 0.13, ym + 0.13, U2F + 3.0, U2F + 3.3, "GB_WinLit", False)
-    light(f"castle_dungeon_{k_}", xx, ym, U2F + 2.8, 600, 9, col=(1.0, 0.55, 0.25))
+for k_, (xx, yw) in enumerate(((DX0_ + 1.7, DGY1), (DX0_ + 22.0, DGY0), (DX0_ + 31.5, DGY1), (DX0_ + 38.0, DGY0))):
+    torch(f"castle_dungeon_{k_}", xx, yw + (0.12 if yw == DGY0 else -0.12), U2F + 2.3, (0, -1 if yw == DGY0 else 1), 700, 10)   # walls between the cells
 room("Dungeon", DX0_, DX1_, DGY0, DGY1, U2F, DH - 0.03, sealed=True, note="40 m corridor, 10 cells 3 x 3, guard room, interrogation room, pit cell")
 room("Guard room", GX0, GX1, DGY0 - 7.0, DGY0, U2F, DH - 0.03, sealed=True)
 room("Interrogation room", GX0, GX1, DGY1, DGY1 + 7.0, U2F, DH - 0.03, sealed=True)

@@ -115,13 +115,14 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
     w("\n## Phase 4 (en cours) : maison des chasseurs et bibliothèque souterraine\n")
     w(f"- Maison de la famille de chasseurs (modèle « Fantasy Castle ») : le point le plus éloigné du château des vampires, "
       f"à [{LM['lodge']['origin'][0]:.0f}, {LM['lodge']['origin'][1]:.0f}], sur une plate-forme à +{LM['lodge']['origin'][2]:.0f} m. La porte "
-      f"regarde la vallée (nord). Le modèle n'a pas d'intérieur : l'aile basse est aménagée en grande salle (cheminée, table, "
-      f"lustres, coffres, râteliers) et en cabinet de travail (bibliothèque, table de lecture). Ses matériaux sont rendus double face "
+      f"regarde la vallée (nord). Le modèle n'a pas d'intérieur : l'aile basse est aménagée en grande salle (table, lustres, "
+      f"crucifix de bronze entre deux candélabres, coffres et bancs sous les fenêtres, peau d'ours, tapis clairs, outils de chasse "
+      f"près de la porte) et en cabinet de travail (bibliothèque, table de lecture, tapis, tableau). Ses matériaux sont rendus double face "
       f"pour que les murs se voient de l'intérieur ; la porte et les panneaux sombres derrière les fenêtres de cette aile sont retirés.")
     w("- Passage secret : dans le cabinet, une armoire coulisse de 2 m (maillage *Movable*, tags `ScriptedDoor`, `Slide`) et "
       "découvre une porte cachée. Derrière, un escalier en colimaçon en fer (kit de la bibliothèque) descend de 4,8 m. "
       f"Ensuite, un long escalier de pierre voûté de {ss['length_m']:.0f} m ({ss['risers']} marches de {ss['riser_m'] * 100:.1f} cm sur "
-      f"{ss['tread_m'] * 100:.0f} cm, {ss['flights']} volées, paliers éclairés de torches) descend de {ss['drop_m']:.1f} m jusqu'au balcon de la "
+      f"{ss['tread_m'] * 100:.0f} cm, {ss['flights']} volées, paliers éclairés de lampes murales) descend de {ss['drop_m']:.1f} m jusqu'au balcon de la "
       f"bibliothèque. Il reste au moins {ss['rock_cover_min_m']:.1f} m de roche au-dessus de sa voûte.")
     w(f"- Bibliothèque souterraine : nef gothique de {lb['size'][0]:.0f} × {lb['size'][1]:.0f} m, sol à +{lb['levels'][0]:.0f} m, voûtes "
       f"à +{lb['vault_apex']:.1f} m, avec au moins {lb['rock_cover_min_m']:.0f} m de roche au-dessus. Elle est construite avec les pièces du kit "
@@ -130,9 +131,9 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
       "galeries de bois courent dans chaque bas-côté (+5,1 et +10,2 m), reliées par quatre escaliers en colimaçon. Il y a des "
       "rayonnages muraux à trois niveaux, des épis de rayonnages doubles, des tables de lecture et de grands lustres, et une "
       "grande verrière gothique au fond.")
-    w(f"- {PLc} pièces de kit placées (`Data/placements_lodge.json`), {len(LM['lights'])} lumières ponctuelles (`Data/lights.json`). "
+    w(f"- {PLc} pièces de kit et props placés (`Data/placements_lodge.json`), {len(LM['lights'])} lumières ponctuelles (`Data/lights.json`). "
       "Les collisions sont des enveloppes `UCX_` invisibles portées par les maillages `SM_GB_Lodge_*` et `SM_GB_Library_*` ; "
-      "les pièces du kit n'en ont pas. Les colimaçons ont une rampe hélicoïdale de collision.")
+      "les pièces du kit n'en ont pas (le mobilier a sa boîte englobante en collision). Les colimaçons ont une rampe hélicoïdale de collision.")
     if NL:
         ok = sum(r["reached"] for r in NL["rooms"])
         pr = sum(v["reached"] for v in NL["probes"].values())
@@ -158,7 +159,7 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
       "les bâtiments par leurs toits (`c20_buildings.py`). Le modèle a peu de vrais intérieurs : les salles sont placées dans ses "
       "propres salles et tours quand elles existent, dans des salles doublées (murs, sol et plafond propres) à l'intérieur de ses "
       "bâtiments, ou sous le terrain.")
-    w(f"- Grand Pont réorienté vers la nouvelle porte ({br['length_m']} m, cap {br['heading_deg']}°), pont-levis *Movable*, torches "
+    w(f"- Grand Pont réorienté vers la nouvelle porte ({br['length_m']} m, cap {br['heading_deg']}°), pont-levis *Movable*, porte-torches "
       "dans l'avant-cour. Les vantaux de la porte du modèle sont découpés et remplacés par deux vantaux *Movable* ouverts.")
     w(f"- Découpes du modèle ({len(md['cuts'])} boîtes : vantaux, portes percées, puits, encombrement des salles doublées, fondations "
       "sous les sous-sols). Les triangles traversés sont recoupés exactement par les plans de chaque boîte (`c2cuts.py`) ; le même calcul "
@@ -175,30 +176,54 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
           f"{r['doc'] if isinstance(r['doc'], str) else ' × '.join(str(v) for v in r['doc'])} | {'oui' if r['ok'] else '**non**'} |")
     w("\nLes salles creusées sous le terrain ont les dimensions du cahier. Celles logées dans le modèle prennent la taille que "
       "ses murs permettent (tours rondes, corps de bâtiment de 11 m de large).\n")
-    w(f"- Grande Salle : la salle à colonnes du palais, tables de banquet et lustres. Salle du trône derrière elle (porte dans l'axe "
-      "de la nef) : estrade à trois degrés, trône, tapis, bannières, pilastres, plafond à caissons. Chapelle : la salle à six colonnes "
-      "ouverte sur la cour du palais par une arcade (autel, retable, croix, bancs dans la nef). Salle de guerre : table des cartes, "
-      "râtelier de lances, bannières, perron depuis la cour est. Bibliothèque et appartements dans deux tours rondes, cabinet du seigneur "
-      "dans l'aile est.")
+    w(f"- Grande Salle : la salle à colonnes du palais, deux rangées de tables avec leurs chaises, tapis, lustres et candélabres. Salle du "
+      "trône derrière elle (porte dans l'axe de la nef) : estrade à trois degrés, trône gothique, tapis sombres depuis la porte, "
+      "tableaux entre les pilastres, candélabres, lustres, plafond à caissons. Chapelle : la salle à six colonnes ouverte sur la cour du "
+      "palais par une arcade (grand crucifix de fer forgé, candélabres, bancs, tapis dans l'allée). Salle de guerre : table du conseil "
+      "sur un tapis, tableaux, coffre, perron depuis la cour est. Bibliothèque et appartements (le seigneur y dort dans un cercueil) dans "
+      "deux tours rondes, cabinet du seigneur dans l'aile est.")
     w(f"- Escalier dérobé : un panneau de pierre (*Movable*) s'ouvre dans le mur derrière l'estrade du trône, à côté du trône. "
       f"Derrière, un colimaçon de 113 marches descend dans un puits aux murs de 1,6 m jusqu'à la crypte (L-2, "
       f"{md['origin'][2] + 22.6 - uc['L2_floor']:.1f} m sous l'estrade).")
     w(f"- Sous-sols : deux niveaux sous le terrain du palais (L-1 à +{uc['L1_floor']:.1f} m, L-2 à +{uc['L2_floor']:.1f} m), sans trou dans "
       "le paysage : seuls les deux puits le coupent, et leurs murs de 1,6 m en masquent le bord. Il reste au moins 1,4 m de roche au-dessus "
       "des salles. Un grand escalier rampe sur rampe (six volées, mur d'échiffre central, balustrade) descend du bas-côté ouest de la "
-      "Grande Salle. L-1 : salle de banquet voûtée (deux rangées de piliers, ogives, table de 28 m, grande cheminée), cuisine (âtre, "
-      "chaudron, tables de travail, étagères), garde-manger (étagères, salaisons), cave à vin et à sang (tonneaux, cuves). L-2 : crypte "
-      "voûtée (sarcophage du seigneur sur son socle, six tombeaux de famille), grille de fer vers les cachots (couloir de 40 m, "
-      "10 cellules de 3 × 3 m à barreaux, salle des gardes, salle d'interrogatoire, oubliette).")
+      "Grande Salle. L-1 : salle de banquet voûtée (deux rangées de piliers, six tables avec leurs chaises, tableaux sur les longs "
+      "murs, lustres, candélabres), cuisine (four à pain et son bois, tables de travail, buffets, étagères, baquets), garde-manger "
+      "(étagères basses, buffets, coffres), cave (baquets, barattes, étagères). L-2 : crypte voûtée (cercueil du seigneur sur son socle, "
+      "cinq cercueils de famille), grille de fer vers les cachots (couloir de 40 m, 10 cellules de 3 × 3 m à barreaux, salle des gardes, "
+      "salle d'interrogatoire, trappe de l'oubliette).")
     w(f"- Tunnel secret : {CM['tunnel_length_m']} m depuis la crypte, en trois branches dans le rocher (deux longs escaliers puis une galerie "
       f"de niveau), toujours sous le paysage, jusqu'à une porte cachée (*Movable*) au pied de la falaise sud, en "
       f"[{CM['tunnel_exit'][0]:.0f}, {CM['tunnel_exit'][1]:.0f}, {CM['tunnel_exit'][2]:.0f}].")
-    w(f"- {len(PLC) - 1} pièces de kit et le maillage du château (`SM_C2_Castle`, collision complexe) dans `Data/placements_castle.json`, "
+    w(f"- {len(PLC) - 1} pièces de kit et props, et le maillage du château (`SM_C2_Castle`, collision complexe) dans `Data/placements_castle.json`, "
       f"{len(CM['lights'])} lumières ponctuelles.")
     ok_r = sum(r["reached"] for r in NC["rooms"]); pr = sum(v["reached"] for v in NC["probes"].values())
     w(f"- Test de marche (`nav_castle.json`, depuis la barbacane) : {ok_r}/{len(NC['rooms'])} salles atteintes, "
       f"{pr}/{len(NC['probes'])} points de contrôle (pont, avant-cour, cours, estrade, chambre secrète, pied du colimaçon, grand "
       f"escalier, coudes du tunnel, devant la porte cachée), {len(NC['leaks'])} chute vers les vides.")
+    PJ = json.load(open(f"{ROOT}/data/props_library.json"))
+    nprops = sum(1 for f_ in ("placements_castle.json", "placements_lodge.json") for q in json.load(open(f"{ROOT}/data/{f_}")) if q["mesh"].startswith("SM_PR_"))
+    w("\n## Props des packs (phase 4)\n")
+    w("- Règle : le mobilier et les objets viennent uniquement des packs fournis. Les props que j'avais fabriqués (trône, tables, "
+      "bancs, chaises, candélabres, bannières, tapis, autel, croix, bancs d'église, sarcophages, tonneaux, cuves, étagères, lit, "
+      "râteliers, cheminées, chaudron, chaînes, paille, braseros, lanternes, torches, nervures de voûte) sont retirés du château et de la "
+      "maison des chasseurs. Restent fabriqués : l'architecture et les pièces que le jeu fait bouger (pont-levis, vantaux, panneau "
+      "secret, grille de la crypte, porte du tunnel, armoire secrète, portes de la maison, barreaux des cellules). Les lumières restent.")
+    w(f"- {len(PJ)} props préparés (`prep_props.py`, `props_defs.py`) : mis à l'échelle en mètres, face avant vers +X, origine au sol. "
+      f"{nprops} sont placés dans le château et la maison des chasseurs (`Content/Props/...`, matériaux `MI_PR_*`).")
+    w("- Trône « Dark Gothic Medieval Throne » : le socle et les bougies posées par terre devant, à gauche, sont retirés. Tapis sombres "
+      "à motifs rouges (« Medieval Rugs Kit ») dans le château, tapis clairs (« Medieval Rug Pack ») dans la maison des chasseurs. "
+      "Le grand crucifix de fer forgé (« Church Cross ») est dans la chapelle du château, le Christ de bronze (« The Crucifixion ») "
+      "sur le mur de la grande salle des chasseurs. Les lustres et les candélabres des deux packs remplacent ceux que j'avais "
+      "fabriqués ; les tableaux (« Free Medieval Paintings Pack ») sont sur les murs des salles doublées.")
+    w("- « Medieval Furniture Pack » : ses 32 objets sont séparés et nommés (four, lit, banc à dossier, buffet, coffre, tables, chaise, "
+      "tabouret, étagères, outils, lampe murale, porte-torche, trappe, peau d'ours...). Treize de ses fichiers de textures sont arrivés abîmés "
+      "(blocs de 8 × 8 pixels mélangés) : peau d'ours, tonneaux, draps, nappe, rideaux, tableaux et leurs cadres, lampes, flammes. "
+      "Ces matériaux sont pour l'instant d'une couleur unie ; les flammes plates sont retirées (la lumière fait la flamme), ainsi que "
+      "le porte-serviettes et les deux tableaux de ce pack.")
+    w("- « Medieval Mini Scene » ne contient que des textures, sans fichier 3D : rien n'est placé.")
+    w("- « Medieval Wooden Shack 04 » est préparé et exporté (`Content/Environment/Shack`) ; il sera placé avec la ville.")
     w("\n## Modèles tiers (phase 4)\n")
     w("Le commanditaire déclare détenir les licences et les autorisations écrites des créateurs pour ces modèles, utilisés "
       "dans la carte. Les crédits et attributions sont conservés ici :\n")
@@ -208,7 +233,16 @@ if os.path.exists(f"{ROOT}/greybox/lodge_meta.json"):
               "« Castle 2.0 » par **EldersCrawler** : château des vampires (modèle complet et textures ; matériaux reconstitués par face).",
               "« Medieval Houses Package » par **Daniel** : maisons de la ville (à venir).",
               "« Medieval Church » par **Daniel** : vitraux et textures de l'église (à venir). Attribution requise.",
-              "« Medieval castle » par **Misha Kiselev** : maison du noble (à venir)."]:
+              "« Medieval castle » par **Misha Kiselev** : maison du noble (à venir).",
+              "« Dark Gothic Medieval Throne » et « Medieval Rugs Kit » par **ClockworkCreations** : trône et tapis sombres du château.",
+              "« Medieval Rug Pack - Game Ready » par **Hawtor Studio** : tapis clairs de la maison des chasseurs.",
+              "« Medieval Furniture Pack » par **Anton Chemezov** : mobilier simple (cuisine, réserves, cachots, maison).",
+              "« Medieval Chandelier » par **Kevin Popescu** ; « Medieval Candelabra » par **NeverSleep**.",
+              "« Free Medieval Paintings Pack » par **yowi** : tableaux.",
+              "« The Crucifixion » par **Privalov** ; « Church Cross » par **nedo** : crucifix.",
+              "« Medieval Coffin » par **BGavi** : cercueils de la crypte et des appartements.",
+              "« Medieval Wooden Shack 04 » par **ANRUVAL3DMODELS** : cabane de bois (ville, à venir).",
+              "« Medieval Mini Scene » par **GetDeadEntertainment** : textures seules (pas de modèle 3D reçu)."]:
         w(f"- {c}")
     w("\nTrois cartes de couleur du pack « Fantasy Castle » (enduit, toit, bois) étaient vides, et le kit de bibliothèque "
       "n'avait pas de couleur pour la pierre, le fer et les vitraux. Ces cartes ont été recalculées à partir des cartes de relief "

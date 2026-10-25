@@ -5,9 +5,9 @@
   638,
   2000
  ],
- "hulls": 651,
- "nodes": 387766,
- "reached": 214093,
+ "hulls": 640,
+ "nodes": 387764,
+ "reached": 213995,
  "seeds": [
   [
    742.0,
@@ -20,18 +20,18 @@
   {
    "name": "Great Hall",
    "z": 217.43,
-   "floor_cells": 994,
-   "reached_cells": 559,
+   "floor_cells": 972,
+   "reached_cells": 236,
    "reached": true,
-   "share": 0.56
+   "share": 0.24
   },
   {
    "name": "Throne Room",
    "z": 217.43,
-   "floor_cells": 957,
-   "reached_cells": 944,
+   "floor_cells": 837,
+   "reached_cells": 824,
    "reached": true,
-   "share": 0.99
+   "share": 0.98
   },
   {
    "name": "Secret stair chamber",
@@ -52,34 +52,34 @@
   {
    "name": "Lord's Apartments",
    "z": 210.43,
-   "floor_cells": 319,
-   "reached_cells": 223,
+   "floor_cells": 303,
+   "reached_cells": 211,
    "reached": true,
    "share": 0.7
   },
   {
    "name": "Lord's Study",
    "z": 205.35,
-   "floor_cells": 99,
-   "reached_cells": 45,
+   "floor_cells": 95,
+   "reached_cells": 42,
    "reached": true,
-   "share": 0.45
+   "share": 0.44
   },
   {
    "name": "Chapel",
    "z": 216.8,
-   "floor_cells": 693,
-   "reached_cells": 484,
+   "floor_cells": 665,
+   "reached_cells": 467,
    "reached": true,
    "share": 0.7
   },
   {
    "name": "War Room",
    "z": 209.93,
-   "floor_cells": 298,
-   "reached_cells": 1,
+   "floor_cells": 290,
+   "reached_cells": 224,
    "reached": true,
-   "share": 0.0
+   "share": 0.77
   },
   {
    "name": "Grand stair (L-1 landing)",
@@ -100,34 +100,34 @@
   {
    "name": "Banquet Hall",
    "z": 202.43,
-   "floor_cells": 1748,
-   "reached_cells": 1400,
+   "floor_cells": 1696,
+   "reached_cells": 1280,
    "reached": true,
-   "share": 0.8
+   "share": 0.75
   },
   {
    "name": "Kitchen",
    "z": 202.43,
-   "floor_cells": 642,
-   "reached_cells": 466,
+   "floor_cells": 673,
+   "reached_cells": 637,
    "reached": true,
-   "share": 0.73
+   "share": 0.95
   },
   {
    "name": "Larder",
    "z": 202.43,
-   "floor_cells": 562,
-   "reached_cells": 555,
+   "floor_cells": 630,
+   "reached_cells": 594,
    "reached": true,
-   "share": 0.99
+   "share": 0.94
   },
   {
    "name": "Wine and blood cellar",
    "z": 202.43,
-   "floor_cells": 233,
-   "reached_cells": 233,
+   "floor_cells": 324,
+   "reached_cells": 316,
    "reached": true,
-   "share": 1.0
+   "share": 0.98
   },
   {
    "name": "Dungeon stair corridor",
@@ -140,10 +140,10 @@
   {
    "name": "Crypt",
    "z": 195.43,
-   "floor_cells": 1058,
-   "reached_cells": 1006,
+   "floor_cells": 1082,
+   "reached_cells": 994,
    "reached": true,
-   "share": 0.95
+   "share": 0.92
   },
   {
    "name": "Dungeon",
@@ -157,17 +157,17 @@
    "name": "Guard room",
    "z": 195.43,
    "floor_cells": 233,
-   "reached_cells": 191,
+   "reached_cells": 197,
    "reached": true,
-   "share": 0.82
+   "share": 0.85
   },
   {
    "name": "Interrogation room",
    "z": 195.43,
    "floor_cells": 212,
-   "reached_cells": 162,
+   "reached_cells": 198,
    "reached": true,
-   "share": 0.76
+   "share": 0.93
   },
   {
    "name": "Secret tunnel (head)",

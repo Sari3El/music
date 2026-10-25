@@ -60,6 +60,66 @@
 ]
 },
 {
+"mesh": "SM_PR_RugLight_Rug8",
+"folder": "Props/RugsLight",
+"loc": [
+-1390.6,
+-704.05,
+81.084
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Painting_3",
+"folder": "Props/Paintings",
+"loc": [
+-1388.056,
+-702.5,
+82.83
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Candelabra",
+"folder": "Props/Candelabra",
+"loc": [
+-1392.8,
+-706.0,
+81.08
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_RugLight_Rug8",
+"folder": "Props/RugsLight",
+"loc": [
+-1382.8,
+-701.4,
+81.084
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
 "mesh": "SM_LB_ReadingSet",
 "folder": "Props/LibraryKit",
 "loc": [
@@ -75,12 +135,42 @@
 ]
 },
 {
-"mesh": "SM_LB_Chandelier",
-"folder": "Props/LibraryKit",
+"mesh": "SM_PR_Chandelier",
+"folder": "Props/Chandelier",
 "loc": [
 -1383.4,
 -701.4,
 87.85
+],
+"yaw": 0.0,
+"scale": [
+1.2,
+1.2,
+1.2
+]
+},
+{
+"mesh": "SM_PR_Chandelier",
+"folder": "Props/Chandelier",
+"loc": [
+-1381.3,
+-701.4,
+87.85
+],
+"yaw": 0.0,
+"scale": [
+1.2,
+1.2,
+1.2
+]
+},
+{
+"mesh": "SM_PR_Crucifixion",
+"folder": "Props/Crucifixion",
+"loc": [
+-1387.4,
+-699.0,
+82.63
 ],
 "yaw": 0.0,
 "scale": [
@@ -90,14 +180,359 @@
 ]
 },
 {
-"mesh": "SM_LB_Chandelier",
-"folder": "Props/LibraryKit",
+"mesh": "SM_PR_Candelabra",
+"folder": "Props/Candelabra",
 "loc": [
--1381.3,
--701.4,
-87.85
+-1387.0,
+-700.3,
+81.08
 ],
 "yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Candelabra",
+"folder": "Props/Candelabra",
+"loc": [
+-1387.0,
+-697.7,
+81.08
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_RugLight_Rug9",
+"folder": "Props/RugsLight",
+"loc": [
+-1386.0,
+-699.0,
+81.084
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Painting_13",
+"folder": "Props/Paintings",
+"loc": [
+-1387.544,
+-702.6,
+82.83
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Chest",
+"folder": "Props/Furniture",
+"loc": [
+-1385.3,
+-706.422,
+81.08
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Chest",
+"folder": "Props/Furniture",
+"loc": [
+-1385.3,
+-696.378,
+81.08
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Settle",
+"folder": "Props/Furniture",
+"loc": [
+-1383.25,
+-706.244,
+81.08
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Settle",
+"folder": "Props/Furniture",
+"loc": [
+-1383.25,
+-696.556,
+81.08
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Chest",
+"folder": "Props/Furniture",
+"loc": [
+-1381.2,
+-706.422,
+81.08
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Chest",
+"folder": "Props/Furniture",
+"loc": [
+-1381.2,
+-696.378,
+81.08
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Settle",
+"folder": "Props/Furniture",
+"loc": [
+-1379.15,
+-706.244,
+81.08
+],
+"yaw": 90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Settle",
+"folder": "Props/Furniture",
+"loc": [
+-1379.15,
+-696.556,
+81.08
+],
+"yaw": -90.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_BearSkin",
+"folder": "Props/Furniture",
+"loc": [
+-1379.6,
+-698.4,
+81.08
+],
+"yaw": 0.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Axe",
+"folder": "Props/Furniture",
+"loc": [
+-1377.753,
+-705.6,
+81.08
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Mallet",
+"folder": "Props/Furniture",
+"loc": [
+-1377.778,
+-705.2,
+81.08
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_Hoe",
+"folder": "Props/Furniture",
+"loc": [
+-1377.796,
+-697.4,
+81.08
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_TorchStand",
+"folder": "Props/Furniture",
+"loc": [
+-1376.2,
+-703.6,
+81.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_TorchStand",
+"folder": "Props/Furniture",
+"loc": [
+-1376.2,
+-699.6,
+81.0
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_WallLamp",
+"folder": "Props/Furniture",
+"loc": [
+-1390.378,
+-695.4,
+77.13
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_WallLamp",
+"folder": "Props/Furniture",
+"loc": [
+-1390.378,
+-681.66,
+71.711
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_WallLamp",
+"folder": "Props/Furniture",
+"loc": [
+-1390.378,
+-668.22,
+66.292
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_WallLamp",
+"folder": "Props/Furniture",
+"loc": [
+-1390.378,
+-654.78,
+60.872
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_WallLamp",
+"folder": "Props/Furniture",
+"loc": [
+-1390.378,
+-641.34,
+55.453
+],
+"yaw": 180.0,
+"scale": [
+1.0,
+1.0,
+1.0
+]
+},
+{
+"mesh": "SM_PR_Furniture_WallLamp",
+"folder": "Props/Furniture",
+"loc": [
+-1390.378,
+-629.32,
+51.05
+],
+"yaw": 180.0,
 "scale": [
 1.0,
 1.0,

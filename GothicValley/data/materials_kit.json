@@ -345,5 +345,426 @@
    "R": "T_FC_StoneTiles_R.jpg"
   },
   "translucent": false
+ },
+ "PR_Throne": {
+  "color": [
+   0.25,
+   0.24,
+   0.24
+  ],
+  "phys": "Stone",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_Throne_D.jpg",
+   "N": "T_PR_Throne_N.png",
+   "R": "T_PR_Throne_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_ThroneDecor": {
+  "color": [
+   0.6,
+   0.5,
+   0.4
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 4.0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_ThroneDecor_D.png",
+   "E": "T_PR_ThroneDecor_E.jpg",
+   "N": "T_PR_ThroneDecor_N.png"
+  },
+  "translucent": false,
+  "masked": true
+ },
+ "PR_RugDark": {
+  "color": [
+   0.35,
+   0.15,
+   0.12
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_RugDark_D.jpg",
+   "N": "T_PR_RugDark_N.png",
+   "R": "T_PR_RugDark_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_RugLight": {
+  "color": [
+   0.6,
+   0.52,
+   0.38
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_RugLight_D.jpg",
+   "N": "T_PR_RugLight_N.png",
+   "R": "T_PR_RugLight_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_Furniture": {
+  "color": [
+   0.35,
+   0.25,
+   0.16
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_Furniture_D.jpg",
+   "N": "T_PR_Furniture_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnWoods": {
+  "color": [
+   0.35,
+   0.25,
+   0.16
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_FurnWoods_D.jpg",
+   "N": "T_PR_FurnWoods_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnBox": {
+  "color": [
+   0.35,
+   0.25,
+   0.16
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_FurnBox_D.jpg",
+   "N": "T_PR_FurnBox_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnBearSkin": {
+  "color": [
+   0.1,
+   0.07,
+   0.05
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {},
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnChest": {
+  "color": [
+   0.35,
+   0.25,
+   0.16
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_FurnChest_D.jpg",
+   "N": "T_PR_FurnChest_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnTools": {
+  "color": [
+   0.3,
+   0.27,
+   0.24
+  ],
+  "phys": "Metal",
+  "metallic": 0.4,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_FurnTools_D.jpg",
+   "N": "T_PR_FurnTools_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnBarrel": {
+  "color": [
+   0.3,
+   0.22,
+   0.14
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {},
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnCurtain": {
+  "color": [
+   0.4,
+   0.1,
+   0.08
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "N": "T_PR_FurnCurtain_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnBedCloth": {
+  "color": [
+   0.4,
+   0.1,
+   0.07
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "N": "T_PR_FurnBedCloth_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnTableCloth": {
+  "color": [
+   0.45,
+   0.12,
+   0.08
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "N": "T_PR_FurnTableCloth_N.png"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnPictures": {
+  "color": [
+   0.4,
+   0.3,
+   0.2
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {},
+  "translucent": false,
+  "masked": false
+ },
+ "PR_FurnLighter": {
+  "color": [
+   0.16,
+   0.12,
+   0.09
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {},
+  "translucent": false,
+  "masked": false
+ },
+ "PR_Chandelier": {
+  "color": [
+   0.2,
+   0.18,
+   0.16
+  ],
+  "phys": "Metal",
+  "metallic": 0.6,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_Chandelier_D.jpg",
+   "N": "T_PR_Chandelier_N.png",
+   "R": "T_PR_Chandelier_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_ChandelierFire": {
+  "color": [
+   1.0,
+   0.6,
+   0.25
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 4.0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_ChandelierFire_D.png",
+   "E": "T_PR_ChandelierFire_E.jpg"
+  },
+  "translucent": false,
+  "masked": true
+ },
+ "PR_Candelabra": {
+  "color": [
+   0.15,
+   0.13,
+   0.12
+  ],
+  "phys": "Metal",
+  "metallic": 0.6,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_Candelabra_D.jpg",
+   "N": "T_PR_Candelabra_N.png",
+   "R": "T_PR_Candelabra_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_Paintings": {
+  "color": [
+   0.4,
+   0.32,
+   0.22
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_Paintings_D.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_Bronze": {
+  "color": [
+   0.55,
+   0.33,
+   0.2
+  ],
+  "phys": "Metal",
+  "metallic": 1.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "R": "T_PR_Bronze_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_ChurchCross": {
+  "color": [
+   0.3,
+   0.35,
+   0.3
+  ],
+  "phys": "Metal",
+  "metallic": 0.5,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_ChurchCross_D.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_Coffin": {
+  "color": [
+   0.35,
+   0.37,
+   0.38
+  ],
+  "phys": "Stone",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": false,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_Coffin_D.jpg",
+   "N": "T_PR_Coffin_N.png",
+   "R": "T_PR_Coffin_R.jpg"
+  },
+  "translucent": false,
+  "masked": false
+ },
+ "PR_WoodenShack": {
+  "color": [
+   0.35,
+   0.27,
+   0.2
+  ],
+  "phys": "Wood",
+  "metallic": 0.0,
+  "emissive": 0,
+  "two_sided": true,
+  "tile_m": 1.0,
+  "files": {
+   "D": "T_PR_WoodenShack_D.png",
+   "N": "T_PR_WoodenShack_N.png"
+  },
+  "translucent": false,
+  "masked": true
  }
 }

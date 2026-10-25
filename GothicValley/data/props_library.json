@@ -1,0 +1,1767 @@
+{
+ "PF_PR_Throne": {
+  "pack": "Throne",
+  "folder": "Props/Throne",
+  "lo": [
+   -1.481,
+   -1.443,
+   0.0
+  ],
+  "hi": [
+   1.481,
+   1.443,
+   2.467
+  ],
+  "tris": 23663,
+  "materials": [
+   "PR_Throne",
+   "PR_ThroneDecor"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_JapaneseRug": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.677,
+   -1.024,
+   0.0
+  ],
+  "hi": [
+   0.677,
+   1.024,
+   0.023
+  ],
+  "tris": 84,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_JapaneseRugcircular": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.727,
+   -0.728,
+   0.0
+  ],
+  "hi": [
+   0.727,
+   0.728,
+   0.024
+  ],
+  "tris": 720,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_JapaneseRuglarge": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.846,
+   -1.281,
+   0.0
+  ],
+  "hi": [
+   0.846,
+   1.281,
+   0.023
+  ],
+  "tris": 84,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_JapaneseRugrunner": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.355,
+   -1.283,
+   0.0
+  ],
+  "hi": [
+   0.355,
+   1.283,
+   0.023
+  ],
+  "tris": 84,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_MedievalRug": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.677,
+   -1.024,
+   0.0
+  ],
+  "hi": [
+   0.677,
+   1.024,
+   0.023
+  ],
+  "tris": 84,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_MedievalRugcircular": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.727,
+   -0.728,
+   0.0
+  ],
+  "hi": [
+   0.727,
+   0.728,
+   0.024
+  ],
+  "tris": 720,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_MedievalRuglarge": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.846,
+   -1.281,
+   0.0
+  ],
+  "hi": [
+   0.846,
+   1.281,
+   0.023
+  ],
+  "tris": 84,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugDark_MedievalRugrunner": {
+  "pack": "RugDark",
+  "folder": "Props/RugsDark",
+  "lo": [
+   -0.355,
+   -1.283,
+   0.0
+  ],
+  "hi": [
+   0.355,
+   1.283,
+   0.023
+  ],
+  "tris": 84,
+  "materials": [
+   "PR_RugDark"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug1": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -1.1,
+   -0.75,
+   0.0
+  ],
+  "hi": [
+   1.1,
+   0.75,
+   0.01
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug2": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -1.1,
+   -0.85,
+   0.0
+  ],
+  "hi": [
+   1.1,
+   0.85,
+   0.012
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug3": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -1.05,
+   -0.85,
+   0.0
+  ],
+  "hi": [
+   1.05,
+   0.85,
+   0.011
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug4": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -0.925,
+   -1.35,
+   0.0
+  ],
+  "hi": [
+   0.925,
+   1.35,
+   0.008
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug5": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -0.55,
+   -1.05,
+   0.0
+  ],
+  "hi": [
+   0.55,
+   1.05,
+   0.009
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug6": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -0.6,
+   -1.05,
+   0.0
+  ],
+  "hi": [
+   0.6,
+   1.05,
+   0.011
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug7": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -0.45,
+   -0.875,
+   0.0
+  ],
+  "hi": [
+   0.45,
+   0.875,
+   0.005
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug8": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -1.75,
+   -1.3,
+   0.0
+  ],
+  "hi": [
+   1.75,
+   1.3,
+   0.017
+  ],
+  "tris": 18,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_RugLight_Rug9": {
+  "pack": "RugLight",
+  "folder": "Props/RugsLight",
+  "lo": [
+   -0.704,
+   -0.704,
+   0.0
+  ],
+  "hi": [
+   0.704,
+   0.704,
+   0.008
+  ],
+  "tris": 320,
+  "materials": [
+   "PR_RugLight"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Oven": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.492,
+   -1.116,
+   0.0
+  ],
+  "hi": [
+   0.492,
+   1.116,
+   1.721
+  ],
+  "tris": 28538,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Bed": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.536,
+   -1.17,
+   0.0
+  ],
+  "hi": [
+   0.536,
+   1.17,
+   1.001
+  ],
+  "tris": 23792,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Settle": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.446,
+   -1.036,
+   0.0
+  ],
+  "hi": [
+   0.446,
+   1.036,
+   1.085
+  ],
+  "tris": 15819,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Cupboard": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.559,
+   -0.976,
+   0.0
+  ],
+  "hi": [
+   0.559,
+   0.976,
+   1.595
+  ],
+  "tris": 10284,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_LowShelfA": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.252,
+   -0.346,
+   0.0
+  ],
+  "hi": [
+   0.252,
+   0.346,
+   0.371
+  ],
+  "tris": 11461,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Chest": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.268,
+   -0.507,
+   0.0
+  ],
+  "hi": [
+   0.268,
+   0.507,
+   0.778
+  ],
+  "tris": 8536,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_LowShelfB": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.154,
+   -0.45,
+   0.0
+  ],
+  "hi": [
+   0.154,
+   0.45,
+   0.368
+  ],
+  "tris": 10929,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_LowShelfC": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.186,
+   -0.313,
+   0.0
+  ],
+  "hi": [
+   0.186,
+   0.313,
+   0.449
+  ],
+  "tris": 9878,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_ClothTable": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.356,
+   -0.555,
+   0.0
+  ],
+  "hi": [
+   0.356,
+   0.555,
+   0.593
+  ],
+  "tris": 9177,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Bench": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.256,
+   -1.019,
+   0.0
+  ],
+  "hi": [
+   0.256,
+   1.019,
+   0.59
+  ],
+  "tris": 7073,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_WallShelf": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.146,
+   -0.303,
+   0.559
+  ],
+  "hi": [
+   0.146,
+   0.303,
+   1.556
+  ],
+  "tris": 8384,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor0"
+ },
+ "PF_PR_Furniture_CrateLamp": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.35,
+   -0.542,
+   0.0
+  ],
+  "hi": [
+   0.35,
+   0.542,
+   1.232
+  ],
+  "tris": 6234,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Chair": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.209,
+   -0.167,
+   0.0
+  ],
+  "hi": [
+   0.209,
+   0.167,
+   0.789
+  ],
+  "tris": 7020,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Table": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.256,
+   -0.537,
+   0.0
+  ],
+  "hi": [
+   0.256,
+   0.537,
+   0.591
+  ],
+  "tris": 6080,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Mallet": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.068,
+   -0.145,
+   0.0
+  ],
+  "hi": [
+   0.068,
+   0.145,
+   0.964
+  ],
+  "tris": 6340,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Trapdoor": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.454,
+   -0.403,
+   0.0
+  ],
+  "hi": [
+   0.454,
+   0.403,
+   0.14
+  ],
+  "tris": 3982,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Churn": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.157,
+   -0.162,
+   0.0
+  ],
+  "hi": [
+   0.157,
+   0.162,
+   1.02
+  ],
+  "tris": 6166,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Hoe": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.086,
+   -0.202,
+   0.0
+  ],
+  "hi": [
+   0.086,
+   0.202,
+   1.224
+  ],
+  "tris": 6020,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_TorchStand": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.204,
+   -0.262,
+   0.0
+  ],
+  "hi": [
+   0.204,
+   0.262,
+   1.701
+  ],
+  "tris": 4658,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Shovel": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.053,
+   -0.091,
+   0.0
+  ],
+  "hi": [
+   0.053,
+   0.091,
+   1.185
+  ],
+  "tris": 5886,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Axe": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.043,
+   -0.16,
+   0.0
+  ],
+  "hi": [
+   0.043,
+   0.16,
+   0.895
+  ],
+  "tris": 5532,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_Stool": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.152,
+   -0.163,
+   0.0
+  ],
+  "hi": [
+   0.152,
+   0.163,
+   0.381
+  ],
+  "tris": 2784,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_CornerShelfHigh": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -1.582,
+   -0.539,
+   1.146
+  ],
+  "hi": [
+   1.582,
+   0.539,
+   1.419
+  ],
+  "tris": 4282,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor0"
+ },
+ "PF_PR_Furniture_CornerShelfLow": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -1.582,
+   -1.523,
+   0.818
+  ],
+  "hi": [
+   1.582,
+   1.523,
+   1.133
+  ],
+  "tris": 3752,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor0"
+ },
+ "PF_PR_Furniture_Tub": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.17,
+   -0.171,
+   0.0
+  ],
+  "hi": [
+   0.17,
+   0.171,
+   0.364
+  ],
+  "tris": 3576,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Furniture_PlateRack": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.072,
+   -0.758,
+   1.308
+  ],
+  "hi": [
+   0.072,
+   0.758,
+   1.491
+  ],
+  "tris": 2156,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor0"
+ },
+ "PF_PR_Furniture_LongShelf": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.143,
+   -1.595,
+   0.337
+  ],
+  "hi": [
+   0.143,
+   1.595,
+   0.418
+  ],
+  "tris": 3130,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor0"
+ },
+ "PF_PR_Furniture_WallLamp": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -0.268,
+   -0.247,
+   1.121
+  ],
+  "hi": [
+   0.268,
+   0.247,
+   1.661
+  ],
+  "tris": 1262,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor0"
+ },
+ "PF_PR_Furniture_BearSkin": {
+  "pack": "Furniture",
+  "folder": "Props/Furniture",
+  "lo": [
+   -1.127,
+   -0.999,
+   0.0
+  ],
+  "hi": [
+   1.127,
+   0.999,
+   0.182
+  ],
+  "tris": 1150,
+  "materials": [
+   "PR_Furniture",
+   "PR_FurnWoods",
+   "PR_FurnTools",
+   "PR_FurnBedCloth",
+   "PR_FurnLighter",
+   "PR_FurnPictures",
+   "PR_FurnBearSkin",
+   "PR_FurnBarrel",
+   "PR_FurnBox",
+   "PR_FurnChest",
+   "PR_FurnTableCloth",
+   "PR_FurnCurtain"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Chandelier": {
+  "pack": "Chandelier",
+  "folder": "Props/Chandelier",
+  "lo": [
+   -0.677,
+   -0.677,
+   -1.486
+  ],
+  "hi": [
+   0.677,
+   0.677,
+   0.0
+  ],
+  "tris": 13053,
+  "materials": [
+   "PR_Chandelier",
+   "PR_ChandelierFire"
+  ],
+  "anchor": "ceiling"
+ },
+ "PF_PR_Candelabra": {
+  "pack": "Candelabra",
+  "folder": "Props/Candelabra",
+  "lo": [
+   -0.42,
+   -0.42,
+   0.0
+  ],
+  "hi": [
+   0.42,
+   0.42,
+   1.9
+  ],
+  "tris": 9952,
+  "materials": [
+   "PR_Candelabra"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_10": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.692,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.692,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_11": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.675,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.675,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_12": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.536,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.536,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_13": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_14": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.664,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.664,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_15": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_16": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.774,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.774,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_17": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.994,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.994,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_18": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.736,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.736,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_19": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_1": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.5,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.5,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_20": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_21": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -1.191,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   1.191,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_22": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.989,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.989,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_23": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_2": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_3": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_4": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_5": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_6": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_7": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.397,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.397,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_8": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.52,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.52,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Painting_9": {
+  "pack": "Painting",
+  "folder": "Props/Paintings",
+  "lo": [
+   -0.046,
+   -0.689,
+   0.0
+  ],
+  "hi": [
+   0.046,
+   0.689,
+   1.0
+  ],
+  "tris": 34,
+  "materials": [
+   "PR_Paintings"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Crucifixion": {
+  "pack": "Crucifixion",
+  "folder": "Props/Crucifixion",
+  "lo": [
+   -0.19,
+   -0.805,
+   0.0
+  ],
+  "hi": [
+   0.19,
+   0.805,
+   1.85
+  ],
+  "tris": 130218,
+  "materials": [
+   "PR_Bronze"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_ChurchCross": {
+  "pack": "ChurchCross",
+  "folder": "Props/ChurchCross",
+  "lo": [
+   -0.596,
+   -1.131,
+   0.0
+  ],
+  "hi": [
+   0.596,
+   1.131,
+   3.2
+  ],
+  "tris": 200135,
+  "materials": [
+   "PR_ChurchCross"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Coffin": {
+  "pack": "Coffin",
+  "folder": "Props/Coffin",
+  "lo": [
+   -1.004,
+   -0.37,
+   0.0
+  ],
+  "hi": [
+   1.004,
+   0.37,
+   0.537
+  ],
+  "tris": 238,
+  "materials": [
+   "PR_Coffin"
+  ],
+  "anchor": "floor"
+ },
+ "PF_PR_Shack": {
+  "pack": "Shack",
+  "folder": "Environment/Shack",
+  "lo": [
+   -3.517,
+   -3.4,
+   0.0
+  ],
+  "hi": [
+   3.517,
+   3.4,
+   7.427
+  ],
+  "tris": 11386,
+  "materials": [
+   "PR_WoodenShack"
+  ],
+  "anchor": "floor"
+ }
+}

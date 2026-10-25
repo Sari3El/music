@@ -240,6 +240,38 @@ def build_materials(tex):
             MEL.connect_material_property(rg, "", unreal.MaterialProperty.MP_ROUGHNESS)
             MEL.recompile_material(glass)
             EAL.save_loaded_asset(glass)
+    masked = None
+    if any(k.get("masked") for k in KITMAT.values()):                 # prop packs: alpha-cut leaves, flames (glow map)
+        mp2 = f"{path}/M_GB_MasterMasked"
+        if EAL.does_asset_exist(mp2):
+            masked = EAL.load_asset(mp2)
+        else:
+            masked = AT.create_asset("M_GB_MasterMasked", path, unreal.Material, unreal.MaterialFactoryNew())
+            masked.set_editor_property("blend_mode", unreal.BlendMode.BLEND_MASKED)
+            masked.set_editor_property("two_sided", True)
+            tc = MEL.create_material_expression(masked, unreal.MaterialExpressionTextureCoordinate, -1000, 0)
+            d = tex_param(masked, "BaseColorTex", tex["T_GB_Stone_D"], "D", tc, -700, -300)
+            n = tex_param(masked, "NormalTex", tex["T_GB_Stone_N"], "N", tc, -700, 0)
+            r = tex_param(masked, "RoughnessTex", tex["T_GB_Stone_R"], "R", tc, -700, 300)
+            e = tex_param(masked, "EmissiveTex", tex["T_GB_Stone_D"], "D", tc, -700, 600)
+            tint = MEL.create_material_expression(masked, unreal.MaterialExpressionVectorParameter, -700, -550)
+            tint.set_editor_property("parameter_name", "Tint"); tint.set_editor_property("default_value", unreal.LinearColor(1, 1, 1, 1))
+            col = MEL.create_material_expression(masked, unreal.MaterialExpressionMultiply, -350, -350)
+            MEL.connect_material_expressions(d, "RGB", col, "A"); MEL.connect_material_expressions(tint, "", col, "B")
+            met = MEL.create_material_expression(masked, unreal.MaterialExpressionScalarParameter, -350, 150)
+            met.set_editor_property("parameter_name", "Metallic"); met.set_editor_property("default_value", 0.0)
+            emis = MEL.create_material_expression(masked, unreal.MaterialExpressionScalarParameter, -700, 850)
+            emis.set_editor_property("parameter_name", "Emissive"); emis.set_editor_property("default_value", 0.0)
+            em = MEL.create_material_expression(masked, unreal.MaterialExpressionMultiply, -350, 650)
+            MEL.connect_material_expressions(e, "RGB", em, "A"); MEL.connect_material_expressions(emis, "", em, "B")
+            MEL.connect_material_property(col, "", unreal.MaterialProperty.MP_BASE_COLOR)
+            MEL.connect_material_property(n, "RGB", unreal.MaterialProperty.MP_NORMAL)
+            MEL.connect_material_property(r, "R", unreal.MaterialProperty.MP_ROUGHNESS)
+            MEL.connect_material_property(met, "", unreal.MaterialProperty.MP_METALLIC)
+            MEL.connect_material_property(em, "", unreal.MaterialProperty.MP_EMISSIVE_COLOR)
+            MEL.connect_material_property(d, "A", unreal.MaterialProperty.MP_OPACITY_MASK)
+            MEL.recompile_material(masked)
+            EAL.save_loaded_asset(masked)
     phys = find_phys_materials()
     if not phys:
         warn("no PhysicalMaterial found in the project: footstep sounds will use the default (assign the ADK ones to the MI_GB_ later)")
@@ -249,8 +281,9 @@ def build_materials(tex):
         mi = EAL.load_asset(ip) if EAL.does_asset_exist(ip) else AT.create_asset(f"MI_{name}", path, unreal.MaterialInstanceConstant,
                                                                                   unreal.MaterialInstanceConstantFactoryNew())
         kit = KITMAT.get(name, {})
-        MEL.set_material_instance_parent(mi, glass if kit.get("translucent") and glass is not None else mat)
-        for prm, k in (("BaseColorTex", "D"), ("NormalTex", "N"), ("RoughnessTex", "R")):
+        parent = glass if kit.get("translucent") and glass is not None else (masked if kit.get("masked") and masked is not None else mat)
+        MEL.set_material_instance_parent(mi, parent)
+        for prm, k in (("BaseColorTex", "D"), ("NormalTex", "N"), ("RoughnessTex", "R"), ("EmissiveTex", "E")):
             t = tex.get(f"T_{name}_{k}")
             if t is not None:
                 MEL.set_material_instance_texture_parameter_value(mi, prm, t)

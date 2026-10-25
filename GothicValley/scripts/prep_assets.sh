@@ -6,13 +6,17 @@
 set -e
 S=$(cd "$1" && pwd); P=$(cd "$2" && pwd)
 B="blender -b --factory-startup --python-exit-code 1 --python"
-LIB=$(ls -d "$P"/denniswoo1993/*/ | head -1); FC=$(ls -d "$P"/HawtorStudio/*/ | head -1)
+LIB=$(ls -d "$P"/denniswoo1993/*/ | head -1); FC=$(ls -d "$P"/HawtorStudio/*Fantasy*/ | head -1)
 python3 -I $S/scripts/fc_fix_colors.py "$FC" $S/assets/fantasy/tex
 python3 -I $S/scripts/lib_fix_colors.py "$LIB" $S/assets/library/tex
 $B $S/scripts/prep_fantasy.py -- "$FC" $S/assets/fantasy 120 | grep -E "SIZE|DONE"
 $B $S/scripts/prep_library.py -- "$LIB" $S/assets/library | grep -E "SIZE|DONE"
 $B $S/scripts/lib_prefabs.py -- $S/assets/library/library.blend $S/assets/library | grep -E "DONE"
 cp $S/assets/library/prefabs.json $S/data/kit_library.json
+# prop packs of the second delivery (throne, rugs, furniture, chandelier, candelabra, paintings, crucifixes, coffin, shack):
+# one prefab per prop (props_defs.py), data/props_library.json stored in the repository
+$B $S/scripts/prep_props.py -- "$P" $S/assets/props | grep -E "PROPS_DONE|Error"
+cp $S/assets/props/props.json $S/data/props_library.json
 python3 -I $S/scripts/kit_textures.py $S "$P" | tail -1
 # vampires' castle (Castle 2.0): face table -> materials per UV island, centred model at scale 160, walk-test triangles,
 # ground plate (the hill it was built on: the crag top takes its relief). data/castle20_rooms.json and
